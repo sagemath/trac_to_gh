@@ -10,6 +10,7 @@ archive/issues_006258.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1",
     "title": "Improve accuracy of graph eigenvalues",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6258",

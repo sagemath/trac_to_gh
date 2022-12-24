@@ -10,6 +10,7 @@ archive/issues_006591.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
     "title": "Implement view(object, viewer='pdf') and view(object, tightpage = True)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6591",

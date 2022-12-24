@@ -10,6 +10,7 @@ archive/issues_004966.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "Switch gmp to eMPIRe svn1555",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4966",

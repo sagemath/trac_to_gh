@@ -10,6 +10,7 @@ archive/issues_006643.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
     "title": "vector function changes the ring of a vector for ZZ when possible",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6643",

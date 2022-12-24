@@ -10,6 +10,7 @@ archive/issues_009530.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
     "title": "Improve/fix readline workarounds for Arch Linux and openSuSE",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9530",

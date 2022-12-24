@@ -10,6 +10,7 @@ archive/issues_002167.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
     "title": "Echelon form of symbolic matrices does not work",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2167",

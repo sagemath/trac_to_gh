@@ -10,6 +10,7 @@ archive/issues_006101.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.10",
     "title": "computation of induced morphism on homology and cohomology of simplicial complex morphisms",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6101",

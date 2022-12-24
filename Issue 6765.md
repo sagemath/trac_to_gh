@@ -10,6 +10,7 @@ archive/issues_006765.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "[with patch, needs review] Linear Programming in Tutorial's Tour !",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6765",

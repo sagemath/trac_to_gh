@@ -10,6 +10,7 @@ archive/issues_005729.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
     "title": "Cleanup of crystal code: cartan_type now a method rather than attribute",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5729",

@@ -10,6 +10,7 @@ archive/issues_006476.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
     "title": "upgrade Singular to 3.1.0.4",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6476",

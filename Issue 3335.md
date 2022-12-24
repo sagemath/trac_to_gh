@@ -10,6 +10,7 @@ archive/issues_003335.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "update ipython to 0.8.3",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3335",

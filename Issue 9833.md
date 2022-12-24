@@ -10,6 +10,7 @@ archive/issues_009833.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "LaTeX representation of fractions still broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9833",

@@ -10,6 +10,7 @@ archive/issues_004609.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
     "title": "Sage 3.2.1.a1: Make two optional magma doctests also depend on database_gap",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4609",

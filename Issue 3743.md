@@ -10,6 +10,7 @@ archive/issues_003743.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
     "title": "notebook -- allow admin user to view any worksheet",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3743",

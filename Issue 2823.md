@@ -10,6 +10,7 @@ archive/issues_002823.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "notebook -- safari 3.1 introspection completely broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2823",

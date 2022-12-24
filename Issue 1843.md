@@ -10,6 +10,7 @@ archive/issues_001843.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
     "title": "[with patch; needs review] cputime for gp interface",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1843",

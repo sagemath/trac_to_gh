@@ -10,6 +10,7 @@ archive/issues_003346.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.3",
     "title": "[with patch; not ready for review] finance -- add a very very basic first little tiny amount of quantitative finance functionality to sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3346",

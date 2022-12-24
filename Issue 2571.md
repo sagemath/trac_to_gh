@@ -10,6 +10,7 @@ archive/issues_002571.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
     "title": "problem with copy() on sage.rings.integer_mod.IntegerMod_gmp",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2571",

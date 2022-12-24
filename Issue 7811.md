@@ -10,6 +10,7 @@ archive/issues_007811.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "Worksheet list CSS: Account for special characters in login names",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7811",

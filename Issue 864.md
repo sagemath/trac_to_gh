@@ -10,6 +10,7 @@ archive/issues_000864.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.13",
     "title": "Asymptotically slow pari <--> python long conversions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/864",

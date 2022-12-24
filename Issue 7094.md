@@ -10,6 +10,7 @@ archive/issues_007094.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "some doctest leaves the file \" my_general_distribution_plot.png\" in SAGE_ROOT",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7094",

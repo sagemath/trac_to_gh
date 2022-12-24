@@ -10,6 +10,7 @@ archive/issues_007928.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "Trivial follow up on #7776",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7928",

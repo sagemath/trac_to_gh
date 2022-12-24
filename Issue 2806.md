@@ -10,6 +10,7 @@ archive/issues_002806.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "Sage 3.0.a2: numerical noise in sage/misc/prandom.py doctest",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2806",

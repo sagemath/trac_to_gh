@@ -10,6 +10,7 @@ archive/issues_007530.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "corrects simple Laurent-polynomial bug",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7530",

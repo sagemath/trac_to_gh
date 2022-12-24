@@ -10,6 +10,7 @@ archive/issues_009572.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.2",
     "title": "SageNB 0.8.2",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9572",

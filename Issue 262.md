@@ -10,6 +10,7 @@ archive/issues_000262.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.4.2",
     "title": "extend point counting on elliptic curves to non-prime finite fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/262",

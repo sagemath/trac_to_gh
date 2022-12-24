@@ -10,6 +10,7 @@ archive/issues_008990.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.2",
     "title": "update MPIR 1.2.2 license information as requested by upstream",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8990",

@@ -10,6 +10,7 @@ archive/issues_003436.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.2",
     "title": "random_matrix() with prescribed density buggy",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3436",

@@ -10,6 +10,7 @@ archive/issues_002199.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "[with patch; needs review] Copyright files for Debian packages",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2199",

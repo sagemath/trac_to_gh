@@ -10,6 +10,7 @@ archive/issues_001395.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9",
     "title": "notebook(directory=\"foo/\") misbehaves",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1395",

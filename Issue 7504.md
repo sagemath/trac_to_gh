@@ -10,6 +10,7 @@ archive/issues_007504.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "Magma booleans don't evaluate correctly in boolean contexts",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7504",

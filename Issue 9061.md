@@ -10,6 +10,7 @@ archive/issues_009061.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5",
     "title": "Fix broken inequalities in add_constraint method",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9061",

@@ -10,6 +10,7 @@ archive/issues_009994.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Python reports compiler is broken on AIX 5.3",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9994",

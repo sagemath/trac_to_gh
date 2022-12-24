@@ -10,6 +10,7 @@ archive/issues_004535.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
     "title": "refactoring in plot/*",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4535",

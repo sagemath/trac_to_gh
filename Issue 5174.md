@@ -10,6 +10,7 @@ archive/issues_005174.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "_repr_ for large matrices should indicate how to see the entries",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5174",

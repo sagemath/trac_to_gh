@@ -10,6 +10,7 @@ archive/issues_009736.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.2",
     "title": "gfran totally broken on 32-bit OpenSolaris  on x86 CPU",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9736",

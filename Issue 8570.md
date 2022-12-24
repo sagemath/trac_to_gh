@@ -10,6 +10,7 @@ archive/issues_008570.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "Allow \"marker\" option to be passed to matplotlib on list_plot() and point()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8570",

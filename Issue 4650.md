@@ -10,6 +10,7 @@ archive/issues_004650.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "matrix_modn_sparse needs cleanup",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4650",

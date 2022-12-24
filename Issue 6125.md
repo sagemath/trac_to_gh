@@ -10,6 +10,7 @@ archive/issues_006125.json:
         "blocker",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
     "title": "disable testing in flint, mpir, etc. packages",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6125",

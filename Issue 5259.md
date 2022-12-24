@@ -10,6 +10,7 @@ archive/issues_005259.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "invalid array elements sent to matplotlib quiver, causing blank plot",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5259",

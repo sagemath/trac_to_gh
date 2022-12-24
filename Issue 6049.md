@@ -10,6 +10,7 @@ archive/issues_006049.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
     "title": "[with patch, needs review] bitset complement zeroes out last word if the bitset is a multiple of the word size",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6049",

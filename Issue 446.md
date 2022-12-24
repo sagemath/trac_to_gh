@@ -10,6 +10,7 @@ archive/issues_000446.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.2",
     "title": "in latest version of the notebook interactive documenation doesn't \"interact\" at all.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/446",

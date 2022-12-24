@@ -10,6 +10,7 @@ archive/issues_001833.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
     "title": "[with patch; needs review] plot3d and parametric_plot3d can be very slow on some inputs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1833",

@@ -10,6 +10,7 @@ archive/issues_005712.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.2",
     "title": "notebook -- Get rid of the stupid \"unable to immediately interrupt computation\" alert that drives me nuts",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5712",

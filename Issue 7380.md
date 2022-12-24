@@ -10,6 +10,7 @@ archive/issues_007380.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Replace Graph.vertices() by Graph.vertex_iterator when possible",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7380",

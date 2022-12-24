@@ -10,6 +10,7 @@ archive/issues_003073.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.3",
     "title": "allow variable width text input_box in interact",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3073",

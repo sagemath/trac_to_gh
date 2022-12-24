@@ -10,6 +10,7 @@ archive/issues_004545.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-9.5",
     "title": "better fix for mixing @parallel with numerical constant preparsing",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4545",

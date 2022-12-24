@@ -10,6 +10,7 @@ archive/issues_006398.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1",
     "title": "shorten long doctests in sage/schemes/elliptic_curves/sha_tate.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6398",

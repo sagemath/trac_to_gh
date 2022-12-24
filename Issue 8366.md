@@ -10,6 +10,7 @@ archive/issues_008366.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4",
     "title": "make contour plot labels and linestyles work when fill=True",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8366",

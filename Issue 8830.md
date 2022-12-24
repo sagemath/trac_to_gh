@@ -10,6 +10,7 @@ archive/issues_008830.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.1",
     "title": "polybori-0.6.4.spkg causes crashes on exit",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8830",

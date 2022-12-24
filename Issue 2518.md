@@ -10,6 +10,7 @@ archive/issues_002518.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "improve the SAGE_ROOT/local/bin/sage-cleaner script so that it kills those damn lisp.run processes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2518",

@@ -10,6 +10,7 @@ archive/issues_005796.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
     "title": "document bitsets and make interface consistent with python sets",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5796",

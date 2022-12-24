@@ -10,6 +10,7 @@ archive/issues_004160.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "as of 2009-09-20 the polymake optional spkg fails to install",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4160",

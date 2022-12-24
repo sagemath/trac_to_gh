@@ -10,6 +10,7 @@ archive/issues_006648.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.1",
     "title": "[with patch, needs review] adds riemann mapping and complex interpolation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6648",

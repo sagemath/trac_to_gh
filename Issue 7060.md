@@ -10,6 +10,7 @@ archive/issues_007060.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
     "title": "notebook -- templating patch introduces numerous bugs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7060",

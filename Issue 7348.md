@@ -10,6 +10,7 @@ archive/issues_007348.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-wishlist",
     "title": "speed up computation of multiplicative orders of finite field elements",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7348",

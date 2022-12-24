@@ -10,6 +10,7 @@ archive/issues_007894.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "bzip2 does not always clear up before building",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7894",

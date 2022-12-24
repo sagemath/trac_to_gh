@@ -10,6 +10,7 @@ archive/issues_000783.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
     "title": "dilog is lame",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/783",

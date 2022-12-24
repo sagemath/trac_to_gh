@@ -10,6 +10,7 @@ archive/issues_008355.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6.2",
     "title": "Fix hsv_to_rgb to take all 3 arguments",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8355",

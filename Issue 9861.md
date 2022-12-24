@@ -10,6 +10,7 @@ archive/issues_009861.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
     "title": "Reimplementation of IntervalGraph to handle repeated vertices.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9861",

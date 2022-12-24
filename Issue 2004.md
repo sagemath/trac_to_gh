@@ -10,6 +10,7 @@ archive/issues_002004.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
     "title": "[with patch, needs review] padic_height_via_multiply",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2004",

@@ -10,6 +10,7 @@ archive/issues_001748.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
     "title": "Passing the ipython argument '-wthread' at startup",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1748",

@@ -10,6 +10,7 @@ archive/issues_000280.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.15",
     "title": "Extensions should coerce defining polynomials into base fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/280",

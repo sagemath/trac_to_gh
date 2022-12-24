@@ -10,6 +10,7 @@ archive/issues_003840.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
     "title": "[with patch, needs review] conversion of 0 from MV polynomial rings broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3840",

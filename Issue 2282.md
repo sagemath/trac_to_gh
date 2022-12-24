@@ -10,6 +10,7 @@ archive/issues_002282.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
     "title": "[with link to spkg, needs review] readline currently not building dynamic library on Mac",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2282",

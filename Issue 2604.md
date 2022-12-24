@@ -10,6 +10,7 @@ archive/issues_002604.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "plotting constant functions throws an error",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2604",

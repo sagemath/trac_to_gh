@@ -10,6 +10,7 @@ archive/issues_009103.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "ATLAS  has modifications to upstream source",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9103",

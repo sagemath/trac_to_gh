@@ -10,6 +10,7 @@ archive/issues_007377.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.7.1",
     "title": "Symbolic Ring to Maxima via EclObject",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7377",

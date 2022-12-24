@@ -10,6 +10,7 @@ archive/issues_005072.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "segfault in libsingular gcd when base rings aren't identical",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5072",

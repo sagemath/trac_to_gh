@@ -10,6 +10,7 @@ archive/issues_007430.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2.1",
     "title": "include new version of sagenb (0.4.2)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7430",

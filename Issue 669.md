@@ -10,6 +10,7 @@ archive/issues_000669.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
     "title": "Solaris 10: functions/constants.py doctests failure",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/669",

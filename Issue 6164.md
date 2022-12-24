@@ -10,6 +10,7 @@ archive/issues_006164.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1",
     "title": "Phan's Mini-AES for educational purposes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6164",

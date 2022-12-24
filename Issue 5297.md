@@ -10,6 +10,7 @@ archive/issues_005297.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "[with patch, needs review] sparse vectors and free module elements: pairwise_product is broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5297",

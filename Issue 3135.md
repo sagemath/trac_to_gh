@@ -10,6 +10,7 @@ archive/issues_003135.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "bug in solve_mod -- variable sorting",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3135",

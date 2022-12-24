@@ -10,6 +10,7 @@ archive/issues_004379.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
     "title": "[with patch, needs review] typo in tutorial",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4379",

@@ -10,6 +10,7 @@ archive/issues_002956.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.0",
     "title": "generic multivariate polynomials are buggy on exponent overflow",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2956",

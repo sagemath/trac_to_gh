@@ -10,6 +10,7 @@ archive/issues_002195.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "Givaro-related crash in finite fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2195",

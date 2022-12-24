@@ -10,6 +10,7 @@ archive/issues_008721.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6.2",
     "title": "Residue fields for relative number fields broken (again)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8721",

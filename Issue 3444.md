@@ -10,6 +10,7 @@ archive/issues_003444.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "subgroup/is_subgroup give misleading results",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3444",

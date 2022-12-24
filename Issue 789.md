@@ -10,6 +10,7 @@ archive/issues_000789.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.6",
     "title": "Can't create a submodule over a QQ[x]-module",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/789",

@@ -10,6 +10,7 @@ archive/issues_005646.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.0",
     "title": "vectors over CDF allow a coercion from scalars",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5646",

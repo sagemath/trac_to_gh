@@ -10,6 +10,7 @@ archive/issues_005994.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-7.5",
     "title": "singular.version() yields an error when first called, has no doctest, and has a strange output imo",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5994",

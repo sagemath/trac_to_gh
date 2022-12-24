@@ -10,6 +10,7 @@ archive/issues_004636.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "improve polynomial_modn_dense_ntl.Polynomial_dense_mod_p",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4636",

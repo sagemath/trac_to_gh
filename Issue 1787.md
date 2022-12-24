@@ -10,6 +10,7 @@ archive/issues_001787.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
     "title": "Apply row-major GEMM major ATLAS errata to codebase",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1787",

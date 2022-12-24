@@ -10,6 +10,7 @@ archive/issues_005791.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.2",
     "title": "Allow custom packages to be injected or %latex and the Sage latex mode",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5791",

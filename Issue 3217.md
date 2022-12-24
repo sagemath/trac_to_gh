@@ -10,6 +10,7 @@ archive/issues_003217.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.3",
     "title": "[with patch, needs review] Serious bug in modular symbols for GammaH",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3217",

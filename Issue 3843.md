@@ -10,6 +10,7 @@ archive/issues_003843.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "typo in graphs: \"edge_labels -- whether to print edgeedge labels. By default, False,                 but\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3843",

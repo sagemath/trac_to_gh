@@ -10,6 +10,7 @@ archive/issues_001100.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.12",
     "title": "polynomial roots() method can return rational roots for polynomials over ZZ",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1100",

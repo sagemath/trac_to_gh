@@ -10,6 +10,7 @@ archive/issues_008743.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.4",
     "title": "change_ring on a rational matrix may return self",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8743",

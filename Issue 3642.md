@@ -10,6 +10,7 @@ archive/issues_003642.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.5",
     "title": "Append R's lib directory to LD_LIBRARY_PATH in sage-env",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3642",

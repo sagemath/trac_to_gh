@@ -10,6 +10,7 @@ archive/issues_008636.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4",
     "title": "iconv -- put the \"do not build check\" in the right place",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8636",

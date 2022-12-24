@@ -10,6 +10,7 @@ archive/issues_009926.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "non-squarefree Hecke operators on BrandtModule",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9926",

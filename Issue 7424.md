@@ -10,6 +10,7 @@ archive/issues_007424.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.12",
     "title": "inconsistency between constructors SL and PSL",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7424",

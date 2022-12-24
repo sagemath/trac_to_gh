@@ -10,6 +10,7 @@ archive/issues_008204.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "when upgrading sage, cddlib spkg goes interactive due to some errors in it",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8204",

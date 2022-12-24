@@ -10,6 +10,7 @@ archive/issues_000164.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "doctests dependence thing",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/164",

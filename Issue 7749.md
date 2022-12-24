@@ -10,6 +10,7 @@ archive/issues_007749.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "Add names.gz to the Sloane OEIS",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7749",

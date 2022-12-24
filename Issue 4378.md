@@ -10,6 +10,7 @@ archive/issues_004378.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
     "title": "3.2.alpha1: -sdist does not copy html from template directory",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4378",

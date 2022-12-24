@@ -10,6 +10,7 @@ archive/issues_004008.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "[with spkg, needs review] OSX 10.4/5: build python without the OSX specific extensions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4008",

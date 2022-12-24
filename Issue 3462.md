@@ -10,6 +10,7 @@ archive/issues_003462.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
     "title": "modular symbols -- fix use_cache not being properly respected",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3462",

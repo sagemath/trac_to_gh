@@ -10,6 +10,7 @@ archive/issues_007763.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "make nintegrate/nintegral top-level functions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7763",

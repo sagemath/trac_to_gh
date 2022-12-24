@@ -10,6 +10,7 @@ archive/issues_000900.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.8",
     "title": "both squarefree_decomposition() and square_free_decomposition() methods exist",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/900",

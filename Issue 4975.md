@@ -10,6 +10,7 @@ archive/issues_004975.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "Sage 3.2.2 chokes on utf-8 encoded files",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4975",

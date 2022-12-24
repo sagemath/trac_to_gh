@@ -10,6 +10,7 @@ archive/issues_005165.json:
         "trivial",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4",
     "title": "make padded_list use prec by default",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5165",

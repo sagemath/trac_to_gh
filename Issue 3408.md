@@ -10,6 +10,7 @@ archive/issues_003408.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
     "title": "[with spkg] Cython 0.9.8 released",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3408",

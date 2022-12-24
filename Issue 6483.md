@@ -10,6 +10,7 @@ archive/issues_006483.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "jsmath font broken in Firefox 3.5 on Linux",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6483",

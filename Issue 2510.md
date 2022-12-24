@@ -10,6 +10,7 @@ archive/issues_002510.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.4",
     "title": "Sage 2.10.4.a0: sage/graphs/graph_generators.py doctest failure related to #2473",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2510",

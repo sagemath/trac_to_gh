@@ -10,6 +10,7 @@ archive/issues_001463.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9",
     "title": "polymake package has wrong cddlib,gmp versions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1463",

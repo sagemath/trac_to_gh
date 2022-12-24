@@ -10,6 +10,7 @@ archive/issues_007686.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Remove all \"AppleDouble encoded Macintosh files\" from the Sage source distribution",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7686",

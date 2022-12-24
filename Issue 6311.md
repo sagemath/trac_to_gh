@@ -10,6 +10,7 @@ archive/issues_006311.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "optional doctest failure -- supersingular_j",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6311",

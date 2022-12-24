@@ -10,6 +10,7 @@ archive/issues_000795.json:
         "trivial",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.6",
     "title": "[with patch] tiny documentation update for MPolynomialIdeal.groebner_basis",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/795",

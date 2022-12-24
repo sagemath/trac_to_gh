@@ -10,6 +10,7 @@ archive/issues_002740.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.2",
     "title": "Downloading and uploading folders of worksheets",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2740",

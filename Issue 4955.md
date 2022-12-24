@@ -10,6 +10,7 @@ archive/issues_004955.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Magma needs write access to $SAGE_ROOT/data/excode/magma",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4955",

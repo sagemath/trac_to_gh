@@ -10,6 +10,7 @@ archive/issues_001632.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "update sqlite to 3.5.4",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1632",

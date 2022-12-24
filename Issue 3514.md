@@ -10,6 +10,7 @@ archive/issues_003514.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
     "title": "Free modules revision",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3514",

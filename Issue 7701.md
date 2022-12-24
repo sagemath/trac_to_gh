@@ -10,6 +10,7 @@ archive/issues_007701.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "update the openmpi spkg to the latest version",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7701",

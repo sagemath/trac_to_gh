@@ -10,6 +10,7 @@ archive/issues_000859.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.7",
     "title": "Cannot coerce numpy integral types to ZZ",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/859",

@@ -10,6 +10,7 @@ archive/issues_003348.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Coercion problem: creating vectors from a mix of python and symbolic types",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3348",

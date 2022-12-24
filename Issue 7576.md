@@ -10,6 +10,7 @@ archive/issues_007576.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "improvements to the prove_BSD function",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7576",

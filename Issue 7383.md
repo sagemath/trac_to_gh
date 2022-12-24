@@ -10,6 +10,7 @@ archive/issues_007383.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-wishlist",
     "title": "make curved arrows in 3d vector field plots",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7383",

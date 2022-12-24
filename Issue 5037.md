@@ -10,6 +10,7 @@ archive/issues_005037.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Bug fixes and new functionalities for Words library",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5037",

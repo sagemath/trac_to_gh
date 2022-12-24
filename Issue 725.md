@@ -10,6 +10,7 @@ archive/issues_000725.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.5",
     "title": "memleak in initialization of diagonal Matrix_integer_dense objects",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/725",

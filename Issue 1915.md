@@ -10,6 +10,7 @@ archive/issues_001915.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "infinity doesn't behave well",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1915",

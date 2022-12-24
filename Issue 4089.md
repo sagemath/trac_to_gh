@@ -10,6 +10,7 @@ archive/issues_004089.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
     "title": "notebook -- no active worksheets should show up on \"archived\" tab",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4089",

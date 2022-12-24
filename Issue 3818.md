@@ -10,6 +10,7 @@ archive/issues_003818.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
     "title": "COPYING.txt doesn't mention jmol but it shold",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3818",

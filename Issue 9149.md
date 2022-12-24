@@ -10,6 +10,7 @@ archive/issues_009149.json:
         "trivial",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.4",
     "title": "spelling error (trivial to fix)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9149",

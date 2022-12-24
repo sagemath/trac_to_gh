@@ -10,6 +10,7 @@ archive/issues_005034.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "stupid output of sage -br:  \"using n cpus\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5034",

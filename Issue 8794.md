@@ -10,6 +10,7 @@ archive/issues_008794.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "clean up documentation of logic/logicparser.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8794",

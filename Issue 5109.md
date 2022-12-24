@@ -10,6 +10,7 @@ archive/issues_005109.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "add support for Bell polynomials in Sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5109",

@@ -10,6 +10,7 @@ archive/issues_000219.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "more optimizations for special rings (e.g., copy, etc; use ssmod as an example to motivate this)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/219",

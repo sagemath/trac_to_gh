@@ -10,6 +10,7 @@ archive/issues_008087.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "jinja2 fails to build on Open Solaris x64 (",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8087",

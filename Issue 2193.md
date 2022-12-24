@@ -10,6 +10,7 @@ archive/issues_002193.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
     "title": "doctest framework should check for keywords only in comments",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2193",

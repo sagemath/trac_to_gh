@@ -10,6 +10,7 @@ archive/issues_002176.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
     "title": "debianize tachyon spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2176",

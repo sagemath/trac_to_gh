@@ -10,6 +10,7 @@ archive/issues_007490.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "refactor symbolic functions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7490",

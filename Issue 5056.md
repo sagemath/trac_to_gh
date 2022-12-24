@@ -10,6 +10,7 @@ archive/issues_005056.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "rename Ideal.reduced_basis to Ideal.interreduced_basis",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5056",

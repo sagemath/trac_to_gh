@@ -10,6 +10,7 @@ archive/issues_003519.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
     "title": "Update clisp to 2.45 release",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3519",

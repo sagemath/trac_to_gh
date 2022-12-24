@@ -10,6 +10,7 @@ archive/issues_002991.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "dsage testdoc problem",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2991",

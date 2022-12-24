@@ -10,6 +10,7 @@ archive/issues_009814.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "ATLAS fails to build on a PA-RISC system running HP-UX",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9814",

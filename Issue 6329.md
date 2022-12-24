@@ -10,6 +10,7 @@ archive/issues_006329.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.7.2",
     "title": "optional doctest failure -- bad data type breakage in the sage-->magma interface",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6329",

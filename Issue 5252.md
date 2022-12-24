@@ -10,6 +10,7 @@ archive/issues_005252.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "elliptic curves: P.height() lies about its precision",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5252",

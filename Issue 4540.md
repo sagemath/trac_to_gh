@@ -10,6 +10,7 @@ archive/issues_004540.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
     "title": "Symmetrica segfault converting Schur functions to k-Schurs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4540",

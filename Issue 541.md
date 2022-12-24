@@ -10,6 +10,7 @@ archive/issues_000541.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.5",
     "title": "mpfr-2.3.0",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/541",

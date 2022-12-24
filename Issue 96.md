@@ -10,6 +10,7 @@ archive/issues_000096.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-1.8",
     "title": "time command doesn't work in .sage files !?",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/96",

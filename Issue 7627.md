@@ -10,6 +10,7 @@ archive/issues_007627.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "Settings page (for converted notebook?) gives errors",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7627",

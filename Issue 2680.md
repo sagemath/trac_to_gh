@@ -10,6 +10,7 @@ archive/issues_002680.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "Modular forms for Gamma1(N) have wrong Sturm bound",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2680",

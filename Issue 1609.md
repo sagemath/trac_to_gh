@@ -10,6 +10,7 @@ archive/issues_001609.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-wishlist",
     "title": "create an octave-3.0.0 optional spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1609",

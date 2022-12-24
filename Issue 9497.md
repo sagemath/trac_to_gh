@@ -10,6 +10,7 @@ archive/issues_009497.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.7",
     "title": "Fix the Singular spkg so it can take advantage of building in parallel",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9497",

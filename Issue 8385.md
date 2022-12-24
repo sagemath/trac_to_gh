@@ -10,6 +10,7 @@ archive/issues_008385.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Add hostname, date and time to test.log",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8385",

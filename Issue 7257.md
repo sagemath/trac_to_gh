@@ -10,6 +10,7 @@ archive/issues_007257.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
     "title": "spike_functions has numerical noise on powerpc (followup to #6891)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7257",

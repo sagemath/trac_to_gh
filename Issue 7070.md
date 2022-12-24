@@ -10,6 +10,7 @@ archive/issues_007070.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "tachyon 0.98beta.p9 ignores CC and uses gcc. Also uses -O6 which might be dangerous.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7070",

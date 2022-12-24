@@ -10,6 +10,7 @@ archive/issues_001372.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.15",
     "title": "2.8.15.alpha2: dokchitser.py doctest failure (numerical noise)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1372",

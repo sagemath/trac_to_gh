@@ -10,6 +10,7 @@ archive/issues_009333.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.7.1",
     "title": "the kash optional spkg doesn't work at all on OS X due to mistake in use of tar",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9333",

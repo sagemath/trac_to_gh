@@ -10,6 +10,7 @@ archive/issues_006290.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1",
     "title": "Allow latex_name=LaTeX keyword while defining symbolic function",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6290",

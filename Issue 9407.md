@@ -10,6 +10,7 @@ archive/issues_009407.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-9.3",
     "title": "fixed fields for dirichlet characters and conductors and dirichlet characters for abelian fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9407",

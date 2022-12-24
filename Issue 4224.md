@@ -10,6 +10,7 @@ archive/issues_004224.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
     "title": "small error in new question-mark interval printing",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4224",

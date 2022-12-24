@@ -10,6 +10,7 @@ archive/issues_003983.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "[with patch, needs review] get coverage for sage/interfaces/sage0.py up to 100%",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3983",

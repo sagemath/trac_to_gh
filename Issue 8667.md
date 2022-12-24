@@ -10,6 +10,7 @@ archive/issues_008667.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.2",
     "title": "New version of modular group cohomology spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8667",

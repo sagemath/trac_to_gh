@@ -10,6 +10,7 @@ archive/issues_005931.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.1",
     "title": "[with patch, needs review] Greatly speed up sage.combinat.symmetric_group_algebra.e",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5931",

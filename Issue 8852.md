@@ -10,6 +10,7 @@ archive/issues_008852.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.3",
     "title": "minor doctest fix in fast_eval.pyx for Cygwin",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8852",

@@ -10,6 +10,7 @@ archive/issues_000852.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.7",
     "title": "Singular's Factorisation crashes under OSX",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/852",

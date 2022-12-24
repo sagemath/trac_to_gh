@@ -10,6 +10,7 @@ archive/issues_002038.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "plotting -- error message when failing to evaluate at a point is now sucky (it used to be good)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2038",

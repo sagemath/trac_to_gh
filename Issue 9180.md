@@ -10,6 +10,7 @@ archive/issues_009180.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.7.2",
     "title": "Absolute interval arithmetic",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9180",

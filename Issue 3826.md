@@ -10,6 +10,7 @@ archive/issues_003826.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "Empty string in interact prints \\x00",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3826",

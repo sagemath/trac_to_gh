@@ -10,6 +10,7 @@ archive/issues_001371.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
     "title": "hg_sage.pull/push() to non-default server with multiple branches",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1371",

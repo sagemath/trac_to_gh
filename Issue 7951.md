@@ -10,6 +10,7 @@ archive/issues_007951.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.2",
     "title": "coercion problem with 0 variable polynomials",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7951",

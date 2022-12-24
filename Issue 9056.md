@@ -10,6 +10,7 @@ archive/issues_009056.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.4",
     "title": "Add the category of SemiRings with an example : NonNegativeIntegers()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9056",

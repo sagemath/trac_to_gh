@@ -10,6 +10,7 @@ archive/issues_007978.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.3",
     "title": "The file sage/combinat/affine.py contains lots of 'tab' characters",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7978",

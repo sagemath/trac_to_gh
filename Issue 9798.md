@@ -10,6 +10,7 @@ archive/issues_009798.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6.1",
     "title": "Running \"make\" in SAGE_ROOT returns the wrong exit code, leading to all kinds of confusion",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9798",

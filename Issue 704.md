@@ -10,6 +10,7 @@ archive/issues_000704.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.5",
     "title": "create a global proof option, which integrates \"proof = False\" and \"proof = True\" in a much better way",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/704",

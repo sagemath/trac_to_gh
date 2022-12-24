@@ -10,6 +10,7 @@ archive/issues_003600.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "[with patch, needs review] implement process pool for dsage workers",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3600",

@@ -10,6 +10,7 @@ archive/issues_002487.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.4",
     "title": "unused/broken p-adic morphism.pyx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2487",

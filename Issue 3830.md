@@ -10,6 +10,7 @@ archive/issues_003830.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "plot(sin(1/x), (x,-1,3), foo=10) yields an error message about line, but should yield one about plot.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3830",

@@ -10,6 +10,7 @@ archive/issues_007218.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Spanish doc #6 \"Half Integral Weight Forms\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7218",

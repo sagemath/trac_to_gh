@@ -10,6 +10,7 @@ archive/issues_009243.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.2",
     "title": "sage-doctest should use powers of 2 for return codes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9243",

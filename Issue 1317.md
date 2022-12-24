@@ -10,6 +10,7 @@ archive/issues_001317.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "[graphs] calculate edge and vertex cut-sets",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1317",

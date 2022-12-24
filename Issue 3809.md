@@ -10,6 +10,7 @@ archive/issues_003809.json:
         "trivial",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
     "title": "reorder checks for creating a number field; prevents some silly errors",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3809",

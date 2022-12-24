@@ -10,6 +10,7 @@ archive/issues_009747.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6.2",
     "title": "assigment to 1x1 submatrices specified by slices fails",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9747",

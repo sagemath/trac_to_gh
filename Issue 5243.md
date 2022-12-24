@@ -10,6 +10,7 @@ archive/issues_005243.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
     "title": "[with patch, needs review] non decreasing parking functions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5243",

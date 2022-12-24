@@ -10,6 +10,7 @@ archive/issues_006425.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "GammaH constructor doesn't check the gens are units mod N",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6425",

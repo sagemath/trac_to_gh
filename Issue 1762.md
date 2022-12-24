@@ -10,6 +10,7 @@ archive/issues_001762.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
     "title": "Create optional graphviz package",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1762",

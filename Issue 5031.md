@@ -10,6 +10,7 @@ archive/issues_005031.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "get doctesting of matrix/misc.pyx up to 100%; also make A.lift() 20 times faster by moving a \"gem\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5031",

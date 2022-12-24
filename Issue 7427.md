@@ -10,6 +10,7 @@ archive/issues_007427.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "angle \"wheel\" widget for interacts",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7427",

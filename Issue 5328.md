@@ -10,6 +10,7 @@ archive/issues_005328.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Make the ATLAS rebuild on tolerance incremental (followup to #1641)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5328",

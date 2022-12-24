@@ -10,6 +10,7 @@ archive/issues_000384.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
     "title": "latex formatting issues with symbolic expressions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/384",

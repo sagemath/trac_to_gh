@@ -10,6 +10,7 @@ archive/issues_001252.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.14",
     "title": "2.8.13: gmp related build problems on OSX 10.4.11, 10.5.1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1252",

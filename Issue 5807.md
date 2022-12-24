@@ -10,6 +10,7 @@ archive/issues_005807.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "dsage with @parallel doesn't work at all",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5807",

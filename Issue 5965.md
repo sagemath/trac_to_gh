@@ -10,6 +10,7 @@ archive/issues_005965.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Check {{{/dev/pts}}} and {{{/dev/shm}}} requirement on linux",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5965",

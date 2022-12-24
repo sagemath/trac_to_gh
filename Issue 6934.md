@@ -10,6 +10,7 @@ archive/issues_006934.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
     "title": "Fix eigenvectors (and a lot of other stuff) for symbolic matrices",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6934",

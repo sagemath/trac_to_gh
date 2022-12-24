@@ -10,6 +10,7 @@ archive/issues_004349.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
     "title": "jmol doesn't work on the command-line on OS X 10.5(.5)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4349",

@@ -10,6 +10,7 @@ archive/issues_002783.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "notebook -- ocassional \"crap\" in output like this   print \"\\x01r\\x01e580\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2783",

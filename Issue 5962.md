@@ -10,6 +10,7 @@ archive/issues_005962.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.7",
     "title": "Comparison in the Gap interface raises an error",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5962",

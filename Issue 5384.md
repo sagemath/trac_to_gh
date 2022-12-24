@@ -10,6 +10,7 @@ archive/issues_005384.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4",
     "title": "pynac symbolics gives very wrong simplifications for simple expressions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5384",

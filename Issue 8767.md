@@ -10,6 +10,7 @@ archive/issues_008767.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.1",
     "title": "libpng -- sage-4.4 fails to build on itanium with GCC-4.5.0",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8767",

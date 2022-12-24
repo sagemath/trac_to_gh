@@ -10,6 +10,7 @@ archive/issues_007148.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
     "title": "[with patch, needs review] tutorial: try to clarify the 'rings' section",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7148",

@@ -10,6 +10,7 @@ archive/issues_005301.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "In sage-3.3.rc2, doing sage -t -long \"devel/sage/sage/plot/plot.py\" causing a matplotlib GUI window to popup",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5301",

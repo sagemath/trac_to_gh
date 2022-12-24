@@ -10,6 +10,7 @@ archive/issues_007188.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-8.6",
     "title": "GNUism in $SAGE_ROOT/spkg/install",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7188",

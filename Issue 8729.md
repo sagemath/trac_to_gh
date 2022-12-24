@@ -10,6 +10,7 @@ archive/issues_008729.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "simple integral using trig functions gives wrong answer",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8729",

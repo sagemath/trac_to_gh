@@ -10,6 +10,7 @@ archive/issues_005943.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Sage 3.4.2.a0: prime_pi(2^50) segfaults",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5943",

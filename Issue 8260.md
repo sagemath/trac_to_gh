@@ -10,6 +10,7 @@ archive/issues_008260.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.4",
     "title": "valuation of zero is wrong for Qq",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8260",

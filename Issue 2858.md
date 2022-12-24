@@ -10,6 +10,7 @@ archive/issues_002858.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "parametric_plot3d doesn't like \"-u\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2858",

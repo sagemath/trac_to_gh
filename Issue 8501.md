@@ -10,6 +10,7 @@ archive/issues_008501.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "find_root evaluates by plugging an equation into the function",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8501",

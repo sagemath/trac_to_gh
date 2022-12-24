@@ -10,6 +10,7 @@ archive/issues_009371.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.7",
     "title": "Implement E.two_torsion_rank() over number fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9371",

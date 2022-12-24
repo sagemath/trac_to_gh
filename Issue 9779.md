@@ -10,6 +10,7 @@ archive/issues_009779.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
     "title": "Missing symbolic link for liblapack.a, so SAGE_ATLAS_LIB does not work on Solaris.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9779",

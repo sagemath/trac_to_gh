@@ -10,6 +10,7 @@ archive/issues_002075.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
     "title": "very serious bug in modules over QQ[x] -- they shouldn't \"work\" (solution fix defn of echelon form over QQ[x] to raise NotImplementedError)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2075",

@@ -10,6 +10,7 @@ archive/issues_006728.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
     "title": "spell-check all modules under sage/quadratic_forms",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6728",

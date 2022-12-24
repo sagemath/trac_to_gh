@@ -10,6 +10,7 @@ archive/issues_009910.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6.2",
     "title": "Changing the LP formulation of feedback vertex/arc set to improve the speed",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9910",

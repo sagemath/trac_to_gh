@@ -10,6 +10,7 @@ archive/issues_003147.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
     "title": "\"Quit Worksheet\" in notebook doesn't seem to work anymore",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3147",

@@ -10,6 +10,7 @@ archive/issues_005906.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
     "title": "\"libpng error: Image width or height is zero in IHDR\" when plotting CompleteGraph(2)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5906",

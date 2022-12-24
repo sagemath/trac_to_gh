@@ -10,6 +10,7 @@ archive/issues_001998.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "animate -- completley broken in sage-2.10.*",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1998",

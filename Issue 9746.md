@@ -10,6 +10,7 @@ archive/issues_009746.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
     "title": "documentation for plotting",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9746",

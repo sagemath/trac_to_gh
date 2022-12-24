@@ -10,6 +10,7 @@ archive/issues_000660.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.5",
     "title": "allow reverse order if converting GF(p^n) element to GF(p)^n element [with patch]",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/660",

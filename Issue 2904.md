@@ -10,6 +10,7 @@ archive/issues_002904.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "sage/matrix/matrix_misc.py has no copyright info",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2904",

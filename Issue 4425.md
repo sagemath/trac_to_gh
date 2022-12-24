@@ -10,6 +10,7 @@ archive/issues_004425.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
     "title": "sqrt(4) returns a SymbolicComposition instead of the number 2!",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4425",

@@ -10,6 +10,7 @@ archive/issues_008490.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.4",
     "title": "Bad behavior of is_square_free for Words",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8490",

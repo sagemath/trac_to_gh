@@ -10,6 +10,7 @@ archive/issues_006709.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "There are many doctest failues on Solaris.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6709",

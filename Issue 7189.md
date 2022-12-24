@@ -10,6 +10,7 @@ archive/issues_007189.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "French translation: A Tour of Sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7189",

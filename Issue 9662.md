@@ -10,6 +10,7 @@ archive/issues_009662.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "gp(string) always returns a value, even when it should not",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9662",

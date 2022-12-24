@@ -10,6 +10,7 @@ archive/issues_006124.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Bug in galois_group of a p-adic field extension",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6124",

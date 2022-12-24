@@ -10,6 +10,7 @@ archive/issues_001342.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.15",
     "title": "very serious bug in number field residue_field",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1342",

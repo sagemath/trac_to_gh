@@ -10,6 +10,7 @@ archive/issues_006196.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1",
     "title": "mpmath support",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6196",

@@ -10,6 +10,7 @@ archive/issues_005609.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
     "title": "[with patch, needs review] some functions for BooleanPolynomialIdeal",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5609",

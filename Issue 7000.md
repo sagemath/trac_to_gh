@@ -10,6 +10,7 @@ archive/issues_007000.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
     "title": "Move Sphinx-ify on-the-fly code to another module",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7000",

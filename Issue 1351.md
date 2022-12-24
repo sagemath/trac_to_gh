@@ -10,6 +10,7 @@ archive/issues_001351.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
     "title": "notebook -- for person users admin is usually the only user -- in such cases fill it in as the default",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1351",

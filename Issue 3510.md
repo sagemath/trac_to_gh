@@ -10,6 +10,7 @@ archive/issues_003510.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "sage charpoly woefully slower than Mma's for small integer matrices",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3510",

@@ -10,6 +10,7 @@ archive/issues_008801.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-7.1",
     "title": "implement the projective dual of a plane curve",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8801",

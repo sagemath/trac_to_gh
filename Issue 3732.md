@@ -10,6 +10,7 @@ archive/issues_003732.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "calculus -- some examples of sage integration failing",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3732",

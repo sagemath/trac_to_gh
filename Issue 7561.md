@@ -10,6 +10,7 @@ archive/issues_007561.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "Replaces InfinitePolynomialRing in MixedIntegerLinearProgram by 'var'",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7561",

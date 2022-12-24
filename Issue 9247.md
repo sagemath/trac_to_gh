@@ -10,6 +10,7 @@ archive/issues_009247.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.3",
     "title": "A collection of little improvements to elliptic curves",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9247",

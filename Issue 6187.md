@@ -10,6 +10,7 @@ archive/issues_006187.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
     "title": "After making a clone, the reference manual (and other docs) should not have to be completely rebuilt.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6187",

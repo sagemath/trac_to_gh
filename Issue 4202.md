@@ -10,6 +10,7 @@ archive/issues_004202.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
     "title": "latex derivatives of symbolic functions nicely",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4202",

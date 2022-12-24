@@ -10,6 +10,7 @@ archive/issues_002528.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.4",
     "title": "File sage/modular/dims_doc.py should be removed soon",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2528",

@@ -10,6 +10,7 @@ archive/issues_000411.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.3",
     "title": "sage_c_lib moved into primary sage tree",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/411",

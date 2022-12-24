@@ -10,6 +10,7 @@ archive/issues_003400.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "Elements of GL(n,R) should coerce properly to matrices",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3400",

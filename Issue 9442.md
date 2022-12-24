@@ -10,6 +10,7 @@ archive/issues_009442.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5",
     "title": "reference manual issues for 4.5.alpha4",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9442",

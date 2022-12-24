@@ -10,6 +10,7 @@ archive/issues_006468.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
     "title": "FiniteField_prime_modn.__call__ should raise an error, rather than return an error",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6468",

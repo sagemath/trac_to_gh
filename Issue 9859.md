@@ -10,6 +10,7 @@ archive/issues_009859.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
     "title": "Port changes in PARI 2.3.5.p4 (#9722) to current 2.4.3",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9859",

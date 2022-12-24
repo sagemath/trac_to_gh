@@ -10,6 +10,7 @@ archive/issues_002750.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-feature",
     "title": "Implement GF(p^n) as relative extension of GF(p^d)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2750",

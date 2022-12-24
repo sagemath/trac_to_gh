@@ -10,6 +10,7 @@ archive/issues_007198.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "Free Algebra Iteration, needs review",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7198",

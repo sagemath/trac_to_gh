@@ -10,6 +10,7 @@ archive/issues_006658.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
     "title": "digits() claims it defaults to base 2, but it defaults to base 10",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6658",

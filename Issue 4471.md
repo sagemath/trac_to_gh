@@ -10,6 +10,7 @@ archive/issues_004471.json:
         "trivial",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2.1",
     "title": "name worksheet when creating a new worksheet",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4471",

@@ -10,6 +10,7 @@ archive/issues_004248.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
     "title": "aspect_ratio is buggy in plot3d",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4248",

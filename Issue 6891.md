@@ -10,6 +10,7 @@ archive/issues_006891.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
     "title": "Bring functions.spike_functions.py to 100% coverage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6891",

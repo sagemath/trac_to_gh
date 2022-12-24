@@ -10,6 +10,7 @@ archive/issues_005203.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "[with spkg, needs review] Update mpir to 0.9.rc3 release [latest upstream]",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5203",

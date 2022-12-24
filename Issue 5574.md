@@ -10,6 +10,7 @@ archive/issues_005574.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-8.2",
     "title": "taking symbolic powers should coerce objects to symbolic expressions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5574",

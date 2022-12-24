@@ -10,6 +10,7 @@ archive/issues_005223.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
     "title": "[with patch; needs review] silly bug in flint wrapper makes it a factor of 10 slower for division of a polynomial by an integer",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5223",

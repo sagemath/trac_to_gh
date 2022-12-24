@@ -10,6 +10,7 @@ archive/issues_001958.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
     "title": "[with patch, needs review] fix problems with ANSI codes in sage0.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1958",

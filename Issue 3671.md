@@ -10,6 +10,7 @@ archive/issues_003671.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
     "title": "ssmod.py doctest failures in Sage 3.0.4 or later",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3671",

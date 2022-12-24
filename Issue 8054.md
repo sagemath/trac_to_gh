@@ -10,6 +10,7 @@ archive/issues_008054.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
     "title": "roots(algorithm='numpy') does not work in arbitrary precision",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8054",

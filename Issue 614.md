@@ -10,6 +10,7 @@ archive/issues_000614.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.4",
     "title": "structure/element.pyx:  non-integral exponents not supported error in doctest",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/614",

@@ -10,6 +10,7 @@ archive/issues_001568.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
     "title": "[with patch] hypellfrob -- faster zeta functions for hyperelliptic curves",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1568",

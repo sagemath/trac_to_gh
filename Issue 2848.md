@@ -10,6 +10,7 @@ archive/issues_002848.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "numerical noise in sage/misc/prandom.py on MacIntel OSX 10.5/",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2848",

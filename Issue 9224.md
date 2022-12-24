@@ -10,6 +10,7 @@ archive/issues_009224.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Unify sage-test and sage-ptest",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9224",

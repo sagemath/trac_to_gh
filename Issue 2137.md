@@ -10,6 +10,7 @@ archive/issues_002137.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.3",
     "title": "implement loading of pyx files when loading .sage files (probably relatively easy; in sage/misc/*)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2137",

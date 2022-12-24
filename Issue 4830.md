@@ -10,6 +10,7 @@ archive/issues_004830.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "[with patch, needs review] remove duplicate code lines in real_mpfr.pyx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4830",

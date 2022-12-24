@@ -10,6 +10,7 @@ archive/issues_007075.json:
         "trivial",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Two last figure saves to wrong place",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7075",

@@ -10,6 +10,7 @@ archive/issues_008576.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4",
     "title": "Categories for QQ, CC, RR and friends",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8576",

@@ -10,6 +10,7 @@ archive/issues_004494.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.3",
     "title": "conjugate method returns error on ZZ matrix",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4494",

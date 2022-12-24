@@ -10,6 +10,7 @@ archive/issues_008622.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Atkin-Lehner operators don't work for odd weight modular forms",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8622",

@@ -10,6 +10,7 @@ archive/issues_001886.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
     "title": "[with patch - actually tuning tarball] add atlas pretuning for AMD Athlon MP processors",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1886",

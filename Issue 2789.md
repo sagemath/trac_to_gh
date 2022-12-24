@@ -10,6 +10,7 @@ archive/issues_002789.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "multivariate polynomials over residue fields of number fields are broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2789",

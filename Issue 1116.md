@@ -10,6 +10,7 @@ archive/issues_001116.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
     "title": "sage -sdist recreates certain empty files in local/bin",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1116",

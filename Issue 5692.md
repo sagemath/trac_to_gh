@@ -10,6 +10,7 @@ archive/issues_005692.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
     "title": "[with patch; needs review] fix some accents that prevent cloning",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5692",

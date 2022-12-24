@@ -10,6 +10,7 @@ archive/issues_006806.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
     "title": "typo in patch of ticket #6396: primes_of_degree_one is broken for relative extensions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6806",

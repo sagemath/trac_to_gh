@@ -10,6 +10,7 @@ archive/issues_003284.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
     "title": "[with patch, needs work, SEGFAULTs!] use weakref for PolyBoRi",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3284",

@@ -10,6 +10,7 @@ archive/issues_000537.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "leak in _ntl_gsetlength (from modular/dirichlet.py)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/537",

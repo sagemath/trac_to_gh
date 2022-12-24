@@ -10,6 +10,7 @@ archive/issues_005960.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "fix bug in documentation of find_minimum_on_interval",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5960",

@@ -10,6 +10,7 @@ archive/issues_006252.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.2",
     "title": "Add 11 people to the development map",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6252",

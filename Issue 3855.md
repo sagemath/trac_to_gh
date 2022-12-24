@@ -10,6 +10,7 @@ archive/issues_003855.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
     "title": "point3d size default is too small to see",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3855",

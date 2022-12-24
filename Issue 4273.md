@@ -10,6 +10,7 @@ archive/issues_004273.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
     "title": "Failure on Jordan form transformation matrices",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4273",

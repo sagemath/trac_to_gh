@@ -10,6 +10,7 @@ archive/issues_006374.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
     "title": "[with patch, needs review] Fix race condition in sage build process",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6374",

@@ -10,6 +10,7 @@ archive/issues_007862.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "singular creates some 32-bit and some 64-bit objects on Open Solaris",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7862",

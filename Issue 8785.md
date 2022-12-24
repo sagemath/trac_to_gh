@@ -10,6 +10,7 @@ archive/issues_008785.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.1",
     "title": "avoid subtle interaction between importing multiprocessing and twisted",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8785",

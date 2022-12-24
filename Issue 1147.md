@@ -10,6 +10,7 @@ archive/issues_001147.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
     "title": "change location of valgrind output files to something less obnoxious",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1147",

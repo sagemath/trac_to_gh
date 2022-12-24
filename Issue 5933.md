@@ -10,6 +10,7 @@ archive/issues_005933.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.2",
     "title": "Bring primes.py to 100%",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5933",

@@ -10,6 +10,7 @@ archive/issues_002948.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
     "title": "(Additional) Docstrings and Doctests for rings/quotient_ring.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2948",

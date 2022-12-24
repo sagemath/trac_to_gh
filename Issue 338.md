@@ -10,6 +10,7 @@ archive/issues_000338.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "In doc browser make hyper links to referenced code in SAGE library",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/338",

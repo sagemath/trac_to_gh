@@ -10,6 +10,7 @@ archive/issues_007648.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "notebook: issue with indentation of first line being wrong",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7648",

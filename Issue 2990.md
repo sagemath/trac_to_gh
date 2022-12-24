@@ -10,6 +10,7 @@ archive/issues_002990.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "sage-3.0.rc1: calculus/functions.py segfault on debian64 xeon vmware image",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2990",

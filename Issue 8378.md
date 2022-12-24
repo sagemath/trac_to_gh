@@ -10,6 +10,7 @@ archive/issues_008378.json:
         "trivial",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.1",
     "title": "[trivial to fix] typo in documentation of crt",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8378",

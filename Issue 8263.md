@@ -10,6 +10,7 @@ archive/issues_008263.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5",
     "title": "Document ALL environment variables used by Sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8263",

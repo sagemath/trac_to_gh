@@ -10,6 +10,7 @@ archive/issues_008937.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-feature",
     "title": "Implementation of AES with different key sizes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8937",

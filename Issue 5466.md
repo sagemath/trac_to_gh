@@ -10,6 +10,7 @@ archive/issues_005466.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4",
     "title": "[with patch, needs review] Make symbolic variables unpickle uniquely",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5466",

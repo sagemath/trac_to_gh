@@ -10,6 +10,7 @@ archive/issues_008124.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.3",
     "title": "Selmer groups for number fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8124",

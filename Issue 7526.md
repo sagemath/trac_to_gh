@@ -10,6 +10,7 @@ archive/issues_007526.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "polynomial_template should avoid unnecessary coercions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7526",

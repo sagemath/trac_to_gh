@@ -10,6 +10,7 @@ archive/issues_008012.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.2",
     "title": "spurious argument in RIF documentation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8012",

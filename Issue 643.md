@@ -10,6 +10,7 @@ archive/issues_000643.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.7",
     "title": "notebook -- fix space issues with the top bar.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/643",

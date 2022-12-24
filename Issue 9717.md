@@ -10,6 +10,7 @@ archive/issues_009717.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.3",
     "title": "fix variable substitution in PolyBoRi",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9717",

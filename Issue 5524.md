@@ -10,6 +10,7 @@ archive/issues_005524.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.2",
     "title": "attrcall missing __cmp__",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5524",

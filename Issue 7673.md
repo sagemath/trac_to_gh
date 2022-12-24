@@ -10,6 +10,7 @@ archive/issues_007673.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "implement Dijkstra's algorithm for C graphs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7673",

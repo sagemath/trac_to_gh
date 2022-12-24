@@ -10,6 +10,7 @@ archive/issues_004341.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
     "title": "[with patch, needs review] Optimisations + corrections to latin.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4341",

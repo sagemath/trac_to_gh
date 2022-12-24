@@ -10,6 +10,7 @@ archive/issues_001930.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
     "title": "Sage 2.10.1.alpha2: R is broken for parallel make, rpy is broken for fresh installs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1930",

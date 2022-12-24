@@ -10,6 +10,7 @@ archive/issues_005833.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Update libgcrypt to 1.4.4",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5833",

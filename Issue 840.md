@@ -10,6 +10,7 @@ archive/issues_000840.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.7",
     "title": "[with patch] new real root isolation algorithm",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/840",

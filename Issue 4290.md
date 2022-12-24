@@ -10,6 +10,7 @@ archive/issues_004290.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1",
     "title": "stopgap function to turn plane curves of genus one into elliptic curves",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4290",

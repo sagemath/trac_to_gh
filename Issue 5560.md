@@ -10,6 +10,7 @@ archive/issues_005560.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
     "title": "[with patch, needs review] NTL interface missing wrappers for vec_GF2 type and GF2X::MinPolySeq",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5560",

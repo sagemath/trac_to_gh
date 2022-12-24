@@ -10,6 +10,7 @@ archive/issues_009295.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5",
     "title": "Add an spkg-check file for Python",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9295",

@@ -10,6 +10,7 @@ archive/issues_003349.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "OSX: make sure LDFLAGS are set for linking purposes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3349",

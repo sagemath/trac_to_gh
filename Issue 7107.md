@@ -10,6 +10,7 @@ archive/issues_007107.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
     "title": "sage does not build on ppc os x 10.4 anymore, failing with mpfr",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7107",

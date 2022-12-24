@@ -10,6 +10,7 @@ archive/issues_001891.json:
         "trivial",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "remove workaround when Pari > 2.3.3 is released",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1891",

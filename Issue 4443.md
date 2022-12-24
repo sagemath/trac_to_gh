@@ -10,6 +10,7 @@ archive/issues_004443.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
     "title": "[with patch, needs review] Massive prime_range speedup, arith* files cleanup",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4443",

@@ -10,6 +10,7 @@ archive/issues_002678.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "modform -- a missing canonical coercion",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2678",

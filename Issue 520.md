@@ -10,6 +10,7 @@ archive/issues_000520.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.4",
     "title": "memory leak: some small issues with Givaro",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/520",

@@ -10,6 +10,7 @@ archive/issues_003451.json:
         "trivial",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "inaccurate error message in scheme morphisms",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3451",

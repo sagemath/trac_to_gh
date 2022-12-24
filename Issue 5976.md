@@ -10,6 +10,7 @@ archive/issues_005976.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.2",
     "title": "[with patch; needs work] Add an Elliptic Curve Isogeny object",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5976",

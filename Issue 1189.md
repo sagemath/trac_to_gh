@@ -10,6 +10,7 @@ archive/issues_001189.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9",
     "title": "update sympy to 0.5.7, patch to make SymPy and SAGE work nicely",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1189",

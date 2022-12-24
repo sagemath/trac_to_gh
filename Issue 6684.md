@@ -10,6 +10,7 @@ archive/issues_006684.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
     "title": "warnings when building reference manual in Sage 4.1.1.rc2",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6684",

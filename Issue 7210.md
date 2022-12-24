@@ -10,6 +10,7 @@ archive/issues_007210.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Make revolution plot 3d",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7210",

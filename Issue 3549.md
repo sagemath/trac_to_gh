@@ -10,6 +10,7 @@ archive/issues_003549.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "change pari (and sage) so that one can add to the list of precomputed primes that are used for trial division",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3549",

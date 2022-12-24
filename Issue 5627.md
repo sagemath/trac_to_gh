@@ -10,6 +10,7 @@ archive/issues_005627.json:
         "trivial",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.2",
     "title": "Trivial typo in quadratic_nonresidue",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5627",

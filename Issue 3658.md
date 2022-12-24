@@ -10,6 +10,7 @@ archive/issues_003658.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "A PARI bug results in an unreliable prime_pi",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3658",

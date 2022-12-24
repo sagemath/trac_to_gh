@@ -10,6 +10,7 @@ archive/issues_009513.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Sage 4.4.4 build fails due to mixing prefix/home",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9513",

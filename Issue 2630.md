@@ -10,6 +10,7 @@ archive/issues_002630.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Python API for sage-ptest",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2630",

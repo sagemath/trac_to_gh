@@ -10,6 +10,7 @@ archive/issues_002503.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.4",
     "title": "Sage 2.10.4.alpha4: doctest failout in sage/misc/functional.py from #2421",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2503",

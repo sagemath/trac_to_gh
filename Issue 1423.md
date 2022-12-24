@@ -10,6 +10,7 @@ archive/issues_001423.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9",
     "title": "bug/issue in python.eval from sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1423",

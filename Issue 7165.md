@@ -10,6 +10,7 @@ archive/issues_007165.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-9.1",
     "title": "an other bug in plot, real_part, imaginary_part and sqrt.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7165",

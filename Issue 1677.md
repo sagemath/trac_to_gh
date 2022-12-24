@@ -10,6 +10,7 @@ archive/issues_001677.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9.2",
     "title": "trivial-to-fix mistake in the rubiks spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1677",

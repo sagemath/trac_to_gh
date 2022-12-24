@@ -10,6 +10,7 @@ archive/issues_004029.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "sage-env kills the shell when called from \"wrong\" directory",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4029",

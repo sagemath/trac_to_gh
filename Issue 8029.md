@@ -10,6 +10,7 @@ archive/issues_008029.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.8",
     "title": "Defect: Power series over a polynomial ring with real coefficients",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8029",

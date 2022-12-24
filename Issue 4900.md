@@ -10,6 +10,7 @@ archive/issues_004900.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "New BSGS point counting on elliptic curves over finite fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4900",

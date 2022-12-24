@@ -10,6 +10,7 @@ archive/issues_007995.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.2",
     "title": "sage-test doesn't handle all of sage-doctest's return values",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7995",

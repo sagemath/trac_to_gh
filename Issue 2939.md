@@ -10,6 +10,7 @@ archive/issues_002939.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.1",
     "title": "piecewise.py improvements (docstring and laplace fixes)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2939",

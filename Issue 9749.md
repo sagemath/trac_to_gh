@@ -10,6 +10,7 @@ archive/issues_009749.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
     "title": "huge performance regression in computing with level one modular forms",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9749",

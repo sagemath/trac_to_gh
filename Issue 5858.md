@@ -10,6 +10,7 @@ archive/issues_005858.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
     "title": "Octave library linking problems",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5858",

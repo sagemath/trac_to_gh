@@ -10,6 +10,7 @@ archive/issues_009696.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
     "title": "Add methods to AdditiveAbelianGroup",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9696",

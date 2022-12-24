@@ -10,6 +10,7 @@ archive/issues_008108.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.2",
     "title": "Expand the Sage Developer Guide for newcomers",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8108",

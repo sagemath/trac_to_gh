@@ -10,6 +10,7 @@ archive/issues_000706.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.5",
     "title": "irange --- also add range that includes the endpoints by default",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/706",

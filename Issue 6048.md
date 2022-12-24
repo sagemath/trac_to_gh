@@ -10,6 +10,7 @@ archive/issues_006048.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
     "title": "[with patch, needs review] fix non-ASCII character in mpolynomialsystem",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6048",

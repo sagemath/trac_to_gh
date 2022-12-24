@@ -10,6 +10,7 @@ archive/issues_005919.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.2",
     "title": "[with patch, needs review] bug in conversion of polys over GF(2,e) from NTL to singular",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5919",

@@ -10,6 +10,7 @@ archive/issues_004709.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
     "title": "[with patch; needs review] sage/magma hyperelliptic curve conversion",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4709",

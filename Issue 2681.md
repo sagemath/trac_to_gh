@@ -10,6 +10,7 @@ archive/issues_002681.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
     "title": "[with patch, needs review] improve doctest coverage in libs/pari/gen.pyx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2681",

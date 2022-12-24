@@ -10,6 +10,7 @@ archive/issues_007776.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "Implements sage.misc.misc.inject_variable(name, value)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7776",

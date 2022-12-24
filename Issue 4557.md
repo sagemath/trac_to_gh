@@ -10,6 +10,7 @@ archive/issues_004557.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
     "title": "cos._fast_float_ returns math.sin",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4557",

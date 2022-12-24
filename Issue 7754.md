@@ -10,6 +10,7 @@ archive/issues_007754.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "Weyl group optimizations",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7754",

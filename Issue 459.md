@@ -10,6 +10,7 @@ archive/issues_000459.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.2",
     "title": "TypeError: unsupported operand parent(s) for '*': 'Polynomial Ring in u, v over Integer Ring'",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/459",

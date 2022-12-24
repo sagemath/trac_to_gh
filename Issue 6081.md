@@ -10,6 +10,7 @@ archive/issues_006081.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.1",
     "title": "[with patch, needs review] make abelian categories abelian",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6081",

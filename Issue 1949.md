@@ -10,6 +10,7 @@ archive/issues_001949.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-8.4",
     "title": "rewrite the mwrank interface to get rid of wrap.* and use C++",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1949",

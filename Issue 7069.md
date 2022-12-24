@@ -10,6 +10,7 @@ archive/issues_007069.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "tachyon-0.98beta.p9 ignores CC and uses gcc, so can't build with Sun Studio.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7069",

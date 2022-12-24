@@ -10,6 +10,7 @@ archive/issues_001676.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9.2",
     "title": "memleak and unused variable in pAdicCappedAbsoluteElement",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1676",

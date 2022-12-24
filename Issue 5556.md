@@ -10,6 +10,7 @@ archive/issues_005556.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
     "title": "symbolic gamma function and symbolic log function are incoherent",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5556",

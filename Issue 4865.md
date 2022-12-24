@@ -10,6 +10,7 @@ archive/issues_004865.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "dvipng optional spkg fails to build on sage.math (our main devel machine)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4865",

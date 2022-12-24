@@ -10,6 +10,7 @@ archive/issues_004445.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
     "title": "is_isomorphic throws an error when the graph is compared to itself",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4445",

@@ -10,6 +10,7 @@ archive/issues_009787.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "The coordinates appearing in the output of variety(L) should be easier to access",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9787",

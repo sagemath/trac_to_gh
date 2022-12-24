@@ -10,6 +10,7 @@ archive/issues_005671.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Create a spkg for minisat",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5671",

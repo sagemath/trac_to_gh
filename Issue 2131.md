@@ -10,6 +10,7 @@ archive/issues_002131.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
     "title": "disable \"padlock\" support in libgcrypt",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2131",

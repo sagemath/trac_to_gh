@@ -10,6 +10,7 @@ archive/issues_007484.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Sage does not build on stock Ubuntu 9.10 without installing gfortran and setting SAGE_FORTRAN(_LIB)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7484",

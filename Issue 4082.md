@@ -10,6 +10,7 @@ archive/issues_004082.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "[with patch, needs review] Sage 3.1.2.rc0: numerical noise on OSX/Intel in schemes/elliptic_curves/ell_number_field.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4082",

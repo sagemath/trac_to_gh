@@ -10,6 +10,7 @@ archive/issues_004473.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
     "title": "[with patch; needs review] loading file.sage that has a line \"load foo.py\" is broken due to a missing import",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4473",

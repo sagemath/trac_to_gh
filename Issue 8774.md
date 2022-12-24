@@ -10,6 +10,7 @@ archive/issues_008774.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.1",
     "title": "gap-4.4.12.p0 is full of *CRAP*",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8774",

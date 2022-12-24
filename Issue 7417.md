@@ -10,6 +10,7 @@ archive/issues_007417.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2.1",
     "title": "disturbing notebook resource limit",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7417",

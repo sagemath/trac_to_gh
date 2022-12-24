@@ -10,6 +10,7 @@ archive/issues_006652.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
     "title": "should not have algebra structure on streams",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6652",

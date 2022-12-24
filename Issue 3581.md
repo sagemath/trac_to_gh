@@ -10,6 +10,7 @@ archive/issues_003581.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
     "title": "The new pbuild pyhon files are not copied on sdist",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3581",

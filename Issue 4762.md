@@ -10,6 +10,7 @@ archive/issues_004762.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "Odd error message for congruence subgroups",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4762",

@@ -10,6 +10,7 @@ archive/issues_009113.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "sage-4.4.3.alpha1 -lpng blocker issue",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9113",

@@ -10,6 +10,7 @@ archive/issues_006928.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
     "title": "Upgrade the Trac spkg to 0.11.5",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6928",

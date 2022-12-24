@@ -10,6 +10,7 @@ archive/issues_006949.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.2",
     "title": "add symbolic max and min functions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6949",

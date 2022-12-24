@@ -10,6 +10,7 @@ archive/issues_004267.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "Make javascript packages spkgs instead of part of the extcode repository",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4267",

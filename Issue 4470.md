@@ -10,6 +10,7 @@ archive/issues_004470.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4",
     "title": "Merge Jon Hanke's qudratic forms code into Sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4470",

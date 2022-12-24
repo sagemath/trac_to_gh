@@ -10,6 +10,7 @@ archive/issues_004827.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "[with patch, needs review] add L-BFGS-B bound constraint solver to minimize_constraint",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4827",

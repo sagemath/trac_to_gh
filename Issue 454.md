@@ -10,6 +10,7 @@ archive/issues_000454.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.4",
     "title": "VERY SEVERE memory leaks, probably in linear algebra -- exposed by modular symbols functionality",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/454",

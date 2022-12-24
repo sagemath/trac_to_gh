@@ -10,6 +10,7 @@ archive/issues_006176.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.1",
     "title": "ReSTify modules in sage/numerical and put them in reference manual",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6176",

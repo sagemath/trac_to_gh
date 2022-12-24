@@ -10,6 +10,7 @@ archive/issues_001997.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
     "title": "magma interface -- interrupting restarts magma way way too aggressively",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1997",

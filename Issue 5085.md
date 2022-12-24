@@ -10,6 +10,7 @@ archive/issues_005085.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "fix_fpu for real_roots",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5085",

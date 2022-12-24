@@ -10,6 +10,7 @@ archive/issues_008885.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.7.1",
     "title": "deprecated_functions_alias and sphinx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8885",

@@ -10,6 +10,7 @@ archive/issues_004958.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.1",
     "title": "MPolynomialIdeal.reduced_basis?? returns decorator source",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4958",

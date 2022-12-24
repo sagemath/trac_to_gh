@@ -10,6 +10,7 @@ archive/issues_004343.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
     "title": "gradient needs to be more careful about the variables",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4343",

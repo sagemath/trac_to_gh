@@ -10,6 +10,7 @@ archive/issues_007421.json:
         "blocker",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "Weaker precondition for registering a new coercion.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7421",

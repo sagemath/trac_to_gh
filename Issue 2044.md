@@ -10,6 +10,7 @@ archive/issues_002044.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "make sage -upgrade work with caching proxy servers",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2044",

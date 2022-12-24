@@ -10,6 +10,7 @@ archive/issues_003403.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
     "title": "[with patch; needs review] get doctest coverage for rational up to 100%",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3403",

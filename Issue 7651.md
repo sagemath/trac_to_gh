@@ -10,6 +10,7 @@ archive/issues_007651.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "c_graph backends should include a \"reversed\" copy for digraphs in the sparse case",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7651",

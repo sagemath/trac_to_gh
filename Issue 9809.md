@@ -10,6 +10,7 @@ archive/issues_009809.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
     "title": "Heisenbug in RationalPolyhedralCone.facets",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9809",

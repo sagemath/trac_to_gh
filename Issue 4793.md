@@ -10,6 +10,7 @@ archive/issues_004793.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.1",
     "title": "Update lcalc to the new upstream 1.2",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4793",

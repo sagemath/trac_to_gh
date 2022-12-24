@@ -10,6 +10,7 @@ archive/issues_002169.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
     "title": "[with patch; needs review] magma <--> sage conversions: first step to more systematic conversions back and forth",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2169",

@@ -10,6 +10,7 @@ archive/issues_005481.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1",
     "title": "devel/doc/output/* should be filtered from the list of files to doctest",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5481",

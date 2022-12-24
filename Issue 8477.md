@@ -10,6 +10,7 @@ archive/issues_008477.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4",
     "title": "Force GNU make to build PALP serially",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8477",

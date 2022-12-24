@@ -10,6 +10,7 @@ archive/issues_004260.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.8",
     "title": "use LinBox as native matrix representation for dense matrices over GF(p)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4260",

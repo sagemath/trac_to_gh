@@ -10,6 +10,7 @@ archive/issues_000160.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.2",
     "title": "partitions -- sage dies",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/160",

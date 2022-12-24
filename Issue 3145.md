@@ -10,6 +10,7 @@ archive/issues_003145.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
     "title": "documentation and defaults for the 'view' function",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3145",

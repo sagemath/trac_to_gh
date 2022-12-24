@@ -10,6 +10,7 @@ archive/issues_009775.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
     "title": "Cygwin: GLPK extension module needs to be more explicit in its linking",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9775",

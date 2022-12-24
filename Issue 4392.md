@@ -10,6 +10,7 @@ archive/issues_004392.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
     "title": "smallest_integer() is broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4392",

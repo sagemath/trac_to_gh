@@ -10,6 +10,7 @@ archive/issues_000406.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
     "title": "notebook -- improve support for other system modes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/406",

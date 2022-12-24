@@ -10,6 +10,7 @@ archive/issues_001786.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10",
     "title": "coercion error with fraction field of multivariate polynomials",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1786",

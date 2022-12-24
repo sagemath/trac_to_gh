@@ -10,6 +10,7 @@ archive/issues_005148.json:
         "trivial",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "corrections to Andrey Novoseltsev's devmap entry",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5148",

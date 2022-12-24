@@ -10,6 +10,7 @@ archive/issues_006453.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
     "title": "MPFR test failures in Sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6453",

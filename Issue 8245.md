@@ -10,6 +10,7 @@ archive/issues_008245.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.8",
     "title": "tutorial: typo in section \"Euler\u2019s Method for Systems of Differential Equations\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8245",

@@ -10,6 +10,7 @@ archive/issues_006161.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Polynomial rings have no coercion map to themselves",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6161",

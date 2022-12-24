@@ -10,6 +10,7 @@ archive/issues_009327.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
     "title": "Bugs in the Simple Sage Server API of sagenb",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9327",

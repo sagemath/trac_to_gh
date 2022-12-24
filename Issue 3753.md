@@ -10,6 +10,7 @@ archive/issues_003753.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "notebook -- change the default for nb.save('...')",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3753",

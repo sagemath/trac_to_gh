@@ -10,6 +10,7 @@ archive/issues_003114.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "blacklist  gcc version 4.0.0 on OSX",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3114",

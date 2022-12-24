@@ -10,6 +10,7 @@ archive/issues_006882.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.3",
     "title": "bug in conversion of \"i\" from Maxima to Sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6882",

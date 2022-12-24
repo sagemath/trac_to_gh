@@ -10,6 +10,7 @@ archive/issues_002295.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
     "title": "[with patch, needs review] build cache check fails on paths containing symlinks",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2295",

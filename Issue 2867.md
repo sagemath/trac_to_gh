@@ -10,6 +10,7 @@ archive/issues_002867.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "[witch patch, needs review] allow load_files parameter in __call__",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2867",

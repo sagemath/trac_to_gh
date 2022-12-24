@@ -10,6 +10,7 @@ archive/issues_005514.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "implement exclusions for parametric 3d plots",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5514",

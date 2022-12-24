@@ -10,6 +10,7 @@ archive/issues_008497.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.7.2",
     "title": "bug in simplify_rational",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8497",

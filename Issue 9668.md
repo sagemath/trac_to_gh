@@ -10,6 +10,7 @@ archive/issues_009668.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.9",
     "title": "Fix hardcoding of paths in R binary",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9668",

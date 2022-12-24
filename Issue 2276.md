@@ -10,6 +10,7 @@ archive/issues_002276.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
     "title": "M.divides(N) gives an error if M and N are monomials in R.<x,y> = PolynomialRing(QQ); ok for R.<x>",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2276",

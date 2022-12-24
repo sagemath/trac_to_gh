@@ -10,6 +10,7 @@ archive/issues_004942.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-8.4",
     "title": "find_root() is broken when interval borders cannot be evaluated",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4942",

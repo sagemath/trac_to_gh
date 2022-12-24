@@ -10,6 +10,7 @@ archive/issues_001097.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "p-adic polynomials don't have discriminant",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1097",

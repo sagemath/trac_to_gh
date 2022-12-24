@@ -10,6 +10,7 @@ archive/issues_004607.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "double backslash not properly handled in latex mode",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4607",

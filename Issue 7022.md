@@ -10,6 +10,7 @@ archive/issues_007022.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
     "title": "os x -- 10.6 -- generated the matplotlib font cache crashes sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7022",

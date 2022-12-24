@@ -10,6 +10,7 @@ archive/issues_006702.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Sage will not build in 64-bit mode on Solaris",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6702",

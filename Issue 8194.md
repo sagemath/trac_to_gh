@@ -10,6 +10,7 @@ archive/issues_008194.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.3",
     "title": "SageNB 0.8.x",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8194",

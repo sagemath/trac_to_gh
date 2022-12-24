@@ -10,6 +10,7 @@ archive/issues_001826.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
     "title": "cdefs.pxi and stdsage.pxi were missing some function declarations",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1826",

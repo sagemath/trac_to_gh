@@ -10,6 +10,7 @@ archive/issues_008603.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Partial sums are off for Fourier series of piecewise functions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8603",

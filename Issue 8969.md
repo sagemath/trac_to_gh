@@ -10,6 +10,7 @@ archive/issues_008969.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.1",
     "title": "problems with maxima inequalities",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8969",

@@ -10,6 +10,7 @@ archive/issues_003701.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.6",
     "title": "[with spkg, needs review] Solaris: fix polybori build due to bashism",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3701",

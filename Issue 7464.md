@@ -10,6 +10,7 @@ archive/issues_007464.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "[with spkg; needs review] Remove '-v' option from 'cp' command (GNUism) in database_cremona_ellcurve",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7464",

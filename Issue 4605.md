@@ -10,6 +10,7 @@ archive/issues_004605.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
     "title": "Update Cython to 0.10.2 (latest stable upstream)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4605",

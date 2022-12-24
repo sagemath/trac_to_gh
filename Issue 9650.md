@@ -10,6 +10,7 @@ archive/issues_009650.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
     "title": "Adding support for differential forms",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9650",

@@ -10,6 +10,7 @@ archive/issues_004126.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
     "title": "[with patch; not ready for review] improve sage <--> magma interface for number fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4126",

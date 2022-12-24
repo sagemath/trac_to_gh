@@ -10,6 +10,7 @@ archive/issues_004372.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "[with patch] Repair to totallyreal_dsage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4372",

@@ -10,6 +10,7 @@ archive/issues_001696.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
     "title": "osx 10.4 2.9.2 instructions don't work.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1696",

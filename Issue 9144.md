@@ -10,6 +10,7 @@ archive/issues_009144.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Make printing automatically load a print stylesheet",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9144",

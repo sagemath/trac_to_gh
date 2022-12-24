@@ -10,6 +10,7 @@ archive/issues_008271.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "iconv dumps core running make check on Solaris (SPARC)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8271",

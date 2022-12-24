@@ -10,6 +10,7 @@ archive/issues_009847.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "'sage -advanced' does not mention the '-R' flag, which starts the R interpreter",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9847",

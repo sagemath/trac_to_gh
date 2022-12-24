@@ -10,6 +10,7 @@ archive/issues_003989.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "[with spkg, needs review] autotools issues with gd-2.0.35",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3989",

@@ -10,6 +10,7 @@ archive/issues_005835.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "deleting a file from the DATA directory gives an error page",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5835",

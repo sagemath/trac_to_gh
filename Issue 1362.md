@@ -10,6 +10,7 @@ archive/issues_001362.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "edge labeled graph isomorphism",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1362",

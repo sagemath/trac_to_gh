@@ -10,6 +10,7 @@ archive/issues_009991.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.8",
     "title": "Python scripts try to run before Python is built.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9991",

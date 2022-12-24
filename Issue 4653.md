@@ -10,6 +10,7 @@ archive/issues_004653.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
     "title": "Merge sage-words code into Sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4653",

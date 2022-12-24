@@ -10,6 +10,7 @@ archive/issues_004175.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
     "title": "[with patch, needs review] cpdef arithmatic functions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4175",

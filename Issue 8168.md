@@ -10,6 +10,7 @@ archive/issues_008168.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.8",
     "title": "Keyword option to keep reset() from detaching all attached files",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8168",

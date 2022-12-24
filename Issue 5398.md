@@ -10,6 +10,7 @@ archive/issues_005398.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4",
     "title": "clone is broken in Sage 3.4.alpha0 due to non-7 bit ASCII characters in docstrings",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5398",

@@ -10,6 +10,7 @@ archive/issues_000168.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-1.8",
     "title": "Plot bounds ignored when frame=True",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/168",

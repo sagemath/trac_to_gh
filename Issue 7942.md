@@ -10,6 +10,7 @@ archive/issues_007942.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "latex(I) should be the string \"i\" not \"I\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7942",

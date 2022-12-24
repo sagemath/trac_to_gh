@@ -10,6 +10,7 @@ archive/issues_001298.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.15",
     "title": "[with spkg] To build atlas on osx, we need to actual build lapack on osx.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1298",

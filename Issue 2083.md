@@ -10,6 +10,7 @@ archive/issues_002083.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
     "title": "[with patch, needs review] Make number_field .galois_closure require a name and .galois_conjugates take an explicit field.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2083",

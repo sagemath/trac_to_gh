@@ -10,6 +10,7 @@ archive/issues_006563.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
     "title": "[with patch; needs review] Singular fails to install header files, since it fails to find install-sh",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6563",

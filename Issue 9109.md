@@ -10,6 +10,7 @@ archive/issues_009109.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.7",
     "title": "Fast cython class for maps between finite sets.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9109",

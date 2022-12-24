@@ -10,6 +10,7 @@ archive/issues_009345.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6.1",
     "title": "Unhandled SIGFPE is rational_reconstruction if the modulus is zero",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9345",

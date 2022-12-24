@@ -10,6 +10,7 @@ archive/issues_001876.json:
         "trivial",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.4",
     "title": "minor typo in reference manual section 8.1.1.2",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1876",

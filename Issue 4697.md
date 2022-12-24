@@ -10,6 +10,7 @@ archive/issues_004697.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "change integration error message",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4697",

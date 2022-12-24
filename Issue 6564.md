@@ -10,6 +10,7 @@ archive/issues_006564.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
     "title": "ecl will not build on Solaris - looks like make exiting when it tries to delete non-existant file.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6564",

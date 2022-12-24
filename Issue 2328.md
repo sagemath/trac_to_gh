@@ -10,6 +10,7 @@ archive/issues_002328.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.4",
     "title": "many docstrings in combinat functions are unhelpful, outdated, or wrong",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2328",

@@ -10,6 +10,7 @@ archive/issues_003074.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.1",
     "title": "[with spkg] Cyton 0.9.6.14 released",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3074",

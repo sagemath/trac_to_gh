@@ -10,6 +10,7 @@ archive/issues_003508.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "gmp-4.2.2.spkg is severly broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3508",

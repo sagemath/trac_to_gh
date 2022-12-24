@@ -10,6 +10,7 @@ archive/issues_007187.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "update optional package Gnuplot.py to 1.8",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7187",

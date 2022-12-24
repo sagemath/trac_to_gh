@@ -10,6 +10,7 @@ archive/issues_002653.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
     "title": "norm and trace of elements of orders are Rational not Integer",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2653",

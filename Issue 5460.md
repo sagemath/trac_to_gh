@@ -10,6 +10,7 @@ archive/issues_005460.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
     "title": "[with patch, needs review] deprecate 'invert' in matrix_rational_dense",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5460",

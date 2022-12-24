@@ -10,6 +10,7 @@ archive/issues_000316.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.2",
     "title": "bug in modular symbols projection (probably really in linear algebra)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/316",

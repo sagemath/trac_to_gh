@@ -10,6 +10,7 @@ archive/issues_001863.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "implement f.change_ring(R) for f a multivariate polynomial",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1863",

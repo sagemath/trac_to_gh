@@ -10,6 +10,7 @@ archive/issues_001921.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.1",
     "title": "add random_element to groups",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1921",

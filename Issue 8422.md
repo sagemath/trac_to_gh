@@ -10,6 +10,7 @@ archive/issues_008422.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.4",
     "title": "ChainPoset in broken for small input",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8422",

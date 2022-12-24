@@ -10,6 +10,7 @@ archive/issues_003981.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
     "title": "finance.TimeSeries - Add candlestick plot method.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3981",

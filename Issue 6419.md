@@ -10,6 +10,7 @@ archive/issues_006419.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1",
     "title": "[with patch, needs review] fix ref manual warnings for sage.misc.misc",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6419",

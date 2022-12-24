@@ -10,6 +10,7 @@ archive/issues_009132.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": ".rej should not be in .hgignore",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9132",

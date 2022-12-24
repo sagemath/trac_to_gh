@@ -10,6 +10,7 @@ archive/issues_007183.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "HP-UX issue: Evert package \"date: bad format character - s",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7183",

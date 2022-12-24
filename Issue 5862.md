@@ -10,6 +10,7 @@ archive/issues_005862.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
     "title": "os x libsingular -- sage/libsingular segfaults on first creation of a ring",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5862",

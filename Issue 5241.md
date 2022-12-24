@@ -10,6 +10,7 @@ archive/issues_005241.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.1",
     "title": "Matrix Group sometimes assumes base ring is a field",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5241",

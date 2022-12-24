@@ -10,6 +10,7 @@ archive/issues_001142.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "oddity with regular expressions and ipython",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1142",

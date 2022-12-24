@@ -10,6 +10,7 @@ archive/issues_007972.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "show_identifiers is broken in the notebook; needs to not include globals",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7972",

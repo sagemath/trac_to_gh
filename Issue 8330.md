@@ -10,6 +10,7 @@ archive/issues_008330.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4",
     "title": "BipartiteGraph needs to hook delete_vertex() and delete_vertices()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8330",

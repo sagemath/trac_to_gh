@@ -10,6 +10,7 @@ archive/issues_002868.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "Weight revision for fastcrystals",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2868",

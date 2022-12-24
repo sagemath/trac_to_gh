@@ -10,6 +10,7 @@ archive/issues_000205.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-1.9",
     "title": "prime_range cast problem",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/205",

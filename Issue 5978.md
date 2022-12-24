@@ -10,6 +10,7 @@ archive/issues_005978.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.8",
     "title": "Can't construct the quotient of an univariate polynomial ring by it's zero ideal",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5978",

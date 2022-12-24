@@ -10,6 +10,7 @@ archive/issues_006852.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "cliquer-1.2 fails to build as it cant find Sun compiler (SCons issue)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6852",

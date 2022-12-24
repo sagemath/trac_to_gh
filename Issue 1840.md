@@ -10,6 +10,7 @@ archive/issues_001840.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
     "title": "Hill cipher addition to crypto package",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1840",

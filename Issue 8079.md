@@ -10,6 +10,7 @@ archive/issues_008079.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.3",
     "title": "Better documentation for patching spgk's",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8079",

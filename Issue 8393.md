@@ -10,6 +10,7 @@ archive/issues_008393.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "bring plot3d.py to 100% coverage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8393",

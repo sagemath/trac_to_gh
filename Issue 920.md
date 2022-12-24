@@ -10,6 +10,7 @@ archive/issues_000920.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.9",
     "title": "integrate doesn't handle divergent case correctly",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/920",

@@ -10,6 +10,7 @@ archive/issues_002922.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "scale function for plot_vector_field",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2922",

@@ -10,6 +10,7 @@ archive/issues_002267.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
     "title": "[with patch, needs review] Sage 2.10.2: fix latex errors when generating the documentation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2267",

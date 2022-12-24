@@ -10,6 +10,7 @@ archive/issues_003221.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "libSingular segfaults Sage on startup on OSX 64",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3221",

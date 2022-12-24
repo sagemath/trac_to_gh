@@ -10,6 +10,7 @@ archive/issues_001990.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
     "title": "ZZ.random_element() -- never returns 0 and typos/nonsense in docstrings",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1990",

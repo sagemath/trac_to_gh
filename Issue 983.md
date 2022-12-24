@@ -10,6 +10,7 @@ archive/issues_000983.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "abs seems to be missing a proper latex method",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/983",

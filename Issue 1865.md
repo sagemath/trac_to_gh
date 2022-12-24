@@ -10,6 +10,7 @@ archive/issues_001865.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
     "title": "notebook -- after restart output of first evaluation is not displayed",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1865",

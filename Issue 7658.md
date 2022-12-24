@@ -10,6 +10,7 @@ archive/issues_007658.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "installation guide still refers to VMWare, not VirtualBox",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7658",

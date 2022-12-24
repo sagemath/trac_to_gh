@@ -10,6 +10,7 @@ archive/issues_001283.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
     "title": "Update coercion model API",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1283",

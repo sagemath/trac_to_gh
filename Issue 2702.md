@@ -10,6 +10,7 @@ archive/issues_002702.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
     "title": "[with patch, needs review] multi_polynomial_libsingular coverage almost 100%",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2702",

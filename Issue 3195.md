@@ -10,6 +10,7 @@ archive/issues_003195.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "add 64 bit OSX build support for polybori",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3195",

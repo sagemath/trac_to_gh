@@ -10,6 +10,7 @@ archive/issues_005201.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-wishlist",
     "title": "make solve understand matrix equations",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5201",

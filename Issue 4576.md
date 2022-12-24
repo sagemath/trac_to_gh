@@ -10,6 +10,7 @@ archive/issues_004576.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
     "title": "biopython optional package upgrade to 1.49beta",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4576",

@@ -10,6 +10,7 @@ archive/issues_004556.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
     "title": "[with patch, needs review] nth_root for finite fields: document the fact that 'extend' is not implemented",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4556",

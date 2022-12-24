@@ -10,6 +10,7 @@ archive/issues_005828.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.3",
     "title": "number fields -- serious bug in coercion to a relative extension of degree 1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5828",

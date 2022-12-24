@@ -10,6 +10,7 @@ archive/issues_009605.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "Caching latex preamble setup for graphs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9605",

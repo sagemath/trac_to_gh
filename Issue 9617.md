@@ -10,6 +10,7 @@ archive/issues_009617.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Broken export of LP files....",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9617",

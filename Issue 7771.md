@@ -10,6 +10,7 @@ archive/issues_007771.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "fix R restart in interface",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7771",

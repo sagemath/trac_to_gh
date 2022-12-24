@@ -10,6 +10,7 @@ archive/issues_009045.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.4",
     "title": "is_isomorphic bug (two generalized quadrangles over GF(5))",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9045",

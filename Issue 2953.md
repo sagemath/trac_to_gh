@@ -10,6 +10,7 @@ archive/issues_002953.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "gcc 4.3/Itanium: fix givaro 3.2.10.rc3 build",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2953",

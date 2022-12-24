@@ -10,6 +10,7 @@ archive/issues_002299.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
     "title": "[with patch, needs review] add zero_matrix constructor.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2299",

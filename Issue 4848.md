@@ -10,6 +10,7 @@ archive/issues_004848.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.3",
     "title": "[with patch, needs review] Remove deadwood: sage/schemes/elliptic_curves/heegner.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4848",

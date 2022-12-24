@@ -10,6 +10,7 @@ archive/issues_003842.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
     "title": "notebook -- major bug in how javascript <script> tags are interpreted by the notebook",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3842",

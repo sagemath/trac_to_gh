@@ -10,6 +10,7 @@ archive/issues_009965.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
     "title": "remove texttt from html.table output",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9965",

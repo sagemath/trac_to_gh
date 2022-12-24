@@ -10,6 +10,7 @@ archive/issues_007747.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "miscellaneous documentation fixes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7747",

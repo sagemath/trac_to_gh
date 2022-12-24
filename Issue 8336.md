@@ -10,6 +10,7 @@ archive/issues_008336.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "round(x) <> x.round() for x in RealField",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8336",

@@ -10,6 +10,7 @@ archive/issues_008758.json:
         "trivial",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5",
     "title": "Add a top-level /data with static.File(DATA) that serves files from the data directory",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8758",

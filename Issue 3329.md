@@ -10,6 +10,7 @@ archive/issues_003329.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "attempting to convert relative number field elements to Singular should fail quickly",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3329",

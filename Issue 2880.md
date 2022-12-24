@@ -10,6 +10,7 @@ archive/issues_002880.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "Special code for elliptic curve cardinality for j=0 and j=1728",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2880",

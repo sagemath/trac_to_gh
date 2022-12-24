@@ -10,6 +10,7 @@ archive/issues_001634.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "update zodb to 3.7.2",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1634",

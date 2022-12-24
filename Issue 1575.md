@@ -10,6 +10,7 @@ archive/issues_001575.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
     "title": "plotting -- fix vector plotting",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1575",

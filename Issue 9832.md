@@ -10,6 +10,7 @@ archive/issues_009832.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "fatal relocation error with Cliquer library on 64-bit Solaris and OpenSolaris",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9832",

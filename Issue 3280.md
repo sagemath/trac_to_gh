@@ -10,6 +10,7 @@ archive/issues_003280.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
     "title": "Sage 3.0.2.rc0: fix rebuild Sage documentation issues",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3280",

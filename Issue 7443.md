@@ -10,6 +10,7 @@ archive/issues_007443.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "List all categories in the reference manual",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7443",

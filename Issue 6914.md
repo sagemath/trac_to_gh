@@ -10,6 +10,7 @@ archive/issues_006914.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "update scipy to 0.7.1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6914",

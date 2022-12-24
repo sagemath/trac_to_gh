@@ -10,6 +10,7 @@ archive/issues_004193.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.2",
     "title": "Coercion between relative and absolute number fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4193",

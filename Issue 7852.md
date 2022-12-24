@@ -10,6 +10,7 @@ archive/issues_007852.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.7.2",
     "title": "solve_left for RDF matrices is WRONG",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7852",

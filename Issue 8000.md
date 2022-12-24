@@ -10,6 +10,7 @@ archive/issues_008000.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.2",
     "title": "Add # -*- coding: utf-8 -*- to the top of all SageNB .py files",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8000",

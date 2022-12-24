@@ -10,6 +10,7 @@ archive/issues_008647.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4",
     "title": "bump maxima artificially so upgrades aren't *all* broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8647",

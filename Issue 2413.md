@@ -10,6 +10,7 @@ archive/issues_002413.json:
         "trivial",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.1",
     "title": "Correction in \"How to use the Sage Notebook\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2413",

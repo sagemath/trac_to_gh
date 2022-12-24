@@ -10,6 +10,7 @@ archive/issues_006848.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
     "title": "[with patch, needs review] \"Definition:\" messed up in notebook and command line in cython code",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6848",

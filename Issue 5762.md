@@ -10,6 +10,7 @@ archive/issues_005762.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Bring doctests of sage/misc/latex.py to 100%",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5762",

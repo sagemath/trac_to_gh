@@ -10,6 +10,7 @@ archive/issues_009261.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "RealIntervalField: enable option style='bracket'",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9261",

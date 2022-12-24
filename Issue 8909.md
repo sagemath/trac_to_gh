@@ -10,6 +10,7 @@ archive/issues_008909.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.2",
     "title": "Coercion from Gap to cyclotomic fields; usage of GAP to improve computation of invariant rings",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8909",

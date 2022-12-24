@@ -10,6 +10,7 @@ archive/issues_007803.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.4",
     "title": "DeprecationWarning: the sets module is deprecated",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7803",

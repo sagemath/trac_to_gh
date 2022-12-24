@@ -10,6 +10,7 @@ archive/issues_003271.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
     "title": "inject and MPolynomialRing  -- the inject_on command doesn't support MPolynomialRing",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3271",

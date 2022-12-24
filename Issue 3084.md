@@ -10,6 +10,7 @@ archive/issues_003084.json:
         "trivial",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1",
     "title": "Solve Sudoku faster!",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3084",

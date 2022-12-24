@@ -10,6 +10,7 @@ archive/issues_009877.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
     "title": "symbolic zeta(1) should return unsigned infinity",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9877",

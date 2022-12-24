@@ -10,6 +10,7 @@ archive/issues_004222.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
     "title": "Building R fails due to problem with readline",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4222",

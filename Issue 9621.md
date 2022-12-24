@@ -10,6 +10,7 @@ archive/issues_009621.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Fix GAP interface problem in sylow_subgroup method",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9621",

@@ -10,6 +10,7 @@ archive/issues_003605.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
     "title": "ell_finite_field.py: libSingular - \"Use of uninitialised value of size 8\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3605",

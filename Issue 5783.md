@@ -10,6 +10,7 @@ archive/issues_005783.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
     "title": "[with patch, needs review]  Lazy attributes: fix infinite recursion bug + support for cpdefs methods",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5783",

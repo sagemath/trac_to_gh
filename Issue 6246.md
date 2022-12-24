@@ -10,6 +10,7 @@ archive/issues_006246.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.1",
     "title": "SAGE_FAT_BINARY still doesn't work",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6246",

@@ -10,6 +10,7 @@ archive/issues_006104.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
     "title": "[with spkg, needs review] Fix Solaris specific build issue for libfplll.spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6104",

@@ -10,6 +10,7 @@ archive/issues_002832.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "[with patch; needs review] mistake in tutorial",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2832",

@@ -10,6 +10,7 @@ archive/issues_004722.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
     "title": "BUG - number field K.hilbert_class_polynomial() is a *lie*",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4722",

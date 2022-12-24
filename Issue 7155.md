@@ -10,6 +10,7 @@ archive/issues_007155.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Allow solving of inequalities",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7155",

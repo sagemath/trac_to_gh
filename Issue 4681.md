@@ -10,6 +10,7 @@ archive/issues_004681.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
     "title": "General Smith normal form implementation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4681",

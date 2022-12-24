@@ -10,6 +10,7 @@ archive/issues_009674.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
     "title": "Please revert sage/crypto/mq/sbox.py [11673:11b2f556827a:12294:d7533ae4895e]",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9674",

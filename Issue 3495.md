@@ -10,6 +10,7 @@ archive/issues_003495.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
     "title": "[with patch, needs review] bug in cyclotomic charpoly for 1x1 matrices",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3495",

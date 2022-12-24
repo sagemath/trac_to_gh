@@ -10,6 +10,7 @@ archive/issues_006674.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
     "title": "only use ASCII characters in patches",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6674",

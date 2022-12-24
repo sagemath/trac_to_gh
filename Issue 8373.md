@@ -10,6 +10,7 @@ archive/issues_008373.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "finite fields constructed with non-primitive defining polynomial",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8373",

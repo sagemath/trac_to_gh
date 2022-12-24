@@ -10,6 +10,7 @@ archive/issues_001533.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9.1",
     "title": "Finish converting java3d to an spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1533",

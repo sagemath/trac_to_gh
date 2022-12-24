@@ -10,6 +10,7 @@ archive/issues_009822.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
     "title": "desolve_system is broken for a system of one equation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9822",

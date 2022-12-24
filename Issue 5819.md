@@ -10,6 +10,7 @@ archive/issues_005819.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "make sage -coverage require a loads/dumps test for each class defined in a file",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5819",

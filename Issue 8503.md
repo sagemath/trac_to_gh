@@ -10,6 +10,7 @@ archive/issues_008503.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "broken multiline input in sage notebook",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8503",

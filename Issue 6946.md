@@ -10,6 +10,7 @@ archive/issues_006946.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Duplicated mpmath <-> sympy/mpmath and delaunay <-> matplotlib/delaunay",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6946",

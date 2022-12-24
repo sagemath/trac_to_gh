@@ -10,6 +10,7 @@ archive/issues_005172.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "Sage 3.3.a5: more numerical noise in sage/calculus/calculus.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5172",

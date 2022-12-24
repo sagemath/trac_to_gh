@@ -10,6 +10,7 @@ archive/issues_002754.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
     "title": "plotting with frame=True and ymin/ymax sometimes is buggy as a Florida swamp in summer",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2754",

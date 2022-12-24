@@ -10,6 +10,7 @@ archive/issues_002568.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "dokchitser port, work in progress",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2568",

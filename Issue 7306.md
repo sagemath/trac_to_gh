@@ -10,6 +10,7 @@ archive/issues_007306.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2.1",
     "title": "Documentation fix for Generalized Petersen graph",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7306",

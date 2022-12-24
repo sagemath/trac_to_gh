@@ -10,6 +10,7 @@ archive/issues_009666.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Implement __hash__ for NumberFieldIdeal",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9666",

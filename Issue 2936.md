@@ -10,6 +10,7 @@ archive/issues_002936.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "notebook -- write a completely new use/data/security model backend for the notebook",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2936",

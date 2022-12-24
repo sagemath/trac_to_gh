@@ -10,6 +10,7 @@ archive/issues_002525.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "update Linbox to 1.1.5.rc3 upstream release",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2525",

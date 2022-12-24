@@ -10,6 +10,7 @@ archive/issues_005322.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.9",
     "title": "Sage 3.3.rc2: mandriva 32/64 bit fails with mysterious error 139 in make",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5322",

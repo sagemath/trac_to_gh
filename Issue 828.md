@@ -10,6 +10,7 @@ archive/issues_000828.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.7",
     "title": "edit() always puts the editor into the background",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/828",

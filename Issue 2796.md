@@ -10,6 +10,7 @@ archive/issues_002796.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
     "title": "Integer digits/ndigit disagree on default base",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2796",

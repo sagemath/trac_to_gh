@@ -10,6 +10,7 @@ archive/issues_009249.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5",
     "title": "Wrong answer in is_hamiltonian if no LP solver available",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9249",

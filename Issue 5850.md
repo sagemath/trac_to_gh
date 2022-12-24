@@ -10,6 +10,7 @@ archive/issues_005850.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1",
     "title": "add Creative Commons license to French tutorial",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5850",

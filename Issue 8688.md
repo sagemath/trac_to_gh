@@ -10,6 +10,7 @@ archive/issues_008688.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.3",
     "title": "extra parenthesis when typesetting fractions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8688",

@@ -10,6 +10,7 @@ archive/issues_003296.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "polymake spkg needs \"CDDLIB_VERSION='094b.p2\" in spkg-install",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3296",

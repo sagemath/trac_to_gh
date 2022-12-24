@@ -10,6 +10,7 @@ archive/issues_009532.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.2",
     "title": "fix uncontrolled randomness in sage/graphs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9532",

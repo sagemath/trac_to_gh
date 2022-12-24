@@ -10,6 +10,7 @@ archive/issues_007848.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.2",
     "title": "Fix misleading stuff about HTML cells on sagenb",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7848",

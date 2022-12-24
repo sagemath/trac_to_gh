@@ -10,6 +10,7 @@ archive/issues_006143.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
     "title": "Upgrade tinyMCE to 3.2.4.1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6143",

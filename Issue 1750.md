@@ -10,6 +10,7 @@ archive/issues_001750.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
     "title": "Sage 2.10.alpha1: leak in readline.so",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1750",

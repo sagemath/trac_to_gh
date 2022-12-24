@@ -10,6 +10,7 @@ archive/issues_008556.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "simple server API broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8556",

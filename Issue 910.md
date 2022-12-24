@@ -10,6 +10,7 @@ archive/issues_000910.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.8",
     "title": "[with bundle][tested by ekirkman] Circulant Graph Constructor Docstrings",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/910",

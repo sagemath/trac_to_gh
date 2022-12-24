@@ -10,6 +10,7 @@ archive/issues_008656.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6.1",
     "title": "face_lattice does not seem to work for unbounded polyhedra",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8656",

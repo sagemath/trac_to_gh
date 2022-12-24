@@ -10,6 +10,7 @@ archive/issues_005198.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "apply_map skips zeroes in sparse vectors and matrices",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5198",

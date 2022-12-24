@@ -10,6 +10,7 @@ archive/issues_006528.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
     "title": "PolyBoRi ignores CXX and passes Sun flags to GNU C compiler.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6528",

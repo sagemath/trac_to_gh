@@ -10,6 +10,7 @@ archive/issues_001859.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
     "title": "3d and 2d graphics -- some unification",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1859",

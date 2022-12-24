@@ -10,6 +10,7 @@ archive/issues_005044.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "on some systems mwrank dumps core and crashes on exit when run under pexpect",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5044",

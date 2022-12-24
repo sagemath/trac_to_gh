@@ -10,6 +10,7 @@ archive/issues_001944.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4",
     "title": "subsections not honored in ref manual",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1944",

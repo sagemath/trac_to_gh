@@ -10,6 +10,7 @@ archive/issues_005957.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.2",
     "title": "3.4.2.rc0: Maxima related doctest failure in matrix/matrix_symbolic_dense.pyx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5957",

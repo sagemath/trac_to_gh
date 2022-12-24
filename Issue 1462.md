@@ -10,6 +10,7 @@ archive/issues_001462.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9",
     "title": "speed up \"sage -b\" -- don't do anything cython stuff if no .pyx, .pxd, or .pxi file changes (not a dupe!)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1462",

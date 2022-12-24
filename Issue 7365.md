@@ -10,6 +10,7 @@ archive/issues_007365.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "Petersen's 2-factor theorem",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7365",

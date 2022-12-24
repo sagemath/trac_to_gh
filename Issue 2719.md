@@ -10,6 +10,7 @@ archive/issues_002719.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
     "title": "bitset is completely broken on os x 10.4 G5",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2719",

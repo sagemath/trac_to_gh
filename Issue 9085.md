@@ -10,6 +10,7 @@ archive/issues_009085.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "random_element fails for a cartesian product of fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9085",

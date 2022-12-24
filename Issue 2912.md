@@ -10,6 +10,7 @@ archive/issues_002912.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "M4RI should be built with -O3",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2912",

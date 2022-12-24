@@ -10,6 +10,7 @@ archive/issues_008242.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4",
     "title": "Fix duplicate citation warnings when building the French-language tutorial",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8242",

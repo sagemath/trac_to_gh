@@ -10,6 +10,7 @@ archive/issues_006813.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "[with patch, needs review] The whole world in a graph",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6813",

@@ -10,6 +10,7 @@ archive/issues_007842.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "Let attrcall objects accept further arguments",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7842",

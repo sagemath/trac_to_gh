@@ -10,6 +10,7 @@ archive/issues_005461.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4",
     "title": "make -bdist build OSX app only on demand",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5461",

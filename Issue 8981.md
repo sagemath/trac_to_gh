@@ -10,6 +10,7 @@ archive/issues_008981.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "Adding support for param attribute of GSL ode solver",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8981",

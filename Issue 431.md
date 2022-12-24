@@ -10,6 +10,7 @@ archive/issues_000431.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.11",
     "title": "dsage server hangs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/431",

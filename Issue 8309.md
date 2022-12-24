@@ -10,6 +10,7 @@ archive/issues_008309.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.4",
     "title": "speedup prime range",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8309",

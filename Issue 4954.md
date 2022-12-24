@@ -10,6 +10,7 @@ archive/issues_004954.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Words_over_Alphabet should check the type of input alphabet",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4954",

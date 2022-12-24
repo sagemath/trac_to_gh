@@ -10,6 +10,7 @@ archive/issues_008965.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "decorate.py: clarify normalize_input, Parallel and parallel",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8965",

@@ -10,6 +10,7 @@ archive/issues_007808.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "Plots seem to be shifted up and to the left by one pixel or so",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7808",

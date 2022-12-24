@@ -10,6 +10,7 @@ archive/issues_009568.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Update IML to the newest upstream release, and improve spkg-install",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9568",

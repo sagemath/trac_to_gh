@@ -10,6 +10,7 @@ archive/issues_008060.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.3",
     "title": "New f2c-20070816.p2.spkg now works with Open Solaris 64 bit",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8060",

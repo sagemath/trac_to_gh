@@ -10,6 +10,7 @@ archive/issues_005327.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "multiple edge plots use symbolic computations",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5327",

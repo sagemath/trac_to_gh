@@ -10,6 +10,7 @@ archive/issues_001975.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.4",
     "title": "elliptic curve method -- one should trivially be able to implement a toy version, but can't anymore, which sucks",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1975",

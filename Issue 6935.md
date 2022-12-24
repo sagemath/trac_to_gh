@@ -10,6 +10,7 @@ archive/issues_006935.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
     "title": "Improve documentation for plots with new axis code",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6935",

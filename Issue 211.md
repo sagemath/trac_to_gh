@@ -10,6 +10,7 @@ archive/issues_000211.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.12",
     "title": "speed up polynomial root finding",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/211",

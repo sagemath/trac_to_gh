@@ -10,6 +10,7 @@ archive/issues_009528.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.1",
     "title": "#8306 completely breaks \"sage -upgrade\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9528",

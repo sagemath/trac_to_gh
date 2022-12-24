@@ -10,6 +10,7 @@ archive/issues_003310.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
     "title": "sage -b fails after touching sage/libs/mwrank/{mwrank.pyx,wrap.cc}",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3310",

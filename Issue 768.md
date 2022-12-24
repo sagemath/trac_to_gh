@@ -10,6 +10,7 @@ archive/issues_000768.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.9",
     "title": "Open a method source in the editor of your choice",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/768",

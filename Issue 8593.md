@@ -10,6 +10,7 @@ archive/issues_008593.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "Add Lehmer code of Permutation as an infinite enumerated set",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8593",

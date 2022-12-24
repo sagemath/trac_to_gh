@@ -10,6 +10,7 @@ archive/issues_001511.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9",
     "title": "Export 3d objects in jmol format",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1511",

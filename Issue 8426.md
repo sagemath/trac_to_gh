@@ -10,6 +10,7 @@ archive/issues_008426.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "polynomial * constant does not work if constant is a numpy type",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8426",

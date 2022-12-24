@@ -10,6 +10,7 @@ archive/issues_002084.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.2",
     "title": "default 20/40 in padics factory hard coded everywhere",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2084",

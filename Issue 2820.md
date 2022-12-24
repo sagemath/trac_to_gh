@@ -10,6 +10,7 @@ archive/issues_002820.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "notebook -- turn off the jsmath warning",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2820",

@@ -10,6 +10,7 @@ archive/issues_009580.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.2",
     "title": "Check in or ignore sagenb.po in SageNB package",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9580",

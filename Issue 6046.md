@@ -10,6 +10,7 @@ archive/issues_006046.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.2",
     "title": "[with patch, needs review] Implement local and global heights for number field elements",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6046",

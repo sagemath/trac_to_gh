@@ -10,6 +10,7 @@ archive/issues_002562.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
     "title": "[with partial patch] few issues in calculus.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2562",

@@ -10,6 +10,7 @@ archive/issues_007268.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "GLPK : named constraints and variables, export functions ...",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7268",

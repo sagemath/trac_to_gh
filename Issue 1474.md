@@ -10,6 +10,7 @@ archive/issues_001474.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
     "title": "gap -- port to Itanium Linux",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1474",

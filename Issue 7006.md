@@ -10,6 +10,7 @@ archive/issues_007006.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
     "title": "[with patch; needs review] os x 10.6 port -- update mpir to autodetect ABI on OS X since ABI=32 is *no* longer necessarily the default on 10.6",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7006",

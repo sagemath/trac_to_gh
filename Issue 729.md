@@ -10,6 +10,7 @@ archive/issues_000729.json:
         "trivial",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.9",
     "title": "graphs: Implement __eq__ and __neq__ rather than __cmp__",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/729",

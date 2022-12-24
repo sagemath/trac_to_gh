@@ -10,6 +10,7 @@ archive/issues_001390.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.15",
     "title": "fix qbar doctest on 32 bit FC8 Linux",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1390",

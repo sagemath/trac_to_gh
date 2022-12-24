@@ -10,6 +10,7 @@ archive/issues_005049.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.1",
     "title": "show(mathematica('2/3')) doesn't work",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5049",

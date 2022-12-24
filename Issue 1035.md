@@ -10,6 +10,7 @@ archive/issues_001035.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
     "title": "update Givaro to version 3.2.8",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1035",

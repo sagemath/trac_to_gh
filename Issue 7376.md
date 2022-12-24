@@ -10,6 +10,7 @@ archive/issues_007376.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "searching published worksheets does not work to just search for username",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7376",

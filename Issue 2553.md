@@ -10,6 +10,7 @@ archive/issues_002553.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "dsage unit tests fail on linux",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2553",

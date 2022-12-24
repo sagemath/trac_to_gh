@@ -10,6 +10,7 @@ archive/issues_006050.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.1",
     "title": "Dynkin diagram ascii art for reducible Cartan types (with patch, needs review)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6050",

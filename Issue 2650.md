@@ -10,6 +10,7 @@ archive/issues_002650.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "matrix() constructor with empty dictionary returns non-empty matrix",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2650",

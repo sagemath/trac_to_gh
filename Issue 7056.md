@@ -10,6 +10,7 @@ archive/issues_007056.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Fix build issues so Sage builds with the Sun Studio Compiler suite.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7056",

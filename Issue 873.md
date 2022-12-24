@@ -10,6 +10,7 @@ archive/issues_000873.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.7",
     "title": "sage -clone is rebuilding everything !",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/873",

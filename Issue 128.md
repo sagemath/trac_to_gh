@@ -10,6 +10,7 @@ archive/issues_000128.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "possible clash for EllipticCurve(j-invariant) signature",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/128",

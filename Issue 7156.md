@@ -10,6 +10,7 @@ archive/issues_007156.json:
         "trivial",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "prereq-0.4 has a minor portability issue.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7156",

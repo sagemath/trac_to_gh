@@ -10,6 +10,7 @@ archive/issues_006229.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.2",
     "title": "efficiency in Lagrange polynomial interpolation (easy fix...)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6229",

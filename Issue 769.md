@@ -10,6 +10,7 @@ archive/issues_000769.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.6",
     "title": "Matrix_mod2_dense._echelon_strassen gives fals results sometimes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/769",

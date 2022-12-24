@@ -10,6 +10,7 @@ archive/issues_000422.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
     "title": "hostname's with dashes (?) in them break SAGE interfaces",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/422",

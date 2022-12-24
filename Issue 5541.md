@@ -10,6 +10,7 @@ archive/issues_005541.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
     "title": "more formatting fixes for quaternion algebra docstring",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5541",

@@ -10,6 +10,7 @@ archive/issues_004783.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
     "title": "[with patch; needs review] email -- create an \"email\" command, so users can easily notify themselves when their sage programs have completed some task",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4783",

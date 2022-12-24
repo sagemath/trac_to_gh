@@ -10,6 +10,7 @@ archive/issues_001245.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.4",
     "title": "Error coercing multivariate polynomial rings with one variable into composite integer rings",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1245",

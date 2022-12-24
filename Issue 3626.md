@@ -10,6 +10,7 @@ archive/issues_003626.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.6",
     "title": "Graph.set_boundary only takes lists",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3626",

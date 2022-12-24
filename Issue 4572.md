@@ -10,6 +10,7 @@ archive/issues_004572.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
     "title": "[with patch, needs review] maxima output has misleading precision",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4572",

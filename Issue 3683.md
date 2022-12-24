@@ -10,6 +10,7 @@ archive/issues_003683.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "meataxe interface [with patch, not ready for review]",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3683",

@@ -10,6 +10,7 @@ archive/issues_007341.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2.1",
     "title": "major tab completion issue in notebook (?)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7341",

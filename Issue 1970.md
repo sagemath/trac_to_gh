@@ -10,6 +10,7 @@ archive/issues_001970.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
     "title": "[with tiny patch; needs easy review] notebook -- gnutls should not be needed if you're running the notebook insecurely, so don't require it",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1970",

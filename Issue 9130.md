@@ -10,6 +10,7 @@ archive/issues_009130.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.0",
     "title": "Access to beta function",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9130",

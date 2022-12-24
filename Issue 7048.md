@@ -10,6 +10,7 @@ archive/issues_007048.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "ATLAS ignores CC variable, then dumps core when trying to build with Sun Studio on  Solaris",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7048",

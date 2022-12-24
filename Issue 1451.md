@@ -10,6 +10,7 @@ archive/issues_001451.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9",
     "title": "segfault in permgroup.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1451",

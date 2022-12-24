@@ -10,6 +10,7 @@ archive/issues_006147.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
     "title": "[with patch, needs review] Make sage -sync-build smarter.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6147",

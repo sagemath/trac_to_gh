@@ -10,6 +10,7 @@ archive/issues_004034.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "[with spkg, needs review] Fix rubiks.spkg build on Solaris",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4034",

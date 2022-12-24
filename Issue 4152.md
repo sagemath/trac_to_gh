@@ -10,6 +10,7 @@ archive/issues_004152.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "parametric_plot should take the variable range as (var, min, max) like plot",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4152",

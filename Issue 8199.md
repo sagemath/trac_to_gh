@@ -10,6 +10,7 @@ archive/issues_008199.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.3",
     "title": "developer's guide: consistency overhaul",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8199",

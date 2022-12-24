@@ -10,6 +10,7 @@ archive/issues_003550.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
     "title": "notebook -- make saving and loading state of the notebook vastly faster and scale better",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3550",

@@ -10,6 +10,7 @@ archive/issues_006832.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
     "title": "[with patch, needs review] bug in inverse_mod for number field elements",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6832",

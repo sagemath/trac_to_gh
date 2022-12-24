@@ -10,6 +10,7 @@ archive/issues_008916.json:
         "trivial",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.2",
     "title": "documentation error in cardinality for Enumerated Sets",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8916",

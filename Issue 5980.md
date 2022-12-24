@@ -10,6 +10,7 @@ archive/issues_005980.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "In sage-3.4.2.final on 32 bits there is a failure in prime_pi()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5980",

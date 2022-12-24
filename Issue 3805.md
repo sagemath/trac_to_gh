@@ -10,6 +10,7 @@ archive/issues_003805.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "sage gets basic arithmetic with sqrt(3) wrong",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3805",

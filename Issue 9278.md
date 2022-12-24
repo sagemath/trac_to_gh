@@ -10,6 +10,7 @@ archive/issues_009278.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.2",
     "title": "remove databases/kohel.py since it is not used and broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9278",

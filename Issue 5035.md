@@ -10,6 +10,7 @@ archive/issues_005035.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "get doctest coverage of matrix_generic_dense.pyx up to 100%",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5035",

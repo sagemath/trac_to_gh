@@ -10,6 +10,7 @@ archive/issues_001811.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "command line detach -- completely missing from Sage!?",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1811",

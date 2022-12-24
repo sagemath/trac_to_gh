@@ -10,6 +10,7 @@ archive/issues_008427.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "notebook fortran mode does not work with blank first line (or subroutine starting on first line)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8427",

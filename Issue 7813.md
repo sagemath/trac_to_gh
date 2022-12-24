@@ -10,6 +10,7 @@ archive/issues_007813.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-wishlist",
     "title": "No empty links at docs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7813",

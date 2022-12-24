@@ -10,6 +10,7 @@ archive/issues_001357.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.15",
     "title": "the polynomial .roots() method should work with ring=QQbar",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1357",

@@ -10,6 +10,7 @@ archive/issues_002805.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "Add maximal parameter to Graph genus computation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2805",

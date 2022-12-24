@@ -10,6 +10,7 @@ archive/issues_003415.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.3",
     "title": "sage-3.0.3.alpha2 -- clean test of simple.py fails badly on osx ppc (fermat)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3415",

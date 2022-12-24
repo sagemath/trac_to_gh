@@ -10,6 +10,7 @@ archive/issues_002297.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
     "title": "Tensor product of matrices [with patch, needs review]",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2297",

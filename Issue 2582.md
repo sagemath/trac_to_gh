@@ -10,6 +10,7 @@ archive/issues_002582.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
     "title": "[with patch, needs review] fix bug in PermutationGroupElement",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2582",

@@ -10,6 +10,7 @@ archive/issues_006244.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.2",
     "title": "conjugate() in sage-4.0 is broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6244",

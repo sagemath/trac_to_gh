@@ -10,6 +10,7 @@ archive/issues_002403.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.4",
     "title": "Cannot copy Sequence",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2403",

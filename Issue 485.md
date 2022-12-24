@@ -10,6 +10,7 @@ archive/issues_000485.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "SAGElite -- release a first version of SAGE Lite",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/485",

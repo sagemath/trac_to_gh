@@ -10,6 +10,7 @@ archive/issues_003742.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.6",
     "title": "[with spkg, needs review] Fortran.spkg: Detect the location of gfortran properly",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3742",

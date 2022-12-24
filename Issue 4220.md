@@ -10,6 +10,7 @@ archive/issues_004220.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
     "title": "include Sphinx, Docutils, Jinja, and Pygments in Sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4220",

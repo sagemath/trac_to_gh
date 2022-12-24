@@ -10,6 +10,7 @@ archive/issues_008693.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.9",
     "title": "QuadraticForm::basis_of_short_vectors may not return an actual basis.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8693",

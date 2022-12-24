@@ -10,6 +10,7 @@ archive/issues_008806.json:
         "blocker",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.1",
     "title": "update the README.txt in sage-4.4.1 to reflect improved platform and compiler support",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8806",

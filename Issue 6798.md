@@ -10,6 +10,7 @@ archive/issues_006798.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "fix doctest timeout in modules/vector_double_dense.pyx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6798",

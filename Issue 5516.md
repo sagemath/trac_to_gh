@@ -10,6 +10,7 @@ archive/issues_005516.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
     "title": "gmp-mpir-0.9: build failure inside kvm 64 bit virtual machine",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5516",

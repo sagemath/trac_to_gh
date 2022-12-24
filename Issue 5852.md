@@ -10,6 +10,7 @@ archive/issues_005852.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.8",
     "title": "[with patch, needs review] the detection of SAGE_ROOT in $SAGE_ROOT/sage script should expand symlinks recursively",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5852",

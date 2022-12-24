@@ -10,6 +10,7 @@ archive/issues_001144.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "mpfr to RQDF coercion",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1144",

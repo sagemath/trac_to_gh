@@ -10,6 +10,7 @@ archive/issues_003437.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "split sage.libs.ntl.decl.pxi into several files",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3437",

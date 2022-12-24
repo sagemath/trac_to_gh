@@ -10,6 +10,7 @@ archive/issues_009503.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "FreeModule_submodule_with_basis_pid calls wrong constructor",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9503",

@@ -10,6 +10,7 @@ archive/issues_007233.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "[with patch, positive review] adapted SymmetricGroupAlgebra to the category framework",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7233",

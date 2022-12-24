@@ -10,6 +10,7 @@ archive/issues_002548.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.4",
     "title": "more flexible syntax for defining callable function ring elements",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2548",

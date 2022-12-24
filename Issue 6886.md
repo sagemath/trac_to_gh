@@ -10,6 +10,7 @@ archive/issues_006886.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
     "title": "Elliptic curve isogeny checking can be expensive",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6886",

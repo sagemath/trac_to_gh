@@ -10,6 +10,7 @@ archive/issues_004253.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
     "title": "polybori interface: equality operator for navigators",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4253",

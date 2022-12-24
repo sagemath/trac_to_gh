@@ -10,6 +10,7 @@ archive/issues_008070.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.3",
     "title": "New  pycrypto-2.0.1.p5.spkg works with Open Solaris 64 bit",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8070",

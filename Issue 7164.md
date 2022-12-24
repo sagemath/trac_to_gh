@@ -10,6 +10,7 @@ archive/issues_007164.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "readline-6.0 fails to build on HP-UX 11i (PA-RISC)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7164",

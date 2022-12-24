@@ -10,6 +10,7 @@ archive/issues_005149.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "[with patch; needs review] Cremona database -- fix a bug in handling of 990h",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5149",

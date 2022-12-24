@@ -10,6 +10,7 @@ archive/issues_001143.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.15",
     "title": "[with patch] improve nintegrate documentation in response to Paul Zimmerman's talk",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1143",

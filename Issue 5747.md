@@ -10,6 +10,7 @@ archive/issues_005747.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
     "title": "improve doctest coverage for schemes/generic/ambient_space.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5747",

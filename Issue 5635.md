@@ -10,6 +10,7 @@ archive/issues_005635.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
     "title": "plot method on lattice polytopes gives something ridiculous",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5635",

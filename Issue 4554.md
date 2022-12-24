@@ -10,6 +10,7 @@ archive/issues_004554.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "notebook -- make a resend email confirmation link on account settings",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4554",

@@ -10,6 +10,7 @@ archive/issues_002662.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-wishlist",
     "title": "simplify_full function",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2662",

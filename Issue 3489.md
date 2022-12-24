@@ -10,6 +10,7 @@ archive/issues_003489.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "DsageNg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3489",

@@ -10,6 +10,7 @@ archive/issues_009124.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6.2",
     "title": "h-vectors for simplicial complexes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9124",

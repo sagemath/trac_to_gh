@@ -10,6 +10,7 @@ archive/issues_004064.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "pari precision issues",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4064",

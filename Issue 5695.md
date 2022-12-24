@@ -10,6 +10,7 @@ archive/issues_005695.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
     "title": "Sgae 3.4.1.rc1: doctest failure in combinat/words/words.py on 32 bit boxen",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5695",

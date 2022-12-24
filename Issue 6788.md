@@ -10,6 +10,7 @@ archive/issues_006788.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "1 doctest timed out in devel/sage/sage/symbolic/assumptions.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6788",

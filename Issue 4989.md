@@ -10,6 +10,7 @@ archive/issues_004989.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4",
     "title": "Delete the section \"4 Running the SAGE Notebook Securely\" from the sage install guide",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4989",

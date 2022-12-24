@@ -10,6 +10,7 @@ archive/issues_003747.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
     "title": "incorrect power in modular arithmetic",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3747",

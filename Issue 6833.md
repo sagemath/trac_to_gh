@@ -10,6 +10,7 @@ archive/issues_006833.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-wishlist",
     "title": "use hg for worksheet history",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6833",

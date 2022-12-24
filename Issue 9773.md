@@ -10,6 +10,7 @@ archive/issues_009773.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.4",
     "title": "Upgrade the notebook to use MathJax instead of jsMath",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9773",

@@ -10,6 +10,7 @@ archive/issues_001678.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.5",
     "title": "docs -- tutorial: modification to the tutorial to address numerous gotcha's",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1678",

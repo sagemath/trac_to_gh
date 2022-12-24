@@ -10,6 +10,7 @@ archive/issues_006491.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
     "title": "[with spkg, needs review] Modular Cohomology Rings of Finite p-Groups",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6491",

@@ -10,6 +10,7 @@ archive/issues_008030.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.3",
     "title": "Strong generating system work only for transitive group",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8030",

@@ -10,6 +10,7 @@ archive/issues_002894.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "notebook -- cache elements to improve the speed of get_cell()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2894",

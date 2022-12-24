@@ -10,6 +10,7 @@ archive/issues_000949.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.8",
     "title": "\"sage -f\" fails to install packages when given an absolute path",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/949",

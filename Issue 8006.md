@@ -10,6 +10,7 @@ archive/issues_008006.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Identation syntax errors fail silently",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8006",

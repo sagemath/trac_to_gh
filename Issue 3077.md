@@ -10,6 +10,7 @@ archive/issues_003077.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.1",
     "title": "pbuild does not return properly on failure",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3077",

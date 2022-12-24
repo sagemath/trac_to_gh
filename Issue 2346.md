@@ -10,6 +10,7 @@ archive/issues_002346.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "Sage needs a simple api for interaction with other applications",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2346",

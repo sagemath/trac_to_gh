@@ -10,6 +10,7 @@ archive/issues_003685.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "make damned sure that \"import sage.all\" doesn't import ipython",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3685",

@@ -10,6 +10,7 @@ archive/issues_001403.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9",
     "title": "mwrank: crash upon exit",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1403",

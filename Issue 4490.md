@@ -10,6 +10,7 @@ archive/issues_004490.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-wishlist",
     "title": "notebook -- add a checkbox that enables/disables implicit multiplication",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4490",

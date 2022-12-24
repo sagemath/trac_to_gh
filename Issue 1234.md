@@ -10,6 +10,7 @@ archive/issues_001234.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "analytic_rank crashes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1234",

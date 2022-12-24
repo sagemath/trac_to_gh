@@ -10,6 +10,7 @@ archive/issues_008628.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-7.2",
     "title": "confusing defaults for p-adic precision types",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8628",

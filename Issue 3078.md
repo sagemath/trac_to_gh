@@ -10,6 +10,7 @@ archive/issues_003078.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.1",
     "title": "[with patch; needs review] sage's spkg-install doesn't return failure if build failed",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3078",

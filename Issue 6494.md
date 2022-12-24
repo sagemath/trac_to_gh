@@ -10,6 +10,7 @@ archive/issues_006494.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "sage should *never* ever import numpy by default on startup.  Yet again it does!",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6494",

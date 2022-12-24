@@ -10,6 +10,7 @@ archive/issues_005709.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
     "title": "singular interface -- use a smaller file size cutoff on solaris",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5709",

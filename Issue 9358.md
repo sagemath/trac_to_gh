@@ -10,6 +10,7 @@ archive/issues_009358.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.3",
     "title": "zn_poly passes all tests on on Solaris 10 64-bit SPARC, but fails to install",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9358",

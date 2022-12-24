@@ -10,6 +10,7 @@ archive/issues_006836.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4",
     "title": "The Sturm bound for modular forms gives the wrong result sometimes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6836",

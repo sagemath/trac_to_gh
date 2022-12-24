@@ -10,6 +10,7 @@ archive/issues_003652.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
     "title": "[with patch, needs review] FreeModule(ZZ, 2000).random_element() is far slower than it should be",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3652",

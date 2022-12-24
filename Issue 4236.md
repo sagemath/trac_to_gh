@@ -10,6 +10,7 @@ archive/issues_004236.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
     "title": "magma -- boolean ring conversions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4236",

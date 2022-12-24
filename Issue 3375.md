@@ -10,6 +10,7 @@ archive/issues_003375.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Fix building ntl on Solaris with make and ld [with patch needs review]",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3375",

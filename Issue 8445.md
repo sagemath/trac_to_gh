@@ -10,6 +10,7 @@ archive/issues_008445.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.4",
     "title": "sh: kpsewhich: not found -  Sage 4.3.4.alpha0 on Solaris",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8445",

@@ -10,6 +10,7 @@ archive/issues_003759.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
     "title": "make testlong leaves all kinds of crap in SAGE_ROOT",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3759",

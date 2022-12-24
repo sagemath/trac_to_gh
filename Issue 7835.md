@@ -10,6 +10,7 @@ archive/issues_007835.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "Preparsing on server does not account for unicode text",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7835",

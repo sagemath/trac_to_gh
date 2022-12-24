@@ -10,6 +10,7 @@ archive/issues_005924.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
     "title": "Proposed new method for the OverconvergentModularForms class",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5924",

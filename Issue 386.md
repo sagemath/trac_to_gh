@@ -10,6 +10,7 @@ archive/issues_000386.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "Enhance \"attach <file>\" in the notebook",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/386",

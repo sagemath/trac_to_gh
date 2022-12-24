@@ -10,6 +10,7 @@ archive/issues_002325.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.1",
     "title": "segfault in p-adic extension() method",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2325",

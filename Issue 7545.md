@@ -10,6 +10,7 @@ archive/issues_007545.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-7.1",
     "title": "Gaussian Integers",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7545",

@@ -10,6 +10,7 @@ archive/issues_004862.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.3",
     "title": "two trivial-to-fix issues with the macaulay2 spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4862",

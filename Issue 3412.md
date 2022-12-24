@@ -10,6 +10,7 @@ archive/issues_003412.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.3",
     "title": "sage-3.0.3.alpha2 -- two files that are ? in repo in fresh build",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3412",

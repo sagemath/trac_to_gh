@@ -10,6 +10,7 @@ archive/issues_007562.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "Another (new?) binomial bug",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7562",

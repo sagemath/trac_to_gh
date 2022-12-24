@@ -10,6 +10,7 @@ archive/issues_002120.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "maple -- the interface is completely broken in Sage-2.10.1 with Maple 11.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2120",

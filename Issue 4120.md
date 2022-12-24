@@ -10,6 +10,7 @@ archive/issues_004120.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-8.3",
     "title": "New code for binary quadratic forms",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4120",

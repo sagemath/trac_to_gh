@@ -10,6 +10,7 @@ archive/issues_006847.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Auto-generate and insert images into the documentation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6847",

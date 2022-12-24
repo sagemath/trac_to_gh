@@ -10,6 +10,7 @@ archive/issues_008011.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Add sagenb.notebook.tutorial into the ReST documentation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8011",

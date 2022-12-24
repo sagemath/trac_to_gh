@@ -10,6 +10,7 @@ archive/issues_003276.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
     "title": "[with patch] more generic assumptions in calculus",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3276",

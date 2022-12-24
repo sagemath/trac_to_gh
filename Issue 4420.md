@@ -10,6 +10,7 @@ archive/issues_004420.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
     "title": "[with patch, needs review] sort Gr\u00f6bner bases",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4420",

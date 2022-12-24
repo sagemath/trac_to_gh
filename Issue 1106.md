@@ -10,6 +10,7 @@ archive/issues_001106.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9.1",
     "title": "speed up dense matrix comparison",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1106",

@@ -10,6 +10,7 @@ archive/issues_007072.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "scipy 0.7.p2 has a GNUism, sending GNU flags to the Sun compiler.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7072",

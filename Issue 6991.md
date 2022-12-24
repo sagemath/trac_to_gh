@@ -10,6 +10,7 @@ archive/issues_006991.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "lattice polytope nfacets method broken for non-reflexive polytopes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6991",

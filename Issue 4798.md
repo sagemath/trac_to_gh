@@ -10,6 +10,7 @@ archive/issues_004798.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
     "title": "Update Cython to 0.10.3 (latest stable upstream)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4798",

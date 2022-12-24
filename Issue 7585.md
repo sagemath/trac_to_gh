@@ -10,6 +10,7 @@ archive/issues_007585.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Fast function field arithmatic",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7585",

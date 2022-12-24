@@ -10,6 +10,7 @@ archive/issues_007127.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "libgcrypt fails to build in 64-bit on Solaris SPARC with gcc",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7127",

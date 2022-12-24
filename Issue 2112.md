@@ -10,6 +10,7 @@ archive/issues_002112.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
     "title": "__contains__ sometimes fails with SR elements due to == returning an equation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2112",

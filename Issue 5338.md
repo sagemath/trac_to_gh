@@ -10,6 +10,7 @@ archive/issues_005338.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "Sage 3.2.2: speed regression/infite loop for \"K.<b> = QQ[a]\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5338",

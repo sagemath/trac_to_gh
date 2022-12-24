@@ -10,6 +10,7 @@ archive/issues_001650.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
     "title": "eclib-20071231.p0.spkg: fix tsat test failure on sage.math",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1650",

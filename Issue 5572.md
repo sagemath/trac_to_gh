@@ -10,6 +10,7 @@ archive/issues_005572.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-9.8",
     "title": "fast_callable improvements (followup for #5093)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5572",

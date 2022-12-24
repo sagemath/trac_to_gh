@@ -10,6 +10,7 @@ archive/issues_006697.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
     "title": "spell-check all modules under sage/functions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6697",

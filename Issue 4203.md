@@ -10,6 +10,7 @@ archive/issues_004203.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
     "title": "Make a suboption decorator to complement #4201",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4203",

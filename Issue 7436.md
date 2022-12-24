@@ -10,6 +10,7 @@ archive/issues_007436.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "frobby optional spkg doesn't build on a lot of machines",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7436",

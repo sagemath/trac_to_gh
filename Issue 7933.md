@@ -10,6 +10,7 @@ archive/issues_007933.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.2",
     "title": "update copyright years to span 2006--2010",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7933",

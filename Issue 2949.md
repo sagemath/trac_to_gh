@@ -10,6 +10,7 @@ archive/issues_002949.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "change slightly the docstring for assume (utterly trivial)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2949",

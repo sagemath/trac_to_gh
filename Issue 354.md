@@ -10,6 +10,7 @@ archive/issues_000354.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.4",
     "title": "Introspection broken for SageX'd files from notebook.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/354",

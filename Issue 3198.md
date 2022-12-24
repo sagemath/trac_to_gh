@@ -10,6 +10,7 @@ archive/issues_003198.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
     "title": "ix 64 bit OSX build support for ecm",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3198",

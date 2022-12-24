@@ -10,6 +10,7 @@ archive/issues_005749.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
     "title": "[with patch, needs review] Bring coverage of sage/rings/power_series_poly.pyx to 100%.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5749",

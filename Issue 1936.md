@@ -10,6 +10,7 @@ archive/issues_001936.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "r-2.6.1.p11: sage-check fails on OSX 10.5",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1936",

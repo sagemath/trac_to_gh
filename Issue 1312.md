@@ -10,6 +10,7 @@ archive/issues_001312.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "[graphs] find hamiltonian cycles and paths",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1312",

@@ -10,6 +10,7 @@ archive/issues_007202.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2.1",
     "title": "On OS X ppc, to_poly_solve evidently doesn't exist / work, which breaks some symbolic doctests",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7202",

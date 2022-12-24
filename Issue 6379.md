@@ -10,6 +10,7 @@ archive/issues_006379.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
     "title": "#2513 made R.py doctest fail for non-english locale",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6379",

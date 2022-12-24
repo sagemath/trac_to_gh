@@ -10,6 +10,7 @@ archive/issues_001680.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
     "title": "Unusual behaviour of the built-in complex numbers",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1680",

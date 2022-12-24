@@ -10,6 +10,7 @@ archive/issues_005073.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "[with spkg, needs review] Update IPython to 0.9.1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5073",

@@ -10,6 +10,7 @@ archive/issues_004655.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
     "title": "doctest failure in plot.py with 3.2.1.rc0 on 64-bit SuSe linux",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4655",

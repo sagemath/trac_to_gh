@@ -10,6 +10,7 @@ archive/issues_002588.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
     "title": "[with patch, needs review] documentation and tests for sage.schemes.hyperelliptic_curves.jacobian_morphism",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2588",

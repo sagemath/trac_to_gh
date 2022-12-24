@@ -10,6 +10,7 @@ archive/issues_004752.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "list_plot3d crashes sage with some exact input",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4752",

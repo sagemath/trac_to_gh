@@ -10,6 +10,7 @@ archive/issues_003330.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-8.5",
     "title": "multivariate polynomial GCD should work over more base rings",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3330",

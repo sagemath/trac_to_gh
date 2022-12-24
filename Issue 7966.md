@@ -10,6 +10,7 @@ archive/issues_007966.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.4",
     "title": "Giving some punch to distance computations",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7966",

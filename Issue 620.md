@@ -10,6 +10,7 @@ archive/issues_000620.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "memory still reachable in vector_rational_dense_21Vector_rational_dense__init",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/620",

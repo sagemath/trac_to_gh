@@ -10,6 +10,7 @@ archive/issues_001987.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
     "title": "[with patch] unintuitive return values for \"forall\" and \"exists\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1987",

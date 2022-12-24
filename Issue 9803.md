@@ -10,6 +10,7 @@ archive/issues_009803.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
     "title": "Remove unnecessary dependy for cliquer in spkg/standard/deps",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9803",

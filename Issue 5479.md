@@ -10,6 +10,7 @@ archive/issues_005479.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.2",
     "title": "schemes/generic/spec.py: Spec.__call__ is basically not implemented",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5479",

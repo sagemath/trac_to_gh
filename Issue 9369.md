@@ -10,6 +10,7 @@ archive/issues_009369.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6.2",
     "title": "make verbose command flush its output",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9369",

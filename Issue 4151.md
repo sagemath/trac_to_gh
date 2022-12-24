@@ -10,6 +10,7 @@ archive/issues_004151.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
     "title": "[with patch, needs review] implementation of Dickman's function",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4151",

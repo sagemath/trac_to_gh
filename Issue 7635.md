@@ -10,6 +10,7 @@ archive/issues_007635.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "notebook -- make it trivial for any user to restrict the notebook server to only listen on certain subdomain",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7635",

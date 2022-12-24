@@ -10,6 +10,7 @@ archive/issues_003264.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "Upgrade PolyBoRi to 0.4 release",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3264",

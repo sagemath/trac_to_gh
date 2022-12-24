@@ -10,6 +10,7 @@ archive/issues_002143.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.4",
     "title": "[with patch, needs review] wrap scipy optimization routines and cvxopt linear programming, add gradient/hessian to calculus",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2143",

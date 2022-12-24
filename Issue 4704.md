@@ -10,6 +10,7 @@ archive/issues_004704.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "Use jquery to make the javascript code nicer",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4704",

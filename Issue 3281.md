@@ -10,6 +10,7 @@ archive/issues_003281.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
     "title": "libecm fails to pbuild",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3281",

@@ -10,6 +10,7 @@ archive/issues_003607.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
     "title": "graph_isom.py: \"Conditional jump or move depends on uninitialised value(s)\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3607",

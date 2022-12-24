@@ -10,6 +10,7 @@ archive/issues_003820.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
     "title": "notebook -- sometimes published worksheets are listed as being published by pub.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3820",

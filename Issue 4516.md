@@ -10,6 +10,7 @@ archive/issues_004516.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
     "title": "make check on binaries should smoothly 100% pass -- right now it fails on the docs and gives lots of verbosity at the start, and #4515",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4516",

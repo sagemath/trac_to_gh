@@ -10,6 +10,7 @@ archive/issues_006820.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "[with patch, needs review] browse sage docs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6820",

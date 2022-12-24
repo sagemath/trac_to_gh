@@ -10,6 +10,7 @@ archive/issues_008223.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.3",
     "title": "tab completion broken for many parent objects",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8223",

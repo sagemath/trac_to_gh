@@ -10,6 +10,7 @@ archive/issues_006203.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.1",
     "title": "numerical noise on sparc solaris (trivial to fix)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6203",

@@ -10,6 +10,7 @@ archive/issues_003640.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.3",
     "title": "optional spkg polymake is broken with Sage 3.0.3/3.0.4",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3640",

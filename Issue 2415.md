@@ -10,6 +10,7 @@ archive/issues_002415.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
     "title": "update NTL to 5.4.2 (bugfix release)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2415",

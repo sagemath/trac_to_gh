@@ -10,6 +10,7 @@ archive/issues_004749.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.3",
     "title": "improve coercion of points between elliptic curves and reduction of points mod p",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4749",

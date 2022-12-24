@@ -10,6 +10,7 @@ archive/issues_007897.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.2",
     "title": "Macaulay2 interface update/improvement for version 1.3.1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7897",

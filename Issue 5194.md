@@ -10,6 +10,7 @@ archive/issues_005194.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "add option to turn off automatic updates for an interact",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5194",

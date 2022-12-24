@@ -10,6 +10,7 @@ archive/issues_003272.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
     "title": "[with patch, needs review] Bug in sparse polynomials over finite fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3272",

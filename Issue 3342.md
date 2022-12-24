@@ -10,6 +10,7 @@ archive/issues_003342.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.2",
     "title": "bizarre source code introspection output",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3342",

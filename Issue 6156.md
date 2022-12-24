@@ -10,6 +10,7 @@ archive/issues_006156.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.1",
     "title": "gap packages don't load anymore on itanium, even with gap-4.4.10.p11 (!)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6156",

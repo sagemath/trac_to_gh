@@ -10,6 +10,7 @@ archive/issues_001202.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9",
     "title": "sqlite-3.5.2.p1.spkg segfaults sage/databases/database.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1202",

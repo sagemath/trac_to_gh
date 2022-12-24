@@ -10,6 +10,7 @@ archive/issues_003542.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
     "title": "[with patch, needs review] multimodular algorithm for Bernoulli numbers",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3542",

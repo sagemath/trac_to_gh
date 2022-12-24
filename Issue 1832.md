@@ -10,6 +10,7 @@ archive/issues_001832.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
     "title": "change how real(...) is defined in Sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1832",

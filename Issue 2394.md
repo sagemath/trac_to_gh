@@ -10,6 +10,7 @@ archive/issues_002394.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "Wrap Cremona's newforms class",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2394",

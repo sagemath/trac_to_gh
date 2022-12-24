@@ -10,6 +10,7 @@ archive/issues_007261.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
     "title": "sagenb notebook: make worksheets saved with new sagneb backwards compatible with old notebook servers.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7261",

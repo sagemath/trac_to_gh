@@ -10,6 +10,7 @@ archive/issues_002933.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "calculus -- substitution of a dict for SymbolicFunctionEvaluation is broken (but **kwds works)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2933",

@@ -10,6 +10,7 @@ archive/issues_007105.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.7",
     "title": "change search_doc and search_src so the links are opened in a new tab/window",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7105",

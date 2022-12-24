@@ -10,6 +10,7 @@ archive/issues_003625.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
     "title": "fix latex2html'ing of the sage docs, which is broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3625",

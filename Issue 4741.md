@@ -10,6 +10,7 @@ archive/issues_004741.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
     "title": "[with patch, not yet ready for review] Implement S-integral point finding for elliptic curves over Q",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4741",

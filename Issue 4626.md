@@ -10,6 +10,7 @@ archive/issues_004626.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "error in bessel_J(0,0)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4626",

@@ -10,6 +10,7 @@ archive/issues_003963.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "[with patch, needs review] bug in converting Sage's rationals to Sympy rationals",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3963",

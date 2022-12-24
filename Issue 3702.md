@@ -10,6 +10,7 @@ archive/issues_003702.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-wishlist",
     "title": "Improve exporting 3d plots as X3D",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3702",

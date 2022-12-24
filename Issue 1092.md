@@ -10,6 +10,7 @@ archive/issues_001092.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10",
     "title": "small memleaks exposed by ntl_ZZ_pE (from 2.8.12.alpha0)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1092",

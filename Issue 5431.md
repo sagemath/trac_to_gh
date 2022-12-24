@@ -10,6 +10,7 @@ archive/issues_005431.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.2",
     "title": "Command line parser fails on hex values with 'e'",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5431",

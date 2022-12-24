@@ -10,6 +10,7 @@ archive/issues_004549.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
     "title": "New method horizontal_border_strip using new IntegerListsLex combinatorial class",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4549",

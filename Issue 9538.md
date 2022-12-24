@@ -10,6 +10,7 @@ archive/issues_009538.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
     "title": "internal side effect in roots?",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9538",

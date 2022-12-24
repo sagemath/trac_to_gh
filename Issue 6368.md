@@ -10,6 +10,7 @@ archive/issues_006368.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.2",
     "title": "shift-tab in the notebook should go back 4 spaces instead of going to the previous input cell",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6368",

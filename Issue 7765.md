@@ -10,6 +10,7 @@ archive/issues_007765.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.1",
     "title": "In sage-4.3, the command \"sage -bdist\" is broken on OS X",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7765",

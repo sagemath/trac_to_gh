@@ -10,6 +10,7 @@ archive/issues_001105.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.12",
     "title": "[with patch] static memory leak in libSingular interface",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1105",

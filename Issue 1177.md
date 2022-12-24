@@ -10,6 +10,7 @@ archive/issues_001177.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.13",
     "title": "update mpfr.spkg to lates 3.2.0-p4",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1177",

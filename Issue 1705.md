@@ -10,6 +10,7 @@ archive/issues_001705.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10",
     "title": "factorization of polynomials over non-prime finite fields is TOTALLY BROKEN in Sage (and Singular?!)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1705",

@@ -10,6 +10,7 @@ archive/issues_008665.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "__future__ imports not respected in notebook %python mode",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8665",

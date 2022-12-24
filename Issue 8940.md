@@ -10,6 +10,7 @@ archive/issues_008940.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "doctest failures in sagedoc.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8940",

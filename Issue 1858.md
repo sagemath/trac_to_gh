@@ -10,6 +10,7 @@ archive/issues_001858.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
     "title": "plot.py coverage is crap -- get it to 100%",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1858",

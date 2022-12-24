@@ -10,6 +10,7 @@ archive/issues_004107.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "[with patch, needs review] trivial typos in tut.tex",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4107",

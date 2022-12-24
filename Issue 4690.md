@@ -10,6 +10,7 @@ archive/issues_004690.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
     "title": "[with patch; needs review] Sage hangs on derivative of piecewise function",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4690",

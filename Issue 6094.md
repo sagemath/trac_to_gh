@@ -10,6 +10,7 @@ archive/issues_006094.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6.1",
     "title": "Change all occurrences of \"method\" to \"algorithm\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6094",

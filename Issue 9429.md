@@ -10,6 +10,7 @@ archive/issues_009429.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "Undesirable behaviour when deriving from QuotientRingElement",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9429",

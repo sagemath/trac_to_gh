@@ -10,6 +10,7 @@ archive/issues_005319.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4",
     "title": "Fix location of source in the Sage's installation manual",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5319",

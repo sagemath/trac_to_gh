@@ -10,6 +10,7 @@ archive/issues_009698.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6.1",
     "title": "Hamiltonian cycles in undirected graphs - backtracking algorithm.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9698",

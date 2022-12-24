@@ -10,6 +10,7 @@ archive/issues_000596.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
     "title": "sage wiki() doesn't close with ctl-C",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/596",

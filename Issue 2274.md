@@ -10,6 +10,7 @@ archive/issues_002274.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
     "title": "guava->python, 1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2274",

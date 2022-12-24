@@ -10,6 +10,7 @@ archive/issues_004809.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.2",
     "title": "the installation guide and constructions guide should be CC licensed",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4809",

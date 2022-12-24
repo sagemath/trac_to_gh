@@ -10,6 +10,7 @@ archive/issues_004971.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "make get_memory_usage() return a float on all platforms",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4971",

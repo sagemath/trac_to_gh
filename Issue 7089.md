@@ -10,6 +10,7 @@ archive/issues_007089.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
     "title": "refactor SAGE_ROOT/makefile",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7089",

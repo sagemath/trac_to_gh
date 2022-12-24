@@ -10,6 +10,7 @@ archive/issues_000888.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
     "title": "2.8.7-alpha0: doctest failure in dsage/tests/testdoc.py (requires previous dsage setup)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/888",

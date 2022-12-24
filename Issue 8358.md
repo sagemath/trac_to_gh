@@ -10,6 +10,7 @@ archive/issues_008358.json:
         "trivial",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.4",
     "title": "improved documentation of number_field.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8358",

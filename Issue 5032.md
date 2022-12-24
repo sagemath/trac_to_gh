@@ -10,6 +10,7 @@ archive/issues_005032.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "dividing a sparse matrix by a scalar gives a dense matrix, but multiplying gives a sparse one",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5032",

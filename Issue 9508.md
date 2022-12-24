@@ -10,6 +10,7 @@ archive/issues_009508.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.3",
     "title": "ATLAS is not building shared libraries properly on Solaris 10 and OpenSolaris",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9508",

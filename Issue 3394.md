@@ -10,6 +10,7 @@ archive/issues_003394.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "[with patch, needs review] pbuild emacs fix",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3394",

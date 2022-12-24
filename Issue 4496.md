@@ -10,6 +10,7 @@ archive/issues_004496.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
     "title": "Plot doesn't allow variable outside tuple after lambda",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4496",

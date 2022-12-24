@@ -10,6 +10,7 @@ archive/issues_002361.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
     "title": "Substitution without specifying variables should raise exception in case of ambiguity",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2361",

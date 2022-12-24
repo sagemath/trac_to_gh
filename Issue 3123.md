@@ -10,6 +10,7 @@ archive/issues_003123.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "blacklist \"gcc version 4.1.0 (SUSE Linux)\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3123",

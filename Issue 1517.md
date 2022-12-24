@@ -10,6 +10,7 @@ archive/issues_001517.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Make sure a minimum of space is available to build component",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1517",

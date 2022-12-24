@@ -10,6 +10,7 @@ archive/issues_007721.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "digraphs.CircuitGraph",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7721",

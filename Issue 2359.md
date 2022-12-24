@@ -10,6 +10,7 @@ archive/issues_002359.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
     "title": "notebook -- make it so when you send a kill signal to the notebook server it saves state",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2359",

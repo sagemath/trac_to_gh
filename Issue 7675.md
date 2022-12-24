@@ -10,6 +10,7 @@ archive/issues_007675.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-8.1",
     "title": "shortest_path in c_graph should have an optional flag distance=False to return only the distance",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7675",

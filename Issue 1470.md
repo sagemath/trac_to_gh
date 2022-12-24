@@ -10,6 +10,7 @@ archive/issues_001470.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "upgrade maxima.spkg to 5.14.0",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1470",

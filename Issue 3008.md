@@ -10,6 +10,7 @@ archive/issues_003008.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
     "title": "first cell in notebook is undeletable",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3008",

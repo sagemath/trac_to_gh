@@ -10,6 +10,7 @@ archive/issues_009818.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Add a default gcd and lcm methods for fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9818",

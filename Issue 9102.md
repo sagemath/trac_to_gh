@@ -10,6 +10,7 @@ archive/issues_009102.json:
         "trivial",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5",
     "title": "Docstring improvements for strong generating systems of permutation groups",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9102",

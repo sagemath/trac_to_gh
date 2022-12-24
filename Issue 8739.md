@@ -10,6 +10,7 @@ archive/issues_008739.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6.2",
     "title": "Addition of Kolakoski word",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8739",

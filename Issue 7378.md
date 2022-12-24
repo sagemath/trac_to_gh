@@ -10,6 +10,7 @@ archive/issues_007378.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5",
     "title": "Subdivide edges in a graph",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7378",

@@ -10,6 +10,7 @@ archive/issues_007939.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.2",
     "title": "shorten doctests in sage/rings/multi_polynomial_ideal.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7939",

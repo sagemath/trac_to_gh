@@ -10,6 +10,7 @@ archive/issues_001436.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9",
     "title": "FLINT 1.01 doesn't pass test suite on OSX 10.5.1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1436",

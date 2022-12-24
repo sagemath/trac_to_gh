@@ -10,6 +10,7 @@ archive/issues_006070.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
     "title": "Get doctest coverage in sage/modular to 100%",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6070",

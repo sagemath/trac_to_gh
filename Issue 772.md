@@ -10,6 +10,7 @@ archive/issues_000772.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "Interface to QEPCAD for quantifier elimination and solving systems of inequalities",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/772",

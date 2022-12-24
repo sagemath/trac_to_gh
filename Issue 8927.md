@@ -10,6 +10,7 @@ archive/issues_008927.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5",
     "title": "is_triangle_free",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8927",

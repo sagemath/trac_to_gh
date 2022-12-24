@@ -10,6 +10,7 @@ archive/issues_004061.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
     "title": "coercion from torsion subgroup of elliptic curve to elliptic curve is broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4061",

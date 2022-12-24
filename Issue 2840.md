@@ -10,6 +10,7 @@ archive/issues_002840.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "notebook -- remove ALL unused javascript from js.py and DOCUMENT every single function",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2840",

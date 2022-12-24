@@ -10,6 +10,7 @@ archive/issues_007881.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Make polynomials respect the _gcd framework so that they can use coercion in gcds",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7881",

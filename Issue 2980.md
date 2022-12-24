@@ -10,6 +10,7 @@ archive/issues_002980.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "itanium (RHEL 5) -- weyl_group.py is broken on itanium",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2980",

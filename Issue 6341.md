@@ -10,6 +10,7 @@ archive/issues_006341.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.13",
     "title": "implement Mestre's algorithm for constructing genus 2 hyperelliptic curves",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6341",

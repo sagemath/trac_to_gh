@@ -10,6 +10,7 @@ archive/issues_007537.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.7",
     "title": "list(SR('c').iterator()) is empty",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7537",

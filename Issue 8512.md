@@ -10,6 +10,7 @@ archive/issues_008512.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.4",
     "title": "database_stein_watkins_mini uses 'cp -v' which fails on Solaris.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8512",

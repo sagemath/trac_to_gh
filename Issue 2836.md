@@ -10,6 +10,7 @@ archive/issues_002836.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "[with patch, needs review] twisted.conch.ssh deprecated functions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2836",

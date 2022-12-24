@@ -10,6 +10,7 @@ archive/issues_009544.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.1",
     "title": "Fix flintqs on FreeBSD",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9544",

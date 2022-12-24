@@ -10,6 +10,7 @@ archive/issues_001249.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.15",
     "title": "[with patch] fixes bug in graph plotting with partitions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1249",

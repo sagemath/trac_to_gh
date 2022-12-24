@@ -10,6 +10,7 @@ archive/issues_003757.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
     "title": "[with preliminary patch, needs review] change printing for intervals (and AA/QQbar)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3757",

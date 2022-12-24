@@ -10,6 +10,7 @@ archive/issues_007742.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.7",
     "title": "add a compose function to sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7742",

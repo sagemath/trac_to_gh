@@ -10,6 +10,7 @@ archive/issues_007660.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-8.2",
     "title": "arithmetic with inequalities confusing",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7660",

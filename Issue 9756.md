@@ -10,6 +10,7 @@ archive/issues_009756.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Document SAGE_TUNE_pari in Sage installation guide.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9756",

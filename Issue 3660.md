@@ -10,6 +10,7 @@ archive/issues_003660.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.6",
     "title": "add documentation to the reference manual for crystals and Weyl groups / characters",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3660",

@@ -10,6 +10,7 @@ archive/issues_001173.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "implement numerical evaluation of erf at complex arguments",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1173",

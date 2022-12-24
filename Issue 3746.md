@@ -10,6 +10,7 @@ archive/issues_003746.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
     "title": "segfault in dist_factor.py on itanium",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3746",

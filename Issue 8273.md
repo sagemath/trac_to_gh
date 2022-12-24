@@ -10,6 +10,7 @@ archive/issues_008273.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.4",
     "title": "Enumeration of cycles in directed graphs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8273",

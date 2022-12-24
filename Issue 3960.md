@@ -10,6 +10,7 @@ archive/issues_003960.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "\"edit this\" on published worksheets doesn't work anymore in 3.1.1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3960",

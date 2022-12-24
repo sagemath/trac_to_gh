@@ -10,6 +10,7 @@ archive/issues_002970.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "Permissions on spkg-debian scripts",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2970",

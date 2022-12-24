@@ -10,6 +10,7 @@ archive/issues_009507.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.1",
     "title": "if spkg-install is a Python script, first check that SAGE_LOCAL/bin/python exists.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9507",

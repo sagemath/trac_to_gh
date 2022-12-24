@@ -10,6 +10,7 @@ archive/issues_004880.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
     "title": "[with spkg, needs review] Improved experimental spkg vtk-5.2",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4880",

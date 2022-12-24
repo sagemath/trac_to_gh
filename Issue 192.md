@@ -10,6 +10,7 @@ archive/issues_000192.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-1.8",
     "title": "polynomial arithmetic bug",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/192",

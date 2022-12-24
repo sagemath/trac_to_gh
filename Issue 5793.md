@@ -10,6 +10,7 @@ archive/issues_005793.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
     "title": "[with patch, needs review] New algorithm for Max Clique in Graph class using Cython",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5793",

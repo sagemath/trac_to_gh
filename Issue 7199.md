@@ -10,6 +10,7 @@ archive/issues_007199.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
     "title": "inefficiency of creation of sparse matrices",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7199",

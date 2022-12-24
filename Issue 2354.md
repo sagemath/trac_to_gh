@@ -10,6 +10,7 @@ archive/issues_002354.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.4",
     "title": "bug in matrix_real_double_dense  (trivial to fix)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2354",

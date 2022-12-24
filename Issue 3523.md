@@ -10,6 +10,7 @@ archive/issues_003523.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
     "title": "[with spkg; needs review] upgrade flint to 1.0.10",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3523",

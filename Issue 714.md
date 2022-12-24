@@ -10,6 +10,7 @@ archive/issues_000714.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.5",
     "title": "The line(s) in interfaces/* like this are bad.  Should kill -9: print \"WARNING: -- unable to kill %s. You may have to do so manually.\"%self",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/714",

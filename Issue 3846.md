@@ -10,6 +10,7 @@ archive/issues_003846.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "bug in the sage preparser -- vector(v)[3] = 5 slips by!",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3846",

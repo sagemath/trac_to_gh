@@ -10,6 +10,7 @@ archive/issues_005534.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
     "title": "sage.combinat.subword.smallest_positions modifying its input",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5534",

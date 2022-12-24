@@ -10,6 +10,7 @@ archive/issues_007554.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.3",
     "title": "bug in multivariate polynomial factorization",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7554",

@@ -10,6 +10,7 @@ archive/issues_002077.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
     "title": "matrix.column(i) should throw error when i is larger than the number of columns in the matrix (minus 1).",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2077",

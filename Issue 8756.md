@@ -10,6 +10,7 @@ archive/issues_008756.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.3",
     "title": "random segfault in planarity.pyx test",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8756",

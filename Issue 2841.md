@@ -10,6 +10,7 @@ archive/issues_002841.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "maxima pukes on non-ascii filenames (terrible evil bug!)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2841",

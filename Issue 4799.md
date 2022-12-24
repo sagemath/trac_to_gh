@@ -10,6 +10,7 @@ archive/issues_004799.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
     "title": "[with patch, positive review] Add mappded CombinatorialClasses",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4799",

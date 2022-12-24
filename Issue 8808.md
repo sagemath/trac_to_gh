@@ -10,6 +10,7 @@ archive/issues_008808.json:
         "critical",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "upgrade ecl from 10.2.1 to 10.4.1 (or whatever is newest upstream)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8808",

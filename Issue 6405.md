@@ -10,6 +10,7 @@ archive/issues_006405.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Typesetting of imaginary 'I' in new Symbolics is not proper",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6405",

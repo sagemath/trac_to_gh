@@ -10,6 +10,7 @@ archive/issues_008539.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.5",
     "title": "EllipticCurve('6006j1').sha().p_primary_bound(3) ignores CTRL-C",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8539",

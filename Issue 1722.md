@@ -10,6 +10,7 @@ archive/issues_001722.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
     "title": "Symbolic Matrices should be callable.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1722",

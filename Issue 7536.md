@@ -10,6 +10,7 @@ archive/issues_007536.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "Toroidal Grid in graph_generators",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7536",

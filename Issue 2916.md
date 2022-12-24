@@ -10,6 +10,7 @@ archive/issues_002916.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "[with patch; needs review] invalid coercion between non-prime finite fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2916",

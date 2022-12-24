@@ -10,6 +10,7 @@ archive/issues_000331.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
     "title": "compiled implementation of dense univariate polynomial arithmetic",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/331",

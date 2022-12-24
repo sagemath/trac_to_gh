@@ -10,6 +10,7 @@ archive/issues_004095.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "Major bug in GF(109)['x', 'y']",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4095",

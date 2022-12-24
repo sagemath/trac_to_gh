@@ -10,6 +10,7 @@ archive/issues_007938.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.2",
     "title": "'term' and 'monomial' are inconsistently used in some Category and combinat code",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7938",

@@ -10,6 +10,7 @@ archive/issues_009615.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.2",
     "title": "doctest failures with lcalc functions in 4.5.2.alpha1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9615",

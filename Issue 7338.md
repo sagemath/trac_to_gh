@@ -10,6 +10,7 @@ archive/issues_007338.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.3",
     "title": "Singular fails to build on cygwin",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7338",

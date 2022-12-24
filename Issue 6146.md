@@ -10,6 +10,7 @@ archive/issues_006146.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "[with patch, needs review] the detection of SAGE_ROOT in $SAGE_ROOT/sage script should expand symlinks recursively (fix this on systems that do *NOT* support readlink -f)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6146",

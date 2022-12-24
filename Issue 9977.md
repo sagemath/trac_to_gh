@@ -10,6 +10,7 @@ archive/issues_009977.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.7",
     "title": "Add a test for the maths library in the 'prereq' script.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9977",

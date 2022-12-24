@@ -10,6 +10,7 @@ archive/issues_001089.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.13",
     "title": "[with patch] graphs: update subgraph to handle a list of edges",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1089",

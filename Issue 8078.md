@@ -10,6 +10,7 @@ archive/issues_008078.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.8",
     "title": "Fix algsys in Maxima",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8078",

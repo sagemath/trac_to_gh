@@ -10,6 +10,7 @@ archive/issues_000154.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-1.8",
     "title": "gfan -- something wrong",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/154",

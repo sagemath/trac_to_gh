@@ -10,6 +10,7 @@ archive/issues_007631.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.2",
     "title": "notebook -- republishing a worksheet doesn't update the displayed title",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7631",

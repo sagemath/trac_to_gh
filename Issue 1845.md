@@ -10,6 +10,7 @@ archive/issues_001845.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
     "title": "[with patch, spkg] list_plot3d should be able to accept lists of points in arbitrary positions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1845",

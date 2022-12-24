@@ -10,6 +10,7 @@ archive/issues_004708.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
     "title": "sage -tp doesn't test absolute file names nor does it ignore non-existent files",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4708",

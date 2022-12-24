@@ -10,6 +10,7 @@ archive/issues_009065.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.7.1",
     "title": "Add support for facade parents",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9065",

@@ -10,6 +10,7 @@ archive/issues_009172.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "cygwin: numerical noise in sage/rings/integer.pyx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9172",

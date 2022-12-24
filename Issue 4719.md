@@ -10,6 +10,7 @@ archive/issues_004719.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
     "title": "Doctests report mysterious errors instead of ordinary failures",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4719",

@@ -10,6 +10,7 @@ archive/issues_008615.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "sage notebook: in chrome creating a new worksheet just returns the last opened worksheet",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8615",

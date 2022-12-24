@@ -10,6 +10,7 @@ archive/issues_002332.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.4",
     "title": "notebook -- the evaluate link doesn't",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2332",

@@ -10,6 +10,7 @@ archive/issues_005703.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
     "title": "[with patch; needs review] notebook -- fix major bug introduced by #5687",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5703",

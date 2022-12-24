@@ -10,6 +10,7 @@ archive/issues_003548.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
     "title": "bug in Permutation creation from a string",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3548",

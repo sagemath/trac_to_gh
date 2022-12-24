@@ -10,6 +10,7 @@ archive/issues_005786.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "interrupt makes truncated output --> /dev/null",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5786",

@@ -10,6 +10,7 @@ archive/issues_003304.json:
         "blocker",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.3",
     "title": "[with patch; needs review] Make cddlib Debian package use shared library",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3304",

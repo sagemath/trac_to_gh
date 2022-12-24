@@ -10,6 +10,7 @@ archive/issues_004007.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "OSX 10.4/5: build libpng.dylib again",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4007",

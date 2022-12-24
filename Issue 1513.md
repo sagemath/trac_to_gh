@@ -10,6 +10,7 @@ archive/issues_001513.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9",
     "title": "FLINT install uses make -B, which isn't an option on (slightly) older make versions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1513",

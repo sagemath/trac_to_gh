@@ -10,6 +10,7 @@ archive/issues_009107.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.3",
     "title": "Nested class name mangling can be wrong in case of double nesting",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9107",

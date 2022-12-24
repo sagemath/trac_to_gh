@@ -10,6 +10,7 @@ archive/issues_001615.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9.2",
     "title": "mpfi -- build is seriously broken on at least one system",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1615",

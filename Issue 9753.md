@@ -10,6 +10,7 @@ archive/issues_009753.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
     "title": "Simplify NumberFieldIdeal.gens_reduced()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9753",

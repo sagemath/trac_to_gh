@@ -10,6 +10,7 @@ archive/issues_005623.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
     "title": "5x speedup in all_graph_colorings",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5623",

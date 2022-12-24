@@ -10,6 +10,7 @@ archive/issues_000619.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.8",
     "title": "memleak in Matrix_integer_dense__zero_out_matrix",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/619",

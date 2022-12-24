@@ -10,6 +10,7 @@ archive/issues_002306.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Tab completion in the command-line mode",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2306",

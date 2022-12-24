@@ -10,6 +10,7 @@ archive/issues_006100.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.11",
     "title": "give a basis for homology and cohomology of chain complexes in terms of given generators",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6100",

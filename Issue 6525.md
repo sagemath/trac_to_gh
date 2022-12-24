@@ -10,6 +10,7 @@ archive/issues_006525.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-feature",
     "title": "Enabling some GraphLatex options that were hard coded.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6525",

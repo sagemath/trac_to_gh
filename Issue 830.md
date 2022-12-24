@@ -10,6 +10,7 @@ archive/issues_000830.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.11",
     "title": "SAGE does not install 'gphelp' for extended PARI/GP help",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/830",

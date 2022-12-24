@@ -10,6 +10,7 @@ archive/issues_007563.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5",
     "title": "Interval Graphs : recognition and interval representation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7563",

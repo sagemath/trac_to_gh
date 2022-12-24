@@ -10,6 +10,7 @@ archive/issues_002540.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.4",
     "title": "dsage doctest fails in 2.10.4.alpha0",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2540",

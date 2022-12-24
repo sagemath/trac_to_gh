@@ -10,6 +10,7 @@ archive/issues_006347.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "use faster 2^m^ implementation up to 2^62^ on 64-bit systems",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6347",

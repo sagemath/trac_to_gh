@@ -10,6 +10,7 @@ archive/issues_006786.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
     "title": "4 doctest failures in sage-4.1.1/devel/sage/doc/en/tutorial/tour_algebra.rst",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6786",

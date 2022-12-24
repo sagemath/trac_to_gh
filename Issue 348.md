@@ -10,6 +10,7 @@ archive/issues_000348.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "R stats support in SAGE (??)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/348",

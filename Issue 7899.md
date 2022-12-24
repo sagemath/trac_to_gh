@@ -10,6 +10,7 @@ archive/issues_007899.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "Remove variable names like $LN, $MKDIR etc in ntl",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7899",

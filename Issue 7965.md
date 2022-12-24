@@ -10,6 +10,7 @@ archive/issues_007965.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.0",
     "title": "quo_rem attribute error (probably easy to fix?)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7965",

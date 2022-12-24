@@ -10,6 +10,7 @@ archive/issues_005093.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
     "title": "[with preliminary patch, request comments] rewrite fast_float to support more datatypes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5093",

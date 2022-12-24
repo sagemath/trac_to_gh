@@ -10,6 +10,7 @@ archive/issues_003693.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.3",
     "title": "upgrade moinmoin to 1.7.1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3693",

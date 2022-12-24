@@ -10,6 +10,7 @@ archive/issues_005958.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
     "title": "[with patch, needs work] MPolynomial_polydict.factor() should accept proof parameter",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5958",

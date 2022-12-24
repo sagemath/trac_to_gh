@@ -10,6 +10,7 @@ archive/issues_001911.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
     "title": "[with patch; needs review] elliptic curves -- make heegner_index command return index instead of square of index; clarify why sometimes results is not an integer (it's not a bug, it's part of the algorithm)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1911",

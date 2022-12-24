@@ -10,6 +10,7 @@ archive/issues_003178.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
     "title": "add 64 bit OSX build support to freetype",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3178",

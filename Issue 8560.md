@@ -10,6 +10,7 @@ archive/issues_008560.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4",
     "title": "magma interface should be changed to use sage-native-execute",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8560",

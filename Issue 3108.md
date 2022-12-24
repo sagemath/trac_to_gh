@@ -10,6 +10,7 @@ archive/issues_003108.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
     "title": "implement additive_order for elliptic curve points",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3108",

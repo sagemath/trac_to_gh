@@ -10,6 +10,7 @@ archive/issues_004486.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "Clean up partitions_c.cc and partitions_c.h",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4486",

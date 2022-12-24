@@ -10,6 +10,7 @@ archive/issues_006474.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1",
     "title": "PDF version of the reference manual should build successfully",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6474",

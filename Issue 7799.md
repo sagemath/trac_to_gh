@@ -10,6 +10,7 @@ archive/issues_007799.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "install_scripts should not install M2",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7799",

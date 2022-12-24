@@ -10,6 +10,7 @@ archive/issues_007343.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2.1",
     "title": "SageNB -- Add a Selenium test suite.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7343",

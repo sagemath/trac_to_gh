@@ -10,6 +10,7 @@ archive/issues_005385.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Sage 3.3: GAP 4.4.12 experiences strange startup problem on some Linux systems",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5385",

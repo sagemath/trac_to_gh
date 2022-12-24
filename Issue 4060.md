@@ -10,6 +10,7 @@ archive/issues_004060.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
     "title": "Polyhedra don't handle real coordinates properly",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4060",

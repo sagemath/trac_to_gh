@@ -10,6 +10,7 @@ archive/issues_009308.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Add an spkg-check file for GnuTLS",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9308",

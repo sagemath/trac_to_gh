@@ -10,6 +10,7 @@ archive/issues_007169.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "HP-UX PolyBoRi 0.6.3-20090827  fail to build on HP-UX 11i",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7169",

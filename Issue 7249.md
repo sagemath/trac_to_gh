@@ -10,6 +10,7 @@ archive/issues_007249.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.2",
     "title": "switch the notebook's templating system to Jinja2",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7249",

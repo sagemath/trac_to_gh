@@ -10,6 +10,7 @@ archive/issues_007794.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.7.1",
     "title": "PolynomialRing_integral_domain ignores Ctrl-C and segfaults",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7794",

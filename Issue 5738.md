@@ -10,6 +10,7 @@ archive/issues_005738.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
     "title": "update MPIR to 1.0.0.rc8: --enable-gmplink -> --enable-gmpcompat",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5738",

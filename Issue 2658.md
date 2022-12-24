@@ -10,6 +10,7 @@ archive/issues_002658.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "Matrix from a vector doesn't preserve the vector's parent ring automatically",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2658",

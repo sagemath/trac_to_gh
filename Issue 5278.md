@@ -10,6 +10,7 @@ archive/issues_005278.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4",
     "title": "On modern fedora 64 installs, sage exists frequently when omalloc things there is no memory left",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5278",

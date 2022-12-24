@@ -10,6 +10,7 @@ archive/issues_008680.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5",
     "title": "untabify Sage again, and make it stick",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8680",

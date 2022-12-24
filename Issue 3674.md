@@ -10,6 +10,7 @@ archive/issues_003674.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
     "title": "Implement integral point finding for elliptic curves over Q",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3674",

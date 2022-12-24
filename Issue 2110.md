@@ -10,6 +10,7 @@ archive/issues_002110.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Cython annotation should be available more easily",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2110",

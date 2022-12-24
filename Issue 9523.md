@@ -10,6 +10,7 @@ archive/issues_009523.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6.1",
     "title": "Arch linux build fails because our readline spkg is too old",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9523",

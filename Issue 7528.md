@@ -10,6 +10,7 @@ archive/issues_007528.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "Orientation of a graph with bounded out-degree",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7528",

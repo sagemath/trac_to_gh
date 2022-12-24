@@ -10,6 +10,7 @@ archive/issues_005565.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "sage crashes because of too small stacksize",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5565",

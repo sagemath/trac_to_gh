@@ -10,6 +10,7 @@ archive/issues_009970.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Build problem in boehm_gc found with randomised testing",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9970",

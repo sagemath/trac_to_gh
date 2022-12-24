@@ -10,6 +10,7 @@ archive/issues_009519.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "scipy does not exit if there are build failures, but spkg-install looks OK",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9519",

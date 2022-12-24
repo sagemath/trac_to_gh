@@ -10,6 +10,7 @@ archive/issues_003610.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "__contains__ for RealIntervalFields does not work correctly.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3610",

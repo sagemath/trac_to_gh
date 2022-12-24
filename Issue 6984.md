@@ -10,6 +10,7 @@ archive/issues_006984.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "cygwin port: make lapack into a dummy spkg that requires systemwide lapack",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6984",

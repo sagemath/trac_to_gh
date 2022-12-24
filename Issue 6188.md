@@ -10,6 +10,7 @@ archive/issues_006188.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.2",
     "title": "[with patch, needs review] Add more files in sage/rings/number_field to reference manual",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6188",

@@ -10,6 +10,7 @@ archive/issues_002733.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "PARI in Debian has the mathnf bug",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2733",

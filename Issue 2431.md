@@ -10,6 +10,7 @@ archive/issues_002431.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
     "title": "[optional spkg] polymake-2.2.p3.spkg fix",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2431",

@@ -10,6 +10,7 @@ archive/issues_001743.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10",
     "title": "implausibly old time stamp in optional package gap_packages-4.4.10_2.spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1743",

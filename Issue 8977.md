@@ -10,6 +10,7 @@ archive/issues_008977.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.7",
     "title": "Bug in QuadraticForm.rational_diagonal_form()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8977",

@@ -10,6 +10,7 @@ archive/issues_008836.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.1",
     "title": "sagenb doctest issue discovered on t2.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8836",

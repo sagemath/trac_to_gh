@@ -10,6 +10,7 @@ archive/issues_007944.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.3",
     "title": "update Developers' Guide to reflect new process for working on tickets",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7944",

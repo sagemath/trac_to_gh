@@ -10,6 +10,7 @@ archive/issues_004932.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.6",
     "title": "fix solve_left_LU for matrix_double_dense, which was totally broken forever (?)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4932",

@@ -10,6 +10,7 @@ archive/issues_000543.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.4",
     "title": "include Chris Gorecki's very basic symbolic logic functions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/543",

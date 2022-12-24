@@ -10,6 +10,7 @@ archive/issues_005065.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "elliptic curve torsion subgroup doesn't know it's identity",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5065",

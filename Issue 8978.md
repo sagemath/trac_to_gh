@@ -10,6 +10,7 @@ archive/issues_008978.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Sage doesn't build on (64bit) OpenSuse 11.2",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8978",

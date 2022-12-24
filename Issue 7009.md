@@ -10,6 +10,7 @@ archive/issues_007009.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "Formatted output options for ciphertext",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7009",

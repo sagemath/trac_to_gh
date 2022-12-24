@@ -10,6 +10,7 @@ archive/issues_002932.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
     "title": "matrix.is_invertible() has inconsisten behavior over CDF",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2932",

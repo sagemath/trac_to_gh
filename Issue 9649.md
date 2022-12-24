@@ -10,6 +10,7 @@ archive/issues_009649.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.3",
     "title": "c_lib/include/interrupt.h: rename FOO_H",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9649",

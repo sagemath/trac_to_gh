@@ -10,6 +10,7 @@ archive/issues_005979.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.1",
     "title": "Parent: fixes broken (implicit) invariant between ._element_constructor and self._element_init_pass_parent",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5979",

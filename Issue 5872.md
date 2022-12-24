@@ -10,6 +10,7 @@ archive/issues_005872.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1",
     "title": "[with patch, needs review] Explicitly pass -fPIC into ntl shared object build.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5872",

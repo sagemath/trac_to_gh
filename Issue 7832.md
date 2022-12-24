@@ -10,6 +10,7 @@ archive/issues_007832.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "singular-3-1-0-4-20090818.p2 - fix compilation on FreeBSD",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7832",

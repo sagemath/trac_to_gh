@@ -10,6 +10,7 @@ archive/issues_000666.json:
         "trivial",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.5",
     "title": "add spacing in latex output of matrices for increasing readbility",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/666",

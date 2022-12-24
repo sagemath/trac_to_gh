@@ -10,6 +10,7 @@ archive/issues_001846.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "maxima looses minus signs in symbolic expression",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1846",

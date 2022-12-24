@@ -10,6 +10,7 @@ archive/issues_005382.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4",
     "title": "Update MPFR to 2.4.1 (security)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5382",

@@ -10,6 +10,7 @@ archive/issues_009104.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.4",
     "title": "_name is set too late when creating a combinatorial free module",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9104",

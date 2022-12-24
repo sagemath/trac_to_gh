@@ -10,6 +10,7 @@ archive/issues_009737.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Moved interact to view an induced subgraph from wiki to library",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9737",

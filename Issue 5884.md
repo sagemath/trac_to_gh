@@ -10,6 +10,7 @@ archive/issues_005884.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "OpenSuse 11/x86-64: doctest failure in groups/perm_gps/permgroup.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5884",

@@ -10,6 +10,7 @@ archive/issues_007868.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "Factoring in fraction fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7868",

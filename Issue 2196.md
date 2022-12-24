@@ -10,6 +10,7 @@ archive/issues_002196.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
     "title": "Elliptic Curve quadratic/quartic/sextic twists: unhelpful error message when D=0",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2196",

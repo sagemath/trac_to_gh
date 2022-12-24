@@ -10,6 +10,7 @@ archive/issues_005182.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Strange Symmetrica segfault",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5182",

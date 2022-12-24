@@ -10,6 +10,7 @@ archive/issues_006004.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
     "title": "[with patch, needs review] add odd_degree_model function to hyperelliptic curves",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6004",

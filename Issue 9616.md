@@ -10,6 +10,7 @@ archive/issues_009616.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.2",
     "title": "segfault / NFS problems with parallel/decorate.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9616",

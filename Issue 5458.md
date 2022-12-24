@@ -10,6 +10,7 @@ archive/issues_005458.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Refactor set partitions with a single entry points in global name space for the various cartan types",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5458",

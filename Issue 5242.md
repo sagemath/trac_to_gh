@@ -10,6 +10,7 @@ archive/issues_005242.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "[with patch, needs review] generic_power can now handle semi-groups",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5242",

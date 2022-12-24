@@ -10,6 +10,7 @@ archive/issues_000849.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.7",
     "title": "Cython 0.9.6.7",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/849",

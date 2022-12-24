@@ -10,6 +10,7 @@ archive/issues_002844.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "Polyhedral improvements, round 2",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2844",

@@ -10,6 +10,7 @@ archive/issues_001025.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.10",
     "title": "[with patch] error converting symmetric functions into a dual basis",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1025",

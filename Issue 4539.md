@@ -10,6 +10,7 @@ archive/issues_004539.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.0",
     "title": "[with patch, needs work] plural wrapper",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4539",

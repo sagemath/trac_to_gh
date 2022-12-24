@@ -10,6 +10,7 @@ archive/issues_005119.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "abstract class for unique representation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5119",

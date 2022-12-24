@@ -10,6 +10,7 @@ archive/issues_000674.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Solaris 10: sympow is broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/674",

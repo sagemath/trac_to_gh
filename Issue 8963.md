@@ -10,6 +10,7 @@ archive/issues_008963.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.2",
     "title": "Make tableau row_stabilizer return group of perms involving all elements of the tableau",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8963",

@@ -10,6 +10,7 @@ archive/issues_005393.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4",
     "title": "pycrypto 2.0.1: integrate fix for http://www.securityfocus.com/bid/33674/info (security)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5393",

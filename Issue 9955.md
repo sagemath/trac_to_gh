@@ -10,6 +10,7 @@ archive/issues_009955.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "latex(-1/2 * polynom) broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9955",

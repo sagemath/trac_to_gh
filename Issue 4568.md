@@ -10,6 +10,7 @@ archive/issues_004568.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
     "title": "Dangerous doc test of save_session",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4568",

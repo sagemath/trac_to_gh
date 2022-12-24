@@ -10,6 +10,7 @@ archive/issues_003455.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
     "title": "notebook -- after registration give user login box with congratulations message",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3455",

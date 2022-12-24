@@ -10,6 +10,7 @@ archive/issues_004518.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.8",
     "title": "progress indicator for \"sage -br\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4518",

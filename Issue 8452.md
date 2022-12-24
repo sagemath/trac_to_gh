@@ -10,6 +10,7 @@ archive/issues_008452.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.4",
     "title": "Code check: Pickling of nested classes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8452",

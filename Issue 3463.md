@@ -10,6 +10,7 @@ archive/issues_003463.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "notebook -- create a resource folder and move AnonymousToplevel to it",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3463",

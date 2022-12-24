@@ -10,6 +10,7 @@ archive/issues_003831.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
     "title": "[with spkg, needs review] add experimental boost-1.34-1.spkg to the repo",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3831",

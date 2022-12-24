@@ -10,6 +10,7 @@ archive/issues_006480.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-8.0",
     "title": ".subs_expr() method doesn't work for argument of D derivative operator",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6480",

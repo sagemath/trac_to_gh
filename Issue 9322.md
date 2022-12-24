@@ -10,6 +10,7 @@ archive/issues_009322.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.2",
     "title": "bug in simon_two_descent for elliptic curves",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9322",

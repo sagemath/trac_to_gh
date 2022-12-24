@@ -10,6 +10,7 @@ archive/issues_008454.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "notebook() docstring for accounts is wrong",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8454",

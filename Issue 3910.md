@@ -10,6 +10,7 @@ archive/issues_003910.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "[with patch,  needs review] adjust interval printing: precise integers print as integers",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3910",

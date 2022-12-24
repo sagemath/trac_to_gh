@@ -10,6 +10,7 @@ archive/issues_008292.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "improvements to eisenstein_series_qexp",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8292",

@@ -10,6 +10,7 @@ archive/issues_000391.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Bundle adding apropos to SAGE -- try `conductor**?' for an example.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/391",

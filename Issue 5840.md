@@ -10,6 +10,7 @@ archive/issues_005840.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.1",
     "title": "update SageTeX spkg to version 2.0.2",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5840",

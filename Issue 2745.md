@@ -10,6 +10,7 @@ archive/issues_002745.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "upgrade twisted to 8.0.1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2745",

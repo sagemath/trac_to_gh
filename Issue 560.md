@@ -10,6 +10,7 @@ archive/issues_000560.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "memleak in LinBox::GivPolynomial exposed by ModularSymbols(n,sign=1).decomposition()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/560",

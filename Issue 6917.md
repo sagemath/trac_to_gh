@@ -10,6 +10,7 @@ archive/issues_006917.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4",
     "title": "[with patch] Minkowsky sum sould work with polyhedra and not only with polytopes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6917",

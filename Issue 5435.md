@@ -10,6 +10,7 @@ archive/issues_005435.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4",
     "title": "[with patch, needs review] sage-ptest \"Using cached timings.\" message could be better",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5435",

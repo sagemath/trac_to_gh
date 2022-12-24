@@ -10,6 +10,7 @@ archive/issues_008712.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5",
     "title": "Use `optparse` in sage -merge for increased usability.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8712",

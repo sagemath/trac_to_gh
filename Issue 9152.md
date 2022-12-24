@@ -10,6 +10,7 @@ archive/issues_009152.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5",
     "title": "Update extension code for mpmath-0.15",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9152",

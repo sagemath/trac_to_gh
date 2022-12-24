@@ -10,6 +10,7 @@ archive/issues_005330.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4",
     "title": "Move the docs over to the main repository",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5330",

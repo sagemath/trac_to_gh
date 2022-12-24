@@ -10,6 +10,7 @@ archive/issues_004017.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "Sage 3.1.2.alpha1 - PPC OSX: numerical noise in sage/stats/hmm/chmm.pyx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4017",

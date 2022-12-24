@@ -10,6 +10,7 @@ archive/issues_008771.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.1",
     "title": "Sage-4.4 + GCC-4.5.0 -- sage fails to startup due to libzn_poly missing symbol issue (ZNP_mpn_mulmid_fallback_thresh)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8771",

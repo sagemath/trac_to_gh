@@ -10,6 +10,7 @@ archive/issues_002824.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "[with patch, needs review] sturm_bound incorrect for GammaH",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2824",

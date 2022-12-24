@@ -10,6 +10,7 @@ archive/issues_008017.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.3",
     "title": "incorrect trailing digits for continued fraction",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8017",

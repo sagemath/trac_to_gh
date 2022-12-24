@@ -10,6 +10,7 @@ archive/issues_007798.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-feature",
     "title": "Text in Plots at any given Function",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7798",

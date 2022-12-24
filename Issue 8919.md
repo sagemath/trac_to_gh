@@ -10,6 +10,7 @@ archive/issues_008919.json:
         "trivial",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.2",
     "title": "documetation error in super_categories for Sets",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8919",

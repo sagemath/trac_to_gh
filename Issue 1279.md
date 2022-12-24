@@ -10,6 +10,7 @@ archive/issues_001279.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.15",
     "title": "LLL on \"tall\" matrices immediately crashes sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1279",

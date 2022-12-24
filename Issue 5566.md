@@ -10,6 +10,7 @@ archive/issues_005566.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
     "title": "Groebner bases of Symmetric Ideals",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5566",

@@ -10,6 +10,7 @@ archive/issues_001702.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10",
     "title": "memleak in fplll.[pyx|pxi] in \"void ZZ_mat_delete\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1702",

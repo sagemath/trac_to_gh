@@ -10,6 +10,7 @@ archive/issues_008935.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.2",
     "title": "update README.txt to reflect support for Mac OS X 10.4.x",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8935",

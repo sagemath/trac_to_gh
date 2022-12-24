@@ -10,6 +10,7 @@ archive/issues_004211.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
     "title": "new optional spkg: guppy",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4211",

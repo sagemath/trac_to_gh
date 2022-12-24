@@ -10,6 +10,7 @@ archive/issues_005860.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.2",
     "title": "delete sage/catalogue",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5860",

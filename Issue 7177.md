@@ -10,6 +10,7 @@ archive/issues_007177.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "gap does not find getopt.h. getopt() defined in stdlib.h",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7177",

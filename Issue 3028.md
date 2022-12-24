@@ -10,6 +10,7 @@ archive/issues_003028.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
     "title": "Ideals in multivariate polynomial rings raise exceptions on comparison",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3028",

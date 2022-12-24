@@ -10,6 +10,7 @@ archive/issues_001500.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9",
     "title": "solve_mod -- implement solving modulo n in sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1500",

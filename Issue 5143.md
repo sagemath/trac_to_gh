@@ -10,6 +10,7 @@ archive/issues_005143.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "shift-enter should save and exit tinyMCE",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5143",

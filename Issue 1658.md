@@ -10,6 +10,7 @@ archive/issues_001658.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9.2",
     "title": "sage -bdist on osx should output a dmg instead of a tar.bz2",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1658",

@@ -10,6 +10,7 @@ archive/issues_005281.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6.2",
     "title": "Update tachyon to Version 0.98.1 (latest upstream)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5281",

@@ -10,6 +10,7 @@ archive/issues_008338.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-wishlist",
     "title": "Add Fourier transforms",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8338",

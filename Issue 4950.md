@@ -10,6 +10,7 @@ archive/issues_004950.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Sage-3.2.3 won't build on mandriva 32-bit due to an issue with numpy",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4950",

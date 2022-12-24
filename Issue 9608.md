@@ -10,6 +10,7 @@ archive/issues_009608.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.2",
     "title": "Docbuild warnings in sage/interfaces/matlab.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9608",

@@ -10,6 +10,7 @@ archive/issues_002184.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
     "title": "[with patch, needs easy review] readjust xmin...ymax for plotting digraphs with arrows",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2184",

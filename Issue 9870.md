@@ -10,6 +10,7 @@ archive/issues_009870.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
     "title": "Update Cliquer to 1.21 and get the library buiilding properly on Solaris.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9870",

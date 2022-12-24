@@ -10,6 +10,7 @@ archive/issues_004857.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "[with spkg, needs discussion] Example C Library",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4857",

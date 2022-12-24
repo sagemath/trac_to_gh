@@ -10,6 +10,7 @@ archive/issues_009328.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "implement matrix term orderings for libsingular polynomials",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9328",

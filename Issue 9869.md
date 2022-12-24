@@ -10,6 +10,7 @@ archive/issues_009869.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.2",
     "title": "Clean up Cliquer's Makefile and spkg-install",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9869",

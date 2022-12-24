@@ -10,6 +10,7 @@ archive/issues_009853.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "make networkx compatibel with numpy-1.4.1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9853",

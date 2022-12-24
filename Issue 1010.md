@@ -10,6 +10,7 @@ archive/issues_001010.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
     "title": "upgrade gfan to version 0.3",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1010",

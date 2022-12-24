@@ -10,6 +10,7 @@ archive/issues_004946.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "readline on opensuse11 64-bit still doesn't work",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4946",

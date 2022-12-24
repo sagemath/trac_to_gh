@@ -10,6 +10,7 @@ archive/issues_001051.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.11",
     "title": "pari/gp extended help stops working when sage tree is moved",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1051",

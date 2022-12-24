@@ -10,6 +10,7 @@ archive/issues_008516.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Optional package ginv-1.9-20080723 fails to install on Solaris 10 SPARC",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8516",

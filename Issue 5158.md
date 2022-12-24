@@ -10,6 +10,7 @@ archive/issues_005158.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "[with patch, needs review] bug in symbolic factorial",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5158",

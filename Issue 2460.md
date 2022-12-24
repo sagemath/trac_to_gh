@@ -10,6 +10,7 @@ archive/issues_002460.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "some issues with factorization.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2460",

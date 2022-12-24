@@ -10,6 +10,7 @@ archive/issues_006206.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.1",
     "title": "move algebraic_closure method from RLF to LazyField",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6206",

@@ -10,6 +10,7 @@ archive/issues_004373.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
     "title": "doctest failure in sage/algebras/group_algebra.py on 32 bit platforms",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4373",

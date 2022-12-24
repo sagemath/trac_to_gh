@@ -10,6 +10,7 @@ archive/issues_009934.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-7.4",
     "title": "Make a symbolic mod function",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9934",

@@ -10,6 +10,7 @@ archive/issues_009323.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5",
     "title": "Remove devel/sage/doc/en/faq/Makefile",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9323",

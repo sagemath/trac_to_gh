@@ -10,6 +10,7 @@ archive/issues_003129.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
     "title": "[with patch, needs review] The singular interface should not claim to support polynomial rings with no variables",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3129",

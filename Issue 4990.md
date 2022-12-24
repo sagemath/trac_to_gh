@@ -10,6 +10,7 @@ archive/issues_004990.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
     "title": "[with code, needs work] Add code to compute Hilber class polynomials",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4990",

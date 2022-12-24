@@ -10,6 +10,7 @@ archive/issues_008525.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.8",
     "title": "mistake in docstring for R=Zp(3)'s R.plot method.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8525",

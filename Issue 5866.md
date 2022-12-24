@@ -10,6 +10,7 @@ archive/issues_005866.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1",
     "title": "Fix freetype build on systems where make is not GNU make.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5866",

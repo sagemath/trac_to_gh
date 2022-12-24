@@ -10,6 +10,7 @@ archive/issues_004561.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
     "title": "_fast_float_ for sin/cos, etc., in caculus.py is implemented stupidly",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4561",

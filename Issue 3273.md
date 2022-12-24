@@ -10,6 +10,7 @@ archive/issues_003273.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
     "title": "extend isqrt to work for Python int's in addition to Sage integers and objects with an isqrt method",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3273",

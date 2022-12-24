@@ -10,6 +10,7 @@ archive/issues_005816.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
     "title": "[with patch; needs review] doctesting -- make it possible run doctests in order from file, in random order, and in random seeded order",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5816",

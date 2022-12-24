@@ -10,6 +10,7 @@ archive/issues_008572.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4",
     "title": "Doc of poset appear as void if called from the console.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8572",

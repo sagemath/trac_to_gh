@@ -10,6 +10,7 @@ archive/issues_000346.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Notebook input cell focus",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/346",

@@ -10,6 +10,7 @@ archive/issues_006815.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "Restarting worksheet doesn't enable typesetting even when \"Typeset\" box is checked",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6815",

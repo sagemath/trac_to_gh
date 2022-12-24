@@ -10,6 +10,7 @@ archive/issues_004610.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
     "title": "\"sage -tp X\"L Move certain long doctests to the start of the list of files to test",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4610",

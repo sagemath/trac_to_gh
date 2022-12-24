@@ -10,6 +10,7 @@ archive/issues_000442.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.2",
     "title": "RDF roots() function gives imprecise results",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/442",

@@ -10,6 +10,7 @@ archive/issues_007931.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6.2",
     "title": "Improved nth root for finite fields and integer_mods",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7931",

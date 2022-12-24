@@ -10,6 +10,7 @@ archive/issues_008668.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "5.0 press release",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8668",

@@ -10,6 +10,7 @@ archive/issues_004270.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
     "title": "Add sage-combinat script and sage-combinat",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4270",

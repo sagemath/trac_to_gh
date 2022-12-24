@@ -10,6 +10,7 @@ archive/issues_004811.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
     "title": "doctesting line numbers in report are now completely broken.  They were fine ins age-3.2.1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4811",

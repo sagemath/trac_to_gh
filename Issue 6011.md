@@ -10,6 +10,7 @@ archive/issues_006011.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
     "title": "Bring plot/arrow.py to 100% coverage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6011",

@@ -10,6 +10,7 @@ archive/issues_008093.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.3",
     "title": "Adding of prefixes and palindrome prefixes iterators to the Words library",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8093",

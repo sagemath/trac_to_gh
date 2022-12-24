@@ -10,6 +10,7 @@ archive/issues_004167.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "wrong colors cornercase in list_plot",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4167",

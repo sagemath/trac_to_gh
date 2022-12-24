@@ -10,6 +10,7 @@ archive/issues_004983.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.7",
     "title": "replace subdivisions attribute for matrices with a function",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4983",

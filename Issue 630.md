@@ -10,6 +10,7 @@ archive/issues_000630.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.5",
     "title": "mhansen's big combinatorics update",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/630",

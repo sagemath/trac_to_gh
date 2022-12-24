@@ -10,6 +10,7 @@ archive/issues_003869.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "CremonaDatabase functions iter() and isogeny_classes() sort keys wrongly",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3869",

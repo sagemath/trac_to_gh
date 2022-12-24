@@ -10,6 +10,7 @@ archive/issues_007831.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "numpy-1.3.0.p2 fixes for FreeBSD",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7831",

@@ -10,6 +10,7 @@ archive/issues_005775.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.2",
     "title": "Building the documentation after -bdisting is broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5775",

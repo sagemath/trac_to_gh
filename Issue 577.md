@@ -10,6 +10,7 @@ archive/issues_000577.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.5",
     "title": "add MPolynomialRing.long_repr method",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/577",

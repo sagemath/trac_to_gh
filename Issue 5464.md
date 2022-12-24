@@ -10,6 +10,7 @@ archive/issues_005464.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "installing Sage should build the documentation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5464",

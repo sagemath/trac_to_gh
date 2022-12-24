@@ -10,6 +10,7 @@ archive/issues_004106.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
     "title": "error coercing symbolic variable into polynomial ring modulo 4 (but not mod 3)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4106",

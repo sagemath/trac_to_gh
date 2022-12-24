@@ -10,6 +10,7 @@ archive/issues_005411.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4",
     "title": "QuadraticForm: implement clifford_invariant and replace hasse_conductor with clifford_conductor",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5411",

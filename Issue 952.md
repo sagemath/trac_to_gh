@@ -10,6 +10,7 @@ archive/issues_000952.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.8",
     "title": "update gap_packages package",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/952",

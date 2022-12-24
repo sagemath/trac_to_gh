@@ -10,6 +10,7 @@ archive/issues_005900.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
     "title": "[with patches, needs review] Add support for system python != Sage python",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5900",

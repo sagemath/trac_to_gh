@@ -10,6 +10,7 @@ archive/issues_006226.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.2",
     "title": "developer's guide: sections on formatting docstrings and trac guidelines",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6226",

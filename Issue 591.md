@@ -10,6 +10,7 @@ archive/issues_000591.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.4",
     "title": "fix the documentation coverage of rings/number_fields/number_field.py to 100%",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/591",

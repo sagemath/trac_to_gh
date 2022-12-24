@@ -10,6 +10,7 @@ archive/issues_003822.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
     "title": "Interact - slider breaks defaulting on too many values",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3822",

@@ -10,6 +10,7 @@ archive/issues_009248.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "docstring for factorial doesn't say that it accepts non-integer, non-symbolic input",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9248",

@@ -10,6 +10,7 @@ archive/issues_006282.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.2",
     "title": "document SAGE_CHECK",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6282",

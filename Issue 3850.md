@@ -10,6 +10,7 @@ archive/issues_003850.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
     "title": "Sage 3.1.alpha2: matrix_space.py doctest failure (OSX only)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3850",

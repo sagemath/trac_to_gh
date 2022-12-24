@@ -10,6 +10,7 @@ archive/issues_008787.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5",
     "title": "upgrade the openssl optional spkg to version 1.0",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8787",

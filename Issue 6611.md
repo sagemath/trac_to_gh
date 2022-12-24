@@ -10,6 +10,7 @@ archive/issues_006611.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "[with spkg, needs review] rename networkx-0.99.p1-fake_really-0.36.p0.spkg to networkx-0.36.p0.spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6611",

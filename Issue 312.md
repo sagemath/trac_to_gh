@@ -10,6 +10,7 @@ archive/issues_000312.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.2",
     "title": "LaTex notation in documentation does not show up in notebook doc browser",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/312",

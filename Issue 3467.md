@@ -10,6 +10,7 @@ archive/issues_003467.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
     "title": "[with patch, needs review] implements @parallel decorator using dsage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3467",

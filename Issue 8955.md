@@ -10,6 +10,7 @@ archive/issues_008955.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
     "title": "random_matrix(GF(2),2,1) always returns all 1 matrix",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8955",

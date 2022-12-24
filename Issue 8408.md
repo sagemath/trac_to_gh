@@ -10,6 +10,7 @@ archive/issues_008408.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.4",
     "title": "Update sqlite to 3.6.22 (the latest version)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8408",

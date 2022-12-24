@@ -10,6 +10,7 @@ archive/issues_004448.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
     "title": "easy-to-fix (?) bug in interact with matrices",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4448",

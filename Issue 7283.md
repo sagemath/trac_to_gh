@@ -10,6 +10,7 @@ archive/issues_007283.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "typo in reference manual",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7283",

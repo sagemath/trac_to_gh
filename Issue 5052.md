@@ -10,6 +10,7 @@ archive/issues_005052.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "preparser does not respect leading space in front of \"load foo.sage\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5052",

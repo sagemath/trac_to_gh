@@ -10,6 +10,7 @@ archive/issues_005966.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.2",
     "title": "sage/sets/primes.py: change doctest so that we check for Primes being != to x^2+x",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5966",

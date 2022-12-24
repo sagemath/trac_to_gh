@@ -10,6 +10,7 @@ archive/issues_009137.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Infinite konqueror windows when opening notebook",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9137",

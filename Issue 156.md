@@ -10,6 +10,7 @@ archive/issues_000156.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-1.8",
     "title": "freeze of gfan (actually singular -- not gfan's fault)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/156",

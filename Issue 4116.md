@@ -10,6 +10,7 @@ archive/issues_004116.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "3.1.2.rc2 doctest failure: sage/interfaces/sage0.py (part II)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4116",

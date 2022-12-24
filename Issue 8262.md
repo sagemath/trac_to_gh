@@ -10,6 +10,7 @@ archive/issues_008262.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "developer's guide: document the variable SAGE_CHECK",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8262",

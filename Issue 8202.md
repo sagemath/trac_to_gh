@@ -10,6 +10,7 @@ archive/issues_008202.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.3",
     "title": "Allow raw HTML in jsMath's \\hbox{}",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8202",

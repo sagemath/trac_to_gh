@@ -10,6 +10,7 @@ archive/issues_009313.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.2",
     "title": "delete padic_height.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9313",

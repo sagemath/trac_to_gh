@@ -10,6 +10,7 @@ archive/issues_004241.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
     "title": "magma -- memory is never freed in the interface when MagmaElement's are deleted",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4241",

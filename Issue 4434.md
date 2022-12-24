@@ -10,6 +10,7 @@ archive/issues_004434.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
     "title": "[with patch; needs review] hgmerge massively broken on os x",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4434",

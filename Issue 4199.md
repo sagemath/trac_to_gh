@@ -10,6 +10,7 @@ archive/issues_004199.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
     "title": "Followup to #4111: pari related real_mpfr.pyx doctest failure",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4199",

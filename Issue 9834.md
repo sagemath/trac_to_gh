@@ -10,6 +10,7 @@ archive/issues_009834.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
     "title": "Make desolve more informative when solving BVP",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9834",

@@ -10,6 +10,7 @@ archive/issues_000579.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.4",
     "title": "pass additional *args and **kwds for GF to finite field implementations",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/579",

@@ -10,6 +10,7 @@ archive/issues_006389.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-feature",
     "title": "expose building documentation for user modules not in the Sage library",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6389",

@@ -10,6 +10,7 @@ archive/issues_009525.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Installation of cvxopt will always report succesful, even if it fails.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9525",

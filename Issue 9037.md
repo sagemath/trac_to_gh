@@ -10,6 +10,7 @@ archive/issues_009037.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.3",
     "title": "pynac fails to build on 64-bit OpenSolaris x64.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9037",

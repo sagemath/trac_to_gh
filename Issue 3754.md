@@ -10,6 +10,7 @@ archive/issues_003754.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Would it be possible to add some functionality to sage.rings.number_field.galois_group.GaloisGroup?",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3754",

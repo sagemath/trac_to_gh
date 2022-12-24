@@ -10,6 +10,7 @@ archive/issues_002398.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
     "title": "free modules over ZZ -- major bug",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2398",

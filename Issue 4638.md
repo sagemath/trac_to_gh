@@ -10,6 +10,7 @@ archive/issues_004638.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Sage 3.2->3.2.a2 upgrade failure",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4638",

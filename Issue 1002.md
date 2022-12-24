@@ -10,6 +10,7 @@ archive/issues_001002.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "update clisp to 2.42",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1002",

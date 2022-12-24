@@ -10,6 +10,7 @@ archive/issues_003650.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.6",
     "title": "[with patch, needs review] Infinite recursion in pbuild by recursive pxd imports",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3650",

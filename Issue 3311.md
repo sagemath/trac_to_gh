@@ -10,6 +10,7 @@ archive/issues_003311.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.3",
     "title": "dsage.setup() is broken in Sage 3.0.2",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3311",

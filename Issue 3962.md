@@ -10,6 +10,7 @@ archive/issues_003962.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
     "title": "Error in converting vector to SR",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3962",

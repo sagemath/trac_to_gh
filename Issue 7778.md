@@ -10,6 +10,7 @@ archive/issues_007778.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "Update jsMath-image-fonts install path detection",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7778",

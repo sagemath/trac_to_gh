@@ -10,6 +10,7 @@ archive/issues_006288.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.1",
     "title": "%lisp mode on the command line doesn't work.  why?",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6288",

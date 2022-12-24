@@ -10,6 +10,7 @@ archive/issues_001210.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Cannot create distinct polynomial rings over p-adic rings with different print_modes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1210",

@@ -10,6 +10,7 @@ archive/issues_001221.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Use Mathematica syntax for integration",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1221",

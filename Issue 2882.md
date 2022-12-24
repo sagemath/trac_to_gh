@@ -10,6 +10,7 @@ archive/issues_002882.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "resize cells on window resize",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2882",

@@ -10,6 +10,7 @@ archive/issues_007238.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
     "title": "sagenb notebook: insert new cell *above* text cell",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7238",

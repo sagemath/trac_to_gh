@@ -10,6 +10,7 @@ archive/issues_009986.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Shared readline library uses a .so extension on AIX when it should be .a",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9986",

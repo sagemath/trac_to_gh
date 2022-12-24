@@ -10,6 +10,7 @@ archive/issues_008110.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.2",
     "title": "fix issue with multi_polynomial.pyx in sage-4.3.2.alpha0",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8110",

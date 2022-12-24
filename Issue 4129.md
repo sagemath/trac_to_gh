@@ -10,6 +10,7 @@ archive/issues_004129.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
     "title": "[with patch, needs review] add support for ntl.mat_GF2",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4129",

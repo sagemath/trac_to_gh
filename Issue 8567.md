@@ -10,6 +10,7 @@ archive/issues_008567.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.5",
     "title": "Specify the location of iconv for 'gd'",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8567",

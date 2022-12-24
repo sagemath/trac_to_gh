@@ -10,6 +10,7 @@ archive/issues_005309.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "mark some doctests in misc/package.py #optional - internet",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5309",

@@ -10,6 +10,7 @@ archive/issues_009675.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
     "title": "New package: Brian, a simulator for spiking neural networks",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9675",

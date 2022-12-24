@@ -10,6 +10,7 @@ archive/issues_003115.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "scientific notation exponents should be multiples of 3",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3115",

@@ -10,6 +10,7 @@ archive/issues_003459.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
     "title": "[with patch, needs review] incorrect coercion in number field ideals",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3459",

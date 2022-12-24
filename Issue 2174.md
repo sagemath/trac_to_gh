@@ -10,6 +10,7 @@ archive/issues_002174.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "[bug day?] upgrade -- make upgrade() so that when run in the notebook it is not very verbose",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2174",

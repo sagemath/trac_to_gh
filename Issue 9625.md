@@ -10,6 +10,7 @@ archive/issues_009625.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "solve hangs on a small algebraic system with 4 equations in 4 unknowns",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9625",

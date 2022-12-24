@@ -10,6 +10,7 @@ archive/issues_007546.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "Update Mac OS X app and icon",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7546",

@@ -10,6 +10,7 @@ archive/issues_005225.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "unhandled case in converting to polynomial ring",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5225",

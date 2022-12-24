@@ -10,6 +10,7 @@ archive/issues_003900.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
     "title": "make testing an official pickle jar a part of \"make check\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3900",

@@ -10,6 +10,7 @@ archive/issues_009913.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Remove unused libraries from extension modules",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9913",

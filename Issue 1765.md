@@ -10,6 +10,7 @@ archive/issues_001765.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.4",
     "title": "allow list of variables as second input to solve command (very easy to implement)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1765",

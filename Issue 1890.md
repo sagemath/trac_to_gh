@@ -10,6 +10,7 @@ archive/issues_001890.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
     "title": "Sage 2.10.1.alpha2: interfaces/libecm.pyx doctest failure",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1890",

@@ -10,6 +10,7 @@ archive/issues_004210.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
     "title": "[with spkg, needs review] Remove some deprecation warnings from numpy-1.2.spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4210",

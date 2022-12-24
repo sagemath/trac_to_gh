@@ -10,6 +10,7 @@ archive/issues_006400.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-wishlist",
     "title": "Followup on abstract method",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6400",

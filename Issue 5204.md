@@ -10,6 +10,7 @@ archive/issues_005204.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
     "title": "simon_two_descent -- bug in the interface when number field has variable name 'x'",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5204",

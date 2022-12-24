@@ -10,6 +10,7 @@ archive/issues_009266.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.2",
     "title": "bug in global_integral_model for Elliptic Curves over Number Fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9266",

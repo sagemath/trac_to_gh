@@ -10,6 +10,7 @@ archive/issues_001660.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.8",
     "title": "maxima interface bug caused by bad use of file when evaluating large input",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1660",

@@ -10,6 +10,7 @@ archive/issues_007182.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "HP-UX failure of gfan-0.3.p4 but easier to ensure we have GNU make.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7182",

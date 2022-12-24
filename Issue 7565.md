@@ -10,6 +10,7 @@ archive/issues_007565.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "README.txt: enhance instructions on installing binary distribution",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7565",

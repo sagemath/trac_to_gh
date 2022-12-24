@@ -10,6 +10,7 @@ archive/issues_009379.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "is64-Linux binary fails \"devel/sage/sage/plot/plot3d/tachyon.py\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9379",

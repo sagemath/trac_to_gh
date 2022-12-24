@@ -10,6 +10,7 @@ archive/issues_009340.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "update Developer's Guide to require spkg-check for each standard spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9340",

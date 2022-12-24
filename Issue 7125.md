@@ -10,6 +10,7 @@ archive/issues_007125.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "New report for \"all tickets...participated in\" doesn't think creation is participation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7125",

@@ -10,6 +10,7 @@ archive/issues_005719.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
     "title": "[with patch, needs review] Corrected a bad deprecation message.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5719",

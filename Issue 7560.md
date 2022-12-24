@@ -10,6 +10,7 @@ archive/issues_007560.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.6",
     "title": "len(t_span) > 2 case creates len(t_span) -  1 solutions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7560",

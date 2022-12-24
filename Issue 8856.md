@@ -10,6 +10,7 @@ archive/issues_008856.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.2",
     "title": "Reinstate cached one in algebra_with_basis",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8856",

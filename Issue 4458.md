@@ -10,6 +10,7 @@ archive/issues_004458.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "tutorial and reference manual should explain NameError",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4458",

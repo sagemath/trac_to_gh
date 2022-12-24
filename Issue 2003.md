@@ -10,6 +10,7 @@ archive/issues_002003.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
     "title": "gnutls configure script finds local copy of guile when it shouldn't",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2003",

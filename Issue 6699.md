@@ -10,6 +10,7 @@ archive/issues_006699.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
     "title": "[with spkg; needs review] Update to Maxima 5.19.0 (particularly important for Solaris support).",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6699",

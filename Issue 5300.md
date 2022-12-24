@@ -10,6 +10,7 @@ archive/issues_005300.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "do #5291 -- don't save too many snapshots -- more efficiently",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5300",

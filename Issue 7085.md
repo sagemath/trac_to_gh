@@ -10,6 +10,7 @@ archive/issues_007085.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.3",
     "title": "fix this laurent series coercion bug",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7085",

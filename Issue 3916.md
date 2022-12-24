@@ -10,6 +10,7 @@ archive/issues_003916.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Make a %wiki cell mode for the notebook",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3916",

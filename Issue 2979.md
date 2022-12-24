@@ -10,6 +10,7 @@ archive/issues_002979.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "clisp -- try to build using -O2; if that fails try again but using -O0.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2979",

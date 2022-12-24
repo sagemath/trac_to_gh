@@ -10,6 +10,7 @@ archive/issues_007911.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.3",
     "title": "scilab interface is missing in the notebook dropdown menu",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7911",

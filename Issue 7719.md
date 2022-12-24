@@ -10,6 +10,7 @@ archive/issues_007719.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.2",
     "title": "Improvements to complex AGM",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7719",

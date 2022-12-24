@@ -10,6 +10,7 @@ archive/issues_007337.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.3",
     "title": "PolyBoRi fails to build on cygwin",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7337",

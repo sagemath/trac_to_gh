@@ -10,6 +10,7 @@ archive/issues_000041.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-1.9",
     "title": "doc generation script typos",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/41",

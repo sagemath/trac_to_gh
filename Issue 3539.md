@@ -10,6 +10,7 @@ archive/issues_003539.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
     "title": "bug in DirichletGroup -- bad code",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3539",

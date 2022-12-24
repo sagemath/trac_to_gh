@@ -10,6 +10,7 @@ archive/issues_007777.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "Implement SymmetricFunctions(QQ).inject_shorthands()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7777",

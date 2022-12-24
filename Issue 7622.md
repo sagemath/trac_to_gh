@@ -10,6 +10,7 @@ archive/issues_007622.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "Fix OSX plist copyright situation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7622",

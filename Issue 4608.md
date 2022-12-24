@@ -10,6 +10,7 @@ archive/issues_004608.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.1",
     "title": "roots method broken for root system lattices",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4608",

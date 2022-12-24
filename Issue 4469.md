@@ -10,6 +10,7 @@ archive/issues_004469.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
     "title": "Sage 3.2.a3: output ordering randomness in sage/rings/number_field/number_field.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4469",

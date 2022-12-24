@@ -10,6 +10,7 @@ archive/issues_009844.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
     "title": "lcalc doesn't build on cygwin due to missing time.h include",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9844",

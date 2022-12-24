@@ -10,6 +10,7 @@ archive/issues_000780.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
     "title": "calculus integration failing due to maxima interacting when it shouldn't",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/780",

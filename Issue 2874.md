@@ -10,6 +10,7 @@ archive/issues_002874.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "add tests for type E root system, correct some misinformation in root_system.py, add Justin Walker credit",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2874",

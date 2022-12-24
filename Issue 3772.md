@@ -10,6 +10,7 @@ archive/issues_003772.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "Gnuplot.py uses IPython/Python 2.6 keyword with",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3772",

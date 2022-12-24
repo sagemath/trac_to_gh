@@ -10,6 +10,7 @@ archive/issues_008026.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "If possible -- update prereq to require gfortran when installing on any OS except OS X.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8026",

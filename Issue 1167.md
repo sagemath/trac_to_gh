@@ -10,6 +10,7 @@ archive/issues_001167.json:
         "trivial",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9",
     "title": "Spelling errors in documentation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1167",

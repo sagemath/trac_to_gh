@@ -10,6 +10,7 @@ archive/issues_007064.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
     "title": "fix warnings when building reference manual in Sage 4.1.2.alpha4",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7064",

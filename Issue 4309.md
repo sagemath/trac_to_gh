@@ -10,6 +10,7 @@ archive/issues_004309.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Kerberos authentification for SAGE notebook",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4309",

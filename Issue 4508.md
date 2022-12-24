@@ -10,6 +10,7 @@ archive/issues_004508.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Update John Boyer's planarity code to the BSD version",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4508",

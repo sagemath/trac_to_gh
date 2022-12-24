@@ -10,6 +10,7 @@ archive/issues_006645.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
     "title": "make sure bdist of sage-4.1.1 works before release",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6645",

@@ -10,6 +10,7 @@ archive/issues_008116.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "cython fails to build in Open Solaris x64 as 64 bit if CFLAGS is not set to -m64 globally",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8116",

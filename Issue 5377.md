@@ -10,6 +10,7 @@ archive/issues_005377.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "weird output for trivial class group",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5377",

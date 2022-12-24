@@ -10,6 +10,7 @@ archive/issues_007258.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
     "title": "sagenb notebook: fix \"When saving a worksheet, the default filename has \"...\" in it. \"; also change some menu items related to loading and saving worksheets to be clearer.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7258",

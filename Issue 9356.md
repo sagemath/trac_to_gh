@@ -10,6 +10,7 @@ archive/issues_009356.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.3",
     "title": "make SAGE_ATLAS_LIB work on Solaris",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9356",

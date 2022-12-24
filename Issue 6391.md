@@ -10,6 +10,7 @@ archive/issues_006391.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "libGAP!  -- create a Cython library interface to gap",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6391",

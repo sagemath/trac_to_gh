@@ -10,6 +10,7 @@ archive/issues_007581.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "use prCopyR to coerce multivariate polynomials in the simple case",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7581",

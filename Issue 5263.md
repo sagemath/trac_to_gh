@@ -10,6 +10,7 @@ archive/issues_005263.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.2",
     "title": "publishing a worksheet displays the URL without the hostname",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5263",

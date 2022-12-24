@@ -10,6 +10,7 @@ archive/issues_008375.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.4",
     "title": "Numerical noise in devel/sage/sage/symbolic/pynac.pyx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8375",

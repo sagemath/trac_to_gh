@@ -10,6 +10,7 @@ archive/issues_005761.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.7",
     "title": "Bring doctests of sage/misc/latex.py to 100%",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5761",

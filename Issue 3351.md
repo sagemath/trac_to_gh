@@ -10,6 +10,7 @@ archive/issues_003351.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "update SAGE_ROOT/COPYING.txt to clarify situation wrt Maxima license",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3351",

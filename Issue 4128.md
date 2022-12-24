@@ -10,6 +10,7 @@ archive/issues_004128.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-wishlist",
     "title": "include vcov in the valgrind spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4128",

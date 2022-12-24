@@ -10,6 +10,7 @@ archive/issues_005600.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
     "title": "Cleanup of integer compositions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5600",

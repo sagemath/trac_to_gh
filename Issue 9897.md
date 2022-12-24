@@ -10,6 +10,7 @@ archive/issues_009897.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
     "title": "Clean up and add functions to sage/libs/pari/decl.pxi",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9897",

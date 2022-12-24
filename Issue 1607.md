@@ -10,6 +10,7 @@ archive/issues_001607.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "kernel -- A.right_kernel and A.left_kernel",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1607",

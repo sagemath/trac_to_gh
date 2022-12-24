@@ -10,6 +10,7 @@ archive/issues_001648.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "add chapter in developer's handbook about bug handling via trac",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1648",

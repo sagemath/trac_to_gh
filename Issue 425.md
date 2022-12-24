@@ -10,6 +10,7 @@ archive/issues_000425.json:
         "trivial",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Squash warning cause by using \"-Wstrict-prototypes\" in cython",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/425",

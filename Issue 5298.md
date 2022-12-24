@@ -10,6 +10,7 @@ archive/issues_005298.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "hg_sage.apply($URL) broken due to swith to trac 0.11.3",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5298",

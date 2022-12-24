@@ -10,6 +10,7 @@ archive/issues_008770.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.1",
     "title": "gfan fails to build on Fedora Core 12 wtih GCC-4.5.0 (lena)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8770",

@@ -10,6 +10,7 @@ archive/issues_006123.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.2",
     "title": "[with patch, needs review] expose partition refinement functions to Python",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6123",

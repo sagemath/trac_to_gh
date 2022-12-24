@@ -10,6 +10,7 @@ archive/issues_007360.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2.1",
     "title": "isomorphism_type_info_simple_group returns an exception instead of raising it",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7360",

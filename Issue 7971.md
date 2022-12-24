@@ -10,6 +10,7 @@ archive/issues_007971.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Change all occurrences of \"method\" to \"algorithm\" in coding/code_bounds.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7971",

@@ -10,6 +10,7 @@ archive/issues_003575.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
     "title": "[with patch; needs review] delete random crap from the bottom of complex_double.pyx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3575",

@@ -10,6 +10,7 @@ archive/issues_002309.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
     "title": "[with patch, needs review] #2267 introduced spurious linebreak commands '\\\\'",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2309",

@@ -10,6 +10,7 @@ archive/issues_003006.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.1",
     "title": "missing elliptic integrals in special.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3006",

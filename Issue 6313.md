@@ -10,6 +10,7 @@ archive/issues_006313.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "optional doctest failure -- caused by maxima --> pynac switch ?",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6313",

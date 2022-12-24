@@ -10,6 +10,7 @@ archive/issues_001657.json:
         "critical",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10",
     "title": "make a build-from-source version of jmol spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1657",

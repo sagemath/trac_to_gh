@@ -10,6 +10,7 @@ archive/issues_006705.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "ATLAS has no tuning parameters for sun4v machines",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6705",

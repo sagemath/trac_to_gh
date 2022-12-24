@@ -10,6 +10,7 @@ archive/issues_009360.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5",
     "title": "Sage 4.4.4 numerical noise in mwrank.pyx on 32-bit cicero",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9360",

@@ -10,6 +10,7 @@ archive/issues_005750.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
     "title": "[with patch, needs review] Bring coverage of sage/matrix/matrix_integer_2x2.pyx to 100%",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5750",

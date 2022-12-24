@@ -10,6 +10,7 @@ archive/issues_007694.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.3",
     "title": "change pickle jar doctest to make it a bit more robust and flexible...",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7694",

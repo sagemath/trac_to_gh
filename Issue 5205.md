@@ -10,6 +10,7 @@ archive/issues_005205.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "[with patch, needs review] Set \"# -*- coding: utf-8 -*-\" encoding for sage/server/notebook/template.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5205",

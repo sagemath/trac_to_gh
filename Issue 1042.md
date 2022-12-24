@@ -10,6 +10,7 @@ archive/issues_001042.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.12",
     "title": "reset() doesn't do what's claimed -- in particular the symbolic x is gone after doing reset() but shouldn't be",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1042",

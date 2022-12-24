@@ -10,6 +10,7 @@ archive/issues_004755.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "CremonaDatabase().number_of_curves() should work when the optional database isn't installed.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4755",

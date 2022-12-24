@@ -10,6 +10,7 @@ archive/issues_004047.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "[with patch, needs review] automorphism groups/canonical labels for hypergraphs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4047",

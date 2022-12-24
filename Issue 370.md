@@ -10,6 +10,7 @@ archive/issues_000370.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "improve the documentation of show",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/370",

@@ -10,6 +10,7 @@ archive/issues_001783.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10",
     "title": "fix latex errors with fraction field elements",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1783",

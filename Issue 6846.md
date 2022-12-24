@@ -10,6 +10,7 @@ archive/issues_006846.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
     "title": "follow up to #6751: fix warnings when building reference manual",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6846",

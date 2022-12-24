@@ -10,6 +10,7 @@ archive/issues_006883.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
     "title": "ECL 9.8.4 fails to build in 64-bit mode, OS X 10.5.8",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6883",

@@ -10,6 +10,7 @@ archive/issues_000341.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.3",
     "title": "multiplicative order inconsistency",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/341",

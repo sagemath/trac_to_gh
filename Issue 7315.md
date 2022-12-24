@@ -10,6 +10,7 @@ archive/issues_007315.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2.1",
     "title": "Can only forget one GenericDeclaration at a time for some reason",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7315",

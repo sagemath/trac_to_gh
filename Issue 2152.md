@@ -10,6 +10,7 @@ archive/issues_002152.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "ticket: multivariate polynomial factorization over GF(p) in \"three free world\" is a total frickin' *EMBARRASSMENT*",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2152",

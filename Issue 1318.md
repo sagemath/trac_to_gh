@@ -10,6 +10,7 @@ archive/issues_001318.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9.1",
     "title": "[graphs] calculate eigenspaces of the graph",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1318",

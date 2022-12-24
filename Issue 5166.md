@@ -10,6 +10,7 @@ archive/issues_005166.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "Sage 3.3.a4: sage/symbolic/function.pyx doctest failure on OSX",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5166",

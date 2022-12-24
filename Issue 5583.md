@@ -10,6 +10,7 @@ archive/issues_005583.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-8.8",
     "title": "coercion bug in perm groups",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5583",

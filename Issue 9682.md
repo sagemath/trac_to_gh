@@ -10,6 +10,7 @@ archive/issues_009682.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.3",
     "title": "fix a bug in message error in perfect mathings",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9682",

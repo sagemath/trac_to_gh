@@ -10,6 +10,7 @@ archive/issues_004700.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Move existing javascript packages in extcode to their own spkg packages",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4700",

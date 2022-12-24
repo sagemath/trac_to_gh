@@ -10,6 +10,7 @@ archive/issues_005658.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
     "title": "Efficiency improvement in generic order_from_multiple()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5658",

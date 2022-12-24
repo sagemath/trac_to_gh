@@ -10,6 +10,7 @@ archive/issues_009757.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "implement Watkins-Delaunay's algorithm for computing modular degrees in Sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9757",

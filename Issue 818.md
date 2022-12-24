@@ -10,6 +10,7 @@ archive/issues_000818.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.6",
     "title": "Convert of prod to Cython",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/818",

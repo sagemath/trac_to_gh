@@ -10,6 +10,7 @@ archive/issues_002808.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "G2 fundamental weights were the negative of what they should be.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2808",

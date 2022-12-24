@@ -10,6 +10,7 @@ archive/issues_000925.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "valgrind options to sage (sage -valgrind, sage -callgrind, etc.) should be more customizable",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/925",

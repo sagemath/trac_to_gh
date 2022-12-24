@@ -10,6 +10,7 @@ archive/issues_006479.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "desolve for 2nd order ODE with initial condition gives wrong answer",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6479",

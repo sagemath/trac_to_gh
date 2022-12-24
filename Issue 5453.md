@@ -10,6 +10,7 @@ archive/issues_005453.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
     "title": "[with patch, needs review] Create a ring for working with polynomials in countably infinitely many variables",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5453",

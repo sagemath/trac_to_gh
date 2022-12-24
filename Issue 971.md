@@ -10,6 +10,7 @@ archive/issues_000971.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.11",
     "title": "update the sympy package",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/971",

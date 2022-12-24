@@ -10,6 +10,7 @@ archive/issues_003053.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
     "title": "notebook -- new cell_resize doesn't respect %hide at the beginning of a cell",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3053",

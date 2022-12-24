@@ -10,6 +10,7 @@ archive/issues_004226.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
     "title": "[with patch, needs reivew] Real Lazy Field",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4226",

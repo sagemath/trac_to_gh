@@ -10,6 +10,7 @@ archive/issues_005883.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "integrate relevant functionality from modular/modsym/p1list.pyx into projective space code",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5883",

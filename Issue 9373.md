@@ -10,6 +10,7 @@ archive/issues_009373.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.2",
     "title": "some overhaul in organization of database of common graph generators",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9373",

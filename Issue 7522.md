@@ -10,6 +10,7 @@ archive/issues_007522.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.11",
     "title": "Implement orthogonal complement in vector spaces",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7522",

@@ -10,6 +10,7 @@ archive/issues_005419.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "moving fraction field to new coercion broke old pickles",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5419",

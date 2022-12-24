@@ -10,6 +10,7 @@ archive/issues_001211.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.15",
     "title": "NTL crash in polynomial remainder over ZZ",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1211",

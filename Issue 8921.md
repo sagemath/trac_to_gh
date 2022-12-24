@@ -10,6 +10,7 @@ archive/issues_008921.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.4",
     "title": "Extend cross product to 7d",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8921",

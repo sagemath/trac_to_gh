@@ -10,6 +10,7 @@ archive/issues_008247.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.3",
     "title": "Remove package GLPK 3.9",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8247",

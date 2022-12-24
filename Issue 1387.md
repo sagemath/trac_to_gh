@@ -10,6 +10,7 @@ archive/issues_001387.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Implement is_prime for ideals",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1387",

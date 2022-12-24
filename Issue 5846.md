@@ -10,6 +10,7 @@ archive/issues_005846.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.2",
     "title": "small bug in caching the precision for p-adic L-series",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5846",

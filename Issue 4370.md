@@ -10,6 +10,7 @@ archive/issues_004370.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Add ability to clone the doc repository",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4370",

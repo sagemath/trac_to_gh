@@ -10,6 +10,7 @@ archive/issues_005875.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1",
     "title": "[with patch, needs review] Support tachyon on FreeBSD",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5875",

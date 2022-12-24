@@ -10,6 +10,7 @@ archive/issues_004672.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
     "title": "plot functions do not work with ?? because they are wrapped in @options",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4672",

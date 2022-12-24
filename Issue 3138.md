@@ -10,6 +10,7 @@ archive/issues_003138.json:
         "trivial",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
     "title": "[with patch, needs review] Singular multivariate polynomial ring has redundant _repr_ method",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3138",

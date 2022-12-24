@@ -10,6 +10,7 @@ archive/issues_009648.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6.1",
     "title": "New feature: ModulesWithBasis allows module_morphism's to a wider class of codomains",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9648",

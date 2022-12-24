@@ -10,6 +10,7 @@ archive/issues_001008.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.10",
     "title": "dumb mistake in setup.py -- touching has adverse consequences",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1008",

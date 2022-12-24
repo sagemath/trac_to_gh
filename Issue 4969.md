@@ -10,6 +10,7 @@ archive/issues_004969.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "upgrade mercurial to version 1.0.2",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4969",

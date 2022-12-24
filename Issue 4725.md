@@ -10,6 +10,7 @@ archive/issues_004725.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
     "title": "bug in number field conjugate function",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4725",

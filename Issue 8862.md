@@ -10,6 +10,7 @@ archive/issues_008862.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "failing resolution of a nonlinear system by solve",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8862",

@@ -10,6 +10,7 @@ archive/issues_009421.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.2",
     "title": "desolve mixes user parameters and integration constants",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9421",

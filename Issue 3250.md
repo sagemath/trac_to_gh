@@ -10,6 +10,7 @@ archive/issues_003250.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Parent does not have a cdef class default hash",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3250",

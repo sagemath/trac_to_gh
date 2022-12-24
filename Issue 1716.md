@@ -10,6 +10,7 @@ archive/issues_001716.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10",
     "title": "[with patch] add function log1p in mpfr interface",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1716",

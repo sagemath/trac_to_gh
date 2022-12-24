@@ -10,6 +10,7 @@ archive/issues_003902.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "%cython -- add an option #clibinclude that is like cinclude; otherwise linking in your own libraries is impossible",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3902",

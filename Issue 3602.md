@@ -10,6 +10,7 @@ archive/issues_003602.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
     "title": "weird bug in group.pyx -- something about latexing a graph",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3602",

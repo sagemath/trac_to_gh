@@ -10,6 +10,7 @@ archive/issues_006237.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "repeated roots with roots(CDF, multiplicities=False)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6237",

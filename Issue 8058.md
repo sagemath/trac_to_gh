@@ -10,6 +10,7 @@ archive/issues_008058.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.3",
     "title": "New ecm-6.2.1.p2.spkg now wokrs with Open Solaris 64 bit",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8058",

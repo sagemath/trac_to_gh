@@ -10,6 +10,7 @@ archive/issues_001584.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9.1",
     "title": "calculus.py doctest failure on Fermat",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1584",

@@ -10,6 +10,7 @@ archive/issues_000853.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-wishlist",
     "title": "Add a pslq implementation to Sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/853",

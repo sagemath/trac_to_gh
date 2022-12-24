@@ -10,6 +10,7 @@ archive/issues_005477.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.2",
     "title": "Make R.quotient_ring(I) normalize generator in the univariate case (easy to fix!)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5477",

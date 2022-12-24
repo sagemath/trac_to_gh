@@ -10,6 +10,7 @@ archive/issues_005267.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "bug in plotting the zero locus of an ideal in an mpoly ring",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5267",

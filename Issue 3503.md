@@ -10,6 +10,7 @@ archive/issues_003503.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
     "title": "pickling certain modular forms segfaults",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3503",

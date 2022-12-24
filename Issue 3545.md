@@ -10,6 +10,7 @@ archive/issues_003545.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
     "title": "[with patch, needs review] is_vertex_transitive for graphs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3545",

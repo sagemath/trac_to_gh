@@ -10,6 +10,7 @@ archive/issues_006759.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2.1",
     "title": "[with spkg; needs review] Update sqlite to latest release - needed for Sun's compiler",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6759",

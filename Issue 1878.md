@@ -10,6 +10,7 @@ archive/issues_001878.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
     "title": "[with patch] add new function from mpfr-2.3.0",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1878",

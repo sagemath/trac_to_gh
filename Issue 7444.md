@@ -10,6 +10,7 @@ archive/issues_007444.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "Broken: searching published worksheets after publishing a worksheet for the first time",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7444",

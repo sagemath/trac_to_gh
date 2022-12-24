@@ -10,6 +10,7 @@ archive/issues_000298.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "autotesting of examples",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/298",

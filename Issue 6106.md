@@ -10,6 +10,7 @@ archive/issues_006106.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-8.4",
     "title": "[with patch, need review] Addition Indefinite Binary Quadratic Forms",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6106",

@@ -10,6 +10,7 @@ archive/issues_002373.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.4",
     "title": "relicense the javascript part of the sage notebook bsd",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2373",

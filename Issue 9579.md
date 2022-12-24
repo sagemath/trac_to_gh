@@ -10,6 +10,7 @@ archive/issues_009579.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.2",
     "title": "Raise an exception when arguments to add_constraint are not admissible",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9579",

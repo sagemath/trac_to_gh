@@ -10,6 +10,7 @@ archive/issues_007364.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "Implement eulerian orientation of a graph",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7364",

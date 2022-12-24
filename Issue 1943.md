@@ -10,6 +10,7 @@ archive/issues_001943.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
     "title": "Sage 2.10.1.rc0: rpy fails to build on OSX 10.4",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1943",

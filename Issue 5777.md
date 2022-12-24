@@ -10,6 +10,7 @@ archive/issues_005777.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
     "title": "[with package and patches, needs review] update to pynac 0.1.5",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5777",

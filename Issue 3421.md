@@ -10,6 +10,7 @@ archive/issues_003421.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.3",
     "title": "[with patch, needs review] MPolynomialRing_libsingular should accept longs in __call__",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3421",

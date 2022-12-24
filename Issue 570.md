@@ -10,6 +10,7 @@ archive/issues_000570.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.4",
     "title": "rubik.solve doesn't work (sage -t --long groups/perm_gps/cubegroup.py  fails.)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/570",

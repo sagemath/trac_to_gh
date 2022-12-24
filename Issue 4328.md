@@ -10,6 +10,7 @@ archive/issues_004328.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
     "title": "bug in roots",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4328",

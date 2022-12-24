@@ -10,6 +10,7 @@ archive/issues_004864.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.3",
     "title": "graphviz optional spkg is broken on our main devel machine (sage.math)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4864",

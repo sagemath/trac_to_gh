@@ -10,6 +10,7 @@ archive/issues_005421.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4",
     "title": "Speedup is_isomorphic",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5421",

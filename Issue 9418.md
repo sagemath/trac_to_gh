@@ -10,6 +10,7 @@ archive/issues_009418.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6.1",
     "title": "Add GNU patch as a standard package.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9418",

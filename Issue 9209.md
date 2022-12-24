@@ -10,6 +10,7 @@ archive/issues_009209.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Sage build can go wrong if there is a python install in /usr/local.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9209",

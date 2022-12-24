@@ -10,6 +10,7 @@ archive/issues_007559.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "replace all the deprecation warning using deprecated_function_alias whenever possible",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7559",

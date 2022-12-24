@@ -10,6 +10,7 @@ archive/issues_001688.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9.2",
     "title": "fortran -- give option to set the libgfortran.so",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1688",

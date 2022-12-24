@@ -10,6 +10,7 @@ archive/issues_001754.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "gnutls self signed certificates do not work with firefox 3 (pre-beta 3)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1754",

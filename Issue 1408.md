@@ -10,6 +10,7 @@ archive/issues_001408.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.6",
     "title": "optional macaulay2 spkg doesn't install on osx10.5.1 due to problems with gc",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1408",

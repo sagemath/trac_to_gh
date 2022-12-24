@@ -10,6 +10,7 @@ archive/issues_003193.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.3",
     "title": "fix 64 bit OSX build support for twisted",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3193",

@@ -10,6 +10,7 @@ archive/issues_001812.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
     "title": "[with patch] doctest coverage for finite_field_givaro up to 100%",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1812",

@@ -10,6 +10,7 @@ archive/issues_004623.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "x^2 is wrong in RealIntervalField",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4623",

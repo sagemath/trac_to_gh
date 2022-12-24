@@ -10,6 +10,7 @@ archive/issues_006925.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-8.0",
     "title": "Fast way of calculating cuspidal subgroup of J0(N)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6925",

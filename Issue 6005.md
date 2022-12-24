@@ -10,6 +10,7 @@ archive/issues_006005.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "[with patch, needs review] real and imaginary parts for quadratic number fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6005",

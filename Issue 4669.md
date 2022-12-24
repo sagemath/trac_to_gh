@@ -10,6 +10,7 @@ archive/issues_004669.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
     "title": "CDF matrices need complex doctests (see matrix/matrix_complex_double_dense.pyx)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4669",

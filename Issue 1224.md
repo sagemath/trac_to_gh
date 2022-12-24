@@ -10,6 +10,7 @@ archive/issues_001224.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.13",
     "title": "OSX 10.4 PPC failure in sage/rings/finite_field_ntl_gf2e.pyx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1224",

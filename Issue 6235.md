@@ -10,6 +10,7 @@ archive/issues_006235.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
     "title": "set MPLCONFIGDIR environment variable when Sage starts up",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6235",

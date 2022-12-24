@@ -10,6 +10,7 @@ archive/issues_005473.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "create extra pickle jar for old format pickles (followup of #4640)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5473",

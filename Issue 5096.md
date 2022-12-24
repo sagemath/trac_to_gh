@@ -10,6 +10,7 @@ archive/issues_005096.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "implement beautiful printing support for pynac",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5096",

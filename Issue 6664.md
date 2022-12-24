@@ -10,6 +10,7 @@ archive/issues_006664.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
     "title": "[with patch, needs review] Skip nested classes in docs by Sphinx v0.6.x",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6664",

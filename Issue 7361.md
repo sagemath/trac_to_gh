@@ -10,6 +10,7 @@ archive/issues_007361.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2.1",
     "title": "implement is_regular() for a graph",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7361",

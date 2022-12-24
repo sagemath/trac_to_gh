@@ -10,6 +10,7 @@ archive/issues_001458.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Ipython bug -- the tracebacks in the sage command line list all absolute paths to Cython files totally incorrectly.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1458",

@@ -10,6 +10,7 @@ archive/issues_002606.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "command line option to kill a background notebook",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2606",

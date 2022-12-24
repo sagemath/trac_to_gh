@@ -10,6 +10,7 @@ archive/issues_007019.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
     "title": "update biopython optional package to 1.52",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7019",

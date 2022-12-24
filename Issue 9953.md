@@ -10,6 +10,7 @@ archive/issues_009953.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6.1",
     "title": "f_vector outputs an extra top-dimensional cell",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9953",

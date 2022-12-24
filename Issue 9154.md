@@ -10,6 +10,7 @@ archive/issues_009154.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.7.1",
     "title": "boehm_gc (still, still) fails to build on Cygwin",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9154",

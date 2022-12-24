@@ -10,6 +10,7 @@ archive/issues_001755.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Hook block matrices into matrix(...) command",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1755",

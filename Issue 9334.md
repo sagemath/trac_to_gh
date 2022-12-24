@@ -10,6 +10,7 @@ archive/issues_009334.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.8",
     "title": "hilbert symbols!!!",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9334",

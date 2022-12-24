@@ -10,6 +10,7 @@ archive/issues_008041.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.2",
     "title": "docstring for XGCD has Sphinx errors \"Unknown control sequence '\\*'\" in sage-4.3.1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8041",

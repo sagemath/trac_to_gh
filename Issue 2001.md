@@ -10,6 +10,7 @@ archive/issues_002001.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
     "title": "--long doctests -- seven files have doctst failures in sage-2.10.rc3",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2001",

@@ -10,6 +10,7 @@ archive/issues_000948.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.11",
     "title": "very slow factorization over a numberfield in a 2-variable ring [singular related]",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/948",

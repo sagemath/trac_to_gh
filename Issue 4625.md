@@ -10,6 +10,7 @@ archive/issues_004625.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "improve pth power map for finite fields of characteristic p",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4625",

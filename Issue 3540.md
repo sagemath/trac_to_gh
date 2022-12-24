@@ -10,6 +10,7 @@ archive/issues_003540.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
     "title": "[with patch, needs review] Augment messes up the ncols for flat matrices.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3540",

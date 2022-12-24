@@ -10,6 +10,7 @@ archive/issues_004101.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "[with spkg, needs review] cpdef horribly broken in last Cython",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4101",

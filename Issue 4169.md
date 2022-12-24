@@ -10,6 +10,7 @@ archive/issues_004169.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
     "title": "[with spkg and patch, needs review] zn_poly 0.9 and hypellfrob 2.1.1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4169",

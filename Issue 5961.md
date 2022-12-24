@@ -10,6 +10,7 @@ archive/issues_005961.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "Document potential interference issues with ~/.pydistutils.cfg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5961",

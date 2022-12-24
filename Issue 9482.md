@@ -10,6 +10,7 @@ archive/issues_009482.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.3",
     "title": "implicit_plot3d gives \"Out of memory allocating triangulation\" when plotting an empty surface",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9482",

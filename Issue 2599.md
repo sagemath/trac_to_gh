@@ -10,6 +10,7 @@ archive/issues_002599.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
     "title": "Permutation -> PermutationGroupElement fails for the identity",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2599",

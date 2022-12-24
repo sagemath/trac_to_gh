@@ -10,6 +10,7 @@ archive/issues_008871.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-feature",
     "title": "Finding digit sets for dilation matrices",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8871",

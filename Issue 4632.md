@@ -10,6 +10,7 @@ archive/issues_004632.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
     "title": ".roots(ring=QQbar) fails for polynomials with enormous (rational) coefficients",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4632",

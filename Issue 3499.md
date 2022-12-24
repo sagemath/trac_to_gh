@@ -10,6 +10,7 @@ archive/issues_003499.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
     "title": "[with patch, needs review] cyclotomic linear algebra: multiplying 1x1 identity matrix by anything fails",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3499",

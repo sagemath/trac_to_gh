@@ -10,6 +10,7 @@ archive/issues_001560.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
     "title": "Bug in introspection: line3d?? results in lame output",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1560",

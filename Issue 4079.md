@@ -10,6 +10,7 @@ archive/issues_004079.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "notebook -- redirect to login page when user not logged in",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4079",

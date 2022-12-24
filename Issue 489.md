@@ -10,6 +10,7 @@ archive/issues_000489.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.3",
     "title": "Expose LiE functionality in SAGE",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/489",

@@ -10,6 +10,7 @@ archive/issues_002876.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "sage/server/notebook/twist.py doctest fails when dsage certificates are not present",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2876",

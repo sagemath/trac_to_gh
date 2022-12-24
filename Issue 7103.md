@@ -10,6 +10,7 @@ archive/issues_007103.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2.1",
     "title": "fix \"mysterious error\" in parallel doctesting first time: see ticket #7079",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7103",

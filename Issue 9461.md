@@ -10,6 +10,7 @@ archive/issues_009461.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-7.3",
     "title": "Doctest failures with sage -t -randorder=X",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9461",

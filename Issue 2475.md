@@ -10,6 +10,7 @@ archive/issues_002475.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.4",
     "title": "doctest -- get coverage of modular/dims.py up to 100%",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2475",

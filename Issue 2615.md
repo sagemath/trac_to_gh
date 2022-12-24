@@ -10,6 +10,7 @@ archive/issues_002615.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "wish: compute the jordan basis together with the jordan canonical form",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2615",

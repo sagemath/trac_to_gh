@@ -10,6 +10,7 @@ archive/issues_004337.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
     "title": "modular forms -- compute action of Hecke operators on Gamma_1(N) modular forms",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4337",

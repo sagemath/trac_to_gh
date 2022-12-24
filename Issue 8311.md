@@ -10,6 +10,7 @@ archive/issues_008311.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.4",
     "title": "elliptic curve random point hangs when group is trivial",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8311",

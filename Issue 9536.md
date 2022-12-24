@@ -10,6 +10,7 @@ archive/issues_009536.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-7.6",
     "title": "python setup.py picks prefix from ~/.pydistutils.cfg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9536",

@@ -10,6 +10,7 @@ archive/issues_003149.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
     "title": "[with patch, needs review] off-by-one error in real_roots on AA coefficients",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3149",

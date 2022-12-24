@@ -10,6 +10,7 @@ archive/issues_001228.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.13",
     "title": "2.8.13.rc1: sage/rings/arith.py doctest failure",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1228",

@@ -10,6 +10,7 @@ archive/issues_002280.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.4",
     "title": "DistributedFactor doesn't return an instance of sage.structure.factorization.Factorization",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2280",

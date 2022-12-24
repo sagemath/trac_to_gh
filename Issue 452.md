@@ -10,6 +10,7 @@ archive/issues_000452.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.3",
     "title": "multi_polynomial_libsingular.c doesn't compile on Solaris",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/452",

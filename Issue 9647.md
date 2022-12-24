@@ -10,6 +10,7 @@ archive/issues_009647.json:
         "trivial",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.3",
     "title": "instructive example for mip.pyx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9647",

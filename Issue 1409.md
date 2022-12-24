@@ -10,6 +10,7 @@ archive/issues_001409.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
     "title": "multi_polynomial_ideal.py segfaults on 2.8.15",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1409",

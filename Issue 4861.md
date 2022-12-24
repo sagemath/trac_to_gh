@@ -10,6 +10,7 @@ archive/issues_004861.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.3",
     "title": "Update FLINT to 1.0.20 (latest 1.0.x upstream)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4861",

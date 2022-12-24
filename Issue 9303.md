@@ -10,6 +10,7 @@ archive/issues_009303.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.4",
     "title": "dumb (easy-to-fix) mistake in sage notebook js.py file",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9303",

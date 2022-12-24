@@ -10,6 +10,7 @@ archive/issues_008602.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4",
     "title": "Implement theta series of degree 2",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8602",

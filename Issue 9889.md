@@ -10,6 +10,7 @@ archive/issues_009889.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.10",
     "title": "A proper random_element() method for PerfectMatchings",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9889",

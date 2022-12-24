@@ -10,6 +10,7 @@ archive/issues_008884.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.4",
     "title": "Inefficiency in isogeny_class function",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8884",

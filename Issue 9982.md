@@ -10,6 +10,7 @@ archive/issues_009982.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "boehm_gc fails to build properly on AIX 5.3",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9982",

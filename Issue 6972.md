@@ -10,6 +10,7 @@ archive/issues_006972.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
     "title": "update the r spkg in sage to 2.9.2",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6972",

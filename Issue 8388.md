@@ -10,6 +10,7 @@ archive/issues_008388.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.13",
     "title": "pickle the paths of Rauzy diagrams",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8388",

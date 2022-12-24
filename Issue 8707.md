@@ -10,6 +10,7 @@ archive/issues_008707.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4",
     "title": "view(x) calls x._latex_() 5 times!",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8707",

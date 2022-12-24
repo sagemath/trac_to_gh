@@ -10,6 +10,7 @@ archive/issues_008474.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.4",
     "title": "Detect whether a program is in the path",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8474",

@@ -10,6 +10,7 @@ archive/issues_001933.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
     "title": "libgpg_error-1.6.spkg borken make install for parallel make",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1933",

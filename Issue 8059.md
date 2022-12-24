@@ -10,6 +10,7 @@ archive/issues_008059.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.3",
     "title": "update Singular SPKG to newest upstream release",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8059",

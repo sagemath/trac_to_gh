@@ -10,6 +10,7 @@ archive/issues_006473.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "ideal.interreduced_basis hangs forever",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6473",

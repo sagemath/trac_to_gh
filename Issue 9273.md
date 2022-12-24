@@ -10,6 +10,7 @@ archive/issues_009273.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "doctest elliptic_curves/BSD.py reports \"file not found\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9273",

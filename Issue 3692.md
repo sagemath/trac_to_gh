@@ -10,6 +10,7 @@ archive/issues_003692.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "notebook -- issue with quotes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3692",

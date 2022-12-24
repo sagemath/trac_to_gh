@@ -10,6 +10,7 @@ archive/issues_001695.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "on osx 10.4 missing libintl.3.dylib in 2.9.2 dmg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1695",

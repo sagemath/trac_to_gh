@@ -10,6 +10,7 @@ archive/issues_007131.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.4",
     "title": "libcliquer always builds 32-bit libraries on Solaris.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7131",

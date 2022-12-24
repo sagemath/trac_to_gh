@@ -10,6 +10,7 @@ archive/issues_009452.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.7",
     "title": "strip_automount_prefix() is useless",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9452",

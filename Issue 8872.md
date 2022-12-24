@@ -10,6 +10,7 @@ archive/issues_008872.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-feature",
     "title": "neighbor-finding for attractor of IFS from a multidimensional radix representation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8872",

@@ -10,6 +10,7 @@ archive/issues_001529.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9",
     "title": "update install_scripts to also install R script.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1529",

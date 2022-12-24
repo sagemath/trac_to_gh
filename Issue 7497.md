@@ -10,6 +10,7 @@ archive/issues_007497.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "notebook -- bug in viewing/editing attached files",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7497",

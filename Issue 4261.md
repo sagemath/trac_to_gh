@@ -10,6 +10,7 @@ archive/issues_004261.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
     "title": "sympow Configure fails to handle aliases",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4261",

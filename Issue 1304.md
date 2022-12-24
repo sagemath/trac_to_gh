@@ -10,6 +10,7 @@ archive/issues_001304.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
     "title": "[graphs] edge-labeled graph isomorphism",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1304",

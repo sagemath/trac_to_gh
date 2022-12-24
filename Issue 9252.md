@@ -10,6 +10,7 @@ archive/issues_009252.json:
         "trivial",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "documentation errors in tutorial",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9252",

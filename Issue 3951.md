@@ -10,6 +10,7 @@ archive/issues_003951.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
     "title": "Make a \"Tickets in which I have participated\" report",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3951",

@@ -10,6 +10,7 @@ archive/issues_002940.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
     "title": "symbolic equation arithmetic is to restrictive",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2940",

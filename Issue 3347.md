@@ -10,6 +10,7 @@ archive/issues_003347.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
     "title": "[with patches, needs review] lots of changes to the tutorial",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3347",

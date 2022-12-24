@@ -10,6 +10,7 @@ archive/issues_009253.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.3",
     "title": "A collection of little improvements to heegner.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9253",

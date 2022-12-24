@@ -10,6 +10,7 @@ archive/issues_007152.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "Segmentation fault with monomials()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7152",

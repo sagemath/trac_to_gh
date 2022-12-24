@@ -10,6 +10,7 @@ archive/issues_005041.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "make it so the magma .sig files in extcode don't get written there by magma",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5041",

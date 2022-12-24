@@ -10,6 +10,7 @@ archive/issues_008845.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.3",
     "title": "fix install_package in Cygwin",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8845",

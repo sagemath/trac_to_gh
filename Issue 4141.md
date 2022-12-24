@@ -10,6 +10,7 @@ archive/issues_004141.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "OS X: R pulls in libraries from fink",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4141",

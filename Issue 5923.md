@@ -10,6 +10,7 @@ archive/issues_005923.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
     "title": "Handling of magma and pari input in ModularForms",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5923",

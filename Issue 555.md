@@ -10,6 +10,7 @@ archive/issues_000555.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.4",
     "title": "c_lib SConscript doesn't always copy new libcsage.dylib on a sage -b",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/555",

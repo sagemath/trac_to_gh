@@ -10,6 +10,7 @@ archive/issues_006588.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.0",
     "title": "Root systems: categorification",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6588",

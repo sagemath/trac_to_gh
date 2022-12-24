@@ -10,6 +10,7 @@ archive/issues_008007.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.3",
     "title": "Speed up generation of random number field elements",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8007",

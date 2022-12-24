@@ -10,6 +10,7 @@ archive/issues_001056.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.11",
     "title": "Fix Givaro 3.2.6 build problem on MacOS X 10.5",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1056",

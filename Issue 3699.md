@@ -10,6 +10,7 @@ archive/issues_003699.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.1",
     "title": "rewrite free_module.py to use basis matrices everywhere",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3699",

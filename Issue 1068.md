@@ -10,6 +10,7 @@ archive/issues_001068.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "turn off inplace optimizations",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1068",

@@ -10,6 +10,7 @@ archive/issues_004036.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "[with patch, needs review] minor improvements to the Axiom interface",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4036",

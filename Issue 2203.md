@@ -10,6 +10,7 @@ archive/issues_002203.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.4",
     "title": "Integrate concorde in Sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2203",

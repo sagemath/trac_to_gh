@@ -10,6 +10,7 @@ archive/issues_002142.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
     "title": "product of two subdivided matrices should yield a subdivided matrix if it makes sense",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2142",

@@ -10,6 +10,7 @@ archive/issues_001246.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.14",
     "title": "mpfi-1.3.4-rc3.p9 fails to build on x86_64 SuSE 10.1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1246",

@@ -10,6 +10,7 @@ archive/issues_007709.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6.1",
     "title": "Graph constructor : Graph(edges=[ ... ] )",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7709",

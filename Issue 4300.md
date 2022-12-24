@@ -10,6 +10,7 @@ archive/issues_004300.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.4",
     "title": "[with patch, needs review] Update HISTORY.txt with Sage 3.1.2 and 3.1.1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4300",

@@ -10,6 +10,7 @@ archive/issues_006336.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1",
     "title": "optional doctest failure -- constructions calculus tests hang forever",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6336",

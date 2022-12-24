@@ -10,6 +10,7 @@ archive/issues_003961.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "bug in ell_finite_field.abelian_group()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3961",

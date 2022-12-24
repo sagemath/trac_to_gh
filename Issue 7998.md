@@ -10,6 +10,7 @@ archive/issues_007998.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "Add William's Riemann Prime Counting Function code to Sage (EASY)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7998",

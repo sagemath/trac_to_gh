@@ -10,6 +10,7 @@ archive/issues_006279.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.2",
     "title": "spkg-check fails for the R spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6279",

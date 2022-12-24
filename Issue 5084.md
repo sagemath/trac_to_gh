@@ -10,6 +10,7 @@ archive/issues_005084.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "speed regression in number of partitons",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5084",

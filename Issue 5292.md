@@ -10,6 +10,7 @@ archive/issues_005292.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "Error in FractionField conversion",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5292",

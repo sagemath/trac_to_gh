@@ -10,6 +10,7 @@ archive/issues_009529.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "in graph_plot.py, sometimes get \"libpng error: Image width or height is zero in IHDR\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9529",

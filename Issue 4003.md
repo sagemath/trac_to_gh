@@ -10,6 +10,7 @@ archive/issues_004003.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "[with patch, needs review] increase coverage of sage/interfaces/maple.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4003",

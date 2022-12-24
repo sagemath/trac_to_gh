@@ -10,6 +10,7 @@ archive/issues_008069.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.3",
     "title": "New mpfi-1.3.4-cvs20071125.p8.spkg works with Open Solaris 64 bit",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8069",

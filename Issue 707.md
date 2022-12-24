@@ -10,6 +10,7 @@ archive/issues_000707.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-feature",
     "title": "Database for Knuth's Power Tree",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/707",

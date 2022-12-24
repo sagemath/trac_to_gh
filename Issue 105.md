@@ -10,6 +10,7 @@ archive/issues_000105.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "notebook: save everything to an html tarball",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/105",

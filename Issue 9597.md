@@ -10,6 +10,7 @@ archive/issues_009597.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.2",
     "title": "Crap in pari-2.3.5.p1's spkg-install",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9597",

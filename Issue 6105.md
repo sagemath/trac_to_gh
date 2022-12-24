@@ -10,6 +10,7 @@ archive/issues_006105.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "[with patch, need review] Additions and changes in Group Algebras",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6105",

@@ -10,6 +10,7 @@ archive/issues_007044.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "eclib 20080310.p7 has code Sun's C++ compiler does not understand.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7044",

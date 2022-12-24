@@ -10,6 +10,7 @@ archive/issues_001830.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
     "title": "sage-current-location.txt not unpdated on \"make install\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1830",

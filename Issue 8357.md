@@ -10,6 +10,7 @@ archive/issues_008357.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.4",
     "title": "Doctesting ell_rational_field.py leaves a file PRIMES in the current directory",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8357",

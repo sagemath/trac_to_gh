@@ -10,6 +10,7 @@ archive/issues_001709.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10",
     "title": "[with patch] Make experimental jmol graph plotting work",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1709",

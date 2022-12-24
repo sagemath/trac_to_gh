@@ -10,6 +10,7 @@ archive/issues_000782.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.6",
     "title": "sage -testall should support ctrl-C",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/782",

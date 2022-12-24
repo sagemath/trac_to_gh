@@ -10,6 +10,7 @@ archive/issues_003808.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "bug in Hom constructor for finite fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3808",

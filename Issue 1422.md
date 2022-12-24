@@ -10,6 +10,7 @@ archive/issues_001422.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "add bibtex function to get the bibtex code for citing the sage components",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1422",

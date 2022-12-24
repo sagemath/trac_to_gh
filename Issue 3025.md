@@ -10,6 +10,7 @@ archive/issues_003025.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.1",
     "title": "Sparse vector spaces don't cast on assignment.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3025",

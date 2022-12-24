@@ -10,6 +10,7 @@ archive/issues_008929.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "add new methods to permgroup",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8929",

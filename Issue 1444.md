@@ -10,6 +10,7 @@ archive/issues_001444.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9",
     "title": "[with patch] some serious hard-coding issues that break all binary installs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1444",

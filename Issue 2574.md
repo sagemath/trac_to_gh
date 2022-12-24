@@ -10,6 +10,7 @@ archive/issues_002574.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
     "title": "problem with Abelian groups and trivial elements",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2574",

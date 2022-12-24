@@ -10,6 +10,7 @@ archive/issues_001495.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "ATLAS fails to compile on FC7 32 bit with multiple cores",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1495",

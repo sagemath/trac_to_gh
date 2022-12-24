@@ -10,6 +10,7 @@ archive/issues_006120.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.1",
     "title": "[with patch, needs review] P(0).total_degree() should return -1 for multivariate polynomial rings",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6120",

@@ -10,6 +10,7 @@ archive/issues_000742.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.5.1",
     "title": "notebook timeout -- should be easy to set from command line and not timeout by *default*",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/742",

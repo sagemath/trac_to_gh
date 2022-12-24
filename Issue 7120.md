@@ -10,6 +10,7 @@ archive/issues_007120.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
     "title": "[with patch, needs review] document Sphinx/reST markup for INPUT/OUTPUT",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7120",

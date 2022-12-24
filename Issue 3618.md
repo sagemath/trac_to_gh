@@ -10,6 +10,7 @@ archive/issues_003618.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
     "title": "Bump Maxima dues to new clisp release",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3618",

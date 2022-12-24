@@ -10,6 +10,7 @@ archive/issues_008763.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "put licensing information into published worksheets",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8763",

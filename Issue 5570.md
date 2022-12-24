@@ -10,6 +10,7 @@ archive/issues_005570.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
     "title": "determinants of matrices over Z/nZ with n composite are dog slow",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5570",

@@ -10,6 +10,7 @@ archive/issues_002907.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "polynomials lack content method",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2907",

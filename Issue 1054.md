@@ -10,6 +10,7 @@ archive/issues_001054.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "add number fields documentation to the reference manual",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1054",

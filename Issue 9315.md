@@ -10,6 +10,7 @@ archive/issues_009315.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
     "title": "Basic pickling bug in finite fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9315",

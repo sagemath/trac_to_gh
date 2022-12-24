@@ -10,6 +10,7 @@ archive/issues_000930.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.8",
     "title": "[with patch] MPolynomialIdeal.variety",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/930",

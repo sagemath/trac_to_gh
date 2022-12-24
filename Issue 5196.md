@@ -10,6 +10,7 @@ archive/issues_005196.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "installation manual needs to be updated",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5196",

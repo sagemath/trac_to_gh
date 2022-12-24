@@ -10,6 +10,7 @@ archive/issues_000984.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.9",
     "title": "sage-2.8.9.rc1: sage-banner is empty",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/984",

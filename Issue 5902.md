@@ -10,6 +10,7 @@ archive/issues_005902.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1",
     "title": "[with patch, needs review] Try SAGE_ROOT as base of argument to \"sage -t\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5902",

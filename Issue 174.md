@@ -10,6 +10,7 @@ archive/issues_000174.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
     "title": "all existing open source Hermite Normal Form implementations totally SUCK.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/174",

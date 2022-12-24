@@ -10,6 +10,7 @@ archive/issues_000533.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.7",
     "title": "matrix_rational_sparse_allocate_mpq_vector leak (from modular/ssmod/ssmod.py)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/533",

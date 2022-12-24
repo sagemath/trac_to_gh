@@ -10,6 +10,7 @@ archive/issues_009584.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.2",
     "title": "Some graph-related doctest failures and timeouts with 4.5.2.alpha0",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9584",

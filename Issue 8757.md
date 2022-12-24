@@ -10,6 +10,7 @@ archive/issues_008757.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Use SQLAlchemy for storage in SageNB",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8757",

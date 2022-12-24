@@ -10,6 +10,7 @@ archive/issues_007802.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.2",
     "title": "Mention that RNDN is the \"ties toward even\" version in RealField",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7802",

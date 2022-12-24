@@ -10,6 +10,7 @@ archive/issues_009198.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Non-existent username does not yield error message when sharing",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9198",

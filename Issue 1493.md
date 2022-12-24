@@ -10,6 +10,7 @@ archive/issues_001493.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9",
     "title": "polybori doesn't free m4ri data on exit",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1493",

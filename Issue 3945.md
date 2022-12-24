@@ -10,6 +10,7 @@ archive/issues_003945.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
     "title": "sage -gdb doesn't work under OS X 10.5",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3945",

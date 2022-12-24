@@ -10,6 +10,7 @@ archive/issues_002826.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "notebook -- in safari, pressing enter after showing the list of completions doesn't work.  You have to click.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2826",

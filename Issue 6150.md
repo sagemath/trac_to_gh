@@ -10,6 +10,7 @@ archive/issues_006150.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
     "title": "numerical noise issues in 4.0.rc1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6150",

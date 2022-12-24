@@ -10,6 +10,7 @@ archive/issues_006458.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
     "title": "Inverse modulo an ideal in a relative number field",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6458",

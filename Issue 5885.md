@@ -10,6 +10,7 @@ archive/issues_005885.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.2",
     "title": "#5567 should throw a deprecation warning",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5885",

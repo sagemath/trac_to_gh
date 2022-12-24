@@ -10,6 +10,7 @@ archive/issues_004538.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "write a python script that runs a subprocess and kills it after a while",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4538",

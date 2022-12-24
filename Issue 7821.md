@@ -10,6 +10,7 @@ archive/issues_007821.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5",
     "title": "readline-6.0.p1 fails on FreeBSD",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7821",

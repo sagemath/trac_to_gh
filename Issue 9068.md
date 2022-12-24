@@ -10,6 +10,7 @@ archive/issues_009068.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.4",
     "title": "remove redundant sgn function from quadratic_forms/extras",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9068",

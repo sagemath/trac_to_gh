@@ -10,6 +10,7 @@ archive/issues_001195.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
     "title": "The \"len\" function for lists and sequences",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1195",

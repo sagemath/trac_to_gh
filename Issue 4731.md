@@ -10,6 +10,7 @@ archive/issues_004731.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Repeated computation involving Maxima is getting slower and slower",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4731",

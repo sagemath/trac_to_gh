@@ -10,6 +10,7 @@ archive/issues_008136.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.2",
     "title": "fix ref manual issues in linear_code.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8136",

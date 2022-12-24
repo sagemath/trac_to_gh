@@ -10,6 +10,7 @@ archive/issues_007042.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
     "title": "notebook: remove .pyc files",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7042",

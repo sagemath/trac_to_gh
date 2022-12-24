@@ -10,6 +10,7 @@ archive/issues_003584.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
     "title": "cython.py -- randomness in doctests",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3584",

@@ -10,6 +10,7 @@ archive/issues_006249.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "graph1.plot() + graph2.plot() doesn't zorder correctly",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6249",

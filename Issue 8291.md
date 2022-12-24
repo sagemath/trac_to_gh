@@ -10,6 +10,7 @@ archive/issues_008291.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6.1",
     "title": "eisenstein_series_qexp ridiculously bad  over finite fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8291",

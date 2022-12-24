@@ -10,6 +10,7 @@ archive/issues_003435.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "physically delete GSL BLAS so that nothing can link against it",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3435",

@@ -10,6 +10,7 @@ archive/issues_009660.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Obtaining the string representation of a number field ideal takes too long",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9660",

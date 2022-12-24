@@ -10,6 +10,7 @@ archive/issues_003633.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
     "title": "[witch patch, needs review] use commands.getoutput in hostinfo",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3633",

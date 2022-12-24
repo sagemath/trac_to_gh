@@ -10,6 +10,7 @@ archive/issues_001446.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "make check needs to error out on build failure instead of runnind doctests",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1446",

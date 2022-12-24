@@ -10,6 +10,7 @@ archive/issues_002603.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-feature",
     "title": "implement solution_space_right and solution_space_left for solving under-determined linear systems",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2603",

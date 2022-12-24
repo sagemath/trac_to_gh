@@ -10,6 +10,7 @@ archive/issues_004432.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
     "title": "[with patch, needs review] symbolic gamma and factorial",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4432",

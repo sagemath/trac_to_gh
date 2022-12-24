@@ -10,6 +10,7 @@ archive/issues_002513.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.2",
     "title": "Weird printing issues with cython, caused by LANG environment variable",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2513",

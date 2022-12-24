@@ -10,6 +10,7 @@ archive/issues_008308.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "Make M.entries() an alias for M.list() when M is a matrix",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8308",

@@ -10,6 +10,7 @@ archive/issues_002495.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "Updated experimental Mayavi2 spkg (mayavi_2.1.1) linux only",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2495",

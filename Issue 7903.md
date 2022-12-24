@@ -10,6 +10,7 @@ archive/issues_007903.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.2",
     "title": "mixing a non-GNU Fortran compiler with GCC is not detected very early",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7903",

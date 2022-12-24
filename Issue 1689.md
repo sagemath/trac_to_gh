@@ -10,6 +10,7 @@ archive/issues_001689.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "document SAGE_FORTRAN_LIB",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1689",

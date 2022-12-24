@@ -10,6 +10,7 @@ archive/issues_004080.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "[with patch, needs review] Symbol clash between global M4RI and PolyBoRi's M4RI",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4080",

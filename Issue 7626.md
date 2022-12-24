@@ -10,6 +10,7 @@ archive/issues_007626.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "delete PBUILD code in local/bin/sage-sage script",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7626",

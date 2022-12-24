@@ -10,6 +10,7 @@ archive/issues_005938.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "graph plotting -- ploting of graphs (networks) is somehow messed up/scaled wrong/cropped wrong since it doesn't work with graphics_array",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5938",

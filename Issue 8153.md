@@ -10,6 +10,7 @@ archive/issues_008153.json:
         "trivial",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "[with patch] typo in documentation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8153",

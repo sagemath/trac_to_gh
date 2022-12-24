@@ -10,6 +10,7 @@ archive/issues_000808.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "construction of function fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/808",

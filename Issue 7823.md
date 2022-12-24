@@ -10,6 +10,7 @@ archive/issues_007823.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.2",
     "title": "libgcrypt-1.4.4.p1 references incorrect shared library on FreeBSD",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7823",

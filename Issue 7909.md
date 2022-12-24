@@ -10,6 +10,7 @@ archive/issues_007909.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "Replace $MKDIR with 'mkdir' in sage-spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7909",

@@ -10,6 +10,7 @@ archive/issues_009298.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Memory leak in libsingular polynomial evaluation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9298",

@@ -10,6 +10,7 @@ archive/issues_001014.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
     "title": "there should be an Integer.number_of_digits() function",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1014",

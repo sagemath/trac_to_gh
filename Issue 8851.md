@@ -10,6 +10,7 @@ archive/issues_008851.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "the graphviz doctests use '\\n' for newlines",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8851",

@@ -10,6 +10,7 @@ archive/issues_009858.json:
         "trivial",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
     "title": "Doctest failures due to hard-coded line numbers in (doctests of) sage/rings/*.pyx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9858",

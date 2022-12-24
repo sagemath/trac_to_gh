@@ -10,6 +10,7 @@ archive/issues_009673.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Referring to flag for doc-testing only changed files",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9673",

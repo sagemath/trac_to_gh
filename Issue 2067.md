@@ -10,6 +10,7 @@ archive/issues_002067.json:
         "trivial",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
     "title": "tutorial 5.3 misformatting",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2067",

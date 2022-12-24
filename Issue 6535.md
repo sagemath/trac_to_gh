@@ -10,6 +10,7 @@ archive/issues_006535.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "add environ variables to \"sage -pkg\" script so don't get OS X metatfiles",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6535",

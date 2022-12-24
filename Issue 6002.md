@@ -10,6 +10,7 @@ archive/issues_006002.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "parametric_plot3d appears not to give the correct axes values",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6002",

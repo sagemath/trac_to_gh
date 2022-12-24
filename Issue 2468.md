@@ -10,6 +10,7 @@ archive/issues_002468.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
     "title": "inverting a non-invertible matrix over RDF returns weird results",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2468",

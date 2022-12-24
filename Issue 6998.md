@@ -10,6 +10,7 @@ archive/issues_006998.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
     "title": "wrong error for powerseries sqrt",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6998",

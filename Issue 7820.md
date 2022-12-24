@@ -10,6 +10,7 @@ archive/issues_007820.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.2",
     "title": "upgrade gfan to latest release (0.4plus)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7820",

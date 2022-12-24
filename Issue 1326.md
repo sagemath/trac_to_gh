@@ -10,6 +10,7 @@ archive/issues_001326.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "2.8.14/Solaris: combinat/combinat.py doctest failure",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1326",

@@ -10,6 +10,7 @@ archive/issues_007845.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "Failed browse_sage_doc doctest",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7845",

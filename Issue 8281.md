@@ -10,6 +10,7 @@ archive/issues_008281.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4",
     "title": "coercion problem breaks hecke_operator_on_basis over finite fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8281",

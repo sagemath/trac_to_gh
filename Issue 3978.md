@@ -10,6 +10,7 @@ archive/issues_003978.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "Sage 3.1.2.alpha1: ghmm and hmm numerical noise doctest failures",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3978",

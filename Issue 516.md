@@ -10,6 +10,7 @@ archive/issues_000516.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.3",
     "title": "memory leak in libSINGULAR conversion routine",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/516",

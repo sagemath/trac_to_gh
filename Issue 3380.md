@@ -10,6 +10,7 @@ archive/issues_003380.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
     "title": "Fix large performance regression in ATLAS 3.8.0 and 3.8.1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3380",

@@ -10,6 +10,7 @@ archive/issues_007515.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "Improved deprecation and renaming of function and methods.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7515",

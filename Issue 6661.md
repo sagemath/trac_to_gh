@@ -10,6 +10,7 @@ archive/issues_006661.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
     "title": "Misleading warning message of  _expect_expr() at KeyboardInterrupt",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6661",

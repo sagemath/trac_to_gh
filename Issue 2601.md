@@ -10,6 +10,7 @@ archive/issues_002601.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "problem with change_ring",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2601",

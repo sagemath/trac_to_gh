@@ -10,6 +10,7 @@ archive/issues_006606.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
     "title": "[with patch; needs review] Add a more efficient implementation of index for Gamma(N).",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6606",

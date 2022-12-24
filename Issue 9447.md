@@ -10,6 +10,7 @@ archive/issues_009447.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "\"except:\" count in sage too high",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9447",

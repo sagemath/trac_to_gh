@@ -10,6 +10,7 @@ archive/issues_000519.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.4.2",
     "title": "memory leak: many states passed to gmp_randinit_mt are leaked (2.5kb each)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/519",

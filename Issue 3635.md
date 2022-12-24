@@ -10,6 +10,7 @@ archive/issues_003635.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "If m is a matrix, then m.plot() should call matrix_plot",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3635",

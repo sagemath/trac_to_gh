@@ -10,6 +10,7 @@ archive/issues_001767.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Add SAGE_ATLAS_LIB, SAGE_ATLAS_TARGZ flags to allow use of external atlas",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1767",

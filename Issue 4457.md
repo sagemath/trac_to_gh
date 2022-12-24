@@ -10,6 +10,7 @@ archive/issues_004457.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4",
     "title": "tutorial: add find_root()  to \"2.4.1 Solving Equations\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4457",

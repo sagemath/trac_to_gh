@@ -10,6 +10,7 @@ archive/issues_004833.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "sage -upgrade should complain when queues are used and patches are applied",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4833",

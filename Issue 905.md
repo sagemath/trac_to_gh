@@ -10,6 +10,7 @@ archive/issues_000905.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
     "title": "update the version of ipython included in sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/905",

@@ -10,6 +10,7 @@ archive/issues_009490.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5",
     "title": "Doctest failure of sage/sage/libs/galrep/wrapper.pyx on t2.math (Solaris 10 SPARC)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9490",

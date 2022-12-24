@@ -10,6 +10,7 @@ archive/issues_001355.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.15",
     "title": "OSX 10.4: numerical noise doctest failures in rings/polynomial/[complex_roots.py|polynomial_element.pyx]",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1355",

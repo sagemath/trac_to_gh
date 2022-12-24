@@ -10,6 +10,7 @@ archive/issues_003332.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.3",
     "title": "Switch pbuild to -O2",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3332",

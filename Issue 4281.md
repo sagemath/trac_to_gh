@@ -10,6 +10,7 @@ archive/issues_004281.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
     "title": "[with patch, needs review] elliptic curve doctest coverage (part 4)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4281",

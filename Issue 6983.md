@@ -10,6 +10,7 @@ archive/issues_006983.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
     "title": "completely separate the sage notebook from the core sage library as a new spkg called \"sagenb-4.1.2.spkg\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6983",

@@ -10,6 +10,7 @@ archive/issues_003944.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
     "title": "replace \"sage -upgrade\" by \"sage -expert_upgrade\" and upgrade() by \"expert_upgrade()\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3944",

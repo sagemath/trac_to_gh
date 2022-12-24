@@ -10,6 +10,7 @@ archive/issues_007363.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.3",
     "title": "print symbolic fractions more naturally: print 2/(x+2) instead of 2 (1/(x+2))",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7363",

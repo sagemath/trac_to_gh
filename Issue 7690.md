@@ -10,6 +10,7 @@ archive/issues_007690.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "maxima stats too many files on startup, which is a performance issue",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7690",

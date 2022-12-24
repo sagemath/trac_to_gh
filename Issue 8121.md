@@ -10,6 +10,7 @@ archive/issues_008121.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "preparsing of \"time\" special command inconsistent in company of parenthesis",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8121",

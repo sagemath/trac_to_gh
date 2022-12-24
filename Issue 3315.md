@@ -10,6 +10,7 @@ archive/issues_003315.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-feature",
     "title": "parametric plot should accept a function that returns a tuple",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3315",

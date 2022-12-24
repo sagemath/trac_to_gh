@@ -10,6 +10,7 @@ archive/issues_004264.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2.1",
     "title": "change E.a_invariants() for an elliptic curve to return a tuple",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4264",

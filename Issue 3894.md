@@ -10,6 +10,7 @@ archive/issues_003894.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "[with patch, needs review] in tutorial, live version, triple dots are not visible",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3894",

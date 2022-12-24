@@ -10,6 +10,7 @@ archive/issues_009925.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
     "title": "Doctest error in sage/schemes/generic/toric_divisor.py on OS X",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9925",

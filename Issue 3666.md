@@ -10,6 +10,7 @@ archive/issues_003666.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2.1",
     "title": "pari(infinity) looks like it works, but it doesn't",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3666",

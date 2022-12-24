@@ -10,6 +10,7 @@ archive/issues_004670.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "prime_pi for input ~ 10^10 causes PariError",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4670",

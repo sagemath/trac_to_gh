@@ -10,6 +10,7 @@ archive/issues_006679.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "[with patch, needs review] Vertex Coloring, Edge Coloring (uses Linear Programming)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6679",

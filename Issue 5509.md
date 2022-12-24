@@ -10,6 +10,7 @@ archive/issues_005509.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
     "title": "Make a parametric_plot.pyx docstring a raw string because of a \\times in it.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5509",

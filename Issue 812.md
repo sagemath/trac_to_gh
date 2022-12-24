@@ -10,6 +10,7 @@ archive/issues_000812.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-7.3",
     "title": "add Pollack/Stevens overconvergent modular symbols code",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/812",

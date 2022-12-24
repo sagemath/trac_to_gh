@@ -10,6 +10,7 @@ archive/issues_001996.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
     "title": "[with patch, needs review] doctest failure on 2.10.1.rc3: libecm.pyx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1996",

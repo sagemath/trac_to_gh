@@ -10,6 +10,7 @@ archive/issues_009032.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6.2",
     "title": "no method numerical_approx for integers and rationals",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9032",

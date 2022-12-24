@@ -10,6 +10,7 @@ archive/issues_001360.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
     "title": "Investigate long time graph_isom case",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1360",

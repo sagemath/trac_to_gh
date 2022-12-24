@@ -10,6 +10,7 @@ archive/issues_002500.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Deprecate \"sage -upgrade\"; replace by \"sage -expert_upgrade\"; likewise for sage: upgrade()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2500",

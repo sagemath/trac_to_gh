@@ -10,6 +10,7 @@ archive/issues_004812.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.3",
     "title": "[with patch, needs review] matrix_plot is broken for matrices with \"complicated\" base rings",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4812",

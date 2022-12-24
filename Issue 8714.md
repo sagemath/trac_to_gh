@@ -10,6 +10,7 @@ archive/issues_008714.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "add Bellman-Ford algorithm for shortest paths",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8714",

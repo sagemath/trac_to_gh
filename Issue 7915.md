@@ -10,6 +10,7 @@ archive/issues_007915.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.2",
     "title": "Improve TAB-completion in Macaulay2",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7915",

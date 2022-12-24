@@ -10,6 +10,7 @@ archive/issues_002140.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
     "title": "[with bundle, needs review] enhance search_src and add search_def for easier source navigating.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2140",

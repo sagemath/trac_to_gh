@@ -10,6 +10,7 @@ archive/issues_000297.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "polymake -- create a build package for the optional SAGE package polymake-2.3",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/297",

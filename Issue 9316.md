@@ -10,6 +10,7 @@ archive/issues_009316.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.2",
     "title": "Spurious (?) \"# File not found\" error at end of doctests",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9316",

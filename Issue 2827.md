@@ -10,6 +10,7 @@ archive/issues_002827.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "sage -notebook does not handle options passed to it correctly",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2827",

@@ -10,6 +10,7 @@ archive/issues_001115.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "Sha_an either fails or lies when prec isn't the default 53",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1115",

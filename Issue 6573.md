@@ -10,6 +10,7 @@ archive/issues_006573.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
     "title": "fix docstring from #5651",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6573",

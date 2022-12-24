@@ -10,6 +10,7 @@ archive/issues_005893.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-feature",
     "title": "Norm Form for Number Fields and Orders",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5893",

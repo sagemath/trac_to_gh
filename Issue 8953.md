@@ -10,6 +10,7 @@ archive/issues_008953.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.2",
     "title": "Perfect graph recognition algorithm",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8953",

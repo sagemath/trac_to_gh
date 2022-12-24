@@ -10,6 +10,7 @@ archive/issues_006225.json:
         "trivial",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.2",
     "title": "[with patch, needs review] add link to irc in notebook help page",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6225",

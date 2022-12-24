@@ -10,6 +10,7 @@ archive/issues_003062.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.1",
     "title": "implement __oct__ special method for the integers",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3062",

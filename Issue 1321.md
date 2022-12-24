@@ -10,6 +10,7 @@ archive/issues_001321.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "[graphs] an interactive graph editor",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1321",

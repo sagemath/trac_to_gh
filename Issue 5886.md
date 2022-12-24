@@ -10,6 +10,7 @@ archive/issues_005886.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.2",
     "title": "Bug in free module homomorphism creation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5886",

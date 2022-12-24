@@ -10,6 +10,7 @@ archive/issues_006889.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-8.4",
     "title": "Algebra of multivariate polynomials invariant under the action of a permutation group",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6889",

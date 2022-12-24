@@ -10,6 +10,7 @@ archive/issues_003027.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.1",
     "title": "[with patches; needs review] Debian lintian fixes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3027",

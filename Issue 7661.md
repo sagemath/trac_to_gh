@@ -10,6 +10,7 @@ archive/issues_007661.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4",
     "title": "maxima interface gives precedence to function dictionary instead of local variables",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7661",

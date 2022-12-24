@@ -10,6 +10,7 @@ archive/issues_009013.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.4",
     "title": "Fix graph.loops() to not return all edges",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9013",

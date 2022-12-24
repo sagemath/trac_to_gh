@@ -10,6 +10,7 @@ archive/issues_003751.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
     "title": "Type of output returned by QuadraticField(-1).class_number()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3751",

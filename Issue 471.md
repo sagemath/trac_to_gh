@@ -10,6 +10,7 @@ archive/issues_000471.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
     "title": "requested features for trac",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/471",

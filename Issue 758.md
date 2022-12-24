@@ -10,6 +10,7 @@ archive/issues_000758.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.9",
     "title": "Use NTL directly in Z/nZ polynomials",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/758",

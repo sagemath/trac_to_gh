@@ -10,6 +10,7 @@ archive/issues_006148.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
     "title": "functions involving ceil and floor are plotted incorrectly",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6148",

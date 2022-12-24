@@ -10,6 +10,7 @@ archive/issues_000521.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
     "title": "put a doctest for every single function schemes/elliptic_curves/monsky_washnitzer.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/521",

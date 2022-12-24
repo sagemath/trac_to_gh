@@ -10,6 +10,7 @@ archive/issues_003491.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "slightly polish/improve how the cython pyx caching thing works",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3491",

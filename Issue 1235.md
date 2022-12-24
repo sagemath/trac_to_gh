@@ -10,6 +10,7 @@ archive/issues_001235.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9",
     "title": "bug solving equations using maxima",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1235",

@@ -10,6 +10,7 @@ archive/issues_007476.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5",
     "title": "Edge-disjoint spanning trees",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7476",

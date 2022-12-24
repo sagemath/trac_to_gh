@@ -10,6 +10,7 @@ archive/issues_009706.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.1",
     "title": "New Version of orthogonal Polynomials",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9706",

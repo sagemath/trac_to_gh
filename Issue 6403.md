@@ -10,6 +10,7 @@ archive/issues_006403.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.3",
     "title": "Custom definitions for latex style",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6403",

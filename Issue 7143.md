@@ -10,6 +10,7 @@ archive/issues_007143.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "We must check if the version of 'make' found is gnu 'make'",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7143",

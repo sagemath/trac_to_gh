@@ -10,6 +10,7 @@ archive/issues_008999.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.3",
     "title": "sage-4.4.2 test \"groups/matrix_gps/matrix_group.py\" fails on x86_64-Linux-nehalem-fc",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8999",

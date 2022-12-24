@@ -10,6 +10,7 @@ archive/issues_001284.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.3",
     "title": "G.subgroup([...]) for G an abelian group has at least one lame property",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1284",

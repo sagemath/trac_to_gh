@@ -10,6 +10,7 @@ archive/issues_009275.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "2 Bugs related to Simple Sage Server API",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9275",

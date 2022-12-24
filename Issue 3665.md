@@ -10,6 +10,7 @@ archive/issues_003665.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
     "title": "add initial species code",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3665",

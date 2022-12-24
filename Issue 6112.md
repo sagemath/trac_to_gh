@@ -10,6 +10,7 @@ archive/issues_006112.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1",
     "title": "Remove stale file sage/graphs/graph_isom.pyx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6112",

@@ -10,6 +10,7 @@ archive/issues_000992.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.9",
     "title": "Need an extra \"sage -b\" after an upgrade",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/992",

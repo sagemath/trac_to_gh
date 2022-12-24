@@ -10,6 +10,7 @@ archive/issues_008582.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6.1",
     "title": "sum(1/(1+k^2), k, -oo, oo) returns 0",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8582",

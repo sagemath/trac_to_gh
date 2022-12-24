@@ -10,6 +10,7 @@ archive/issues_003015.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "introspecting Cryto.DES using DES?? should throw an error message instead of displaying binary junk",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3015",

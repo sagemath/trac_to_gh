@@ -10,6 +10,7 @@ archive/issues_002018.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
     "title": "crap -- scipy sandbox has a bunch of .svn directories.  Delete them",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2018",

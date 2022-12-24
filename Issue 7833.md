@@ -10,6 +10,7 @@ archive/issues_007833.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.2",
     "title": "r-2.9.2 - fix compilation on FreeBSD",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7833",

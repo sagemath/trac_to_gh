@@ -10,6 +10,7 @@ archive/issues_009505.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.2",
     "title": "coeff(f,x*y) does not work",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9505",

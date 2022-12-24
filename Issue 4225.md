@@ -10,6 +10,7 @@ archive/issues_004225.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
     "title": "faster sqrt for complex numbers",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4225",

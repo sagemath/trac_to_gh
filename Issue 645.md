@@ -10,6 +10,7 @@ archive/issues_000645.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.15",
     "title": "multi-argument call for symbolic expressions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/645",

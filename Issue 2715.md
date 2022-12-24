@@ -10,6 +10,7 @@ archive/issues_002715.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
     "title": "sage -coverage currently counts functions that are defined in doctests",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2715",

@@ -10,6 +10,7 @@ archive/issues_007375.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "upgrade M4RI to newest upstream release",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7375",

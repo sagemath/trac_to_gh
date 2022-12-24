@@ -10,6 +10,7 @@ archive/issues_002679.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4",
     "title": "sage docs -- get rid of aux, etc., files when packaging up for distribution",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2679",

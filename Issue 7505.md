@@ -10,6 +10,7 @@ archive/issues_007505.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "Add scripts which check C and C++ compilers, and report what they are.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7505",

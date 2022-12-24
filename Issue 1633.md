@@ -10,6 +10,7 @@ archive/issues_001633.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "update sympy to 0.5.9",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1633",

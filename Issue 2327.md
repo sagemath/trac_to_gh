@@ -10,6 +10,7 @@ archive/issues_002327.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
     "title": "libgcrypt can't find libgpg-error headers",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2327",

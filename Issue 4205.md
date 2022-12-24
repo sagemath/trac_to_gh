@@ -10,6 +10,7 @@ archive/issues_004205.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.2",
     "title": "[with patch, needs review] Fix deprecation warnings from numpy 1.2",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4205",

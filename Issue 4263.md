@@ -10,6 +10,7 @@ archive/issues_004263.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
     "title": "elliptic curves -- point height serious stupid bug in raising error",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4263",

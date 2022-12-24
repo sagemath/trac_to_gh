@@ -10,6 +10,7 @@ archive/issues_008748.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5",
     "title": "Linear Arboricity, Acyclic edge coloring",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8748",

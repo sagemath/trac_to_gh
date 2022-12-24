@@ -10,6 +10,7 @@ archive/issues_009603.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
     "title": "Force iconv to build on HP-UX in addition to Solaris and Cygwin.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9603",

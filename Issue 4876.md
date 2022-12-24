@@ -10,6 +10,7 @@ archive/issues_004876.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
     "title": "replace the two kash3 optional spkg's by a single optional spkg that works on both Linux and OS X, and gives a graceful message on other systems",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4876",

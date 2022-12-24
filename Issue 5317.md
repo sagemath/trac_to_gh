@@ -10,6 +10,7 @@ archive/issues_005317.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "DeprecationWarning in pickle_jar is not pre-determined",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5317",

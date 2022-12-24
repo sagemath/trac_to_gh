@@ -10,6 +10,7 @@ archive/issues_003146.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "(latex(a\\v), a) gives an error about calling something with too many arguments.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3146",

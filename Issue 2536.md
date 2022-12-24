@@ -10,6 +10,7 @@ archive/issues_002536.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.5",
     "title": "get rid of SageObject.db and SageObject.version everywhere -- these turned out to \"not catch on\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2536",

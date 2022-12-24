@@ -10,6 +10,7 @@ archive/issues_007203.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "prereq-0.4 does not exit if CC is not gcc, but CXX is g++",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7203",

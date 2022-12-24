@@ -10,6 +10,7 @@ archive/issues_007004.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.1",
     "title": "[with patch] Refactor the graph layout code, and add interface with graphviz for acyclic layout",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7004",

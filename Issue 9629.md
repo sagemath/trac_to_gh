@@ -10,6 +10,7 @@ archive/issues_009629.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "sage -merge should look for sensible-editor before pico",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9629",

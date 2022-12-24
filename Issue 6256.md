@@ -10,6 +10,7 @@ archive/issues_006256.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.2",
     "title": "bug in symbolic arithmetic with exp",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6256",

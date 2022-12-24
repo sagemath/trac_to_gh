@@ -10,6 +10,7 @@ archive/issues_009496.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.2",
     "title": "Crypto lattice basis generator",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9496",

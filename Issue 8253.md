@@ -10,6 +10,7 @@ archive/issues_008253.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.3",
     "title": "search_src (etc.) bug",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8253",

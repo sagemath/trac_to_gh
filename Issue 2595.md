@@ -10,6 +10,7 @@ archive/issues_002595.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
     "title": "rubiks and polymake both have a cube binary",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2595",

@@ -10,6 +10,7 @@ archive/issues_005929.json:
         "blocker",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
     "title": "switch from clisp to ecl",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5929",

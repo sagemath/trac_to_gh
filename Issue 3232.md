@@ -10,6 +10,7 @@ archive/issues_003232.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.6",
     "title": "wrap NTL's BKZ",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3232",

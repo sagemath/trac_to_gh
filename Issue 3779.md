@@ -10,6 +10,7 @@ archive/issues_003779.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
     "title": "inconsistency for variables method, leads to errors in differentiation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3779",

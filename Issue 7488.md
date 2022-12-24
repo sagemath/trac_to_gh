@@ -10,6 +10,7 @@ archive/issues_007488.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "plot3d? doesn't document some important options, which causes confusion",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7488",

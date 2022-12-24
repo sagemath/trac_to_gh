@@ -10,6 +10,7 @@ archive/issues_006671.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4",
     "title": "[with patch, needs review] Speed of Victor Miller basis",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6671",

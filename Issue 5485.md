@@ -10,6 +10,7 @@ archive/issues_005485.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
     "title": "issue with dimension of ideals in polynomial rings",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5485",

@@ -10,6 +10,7 @@ archive/issues_000005.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "full keyboard mode for notebook",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5",

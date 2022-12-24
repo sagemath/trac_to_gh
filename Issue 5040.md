@@ -10,6 +10,7 @@ archive/issues_005040.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "Bug in NTL's ./configure",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5040",

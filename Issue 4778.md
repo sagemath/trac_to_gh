@@ -10,6 +10,7 @@ archive/issues_004778.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
     "title": "[with patch, needs review] Creates Scilab pexpect interface",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4778",

@@ -10,6 +10,7 @@ archive/issues_005529.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
     "title": "bring documentation of classical.py to 100%",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5529",

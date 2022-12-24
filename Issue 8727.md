@@ -10,6 +10,7 @@ archive/issues_008727.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "New SageNB release 0.8.1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8727",

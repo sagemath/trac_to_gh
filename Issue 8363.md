@@ -10,6 +10,7 @@ archive/issues_008363.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.4",
     "title": "cddlib-094f.p4 has a useless check for mpir which breaks on Solaris",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8363",

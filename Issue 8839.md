@@ -10,6 +10,7 @@ archive/issues_008839.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "comment in rating",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8839",

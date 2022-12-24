@@ -10,6 +10,7 @@ archive/issues_002358.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "phi(I) for phi a ring morphism and I an ideal should work (IMHO); it used to and now it doesn't because of new-ish arithmetic architecture stuff",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2358",

@@ -10,6 +10,7 @@ archive/issues_007836.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "Clean up the CRT_* functions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7836",

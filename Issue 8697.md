@@ -10,6 +10,7 @@ archive/issues_008697.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Add basic generic test methods",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8697",

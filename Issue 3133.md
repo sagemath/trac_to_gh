@@ -10,6 +10,7 @@ archive/issues_003133.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
     "title": "allow parametric_plot and parametric_plot3d to take a vector as input",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3133",

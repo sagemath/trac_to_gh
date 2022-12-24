@@ -10,6 +10,7 @@ archive/issues_004641.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
     "title": "[with patch, needs review] \"-notebook\" commandline option should take trailing options",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4641",

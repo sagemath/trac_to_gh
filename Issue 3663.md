@@ -10,6 +10,7 @@ archive/issues_003663.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "add support for affine crystals",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3663",

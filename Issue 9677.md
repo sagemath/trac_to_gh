@@ -10,6 +10,7 @@ archive/issues_009677.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "Sage Sets don't implement genuine comparison",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9677",

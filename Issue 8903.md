@@ -10,6 +10,7 @@ archive/issues_008903.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.3",
     "title": "update pynac to 0.2.0",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8903",

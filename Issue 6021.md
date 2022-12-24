@@ -10,6 +10,7 @@ archive/issues_006021.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.1",
     "title": "Implement period lattices for elliptic curves over CC",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6021",

@@ -10,6 +10,7 @@ archive/issues_007752.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.2",
     "title": "RAM is not free after deleting a worksheet",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7752",

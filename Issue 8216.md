@@ -10,6 +10,7 @@ archive/issues_008216.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6.1",
     "title": "Make David Perkinson's sandpile 2.0 module an optional package",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8216",

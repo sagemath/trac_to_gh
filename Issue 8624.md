@@ -10,6 +10,7 @@ archive/issues_008624.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6.1",
     "title": "integral of abs(cos(x))*sin(x) gives false results",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8624",

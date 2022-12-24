@@ -10,6 +10,7 @@ archive/issues_008650.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4",
     "title": "Extreme faces of Polyhedra are inconsistent",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8650",

@@ -10,6 +10,7 @@ archive/issues_007574.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "clean up of MIP interface",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7574",

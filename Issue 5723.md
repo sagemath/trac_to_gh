@@ -10,6 +10,7 @@ archive/issues_005723.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "sage new symbolics/pynac misbehave when evaluating with CDF elements",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5723",

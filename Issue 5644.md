@@ -10,6 +10,7 @@ archive/issues_005644.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "make it so escape make the introspection window in the notebook disappear",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5644",

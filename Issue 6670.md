@@ -10,6 +10,7 @@ archive/issues_006670.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.7.2",
     "title": "[with patch, needs work] Port group algebras to the current coercion system",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6670",

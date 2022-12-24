@@ -10,6 +10,7 @@ archive/issues_007618.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "notebook -- make it easy to configure keyboard shortcuts",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7618",

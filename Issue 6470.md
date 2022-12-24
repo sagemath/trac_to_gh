@@ -10,6 +10,7 @@ archive/issues_006470.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1",
     "title": "sage-4.1.rc0: On OS X 10.5 Singular fails to build",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6470",

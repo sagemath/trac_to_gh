@@ -10,6 +10,7 @@ archive/issues_009642.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "sage-maketest and sage-test-new should be able to run tests in parallel",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9642",

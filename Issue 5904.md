@@ -10,6 +10,7 @@ archive/issues_005904.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.2",
     "title": "[with patch, needs review] improve doctest coverage for schemes/jacobians/abstract_jacobian.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5904",

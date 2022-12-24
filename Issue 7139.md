@@ -10,6 +10,7 @@ archive/issues_007139.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "flint always building 32-bit on Solaris even when SAGE64=\"yes\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7139",

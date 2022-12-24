@@ -10,6 +10,7 @@ archive/issues_008132.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.2",
     "title": "fix documentation related to ODE solvers",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8132",

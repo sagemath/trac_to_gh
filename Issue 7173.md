@@ -10,6 +10,7 @@ archive/issues_007173.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "zn_poly does not handle the case of missing gmp.h very elegantly.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7173",

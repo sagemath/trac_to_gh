@@ -10,6 +10,7 @@ archive/issues_005227.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "add next batch of 14 people to devmap",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5227",

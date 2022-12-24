@@ -10,6 +10,7 @@ archive/issues_008444.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4",
     "title": "Memleak in conversion for univariate polynomial rings",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8444",

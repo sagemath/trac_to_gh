@@ -10,6 +10,7 @@ archive/issues_008899.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.4",
     "title": "Implement non commutative symmetric functions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8899",

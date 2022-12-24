@@ -10,6 +10,7 @@ archive/issues_007513.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6.1",
     "title": "Update Mercurial to 1.4",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7513",

@@ -10,6 +10,7 @@ archive/issues_009126.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Symbolic arguments() method",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9126",

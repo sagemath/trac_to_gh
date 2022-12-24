@@ -10,6 +10,7 @@ archive/issues_004157.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
     "title": "add introduction to README.txt",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4157",

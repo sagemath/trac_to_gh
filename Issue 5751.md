@@ -10,6 +10,7 @@ archive/issues_005751.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.2",
     "title": "cartan_type now a method rather than attribute in weyl_characters.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5751",

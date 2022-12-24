@@ -10,6 +10,7 @@ archive/issues_001047.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-wishlist",
     "title": "graphs: Create the \"visitor\" concept in Boost",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1047",

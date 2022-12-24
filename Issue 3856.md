@@ -10,6 +10,7 @@ archive/issues_003856.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Multiply between QQ and GF(7) gives exception",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3856",

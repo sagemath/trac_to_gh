@@ -10,6 +10,7 @@ archive/issues_002094.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Add jpeg support to gd",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2094",

@@ -10,6 +10,7 @@ archive/issues_000877.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
     "title": "\"sage -coverage\" should not care about functions which are local to other functions/methods",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/877",

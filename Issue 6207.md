@@ -10,6 +10,7 @@ archive/issues_006207.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.2",
     "title": "roots of polynomial have incorrect parent when ring=R is specified",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6207",

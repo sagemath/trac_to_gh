@@ -10,6 +10,7 @@ archive/issues_008039.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.4",
     "title": "[with spkg, needs review] ATLAS libs fail to build on Open Solaris 64 bit due to wrong LDFLAG -melf_x86_64",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8039",

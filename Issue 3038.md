@@ -10,6 +10,7 @@ archive/issues_003038.json:
         "blocker",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.1",
     "title": "[with patch; needs review] SAGE setup.py fixes for using Debian packaged polybori, zn_poly",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3038",

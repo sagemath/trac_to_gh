@@ -10,6 +10,7 @@ archive/issues_008918.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Strange behavior for Permutation()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8918",

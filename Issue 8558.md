@@ -10,6 +10,7 @@ archive/issues_008558.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-9.8",
     "title": "Make gcd use pari for univariate polynomial rings over number fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8558",

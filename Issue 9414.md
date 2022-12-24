@@ -10,6 +10,7 @@ archive/issues_009414.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "make the rational number field, consistent with other number fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9414",

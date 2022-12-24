@@ -10,6 +10,7 @@ archive/issues_002616.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "Replace all matrix.submatrix() instances",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2616",

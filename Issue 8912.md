@@ -10,6 +10,7 @@ archive/issues_008912.json:
         "trivial",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.2",
     "title": "documentation error in pseudo_order for finite monoid element",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8912",

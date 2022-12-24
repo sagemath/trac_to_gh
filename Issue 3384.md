@@ -10,6 +10,7 @@ archive/issues_003384.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
     "title": "Issues a warning for all unsupported / poorly supported operating systems.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3384",

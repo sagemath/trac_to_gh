@@ -10,6 +10,7 @@ archive/issues_004048.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "missing minpoly for GF(p)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4048",

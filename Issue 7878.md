@@ -10,6 +10,7 @@ archive/issues_007878.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.2",
     "title": "remove any spaces in output of testcc.sh and testcxx.sh",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7878",

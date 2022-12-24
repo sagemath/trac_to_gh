@@ -10,6 +10,7 @@ archive/issues_006871.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "temporary passwords aren't temporary",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6871",

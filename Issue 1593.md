@@ -10,6 +10,7 @@ archive/issues_001593.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
     "title": "m4ri -- the documentation of the echelon command only lists 1 algorithm but >= 2 algorithms are supported",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1593",

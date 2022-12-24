@@ -10,6 +10,7 @@ archive/issues_006322.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.10",
     "title": "optional doctest failure -- another mistake in bordeaux lectures",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6322",

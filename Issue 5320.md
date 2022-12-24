@@ -10,6 +10,7 @@ archive/issues_005320.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "update Sphinx to 0.5.1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5320",

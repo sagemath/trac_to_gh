@@ -10,6 +10,7 @@ archive/issues_006469.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1",
     "title": "sage-4.1.rc0: numerical noise in graph.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6469",

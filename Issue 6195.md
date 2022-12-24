@@ -10,6 +10,7 @@ archive/issues_006195.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
     "title": "[with patch, needs review] in symbolic Expression.math() return a dictionary with matched values of wildcards",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6195",

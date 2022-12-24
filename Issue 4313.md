@@ -10,6 +10,7 @@ archive/issues_004313.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1",
     "title": "Add some functionality to matrices in eclib",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4313",

@@ -10,6 +10,7 @@ archive/issues_005005.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "polynomial_template __init__ from list horribly innefficient",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5005",

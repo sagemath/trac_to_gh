@@ -10,6 +10,7 @@ archive/issues_005992.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.2",
     "title": "[with spkg, needs review] Set stack size in Maxima.spkg to 32kb for clisp",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5992",

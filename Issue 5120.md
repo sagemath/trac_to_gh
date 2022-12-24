@@ -10,6 +10,7 @@ archive/issues_005120.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
     "title": "abstract class for unique representation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5120",

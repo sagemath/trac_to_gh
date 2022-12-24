@@ -10,6 +10,7 @@ archive/issues_008944.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.2",
     "title": "32 vs. 64 bit issues in matrix1.pyx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8944",

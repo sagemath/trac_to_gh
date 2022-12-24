@@ -10,6 +10,7 @@ archive/issues_000633.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
     "title": "spkg-[install|check] should verify that SAGE_LOCAL is defined",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/633",

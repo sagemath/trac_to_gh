@@ -10,6 +10,7 @@ archive/issues_009915.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
     "title": "Change Shafarevich-Tate in BSD.py (also fixes doctests)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9915",

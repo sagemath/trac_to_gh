@@ -10,6 +10,7 @@ archive/issues_006361.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1",
     "title": "elliptic curves -- easy to fix mistake in docs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6361",

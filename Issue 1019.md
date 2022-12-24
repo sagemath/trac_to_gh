@@ -10,6 +10,7 @@ archive/issues_001019.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "strange behavious in notebook with %octave",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1019",

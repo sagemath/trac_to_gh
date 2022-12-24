@@ -10,6 +10,7 @@ archive/issues_007623.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Name OS X distributions automatically for PPC or Intel",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7623",

@@ -10,6 +10,7 @@ archive/issues_003461.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.4",
     "title": "write a construction for permutation groups so that the coercion system can find a common parent",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3461",

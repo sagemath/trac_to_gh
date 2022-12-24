@@ -10,6 +10,7 @@ archive/issues_001644.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9.2",
     "title": "Enable email notification of trac tickets",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1644",

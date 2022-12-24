@@ -10,6 +10,7 @@ archive/issues_004792.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
     "title": "Sage 3.2.1+valgrind is completely broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4792",

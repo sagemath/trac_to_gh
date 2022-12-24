@@ -10,6 +10,7 @@ archive/issues_005274.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Adapt matrices coherency check to (still future) Nicolas check framework.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5274",

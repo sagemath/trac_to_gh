@@ -10,6 +10,7 @@ archive/issues_009921.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-7.2",
     "title": "Add release notes to SAGE_ROOT",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9921",

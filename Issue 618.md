@@ -10,6 +10,7 @@ archive/issues_000618.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.4",
     "title": "doctest errors in rings/polynomial/polynomial_element.pyx due to new substitute code",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/618",

@@ -10,6 +10,7 @@ archive/issues_007007.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
     "title": "generator of RR['t'] has a float attached",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7007",

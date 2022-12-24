@@ -10,6 +10,7 @@ archive/issues_003014.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.1",
     "title": "ZZ.random_element -- corrupted docstring (easy to fix)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3014",

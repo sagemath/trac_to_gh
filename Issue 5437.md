@@ -10,6 +10,7 @@ archive/issues_005437.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4",
     "title": "[with patch; needs review] pickle jar -- make it run through in order",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5437",

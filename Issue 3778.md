@@ -10,6 +10,7 @@ archive/issues_003778.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "[with patch, do not review] part 1 of new configuration system",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3778",

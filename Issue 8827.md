@@ -10,6 +10,7 @@ archive/issues_008827.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.2",
     "title": "Cache heights of points on elliptic curves",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8827",

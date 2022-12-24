@@ -10,6 +10,7 @@ archive/issues_005178.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-9.2",
     "title": "[with patch; needs review] change LLL_gram to work with Gram matrices with not-necessarily integer entries",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5178",

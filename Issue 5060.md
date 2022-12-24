@@ -10,6 +10,7 @@ archive/issues_005060.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "setup.py dependency checking detects unexpected dependencies",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5060",

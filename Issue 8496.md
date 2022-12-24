@@ -10,6 +10,7 @@ archive/issues_008496.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4",
     "title": "Implement canonical heights for elliptic curves over number fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8496",

@@ -10,6 +10,7 @@ archive/issues_003100.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.1",
     "title": "coercion errors from SymbolicRing to various fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3100",

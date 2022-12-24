@@ -10,6 +10,7 @@ archive/issues_007791.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "upgrade numpy to 1.4",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7791",

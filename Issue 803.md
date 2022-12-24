@@ -10,6 +10,7 @@ archive/issues_000803.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Tests for what kind of an element something is should test the parent",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/803",

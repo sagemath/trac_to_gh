@@ -10,6 +10,7 @@ archive/issues_002797.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "[with spkg, needs review] fix memleaks in zn_poly",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2797",

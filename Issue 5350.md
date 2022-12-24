@@ -10,6 +10,7 @@ archive/issues_005350.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1",
     "title": "[with patch, needs review] sage-clone should use hard links for the build directory",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5350",

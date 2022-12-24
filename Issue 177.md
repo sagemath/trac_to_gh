@@ -10,6 +10,7 @@ archive/issues_000177.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-1.9",
     "title": "pari interface -- transition to new arithmetic model",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/177",

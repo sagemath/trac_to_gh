@@ -10,6 +10,7 @@ archive/issues_009614.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6.2",
     "title": "\"-sdist\" should complain or fail when run in a \"-bdist\" copy of Sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9614",

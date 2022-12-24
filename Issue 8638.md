@@ -10,6 +10,7 @@ archive/issues_008638.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4",
     "title": "iconv -- make with SAGE_CHECK=\"yes\" fails on iconv with x86_64 ubuntu",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8638",

@@ -10,6 +10,7 @@ archive/issues_008290.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-wishlist",
     "title": "Support HDF5",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8290",

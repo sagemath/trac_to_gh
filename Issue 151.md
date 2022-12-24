@@ -10,6 +10,7 @@ archive/issues_000151.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-1.8",
     "title": "clisp.run being left running",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/151",

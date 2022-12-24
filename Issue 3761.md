@@ -10,6 +10,7 @@ archive/issues_003761.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
     "title": "don't allow a sage binary to run if the processor instruction set doesn't support everything that was on the machine where sage was built",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3761",

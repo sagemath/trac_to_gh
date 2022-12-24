@@ -10,6 +10,7 @@ archive/issues_004894.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.3",
     "title": "[with patch; needs review] save_session -- bug when saving %cython functions, etc.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4894",

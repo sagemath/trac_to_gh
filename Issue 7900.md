@@ -10,6 +10,7 @@ archive/issues_007900.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "Replace variables like $RM with  'rm' in Mercurial",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7900",

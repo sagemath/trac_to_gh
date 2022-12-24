@@ -10,6 +10,7 @@ archive/issues_001071.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.12",
     "title": "[with patch] IntegerVectors_nk",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1071",

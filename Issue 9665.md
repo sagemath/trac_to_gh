@@ -10,6 +10,7 @@ archive/issues_009665.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.2",
     "title": "Make lcalc accessible as a library on OS X",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9665",

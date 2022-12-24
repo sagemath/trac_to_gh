@@ -10,6 +10,7 @@ archive/issues_003904.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "add 64 bit OSX support for R",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3904",

@@ -10,6 +10,7 @@ archive/issues_006436.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1",
     "title": "ideal([]) gives unhelpful error message",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6436",

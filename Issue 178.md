@@ -10,6 +10,7 @@ archive/issues_000178.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-1.5",
     "title": "Sage()._get() does not return the correct result in some instances",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/178",

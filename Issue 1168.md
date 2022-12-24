@@ -10,6 +10,7 @@ archive/issues_001168.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.15",
     "title": "asinh/acosh/atanh are only partially known to sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1168",

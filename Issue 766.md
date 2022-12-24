@@ -10,6 +10,7 @@ archive/issues_000766.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.12",
     "title": "Duplicate method in structure/formal_sum.py:FormalSums_generic",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/766",

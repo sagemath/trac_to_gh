@@ -10,6 +10,7 @@ archive/issues_003634.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.5",
     "title": "minpoly still slow for elements of finte fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3634",

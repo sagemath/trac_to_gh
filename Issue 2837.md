@@ -10,6 +10,7 @@ archive/issues_002837.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "[witch patch, needs review] use twisted-8.0.1's blockingCallFromThread",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2837",

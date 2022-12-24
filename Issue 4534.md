@@ -10,6 +10,7 @@ archive/issues_004534.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
     "title": "Stupid error in odd_part",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4534",

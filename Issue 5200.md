@@ -10,6 +10,7 @@ archive/issues_005200.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
     "title": "[with patch, needs review] subsets and subwords bug fix + improvements.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5200",

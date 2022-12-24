@@ -10,6 +10,7 @@ archive/issues_008265.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.4",
     "title": "LaTeX-friendly Unicode characters in underscored methods' docstrings",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8265",

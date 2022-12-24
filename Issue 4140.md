@@ -10,6 +10,7 @@ archive/issues_004140.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "\"Naughty\" libraries that get called in by sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4140",

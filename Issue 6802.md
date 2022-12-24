@@ -10,6 +10,7 @@ archive/issues_006802.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "define a real variable with var()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6802",

@@ -10,6 +10,7 @@ archive/issues_006189.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
     "title": "'integrate' produces incorrect answer",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6189",

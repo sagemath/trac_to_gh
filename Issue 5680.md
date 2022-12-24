@@ -10,6 +10,7 @@ archive/issues_005680.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2.1",
     "title": "Use new bits from FLINT 1.2.4 (followup to #5240)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5680",

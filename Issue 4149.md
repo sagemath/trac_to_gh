@@ -10,6 +10,7 @@ archive/issues_004149.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "[with patch, needs review] make every field a fraction field",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4149",

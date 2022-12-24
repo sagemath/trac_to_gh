@@ -10,6 +10,7 @@ archive/issues_001945.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
     "title": "[with patch] improve reference manual formatting",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1945",

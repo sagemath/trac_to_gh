@@ -10,6 +10,7 @@ archive/issues_002168.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
     "title": "add native implementation for PartitionTuples",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2168",

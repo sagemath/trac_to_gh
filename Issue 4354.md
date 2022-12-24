@@ -10,6 +10,7 @@ archive/issues_004354.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "loading a file with spaces in the filename doesn't work",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4354",

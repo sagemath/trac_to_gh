@@ -10,6 +10,7 @@ archive/issues_001994.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "cython spyx files -- cinclude, clib, issues",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1994",

@@ -10,6 +10,7 @@ archive/issues_008646.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Windows 7 Virtual Box Install Fails",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8646",

@@ -10,6 +10,7 @@ archive/issues_009504.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
     "title": "Add support for toric sublattices",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9504",

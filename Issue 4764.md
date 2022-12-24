@@ -10,6 +10,7 @@ archive/issues_004764.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
     "title": "Error in computing compliment of modular symbol space",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4764",

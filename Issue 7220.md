@@ -10,6 +10,7 @@ archive/issues_007220.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Spanish doc #8 \"The Matrix of Frobenius on Hyperelliptic Curves\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7220",

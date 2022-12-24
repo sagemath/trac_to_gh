@@ -10,6 +10,7 @@ archive/issues_009051.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.2",
     "title": "Fast function field arithmetic",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9051",

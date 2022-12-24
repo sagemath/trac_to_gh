@@ -10,6 +10,7 @@ archive/issues_009119.json:
         "trivial",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.4",
     "title": "Cython variables used then later declared",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9119",

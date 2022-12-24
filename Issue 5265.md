@@ -10,6 +10,7 @@ archive/issues_005265.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "Link the matrix_mod2_dense extension against png12",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5265",

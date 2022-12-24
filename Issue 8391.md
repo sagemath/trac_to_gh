@@ -10,6 +10,7 @@ archive/issues_008391.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.4",
     "title": "Temporary ugly fix: Change 'top' to 'prstat' on Solaris for 'getusage.py'",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8391",

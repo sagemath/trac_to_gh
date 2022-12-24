@@ -10,6 +10,7 @@ archive/issues_003974.json:
         "trivial",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "[with patch, needs review] renaming of integral_weierstrass_model to integral_short_weierstrass_model",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3974",

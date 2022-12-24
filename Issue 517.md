@@ -10,6 +10,7 @@ archive/issues_000517.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "abelian_group_element / dual_abelian_group_element classes need rewrite",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/517",

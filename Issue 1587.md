@@ -10,6 +10,7 @@ archive/issues_001587.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "M.kernel() gives the kernel when M acts on row vectors from the right.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1587",

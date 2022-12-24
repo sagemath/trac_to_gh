@@ -10,6 +10,7 @@ archive/issues_003266.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
     "title": "Sage 3.0.2.alpha1: doctest failure in sage/server/simple/twist.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3266",

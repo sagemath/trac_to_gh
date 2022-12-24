@@ -10,6 +10,7 @@ archive/issues_001004.json:
         "trivial",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-feature",
     "title": "basic discrete dynamical systems functions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1004",

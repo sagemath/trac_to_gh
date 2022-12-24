@@ -10,6 +10,7 @@ archive/issues_003464.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "notebook server error on sage.math (port detection problem)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3464",

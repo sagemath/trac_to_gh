@@ -10,6 +10,7 @@ archive/issues_003792.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "fix Sage build when there is a broken systemwide freetype library",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3792",

@@ -10,6 +10,7 @@ archive/issues_009355.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.2",
     "title": "100% coverage for quadratic_forms",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9355",

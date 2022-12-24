@@ -10,6 +10,7 @@ archive/issues_005179.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "Delete __getslice__ from matrices",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5179",

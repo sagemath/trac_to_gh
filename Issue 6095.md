@@ -10,6 +10,7 @@ archive/issues_006095.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "implement sloane sequence: A060302 (digits of (pi^4+pi^5))^(1/6)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6095",

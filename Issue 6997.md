@@ -10,6 +10,7 @@ archive/issues_006997.json:
         "trivial",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
     "title": "minor typo in Constructions documentation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6997",

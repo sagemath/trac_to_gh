@@ -10,6 +10,7 @@ archive/issues_002865.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "PolyBori fails to build on OSX 10.4 intel",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2865",

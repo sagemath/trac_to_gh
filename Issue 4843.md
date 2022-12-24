@@ -10,6 +10,7 @@ archive/issues_004843.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.3",
     "title": "Fix readline related build problems on OpenSUSE 11.1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4843",

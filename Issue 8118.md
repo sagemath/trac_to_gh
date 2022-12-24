@@ -10,6 +10,7 @@ archive/issues_008118.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.3",
     "title": "split off Galois representations and modular parametrization from ell_rational_field.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8118",

@@ -10,6 +10,7 @@ archive/issues_003090.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "first maxima use after restart returns zero, or fails",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3090",

@@ -10,6 +10,7 @@ archive/issues_009938.json:
         "trivial",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.2",
     "title": "Remove unnecessary .hgtags.orig, SConstruct.orig, and hgrc files",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9938",

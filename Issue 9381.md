@@ -10,6 +10,7 @@ archive/issues_009381.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "libm4ri not respecting SAGE_FAT_BINARY",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9381",

@@ -10,6 +10,7 @@ archive/issues_008507.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.4",
     "title": "all flag ignored for GF(107)(0).sqrt",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8507",

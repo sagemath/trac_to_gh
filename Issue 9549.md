@@ -10,6 +10,7 @@ archive/issues_009549.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "InfinitePolynomialRing_sparse.is_field lacks `proof=...` option",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9549",

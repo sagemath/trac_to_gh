@@ -10,6 +10,7 @@ archive/issues_002462.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
     "title": "Odd results when adding Laurent series",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2462",

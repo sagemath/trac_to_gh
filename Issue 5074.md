@@ -10,6 +10,7 @@ archive/issues_005074.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "singular factorization over GF(p) need not be a complete factorization",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5074",

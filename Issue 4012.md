@@ -10,6 +10,7 @@ archive/issues_004012.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "notebook -- Text tab gives bad text version of worksheet",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4012",

@@ -10,6 +10,7 @@ archive/issues_004517.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
     "title": "magma <--> sage (3.2) conversion failure case -- nested multivariate polynomials",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4517",

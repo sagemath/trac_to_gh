@@ -10,6 +10,7 @@ archive/issues_009064.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.3",
     "title": "remove p-adic matrix directory",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9064",

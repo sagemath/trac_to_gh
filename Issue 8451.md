@@ -10,6 +10,7 @@ archive/issues_008451.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6.1",
     "title": "improve galois representation for elliptic curves",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8451",

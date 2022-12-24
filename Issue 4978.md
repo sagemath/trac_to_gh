@@ -10,6 +10,7 @@ archive/issues_004978.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "fix NTL tuning issue on Linux/ppc64",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4978",

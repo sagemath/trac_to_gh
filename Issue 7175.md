@@ -10,6 +10,7 @@ archive/issues_007175.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.4",
     "title": "HP-UX failure to build of pyprocessing 0.52.p0",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7175",

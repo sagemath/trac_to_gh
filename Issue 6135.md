@@ -10,6 +10,7 @@ archive/issues_006135.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "#4073 is not fixed",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6135",

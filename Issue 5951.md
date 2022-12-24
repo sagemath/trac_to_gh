@@ -10,6 +10,7 @@ archive/issues_005951.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.2",
     "title": "[with patch, needs review] fix a few minor issues with the reference manual in 3.4.2.rc0",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5951",

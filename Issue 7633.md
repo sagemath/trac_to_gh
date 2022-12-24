@@ -10,6 +10,7 @@ archive/issues_007633.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5",
     "title": "sagenb -- add \"Save/ Cancel\" buttons to the top of the display too for notebook settings",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7633",

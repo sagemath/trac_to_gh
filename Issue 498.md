@@ -10,6 +10,7 @@ archive/issues_000498.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.3",
     "title": "Error in <IntegerMatrix.det()>",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/498",

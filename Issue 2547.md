@@ -10,6 +10,7 @@ archive/issues_002547.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "Implement gradient(), hessian() for callable function rings",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2547",

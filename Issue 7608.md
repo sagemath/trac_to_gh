@@ -10,6 +10,7 @@ archive/issues_007608.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.1",
     "title": "update Networkx to version 1.0rc1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7608",

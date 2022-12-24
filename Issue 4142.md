@@ -10,6 +10,7 @@ archive/issues_004142.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "limit bug: should be -Infinity, but gives +Infinity",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4142",

@@ -10,6 +10,7 @@ archive/issues_003694.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.6",
     "title": "Update FLINT to the 1.0.13 release",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3694",

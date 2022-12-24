@@ -10,6 +10,7 @@ archive/issues_002624.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
     "title": "parallel testing: sage -tp foo/bar/file.py is broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2624",

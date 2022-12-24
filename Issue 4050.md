@@ -10,6 +10,7 @@ archive/issues_004050.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "Shared worksheets are not copied correctly",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4050",

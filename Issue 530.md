@@ -10,6 +10,7 @@ archive/issues_000530.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "gmpz leak in Matrix_integer_dense__solve_iml (from matrix/strassen.pyx)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/530",

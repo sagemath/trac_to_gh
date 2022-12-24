@@ -10,6 +10,7 @@ archive/issues_006618.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Follow up on #6591: make tightpage work even in the notebook",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6618",

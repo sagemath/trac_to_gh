@@ -10,6 +10,7 @@ archive/issues_005066.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "[with patch, needs review] break out relative number fields into separate file",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5066",

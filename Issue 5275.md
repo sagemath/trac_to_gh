@@ -10,6 +10,7 @@ archive/issues_005275.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-wishlist",
     "title": "One-by-one declaration of morphisms to the coercion mechanism",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5275",

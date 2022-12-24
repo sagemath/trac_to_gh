@@ -10,6 +10,7 @@ archive/issues_007891.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-wishlist",
     "title": "spkg's for PyQt4 and QScintilla2",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7891",

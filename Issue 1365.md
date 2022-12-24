@@ -10,6 +10,7 @@ archive/issues_001365.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "golden_ratio._algebraic_() should synthesize the value",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1365",

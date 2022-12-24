@@ -10,6 +10,7 @@ archive/issues_003155.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
     "title": "notebook postdata and behaviour of archive, delete and stop buttons",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3155",

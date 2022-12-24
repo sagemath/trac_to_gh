@@ -10,6 +10,7 @@ archive/issues_002028.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Cannot iterate over SymbolicArithmetic objects like you can with poly rings / Eigenspaces() broken for matrices over SR",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2028",

@@ -10,6 +10,7 @@ archive/issues_003256.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "[with patch; needs review] soname and correct -fPIC handling for zn_poly",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3256",

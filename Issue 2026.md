@@ -10,6 +10,7 @@ archive/issues_002026.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
     "title": "matrix.eigenspaces doctest description is misleading",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2026",

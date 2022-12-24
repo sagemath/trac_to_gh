@@ -10,6 +10,7 @@ archive/issues_007973.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "Documentation for submitting a patch is overly confusing",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7973",

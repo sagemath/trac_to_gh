@@ -10,6 +10,7 @@ archive/issues_009094.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.7",
     "title": "is_square and sqrt for fraction fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9094",

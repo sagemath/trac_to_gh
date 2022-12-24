@@ -10,6 +10,7 @@ archive/issues_004930.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.3",
     "title": "[with spkg, needs review] 3.2.3.final: Fix bug in ATLAS' spkg-install that breaks the install target for dynamic libs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4930",

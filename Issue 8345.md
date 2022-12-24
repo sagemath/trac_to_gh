@@ -10,6 +10,7 @@ archive/issues_008345.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.7.1",
     "title": "cannot convert symbolic functions back from maxima",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8345",

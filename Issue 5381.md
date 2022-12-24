@@ -10,6 +10,7 @@ archive/issues_005381.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
     "title": "Refactor matrix kernels",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5381",

@@ -10,6 +10,7 @@ archive/issues_003434.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "notebook -- implementin MAX_OUTPUT handling in cell.py for interact.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3434",

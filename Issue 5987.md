@@ -10,6 +10,7 @@ archive/issues_005987.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "fix a few more bad comparison doctests",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5987",

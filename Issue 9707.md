@@ -10,6 +10,7 @@ archive/issues_009707.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-8.7",
     "title": "Add a \"signless\" option to laplacian",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9707",

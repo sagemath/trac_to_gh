@@ -10,6 +10,7 @@ archive/issues_009189.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.4",
     "title": "libgcrypt fails to build on Fedora 13",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9189",

@@ -10,6 +10,7 @@ archive/issues_005589.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
     "title": "binomial() doesn't work with negative integers",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5589",

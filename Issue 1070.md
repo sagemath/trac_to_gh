@@ -10,6 +10,7 @@ archive/issues_001070.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
     "title": "the build system should rebuild Cython modules if the static libraries they depend on change",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1070",

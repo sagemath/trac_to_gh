@@ -10,6 +10,7 @@ archive/issues_001815.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Implement good formatted output",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1815",

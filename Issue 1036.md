@@ -10,6 +10,7 @@ archive/issues_001036.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9",
     "title": "optional macaulay2 package does not install",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1036",

@@ -10,6 +10,7 @@ archive/issues_002835.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "[with patch, needs review] primes_of_degree_one iterator for NumberField_generic",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2835",

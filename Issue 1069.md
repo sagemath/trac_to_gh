@@ -10,6 +10,7 @@ archive/issues_001069.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "find a way to savely enable inplace optimizations",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1069",

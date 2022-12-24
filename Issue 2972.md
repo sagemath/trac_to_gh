@@ -10,6 +10,7 @@ archive/issues_002972.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "libSingular related segfault in laurent_polynomial_ring.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2972",

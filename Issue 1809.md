@@ -10,6 +10,7 @@ archive/issues_001809.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "[with patch] refactoring to improve finite field reference manual",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1809",

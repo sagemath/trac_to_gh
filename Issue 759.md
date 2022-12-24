@@ -10,6 +10,7 @@ archive/issues_000759.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.6",
     "title": "[patch] graphs: density returns incorrect result for directed graphs.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/759",

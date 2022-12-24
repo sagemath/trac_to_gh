@@ -10,6 +10,7 @@ archive/issues_008642.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.1",
     "title": "port detection for the notebook does not work in Cygwin",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8642",

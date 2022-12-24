@@ -10,6 +10,7 @@ archive/issues_007775.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "Wrong url in numerical.mip",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7775",

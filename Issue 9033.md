@@ -10,6 +10,7 @@ archive/issues_009033.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Singular does not try to build 64-bit on OpenSolaris.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9033",

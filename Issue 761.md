@@ -10,6 +10,7 @@ archive/issues_000761.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.6",
     "title": "[patch] graphs: Lots of various doc changes and additional doc tests.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/761",

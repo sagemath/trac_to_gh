@@ -10,6 +10,7 @@ archive/issues_005117.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.4",
     "title": "remove (or enhance an rename) the Polyhedron.union()) method",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5117",

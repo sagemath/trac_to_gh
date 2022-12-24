@@ -10,6 +10,7 @@ archive/issues_002081.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
     "title": "Add .coefficients() and .exponents() to univariate polynomials and power series",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2081",

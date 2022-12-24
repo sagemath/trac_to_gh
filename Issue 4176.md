@@ -10,6 +10,7 @@ archive/issues_004176.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
     "title": "matplotlib build failure due to broken tcl/tk detection",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4176",

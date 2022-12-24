@@ -10,6 +10,7 @@ archive/issues_002301.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
     "title": "Bug in sage_flattened_str_list",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2301",

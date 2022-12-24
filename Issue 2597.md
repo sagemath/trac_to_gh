@@ -10,6 +10,7 @@ archive/issues_002597.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
     "title": "[with patch, needs review] Add reduced adjacency matrix and alist file format support to BipartiteGraph",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2597",

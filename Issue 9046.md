@@ -10,6 +10,7 @@ archive/issues_009046.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "missing documentation and bug in collect",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9046",

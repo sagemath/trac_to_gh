@@ -10,6 +10,7 @@ archive/issues_004886.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "notebook -- make notebook autosave configurable from notebook settings",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4886",

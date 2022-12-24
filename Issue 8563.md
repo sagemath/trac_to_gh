@@ -10,6 +10,7 @@ archive/issues_008563.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "R interpreter starts (seemingly) without reason",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8563",

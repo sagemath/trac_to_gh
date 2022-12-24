@@ -10,6 +10,7 @@ archive/issues_007657.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "notebook -- traceback involving \"_before_preparse\" in sagenb.org log",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7657",

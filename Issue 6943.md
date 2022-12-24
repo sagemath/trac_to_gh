@@ -10,6 +10,7 @@ archive/issues_006943.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.2",
     "title": "Make @parallel work for callable objects",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6943",

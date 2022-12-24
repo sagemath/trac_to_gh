@@ -10,6 +10,7 @@ archive/issues_009723.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Sage will not start on 64-bit Solaris 10 - looks like related to M4RI upgrade",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9723",

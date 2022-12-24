@@ -10,6 +10,7 @@ archive/issues_004924.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4",
     "title": "convert sage.probability.* docstrings to Sphinx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4924",

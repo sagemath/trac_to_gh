@@ -10,6 +10,7 @@ archive/issues_009522.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "MPIR: Don't check SAGE_CHECK in spkg-install",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9522",

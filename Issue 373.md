@@ -10,6 +10,7 @@ archive/issues_000373.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.5.3",
     "title": "pi coercion issues",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/373",

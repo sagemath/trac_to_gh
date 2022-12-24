@@ -10,6 +10,7 @@ archive/issues_000392.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.2",
     "title": "round() ignores the innate precision of a real number",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/392",

@@ -10,6 +10,7 @@ archive/issues_009176.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "cygwin: various heegner_index errors involving interval arithmetic on cygwin",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9176",

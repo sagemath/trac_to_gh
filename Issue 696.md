@@ -10,6 +10,7 @@ archive/issues_000696.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "SAGE's multivariate gcd sucks over QQ and/or ZZ",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/696",

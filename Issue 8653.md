@@ -10,6 +10,7 @@ archive/issues_008653.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4",
     "title": "Command-line \"advanced\" help has wrong option name for randomized tests",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8653",

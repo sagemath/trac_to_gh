@@ -10,6 +10,7 @@ archive/issues_003433.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "notebook -- change it so worksheet text is *not* stored in the notebook/worksheet objects when pickling and unpickling",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3433",

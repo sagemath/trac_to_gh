@@ -10,6 +10,7 @@ archive/issues_007543.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "Add S-adiques to the word generator",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7543",

@@ -10,6 +10,7 @@ archive/issues_006459.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
     "title": "make it so control-shift-enter sends a blank line to tinymce",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6459",

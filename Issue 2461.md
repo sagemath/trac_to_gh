@@ -10,6 +10,7 @@ archive/issues_002461.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.4",
     "title": "vector norms should have a reasonable default",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2461",

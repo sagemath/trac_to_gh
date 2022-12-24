@@ -10,6 +10,7 @@ archive/issues_006920.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.2",
     "title": "irreducible components function is stupid in case of projective space",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6920",

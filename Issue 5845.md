@@ -10,6 +10,7 @@ archive/issues_005845.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.2",
     "title": "Fix precision bug in hilbert_class_polynomial()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5845",

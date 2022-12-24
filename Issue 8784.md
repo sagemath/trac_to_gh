@@ -10,6 +10,7 @@ archive/issues_008784.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-9.6",
     "title": "remove quit_sage() command from all.py top level",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8784",

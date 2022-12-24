@@ -10,6 +10,7 @@ archive/issues_001808.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10",
     "title": "[with very short patch] two simple LaTeX fixes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1808",

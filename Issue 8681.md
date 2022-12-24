@@ -10,6 +10,7 @@ archive/issues_008681.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.1",
     "title": "implement matrix actions on binary quadratic forms",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8681",

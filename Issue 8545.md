@@ -10,6 +10,7 @@ archive/issues_008545.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "\\opi -> \\overline\\pi in coxter_groups.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8545",

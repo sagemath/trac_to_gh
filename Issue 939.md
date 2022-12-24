@@ -10,6 +10,7 @@ archive/issues_000939.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.8",
     "title": "segfault in graph_isom.pyx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/939",

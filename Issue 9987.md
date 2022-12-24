@@ -10,6 +10,7 @@ archive/issues_009987.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "zlib 1.2.5 installs zlib library with a .so extension on AIX when it should be .a",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9987",

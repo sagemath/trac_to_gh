@@ -10,6 +10,7 @@ archive/issues_007308.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.3",
     "title": "cliquer's spkg-install does not work on cygwin",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7308",

@@ -10,6 +10,7 @@ archive/issues_009213.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.4",
     "title": "Bring doc coverage of combinat/posets/elements.py to 100%",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9213",

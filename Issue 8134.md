@@ -10,6 +10,7 @@ archive/issues_008134.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.3",
     "title": "Escape $s in notebook keybindings docstring, config.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8134",

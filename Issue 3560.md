@@ -10,6 +10,7 @@ archive/issues_003560.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
     "title": "optimize import of gnutls_socket_ssl.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3560",

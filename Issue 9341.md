@@ -10,6 +10,7 @@ archive/issues_009341.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.2",
     "title": "K.S_units doesn't check for repeated entries",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9341",

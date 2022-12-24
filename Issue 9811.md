@@ -10,6 +10,7 @@ archive/issues_009811.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
     "title": "Sorting bug in fan subdivision",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9811",

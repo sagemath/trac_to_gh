@@ -10,6 +10,7 @@ archive/issues_000646.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.4.2",
     "title": "plot3d error on itanium",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/646",

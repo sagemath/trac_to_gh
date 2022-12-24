@@ -10,6 +10,7 @@ archive/issues_002965.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "extcode spkg build failure on Debian",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2965",

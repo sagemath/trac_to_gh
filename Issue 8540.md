@@ -10,6 +10,7 @@ archive/issues_008540.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.4",
     "title": "** BLOCKER ** very simple basic sqrt simplification totally broken bad",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8540",

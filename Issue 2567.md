@@ -10,6 +10,7 @@ archive/issues_002567.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-9.3",
     "title": "remove limitation on computing digits of pi using mpfr",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2567",

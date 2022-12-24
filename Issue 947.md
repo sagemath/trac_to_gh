@@ -10,6 +10,7 @@ archive/issues_000947.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.8",
     "title": "Cython reload produces ln errors",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/947",

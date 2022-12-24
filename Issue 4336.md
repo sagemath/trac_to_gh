@@ -10,6 +10,7 @@ archive/issues_004336.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
     "title": "[with suggested solution] Bug in handling attached pyx-files",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4336",

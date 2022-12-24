@@ -10,6 +10,7 @@ archive/issues_001084.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.12",
     "title": "invalid use of ring notation gives bizarre post-preparser syntax error",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1084",

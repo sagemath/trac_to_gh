@@ -10,6 +10,7 @@ archive/issues_000688.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.8",
     "title": "conversion to Singular for QuotientRingElements broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/688",

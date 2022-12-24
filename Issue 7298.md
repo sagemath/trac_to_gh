@@ -10,6 +10,7 @@ archive/issues_007298.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "use html5 video tag for animations",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7298",

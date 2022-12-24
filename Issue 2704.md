@@ -10,6 +10,7 @@ archive/issues_002704.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "bug in lcm(a,b) for a,b polynomials in QQ[] if a is constant",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2704",

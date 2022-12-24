@@ -10,6 +10,7 @@ archive/issues_009326.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.3",
     "title": "Add cohomology of toric varieties",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9326",

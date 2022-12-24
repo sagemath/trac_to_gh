@@ -10,6 +10,7 @@ archive/issues_004002.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "raise coverage of sage.graphs to 100%",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4002",

@@ -10,6 +10,7 @@ archive/issues_009836.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
     "title": "New PARI and new MPIR don't combine",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9836",

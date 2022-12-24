@@ -10,6 +10,7 @@ archive/issues_006348.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "gap4.4.10->gap4.4.12 revisited",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6348",

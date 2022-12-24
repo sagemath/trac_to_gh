@@ -10,6 +10,7 @@ archive/issues_003886.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "Plotting of digraphs is broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3886",

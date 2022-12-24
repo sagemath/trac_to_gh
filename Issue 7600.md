@@ -10,6 +10,7 @@ archive/issues_007600.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "Vertex cover",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7600",

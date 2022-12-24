@@ -10,6 +10,7 @@ archive/issues_007119.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
     "title": "Redundant minus sign in PolyDict polynomial",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7119",

@@ -10,6 +10,7 @@ archive/issues_002417.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
     "title": "discriminant method sometimes returns values in the fraction field",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2417",

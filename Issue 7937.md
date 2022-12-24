@@ -10,6 +10,7 @@ archive/issues_007937.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "Add SASS files to MANIFEST.in",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7937",

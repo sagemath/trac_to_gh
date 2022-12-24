@@ -10,6 +10,7 @@ archive/issues_002900.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
     "title": "matplotlib bug in imshow (probably fixed in new version)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2900",

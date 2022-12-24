@@ -10,6 +10,7 @@ archive/issues_003364.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.3",
     "title": "randstate interaction with GAP is broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3364",

@@ -10,6 +10,7 @@ archive/issues_002445.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
     "title": "algebras module lacks many docstrings and tests (score 15.7%)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2445",

@@ -10,6 +10,7 @@ archive/issues_000561.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.8",
     "title": "memleak in MultiModularBasis_base__extend_moduli_to_height_c exposed by ModularSymbols(n,sign=1).decomposition()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/561",

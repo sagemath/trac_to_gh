@@ -10,6 +10,7 @@ archive/issues_004422.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-wishlist",
     "title": "create new optional sympow_data.spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4422",

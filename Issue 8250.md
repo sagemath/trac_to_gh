@@ -10,6 +10,7 @@ archive/issues_008250.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.3",
     "title": "Extend ClasscallMetaclass to allow for binding behavior",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8250",

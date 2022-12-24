@@ -10,6 +10,7 @@ archive/issues_001897.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "%latex -- bug in passing in predefined sage variables (serious but probably very easy to fix)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1897",

@@ -10,6 +10,7 @@ archive/issues_009175.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "cygwin: pari's sea.gp program just segfaults on Cygwin",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9175",

@@ -10,6 +10,7 @@ archive/issues_001022.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.10",
     "title": "[with patch] Miscellaneous combinatorics updates / fixes / additions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1022",

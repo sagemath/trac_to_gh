@@ -10,6 +10,7 @@ archive/issues_004574.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.4",
     "title": "add notebook_object.py docs to the reference manual, and possibly a short survey about that to notebook help (top letter)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4574",

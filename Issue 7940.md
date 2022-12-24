@@ -10,6 +10,7 @@ archive/issues_007940.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "real_mpfr: fix docstring so ref manual builds",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7940",

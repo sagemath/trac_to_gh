@@ -10,6 +10,7 @@ archive/issues_009578.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "Add even more customization of ticks in plots",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9578",

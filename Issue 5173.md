@@ -10,6 +10,7 @@ archive/issues_005173.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "Sage 3.3.a5: doctest failure in sage/rings/polynomial/polynomial_element.pyx due to print order of roots",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5173",

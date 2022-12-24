@@ -10,6 +10,7 @@ archive/issues_005266.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "plot_vector_field does not plot the end of the range when given plot_points argument",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5266",

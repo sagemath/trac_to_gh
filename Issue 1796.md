@@ -10,6 +10,7 @@ archive/issues_001796.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "initial entry of Admin password",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1796",

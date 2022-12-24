@@ -10,6 +10,7 @@ archive/issues_004598.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
     "title": "add sage/libs/gmp/__init__.py to MANIFEST.in",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4598",

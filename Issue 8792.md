@@ -10,6 +10,7 @@ archive/issues_008792.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6.1",
     "title": "clean up documentation of logic/booleval.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8792",

@@ -10,6 +10,7 @@ archive/issues_002023.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.10",
     "title": "dynkin diagram weights",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2023",

@@ -10,6 +10,7 @@ archive/issues_009443.json:
         "trivial",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
     "title": "infinite polynomial ring is_integral_domain and is_field omit optional argument 'proof'",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9443",

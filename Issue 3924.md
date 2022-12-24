@@ -10,6 +10,7 @@ archive/issues_003924.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "making sage on os x build, when python is built as a framework",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3924",

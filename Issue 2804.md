@@ -10,6 +10,7 @@ archive/issues_002804.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "ssmod.py failure",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2804",

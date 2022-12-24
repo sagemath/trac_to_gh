@@ -10,6 +10,7 @@ archive/issues_006831.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2.1",
     "title": "[with patch, needs review] No more maximal dimension requirement for lattice polytopes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6831",

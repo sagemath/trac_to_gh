@@ -10,6 +10,7 @@ archive/issues_007126.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
     "title": "Doc sidebar broken by Sphinx 0.6.3 JS compression",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7126",

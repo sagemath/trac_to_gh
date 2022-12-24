@@ -10,6 +10,7 @@ archive/issues_009512.json:
         "trivial",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Sage Source Editor",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9512",

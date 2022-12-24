@@ -10,6 +10,7 @@ archive/issues_007193.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
     "title": "os x 10.6 -- print warning about Sage being broken, so we can release",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7193",

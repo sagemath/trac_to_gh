@@ -10,6 +10,7 @@ archive/issues_002550.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.4",
     "title": "[with trivial patch, needs review] remove UTF-8 garbage from SBox file",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2550",

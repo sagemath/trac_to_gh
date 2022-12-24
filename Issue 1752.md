@@ -10,6 +10,7 @@ archive/issues_001752.json:
         "trivial",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10",
     "title": "sage make install bug",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1752",

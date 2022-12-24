@@ -10,6 +10,7 @@ archive/issues_006151.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
     "title": "fedora 10 64-bit -- tab completion causes segfault",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6151",

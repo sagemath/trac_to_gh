@@ -10,6 +10,7 @@ archive/issues_008682.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.4",
     "title": "Improve AlgebraicScheme_subscheme.__init__ and AmbientSpace._validate",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8682",

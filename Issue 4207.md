@@ -10,6 +10,7 @@ archive/issues_004207.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "implement an is_close function for matrices and vectors",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4207",

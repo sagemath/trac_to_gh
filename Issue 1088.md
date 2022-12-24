@@ -10,6 +10,7 @@ archive/issues_001088.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.12",
     "title": "[with patch] graphs: minimum spanning tree function",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1088",

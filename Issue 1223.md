@@ -10,6 +10,7 @@ archive/issues_001223.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.13",
     "title": "doctest timeouts in sage/plot/plot.py on slow systems",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1223",

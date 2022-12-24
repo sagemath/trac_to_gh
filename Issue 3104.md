@@ -10,6 +10,7 @@ archive/issues_003104.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
     "title": "pbori.pyx: Make some doctest long since it uses a lot of RAM",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3104",

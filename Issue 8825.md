@@ -10,6 +10,7 @@ archive/issues_008825.json:
         "trivial",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
     "title": "Improve documentation for function norm",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8825",

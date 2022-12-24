@@ -10,6 +10,7 @@ archive/issues_007512.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-9.8",
     "title": "plot3d variable ranges should respect the named variable, if there is one",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7512",

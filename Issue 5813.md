@@ -10,6 +10,7 @@ archive/issues_005813.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Update GSL to 1.112 (latest upstream)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5813",

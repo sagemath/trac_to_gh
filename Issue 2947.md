@@ -10,6 +10,7 @@ archive/issues_002947.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "[with patch; needs review] block_matrix([]) fails",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2947",

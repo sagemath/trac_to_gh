@@ -10,6 +10,7 @@ archive/issues_006191.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.1",
     "title": "atlas -- make it so SAGE_FAT_BINARY only used on x86",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6191",

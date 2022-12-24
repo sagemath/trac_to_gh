@@ -10,6 +10,7 @@ archive/issues_000937.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.8",
     "title": "If g is a graphics object then in doctest mode g.show() should save to a specific (always the same) temp file.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/937",

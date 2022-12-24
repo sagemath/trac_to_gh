@@ -10,6 +10,7 @@ archive/issues_003167.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1",
     "title": "notebook -- jmol 3d plots in the dynamic live worksheet-based reference manual do not work",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3167",

@@ -10,6 +10,7 @@ archive/issues_001158.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "mathematical functions should remain symbolic",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1158",

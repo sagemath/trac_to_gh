@@ -10,6 +10,7 @@ archive/issues_006834.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "upgrade Valgrind to version 3.5.0",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6834",

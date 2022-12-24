@@ -10,6 +10,7 @@ archive/issues_003339.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "tachyon spkg is not clean upstream",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3339",

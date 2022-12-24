@@ -10,6 +10,7 @@ archive/issues_003728.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "tutorial: add documentation for solving matrix equations",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3728",

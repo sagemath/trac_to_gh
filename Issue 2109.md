@@ -10,6 +10,7 @@ archive/issues_002109.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "the maxima interface doesn't recognize a syntax error (and then hangs)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2109",

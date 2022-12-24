@@ -10,6 +10,7 @@ archive/issues_008799.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.4",
     "title": "Bring doctests for mwrank.pyx up to 100% (from 3%)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8799",

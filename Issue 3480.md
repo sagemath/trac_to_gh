@@ -10,6 +10,7 @@ archive/issues_003480.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
     "title": "notebook -- hide \"New Worksheet\" and \"Upload\" links on the published worksheets page from guest users",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3480",

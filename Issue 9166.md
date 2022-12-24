@@ -10,6 +10,7 @@ archive/issues_009166.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "cygwin: sympow does not work on cygwin",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9166",

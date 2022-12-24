@@ -10,6 +10,7 @@ archive/issues_001542.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9.1",
     "title": "R package doesn't notice if rpy fails to build",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1542",

@@ -10,6 +10,7 @@ archive/issues_006247.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "sage -optional tries to write to SAGE_ROOT",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6247",

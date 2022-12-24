@@ -10,6 +10,7 @@ archive/issues_007101.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Inconsistency in polynomial ring creation.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7101",

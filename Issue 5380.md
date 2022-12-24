@@ -10,6 +10,7 @@ archive/issues_005380.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
     "title": "devmap: allow to search for contributions by trac username",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5380",

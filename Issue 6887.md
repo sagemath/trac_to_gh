@@ -10,6 +10,7 @@ archive/issues_006887.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "Implement elliptic curve isogenies (continued)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6887",

@@ -10,6 +10,7 @@ archive/issues_002357.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
     "title": "make FLINT the default for ZZ['x']",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2357",

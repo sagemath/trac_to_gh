@@ -10,6 +10,7 @@ archive/issues_005208.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "Differing behavior for matrix left_kernel vs. right_kernel",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5208",

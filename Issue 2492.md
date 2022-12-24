@@ -10,6 +10,7 @@ archive/issues_002492.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.4",
     "title": "Reference Manual: 18.2 Functions that compute some of the sequences in Sloane's tables",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2492",

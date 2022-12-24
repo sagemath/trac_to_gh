@@ -10,6 +10,7 @@ archive/issues_008534.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Optional packages that fail to install on Solaris 10 (SPARC) on sage-4.3.4.alpha1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8534",

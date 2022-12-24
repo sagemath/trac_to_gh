@@ -10,6 +10,7 @@ archive/issues_000821.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "K.fractional_ideal(...)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/821",

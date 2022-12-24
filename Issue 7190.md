@@ -10,6 +10,7 @@ archive/issues_007190.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "French translation: A Tour of Sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7190",

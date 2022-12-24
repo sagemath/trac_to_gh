@@ -10,6 +10,7 @@ archive/issues_002496.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
     "title": "bug in introspection (probably easy to fix)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2496",

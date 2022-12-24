@@ -10,6 +10,7 @@ archive/issues_001964.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "attaching multiple files should work but is broken (or never implemented?)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1964",

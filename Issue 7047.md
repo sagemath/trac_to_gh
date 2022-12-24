@@ -10,6 +10,7 @@ archive/issues_007047.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "lapack sends GNU option -fPIC to Sun fortran compiler.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7047",

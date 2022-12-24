@@ -10,6 +10,7 @@ archive/issues_007926.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.0",
     "title": "Bring coverage of monsky_washnitzer up to 50%",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7926",

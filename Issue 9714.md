@@ -10,6 +10,7 @@ archive/issues_009714.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.0",
     "title": "Graph(..., format='incidence_matrix') doesn't work with graphs that have loops, but G.incidence_matrix() does.  So?",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9714",

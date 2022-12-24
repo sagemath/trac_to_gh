@@ -10,6 +10,7 @@ archive/issues_006940.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "put the css into a .css file",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6940",

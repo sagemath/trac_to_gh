@@ -10,6 +10,7 @@ archive/issues_005007.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "[with patch, needs review] sage-native-execute uses bashism",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5007",

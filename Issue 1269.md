@@ -10,6 +10,7 @@ archive/issues_001269.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.15",
     "title": "[with patch] sage -t --omega does not work",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1269",

@@ -10,6 +10,7 @@ archive/issues_004897.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "integral_points() misses some points",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4897",

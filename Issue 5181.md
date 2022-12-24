@@ -10,6 +10,7 @@ archive/issues_005181.json:
         "trivial",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "[with patch, needs review] arith.py: some docstrings with backslashes in them don't start with r\"\"\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5181",

@@ -10,6 +10,7 @@ archive/issues_003309.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
     "title": "massively optimize the binomial function when an input is real or complex floating point",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3309",

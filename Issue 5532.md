@@ -10,6 +10,7 @@ archive/issues_005532.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "doc search in sagenb.org broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5532",

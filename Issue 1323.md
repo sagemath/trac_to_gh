@@ -10,6 +10,7 @@ archive/issues_001323.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
     "title": "generate all subspaces of a vector space/projective space",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1323",

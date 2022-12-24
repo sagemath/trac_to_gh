@@ -10,6 +10,7 @@ archive/issues_001272.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9",
     "title": "integrate PolyBoRi",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1272",

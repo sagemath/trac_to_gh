@@ -10,6 +10,7 @@ archive/issues_008321.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "numerical integration with arbitrary precision",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8321",

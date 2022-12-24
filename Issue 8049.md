@@ -10,6 +10,7 @@ archive/issues_008049.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.3",
     "title": "libgfortran *must* get shipped with the Sage binaries",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8049",

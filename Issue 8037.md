@@ -10,6 +10,7 @@ archive/issues_008037.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.4",
     "title": "add sagetex to the french tutorial",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8037",

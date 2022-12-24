@@ -10,6 +10,7 @@ archive/issues_007518.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "flint -- hangs computing certain degenerate case xgcd's",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7518",

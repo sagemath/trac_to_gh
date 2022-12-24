@@ -10,6 +10,7 @@ archive/issues_004735.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.1",
     "title": "Make e^X try calling X.exp() before trying to coerce X to the symbolic ring",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4735",

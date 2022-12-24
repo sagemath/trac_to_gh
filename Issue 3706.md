@@ -10,6 +10,7 @@ archive/issues_003706.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.6",
     "title": "segfault in matrix2.pyx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3706",

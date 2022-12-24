@@ -10,6 +10,7 @@ archive/issues_007098.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
     "title": "Bring calculus.py to full coverage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7098",

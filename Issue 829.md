@@ -10,6 +10,7 @@ archive/issues_000829.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "edit() always puts the editor into the background",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/829",

@@ -10,6 +10,7 @@ archive/issues_007466.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "21 warnings when building the HTML version of the reference manual, Sage 4.2.1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7466",

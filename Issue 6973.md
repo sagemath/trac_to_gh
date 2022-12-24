@@ -10,6 +10,7 @@ archive/issues_006973.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-wishlist",
     "title": "SVG or other vector graphics editor",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6973",

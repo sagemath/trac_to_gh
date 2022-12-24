@@ -10,6 +10,7 @@ archive/issues_009305.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.4",
     "title": "Add an spkg-check file for R (statistics package)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9305",

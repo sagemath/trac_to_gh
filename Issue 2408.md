@@ -10,6 +10,7 @@ archive/issues_002408.json:
         "trivial",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
     "title": "MPolynomial_libsingular.factor does not set units",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2408",

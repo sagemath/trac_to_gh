@@ -10,6 +10,7 @@ archive/issues_003297.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Make ccdlib produce a shared library",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3297",

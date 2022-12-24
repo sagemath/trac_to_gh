@@ -10,6 +10,7 @@ archive/issues_003293.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.3",
     "title": "[with patch, needs review] MPolynomialRing_generic.random_element returns tuple when degree=0",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3293",

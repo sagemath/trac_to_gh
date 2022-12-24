@@ -10,6 +10,7 @@ archive/issues_009634.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.2",
     "title": "binomial does not accept variable when only in the lower argument",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9634",

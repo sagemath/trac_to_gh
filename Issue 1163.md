@@ -10,6 +10,7 @@ archive/issues_001163.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "assume seems to have some undesired side-effects",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1163",

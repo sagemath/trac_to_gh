@@ -10,6 +10,7 @@ archive/issues_004484.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "make a platform_quirks.h",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4484",

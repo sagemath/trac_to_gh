@@ -10,6 +10,7 @@ archive/issues_006532.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.2",
     "title": "R packages installation problem",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6532",

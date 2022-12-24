@@ -10,6 +10,7 @@ archive/issues_008425.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.1",
     "title": "BipartiteGraph add_edge allows bipartite property to be violated.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8425",

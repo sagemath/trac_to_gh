@@ -10,6 +10,7 @@ archive/issues_004297.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
     "title": "[with patch, needs review] make sage -cython work on .spyx and library files",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4297",

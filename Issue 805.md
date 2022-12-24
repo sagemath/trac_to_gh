@@ -10,6 +10,7 @@ archive/issues_000805.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.13",
     "title": "is_trivial() does not work for fractional ideals of number field",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/805",

@@ -10,6 +10,7 @@ archive/issues_002122.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
     "title": "move libecm wrapper from interfaces to libs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2122",

@@ -10,6 +10,7 @@ archive/issues_004570.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
     "title": "change the numpy include to the standard place",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4570",

@@ -10,6 +10,7 @@ archive/issues_002964.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "Improvements to weyl_group.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2964",

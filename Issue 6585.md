@@ -10,6 +10,7 @@ archive/issues_006585.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
     "title": "[with patch, needs review] trivial change to a few docstrings in partition.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6585",

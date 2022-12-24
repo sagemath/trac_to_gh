@@ -10,6 +10,7 @@ archive/issues_007846.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "Missing triple-secret ___code___.py files when copying a worksheet",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7846",

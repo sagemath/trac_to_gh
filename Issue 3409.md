@@ -10,6 +10,7 @@ archive/issues_003409.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.3",
     "title": "conversion of matrices over polynomial rings to magma is broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3409",

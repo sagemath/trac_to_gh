@@ -10,6 +10,7 @@ archive/issues_004703.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
     "title": "inst.tex addition of Sage+tcl/tk [patch attached, needs review]",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4703",

@@ -10,6 +10,7 @@ archive/issues_006445.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
     "title": "pari 2.3.3.p0 problem on 't2' but not my home machine (similar setups!!)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6445",

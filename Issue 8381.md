@@ -10,6 +10,7 @@ archive/issues_008381.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.7.1",
     "title": "typo in documentation of rational_reconstruction",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8381",

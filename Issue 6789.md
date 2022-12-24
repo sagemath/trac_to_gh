@@ -10,6 +10,7 @@ archive/issues_006789.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
     "title": "2 doctest failures in devel/sage/sage/symbolic/expression.pyx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6789",

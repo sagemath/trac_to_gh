@@ -10,6 +10,7 @@ archive/issues_004640.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4",
     "title": "Do not dot out the number of pickles in the pickle jar doctest in sage/structure/sage_object.pyx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4640",

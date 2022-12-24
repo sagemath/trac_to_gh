@@ -10,6 +10,7 @@ archive/issues_007050.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "Make plotting single polar points or lines easy",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7050",

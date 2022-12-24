@@ -10,6 +10,7 @@ archive/issues_007242.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Convert sage to use the new standard libary multiprocessing module rather than processing",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7242",

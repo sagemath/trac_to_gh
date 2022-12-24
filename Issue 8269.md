@@ -10,6 +10,7 @@ archive/issues_008269.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "cygwin: maxima does not build on cygwin due to ECL bug.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8269",

@@ -10,6 +10,7 @@ archive/issues_005321.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.2",
     "title": "[with patch, needs review] follow up to #5287",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5321",

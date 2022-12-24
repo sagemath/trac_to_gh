@@ -10,6 +10,7 @@ archive/issues_008096.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.0",
     "title": "Coersion of square matrices is slow",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8096",

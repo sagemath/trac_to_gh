@@ -10,6 +10,7 @@ archive/issues_004559.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.2",
     "title": "Merge commits from Jon Hanke's devel/sage/sage/quadratic_forms/genera/genus.py tree",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4559",

@@ -10,6 +10,7 @@ archive/issues_002572.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
     "title": "imag() not defined for Algebraic Real Field",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2572",

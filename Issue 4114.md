@@ -10,6 +10,7 @@ archive/issues_004114.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "[with patch, needs review] hang in lisp.py on OS X 10.5",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4114",

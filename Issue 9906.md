@@ -10,6 +10,7 @@ archive/issues_009906.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6.1",
     "title": "Move generally usable decorators from plot.misc to misc.decorators",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9906",

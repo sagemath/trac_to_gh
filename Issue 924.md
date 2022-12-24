@@ -10,6 +10,7 @@ archive/issues_000924.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9.1",
     "title": "the matplotlib spkg patches break underlying functionality",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/924",

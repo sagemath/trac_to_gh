@@ -10,6 +10,7 @@ archive/issues_000267.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.2",
     "title": "implement \"sage -bt\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/267",

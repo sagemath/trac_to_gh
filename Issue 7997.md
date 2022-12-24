@@ -10,6 +10,7 @@ archive/issues_007997.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Use ast to replace display hook hack",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7997",

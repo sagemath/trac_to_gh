@@ -10,6 +10,7 @@ archive/issues_007773.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Test failures with Fedora 12 on intel i7 860 processor",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7773",

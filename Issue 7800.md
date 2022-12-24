@@ -10,6 +10,7 @@ archive/issues_007800.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "dsage -- re-enable use of openssl to certificate keys, if openssl is installed  (why the notebook in secure mode is so slow to generate initial kesy!)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7800",

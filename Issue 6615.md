@@ -10,6 +10,7 @@ archive/issues_006615.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "Small bug in Graph.plot()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6615",

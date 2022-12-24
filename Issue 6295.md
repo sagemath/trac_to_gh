@@ -10,6 +10,7 @@ archive/issues_006295.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.2",
     "title": "[with patch, needs review] build runs sphinx-build even on failure",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6295",

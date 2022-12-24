@@ -10,6 +10,7 @@ archive/issues_001700.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9.3",
     "title": "[with patch] Fix doctesting on some file systems",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1700",

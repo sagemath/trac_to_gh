@@ -10,6 +10,7 @@ archive/issues_008499.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.2",
     "title": "partial_fraction_decomposition does not work over algebraic extensions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8499",

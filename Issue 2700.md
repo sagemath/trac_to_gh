@@ -10,6 +10,7 @@ archive/issues_002700.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
     "title": "scaling y-axis of plots to fit the data",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2700",

@@ -10,6 +10,7 @@ archive/issues_008114.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.2",
     "title": "doctest failure in `sage/libs/cremona/newforms.pyx` on 32-bit machines from #8042",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8114",

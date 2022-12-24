@@ -10,6 +10,7 @@ archive/issues_007647.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "notebook: provide an option to worksheet download so that only the text (no graphics, etc.) of a worksheet is included in the sws",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7647",

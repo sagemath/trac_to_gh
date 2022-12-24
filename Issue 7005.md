@@ -10,6 +10,7 @@ archive/issues_007005.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "[with patch; needs review] singular -- port to cygwin",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7005",

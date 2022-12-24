@@ -10,6 +10,7 @@ archive/issues_008702.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6.2",
     "title": "Datastructure for objects with prototype (clone) design pattern.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8702",

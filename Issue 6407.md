@@ -10,6 +10,7 @@ archive/issues_006407.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
     "title": "Multiplication-by-n method on elliptic curve formal groups should use the double-and-add algorithm",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6407",

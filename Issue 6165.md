@@ -10,6 +10,7 @@ archive/issues_006165.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "new maxima spkg that enhances eigenvector results so they can be useable from symbolics",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6165",

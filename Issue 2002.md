@@ -10,6 +10,7 @@ archive/issues_002002.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
     "title": "creating a fresh new notebook in sage-2.10.1.rc3 is broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2002",

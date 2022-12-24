@@ -10,6 +10,7 @@ archive/issues_008805.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.2",
     "title": "Bring doctest for sage/functions folder to 100%",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8805",

@@ -10,6 +10,7 @@ archive/issues_001402.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
     "title": "'mwrank' has termination issues",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1402",

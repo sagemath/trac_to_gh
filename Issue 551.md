@@ -10,6 +10,7 @@ archive/issues_000551.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10",
     "title": "consider changing python to UCS4",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/551",

@@ -10,6 +10,7 @@ archive/issues_005537.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
     "title": "[with patch, not ready for review] bug in __cmp__ in permgroup_element.pyx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5537",

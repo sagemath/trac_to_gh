@@ -10,6 +10,7 @@ archive/issues_009766.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Cliquer has no spkg-check file, but there is a small test suite with the program",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9766",

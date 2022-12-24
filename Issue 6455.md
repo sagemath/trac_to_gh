@@ -10,6 +10,7 @@ archive/issues_006455.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
     "title": "Bug in twisting for p_primary_bound on Tate-Shafarevich groups",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6455",

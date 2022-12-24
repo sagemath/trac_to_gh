@@ -10,6 +10,7 @@ archive/issues_009100.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "scipy is probably building part 32-bit on OpenSolaris x64 when SAGE64=yes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9100",

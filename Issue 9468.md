@@ -10,6 +10,7 @@ archive/issues_009468.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.7.1",
     "title": "Extend ClasscallMetaclass to allow for membership testing",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9468",

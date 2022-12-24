@@ -10,6 +10,7 @@ archive/issues_001257.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.14",
     "title": "[with patch] multi_polynomial_libsingular.pyx \"random\" segfault",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1257",

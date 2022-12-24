@@ -10,6 +10,7 @@ archive/issues_000771.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.8",
     "title": "GF(p^n) vector() NotImplemented for p^n > 2^16",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/771",

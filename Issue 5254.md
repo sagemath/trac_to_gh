@@ -10,6 +10,7 @@ archive/issues_005254.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Mac app bundle: check for relocation at startup since the bundle version does not trigger the move check",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5254",

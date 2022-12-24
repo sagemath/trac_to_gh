@@ -10,6 +10,7 @@ archive/issues_007016.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "Bizarre results when taking the mod of a p-adic number",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7016",

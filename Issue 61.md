@@ -10,6 +10,7 @@ archive/issues_000061.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.12",
     "title": "hanke -- disturbing matrix constructor issue involving rows versus columns",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/61",

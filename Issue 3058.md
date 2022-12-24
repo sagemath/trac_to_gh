@@ -10,6 +10,7 @@ archive/issues_003058.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "coercing a vector to symbolic entries doesn't work when the vector's parent has a user-defined basis",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3058",

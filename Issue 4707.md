@@ -10,6 +10,7 @@ archive/issues_004707.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
     "title": "magma/sage interface -- another trivial easy-to-fix failure hopefully",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4707",

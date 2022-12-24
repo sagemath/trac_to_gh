@@ -10,6 +10,7 @@ archive/issues_008115.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.3",
     "title": "bad patching practice in cddlib-094f.p2.spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8115",

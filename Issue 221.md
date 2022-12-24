@@ -10,6 +10,7 @@ archive/issues_000221.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.4.2",
     "title": "SageX: generic laurent series over arbitrary ring",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/221",

@@ -10,6 +10,7 @@ archive/issues_005133.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
     "title": "improve the coverage of ext/multi_modular.pyx from an abysmal 0% to something more respectable",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5133",

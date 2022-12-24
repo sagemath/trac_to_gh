@@ -10,6 +10,7 @@ archive/issues_008798.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.2",
     "title": "Duplicate version of feedback_arc_set and feedback_vertex_set",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8798",

@@ -10,6 +10,7 @@ archive/issues_009571.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.2",
     "title": "Sphinx Warning: Missing title for sage.misc.exceptions after #9249",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9571",

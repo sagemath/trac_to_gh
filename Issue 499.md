@@ -10,6 +10,7 @@ archive/issues_000499.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.4",
     "title": "n() is undefined for rational numbers",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/499",

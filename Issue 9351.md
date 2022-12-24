@@ -10,6 +10,7 @@ archive/issues_009351.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5",
     "title": "deps for sagetex with SAGE_CHECK='yes'",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9351",

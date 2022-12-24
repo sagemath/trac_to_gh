@@ -10,6 +10,7 @@ archive/issues_008730.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4",
     "title": "cddlib makefile looks for gmp in /usr/local, should be $SAGE_LOCAL",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8730",

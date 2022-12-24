@@ -10,6 +10,7 @@ archive/issues_000718.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "still rechable memory: various pyx-files instanciated their own PariInstance",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/718",

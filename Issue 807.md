@@ -10,6 +10,7 @@ archive/issues_000807.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-9.8",
     "title": "construction of function fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/807",

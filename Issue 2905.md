@@ -10,6 +10,7 @@ archive/issues_002905.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "Various speedups",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2905",

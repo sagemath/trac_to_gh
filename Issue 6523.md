@@ -10,6 +10,7 @@ archive/issues_006523.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": ".is_zero() method raises error for symbolic expression involving derivative",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6523",

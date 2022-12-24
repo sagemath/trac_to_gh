@@ -10,6 +10,7 @@ archive/issues_005838.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "crash in Singular's polynomial gcd",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5838",

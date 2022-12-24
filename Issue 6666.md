@@ -10,6 +10,7 @@ archive/issues_006666.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "[with patch] implement analytic modular symbols algorithm and cusp transformation matrix",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6666",

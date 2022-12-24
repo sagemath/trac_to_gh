@@ -10,6 +10,7 @@ archive/issues_002522.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "modify \"sage -pkg\" to not include OSX junk in spkgs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2522",

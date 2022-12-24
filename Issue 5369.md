@@ -10,6 +10,7 @@ archive/issues_005369.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4",
     "title": "[with patch, needs review] Optimize transpose for matrix_integer_dense and matrix_rational_dense",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5369",

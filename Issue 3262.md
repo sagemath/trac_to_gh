@@ -10,6 +10,7 @@ archive/issues_003262.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "interact selector breaks if there are too many options",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3262",

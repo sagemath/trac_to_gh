@@ -10,6 +10,7 @@ archive/issues_002637.json:
         "trivial",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
     "title": "Patch so that a user can choose encodings in sage scripts.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2637",

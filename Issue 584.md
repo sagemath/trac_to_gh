@@ -10,6 +10,7 @@ archive/issues_000584.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.4",
     "title": "More PARI NumberField functionality requested",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/584",

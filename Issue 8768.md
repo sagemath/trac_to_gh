@@ -10,6 +10,7 @@ archive/issues_008768.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "gnutls-2.2.1.p5 doesn't build on Solaris 10 x86 (fulvia) with GCC-4.5.0",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8768",

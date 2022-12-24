@@ -10,6 +10,7 @@ archive/issues_001616.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
     "title": "Change asin to arcsin, etc.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1616",

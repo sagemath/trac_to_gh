@@ -10,6 +10,7 @@ archive/issues_004238.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
     "title": "option to create local .so file for .spyx modules",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4238",

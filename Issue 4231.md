@@ -10,6 +10,7 @@ archive/issues_004231.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
     "title": "magma -- long input too verbose in some cases",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4231",

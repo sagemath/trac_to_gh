@@ -10,6 +10,7 @@ archive/issues_000334.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.4",
     "title": "Create SAGE_HG_SERVER environment variable",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/334",

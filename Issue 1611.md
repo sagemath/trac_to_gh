@@ -10,6 +10,7 @@ archive/issues_001611.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
     "title": "polybori should use the m4ri library from libm4ri spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1611",

@@ -10,6 +10,7 @@ archive/issues_007041.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.1",
     "title": "GAP purposely unsets CC which screws up Sun Studio build.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7041",

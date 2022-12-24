@@ -10,6 +10,7 @@ archive/issues_009099.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Maxima fails to build on OpenSolaris x64, though ECL does.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9099",

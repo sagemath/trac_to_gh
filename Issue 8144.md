@@ -10,6 +10,7 @@ archive/issues_008144.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.2",
     "title": "SageTeX is not actually installed under SAGE_LOCAL",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8144",

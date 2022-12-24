@@ -10,6 +10,7 @@ archive/issues_004583.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
     "title": "implement \"sage -t --only-optional\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4583",

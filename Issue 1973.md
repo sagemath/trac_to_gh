@@ -10,6 +10,7 @@ archive/issues_001973.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
     "title": "native partition_associated function",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1973",

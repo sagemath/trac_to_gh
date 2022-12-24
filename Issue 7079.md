@@ -10,6 +10,7 @@ archive/issues_007079.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
     "title": "parallel doctest broken in Sage 4.1.2.alpha4 if HOME/.sage/tmp doesn't exist",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7079",

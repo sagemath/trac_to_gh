@@ -10,6 +10,7 @@ archive/issues_007766.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.0",
     "title": "Upgrade optional spkg valgrind to valgrind-3.6.0.svn",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7766",

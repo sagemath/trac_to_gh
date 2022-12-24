@@ -10,6 +10,7 @@ archive/issues_000882.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.7",
     "title": "2.8.7-alpha0: doctest failures due to RR->ZZ coercion patch",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/882",

@@ -10,6 +10,7 @@ archive/issues_005483.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.1",
     "title": "[with preliminary patch; not ready for review; request comments] Add explain_pickle module; allow overriding class lookup for unpickling",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5483",

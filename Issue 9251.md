@@ -10,6 +10,7 @@ archive/issues_009251.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.2",
     "title": "Lazy attribute does not properly handles the doc of Cython methods",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9251",

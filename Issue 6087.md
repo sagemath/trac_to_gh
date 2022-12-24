@@ -10,6 +10,7 @@ archive/issues_006087.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.8",
     "title": "graph automorphism group segfaults on invalid input",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6087",

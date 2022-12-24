@@ -10,6 +10,7 @@ archive/issues_008821.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.7.2",
     "title": "Adding a section on coercion to the tutorial (guided tour)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8821",

@@ -10,6 +10,7 @@ archive/issues_008568.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
     "title": "can not simplify derivative of erf",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8568",

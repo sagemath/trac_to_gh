@@ -10,6 +10,7 @@ archive/issues_008387.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.4",
     "title": "help (notebook) examples use deprecated usage.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8387",

@@ -10,6 +10,7 @@ archive/issues_001426.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9.1",
     "title": "new trac view: tickets ***reported by*** given user",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1426",

@@ -10,6 +10,7 @@ archive/issues_007068.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "gfan 0.3.p4 Shows numerous missing header files with Sun compiler.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7068",

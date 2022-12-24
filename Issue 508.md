@@ -10,6 +10,7 @@ archive/issues_000508.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "problem with \"sage -c\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/508",

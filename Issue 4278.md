@@ -10,6 +10,7 @@ archive/issues_004278.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
     "title": "[with patch, needs review] Old parent's don't correctly handle coerce maps from Python's native types.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4278",

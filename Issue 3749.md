@@ -10,6 +10,7 @@ archive/issues_003749.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "Request for a method \"is_cyclic\" for groups in SAGE",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3749",

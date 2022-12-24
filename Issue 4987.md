@@ -10,6 +10,7 @@ archive/issues_004987.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
     "title": "[with spkg, not ready for review] Upgrade to Cython 0.11",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4987",

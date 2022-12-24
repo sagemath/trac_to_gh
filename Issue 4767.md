@@ -10,6 +10,7 @@ archive/issues_004767.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
     "title": "[with patch; needs review] magma/sage interface -- speed up conversion of integers and rationals to Magma",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4767",

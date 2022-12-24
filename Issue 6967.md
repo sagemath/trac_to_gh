@@ -10,6 +10,7 @@ archive/issues_006967.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "@parallel -- dramatically improve by rewriting with fork directly, using files, timeouts, controlling interfaces, etc.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6967",

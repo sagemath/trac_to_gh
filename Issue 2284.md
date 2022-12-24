@@ -10,6 +10,7 @@ archive/issues_002284.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
     "title": "CallableSymbolicExpression._latex_() has some odd behavior",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2284",

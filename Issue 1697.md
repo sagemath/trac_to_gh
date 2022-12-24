@@ -10,6 +10,7 @@ archive/issues_001697.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9.3",
     "title": "two polynomial_modn_dense_ntl.pyx memleaks",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1697",

@@ -10,6 +10,7 @@ archive/issues_002451.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
     "title": "plotting -- contour_plot and plot_vector_field are REALLY SLOW but it's easy to get a million times speedup",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2451",

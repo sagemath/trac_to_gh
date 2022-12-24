@@ -10,6 +10,7 @@ archive/issues_004794.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Update pari to 2.3.4svb",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4794",

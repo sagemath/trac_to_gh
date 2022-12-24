@@ -10,6 +10,7 @@ archive/issues_005050.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "clean up how the percent directives at the top of cells are processed",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5050",

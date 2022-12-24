@@ -10,6 +10,7 @@ archive/issues_002241.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "Leak in totallyreal_rel.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2241",

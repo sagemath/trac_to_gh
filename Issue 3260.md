@@ -10,6 +10,7 @@ archive/issues_003260.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Make #optional usable at a higher level",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3260",

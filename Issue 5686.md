@@ -10,6 +10,7 @@ archive/issues_005686.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "mpi4py is very outdated",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5686",

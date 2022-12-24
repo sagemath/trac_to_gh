@@ -10,6 +10,7 @@ archive/issues_007428.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "worksheets listed on published list only after they are republished, but not after initial publication",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7428",

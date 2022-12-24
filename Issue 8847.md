@@ -10,6 +10,7 @@ archive/issues_008847.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.3",
     "title": "pynac.pyx use double precision special functions instead of long double",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8847",

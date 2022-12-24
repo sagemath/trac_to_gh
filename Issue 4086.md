@@ -10,6 +10,7 @@ archive/issues_004086.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "[with spkg, needs review] Fix polybori-0.5rc.p3.spkg build issue from vanilla tarball",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4086",

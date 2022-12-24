@@ -10,6 +10,7 @@ archive/issues_009242.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.2",
     "title": "Add docstrings and tests for sage/rings/ideal_monoid.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9242",

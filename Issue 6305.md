@@ -10,6 +10,7 @@ archive/issues_006305.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "preparser issue with recurssive loading of .sage files",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6305",

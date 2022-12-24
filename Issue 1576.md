@@ -10,6 +10,7 @@ archive/issues_001576.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9.2",
     "title": "implicit multiplication -- sage needs to have *some* way to do this (even if not by default)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1576",

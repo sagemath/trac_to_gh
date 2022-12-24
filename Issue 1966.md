@@ -10,6 +10,7 @@ archive/issues_001966.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
     "title": "[with spkgs,patch ] inline_fortran broke on OSX",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1966",

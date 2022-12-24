@@ -10,6 +10,7 @@ archive/issues_006493.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
     "title": "new scipy-0.7.p2 spkg is broken on 64-bit OS X",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6493",

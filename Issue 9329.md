@@ -10,6 +10,7 @@ archive/issues_009329.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-wishlist",
     "title": "Make it easy to access expression tree of a symbolic expression",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9329",

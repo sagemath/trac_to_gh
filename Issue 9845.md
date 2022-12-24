@@ -10,6 +10,7 @@ archive/issues_009845.json:
         "trivial",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6.2",
     "title": "misspelled word in parallel help function info",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9845",

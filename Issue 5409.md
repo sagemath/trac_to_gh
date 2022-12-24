@@ -10,6 +10,7 @@ archive/issues_005409.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4",
     "title": "rewrite quaternion algebras -- the current implementation isn't sufficiently good",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5409",

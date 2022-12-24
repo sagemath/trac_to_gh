@@ -10,6 +10,7 @@ archive/issues_009125.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.7",
     "title": "more examples of simplicial complexes: RP^n, CP^2, etc.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9125",

@@ -10,6 +10,7 @@ archive/issues_008971.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "problem installing CBC with CPLEX support on osx 10.6",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8971",

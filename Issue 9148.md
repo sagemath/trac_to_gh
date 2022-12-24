@@ -10,6 +10,7 @@ archive/issues_009148.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
     "title": "[with patch, needs review] Fix deprecated sha module usage in wiki2html.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9148",

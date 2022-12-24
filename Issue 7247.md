@@ -10,6 +10,7 @@ archive/issues_007247.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
     "title": "sage-4.2.alpha0: mercurial doesn't build on OS X 10.6",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7247",

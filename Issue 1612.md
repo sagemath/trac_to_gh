@@ -10,6 +10,7 @@ archive/issues_001612.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.3",
     "title": "Finding eigenforms within spaces of ModularForms",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1612",

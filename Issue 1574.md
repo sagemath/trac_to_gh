@@ -10,6 +10,7 @@ archive/issues_001574.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
     "title": "dependencies for non pyx files aren't properly tracked",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1574",

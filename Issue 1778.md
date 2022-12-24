@@ -10,6 +10,7 @@ archive/issues_001778.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10",
     "title": "plot() does not follow the same interval range conventions as plot3d()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1778",

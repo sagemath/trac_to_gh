@@ -10,6 +10,7 @@ archive/issues_003871.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "crap in SAGE_ROOT; extending #3759",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3871",

@@ -10,6 +10,7 @@ archive/issues_009741.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
     "title": "Sorting vertices of a graph",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9741",

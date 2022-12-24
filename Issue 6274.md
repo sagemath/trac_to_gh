@@ -10,6 +10,7 @@ archive/issues_006274.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1",
     "title": "fix formatting of files under sage/plot",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6274",

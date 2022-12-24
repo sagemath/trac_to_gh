@@ -10,6 +10,7 @@ archive/issues_005104.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "setup.py dependency checking issues",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5104",

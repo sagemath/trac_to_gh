@@ -10,6 +10,7 @@ archive/issues_001024.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.10",
     "title": "small memleak in matrix_rational_sparse_mpq_vector_set_entry",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1024",

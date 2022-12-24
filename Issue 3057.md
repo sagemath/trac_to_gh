@@ -10,6 +10,7 @@ archive/issues_003057.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.1",
     "title": "MPolynomialRing_generic type-checks to determine commutativity",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3057",

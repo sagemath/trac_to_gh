@@ -10,6 +10,7 @@ archive/issues_001366.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
     "title": "speed up \"sage -br\" -- make it cache the dependency diagram instead of computing it every time",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1366",

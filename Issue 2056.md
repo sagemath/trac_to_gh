@@ -10,6 +10,7 @@ archive/issues_002056.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
     "title": "3d graphics examples [with patch; needs easy review] include two very nice examples from Peter Jipsen in the sage docstrings",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2056",

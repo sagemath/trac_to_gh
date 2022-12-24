@@ -10,6 +10,7 @@ archive/issues_004968.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-wishlist",
     "title": "switch Matrix_modn_dense from ints to CPU longs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4968",

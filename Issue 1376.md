@@ -10,6 +10,7 @@ archive/issues_001376.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.15",
     "title": "2.8.15.rc0: sage/calculus/calculus.py doctest failure",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1376",

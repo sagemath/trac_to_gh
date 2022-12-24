@@ -10,6 +10,7 @@ archive/issues_000723.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.8",
     "title": "Make Sage's LLL faster: Magma seems to totally blow Sage (i.e., NTL) away for large-ish problems.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/723",

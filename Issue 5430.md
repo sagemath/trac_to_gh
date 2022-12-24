@@ -10,6 +10,7 @@ archive/issues_005430.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.1",
     "title": "Coleman integrals of differential forms from different rings",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5430",

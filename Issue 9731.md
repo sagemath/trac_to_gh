@@ -10,6 +10,7 @@ archive/issues_009731.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "Export/Import of GML/Graphml/Yaml files through NetworkX",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9731",

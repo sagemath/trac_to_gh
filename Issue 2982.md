@@ -10,6 +10,7 @@ archive/issues_002982.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "Itanium (RHEL 5) -- weird problem in code_construction.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2982",

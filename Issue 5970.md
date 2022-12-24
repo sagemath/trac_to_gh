@@ -10,6 +10,7 @@ archive/issues_005970.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "[with patch, needs review] Weak references in Polynomial Ring cache",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5970",

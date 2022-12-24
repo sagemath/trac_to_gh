@@ -10,6 +10,7 @@ archive/issues_003646.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
     "title": "Implement paren matching",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3646",

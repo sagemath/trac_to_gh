@@ -10,6 +10,7 @@ archive/issues_007539.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "primes.p0.spkg with \"prime_sieve.c\" functionality",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7539",

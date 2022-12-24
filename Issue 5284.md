@@ -10,6 +10,7 @@ archive/issues_005284.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
     "title": "Set sage-flags.txt up to SSE2 only when building Sage in SSE2 only mode/remove SSSE3 and SSE4 flags (followup to #5219)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5284",

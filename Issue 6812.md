@@ -10,6 +10,7 @@ archive/issues_006812.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.1",
     "title": "Enumerate integer list up to the action of a Permutation Group",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6812",

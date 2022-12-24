@@ -10,6 +10,7 @@ archive/issues_009489.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "doctest doc/en/thematic_tutorials/group_theory.rst failure on 't2.math' (Solaris 10 SPARC)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9489",

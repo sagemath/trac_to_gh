@@ -10,6 +10,7 @@ archive/issues_001001.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "\"Use of uninitialised value of size 4\" in pari.pyx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1001",

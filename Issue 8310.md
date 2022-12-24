@@ -10,6 +10,7 @@ archive/issues_008310.json:
         "trivial",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.4",
     "title": "bad ReST formatting in kazhdan_lusztig.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8310",

@@ -10,6 +10,7 @@ archive/issues_005616.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
     "title": "speed regression with fast_callable",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5616",

@@ -10,6 +10,7 @@ archive/issues_006067.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Published worksheet URL stability",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6067",

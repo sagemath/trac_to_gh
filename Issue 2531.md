@@ -10,6 +10,7 @@ archive/issues_002531.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "pretty-print issue in fractions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2531",

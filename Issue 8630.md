@@ -10,6 +10,7 @@ archive/issues_008630.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4",
     "title": "Cusp forms constructor ignores the character and returns enormous space",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8630",

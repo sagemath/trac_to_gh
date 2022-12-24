@@ -10,6 +10,7 @@ archive/issues_001251.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.14",
     "title": "tutorial out of date",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1251",

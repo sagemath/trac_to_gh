@@ -10,6 +10,7 @@ archive/issues_009535.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "elliptic curves modular symbols should call eclib by default",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9535",

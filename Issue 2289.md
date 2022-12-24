@@ -10,6 +10,7 @@ archive/issues_002289.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
     "title": "[with doc patch, needs review] make the constructions document prettier and more consistent",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2289",

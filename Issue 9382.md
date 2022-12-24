@@ -10,6 +10,7 @@ archive/issues_009382.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "atlas not respecting SAGE_FAT_BINARY on i686 systems",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9382",

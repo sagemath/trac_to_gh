@@ -10,6 +10,7 @@ archive/issues_002986.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "[with patch - actually tuning tarball] add atlas pretuning for Pentium D / 64 bits (ARCH=P4D64SSE3)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2986",

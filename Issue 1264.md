@@ -10,6 +10,7 @@ archive/issues_001264.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
     "title": "upgrade to newest version of ipython",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1264",

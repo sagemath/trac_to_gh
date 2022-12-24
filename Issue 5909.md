@@ -10,6 +10,7 @@ archive/issues_005909.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
     "title": "symbolics -- x.subs_expr({}) hangs sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5909",

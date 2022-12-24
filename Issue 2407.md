@@ -10,6 +10,7 @@ archive/issues_002407.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
     "title": "Notebook fails without explanation when cookies are disabled",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2407",

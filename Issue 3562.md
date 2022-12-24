@@ -10,6 +10,7 @@ archive/issues_003562.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Do not doctest pbuild files in devel/sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3562",

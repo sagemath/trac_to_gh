@@ -10,6 +10,7 @@ archive/issues_009821.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
     "title": "Cookies are still causing problems in SageNB (Safari)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9821",

@@ -10,6 +10,7 @@ archive/issues_006511.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
     "title": "merge script: syntax error when doing \"sage -merge <ticket-number>\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6511",

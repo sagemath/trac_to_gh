@@ -10,6 +10,7 @@ archive/issues_007407.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.4",
     "title": "Fix building of binary distribution so it works on Solaris. Make name of .tar.gz file sensible too.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7407",

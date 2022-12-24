@@ -10,6 +10,7 @@ archive/issues_002971.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "One method of creating a Laurent poly ring doesn't give access to the variables",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2971",

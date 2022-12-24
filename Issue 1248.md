@@ -10,6 +10,7 @@ archive/issues_001248.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "mwrank wrapper defect",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1248",

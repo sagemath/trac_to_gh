@@ -10,6 +10,7 @@ archive/issues_005575.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
     "title": "bug in span",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5575",

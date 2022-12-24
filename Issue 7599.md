@@ -10,6 +10,7 @@ archive/issues_007599.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "vertex_cut and edge_cut ( minimum s-t cut )",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7599",

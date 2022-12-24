@@ -10,6 +10,7 @@ archive/issues_000093.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.4",
     "title": "Create a native MS Windows program that starts colinux running SAGE, adjust memory, launches web browser etc.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/93",

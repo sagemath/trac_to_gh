@@ -10,6 +10,7 @@ archive/issues_002372.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.4",
     "title": "[with patch, needs review] speedup to matrix_from_rows_and_columns",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2372",

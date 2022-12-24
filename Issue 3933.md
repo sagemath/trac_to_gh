@@ -10,6 +10,7 @@ archive/issues_003933.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "Set iteration is broken over sets created with iterators",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3933",

@@ -10,6 +10,7 @@ archive/issues_004668.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
     "title": "libSingular's header have too tight permissions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4668",

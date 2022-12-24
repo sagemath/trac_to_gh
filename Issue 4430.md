@@ -10,6 +10,7 @@ archive/issues_004430.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "optimize new worksheet startup",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4430",

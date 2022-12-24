@@ -10,6 +10,7 @@ archive/issues_002934.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "doctesting files outside of sage repo is completely broken!!",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2934",

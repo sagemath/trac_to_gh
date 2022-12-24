@@ -10,6 +10,7 @@ archive/issues_000972.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.14",
     "title": "SAGE 2.8.8.1 blows up building cddlib if libgmp is in /usr/local/lib",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/972",

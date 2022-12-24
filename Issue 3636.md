@@ -10,6 +10,7 @@ archive/issues_003636.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
     "title": "Text control, no label",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3636",

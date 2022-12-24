@@ -10,6 +10,7 @@ archive/issues_002108.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
     "title": "atlas tuning info for intel prescott cpus",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2108",

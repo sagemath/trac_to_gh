@@ -10,6 +10,7 @@ archive/issues_009146.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.4",
     "title": "cygwin: gd doesn't correctly link in libpng with sage-4.4.3.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9146",

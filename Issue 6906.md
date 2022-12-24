@@ -10,6 +10,7 @@ archive/issues_006906.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
     "title": "[with spkg, needs review] update Mercurial to version 1.3.1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6906",

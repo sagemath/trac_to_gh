@@ -10,6 +10,7 @@ archive/issues_008649.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4",
     "title": "to_tableau method broken for crystals of type B",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8649",

@@ -10,6 +10,7 @@ archive/issues_009258.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.2",
     "title": "problem with converting FriCAS domains to Sage objects",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9258",

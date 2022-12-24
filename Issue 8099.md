@@ -10,6 +10,7 @@ archive/issues_008099.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.3",
     "title": "pari fails to build in Open Solaris x64 as 64 bit if CFLAGS is not set",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8099",

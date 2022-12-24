@@ -10,6 +10,7 @@ archive/issues_006218.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.2",
     "title": "small changes to jacobian_morphism to make hyperelliptic curve arithmetic faster",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6218",

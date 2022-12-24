@@ -10,6 +10,7 @@ archive/issues_001475.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
     "title": "notebook -- lprint() -- make an option so lprint is done automatically",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1475",

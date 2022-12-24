@@ -10,6 +10,7 @@ archive/issues_004728.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": ".roots() is inconsistent between polynomials and symbolic polynomials",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4728",

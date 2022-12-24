@@ -10,6 +10,7 @@ archive/issues_002752.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "Speedup for  all_paths()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2752",

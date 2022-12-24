@@ -10,6 +10,7 @@ archive/issues_000824.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "update linbox package",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/824",

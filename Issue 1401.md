@@ -10,6 +10,7 @@ archive/issues_001401.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9",
     "title": "deprecate A[n] for n a matrix (easy to implement usability improvement)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1401",

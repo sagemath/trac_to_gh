@@ -10,6 +10,7 @@ archive/issues_005964.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Some R doctests related to documentation fail when perl-modules not installed at compile-time",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5964",

@@ -10,6 +10,7 @@ archive/issues_007934.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Cannot import sage.matrix.all in isolation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7934",

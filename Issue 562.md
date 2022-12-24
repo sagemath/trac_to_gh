@@ -10,6 +10,7 @@ archive/issues_000562.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.5",
     "title": "memleak in Matrix_integer_dense__zero_out_matrix exposed by ModularSymbols(n,sign=1).decomposition()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/562",

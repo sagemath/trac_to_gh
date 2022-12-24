@@ -10,6 +10,7 @@ archive/issues_007663.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "notebook -- synchronization code surprises printing of certain characters",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7663",

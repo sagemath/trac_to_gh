@@ -10,6 +10,7 @@ archive/issues_005710.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
     "title": "[with patch; needs review] solaris -- fix \"is monic\" issue with NTL in number_field_element.pyx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5710",

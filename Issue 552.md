@@ -10,6 +10,7 @@ archive/issues_000552.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
     "title": "come up with a better way of deciding whether or not the SAGE install has moved",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/552",

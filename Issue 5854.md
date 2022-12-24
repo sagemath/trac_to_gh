@@ -10,6 +10,7 @@ archive/issues_005854.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1",
     "title": "[with patch, with spkg, needs review] Include Michael Stoll's ratpoints in Sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5854",

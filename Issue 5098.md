@@ -10,6 +10,7 @@ archive/issues_005098.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "[with patch, needs review] Pollard rho algorithm for generic discrete logarithm",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5098",

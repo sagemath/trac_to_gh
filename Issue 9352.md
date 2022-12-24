@@ -10,6 +10,7 @@ archive/issues_009352.json:
         "trivial",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.3",
     "title": "givaro spkg: trivial typo in spkg-check",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9352",

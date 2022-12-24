@@ -10,6 +10,7 @@ archive/issues_004683.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "memory leak when performing the calculation CDF(I)^2",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4683",

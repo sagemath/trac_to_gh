@@ -10,6 +10,7 @@ archive/issues_006238.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "possible failure in is_planar(set_embedding=True, set_pos=False)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6238",

@@ -10,6 +10,7 @@ archive/issues_008962.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "Change realfield latex representation to include precision/rounding information",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8962",

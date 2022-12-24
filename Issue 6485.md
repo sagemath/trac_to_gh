@@ -10,6 +10,7 @@ archive/issues_006485.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
     "title": "[with patch, needs review] broken links from website index to tutorial, constructions, etc.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6485",

@@ -10,6 +10,7 @@ archive/issues_008773.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.1",
     "title": "GCC-4.5.0 breaks GAP -- the workspace is broken, hence gap('2+2') fails.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8773",

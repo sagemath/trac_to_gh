@@ -10,6 +10,7 @@ archive/issues_004380.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
     "title": "Memory Leak in libsingular",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4380",

@@ -10,6 +10,7 @@ archive/issues_001286.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.15",
     "title": "fix maxima floating point precision handling",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1286",

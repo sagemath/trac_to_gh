@@ -10,6 +10,7 @@ archive/issues_005685.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
     "title": "enhanced nth_root in ZZ and QQ and related utilities",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5685",

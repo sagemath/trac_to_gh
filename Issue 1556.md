@@ -10,6 +10,7 @@ archive/issues_001556.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9.1",
     "title": "[with patch] improve readability of unknown username error page",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1556",

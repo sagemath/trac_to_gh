@@ -10,6 +10,7 @@ archive/issues_000644.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.15",
     "title": "(sin + cos)(1) does not work",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/644",

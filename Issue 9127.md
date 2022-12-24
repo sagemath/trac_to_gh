@@ -10,6 +10,7 @@ archive/issues_009127.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.4",
     "title": "BSD.py doctest failure due to timeout of Heegner index computation.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9127",

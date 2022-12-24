@@ -10,6 +10,7 @@ archive/issues_000416.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.10",
     "title": "Faster GF(2^n) arithmetic for n >= 16",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/416",

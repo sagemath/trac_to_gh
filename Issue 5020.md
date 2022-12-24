@@ -10,6 +10,7 @@ archive/issues_005020.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "auto-cells do not automaticall evaluate (or at least update)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5020",

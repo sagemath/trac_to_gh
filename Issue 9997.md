@@ -10,6 +10,7 @@ archive/issues_009997.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "NTL is building the shared library with the wrong extension on AIX",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9997",

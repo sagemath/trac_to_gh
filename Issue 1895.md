@@ -10,6 +10,7 @@ archive/issues_001895.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
     "title": "[with patch, needs review] deal with passed through keyword arguments for Gr\u00f6bner basis computation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1895",

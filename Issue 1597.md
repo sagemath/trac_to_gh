@@ -10,6 +10,7 @@ archive/issues_001597.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9.1",
     "title": "put jmol in spkg/install and spkg/standard/deps",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1597",

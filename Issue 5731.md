@@ -10,6 +10,7 @@ archive/issues_005731.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.7.1",
     "title": "Update NTL to 5.5 release (latest upstream)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5731",

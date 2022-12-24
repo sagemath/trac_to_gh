@@ -10,6 +10,7 @@ archive/issues_001950.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "When one clicks the print button in the notebook it should render the html with jsmath but with no warning at all.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1950",

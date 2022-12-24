@@ -10,6 +10,7 @@ archive/issues_009026.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Issues preventing 64-bit builds on various flavors of Solaris.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9026",

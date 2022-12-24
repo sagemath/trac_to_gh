@@ -10,6 +10,7 @@ archive/issues_002721.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
     "title": "parallel doctest not robust against filesystem issues",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2721",

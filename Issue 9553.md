@@ -10,6 +10,7 @@ archive/issues_009553.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.3",
     "title": "sage -ba (build all) waits for input, making it harder to use in scripts",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9553",

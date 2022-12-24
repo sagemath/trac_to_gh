@@ -10,6 +10,7 @@ archive/issues_003000.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Some packages don't respect the CXX environment variable",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3000",

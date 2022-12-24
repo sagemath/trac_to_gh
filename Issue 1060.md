@@ -10,6 +10,7 @@ archive/issues_001060.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.11",
     "title": "fix flintqs compile on OSX 10.5",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1060",

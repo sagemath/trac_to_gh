@@ -10,6 +10,7 @@ archive/issues_005971.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1",
     "title": "fix dumb error message when modding out by 0: Mod(10,0)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5971",

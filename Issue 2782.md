@@ -10,6 +10,7 @@ archive/issues_002782.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "notebook: Make it so the default reference manual, etc., is static instead of dynamic",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2782",

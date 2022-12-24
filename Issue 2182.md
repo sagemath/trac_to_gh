@@ -10,6 +10,7 @@ archive/issues_002182.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
     "title": "undefined symbol: gzopen64 when starting the notebook()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2182",

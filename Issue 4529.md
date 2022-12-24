@@ -10,6 +10,7 @@ archive/issues_004529.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.2",
     "title": "Implement plots with logarithmic scale",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4529",

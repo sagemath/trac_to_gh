@@ -10,6 +10,7 @@ archive/issues_000652.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
     "title": ".sage files destroy existing .py files",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/652",

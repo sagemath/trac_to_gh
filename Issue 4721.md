@@ -10,6 +10,7 @@ archive/issues_004721.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "[with patch; needs review] Indefinite integration for piecewise functions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4721",

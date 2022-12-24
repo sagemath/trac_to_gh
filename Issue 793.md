@@ -10,6 +10,7 @@ archive/issues_000793.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
     "title": "wrapper for hyperelliptic curve zeta functions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/793",

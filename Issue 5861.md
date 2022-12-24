@@ -10,6 +10,7 @@ archive/issues_005861.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.2",
     "title": "[with patch, needs review] Remove cocoa, four_ti_2, reduce and template interfaces since they do not work/are broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5861",

@@ -10,6 +10,7 @@ archive/issues_004629.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "build: \"sage -upgrade URL\" will install all *newer* spkg's from the given URL, which can also be a local directory",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4629",

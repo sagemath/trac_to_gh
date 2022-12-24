@@ -10,6 +10,7 @@ archive/issues_004177.json:
         "trivial",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
     "title": "Put Sage version in Notebook",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4177",

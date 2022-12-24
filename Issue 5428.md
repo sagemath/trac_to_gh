@@ -10,6 +10,7 @@ archive/issues_005428.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4",
     "title": "Doctest failure in devel/sage/doc/en/bordeaux_2008/method_of_graphs.rst",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5428",

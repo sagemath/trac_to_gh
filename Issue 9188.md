@@ -10,6 +10,7 @@ archive/issues_009188.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.2",
     "title": "lattice_polytope.facet_normal bug with polytopes of less that full dimension",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9188",

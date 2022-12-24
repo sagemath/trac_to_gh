@@ -10,6 +10,7 @@ archive/issues_006301.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
     "title": "implement the Hadamard product of two matrices",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6301",

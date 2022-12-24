@@ -10,6 +10,7 @@ archive/issues_000179.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.4",
     "title": "recent worksheets -- in notebook display",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/179",

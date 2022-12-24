@@ -10,6 +10,7 @@ archive/issues_007584.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "Pari spkg: remove junk file pari-2.3.3.p5.spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7584",

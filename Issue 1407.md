@@ -10,6 +10,7 @@ archive/issues_001407.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9",
     "title": "deciding that generators don't generate an order in some extensions can be way way too slow.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1407",

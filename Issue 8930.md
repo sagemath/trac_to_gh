@@ -10,6 +10,7 @@ archive/issues_008930.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.4",
     "title": "Deprecate EnumeratedSet",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8930",

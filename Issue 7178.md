@@ -10,6 +10,7 @@ archive/issues_007178.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "HP-UX  lcalc does not build. Also fails on Solaris with Sun compiler",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7178",

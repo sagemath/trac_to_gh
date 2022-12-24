@@ -10,6 +10,7 @@ archive/issues_001905.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
     "title": "elliptic curves -- both E.Lseries and E.L_series are defined.  Just define one of them, say E.Lseries. (trivial to fix)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1905",

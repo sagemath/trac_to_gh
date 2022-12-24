@@ -10,6 +10,7 @@ archive/issues_007531.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "Python interface to M4RI's LQUP function",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7531",

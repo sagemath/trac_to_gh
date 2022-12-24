@@ -10,6 +10,7 @@ archive/issues_000220.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.4.2",
     "title": "SageX: generic power series over arbitrary ring",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/220",

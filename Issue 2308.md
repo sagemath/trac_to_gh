@@ -10,6 +10,7 @@ archive/issues_002308.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
     "title": "remove SAGE_ROOT/local/bin/sage-server -- it's no longer used, to put it midly!",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2308",

@@ -10,6 +10,7 @@ archive/issues_006795.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "doctest failure in sage/sage/interfaces/expect.py due to upgrade to Maxima 5.19.1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6795",

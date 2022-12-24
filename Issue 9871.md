@@ -10,6 +10,7 @@ archive/issues_009871.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
     "title": "PolyBoRi incorrectly reports a GNU linker is used with gcc and produces libraries with text relocations.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9871",

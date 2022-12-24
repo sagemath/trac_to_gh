@@ -10,6 +10,7 @@ archive/issues_005270.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
     "title": "[with patch, needs review] implement plotting of affine and projective algebraic curves",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5270",

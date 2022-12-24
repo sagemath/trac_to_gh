@@ -10,6 +10,7 @@ archive/issues_009548.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-wishlist",
     "title": "Sage does not support infinities with complex direction",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9548",

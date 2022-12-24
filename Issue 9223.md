@@ -10,6 +10,7 @@ archive/issues_009223.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.2",
     "title": "improve doctest coverage of databases/cremona.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9223",

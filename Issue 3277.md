@@ -10,6 +10,7 @@ archive/issues_003277.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "context for calculus assumptions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3277",

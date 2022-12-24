@@ -10,6 +10,7 @@ archive/issues_004602.json:
         "trivial",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
     "title": "typos in files under sage/catalogue",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4602",

@@ -10,6 +10,7 @@ archive/issues_001910.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "linear algebra -- doctesting for sage/matrix/matrix_field_dense.pyx is off for no good reason, and there are lots of problems when we turn it on.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1910",

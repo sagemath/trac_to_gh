@@ -10,6 +10,7 @@ archive/issues_002757.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "[with patch; needs review] Debianize scipy_sandbox package",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2757",

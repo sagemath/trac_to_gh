@@ -10,6 +10,7 @@ archive/issues_005171.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "Bugs in the Graph constructor when input an adjacency matrix.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5171",

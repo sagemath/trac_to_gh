@@ -10,6 +10,7 @@ archive/issues_002161.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
     "title": "[with patch] some speed improvements for mpolynomials over ZZ",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2161",

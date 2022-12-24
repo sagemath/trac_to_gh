@@ -10,6 +10,7 @@ archive/issues_007236.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
     "title": "Partitions cleanup (box => cell + indentation fix)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7236",

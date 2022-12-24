@@ -10,6 +10,7 @@ archive/issues_004178.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "dist_functions.py doctest timeout is too small",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4178",

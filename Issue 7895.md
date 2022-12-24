@@ -10,6 +10,7 @@ archive/issues_007895.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Flint says SIZE_MAX is undeclared on Solaris 8",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7895",

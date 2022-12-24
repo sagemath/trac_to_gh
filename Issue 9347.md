@@ -10,6 +10,7 @@ archive/issues_009347.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "change c_lib/include/gmp_globals.h to have sage_ prefix",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9347",

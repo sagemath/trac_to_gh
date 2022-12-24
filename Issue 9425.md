@@ -10,6 +10,7 @@ archive/issues_009425.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.2",
     "title": "bug in kernel_on() in \"matrix2.pyx\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9425",

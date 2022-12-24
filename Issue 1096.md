@@ -10,6 +10,7 @@ archive/issues_001096.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.12",
     "title": "[with patch] real_roots may give wrong answers on non-squarefree polynomials",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1096",

@@ -10,6 +10,7 @@ archive/issues_007556.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "change default rounding behavior for QQ to",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7556",

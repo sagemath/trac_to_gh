@@ -10,6 +10,7 @@ archive/issues_006432.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "plot and especially animate are very slow",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6432",

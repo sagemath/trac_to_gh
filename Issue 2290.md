@@ -10,6 +10,7 @@ archive/issues_002290.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
     "title": "[with easy patch] typo in calculus.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2290",

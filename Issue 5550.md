@@ -10,6 +10,7 @@ archive/issues_005550.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": ".../doc/output/html/en/index.html should include \"/index.html\" in links",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5550",

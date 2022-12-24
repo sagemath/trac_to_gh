@@ -10,6 +10,7 @@ archive/issues_008947.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.2",
     "title": "pretty printing of vectors over callable symbolic rings",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8947",

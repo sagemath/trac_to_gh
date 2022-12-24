@@ -10,6 +10,7 @@ archive/issues_004359.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
     "title": "[with patch, needs review] Huge number of small fixes to modular forms code",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4359",

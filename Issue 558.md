@@ -10,6 +10,7 @@ archive/issues_000558.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.4",
     "title": "memleak in integer_fast_tp_dealloc exposed by ModularSymbols(n,sign=1).decomposition()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/558",

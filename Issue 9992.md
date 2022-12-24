@@ -10,6 +10,7 @@ archive/issues_009992.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Singular fails to build on AIX 5.3",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9992",

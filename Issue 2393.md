@@ -10,6 +10,7 @@ archive/issues_002393.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
     "title": "the version of mercurial shipped with sage does not include the queue extension",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2393",

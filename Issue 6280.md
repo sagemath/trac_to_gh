@@ -10,6 +10,7 @@ archive/issues_006280.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "the R r-2.6.1.p22.spkg spkg is full of OS X crap ._ files",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6280",

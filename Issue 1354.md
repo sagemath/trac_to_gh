@@ -10,6 +10,7 @@ archive/issues_001354.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.15",
     "title": "[with patch] Solaris modp 64 bit fix",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1354",

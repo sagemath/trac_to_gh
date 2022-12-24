@@ -10,6 +10,7 @@ archive/issues_008550.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-8.2",
     "title": "Infinite matrix groups over QQ fail for is_finite()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8550",

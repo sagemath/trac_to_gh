@@ -10,6 +10,7 @@ archive/issues_009983.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "ECM fails to build on AIX 5.3 - A warning about linking a static library against a shared library",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9983",

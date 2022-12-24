@@ -10,6 +10,7 @@ archive/issues_007277.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Add permutahedron symmetry groups as standard",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7277",

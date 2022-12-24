@@ -10,6 +10,7 @@ archive/issues_001379.json:
         "trivial",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "\"What is Sage\" interactive javascript webpage app",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1379",

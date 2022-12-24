@@ -10,6 +10,7 @@ archive/issues_004673.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-wishlist",
     "title": "Introduce generic pools just like for the Integer class",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4673",

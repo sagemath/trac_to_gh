@@ -10,6 +10,7 @@ archive/issues_005273.json:
         "trivial",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "[with patch, needs review] change error message for integer matrices which are too large",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5273",

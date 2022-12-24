@@ -10,6 +10,7 @@ archive/issues_006430.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Cython problem with hashing Laurent series elements over CDF",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6430",

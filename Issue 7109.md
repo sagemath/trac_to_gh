@@ -10,6 +10,7 @@ archive/issues_007109.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.2",
     "title": "polyhedra bugs with linearities, rewrite proposal",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7109",

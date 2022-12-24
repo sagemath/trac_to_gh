@@ -10,6 +10,7 @@ archive/issues_009950.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
     "title": "Missing package init file 'sage/tests/french_book/__init__.py'",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9950",

@@ -10,6 +10,7 @@ archive/issues_005086.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-wishlist",
     "title": "Improve performance of is_in_string",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5086",

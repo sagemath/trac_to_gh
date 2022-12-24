@@ -10,6 +10,7 @@ archive/issues_001295.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.15",
     "title": "butterfly graph",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1295",

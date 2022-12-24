@@ -10,6 +10,7 @@ archive/issues_007461.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "partition_refinement.pyx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7461",

@@ -10,6 +10,7 @@ archive/issues_007859.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.2",
     "title": "bug in QQbar (easy to fix!)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7859",

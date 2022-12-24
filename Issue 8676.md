@@ -10,6 +10,7 @@ archive/issues_008676.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4",
     "title": "document breadth-first and depth-first search methods of C graph",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8676",

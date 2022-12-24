@@ -10,6 +10,7 @@ archive/issues_002031.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "serious preparser lameness involving time and comments",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2031",

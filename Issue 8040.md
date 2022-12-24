@@ -10,6 +10,7 @@ archive/issues_008040.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "given that m,n are optional inputs to CRT(a,b,m,n), given a,b mod m,n should work",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8040",

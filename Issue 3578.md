@@ -10,6 +10,7 @@ archive/issues_003578.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
     "title": "Highlighting selected button in selector",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3578",

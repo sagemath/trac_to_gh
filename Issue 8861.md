@@ -10,6 +10,7 @@ archive/issues_008861.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.2",
     "title": "sagenb-0.8.p0.spkg: broken dependencies, requires internet conn. to build",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8861",

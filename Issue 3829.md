@@ -10,6 +10,7 @@ archive/issues_003829.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.2",
     "title": "wester.py disagrees with Wester!!!",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3829",

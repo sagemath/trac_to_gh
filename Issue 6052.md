@@ -10,6 +10,7 @@ archive/issues_006052.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
     "title": "partial_fraction_decomposition is broken for irreducible denominators",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6052",

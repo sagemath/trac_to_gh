@@ -10,6 +10,7 @@ archive/issues_003001.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
     "title": "sage ignores custom environment variables",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3001",

@@ -10,6 +10,7 @@ archive/issues_000867.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.7",
     "title": "[with patch] support for rook monoid and planar rook monoid (as well as their diagram/partition algebras)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/867",

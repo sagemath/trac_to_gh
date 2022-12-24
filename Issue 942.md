@@ -10,6 +10,7 @@ archive/issues_000942.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.8",
     "title": "still reachable memory in pow_computer's cache",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/942",

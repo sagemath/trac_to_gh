@@ -10,6 +10,7 @@ archive/issues_000724.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.10",
     "title": "graph6 parsing does not throw an error when the string is the wrong size.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/724",

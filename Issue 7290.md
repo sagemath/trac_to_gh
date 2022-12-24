@@ -10,6 +10,7 @@ archive/issues_007290.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-7.2",
     "title": "Dual method for linear programs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7290",

@@ -10,6 +10,7 @@ archive/issues_003970.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
     "title": "MaximaElements should not coerce into SR.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3970",

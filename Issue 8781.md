@@ -10,6 +10,7 @@ archive/issues_008781.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5",
     "title": "Overfull graph (and a bug in edge_coloring)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8781",

@@ -10,6 +10,7 @@ archive/issues_003470.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
     "title": "[with spkg; needs review] add pyprocessing (=multiproccessing) to sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3470",

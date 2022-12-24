@@ -10,6 +10,7 @@ archive/issues_002883.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "notebook -- typing in safari is sluggish!",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2883",

@@ -10,6 +10,7 @@ archive/issues_002893.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "[with patch; needs review] notebook -- make it explicitly clear which systems are optional",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2893",

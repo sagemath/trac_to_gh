@@ -10,6 +10,7 @@ archive/issues_000613.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.4",
     "title": "combinat/sloane_functions.py:  ArithmeticError: 0^0 is undefined",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/613",

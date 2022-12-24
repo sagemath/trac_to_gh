@@ -10,6 +10,7 @@ archive/issues_009059.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5",
     "title": "some shortcuts for \"is_H-free\" tests",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9059",

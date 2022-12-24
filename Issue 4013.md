@@ -10,6 +10,7 @@ archive/issues_004013.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "notebook -- first cell of a new worksheet should be apart of the class \"cell_not_evaluated\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4013",

@@ -10,6 +10,7 @@ archive/issues_005581.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
     "title": "Face lattices and f-vectors for polytopes; bug fixes for polyhedra.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5581",

@@ -10,6 +10,7 @@ archive/issues_004235.json:
         "trivial",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
     "title": "[with patch, needs review] typos in and enhancement to installation guide",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4235",

@@ -10,6 +10,7 @@ archive/issues_008268.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.4",
     "title": "Improve speed of Christoffel word construction",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8268",

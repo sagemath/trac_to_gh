@@ -10,6 +10,7 @@ archive/issues_005397.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "SmallGroups library can't be used in Sage-3.3",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5397",

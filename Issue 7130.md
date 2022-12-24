@@ -10,6 +10,7 @@ archive/issues_007130.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.4",
     "title": "libpng 1.2.35 always builds 32-bit libraries on Solaris.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7130",

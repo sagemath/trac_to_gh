@@ -10,6 +10,7 @@ archive/issues_000656.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.5",
     "title": "incorporate mabshoff's bugfixes into iml and make a new spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/656",

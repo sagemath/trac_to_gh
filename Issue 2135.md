@@ -10,6 +10,7 @@ archive/issues_002135.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
     "title": "[with patch, needs easy review] allow for specifying initial position in spring layout",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2135",

@@ -10,6 +10,7 @@ archive/issues_007594.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "Dominating set and Independent dominating Set",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7594",

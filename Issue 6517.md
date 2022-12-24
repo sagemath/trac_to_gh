@@ -10,6 +10,7 @@ archive/issues_006517.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "[with SPKG, needs review] FriCAS 1.0.7",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6517",

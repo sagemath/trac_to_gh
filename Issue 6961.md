@@ -10,6 +10,7 @@ archive/issues_006961.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.3",
     "title": "provide wrapper for psi function of GiNaC",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6961",

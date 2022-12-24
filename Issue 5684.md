@@ -10,6 +10,7 @@ archive/issues_005684.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
     "title": "[with patch, needs review] Taking negative powers of Laurent polynomial throws exception",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5684",

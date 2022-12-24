@@ -10,6 +10,7 @@ archive/issues_003597.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
     "title": "building sage on opensuse x86_64 fails with readline detection error",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3597",

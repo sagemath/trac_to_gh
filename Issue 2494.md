@@ -10,6 +10,7 @@ archive/issues_002494.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.2",
     "title": "bugs in evaluation of spherical bessel function",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2494",

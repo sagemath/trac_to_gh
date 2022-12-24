@@ -10,6 +10,7 @@ archive/issues_003774.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
     "title": "__radd__ doesn't work when left hand side is an Element",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3774",

@@ -10,6 +10,7 @@ archive/issues_006613.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
     "title": "patch from #6393 should also demonstrate that bug is fixed",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6613",

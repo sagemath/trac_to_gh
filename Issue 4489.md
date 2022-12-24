@@ -10,6 +10,7 @@ archive/issues_004489.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "weird introspection question, specifically with certain objects in cython files",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4489",

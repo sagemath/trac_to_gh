@@ -10,6 +10,7 @@ archive/issues_008010.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "f2py broken on some mac systems",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8010",

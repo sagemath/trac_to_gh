@@ -10,6 +10,7 @@ archive/issues_001120.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.13",
     "title": "[with patch] speed up point counting for elliptic curves over GF(p^n) if coefficients are in GF(p)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1120",

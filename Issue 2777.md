@@ -10,6 +10,7 @@ archive/issues_002777.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
     "title": "'??' can't always find the source",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2777",

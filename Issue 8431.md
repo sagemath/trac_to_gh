@@ -10,6 +10,7 @@ archive/issues_008431.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6.1",
     "title": "Rauzy fractal (discrete planes and broken lines)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8431",

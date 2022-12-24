@@ -10,6 +10,7 @@ archive/issues_007706.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.3",
     "title": "palp (lattice polytopes): replace the pickle-based database of lattice polytopes by a non-pickle database format",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7706",

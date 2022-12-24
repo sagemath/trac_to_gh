@@ -10,6 +10,7 @@ archive/issues_002659.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "Elliptic curve cardinality sometimes Rational with bad consequences for efficiency",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2659",

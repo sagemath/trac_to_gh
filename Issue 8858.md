@@ -10,6 +10,7 @@ archive/issues_008858.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "4.4.1 accessing internet during compilation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8858",

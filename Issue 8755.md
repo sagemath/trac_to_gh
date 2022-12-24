@@ -10,6 +10,7 @@ archive/issues_008755.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "modify sagenb-*/src/sagenb/spkg-dist to produce valid spkg's",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8755",

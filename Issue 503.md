@@ -10,6 +10,7 @@ archive/issues_000503.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.4",
     "title": "0^0 -- error or 1; and other exponentiation optimizations",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/503",

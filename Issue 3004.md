@@ -10,6 +10,7 @@ archive/issues_003004.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
     "title": "bug in coercion edge case -- probably easy to fix",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3004",

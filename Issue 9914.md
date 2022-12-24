@@ -10,6 +10,7 @@ archive/issues_009914.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
     "title": "fixes for NZMATH/Sage interoperation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9914",

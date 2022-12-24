@@ -10,6 +10,7 @@ archive/issues_004928.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.3",
     "title": "Create Sage 3.2.3 release notes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4928",

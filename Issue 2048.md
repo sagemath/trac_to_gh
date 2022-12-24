@@ -10,6 +10,7 @@ archive/issues_002048.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-wishlist",
     "title": "sage does not have 1048576 users yet",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2048",

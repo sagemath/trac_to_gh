@@ -10,6 +10,7 @@ archive/issues_007837.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "modular symbols -- change boundary space B_k when k odd to have the right dimension",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7837",

@@ -10,6 +10,7 @@ archive/issues_005006.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "the hg script installed by install_script() does not pass parameters correctly",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5006",

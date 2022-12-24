@@ -10,6 +10,7 @@ archive/issues_006167.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.1",
     "title": "[with patch; needs review] add the very useful sloane sequence A000008 (ways of making change for n cents)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6167",

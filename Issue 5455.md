@@ -10,6 +10,7 @@ archive/issues_005455.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4",
     "title": "gap-4.4.12 -- broken on iras (itanium Linux)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5455",

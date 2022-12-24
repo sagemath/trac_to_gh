@@ -10,6 +10,7 @@ archive/issues_007429.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2.1",
     "title": "pari is misbuilt on OS X using xcode 3.2.1, making sage be mostly broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7429",

@@ -10,6 +10,7 @@ archive/issues_002895.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "[with patch, needs review] add support for Laurent polynomials in Sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2895",

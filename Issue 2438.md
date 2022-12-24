@@ -10,6 +10,7 @@ archive/issues_002438.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
     "title": "[with patch, positive review] get the reference manual to build again",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2438",

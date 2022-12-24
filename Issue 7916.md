@@ -10,6 +10,7 @@ archive/issues_007916.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.3",
     "title": "change conjugate(X) to try X.conjugate()  [[this is easy!!]]",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7916",

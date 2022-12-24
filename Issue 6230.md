@@ -10,6 +10,7 @@ archive/issues_006230.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.1",
     "title": "[with patch, needs review] Fix numerical noise and dictionary sorting issues in 4.0.1.rc2.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6230",

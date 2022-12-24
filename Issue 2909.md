@@ -10,6 +10,7 @@ archive/issues_002909.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "notebook -- implement a way of parsing script tags in output as they appear (but none that already appeared)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2909",

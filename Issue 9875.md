@@ -10,6 +10,7 @@ archive/issues_009875.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
     "title": "Building PARI/GP with SAGE_CHECK=yes fails on rnfkummer on a PPC Mac OS X 10.4",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9875",

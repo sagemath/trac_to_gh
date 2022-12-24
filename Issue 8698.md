@@ -10,6 +10,7 @@ archive/issues_008698.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.3",
     "title": "German translation of the document \"A Tour of Sage\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8698",

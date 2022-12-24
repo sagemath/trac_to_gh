@@ -10,6 +10,7 @@ archive/issues_009457.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.2",
     "title": "power series comparison should use padded_list",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9457",

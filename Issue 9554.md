@@ -10,6 +10,7 @@ archive/issues_009554.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.2",
     "title": "Doctest failure in SageNB's sageinspect.py with #8988",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9554",

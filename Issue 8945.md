@@ -10,6 +10,7 @@ archive/issues_008945.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-wishlist",
     "title": "Cremona labels messed up",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8945",

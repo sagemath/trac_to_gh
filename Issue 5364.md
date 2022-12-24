@@ -10,6 +10,7 @@ archive/issues_005364.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "unused maxima builtin functions for matrices over SR",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5364",

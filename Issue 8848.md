@@ -10,6 +10,7 @@ archive/issues_008848.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.3",
     "title": "the fast eval interpreters do not build on Cygwin",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8848",

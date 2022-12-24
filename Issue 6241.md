@@ -10,6 +10,7 @@ archive/issues_006241.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.2",
     "title": "numerical noise (very easy to fix) on cicero (redhat 9) i686 32-bit",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6241",

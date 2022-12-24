@@ -10,6 +10,7 @@ archive/issues_000763.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.6",
     "title": "serious bug latexing p-adic L-series",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/763",

@@ -10,6 +10,7 @@ archive/issues_000940.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-8.5",
     "title": "read large output from octave (and probably matlab) takes *forever*",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/940",

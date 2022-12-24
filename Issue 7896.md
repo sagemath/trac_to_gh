@@ -10,6 +10,7 @@ archive/issues_007896.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "make a worksheet and save it on sagenb.org: it doesn't have a .sws extension anymore!",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7896",

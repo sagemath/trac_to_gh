@@ -10,6 +10,7 @@ archive/issues_001086.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Enumeration of totally real fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1086",

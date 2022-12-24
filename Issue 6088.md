@@ -10,6 +10,7 @@ archive/issues_006088.json:
         "trivial",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
     "title": "LatticePolytope: Removed a try/catch which could involuntarily hide exceptions from lower code",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6088",

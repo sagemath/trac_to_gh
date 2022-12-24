@@ -10,6 +10,7 @@ archive/issues_001230.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
     "title": "Quit worksheet behaviour",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1230",

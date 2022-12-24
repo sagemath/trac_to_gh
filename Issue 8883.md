@@ -10,6 +10,7 @@ archive/issues_008883.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Implement morphism.register_as_conversion()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8883",

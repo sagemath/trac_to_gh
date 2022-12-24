@@ -10,6 +10,7 @@ archive/issues_007770.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "Implement Tower of Hanoi graph",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7770",

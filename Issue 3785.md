@@ -10,6 +10,7 @@ archive/issues_003785.json:
         "blocker",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.3",
     "title": "upgrade atlas in sage to version 3.8.2",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3785",

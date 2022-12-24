@@ -10,6 +10,7 @@ archive/issues_003404.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "graph.automorphism_group returns permutations with the wrong number of elements.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3404",

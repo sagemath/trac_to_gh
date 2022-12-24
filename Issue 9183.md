@@ -10,6 +10,7 @@ archive/issues_009183.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "creating an expect element can modify a previously created expect element",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9183",

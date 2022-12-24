@@ -10,6 +10,7 @@ archive/issues_001227.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.13",
     "title": "2.8.13.rc1: sage/rings/polynomial/multi_polynomial_ideal.py doctest failure",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1227",

@@ -10,6 +10,7 @@ archive/issues_005812.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
     "title": "option zorder has no effect for point() and polygon()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5812",

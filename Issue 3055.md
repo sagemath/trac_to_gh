@@ -10,6 +10,7 @@ archive/issues_003055.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.1",
     "title": "creating subgraph does not delete _pos entries",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3055",

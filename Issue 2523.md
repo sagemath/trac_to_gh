@@ -10,6 +10,7 @@ archive/issues_002523.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.1",
     "title": "bug in modular symbols for GammaH subgroup",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2523",

@@ -10,6 +10,7 @@ archive/issues_007414.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2.1",
     "title": "improve {from,to}_inversion_vector",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7414",

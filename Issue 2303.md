@@ -10,6 +10,7 @@ archive/issues_002303.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.5",
     "title": "bessel_I(1,1,\"scipy\") segfaults with gcc 4.2.3 on Linux x86",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2303",

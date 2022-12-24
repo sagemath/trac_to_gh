@@ -10,6 +10,7 @@ archive/issues_000977.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.9",
     "title": "Schubert polynomials send 1 -> wrong polynomial ring",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/977",

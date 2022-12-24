@@ -10,6 +10,7 @@ archive/issues_007493.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Implement sage -t --time",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7493",

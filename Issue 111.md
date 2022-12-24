@@ -10,6 +10,7 @@ archive/issues_000111.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
     "title": "def copy -- they should all be def __copy__",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/111",

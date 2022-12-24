@@ -10,6 +10,7 @@ archive/issues_008780.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.3",
     "title": "add the Cephes spkg to Cygwin",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8780",

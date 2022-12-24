@@ -10,6 +10,7 @@ archive/issues_009996.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Tachyon does not even try to build on AIX",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9996",

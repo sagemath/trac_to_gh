@@ -10,6 +10,7 @@ archive/issues_000407.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.12",
     "title": "improve how gap workspace caching works",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/407",

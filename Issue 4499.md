@@ -10,6 +10,7 @@ archive/issues_004499.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
     "title": "Fix latex for sech and csch",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4499",

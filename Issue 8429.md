@@ -10,6 +10,7 @@ archive/issues_008429.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4",
     "title": "Split word.py file into 4 files",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8429",

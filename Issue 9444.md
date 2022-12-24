@@ -10,6 +10,7 @@ archive/issues_009444.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.3",
     "title": "Fix \"rm: Cannot remove any directory in the path of the current working directory\" on t2",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9444",

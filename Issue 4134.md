@@ -10,6 +10,7 @@ archive/issues_004134.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
     "title": "[with patch, needs review] notebook -- user.py has nodoctest flag",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4134",

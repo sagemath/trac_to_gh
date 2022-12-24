@@ -10,6 +10,7 @@ archive/issues_003197.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
     "title": "fix 64 bit OSX build support for m4ri",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3197",

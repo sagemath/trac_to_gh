@@ -10,6 +10,7 @@ archive/issues_000414.json:
         "trivial",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.5",
     "title": "Attaching .pyx doesn't work anymore (only .spyx)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/414",

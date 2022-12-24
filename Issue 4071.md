@@ -10,6 +10,7 @@ archive/issues_004071.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "Fix issues in the lisp interface",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4071",

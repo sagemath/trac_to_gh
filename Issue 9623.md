@@ -10,6 +10,7 @@ archive/issues_009623.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.7.1",
     "title": "interacts for high school level",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9623",

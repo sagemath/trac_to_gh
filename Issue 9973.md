@@ -10,6 +10,7 @@ archive/issues_009973.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "The current (rather old) version of GnuTLS fails to install on AIX 5.3",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9973",

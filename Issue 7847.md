@@ -10,6 +10,7 @@ archive/issues_007847.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "Emptying the trash in Firefox 3.5.6 displays a \"Forbidden  No referer found. Forbidden.\" page",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7847",

@@ -10,6 +10,7 @@ archive/issues_003880.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "Bad behavior of arrows",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3880",

@@ -10,6 +10,7 @@ archive/issues_009004.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "__cmp__ in sage/sets/set.py doesn't do what it's supposed to do.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9004",

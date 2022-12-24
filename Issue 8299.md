@@ -10,6 +10,7 @@ archive/issues_008299.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.4",
     "title": "coercion and the bool type",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8299",

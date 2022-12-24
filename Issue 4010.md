@@ -10,6 +10,7 @@ archive/issues_004010.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "notebook -- Renaming worksheet: clicking OK with a blank text box should revert to worksheet's old name not name it to \"null\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4010",

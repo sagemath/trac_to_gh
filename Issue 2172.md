@@ -10,6 +10,7 @@ archive/issues_002172.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
     "title": "sage -sdist loses debian build infrastructure",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2172",

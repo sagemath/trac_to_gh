@@ -10,6 +10,7 @@ archive/issues_006825.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2.1",
     "title": "intermittent failure in vector_real_double_dense.pyx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6825",

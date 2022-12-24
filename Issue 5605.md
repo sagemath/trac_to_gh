@@ -10,6 +10,7 @@ archive/issues_005605.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.2",
     "title": "Construct Color objects using hsl and hsv values",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5605",

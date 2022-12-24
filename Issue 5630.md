@@ -10,6 +10,7 @@ archive/issues_005630.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
     "title": "improve doctest coverage for schemes/generic/spec.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5630",

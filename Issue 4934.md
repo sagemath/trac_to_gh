@@ -10,6 +10,7 @@ archive/issues_004934.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.3",
     "title": "matrix1.pyx refernece related doctest crash on cicero",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4934",

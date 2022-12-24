@@ -10,6 +10,7 @@ archive/issues_006629.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-7.2",
     "title": "Implement the abstract ring of multivariate polynomials, with several bases (Schur schubert, ...)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6629",

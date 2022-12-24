@@ -10,6 +10,7 @@ archive/issues_007018.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.2",
     "title": "Looking for trees with search_doc(\"tree\") is a bad idea",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7018",

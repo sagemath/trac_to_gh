@@ -10,6 +10,7 @@ archive/issues_003586.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
     "title": "twist.py -- doctest doesn't work on some machines due to ports not being open-able",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3586",

@@ -10,6 +10,7 @@ archive/issues_004657.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
     "title": "OSXL: gnuplot doesn't start due to dreaded libpng conflict",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4657",

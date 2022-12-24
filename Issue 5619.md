@@ -10,6 +10,7 @@ archive/issues_005619.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
     "title": "doctests for error messages in groebner_fan.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5619",

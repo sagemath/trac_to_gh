@@ -10,6 +10,7 @@ archive/issues_000601.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.4",
     "title": "bug -- caused by fixing#549 -- now there is too much space around output.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/601",

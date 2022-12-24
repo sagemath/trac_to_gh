@@ -10,6 +10,7 @@ archive/issues_008042.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.2",
     "title": "problem with modular symbols in eclib",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8042",

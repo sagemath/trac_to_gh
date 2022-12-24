@@ -10,6 +10,7 @@ archive/issues_006958.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
     "title": "[with patch, not ready] prove_BSD function for elliptic curves over QQ",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6958",

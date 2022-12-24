@@ -10,6 +10,7 @@ archive/issues_005188.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "squaring some factorizations has a bug",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5188",

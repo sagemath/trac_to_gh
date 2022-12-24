@@ -10,6 +10,7 @@ archive/issues_004796.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
     "title": "Remove bugs.py in sage/modular/modform",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4796",

@@ -10,6 +10,7 @@ archive/issues_004651.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "re-enable caching of cython dependencies during build",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4651",

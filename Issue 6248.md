@@ -10,6 +10,7 @@ archive/issues_006248.json:
         "trivial",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.2",
     "title": "remove executable bits from sage-README-osx.txt",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6248",

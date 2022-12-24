@@ -10,6 +10,7 @@ archive/issues_006490.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "upgrade lisp ecl to version 9.6.2 which has been released",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6490",

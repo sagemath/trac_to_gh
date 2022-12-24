@@ -10,6 +10,7 @@ archive/issues_005161.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "[with patch, needs review] Remove outdated SHAREDFLAGS and Solaris specific injected flags from sage-env",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5161",

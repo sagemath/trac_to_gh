@@ -10,6 +10,7 @@ archive/issues_005030.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "[with patch; needs review] get matrix/constructor.py up to 100% coverage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5030",

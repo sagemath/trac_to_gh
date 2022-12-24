@@ -10,6 +10,7 @@ archive/issues_005190.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "the sage documentation at sagemath.org is horribly out of date",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5190",

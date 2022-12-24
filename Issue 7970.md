@@ -10,6 +10,7 @@ archive/issues_007970.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Make `hg` interfaces use `subprocess.Popen` and return exit code",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7970",

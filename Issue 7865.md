@@ -10,6 +10,7 @@ archive/issues_007865.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "R  - WARNING: cannot run mixed C/Fortran code (then exits)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7865",

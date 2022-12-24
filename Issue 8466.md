@@ -10,6 +10,7 @@ archive/issues_008466.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "include the document \"Sage and Coding Theory\" in the classification \"Sage HOWTOs\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8466",

@@ -10,6 +10,7 @@ archive/issues_007167.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "HP-UX issue, ECL fails to build properly",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7167",

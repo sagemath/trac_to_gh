@@ -10,6 +10,7 @@ archive/issues_004562.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
     "title": "clean up a bunch of imports in matrix CDF/RDF code",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4562",

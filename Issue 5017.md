@@ -10,6 +10,7 @@ archive/issues_005017.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "graph.automorphism_group(translation=True) gives error in 3.2.3",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5017",

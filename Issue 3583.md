@@ -10,6 +10,7 @@ archive/issues_003583.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
     "title": "randomness in some worksheet doctests",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3583",

@@ -10,6 +10,7 @@ archive/issues_000509.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.4.1",
     "title": "gdb mode for sage-ipython",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/509",

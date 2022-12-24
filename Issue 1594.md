@@ -10,6 +10,7 @@ archive/issues_001594.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9.1",
     "title": "libm4ri -- in library mode it doesn't work at all on osx -- lots of segfaults",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1594",

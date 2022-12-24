@@ -10,6 +10,7 @@ archive/issues_009413.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
     "title": "Bug in tamagawa_product_bsd for elliptic curves over QQ",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9413",

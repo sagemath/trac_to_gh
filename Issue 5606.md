@@ -10,6 +10,7 @@ archive/issues_005606.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
     "title": "complex color plotting",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5606",

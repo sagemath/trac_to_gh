@@ -10,6 +10,7 @@ archive/issues_002596.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
     "title": "Sage 2.11.alpha0: sage/plot/plot.py doctest failure",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2596",

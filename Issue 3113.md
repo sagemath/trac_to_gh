@@ -10,6 +10,7 @@ archive/issues_003113.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.3",
     "title": "Major segfault related to modular symbols and pickling",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3113",

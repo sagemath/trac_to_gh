@@ -10,6 +10,7 @@ archive/issues_004133.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "sage.math - sage 3.1.2.rc4 doctest failure in interfaces/maxima.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4133",

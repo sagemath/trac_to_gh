@@ -10,6 +10,7 @@ archive/issues_002811.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "make check is broken due to #2746",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2811",

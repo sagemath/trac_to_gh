@@ -10,6 +10,7 @@ archive/issues_001160.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.15",
     "title": "*major* bug in using the sage notebook as a maxima notebook",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1160",

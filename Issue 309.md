@@ -10,6 +10,7 @@ archive/issues_000309.json:
         "trivial",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "rationals enumeration not  monotone in height.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/309",

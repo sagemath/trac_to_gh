@@ -10,6 +10,7 @@ archive/issues_000664.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.5",
     "title": "rings of integers of number fields as a data type",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/664",

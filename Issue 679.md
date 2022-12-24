@@ -10,6 +10,7 @@ archive/issues_000679.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
     "title": "print statistics about the number of failed doctests and exact nature of failures",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/679",

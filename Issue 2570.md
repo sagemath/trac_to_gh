@@ -10,6 +10,7 @@ archive/issues_002570.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "make apply_and_flatten for hg_sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2570",

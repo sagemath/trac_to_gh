@@ -10,6 +10,7 @@ archive/issues_001238.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.14",
     "title": "update the cremona spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1238",

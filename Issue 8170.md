@@ -10,6 +10,7 @@ archive/issues_008170.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-feature",
     "title": "character_table() missing for matrix groups",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8170",

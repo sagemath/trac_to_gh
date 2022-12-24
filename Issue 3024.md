@@ -10,6 +10,7 @@ archive/issues_003024.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
     "title": "notebook -- parses tracebacks in the output of docstrings of help command",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3024",

@@ -10,6 +10,7 @@ archive/issues_002896.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
     "title": "Notebook can't handle publishing of Umlauts (UTF-8)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2896",

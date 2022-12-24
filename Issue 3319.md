@@ -10,6 +10,7 @@ archive/issues_003319.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "expose/wrap ntl.mat_GF2 for completeness",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3319",

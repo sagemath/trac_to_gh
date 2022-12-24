@@ -10,6 +10,7 @@ archive/issues_007371.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "rename quotient_group() to quotient() in groups/perm_gps/permgroup.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7371",

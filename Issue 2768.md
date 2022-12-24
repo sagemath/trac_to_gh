@@ -10,6 +10,7 @@ archive/issues_002768.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
     "title": "add comparison operators to the fast_float mechanism",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2768",

@@ -10,6 +10,7 @@ archive/issues_007420.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "Fix uncaught infinite loop in coercion discovery",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7420",

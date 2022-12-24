@@ -10,6 +10,7 @@ archive/issues_003274.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
     "title": "OSX: delete libpng*.la since we also nuke libpng*.dylib",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3274",

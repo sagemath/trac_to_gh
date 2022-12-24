@@ -10,6 +10,7 @@ archive/issues_006387.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1",
     "title": "Typo in parent.pyx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6387",

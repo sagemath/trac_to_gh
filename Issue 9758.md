@@ -10,6 +10,7 @@ archive/issues_009758.json:
         "trivial",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Addition of SI prefixes capabilities to the units module",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9758",

@@ -10,6 +10,7 @@ archive/issues_007606.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "images not picked up when making source releases of Sage 4.3.alpha0 and 4.3.alpha1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7606",

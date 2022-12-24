@@ -10,6 +10,7 @@ archive/issues_002859.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "plotting the vector (0,0,-1) really plots (0,0,1)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2859",

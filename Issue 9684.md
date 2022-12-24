@@ -10,6 +10,7 @@ archive/issues_009684.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
     "title": "Make use of _tidy_model() optional",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9684",

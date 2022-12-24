@@ -10,6 +10,7 @@ archive/issues_002439.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
     "title": "ZZ.random_element() crashes Sage with probability 2^-31",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2439",

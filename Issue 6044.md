@@ -10,6 +10,7 @@ archive/issues_006044.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.2",
     "title": "Enhanced reduction modulo ideals of number fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6044",

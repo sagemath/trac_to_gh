@@ -10,6 +10,7 @@ archive/issues_002561.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.4",
     "title": "serious inefficiency in order of points on elliptic curvews over finite fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2561",

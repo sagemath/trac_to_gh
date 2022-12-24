@@ -10,6 +10,7 @@ archive/issues_003387.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.3",
     "title": "unacceptably slow conversion of rationals from pari to Rational",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3387",

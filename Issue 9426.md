@@ -10,6 +10,7 @@ archive/issues_009426.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Docbuilder ignores return code from subprocess.call()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9426",

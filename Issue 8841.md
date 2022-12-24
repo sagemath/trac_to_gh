@@ -10,6 +10,7 @@ archive/issues_008841.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "os x 10.4 -- sage-4.4.1 doesn't start up",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8841",

@@ -10,6 +10,7 @@ archive/issues_001916.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "notebook -- implement a way to turn off word wrap globally in the notebook",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1916",

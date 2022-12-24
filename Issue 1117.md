@@ -10,6 +10,7 @@ archive/issues_001117.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.12",
     "title": "fix #1088",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1117",

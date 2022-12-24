@@ -10,6 +10,7 @@ archive/issues_002144.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
     "title": "hex constants do not work as expected",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2144",

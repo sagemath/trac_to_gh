@@ -10,6 +10,7 @@ archive/issues_006969.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
     "title": "port boehm gc to os x 10.6",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6969",

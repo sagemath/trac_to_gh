@@ -10,6 +10,7 @@ archive/issues_009003.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.3",
     "title": "Doctest failure on Mac PPC in free_module.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9003",

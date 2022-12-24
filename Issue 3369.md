@@ -10,6 +10,7 @@ archive/issues_003369.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "bool(x<0) should raise an error rather than return False",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3369",

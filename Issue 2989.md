@@ -10,6 +10,7 @@ archive/issues_002989.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "[with patch; needs review] notebook -- issue with how the notebook is run that breaks it sometimes; also fix a typo in pid.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2989",

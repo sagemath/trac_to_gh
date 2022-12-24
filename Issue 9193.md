@@ -10,6 +10,7 @@ archive/issues_009193.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "Proveable computation of L-functions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9193",

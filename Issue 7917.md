@@ -10,6 +10,7 @@ archive/issues_007917.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "[with patch, needs review] make gauss_sum() work for dirichlet characters when the base ring is CC",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7917",

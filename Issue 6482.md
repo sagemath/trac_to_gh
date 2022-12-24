@@ -10,6 +10,7 @@ archive/issues_006482.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
     "title": "multivariate polynomial substitution has a design flaw",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6482",

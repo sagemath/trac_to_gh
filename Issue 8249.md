@@ -10,6 +10,7 @@ archive/issues_008249.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.2",
     "title": "sagenb: notebook cookies",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8249",

@@ -10,6 +10,7 @@ archive/issues_009807.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6.1",
     "title": "Upgrade numpy to 1.5b and scipy to 0.8",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9807",

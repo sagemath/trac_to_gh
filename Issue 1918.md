@@ -10,6 +10,7 @@ archive/issues_001918.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "Matrices that are printed are not aligned",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1918",

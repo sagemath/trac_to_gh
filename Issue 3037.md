@@ -10,6 +10,7 @@ archive/issues_003037.json:
         "critical",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.1",
     "title": "[with spkg, needs trivial review] cython-0.9.6.13.tip",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3037",

@@ -10,6 +10,7 @@ archive/issues_001504.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "[with trivial doctest patch] plotting -- add an example",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1504",

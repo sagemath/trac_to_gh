@@ -10,6 +10,7 @@ archive/issues_008488.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4",
     "title": "Add support for @interact to the Sage library and module for a library of interacts",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8488",

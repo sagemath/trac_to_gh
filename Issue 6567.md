@@ -10,6 +10,7 @@ archive/issues_006567.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.8",
     "title": "function to test whether or not some integer is a primitive root modulo n",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6567",

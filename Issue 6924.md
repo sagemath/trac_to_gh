@@ -10,6 +10,7 @@ archive/issues_006924.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-feature",
     "title": "Restriction and Tensor Products for Supercharacters of $U_n(2)$",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6924",

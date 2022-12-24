@@ -10,6 +10,7 @@ archive/issues_004892.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "Changing precision of a Complex can convert it to a real",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4892",

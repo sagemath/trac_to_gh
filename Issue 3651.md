@@ -10,6 +10,7 @@ archive/issues_003651.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.6",
     "title": "elliptic curves -- bug in L_ratio()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3651",

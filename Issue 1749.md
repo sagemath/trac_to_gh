@@ -10,6 +10,7 @@ archive/issues_001749.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10",
     "title": "[with patch] FC7/x86: rings/polynomial/polynomial_element.pyx numerical noise doctest failure",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1749",

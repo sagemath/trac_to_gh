@@ -10,6 +10,7 @@ archive/issues_006582.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Potential issue in polybori - 0.5rc.p8 and/or  0.5rc.p9",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6582",

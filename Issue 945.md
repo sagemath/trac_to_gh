@@ -10,6 +10,7 @@ archive/issues_000945.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "preparser should ignore \"    ....:\" when it ignores \"sage:\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/945",

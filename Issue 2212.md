@@ -10,6 +10,7 @@ archive/issues_002212.json:
         "trivial",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.4",
     "title": "degree sequence documentation [with bundle, needs review]",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2212",

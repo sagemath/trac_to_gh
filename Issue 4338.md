@@ -10,6 +10,7 @@ archive/issues_004338.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "optimize computation of victor_miller basis and use this for level 1 modular forms",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4338",

@@ -10,6 +10,7 @@ archive/issues_008789.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.2",
     "title": "Improve doctest coverage of modules/free_module_element.pyx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8789",

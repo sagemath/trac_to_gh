@@ -10,6 +10,7 @@ archive/issues_006770.json:
         "trivial",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
     "title": "typos in two modules of modular form",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6770",

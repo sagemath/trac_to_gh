@@ -10,6 +10,7 @@ archive/issues_009566.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.2",
     "title": "[with patch, needs review] Allow sage.libs.mpmath.call(..., parent=something)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9566",

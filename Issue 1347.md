@@ -10,6 +10,7 @@ archive/issues_001347.json:
         "trivial",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.15",
     "title": "display the path to the sage_notebook directory when starting the notebook server",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1347",

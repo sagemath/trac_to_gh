@@ -10,6 +10,7 @@ archive/issues_008915.json:
         "trivial",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.2",
     "title": "improve documentation on combinat.dyck_words",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8915",

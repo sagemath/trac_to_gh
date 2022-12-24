@@ -10,6 +10,7 @@ archive/issues_007158.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
     "title": "SageNB -- Set up challenge-response, such as a CAPTCHA, for account registration",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7158",

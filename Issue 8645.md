@@ -10,6 +10,7 @@ archive/issues_008645.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "maxima package fails to install ECL library",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8645",

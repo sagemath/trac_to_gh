@@ -10,6 +10,7 @@ archive/issues_002485.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.4",
     "title": "Complete docstrings and doctests for schemes/elliptic_curves",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2485",

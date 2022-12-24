@@ -10,6 +10,7 @@ archive/issues_006496.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "functions numerator() and denominator() for multivariate polynomials",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6496",

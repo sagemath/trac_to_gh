@@ -10,6 +10,7 @@ archive/issues_004621.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-9.8",
     "title": "'2' not in QQbar -- canonical embedding of subfields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4621",

@@ -10,6 +10,7 @@ archive/issues_008162.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.2",
     "title": "p-adic ring constructor documentation incorrect",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8162",

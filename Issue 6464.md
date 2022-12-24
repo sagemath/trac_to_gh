@@ -10,6 +10,7 @@ archive/issues_006464.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
     "title": "notebook: Unicode in notebook worksheets",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6464",

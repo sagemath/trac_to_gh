@@ -10,6 +10,7 @@ archive/issues_004548.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "bug in latexing a certain symbolic expression",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4548",

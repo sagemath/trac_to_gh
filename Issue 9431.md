@@ -10,6 +10,7 @@ archive/issues_009431.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5",
     "title": "opencdk spkg should add $SAGE_LOCAL/lib to LDFLAGS",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9431",

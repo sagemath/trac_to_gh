@@ -10,6 +10,7 @@ archive/issues_008529.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6.1",
     "title": "default colors for plot and implicit_plot are not consistent",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8529",

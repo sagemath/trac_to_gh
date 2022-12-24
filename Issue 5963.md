@@ -10,6 +10,7 @@ archive/issues_005963.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.2",
     "title": "3.4.2.a0: prime_pi returns wrong results on some platforms for large input",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5963",

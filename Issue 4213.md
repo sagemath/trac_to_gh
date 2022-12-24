@@ -10,6 +10,7 @@ archive/issues_004213.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
     "title": "Bug in Permutations(n, k)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4213",

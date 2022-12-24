@@ -10,6 +10,7 @@ archive/issues_005256.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "[with patch, needs review] coherent handling of trivial matrices (depend on #5244, #5242).",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5256",

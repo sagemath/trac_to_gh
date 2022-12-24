@@ -10,6 +10,7 @@ archive/issues_005615.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-wishlist",
     "title": "[with patch, not ready for review] use labels-as-values for fast_callable under gcc",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5615",

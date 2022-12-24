@@ -10,6 +10,7 @@ archive/issues_007299.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.2",
     "title": "show() regression: Picture cropped too much",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7299",

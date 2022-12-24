@@ -10,6 +10,7 @@ archive/issues_007132.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "mpir-1.2.p7 fails to build as CXXFLAGS has no 64-bit option on Solaris",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7132",

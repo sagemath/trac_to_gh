@@ -10,6 +10,7 @@ archive/issues_008608.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "Add a list of available decorators to documentation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8608",

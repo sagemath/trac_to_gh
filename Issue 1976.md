@@ -10,6 +10,7 @@ archive/issues_001976.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.4",
     "title": "[with 1-line patch; needs review] disable the use of openssl on linux as a hack to generate security certificates quickly",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1976",

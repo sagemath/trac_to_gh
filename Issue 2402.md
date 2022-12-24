@@ -10,6 +10,7 @@ archive/issues_002402.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "there should be a hg_examples mercurial wrapper for the examples repository",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2402",

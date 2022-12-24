@@ -10,6 +10,7 @@ archive/issues_005769.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "power series are accidentally *mutable* (really dangerous)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5769",

@@ -10,6 +10,7 @@ archive/issues_001842.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "clean up sage repositories",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1842",

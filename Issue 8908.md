@@ -10,6 +10,7 @@ archive/issues_008908.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.4",
     "title": "Add the Young subgroup method to symmetric groups",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8908",

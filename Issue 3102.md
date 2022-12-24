@@ -10,6 +10,7 @@ archive/issues_003102.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
     "title": "debugging output in p-adics with print mode \"digits\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3102",

@@ -10,6 +10,7 @@ archive/issues_001292.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.15",
     "title": "bug in polynomial root finding mod n",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1292",

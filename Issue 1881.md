@@ -10,6 +10,7 @@ archive/issues_001881.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
     "title": "Sage 2.10.1.alpha0: tut.tex doctes failure with factorize()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1881",

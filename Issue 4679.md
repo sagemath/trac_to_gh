@@ -10,6 +10,7 @@ archive/issues_004679.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
     "title": "Spelling errors in documentation for sage.rings.polynomial.polynomial_element",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4679",

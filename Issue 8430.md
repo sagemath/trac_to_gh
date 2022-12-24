@@ -10,6 +10,7 @@ archive/issues_008430.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.4",
     "title": "three doctest failures with Sage 4.3.4.alpha0",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8430",

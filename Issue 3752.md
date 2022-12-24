@@ -10,6 +10,7 @@ archive/issues_003752.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "gap.eval -- oddity in parsing multiline input and comments",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3752",

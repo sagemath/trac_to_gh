@@ -10,6 +10,7 @@ archive/issues_000686.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
     "title": "write MPolynomial_libsingular over number fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/686",

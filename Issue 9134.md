@@ -10,6 +10,7 @@ archive/issues_009134.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "sage-4.4.3.alpha3: os x ppc 10.4 -- error building pynac",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9134",

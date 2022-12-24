@@ -10,6 +10,7 @@ archive/issues_004616.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "cosine_series_coefficient hangs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4616",

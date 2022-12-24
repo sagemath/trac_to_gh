@@ -10,6 +10,7 @@ archive/issues_001934.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
     "title": "sage-check for ATLAS broken on OSX",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1934",

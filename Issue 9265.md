@@ -10,6 +10,7 @@ archive/issues_009265.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.5",
     "title": "Remove `CombinatorialClass` from sage.combinat.tableau",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9265",

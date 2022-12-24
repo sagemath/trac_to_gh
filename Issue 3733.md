@@ -10,6 +10,7 @@ archive/issues_003733.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "notebook -- add something to reference manual about user-customizable css (easy ticket)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3733",

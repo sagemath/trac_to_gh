@@ -10,6 +10,7 @@ archive/issues_000875.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.10",
     "title": "further work needed on frast Sage --> PARI int conversion",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/875",

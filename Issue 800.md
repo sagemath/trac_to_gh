@@ -10,6 +10,7 @@ archive/issues_000800.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "make _sig_on and _sig_off faster when stacked",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/800",

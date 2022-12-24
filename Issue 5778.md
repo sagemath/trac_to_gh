@@ -10,6 +10,7 @@ archive/issues_005778.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
     "title": "More p-adic doctests",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5778",

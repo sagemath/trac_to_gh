@@ -10,6 +10,7 @@ archive/issues_000554.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.12",
     "title": "the calculus roots command is totally stupid.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/554",

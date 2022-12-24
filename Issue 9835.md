@@ -10,6 +10,7 @@ archive/issues_009835.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
     "title": "Linear Programming Thematic Tutorial",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9835",

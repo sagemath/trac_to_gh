@@ -10,6 +10,7 @@ archive/issues_001663.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "scipy build fails in tr_TR locale",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1663",

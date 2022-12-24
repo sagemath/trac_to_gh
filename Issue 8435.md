@@ -10,6 +10,7 @@ archive/issues_008435.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.4",
     "title": "SageNB 0.7.5.2",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8435",

@@ -10,6 +10,7 @@ archive/issues_009850.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
     "title": "sage -pkg may hang if there are many uncommitted changes in the package",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9850",

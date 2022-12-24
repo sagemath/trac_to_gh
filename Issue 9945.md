@@ -10,6 +10,7 @@ archive/issues_009945.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
     "title": "Parallel build of Singular 3-1-1-4-package fails in other cases",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9945",

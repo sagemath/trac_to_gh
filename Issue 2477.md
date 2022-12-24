@@ -10,6 +10,7 @@ archive/issues_002477.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "3d plotting of graphs -- need to force aspect_ratio=[1,1,1] by default (trivial to fix this!)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2477",

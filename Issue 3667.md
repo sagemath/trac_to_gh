@@ -10,6 +10,7 @@ archive/issues_003667.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.6",
     "title": "[with patch; needs (easy) review] notebook -- if user history can't be loaded from disk make it blank (much better than making entire notebook not work at all)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3667",

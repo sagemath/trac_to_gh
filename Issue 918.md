@@ -10,6 +10,7 @@ archive/issues_000918.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.8",
     "title": "[with patch] improvements for crypto.mq module",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/918",

@@ -10,6 +10,7 @@ archive/issues_009998.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Status of AIX port of Sage.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9998",

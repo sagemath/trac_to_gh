@@ -10,6 +10,7 @@ archive/issues_005903.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.1",
     "title": "Remove dist directories from Sage distribution",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5903",

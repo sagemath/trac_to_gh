@@ -10,6 +10,7 @@ archive/issues_001222.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.15",
     "title": "cvxopt import trouble on PPC OSX 10.4 with 2.8.13.rc0",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1222",

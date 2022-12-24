@@ -10,6 +10,7 @@ archive/issues_003359.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "bug/inconsistency in multivariate polynomial substitution",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3359",

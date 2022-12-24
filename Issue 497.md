@@ -10,6 +10,7 @@ archive/issues_000497.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.4",
     "title": "add minpoly command to finite field elements",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/497",

@@ -10,6 +10,7 @@ archive/issues_008973.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "surf does not build (gcc 4.4.4)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8973",

@@ -10,6 +10,7 @@ archive/issues_004938.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
     "title": "Words.count() returns a Python int instead of a Sage Integer",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4938",

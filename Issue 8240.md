@@ -10,6 +10,7 @@ archive/issues_008240.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-8.1",
     "title": "cannot coerce p-adic field into residue field",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8240",

@@ -10,6 +10,7 @@ archive/issues_000202.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-1.9",
     "title": "Elliptic curve point multiplication bug.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/202",

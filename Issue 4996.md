@@ -10,6 +10,7 @@ archive/issues_004996.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "OSX64: add proper libcsage build support",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4996",

@@ -10,6 +10,7 @@ archive/issues_008443.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.4",
     "title": "Active cell jumps to end of worksheet when evaluating a cell",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8443",

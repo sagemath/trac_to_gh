@@ -10,6 +10,7 @@ archive/issues_008389.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.2",
     "title": "Sage eats all memory trying to evaluate MatrixSpace(QQ, 2)['x']",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8389",

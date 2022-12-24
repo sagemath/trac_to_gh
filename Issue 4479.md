@@ -10,6 +10,7 @@ archive/issues_004479.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
     "title": "sage/logic/logic.py contains a trivial typo: \" varaiable\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4479",

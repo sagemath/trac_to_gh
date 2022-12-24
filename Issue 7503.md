@@ -10,6 +10,7 @@ archive/issues_007503.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "M4RI source code needs looking at, as lint finds some issues.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7503",

@@ -10,6 +10,7 @@ archive/issues_001176.json:
         "trivial",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.13",
     "title": "[with patch] \\em -> \\emph in documentation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1176",

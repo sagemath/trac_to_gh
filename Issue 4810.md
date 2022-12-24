@@ -10,6 +10,7 @@ archive/issues_004810.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "qepcad-1.50 fails to build without tcsh",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4810",

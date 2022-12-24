@@ -10,6 +10,7 @@ archive/issues_002546.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "vectors over SR should be callable? over function rings?",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2546",

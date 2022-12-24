@@ -10,6 +10,7 @@ archive/issues_002661.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
     "title": "sage cannot compute floor / ceil of log(8)/log(2)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2661",

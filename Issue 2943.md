@@ -10,6 +10,7 @@ archive/issues_002943.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "bug with power series and/or p-adics",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2943",

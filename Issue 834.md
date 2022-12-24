@@ -10,6 +10,7 @@ archive/issues_000834.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
     "title": "performance issue -- echelon strassen mod p -- Sage is better than linbox on my computer., so why use linbox by default",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/834",

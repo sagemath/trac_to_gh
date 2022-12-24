@@ -10,6 +10,7 @@ archive/issues_002683.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
     "title": "[with patch, needs review]  Add initial support of k-Schur functions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2683",

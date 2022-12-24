@@ -10,6 +10,7 @@ archive/issues_003898.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Make an optional, self contained gcc 4.3.1.spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3898",

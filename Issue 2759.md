@@ -10,6 +10,7 @@ archive/issues_002759.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "[with patch; needs review] SAGE debian/ directory updates",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2759",

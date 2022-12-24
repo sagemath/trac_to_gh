@@ -10,6 +10,7 @@ archive/issues_005221.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
     "title": "default cmap for contour plot makes last contour line invisible when fill=False",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5221",

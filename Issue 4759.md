@@ -10,6 +10,7 @@ archive/issues_004759.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "add branch option to sage -upgrade",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4759",

@@ -10,6 +10,7 @@ archive/issues_001207.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.13",
     "title": "[with patch] allow ctrl-c in Gr\u00f6bner basis computation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1207",

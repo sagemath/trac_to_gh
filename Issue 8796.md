@@ -10,6 +10,7 @@ archive/issues_008796.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.4",
     "title": "clean up documentation of logic/propcalc.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8796",

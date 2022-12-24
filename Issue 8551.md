@@ -10,6 +10,7 @@ archive/issues_008551.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "ace-5.0 package has gap version hardwired, etc.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8551",

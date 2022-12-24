@@ -10,6 +10,7 @@ archive/issues_002247.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
     "title": "[with patch, needs wildly trivial review] comment out long doctest in totallyreal_rel.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2247",

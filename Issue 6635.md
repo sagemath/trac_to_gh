@@ -10,6 +10,7 @@ archive/issues_006635.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "implement more critical Hecke algebra functionality: index in saturation, discriminant",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6635",

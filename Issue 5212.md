@@ -10,6 +10,7 @@ archive/issues_005212.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "[with patch, needs review] bug with numbers in names in sage.structure.parent_gens.normalize_names",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5212",

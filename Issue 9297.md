@@ -10,6 +10,7 @@ archive/issues_009297.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Test failures of Python (2.6.4.p9) on Solaris 10 SPARC (32-bit)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9297",

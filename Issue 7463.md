@@ -10,6 +10,7 @@ archive/issues_007463.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "document memory management for the magma interface",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7463",

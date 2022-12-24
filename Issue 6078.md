@@ -10,6 +10,7 @@ archive/issues_006078.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.2",
     "title": "Add compatibility functions with deprecation warnings for QF code after doctest patch",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6078",

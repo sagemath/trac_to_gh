@@ -10,6 +10,7 @@ archive/issues_004032.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "[with spkg, needs review] Add x86 Solaris build support for libSingular",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4032",

@@ -10,6 +10,7 @@ archive/issues_008020.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.2",
     "title": "python-2.6.4.p4 spkg *totally breaks* itanium support",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8020",

@@ -10,6 +10,7 @@ archive/issues_005740.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1",
     "title": "typo in docstring for taylor series (really easy!)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5740",

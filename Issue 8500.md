@@ -10,6 +10,7 @@ archive/issues_008500.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.4",
     "title": "Add number_of_transitive_group function",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8500",

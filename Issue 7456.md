@@ -10,6 +10,7 @@ archive/issues_007456.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "developer guide: discuss proper ReST markup for citations",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7456",

@@ -10,6 +10,7 @@ archive/issues_004098.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "\"T1 =  M1.hecke_operator(13^9)\" blows up on 32 bit builds",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4098",

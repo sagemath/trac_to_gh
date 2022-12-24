@@ -10,6 +10,7 @@ archive/issues_005641.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "plotting of matrices with 0 rows or columns is broken in multiple ways",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5641",

@@ -10,6 +10,7 @@ archive/issues_002283.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
     "title": "the coercion code (in __mul__) should call __rmul__ when left or right is not coercible to a Sage element",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2283",

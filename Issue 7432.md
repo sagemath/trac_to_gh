@@ -10,6 +10,7 @@ archive/issues_007432.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2.1",
     "title": "Missing ` ` in hecke/module.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7432",

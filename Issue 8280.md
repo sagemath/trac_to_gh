@@ -10,6 +10,7 @@ archive/issues_008280.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.3",
     "title": "cygwin: zn_poly shared library named incorrectly on cygwin",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8280",

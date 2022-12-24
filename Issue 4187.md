@@ -10,6 +10,7 @@ archive/issues_004187.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
     "title": "Fix compilation problem for libfplll.spkg on Solaris 10",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4187",

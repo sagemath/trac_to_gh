@@ -10,6 +10,7 @@ archive/issues_008701.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-8.1",
     "title": "implement scalar-valued Siegel modular forms on Sp(4,Z)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8701",

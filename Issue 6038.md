@@ -10,6 +10,7 @@ archive/issues_006038.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
     "title": "add implicit_plot3d to the reference manual (and maybe an example in the tutorial)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6038",

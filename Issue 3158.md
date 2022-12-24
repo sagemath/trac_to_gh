@@ -10,6 +10,7 @@ archive/issues_003158.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
     "title": "singular-3-0-4-2-20080405.p1 requires flex",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3158",

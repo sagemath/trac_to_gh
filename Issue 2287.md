@@ -10,6 +10,7 @@ archive/issues_002287.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
     "title": "error installing rubiks",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2287",

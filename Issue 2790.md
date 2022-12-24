@@ -10,6 +10,7 @@ archive/issues_002790.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "very annoying output of new \"sage -tp\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2790",

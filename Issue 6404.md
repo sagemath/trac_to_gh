@@ -10,6 +10,7 @@ archive/issues_006404.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
     "title": "Typeseting for conjugate() of symbolic function is inadequate",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6404",

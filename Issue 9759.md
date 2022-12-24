@@ -10,6 +10,7 @@ archive/issues_009759.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.3",
     "title": "Possible numerical noise doctest failure in sage/matrix/matrix2.pyx on t2",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9759",

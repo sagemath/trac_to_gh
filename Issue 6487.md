@@ -10,6 +10,7 @@ archive/issues_006487.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Plethysm with the zero symmetric function causes a segfault",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6487",

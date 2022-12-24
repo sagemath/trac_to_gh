@@ -10,6 +10,7 @@ archive/issues_004847.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.3",
     "title": "[with patch, needs review] Remove deadwood: sage/functions/elementary.py and sage/rings/interval.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4847",

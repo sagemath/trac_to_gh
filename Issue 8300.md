@@ -10,6 +10,7 @@ archive/issues_008300.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4",
     "title": "native algdep with proof option",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8300",

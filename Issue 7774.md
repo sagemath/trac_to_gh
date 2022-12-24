@@ -10,6 +10,7 @@ archive/issues_007774.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "notebook: after performing \"evaluate all\" behauviour of  creating new cells changes.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7774",

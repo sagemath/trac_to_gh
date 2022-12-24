@@ -10,6 +10,7 @@ archive/issues_009214.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.4",
     "title": "Bring doc coverage of combinat/lyndon_word.py to 100%",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9214",

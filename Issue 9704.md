@@ -10,6 +10,7 @@ archive/issues_009704.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "refactor \"trace\" -- make trace command call trace method on input if available",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9704",

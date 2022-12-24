@@ -10,6 +10,7 @@ archive/issues_003766.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "move sage_fortran from fortran spkg to sage_scripts spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3766",

@@ -10,6 +10,7 @@ archive/issues_003079.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "quaddouble configuration and spkg-install cleaning",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3079",

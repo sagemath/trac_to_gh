@@ -10,6 +10,7 @@ archive/issues_000638.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
     "title": "notebook improvement -- allow comment at beginning of text version of notebook",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/638",

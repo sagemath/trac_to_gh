@@ -10,6 +10,7 @@ archive/issues_000908.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.11",
     "title": "paru/gen.c causes internal compiler error on OpenSuSE 10.2",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/908",

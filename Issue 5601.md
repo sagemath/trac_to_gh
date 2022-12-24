@@ -10,6 +10,7 @@ archive/issues_005601.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.4",
     "title": "predefine colors in Sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5601",

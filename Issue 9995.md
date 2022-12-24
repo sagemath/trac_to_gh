@@ -10,6 +10,7 @@ archive/issues_009995.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Flint is installing shared library with .so extension on AIX - it should be .a on AIX",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9995",

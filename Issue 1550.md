@@ -10,6 +10,7 @@ archive/issues_001550.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
     "title": "use libecm instead of pexpect+ecm binary",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1550",

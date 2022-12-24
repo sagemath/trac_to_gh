@@ -10,6 +10,7 @@ archive/issues_009076.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
     "title": "plot Arc of circle and ellipse",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9076",

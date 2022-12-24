@@ -10,6 +10,7 @@ archive/issues_009829.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "SageNB: Bad Request. Maximum length of 102400 bytes exceeded.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9829",

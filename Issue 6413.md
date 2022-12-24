@@ -10,6 +10,7 @@ archive/issues_006413.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "Retrieving the multiplication-by-p isogeny on elliptic curves over fields of characteristic p fails.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6413",

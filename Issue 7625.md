@@ -10,6 +10,7 @@ archive/issues_007625.json:
         "blocker",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "include new version of sagenb (0.4.5)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7625",

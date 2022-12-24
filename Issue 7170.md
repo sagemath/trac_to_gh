@@ -10,6 +10,7 @@ archive/issues_007170.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "HP-UX failure of rubiks as no 'install' program.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7170",

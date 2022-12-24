@@ -10,6 +10,7 @@ archive/issues_007325.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.2",
     "title": "Sage cannot solve inequalities",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7325",

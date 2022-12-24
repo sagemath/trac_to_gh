@@ -10,6 +10,7 @@ archive/issues_005935.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "graph theory docs -- sage: graphs_query.[tab]             # not tested",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5935",

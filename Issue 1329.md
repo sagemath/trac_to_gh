@@ -10,6 +10,7 @@ archive/issues_001329.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
     "title": "2.8.14/Solaris: real_rqdf.pyx compile fixes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1329",

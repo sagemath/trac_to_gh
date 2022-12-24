@@ -10,6 +10,7 @@ archive/issues_004113.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "[with patch, needs review] Doctest failure in free_module.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4113",

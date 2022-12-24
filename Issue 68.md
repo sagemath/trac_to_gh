@@ -10,6 +10,7 @@ archive/issues_000068.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
     "title": "notebook/worksheets -- be able to edit them as plain text, just like one can edit a wiki page as plain text.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/68",

@@ -10,6 +10,7 @@ archive/issues_001138.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "add implementation of tonelli-shanks to sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1138",

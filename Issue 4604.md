@@ -10,6 +10,7 @@ archive/issues_004604.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "Graphics() should work in 3d as a valid empty object",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4604",

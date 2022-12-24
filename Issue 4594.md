@@ -10,6 +10,7 @@ archive/issues_004594.json:
         "trivial",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
     "title": "typos in files under sage/algebras",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4594",

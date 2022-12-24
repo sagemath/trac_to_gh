@@ -10,6 +10,7 @@ archive/issues_009802.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
     "title": "Generalize and document the random_matrix constructor",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9802",

@@ -10,6 +10,7 @@ archive/issues_006624.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "remove json function from server/simple/twist.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6624",

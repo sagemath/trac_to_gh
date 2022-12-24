@@ -10,6 +10,7 @@ archive/issues_008356.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.4",
     "title": "python is configured with an unreconised option",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8356",

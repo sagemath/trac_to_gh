@@ -10,6 +10,7 @@ archive/issues_002458.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
     "title": "bug in linbox's spkg-install: ${SAGE_LCOAL}",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2458",

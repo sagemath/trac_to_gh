@@ -10,6 +10,7 @@ archive/issues_006753.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
     "title": "sage-4.1.1 -- bug in integral_elements_in_box",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6753",

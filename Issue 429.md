@@ -10,6 +10,7 @@ archive/issues_000429.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.2",
     "title": "cannot create empty sparse matrix over reals",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/429",

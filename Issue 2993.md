@@ -10,6 +10,7 @@ archive/issues_002993.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.1",
     "title": "[with spkg, needs review] OSX/gcc 4.2: disable padlock support per default",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2993",

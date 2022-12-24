@@ -10,6 +10,7 @@ archive/issues_003783.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "cached_method could use some improvements",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3783",

@@ -10,6 +10,7 @@ archive/issues_006801.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "weird bug in magma.eval",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6801",

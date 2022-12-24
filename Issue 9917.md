@@ -10,6 +10,7 @@ archive/issues_009917.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6.2",
     "title": "triangulate point configurations",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9917",

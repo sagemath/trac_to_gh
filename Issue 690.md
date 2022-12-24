@@ -10,6 +10,7 @@ archive/issues_000690.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.3",
     "title": "VMware sage doesn't allow creation of files",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/690",

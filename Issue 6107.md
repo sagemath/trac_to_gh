@@ -10,6 +10,7 @@ archive/issues_006107.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
     "title": "[with patch, needs review] misc. fixes for symbolics for 4.0.rc0",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6107",

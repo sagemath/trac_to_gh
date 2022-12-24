@@ -10,6 +10,7 @@ archive/issues_002037.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
     "title": "out-of-date tutorial section on errors and exceptions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2037",

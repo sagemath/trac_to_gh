@@ -10,6 +10,7 @@ archive/issues_002857.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "numerical_approx for matrices",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2857",

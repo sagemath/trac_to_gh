@@ -10,6 +10,7 @@ archive/issues_003768.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "move jsmath into its own spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3768",

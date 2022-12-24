@@ -10,6 +10,7 @@ archive/issues_002113.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "twisted.web2 should be gzip compressing things it sends out to the notebook",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2113",

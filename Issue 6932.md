@@ -10,6 +10,7 @@ archive/issues_006932.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.4",
     "title": "jordan_form with transformation=true fails on a 1x1 matrix.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6932",

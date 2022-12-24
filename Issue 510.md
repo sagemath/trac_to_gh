@@ -10,6 +10,7 @@ archive/issues_000510.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
     "title": "IPython crashes on \"import sage.rings.real_mpfr\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/510",

@@ -10,6 +10,7 @@ archive/issues_005730.json:
         "blocker",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
     "title": "Add a line to the output of \"sage -coverage .\" which lists how many more tests are needed to get to 75% coverage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5730",

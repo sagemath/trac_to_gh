@@ -10,6 +10,7 @@ archive/issues_002154.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
     "title": "Infinite memory allocation bug in PermutationGroupElement",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2154",

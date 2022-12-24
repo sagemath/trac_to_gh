@@ -10,6 +10,7 @@ archive/issues_006181.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "The r-2.6.1.p22 spkg was created on OSX hence contains a bunch of crap",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6181",

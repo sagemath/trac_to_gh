@@ -10,6 +10,7 @@ archive/issues_004967.json:
         "trivial",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "[with patch] Trouble with .gaprc file when compiling from source",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4967",

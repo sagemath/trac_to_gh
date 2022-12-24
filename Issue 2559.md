@@ -10,6 +10,7 @@ archive/issues_002559.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "issue with roots() over Algebraic Real field",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2559",

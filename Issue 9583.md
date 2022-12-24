@@ -10,6 +10,7 @@ archive/issues_009583.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.2",
     "title": "Unhandled SIGSEGV with 4.5.2.alpha0 on t2",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9583",

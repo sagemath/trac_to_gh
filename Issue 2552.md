@@ -10,6 +10,7 @@ archive/issues_002552.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.4",
     "title": "fix problems in the combinat reference manual caused by #2432",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2552",

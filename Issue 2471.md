@@ -10,6 +10,7 @@ archive/issues_002471.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
     "title": "[with patch; needs review] doctest failures in graph.py and factorization.py (caused by architecture dependence)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2471",

@@ -10,6 +10,7 @@ archive/issues_009760.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.3",
     "title": "Adjust spkg/standard/deps to build Python before zn_poly",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9760",

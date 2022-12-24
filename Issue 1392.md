@@ -10,6 +10,7 @@ archive/issues_001392.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.15",
     "title": "factors of factorizations weren't fully sorted -- they were only sorted based on the degree and exponent, but not the actual irreducible factor.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1392",

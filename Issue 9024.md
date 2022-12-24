@@ -10,6 +10,7 @@ archive/issues_009024.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.4",
     "title": "tachyon is buiding 32-bit on OpenSolaris x64 even when SAGE64 is set to \"yes\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9024",

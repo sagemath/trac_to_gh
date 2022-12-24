@@ -10,6 +10,7 @@ archive/issues_003897.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
     "title": "bug in local_information due to the lack of residue_field for ZZ",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3897",

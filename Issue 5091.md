@@ -10,6 +10,7 @@ archive/issues_005091.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "find_root should call fast_float",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5091",

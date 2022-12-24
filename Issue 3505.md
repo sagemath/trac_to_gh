@@ -10,6 +10,7 @@ archive/issues_003505.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "change ints to Py_ssize_t in various pickling code in sage/matrix",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3505",

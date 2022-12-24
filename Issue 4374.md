@@ -10,6 +10,7 @@ archive/issues_004374.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
     "title": "Numerical noise doctest failure in sage/tests/book_stein_ent.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4374",

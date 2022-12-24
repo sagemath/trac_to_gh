@@ -10,6 +10,7 @@ archive/issues_002872.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.3",
     "title": "3d graphics can't be saved to a file",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2872",

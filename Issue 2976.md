@@ -10,6 +10,7 @@ archive/issues_002976.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "get rid of /home/jec/sage-3.0.rc0/tmp/test-dsage.log error at the end of tests",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2976",

@@ -10,6 +10,7 @@ archive/issues_000567.json:
         "trivial",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.4",
     "title": "ode_solver: display a user-friendly error message if the jacobian is not provided for the bsimp algorithm",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/567",

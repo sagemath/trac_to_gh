@@ -10,6 +10,7 @@ archive/issues_007433.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "notebook: changing title of worksheet changes title of corresponding published worksheet",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7433",

@@ -10,6 +10,7 @@ archive/issues_008258.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "get \"make documentation\" relocation-safe",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8258",

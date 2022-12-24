@@ -10,6 +10,7 @@ archive/issues_005389.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6.1",
     "title": "Creating a  updated workspace with -tp is racy",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5389",

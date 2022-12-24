@@ -10,6 +10,7 @@ archive/issues_003107.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.3",
     "title": "Triangulation doesn't automatically happen for x3d output of 3d objects",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3107",

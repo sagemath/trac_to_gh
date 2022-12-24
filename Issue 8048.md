@@ -10,6 +10,7 @@ archive/issues_008048.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "command to gather build report on a platform/hardware combination",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8048",

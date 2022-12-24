@@ -10,6 +10,7 @@ archive/issues_002188.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "mathematically senseless bit-shift operations in integer_mod.pyx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2188",

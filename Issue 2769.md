@@ -10,6 +10,7 @@ archive/issues_002769.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "matplotlib produces invalid PDFs with axes=False",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2769",

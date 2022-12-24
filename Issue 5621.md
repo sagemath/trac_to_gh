@@ -10,6 +10,7 @@ archive/issues_005621.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
     "title": "doctests for calculus.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5621",

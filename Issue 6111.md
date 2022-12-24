@@ -10,6 +10,7 @@ archive/issues_006111.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
     "title": "[with patch; needs review] review symbolics in sage-4.0 (switch to pynac)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6111",

@@ -10,6 +10,7 @@ archive/issues_009516.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "numerical noise in sage-4.5.rc1 on PowerPC OS X",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9516",

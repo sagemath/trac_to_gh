@@ -10,6 +10,7 @@ archive/issues_001624.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "update jsmath to 3.4f",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1624",

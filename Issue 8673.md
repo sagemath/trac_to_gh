@@ -10,6 +10,7 @@ archive/issues_008673.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.7",
     "title": "No KeyErrror raised when it should for FiniteWord_callable",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8673",

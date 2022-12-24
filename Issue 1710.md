@@ -10,6 +10,7 @@ archive/issues_001710.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
     "title": "switch default location of trac server away from http://www.sagemath.org:9002/",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1710",

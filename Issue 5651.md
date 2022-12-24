@@ -10,6 +10,7 @@ archive/issues_005651.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
     "title": "make it so plot(...) passes extra options to show (maybe only those that makes sense)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5651",

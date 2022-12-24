@@ -10,6 +10,7 @@ archive/issues_006223.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.10",
     "title": "Remove ext/python_*.pxi",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6223",

@@ -10,6 +10,7 @@ archive/issues_003932.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
     "title": "Should we merge the \"generate size n trees in linear time\" code from  \t  Ryan Dingman",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3932",

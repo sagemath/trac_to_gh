@@ -10,6 +10,7 @@ archive/issues_001803.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10",
     "title": "Add HISTORY.txt to $SAGE_ROOT",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1803",

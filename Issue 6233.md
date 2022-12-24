@@ -10,6 +10,7 @@ archive/issues_006233.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.1",
     "title": "remove the explain_picklejar function, since it is self contained and its test fails on all platforms",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6233",

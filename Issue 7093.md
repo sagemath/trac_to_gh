@@ -10,6 +10,7 @@ archive/issues_007093.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
     "title": "fast_eval -- numerical noise on OS X 10.6",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7093",

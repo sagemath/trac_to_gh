@@ -10,6 +10,7 @@ archive/issues_009891.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.9",
     "title": "Eliminate (or minimize) #include <pari/paripriv.h>",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9891",

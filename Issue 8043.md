@@ -10,6 +10,7 @@ archive/issues_008043.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4",
     "title": "#7544 breaks #7355: \"sage -i foo\" does not automatically find the version number",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8043",

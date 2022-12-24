@@ -10,6 +10,7 @@ archive/issues_000180.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "-s option to sage issues",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/180",

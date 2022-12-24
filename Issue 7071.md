@@ -10,6 +10,7 @@ archive/issues_007071.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.0",
     "title": "palp-1.1.p1 ignores CC variable and uses gcc, so fails with Sun Studio.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7071",

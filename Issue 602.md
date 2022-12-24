@@ -11,6 +11,7 @@ archive/issues_000602.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.4",
     "title": "sage: (1/2)^(2^100)\nserious powering bug / overflow",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/602",

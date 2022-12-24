@@ -10,6 +10,7 @@ archive/issues_008562.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.2",
     "title": "Categories for IntegerMod rings",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8562",

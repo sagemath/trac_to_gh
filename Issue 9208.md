@@ -10,6 +10,7 @@ archive/issues_009208.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5",
     "title": "Add PKG_CONFIG_PATH to sage-env so problems like matplotlib link properly.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9208",

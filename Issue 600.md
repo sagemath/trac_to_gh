@@ -10,6 +10,7 @@ archive/issues_000600.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "sage -t --optional multi_polynomial_element.py takes *way* too  ram",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/600",

@@ -10,6 +10,7 @@ archive/issues_002102.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "add pull/incoming/outgoing wrappers to HG objects (like hg_sage)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2102",

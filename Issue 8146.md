@@ -10,6 +10,7 @@ archive/issues_008146.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.2",
     "title": "building HTML version of French tutorial is broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8146",

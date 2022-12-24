@@ -10,6 +10,7 @@ archive/issues_005220.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4",
     "title": "Weird or non-appearance of default in input_box in interact",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5220",

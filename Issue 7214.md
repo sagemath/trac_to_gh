@@ -10,6 +10,7 @@ archive/issues_007214.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Spanish doc #2 \"Three Lectures about Explicit Methods in Number Theory Using Sage\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7214",

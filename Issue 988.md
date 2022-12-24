@@ -10,6 +10,7 @@ archive/issues_000988.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.10",
     "title": "[with bundle] Add back in \"bg\" option for edit_module.edit",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/988",

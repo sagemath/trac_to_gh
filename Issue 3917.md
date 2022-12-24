@@ -10,6 +10,7 @@ archive/issues_003917.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "make %html (and other text-cell indicators) imply %hide",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3917",

@@ -10,6 +10,7 @@ archive/issues_009959.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.7.1",
     "title": "require SAGE_CHECK to be \"yes\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9959",

@@ -10,6 +10,7 @@ archive/issues_009231.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.2",
     "title": "bring tachyon interface code to 100% coverage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9231",

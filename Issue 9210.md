@@ -10,6 +10,7 @@ archive/issues_009210.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
     "title": "pkg-config prefix statements in SAGE_LOCAL/lib/pkg-config not changed upon Sage move",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9210",

@@ -10,6 +10,7 @@ archive/issues_009393.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.0",
     "title": "symbolic sum cannot handle python ints",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9393",

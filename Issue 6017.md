@@ -10,6 +10,7 @@ archive/issues_006017.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.2",
     "title": "Provide methods for graphs to set options for latex printing",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6017",

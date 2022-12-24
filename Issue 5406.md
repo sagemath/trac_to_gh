@@ -10,6 +10,7 @@ archive/issues_005406.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4",
     "title": "[with patch, needs review] Remove the doc repo from Sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5406",

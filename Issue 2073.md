@@ -10,6 +10,7 @@ archive/issues_002073.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
     "title": "calculus -- get doctest coverage up to 100%",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2073",

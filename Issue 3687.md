@@ -10,6 +10,7 @@ archive/issues_003687.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
     "title": "trivial problems in the sage_scripts spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3687",

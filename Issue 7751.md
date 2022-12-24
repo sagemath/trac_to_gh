@@ -10,6 +10,7 @@ archive/issues_007751.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.3",
     "title": "Kazhdan-Lusztig polynomials, Bruhat order, and related features [with patch, needs review]",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7751",

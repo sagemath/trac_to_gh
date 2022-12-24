@@ -10,6 +10,7 @@ archive/issues_005701.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.2",
     "title": "Remove Guava from standard Sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5701",

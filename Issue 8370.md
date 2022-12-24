@@ -10,6 +10,7 @@ archive/issues_008370.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.1",
     "title": "Add tour_functions to the French tutorial (cf. #5463)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8370",

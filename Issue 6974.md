@@ -10,6 +10,7 @@ archive/issues_006974.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
     "title": "cygwin port: make all the crypto ssl-ish spkg's into dummy packages on Cygwin (where we can use the system openssl instead)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6974",

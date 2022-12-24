@@ -10,6 +10,7 @@ archive/issues_003205.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
     "title": "when the notebook scrolls to a new cell that is created, the jsmath box obscures the bottom cell",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3205",

@@ -10,6 +10,7 @@ archive/issues_008813.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "symbolic expression -- doctest failure in sage-4.4.1.alpha0",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8813",

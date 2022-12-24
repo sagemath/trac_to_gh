@@ -10,6 +10,7 @@ archive/issues_000167.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.3",
     "title": "sage web site fixes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/167",

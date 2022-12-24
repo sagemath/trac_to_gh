@@ -10,6 +10,7 @@ archive/issues_009676.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
     "title": "Random Tree constructor for graphs section",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9676",

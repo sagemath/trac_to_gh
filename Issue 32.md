@@ -10,6 +10,7 @@ archive/issues_000032.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-1.8",
     "title": "missing coercion functionality",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/32",

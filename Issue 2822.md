@@ -10,6 +10,7 @@ archive/issues_002822.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "Invalid read in libgroebner.so [picked up by valgrinding catalogue.py]",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2822",

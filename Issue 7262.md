@@ -10,6 +10,7 @@ archive/issues_007262.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.2",
     "title": "Have multiplcation_by_m() return an EllipticCurveIsogeny object",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7262",

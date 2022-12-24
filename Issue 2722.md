@@ -10,6 +10,7 @@ archive/issues_002722.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
     "title": "[with patch; needs trivial review] interact -- a doctest problem",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2722",

@@ -10,6 +10,7 @@ archive/issues_004868.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "optional polymake spkg quickly fails to build on sage.math",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4868",

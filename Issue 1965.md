@@ -10,6 +10,7 @@ archive/issues_001965.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "renable of caching for loading or attaching spyx files",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1965",

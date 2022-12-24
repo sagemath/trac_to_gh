@@ -10,6 +10,7 @@ archive/issues_000960.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.10",
     "title": "reconsider how floating point values are printed",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/960",

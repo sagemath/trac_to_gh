@@ -10,6 +10,7 @@ archive/issues_008637.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.2",
     "title": "typo in sagenb/data/sage/html/worksheet_listing.html, line 117",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8637",

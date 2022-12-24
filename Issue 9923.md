@@ -10,6 +10,7 @@ archive/issues_009923.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
     "title": "Doctest error in sage/geometry/polyhedra.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9923",

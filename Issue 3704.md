@@ -10,6 +10,7 @@ archive/issues_003704.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "diagonal_matrix does not accept vectors",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3704",

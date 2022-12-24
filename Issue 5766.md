@@ -10,6 +10,7 @@ archive/issues_005766.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.1",
     "title": "improve coverage of structure/formal_sum.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5766",

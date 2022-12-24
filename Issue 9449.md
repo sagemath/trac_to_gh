@@ -10,6 +10,7 @@ archive/issues_009449.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "The summary printed after running doctests is inaccurate.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9449",

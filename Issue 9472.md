@@ -10,6 +10,7 @@ archive/issues_009472.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.3",
     "title": "Remove (duplicate) BOOST and M4RI source trees from PolyBoRi spkg, some clean-up",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9472",

@@ -10,6 +10,7 @@ archive/issues_009420.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
     "title": "SubgraphSearch class instead of a method, digraphs fixed",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9420",

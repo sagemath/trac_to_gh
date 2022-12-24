@@ -10,6 +10,7 @@ archive/issues_002066.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.4",
     "title": "[with patch; needs review] animate -- bug fix for xmin/ymin/xmax/ymax + add a nice example requested by a user",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2066",

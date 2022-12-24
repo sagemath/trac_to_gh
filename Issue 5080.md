@@ -10,6 +10,7 @@ archive/issues_005080.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1",
     "title": "Bug in decomposing modular symbol subspace",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5080",

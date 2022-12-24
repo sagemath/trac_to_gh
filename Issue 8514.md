@@ -10,6 +10,7 @@ archive/issues_008514.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4",
     "title": "Optional database_gap-4.4.12 fails to install on Solaris 10 SPARC",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8514",

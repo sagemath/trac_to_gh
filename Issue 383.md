@@ -10,6 +10,7 @@ archive/issues_000383.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "quo_rem in the polynomial rings does not use canonical coercion",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/383",

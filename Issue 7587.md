@@ -10,6 +10,7 @@ archive/issues_007587.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "improve multi_polynomial_libsingular exponent method",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7587",

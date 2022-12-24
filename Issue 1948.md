@@ -10,6 +10,7 @@ archive/issues_001948.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "K.factor_integer needs a name change, since now it does much more",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1948",

@@ -10,6 +10,7 @@ archive/issues_000671.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
     "title": "Solaris 10: interfaces/singular.py doctests failure",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/671",

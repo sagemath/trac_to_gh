@@ -10,6 +10,7 @@ archive/issues_000967.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.9",
     "title": "[with patch] inplace operators for GF(p),GF(p^n) and MPolynomial_libsingular",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/967",

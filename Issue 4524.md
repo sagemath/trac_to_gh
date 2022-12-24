@@ -10,6 +10,7 @@ archive/issues_004524.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "interact : incomplete default string in the input box",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4524",

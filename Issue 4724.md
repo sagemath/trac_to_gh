@@ -10,6 +10,7 @@ archive/issues_004724.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
     "title": "expose pari's galois and finer number field interfaces",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4724",

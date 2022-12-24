@@ -10,6 +10,7 @@ archive/issues_005092.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
     "title": "Primes()?? gets hung in len call",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5092",

@@ -10,6 +10,7 @@ archive/issues_005367.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "bug in composition of power series",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5367",

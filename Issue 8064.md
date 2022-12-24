@@ -10,6 +10,7 @@ archive/issues_008064.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.3",
     "title": "New iml-1.0.1.p12.spkg works with Open Solaris 64 bit",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8064",

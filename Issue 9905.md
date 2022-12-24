@@ -10,6 +10,7 @@ archive/issues_009905.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.4",
     "title": "Move the RPy package outside of the R package",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9905",

@@ -10,6 +10,7 @@ archive/issues_001029.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.13",
     "title": "update flint in sage again",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1029",

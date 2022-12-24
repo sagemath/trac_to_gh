@@ -10,6 +10,7 @@ archive/issues_005417.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "Fix some more deepcopy issues (followup to #5403)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5417",

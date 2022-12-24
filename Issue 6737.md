@@ -10,6 +10,7 @@ archive/issues_006737.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "change occurrences of \"Pyrex\" to \"Cython\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6737",

@@ -10,6 +10,7 @@ archive/issues_003460.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
     "title": "[with patch, needs review] add power_basis() to number fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3460",

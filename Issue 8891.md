@@ -10,6 +10,7 @@ archive/issues_008891.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5",
     "title": "sage -t doesn't accept . as current directory",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8891",

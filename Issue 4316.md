@@ -10,6 +10,7 @@ archive/issues_004316.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "notebook: '%html $x<y$' doesn't work right",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4316",

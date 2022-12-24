@@ -10,6 +10,7 @@ archive/issues_002418.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "pari polroots gives division by zero sometimes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2418",

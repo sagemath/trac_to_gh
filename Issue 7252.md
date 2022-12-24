@@ -10,6 +10,7 @@ archive/issues_007252.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
     "title": "[with patch, needs review] fix spkg/install",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7252",

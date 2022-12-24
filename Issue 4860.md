@@ -10,6 +10,7 @@ archive/issues_004860.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "upgrade networkx to 0.99 upstream release",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4860",

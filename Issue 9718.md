@@ -10,6 +10,7 @@ archive/issues_009718.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "iconv fails to build on Solaris 10 x86 64-bit - host fulvia",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9718",

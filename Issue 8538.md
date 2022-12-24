@@ -10,6 +10,7 @@ archive/issues_008538.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.8",
     "title": "Update mpi4py (MPI for Python) to the latest version (1.2.1)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8538",

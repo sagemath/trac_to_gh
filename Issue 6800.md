@@ -10,6 +10,7 @@ archive/issues_006800.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "[with patch, needs review] formal/lazy/infinite powerseries",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6800",

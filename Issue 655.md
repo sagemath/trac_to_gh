@@ -10,6 +10,7 @@ archive/issues_000655.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.5",
     "title": "Wrap LinBox's Sparse Matrix Echelonizer over Finite Fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/655",

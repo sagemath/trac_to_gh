@@ -10,6 +10,7 @@ archive/issues_008700.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.4",
     "title": "the libpng-1.2.35.p0 in sage-4.4.alpha0 contains an extra copy of libpng-1.2.35!",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8700",

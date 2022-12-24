@@ -10,6 +10,7 @@ archive/issues_001735.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10",
     "title": "do not mark a spkg as installed if sage-check fails",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1735",

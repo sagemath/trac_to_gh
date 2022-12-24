@@ -10,6 +10,7 @@ archive/issues_004368.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
     "title": "Create a function which gets an attributed from an object and calls it with specified arguments and keywords",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4368",

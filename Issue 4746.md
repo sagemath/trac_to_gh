@@ -10,6 +10,7 @@ archive/issues_004746.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "Bug in srange",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4746",

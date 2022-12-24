@@ -10,6 +10,7 @@ archive/issues_005826.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
     "title": "add nodoctest to sagedoc.py and sageinspect.py to work around #5806",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5826",

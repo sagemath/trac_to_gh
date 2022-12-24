@@ -10,6 +10,7 @@ archive/issues_003784.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "add support for SAGE_PYTHONPATH",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3784",

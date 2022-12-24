@@ -10,6 +10,7 @@ archive/issues_004790.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "sage -t does not take into account the current directory",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4790",

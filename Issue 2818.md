@@ -10,6 +10,7 @@ archive/issues_002818.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "notebook -- document most functions in js.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2818",

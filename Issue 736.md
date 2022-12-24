@@ -10,6 +10,7 @@ archive/issues_000736.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.6",
     "title": "combinatorics updates",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/736",

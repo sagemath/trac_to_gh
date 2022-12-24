@@ -10,6 +10,7 @@ archive/issues_004988.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "major easy-to-fix but STUPID bug in gcd",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4988",

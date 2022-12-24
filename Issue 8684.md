@@ -10,6 +10,7 @@ archive/issues_008684.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6.1",
     "title": "clean up graph theory documentation in the reference manual",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8684",

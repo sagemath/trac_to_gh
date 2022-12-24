@@ -10,6 +10,7 @@ archive/issues_009928.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "polynomial ring over pAdics doesn't respect the sparse argument",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9928",

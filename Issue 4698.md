@@ -10,6 +10,7 @@ archive/issues_004698.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
     "title": "[with patch, needs review] a single make_element function for pickling is hard to maintain",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4698",

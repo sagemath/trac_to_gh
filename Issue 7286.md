@@ -10,6 +10,7 @@ archive/issues_007286.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2.1",
     "title": "After installing sphinx-0.6.3.p1.spkg, error occurs during docbuild",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7286",

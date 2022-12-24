@@ -10,6 +10,7 @@ archive/issues_006502.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "[with Patch, needs review] Linear Program Solver and Mixed Integer Program Solver in SAGE",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6502",

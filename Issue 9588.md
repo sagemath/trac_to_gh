@@ -10,6 +10,7 @@ archive/issues_009588.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.2",
     "title": "Extend is_prime_power to negative exponents",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9588",

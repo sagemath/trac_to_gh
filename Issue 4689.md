@@ -10,6 +10,7 @@ archive/issues_004689.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.2",
     "title": "Documentation documenting the wrong thing",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4689",

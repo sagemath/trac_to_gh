@@ -10,6 +10,7 @@ archive/issues_000137.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
     "title": "notebook %form widget maker",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/137",

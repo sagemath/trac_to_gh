@@ -10,6 +10,7 @@ archive/issues_000974.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.9",
     "title": "[with spkg] small memleak in nullspace.c in IML",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/974",

@@ -10,6 +10,7 @@ archive/issues_003381.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "iconv library needs to be added to Sage to allow R to build on Solaris.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3381",

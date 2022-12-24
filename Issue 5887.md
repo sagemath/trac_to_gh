@@ -10,6 +10,7 @@ archive/issues_005887.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
     "title": "major bug in images of homorphisms of R-modules",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5887",

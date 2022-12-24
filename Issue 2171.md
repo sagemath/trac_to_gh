@@ -10,6 +10,7 @@ archive/issues_002171.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
     "title": "[with patch; needs review] followup to #2169 -- (magma/sage interface) some further optimizations and fixes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2171",

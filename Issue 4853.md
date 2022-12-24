@@ -10,6 +10,7 @@ archive/issues_004853.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.3",
     "title": "Sage 3.2.2: numerical noise in sage/rings/number_field/number_field_morphisms.pyx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4853",

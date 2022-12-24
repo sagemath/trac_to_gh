@@ -10,6 +10,7 @@ archive/issues_002742.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "add crystals to the main branch of Sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2742",

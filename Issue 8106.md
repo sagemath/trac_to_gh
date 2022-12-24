@@ -10,6 +10,7 @@ archive/issues_008106.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Minor update on $SAGE_ROOT/README.txt",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8106",

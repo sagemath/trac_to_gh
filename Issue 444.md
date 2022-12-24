@@ -10,6 +10,7 @@ archive/issues_000444.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9",
     "title": "solve the rubik's cube fast!",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/444",

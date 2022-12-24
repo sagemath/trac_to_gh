@@ -10,6 +10,7 @@ archive/issues_006090.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "plot(x^2, (x, -2, 2), fill=2) does not match documentation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6090",

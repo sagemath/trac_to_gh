@@ -10,6 +10,7 @@ archive/issues_006775.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.3",
     "title": "Having an easy to use Disjoint Set data structure",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6775",

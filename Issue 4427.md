@@ -10,6 +10,7 @@ archive/issues_004427.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
     "title": "[with patch, needs review] use RTLD symbols instead of constants in init_singular",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4427",

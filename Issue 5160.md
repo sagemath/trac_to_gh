@@ -10,6 +10,7 @@ archive/issues_005160.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.4",
     "title": "Change name of misc/sagex_ds.pyx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5160",

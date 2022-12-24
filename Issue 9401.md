@@ -10,6 +10,7 @@ archive/issues_009401.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.2",
     "title": "pari(n).isprime(1) does not give the primality certificate to the user",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9401",

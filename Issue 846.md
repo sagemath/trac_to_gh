@@ -10,6 +10,7 @@ archive/issues_000846.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
     "title": "Split cdefs.pxi",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/846",

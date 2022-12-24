@@ -10,6 +10,7 @@ archive/issues_002273.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "matrix exponentials",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2273",

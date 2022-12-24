@@ -10,6 +10,7 @@ archive/issues_009622.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Check SPKGs more vigorously for common problems",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9622",

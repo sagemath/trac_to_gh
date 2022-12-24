@@ -10,6 +10,7 @@ archive/issues_008027.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "change the wiki(...) command to store data in $HOME/.sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8027",

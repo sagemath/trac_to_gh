@@ -10,6 +10,7 @@ archive/issues_009830.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Strange behaviour of Permutation(list) when list contains 0",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9830",

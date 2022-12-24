@@ -10,6 +10,7 @@ archive/issues_009776.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-9.5",
     "title": "include more rings in random testing",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9776",

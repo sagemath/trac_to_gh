@@ -10,6 +10,7 @@ archive/issues_009301.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Modified check_edge_label in the sparse graph backend to consider equals the same objects rather than objects with the same contents",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9301",

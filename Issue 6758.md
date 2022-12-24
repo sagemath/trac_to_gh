@@ -10,6 +10,7 @@ archive/issues_006758.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "visibility.c in libgcrypt attempts to return value from void function.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6758",

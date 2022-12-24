@@ -10,6 +10,7 @@ archive/issues_003207.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
     "title": "upgrade jsmath to version 3.5",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3207",

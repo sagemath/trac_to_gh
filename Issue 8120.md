@@ -10,6 +10,7 @@ archive/issues_008120.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.3",
     "title": "UniqueRepresentation and hash value",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8120",

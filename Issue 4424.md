@@ -10,6 +10,7 @@ archive/issues_004424.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
     "title": "magma -- make sure .m files have their precompiled versions shiped with Sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4424",

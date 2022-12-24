@@ -10,6 +10,7 @@ archive/issues_003863.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4",
     "title": "numerical integration of x^2.7 * e^(-2.4*x) fails",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3863",

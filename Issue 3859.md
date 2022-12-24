@@ -10,6 +10,7 @@ archive/issues_003859.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-7.1",
     "title": "Line's corner_cutoff is poorly documented, and buggy",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3859",

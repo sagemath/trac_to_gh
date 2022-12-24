@@ -10,6 +10,7 @@ archive/issues_005602.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.2",
     "title": "make .lighter() and .darker() methods for Sage Color objects",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5602",

@@ -10,6 +10,7 @@ archive/issues_001668.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10",
     "title": "fix polybori's variable names: _P->PB_P",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1668",

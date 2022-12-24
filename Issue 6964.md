@@ -10,6 +10,7 @@ archive/issues_006964.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
     "title": "implement computation of Dirichlet character of irreducible cuspidal modular symbols space",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6964",

@@ -10,6 +10,7 @@ archive/issues_007615.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "Fix arctan2 documentation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7615",

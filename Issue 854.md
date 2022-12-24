@@ -10,6 +10,7 @@ archive/issues_000854.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.7",
     "title": "[with patch] memory leak: MultiModularBasis_base_mpz_crt_vec_tail",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/854",

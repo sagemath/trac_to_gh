@@ -10,6 +10,7 @@ archive/issues_009477.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "jmol shows a black screen in the notebook, it works fine in the reference manual",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9477",

@@ -10,6 +10,7 @@ archive/issues_008896.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-pending",
     "title": "0.0000000000000000000000000000 is parsed completely differently than 1.0000000000000000000000000000 for no good reason",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8896",

@@ -10,6 +10,7 @@ archive/issues_005683.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
     "title": "Inverse operation for matrices over non integral domain",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5683",

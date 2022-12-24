@@ -10,6 +10,7 @@ archive/issues_000832.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.7",
     "title": "[with patch] MPolynomialIdeal.vector_space_dimension",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/832",

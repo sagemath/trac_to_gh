@@ -10,6 +10,7 @@ archive/issues_009944.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
     "title": "partial_fraction_decomposition broken for FpT elements",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9944",

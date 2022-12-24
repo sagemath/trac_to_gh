@@ -10,6 +10,7 @@ archive/issues_008360.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-feature",
     "title": "Add an interface to Jean-Eric Pin's Semigroupe package",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8360",

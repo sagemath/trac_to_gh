@@ -10,6 +10,7 @@ archive/issues_008406.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.4",
     "title": "problem with duck typing in c_graph",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8406",

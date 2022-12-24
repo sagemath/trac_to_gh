@@ -10,6 +10,7 @@ archive/issues_002997.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
     "title": "[with patch; needs review] notebook -- change current directory before running notebook",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2997",

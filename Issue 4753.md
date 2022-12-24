@@ -10,6 +10,7 @@ archive/issues_004753.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "make sparse * sparse = dense mod p like 50 frickin' times faster.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4753",

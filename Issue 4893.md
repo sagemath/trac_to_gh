@@ -10,6 +10,7 @@ archive/issues_004893.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "srange docstring is misleading",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4893",

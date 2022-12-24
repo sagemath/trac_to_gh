@@ -10,6 +10,7 @@ archive/issues_005103.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "setup.py: dependency checking does not ignore comments",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5103",

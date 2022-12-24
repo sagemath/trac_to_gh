@@ -10,6 +10,7 @@ archive/issues_000149.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-1.8",
     "title": "failure in E.sha_an()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/149",

@@ -10,6 +10,7 @@ archive/issues_006970.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "port R spkg to os x 10.6",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6970",

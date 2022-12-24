@@ -10,6 +10,7 @@ archive/issues_004143.json:
         "trivial",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
     "title": "injvar() docstring should be the same as inject_variables()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4143",

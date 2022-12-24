@@ -10,6 +10,7 @@ archive/issues_000626.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.4.1",
     "title": "error building libcsage.so on some machines",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/626",

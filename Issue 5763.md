@@ -10,6 +10,7 @@ archive/issues_005763.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "[with patch, needs review] pynac -- add _polynomial_ conversion constructor",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5763",

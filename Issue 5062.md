@@ -10,6 +10,7 @@ archive/issues_005062.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Make sure that \"sage -b\" checks build compatibility on shared filesystems",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5062",

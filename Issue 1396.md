@@ -10,6 +10,7 @@ archive/issues_001396.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Ideal.groebner_basis should accept keyword arguments for strategy parameters",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1396",

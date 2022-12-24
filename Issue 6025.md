@@ -10,6 +10,7 @@ archive/issues_006025.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
     "title": "Sage 3.4.2: doctest failure in sage/libs/pari/gen.pyx on 64 bit OSX",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6025",

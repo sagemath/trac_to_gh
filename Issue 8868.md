@@ -10,6 +10,7 @@ archive/issues_008868.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "Make R graphics work regardless of X and other things",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8868",

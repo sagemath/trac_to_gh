@@ -10,6 +10,7 @@ archive/issues_004937.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "bug in _p_primary_torsion_basis() for elliptic curves",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4937",

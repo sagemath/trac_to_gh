@@ -10,6 +10,7 @@ archive/issues_005587.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
     "title": "input of hexadecimal integers is corrupted",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5587",

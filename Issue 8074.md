@@ -10,6 +10,7 @@ archive/issues_008074.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "corner cases in RealField and real numbers",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8074",

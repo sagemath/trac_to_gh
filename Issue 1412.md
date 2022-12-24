@@ -10,6 +10,7 @@ archive/issues_001412.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9",
     "title": "creating directory in notebook cell #x makes evaluation of cell #x hang",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1412",

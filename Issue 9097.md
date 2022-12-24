@@ -10,6 +10,7 @@ archive/issues_009097.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5",
     "title": "c_lib in Sage library fails to build on OpenSolaris x64",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9097",

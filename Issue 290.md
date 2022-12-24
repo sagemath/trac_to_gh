@@ -10,6 +10,7 @@ archive/issues_000290.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.4",
     "title": "Converting Pari multivariate polynomials  to MPolynomials doesn't work",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/290",

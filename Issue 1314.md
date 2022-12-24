@@ -10,6 +10,7 @@ archive/issues_001314.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.1",
     "title": "[graphs] calculate tutte polynomial",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1314",

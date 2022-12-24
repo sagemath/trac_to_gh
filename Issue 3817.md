@@ -10,6 +10,7 @@ archive/issues_003817.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
     "title": "notebook -- completel broken in sage-3.1.alpha1 -- one can't even log in.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3817",

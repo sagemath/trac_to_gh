@@ -10,6 +10,7 @@ archive/issues_001498.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
     "title": "notebook -- bug in keeping track of date of last edit of worksheets maybe",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1498",

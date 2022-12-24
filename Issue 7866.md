@@ -10,6 +10,7 @@ archive/issues_007866.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "zn_poly on Open Solaris reports  #error Not nails-safe yet",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7866",

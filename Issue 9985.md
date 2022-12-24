@@ -10,6 +10,7 @@ archive/issues_009985.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "MPFI fails to build on AIX 5.3 - appears not to know .a is the extension for shared libraries on AIX",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9985",

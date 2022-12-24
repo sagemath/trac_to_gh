@@ -10,6 +10,7 @@ archive/issues_004757.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "eigenspaces_right over CDF gives total nonsense",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4757",

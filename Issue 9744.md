@@ -10,6 +10,7 @@ archive/issues_009744.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.0",
     "title": "implicit_plot fill option fills entire plot",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9744",

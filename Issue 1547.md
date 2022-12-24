@@ -10,6 +10,7 @@ archive/issues_001547.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
     "title": "Add pre-tuned settings for ATLAS for certain CPUs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1547",

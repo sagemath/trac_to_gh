@@ -10,6 +10,7 @@ archive/issues_007229.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
     "title": "jsmath-image-fonts spkg installs to wrong directory",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7229",

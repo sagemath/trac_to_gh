@@ -10,6 +10,7 @@ archive/issues_006346.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.2",
     "title": "sage-4.0.2.rc2 build test problem on ppc os x 10.5",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6346",

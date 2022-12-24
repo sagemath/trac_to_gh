@@ -10,6 +10,7 @@ archive/issues_003045.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "K.gen() where K = GF(p) returns 1, not a primitive element",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3045",

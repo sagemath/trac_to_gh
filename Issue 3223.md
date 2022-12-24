@@ -10,6 +10,7 @@ archive/issues_003223.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
     "title": "notebook -- it is now broken on the iphone",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3223",

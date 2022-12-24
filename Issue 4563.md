@@ -10,6 +10,7 @@ archive/issues_004563.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "polar plot does not accept (t, 0, 2*pi) syntax for the interval",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4563",

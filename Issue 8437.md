@@ -10,6 +10,7 @@ archive/issues_008437.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.5",
     "title": "wrong unix rights/permissions of some files after make dist",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8437",

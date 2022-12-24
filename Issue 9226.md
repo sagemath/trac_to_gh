@@ -10,6 +10,7 @@ archive/issues_009226.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.2",
     "title": "README.txt says \" Sage builds with GCC >= 3.x\" but it does NOT",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9226",

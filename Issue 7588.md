@@ -10,6 +10,7 @@ archive/issues_007588.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Replace min_vertex_cut and min_edge_cut by LP formulation which does not use min_st_cut",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7588",

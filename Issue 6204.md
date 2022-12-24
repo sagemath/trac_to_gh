@@ -10,6 +10,7 @@ archive/issues_006204.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "make norms for degree 1 relative number fields work; add doctests",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6204",

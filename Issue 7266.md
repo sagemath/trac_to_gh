@@ -10,6 +10,7 @@ archive/issues_007266.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2.1",
     "title": "implement computation of Silverman height bounds",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7266",

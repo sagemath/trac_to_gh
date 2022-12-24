@@ -10,6 +10,7 @@ archive/issues_003603.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "memleak in GF(2^n)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3603",

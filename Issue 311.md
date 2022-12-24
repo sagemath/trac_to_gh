@@ -10,6 +10,7 @@ archive/issues_000311.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Update sage -t testing structure",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/311",

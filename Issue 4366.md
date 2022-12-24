@@ -10,6 +10,7 @@ archive/issues_004366.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
     "title": "sys.path is searched (\"stat\"ed) for *.pyx-files insanely often",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4366",

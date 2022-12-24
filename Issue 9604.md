@@ -10,6 +10,7 @@ archive/issues_009604.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Tracker bug for toric varieties",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9604",

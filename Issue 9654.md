@@ -10,6 +10,7 @@ archive/issues_009654.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-7.3",
     "title": "implicit_plot does not accept color or rgbcolor as keywords",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9654",

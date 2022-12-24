@@ -10,6 +10,7 @@ archive/issues_003875.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
     "title": "matrix/matrix_cyclo_dense.pyx segfault",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3875",

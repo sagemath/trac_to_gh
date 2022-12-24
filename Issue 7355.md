@@ -10,6 +10,7 @@ archive/issues_007355.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "Allow sage -i/-f to install packages without stating version number.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7355",

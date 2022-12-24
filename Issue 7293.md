@@ -10,6 +10,7 @@ archive/issues_007293.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Matrix of constraints as an input to MixedIntegerLinearProgram",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7293",

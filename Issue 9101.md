@@ -10,6 +10,7 @@ archive/issues_009101.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "linbox reports \"ERROR: BLAS not found!\" on 64-bit SPARC build",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9101",

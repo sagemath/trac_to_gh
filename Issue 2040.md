@@ -10,6 +10,7 @@ archive/issues_002040.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.3",
     "title": "2d graphics -- problems with axes_labels options",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2040",

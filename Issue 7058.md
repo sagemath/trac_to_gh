@@ -10,6 +10,7 @@ archive/issues_007058.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "linbox reports \"using frickin' slow GSL C-blas\" if building with Sun Studio compiler",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7058",

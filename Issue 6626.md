@@ -10,6 +10,7 @@ archive/issues_006626.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "can't upgrade to cliquer-1.2.p0 since package name is missing from file deps",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6626",

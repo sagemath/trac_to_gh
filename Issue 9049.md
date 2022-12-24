@@ -10,6 +10,7 @@ archive/issues_009049.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
     "title": "v4.4.1 bug in variety() over finite field extensions of Q?",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9049",

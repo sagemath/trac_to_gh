@@ -10,6 +10,7 @@ archive/issues_003827.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
     "title": "finance.TimeSeries -- missng docstring input option",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3827",

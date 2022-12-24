@@ -10,6 +10,7 @@ archive/issues_005019.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "sage -gdb is broken on OSX when using branches",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5019",

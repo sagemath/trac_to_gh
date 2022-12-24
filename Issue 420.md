@@ -10,6 +10,7 @@ archive/issues_000420.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.2",
     "title": "SAGE's optional axiom package doesn't build on os x",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/420",

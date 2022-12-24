@@ -10,6 +10,7 @@ archive/issues_001903.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "elliptic curve period lattice Omega computation is always wrong the first time",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1903",

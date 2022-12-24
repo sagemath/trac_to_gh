@@ -10,6 +10,7 @@ archive/issues_009919.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
     "title": "Ease SageNB development by providing hg commands, and extracting packages to /devel",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9919",

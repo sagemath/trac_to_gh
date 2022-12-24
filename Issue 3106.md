@@ -10,6 +10,7 @@ archive/issues_003106.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "Add an \"image\" link for a screenshot of the JMOL applet in the notebook",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3106",

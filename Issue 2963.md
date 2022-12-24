@@ -10,6 +10,7 @@ archive/issues_002963.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.8",
     "title": "make it so that strings pass as arguments and keyword arguments for the expect interfaces are passed down as string.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2963",

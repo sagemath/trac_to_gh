@@ -10,6 +10,7 @@ archive/issues_007785.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "notebook -- include version >= 0.4.9 in sage-4.3.1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7785",

@@ -10,6 +10,7 @@ archive/issues_004237.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
     "title": "magma -- finite field matrix conversions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4237",

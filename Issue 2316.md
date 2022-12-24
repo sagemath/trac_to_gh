@@ -10,6 +10,7 @@ archive/issues_002316.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "dsage.start_all() can leave zombie workers around",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2316",

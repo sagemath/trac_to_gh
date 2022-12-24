@@ -10,6 +10,7 @@ archive/issues_002914.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "integers are immutable but set_str breaks that -- having this function is a *major* bug.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2914",

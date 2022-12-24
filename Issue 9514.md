@@ -10,6 +10,7 @@ archive/issues_009514.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.2",
     "title": "sage/symbolic/random_tests.py wrongly depends on order of dict.values()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9514",

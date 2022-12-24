@@ -10,6 +10,7 @@ archive/issues_007616.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "fix bug in trivial number field extensions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7616",

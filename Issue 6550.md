@@ -10,6 +10,7 @@ archive/issues_006550.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "We need to be able to save itermediate files - particulary for ATLAS",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6550",

@@ -10,6 +10,7 @@ archive/issues_007567.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "Fix typo in sage -advanced help text",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7567",

@@ -10,6 +10,7 @@ archive/issues_005142.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "[with patch, needs review] speed up elementary_divisors for sparse integer matrices?",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5142",

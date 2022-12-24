@@ -10,6 +10,7 @@ archive/issues_001263.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "change pari C library error handler (instead of overriding exit() with abort())",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1263",

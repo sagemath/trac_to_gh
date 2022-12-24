@@ -10,6 +10,7 @@ archive/issues_002424.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
     "title": "[with patch, needs review] small roots method for polynomials mod N (N composite)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2424",

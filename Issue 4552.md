@@ -10,6 +10,7 @@ archive/issues_004552.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
     "title": "notebook -- when email system on, registration is broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4552",

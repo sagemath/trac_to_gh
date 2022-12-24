@@ -10,6 +10,7 @@ archive/issues_004515.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
     "title": "make it so \"make check\" runs Sage once before running itself, to ensure that sage-location is called, and that sage works",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4515",

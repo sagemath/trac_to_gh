@@ -10,6 +10,7 @@ archive/issues_008750.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4",
     "title": "numerical noise on solaris",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8750",

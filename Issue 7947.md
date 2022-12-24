@@ -10,6 +10,7 @@ archive/issues_007947.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.3",
     "title": "iteration error in QuadraticForm.vectors_by_length()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7947",

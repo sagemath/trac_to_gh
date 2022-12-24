@@ -10,6 +10,7 @@ archive/issues_001468.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "notebook -- create a global option so that word wrap is on or off by default always",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1468",

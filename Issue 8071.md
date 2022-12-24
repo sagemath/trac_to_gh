@@ -10,6 +10,7 @@ archive/issues_008071.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4",
     "title": "Trivial kernel of a matrix over non-fields are broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8071",

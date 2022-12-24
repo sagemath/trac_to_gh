@@ -10,6 +10,7 @@ archive/issues_003834.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
     "title": "notebook -- massive bug in the notebook -- doing full text search starts a PYthon process for every single worksheet you have!!!",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3834",

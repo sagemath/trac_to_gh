@@ -10,6 +10,7 @@ archive/issues_006565.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "substitution cryptosystems: converting a key from alphabetic to numerical values",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6565",

@@ -10,6 +10,7 @@ archive/issues_005234.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "doctest failure in devel/sage/sage/rings/real_lazy.pyx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5234",

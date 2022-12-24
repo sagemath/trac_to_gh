@@ -10,6 +10,7 @@ archive/issues_008671.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.4",
     "title": "FieldElement.quo_rem broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8671",

@@ -10,6 +10,7 @@ archive/issues_005276.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
     "title": "bug in creating polynomial ring over some rings of integers",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5276",

@@ -10,6 +10,7 @@ archive/issues_008319.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.4",
     "title": "elliptic curve canonical height bug for non-minimal models",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8319",

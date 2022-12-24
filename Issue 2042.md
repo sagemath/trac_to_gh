@@ -10,6 +10,7 @@ archive/issues_002042.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "[with patch, needs review] change is_simplified to has_been_simplified in calculus.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2042",

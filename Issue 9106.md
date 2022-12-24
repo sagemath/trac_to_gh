@@ -10,6 +10,7 @@ archive/issues_009106.json:
         "trivial",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.4",
     "title": "Wrong sphinx markup in UniqueRepresentation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9106",

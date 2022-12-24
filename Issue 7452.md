@@ -10,6 +10,7 @@ archive/issues_007452.json:
         "trivial",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "Make it easier to diagnose build problems by allowing copy-paste",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7452",

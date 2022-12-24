@@ -10,6 +10,7 @@ archive/issues_009260.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.1",
     "title": "missing pointer in documentation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9260",

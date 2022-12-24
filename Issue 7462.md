@@ -10,6 +10,7 @@ archive/issues_007462.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "magma interface -- huge number of doctest failures",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7462",

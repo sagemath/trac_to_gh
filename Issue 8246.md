@@ -10,6 +10,7 @@ archive/issues_008246.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.3",
     "title": "Carmichael lambda function for the Blum-Blum-Shub pseudorandom bit generator",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8246",

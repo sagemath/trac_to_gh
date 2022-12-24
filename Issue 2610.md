@@ -10,6 +10,7 @@ archive/issues_002610.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
     "title": "emacs -- fix typo in sagemath.org website",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2610",

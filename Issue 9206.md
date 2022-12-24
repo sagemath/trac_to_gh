@@ -10,6 +10,7 @@ archive/issues_009206.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.2",
     "title": "faster finite field creation with proof=False, done right (via proof architecture)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9206",

@@ -10,6 +10,7 @@ archive/issues_005018.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "lrs optional package improvements",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5018",

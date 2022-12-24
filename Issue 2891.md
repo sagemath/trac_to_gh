@@ -10,6 +10,7 @@ archive/issues_002891.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.5",
     "title": "inline_fortran -- completely rewrite to not save a global variable and *not* got hacked into various global structures all over",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2891",

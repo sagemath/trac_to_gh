@@ -10,6 +10,7 @@ archive/issues_007516.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-8.1",
     "title": "bug in pickling quotient module over pid",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7516",

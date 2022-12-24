@@ -10,6 +10,7 @@ archive/issues_000195.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-1.8",
     "title": "Can't compile spyx files with hyphens in names",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/195",

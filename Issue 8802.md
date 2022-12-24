@@ -10,6 +10,7 @@ archive/issues_008802.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.4",
     "title": "sqrt() for QQbar and AA should have a parameter \"all\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8802",

@@ -10,6 +10,7 @@ archive/issues_002526.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "switch charpoly mod p back to linbox as default",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2526",

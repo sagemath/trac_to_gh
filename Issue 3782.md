@@ -10,6 +10,7 @@ archive/issues_003782.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
     "title": "[with patch, positive review] add support for non-symmetric Macdonald polynomials with permuted basements",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3782",

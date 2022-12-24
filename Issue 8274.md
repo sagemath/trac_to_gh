@@ -10,6 +10,7 @@ archive/issues_008274.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "R's spkg-install needs a good overhall.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8274",

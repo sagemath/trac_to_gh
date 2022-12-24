@@ -10,6 +10,7 @@ archive/issues_005795.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.2",
     "title": "Improved performance of MPolynomialRing_libsingular.__call__()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5795",

@@ -10,6 +10,7 @@ archive/issues_007478.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "Remove \"...\" in the output of TestSuite.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7478",

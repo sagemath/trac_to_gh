@@ -10,6 +10,7 @@ archive/issues_000993.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.11",
     "title": "Pari's gp interpreter has built-in library search path, defeating Sage mechanisms",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/993",

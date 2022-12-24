@@ -10,6 +10,7 @@ archive/issues_002664.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
     "title": "[with patch, needs review] implement a symplectic form for finding symplectic bases",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2664",

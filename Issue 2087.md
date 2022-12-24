@@ -10,6 +10,7 @@ archive/issues_002087.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
     "title": "make the final output of \"sage -i\" more user friendly (easy to fix)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2087",

@@ -10,6 +10,7 @@ archive/issues_007558.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Replace deprecated functions by deprecated_function_alias whenever possible",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7558",

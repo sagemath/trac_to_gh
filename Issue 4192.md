@@ -10,6 +10,7 @@ archive/issues_004192.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
     "title": "is_Blah functions: deprecate and then remove them from top level imports",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4192",

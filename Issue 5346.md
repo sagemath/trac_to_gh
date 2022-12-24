@@ -10,6 +10,7 @@ archive/issues_005346.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.2",
     "title": "Sage 3.3: schemes/elliptic_curves/ell_rational_field.py fails to doctest with optional database installed",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5346",

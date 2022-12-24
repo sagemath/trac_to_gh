@@ -10,6 +10,7 @@ archive/issues_000527.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.12",
     "title": "gap -- gap_reset_workspace()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/527",

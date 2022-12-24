@@ -10,6 +10,7 @@ archive/issues_009388.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5",
     "title": "Fix rubiks makefile",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9388",

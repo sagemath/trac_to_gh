@@ -10,6 +10,7 @@ archive/issues_006620.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
     "title": "add a method to the Gap class to access elements of records",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6620",

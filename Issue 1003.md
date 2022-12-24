@@ -10,6 +10,7 @@ archive/issues_001003.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.10",
     "title": "[with patch] GF(2^n) elements powering overflow",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1003",

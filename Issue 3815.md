@@ -10,6 +10,7 @@ archive/issues_003815.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
     "title": "plot3d segfaults",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3815",

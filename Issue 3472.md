@@ -10,6 +10,7 @@ archive/issues_003472.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
     "title": "Running sage from a non-existent directory pretends to work",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3472",

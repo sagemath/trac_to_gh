@@ -10,6 +10,7 @@ archive/issues_003776.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
     "title": "[with patch, needs review] cookies don't work for admin users",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3776",

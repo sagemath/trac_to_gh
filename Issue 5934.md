@@ -10,6 +10,7 @@ archive/issues_005934.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
     "title": "[with spkg; needs review] networkx -- fix bad spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5934",

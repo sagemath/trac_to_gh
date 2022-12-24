@@ -10,6 +10,7 @@ archive/issues_005772.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
     "title": "notebook -- typo in twist.py causes Internal Server Error",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5772",

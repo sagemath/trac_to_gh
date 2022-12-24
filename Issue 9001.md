@@ -10,6 +10,7 @@ archive/issues_009001.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.3",
     "title": "optional package database_cremona_ellcurve-20071019.p0.spkg causes test failure",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9001",

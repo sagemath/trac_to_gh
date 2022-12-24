@@ -10,6 +10,7 @@ archive/issues_005505.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "README.txt should mention \"copy $SAGE_ROOT/sage to /usr/local/bin and edit\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5505",

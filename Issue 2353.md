@@ -10,6 +10,7 @@ archive/issues_002353.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.3",
     "title": "MPolynomialRing should be deprecated",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2353",

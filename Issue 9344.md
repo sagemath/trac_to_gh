@@ -10,6 +10,7 @@ archive/issues_009344.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.2",
     "title": "matrix constructor does not honor nrows if given a method to generate the entries",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9344",

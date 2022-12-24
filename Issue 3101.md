@@ -10,6 +10,7 @@ archive/issues_003101.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.1",
     "title": "pbuild: mwrank.so needs to be build as a C++ extension",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3101",

@@ -10,6 +10,7 @@ archive/issues_004603.json:
         "trivial",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
     "title": "trivial typos in files under sage/categories",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4603",

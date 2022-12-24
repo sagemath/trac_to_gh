@@ -10,6 +10,7 @@ archive/issues_009655.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6.1",
     "title": "Add an example ploting spherical harmonics to spherical_plot3d's docstring",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9655",

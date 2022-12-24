@@ -10,6 +10,7 @@ archive/issues_005368.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4",
     "title": "plot3d is broken when variables not given",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5368",

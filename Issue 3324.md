@@ -10,6 +10,7 @@ archive/issues_003324.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "[with patch, needs review] Matrix_mod2_dense to/from PNG routines",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3324",

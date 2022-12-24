@@ -10,6 +10,7 @@ archive/issues_001015.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.10",
     "title": "Free Monoid and Free Algebra Fixes and features",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1015",

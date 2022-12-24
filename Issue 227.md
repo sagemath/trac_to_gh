@@ -10,6 +10,7 @@ archive/issues_000227.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.3",
     "title": "sagex: should use NULL instead of 0",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/227",

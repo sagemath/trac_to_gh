@@ -10,6 +10,7 @@ archive/issues_009403.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.2",
     "title": "preimage method in NumberFieldHomomorphism_im_gens",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9403",

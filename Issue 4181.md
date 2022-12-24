@@ -10,6 +10,7 @@ archive/issues_004181.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4",
     "title": "Mysterious error somewhat related to 16-Bit signed integers on Mac OS X",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4181",

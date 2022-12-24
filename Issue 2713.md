@@ -10,6 +10,7 @@ archive/issues_002713.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "[with patch, needs review] sage-doctest applies backslash handling to expected outputs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2713",

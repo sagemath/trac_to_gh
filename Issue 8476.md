@@ -10,6 +10,7 @@ archive/issues_008476.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4",
     "title": "return the correct class instance in MPolynomialSystem.__copy__",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8476",

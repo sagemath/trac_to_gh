@@ -10,6 +10,7 @@ archive/issues_002399.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
     "title": "allow utf8 characters in the notebook cells",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2399",

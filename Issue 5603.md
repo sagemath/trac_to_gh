@@ -10,6 +10,7 @@ archive/issues_005603.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.2",
     "title": "make a .mix() method for Sage color objects",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5603",

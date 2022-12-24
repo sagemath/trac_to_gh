@@ -10,6 +10,7 @@ archive/issues_006623.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Memory leak when calling binomial",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6623",

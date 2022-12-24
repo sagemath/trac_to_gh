@@ -10,6 +10,7 @@ archive/issues_009302.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.2",
     "title": "Heegner point_exact is wrong for 5077a with discriminant -7",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9302",

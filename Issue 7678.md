@@ -10,6 +10,7 @@ archive/issues_007678.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "shorten very long doctests in rings/arith.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7678",

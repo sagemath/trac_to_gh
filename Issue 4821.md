@@ -10,6 +10,7 @@ archive/issues_004821.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Experimental scilab-5.0.3.spkg [with spkg, needs review]",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4821",

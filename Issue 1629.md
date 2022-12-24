@@ -10,6 +10,7 @@ archive/issues_001629.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "update numpy to 1.0.4",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1629",

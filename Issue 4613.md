@@ -10,6 +10,7 @@ archive/issues_004613.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
     "title": "[with patch, needs review] doctests for big-o",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4613",

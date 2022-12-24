@@ -10,6 +10,7 @@ archive/issues_000810.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.6",
     "title": "[with patch] gens_reduced for general ideals",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/810",

@@ -10,6 +10,7 @@ archive/issues_001244.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.14",
     "title": "update flint to r1075, add spkg-check",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1244",

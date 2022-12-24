@@ -10,6 +10,7 @@ archive/issues_004362.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
     "title": "Bug fixes in tableaux latex output [with patches at #4355. Needs review.]",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4362",

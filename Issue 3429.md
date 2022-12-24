@@ -10,6 +10,7 @@ archive/issues_003429.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
     "title": "New linbox 1.1.6 spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3429",

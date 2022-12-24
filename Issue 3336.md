@@ -10,6 +10,7 @@ archive/issues_003336.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.3",
     "title": "DyckWords(n) should use an iterator",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3336",

@@ -10,6 +10,7 @@ archive/issues_000648.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.5",
     "title": "memory leak: matrix_integer_dense leaks private gmp_randinit_mt(state)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/648",

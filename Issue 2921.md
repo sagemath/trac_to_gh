@@ -10,6 +10,7 @@ archive/issues_002921.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "gcc 4.3: Fix flintqs.spkg build",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2921",

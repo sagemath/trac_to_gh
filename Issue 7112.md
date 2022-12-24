@@ -10,6 +10,7 @@ archive/issues_007112.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
     "title": "os x 10.5 powerpc -- there are many many doctest failures all over",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7112",

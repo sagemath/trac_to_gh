@@ -10,6 +10,7 @@ archive/issues_005663.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Infinite loop in multiplication of 0 (parent Symbolic Ring) and 1.0000000000000000 (parent Real Field with 60 bits of precision)!",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5663",

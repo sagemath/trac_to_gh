@@ -10,6 +10,7 @@ archive/issues_007547.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "improve has_multiple_edges",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7547",

@@ -10,6 +10,7 @@ archive/issues_001848.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-8.2",
     "title": "Elliptic curve Sha an documentation misleading about proof",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1848",

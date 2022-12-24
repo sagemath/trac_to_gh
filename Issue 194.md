@@ -10,6 +10,7 @@ archive/issues_000194.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-1.9",
     "title": "another ZZ[x] crash",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/194",

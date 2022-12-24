@@ -10,6 +10,7 @@ archive/issues_006277.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.2",
     "title": "sage -tp a.py a.py will test a.py twice",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6277",

@@ -10,6 +10,7 @@ archive/issues_008905.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Memory leak in echelon over QQ",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8905",

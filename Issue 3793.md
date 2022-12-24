@@ -10,6 +10,7 @@ archive/issues_003793.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
     "title": "Some elliptic curve doctests fail when the optional database is installed",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3793",

@@ -10,6 +10,7 @@ archive/issues_006933.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "readline-5.2.p7 builds as 32-bit on Solaris even if SAGE64=yes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6933",

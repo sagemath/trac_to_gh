@@ -10,6 +10,7 @@ archive/issues_007015.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
     "title": "[with patch; needs review] cygwin port -- ratpoints -- don't build executable since we don't need it (and fails on cygwin)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7015",

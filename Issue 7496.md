@@ -10,6 +10,7 @@ archive/issues_007496.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.7.2",
     "title": "symbolic variable names should be valid identifiers, or ridiculousness follows",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7496",

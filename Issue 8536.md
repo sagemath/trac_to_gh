@@ -10,6 +10,7 @@ archive/issues_008536.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4",
     "title": "Change SAGE\" to \"Sage\" in output",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8536",

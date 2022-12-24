@@ -10,6 +10,7 @@ archive/issues_000976.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.9",
     "title": "fpLLL fast early reduction segfaults",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/976",

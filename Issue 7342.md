@@ -10,6 +10,7 @@ archive/issues_007342.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "installing kash3-2008-07-31 spkg fails on OS X",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7342",

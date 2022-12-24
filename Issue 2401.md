@@ -10,6 +10,7 @@ archive/issues_002401.json:
         "trivial",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "Docstrings and doctests for rings/integer_ring.pyx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2401",

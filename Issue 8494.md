@@ -10,6 +10,7 @@ archive/issues_008494.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.4",
     "title": "docstring f or digits() should mention its inverse",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8494",

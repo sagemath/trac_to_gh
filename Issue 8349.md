@@ -10,6 +10,7 @@ archive/issues_008349.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.4",
     "title": "bug in isogenies",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8349",

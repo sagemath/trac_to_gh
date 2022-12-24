@@ -10,6 +10,7 @@ archive/issues_004705.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "Make in-line wysiwyg editor for text cells using TinyMCE",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4705",

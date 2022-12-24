@@ -10,6 +10,7 @@ archive/issues_002449.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
     "title": "interact -- interactive functions in the notebook",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2449",

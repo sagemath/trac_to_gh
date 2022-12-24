@@ -10,6 +10,7 @@ archive/issues_007063.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
     "title": "SageNB -- Get SageNB to work seamlessly with old notebook saves",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7063",

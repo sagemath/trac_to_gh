@@ -10,6 +10,7 @@ archive/issues_006364.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
     "title": "error message at end of successful \"sage -merge\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6364",

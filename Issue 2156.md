@@ -10,6 +10,7 @@ archive/issues_002156.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
     "title": "[with spkg, needs review] Cython 0.9.6.12",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2156",

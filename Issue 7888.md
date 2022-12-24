@@ -10,6 +10,7 @@ archive/issues_007888.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Do not pass comment lines to Macaulay2",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7888",

@@ -10,6 +10,7 @@ archive/issues_003522.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
     "title": "[with spkgs, needs review] New experimental mayavi2 spkg based on vtk_5.2 for linux",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3522",

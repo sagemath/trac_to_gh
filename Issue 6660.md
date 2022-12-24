@@ -10,6 +10,7 @@ archive/issues_006660.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Error in chromatic_number() and coloring() in the Graph class",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6660",

@@ -10,6 +10,7 @@ archive/issues_005558.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
     "title": "jsmath-image-fonts spkg not updated in optional spkg listing on sagemath.org",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5558",

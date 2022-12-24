@@ -10,6 +10,7 @@ archive/issues_008081.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.2",
     "title": "documentation bug on new gale_ryser_theorem()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8081",

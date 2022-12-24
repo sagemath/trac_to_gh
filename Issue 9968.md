@@ -10,6 +10,7 @@ archive/issues_009968.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.7",
     "title": "Update extension code for mpmath-0.16",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9968",

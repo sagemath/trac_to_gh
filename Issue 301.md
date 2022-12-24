@@ -10,6 +10,7 @@ archive/issues_000301.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Create some functions for notebook history.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/301",

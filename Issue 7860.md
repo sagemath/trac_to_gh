@@ -10,6 +10,7 @@ archive/issues_007860.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "sage_fortran builds 32-bit exuctabes when SAGE64=yes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7860",

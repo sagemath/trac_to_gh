@@ -10,6 +10,7 @@ archive/issues_007629.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Make it possible to restrict the domains of email addresses",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7629",

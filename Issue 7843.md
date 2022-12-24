@@ -10,6 +10,7 @@ archive/issues_007843.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "os.path.listdir should be os.listdir",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7843",

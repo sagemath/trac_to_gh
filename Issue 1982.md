@@ -10,6 +10,7 @@ archive/issues_001982.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "[with patch that needs to be integrated into spkg] workaround the billions of problems with matplotlib and locales on _real world_ computers",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1982",

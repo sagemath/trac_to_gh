@@ -10,6 +10,7 @@ archive/issues_000398.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
     "title": "Fixing some of David Joyner's desolvers code",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/398",

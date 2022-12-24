@@ -10,6 +10,7 @@ archive/issues_000716.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.8",
     "title": "graph functions to_undirected and to_directed forget the loops and multiple edges",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/716",

@@ -10,6 +10,7 @@ archive/issues_001302.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9.2",
     "title": "bug in laurent_series integration",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1302",

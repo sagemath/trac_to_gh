@@ -10,6 +10,7 @@ archive/issues_006278.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1",
     "title": "linbox-1.1.6 fails to build in sage 4.0.1 with Solaris and gcc 4.4.0",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6278",

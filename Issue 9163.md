@@ -10,6 +10,7 @@ archive/issues_009163.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6.1",
     "title": "cygwin: output of a subtle test in expect.py differs slightly on cygwin",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9163",

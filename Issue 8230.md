@@ -10,6 +10,7 @@ archive/issues_008230.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "strange behaviour",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8230",

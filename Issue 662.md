@@ -10,6 +10,7 @@ archive/issues_000662.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.7",
     "title": "Start Browser with clean environment",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/662",

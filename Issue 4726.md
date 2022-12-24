@@ -10,6 +10,7 @@ archive/issues_004726.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "Creating homomorphisms of relative number fields seems totally broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4726",

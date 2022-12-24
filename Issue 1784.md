@@ -10,6 +10,7 @@ archive/issues_001784.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "number field doctest failure",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1784",

@@ -10,6 +10,7 @@ archive/issues_009197.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "If latex() causes an error or doesn't work, we should just default to repr",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9197",

@@ -10,6 +10,7 @@ archive/issues_003526.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
     "title": "notebook -- change favicon to the new one seen at the new sagemath.org web site",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3526",

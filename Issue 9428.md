@@ -10,6 +10,7 @@ archive/issues_009428.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Internationalize the Sage Notebook",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9428",

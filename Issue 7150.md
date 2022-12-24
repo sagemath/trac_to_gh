@@ -10,6 +10,7 @@ archive/issues_007150.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
     "title": "Wrong substitution implementation for fraction fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7150",

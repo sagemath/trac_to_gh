@@ -10,6 +10,7 @@ archive/issues_006441.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
     "title": "[with patch, needs review] Charpoly (plus adjoint and det)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6441",

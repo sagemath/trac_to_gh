@@ -10,6 +10,7 @@ archive/issues_000066.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "notebook -- should be able export (=print) to latex/pdf/dvi",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/66",

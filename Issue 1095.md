@@ -10,6 +10,7 @@ archive/issues_001095.json:
         "trivial",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.12",
     "title": "[with patch] silly annoyance in sage -coverage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1095",

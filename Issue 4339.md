@@ -10,6 +10,7 @@ archive/issues_004339.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.2",
     "title": "modular forms -- incorporate Nils Skoruppa's code for computing generators for the ring of modular forms of given level",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4339",

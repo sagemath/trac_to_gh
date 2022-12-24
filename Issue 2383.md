@@ -10,6 +10,7 @@ archive/issues_002383.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "memory leak when converting between GMP-based types and numpy types",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2383",

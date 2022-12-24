@@ -10,6 +10,7 @@ archive/issues_002145.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "doc -- add shift-enter prominently to both the reference manual and tutorial (easy doc fix)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2145",

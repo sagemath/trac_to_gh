@@ -10,6 +10,7 @@ archive/issues_008021.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.2",
     "title": "ref manual for 4.3.1: error when building (Undefined control sequence \\cross)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8021",

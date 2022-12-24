@@ -10,6 +10,7 @@ archive/issues_005653.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
     "title": "[with patch, needs work] display docstrings in the notebook using html and jsMath",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5653",

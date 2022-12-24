@@ -10,6 +10,7 @@ archive/issues_008279.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.3",
     "title": "cygwin: cliquer names the library incorrectly for cygwin",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8279",

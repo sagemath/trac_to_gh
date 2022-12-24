@@ -10,6 +10,7 @@ archive/issues_009862.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6.1",
     "title": "Error in sage/graphs/genus.pyx on ia64-Linux-suse",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9862",

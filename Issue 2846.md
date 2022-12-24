@@ -10,6 +10,7 @@ archive/issues_002846.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "[with patch] no need for bitset.h with new Cython",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2846",

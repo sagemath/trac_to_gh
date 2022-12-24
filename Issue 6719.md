@@ -10,6 +10,7 @@ archive/issues_006719.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Doctest failure with elliptic_eu (incomplete elliptic integral of the second kind) on Solaris.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6719",

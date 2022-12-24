@@ -10,6 +10,7 @@ archive/issues_005352.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.8",
     "title": "the valgrind log files in sage-doctest are written to $HOME/.sage instead of $DOT_SAGE",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5352",

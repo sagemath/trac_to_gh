@@ -10,6 +10,7 @@ archive/issues_001904.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "elliptic curves -- many period lattice functions just don't work",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1904",

@@ -10,6 +10,7 @@ archive/issues_008815.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.2",
     "title": "Misc elliptic curve typo fixes (easy review)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8815",

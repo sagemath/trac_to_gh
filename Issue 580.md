@@ -10,6 +10,7 @@ archive/issues_000580.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.4",
     "title": "bug in cubegroup (group action)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/580",

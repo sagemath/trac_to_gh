@@ -10,6 +10,7 @@ archive/issues_009659.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.2",
     "title": "EK.regulator_of_points() doctest error in ell_number_field.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9659",

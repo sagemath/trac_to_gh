@@ -10,6 +10,7 @@ archive/issues_004344.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "notebook -- template the notebook",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4344",

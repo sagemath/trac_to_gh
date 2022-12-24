@@ -10,6 +10,7 @@ archive/issues_007083.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2.1",
     "title": "Improve a few special functions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7083",

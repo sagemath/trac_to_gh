@@ -10,6 +10,7 @@ archive/issues_008760.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5",
     "title": "change sage notebook to use HTML5 doctype, and also change the email part of registration form to actually use something from html5",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8760",

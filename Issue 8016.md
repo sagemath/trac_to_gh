@@ -10,6 +10,7 @@ archive/issues_008016.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-wishlist",
     "title": "graph_editor(p) should work for p a poset",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8016",

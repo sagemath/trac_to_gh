@@ -10,6 +10,7 @@ archive/issues_003301.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
     "title": "Fix POSIX issues in gmp's spkg-install",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3301",

@@ -10,6 +10,7 @@ archive/issues_007745.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "Update Maxima to 5.20.1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7745",

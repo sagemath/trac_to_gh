@@ -10,6 +10,7 @@ archive/issues_009257.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.2",
     "title": "remove misc/darcs.py in Sage 5.0",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9257",

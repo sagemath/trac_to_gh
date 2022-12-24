@@ -10,6 +10,7 @@ archive/issues_005754.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
     "title": "docstrings for all the interactive_constructors functions are *all* now completely broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5754",

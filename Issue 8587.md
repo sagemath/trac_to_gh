@@ -10,6 +10,7 @@ archive/issues_008587.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.2",
     "title": "get rid of annoying warning in vector_space_dimension()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8587",

@@ -10,6 +10,7 @@ archive/issues_008188.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.3",
     "title": "additional functions for linear codes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8188",

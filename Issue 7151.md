@@ -10,6 +10,7 @@ archive/issues_007151.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Add the quaternion group to the named permutation groups",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7151",

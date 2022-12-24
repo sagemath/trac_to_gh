@@ -10,6 +10,7 @@ archive/issues_001480.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9",
     "title": "[with patch] implement P.show() for mathematica elements -- nice mathematica graphics in the sage notebook!",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1480",

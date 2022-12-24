@@ -10,6 +10,7 @@ archive/issues_000374.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.2",
     "title": "Bug in factorization of polynomial over number field",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/374",

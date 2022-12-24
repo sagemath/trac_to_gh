@@ -10,6 +10,7 @@ archive/issues_006575.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "notebook bug in do_sage_extension_preparsing",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6575",

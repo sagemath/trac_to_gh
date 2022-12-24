@@ -10,6 +10,7 @@ archive/issues_001297.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.15",
     "title": "[with spkg] make numpy use atlas by default",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1297",

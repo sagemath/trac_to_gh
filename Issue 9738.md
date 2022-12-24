@@ -10,6 +10,7 @@ archive/issues_009738.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Stealth core dump from testing sage/interfaces/genus2reduction.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9738",

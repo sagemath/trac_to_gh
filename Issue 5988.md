@@ -10,6 +10,7 @@ archive/issues_005988.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "notebook feature request -- make it so non-logged in users are redirected to login page",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5988",

@@ -10,6 +10,7 @@ archive/issues_003936.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Throw exceptions on nonsensical comparisons?",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3936",

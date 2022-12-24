@@ -10,6 +10,7 @@ archive/issues_006478.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1",
     "title": "[with patch, needs review] Make sage -combinat work without touching .hgrc",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6478",

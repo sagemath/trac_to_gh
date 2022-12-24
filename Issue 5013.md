@@ -10,6 +10,7 @@ archive/issues_005013.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "Solaris 10/x86: Fix numerical noise failure in sage/ext/fast_eval.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5013",

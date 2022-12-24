@@ -10,6 +10,7 @@ archive/issues_008753.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.1",
     "title": "get pynac to build with gcc-4.5.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8753",

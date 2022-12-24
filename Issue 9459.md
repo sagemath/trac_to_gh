@@ -10,6 +10,7 @@ archive/issues_009459.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6.2",
     "title": "Implement a generic radical() function",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9459",

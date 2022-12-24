@@ -10,6 +10,7 @@ archive/issues_001052.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "implement more functionality for class groups of number fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1052",

@@ -10,6 +10,7 @@ archive/issues_004841.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Update Maxima to 5.17.x (new upstream)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4841",

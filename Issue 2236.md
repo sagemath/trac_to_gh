@@ -10,6 +10,7 @@ archive/issues_002236.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
     "title": "plot randomizes the endpoints of the interval and causes wiggling in the graph",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2236",

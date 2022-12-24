@@ -10,6 +10,7 @@ archive/issues_003819.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
     "title": "Sage 3.1.alpha1> time_series.pyx numerical noise doctest failures",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3819",

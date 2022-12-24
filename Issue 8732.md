@@ -10,6 +10,7 @@ archive/issues_008732.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4",
     "title": "bug in new HMM code",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8732",

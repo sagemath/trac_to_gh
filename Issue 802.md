@@ -10,6 +10,7 @@ archive/issues_000802.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.6",
     "title": "[with patch] graphs: Streamline and document _cmp_ more",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/802",

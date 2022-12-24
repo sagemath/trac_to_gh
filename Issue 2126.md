@@ -10,6 +10,7 @@ archive/issues_002126.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
     "title": "[with patch, needs review] small fixes to eisenstein_series_qexp()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2126",

@@ -10,6 +10,7 @@ archive/issues_008548.json:
         "trivial",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4",
     "title": "Permutation : a bad error message in hyperoctahedral_double_coset_type",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8548",

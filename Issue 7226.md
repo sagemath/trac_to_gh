@@ -10,6 +10,7 @@ archive/issues_007226.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Spanish doc #14 \"Basic Algebra and Calculus\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7226",

@@ -10,6 +10,7 @@ archive/issues_001969.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "ipython -- update to svn to get this new %hist functionality",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1969",

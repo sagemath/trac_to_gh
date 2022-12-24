@@ -10,6 +10,7 @@ archive/issues_007451.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "Setting SAGE_FAT_BINARY causes internal compiler error building pari",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7451",

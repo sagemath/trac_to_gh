@@ -10,6 +10,7 @@ archive/issues_005145.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
     "title": "increase default plot_points value for contour_plot",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5145",

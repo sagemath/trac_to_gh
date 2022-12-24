@@ -10,6 +10,7 @@ archive/issues_008752.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Can't evaluate numerically symbolic expression resulting from integral().",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8752",

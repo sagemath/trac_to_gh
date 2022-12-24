@@ -10,6 +10,7 @@ archive/issues_001820.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
     "title": "update documentation for combinat/skew_partition.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1820",

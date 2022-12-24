@@ -10,6 +10,7 @@ archive/issues_006394.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1",
     "title": "Fix fallout from removal of graph_isom in 4.1.alpha1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6394",

@@ -10,6 +10,7 @@ archive/issues_003657.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.6",
     "title": "[with patch against 3.0.5, needs review] Documentation for latin squares, DLXCPP; minor fixes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3657",

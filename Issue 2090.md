@@ -10,6 +10,7 @@ archive/issues_002090.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6.1",
     "title": "basic univariate polynomial efficiency issues",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2090",

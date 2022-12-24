@@ -10,6 +10,7 @@ archive/issues_007384.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "SageNB -- Fix Sphinxify doctests",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7384",

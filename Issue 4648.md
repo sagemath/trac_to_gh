@@ -10,6 +10,7 @@ archive/issues_004648.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "sparse linear algebra: nonzero_positions is slow",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4648",

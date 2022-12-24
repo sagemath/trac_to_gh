@@ -10,6 +10,7 @@ archive/issues_009502.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
     "title": "Basis parent bug in FreeModule",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9502",

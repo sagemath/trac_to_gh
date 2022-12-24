@@ -10,6 +10,7 @@ archive/issues_004851.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "infinite recursion with encoding entities for worksheet titles with apostrophes, etc",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4851",

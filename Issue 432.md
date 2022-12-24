@@ -10,6 +10,7 @@ archive/issues_000432.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.4",
     "title": "finish implementing deleting the trash (emptying it) in the sage notebook.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/432",

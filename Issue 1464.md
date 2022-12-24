@@ -10,6 +10,7 @@ archive/issues_001464.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9",
     "title": "[with patch] binary code canonical labels & automorphism group generators",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1464",

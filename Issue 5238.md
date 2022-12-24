@@ -10,6 +10,7 @@ archive/issues_005238.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.4",
     "title": "remove qsieve.spkg and replace it by mpQS (part of FLINT)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5238",

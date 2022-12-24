@@ -10,6 +10,7 @@ archive/issues_001074.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.15",
     "title": "Singular segfault with monitor(\"testfile.txt\",\"io\");",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1074",

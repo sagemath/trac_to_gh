@@ -10,6 +10,7 @@ archive/issues_004818.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "bug in list_plot3d -- invalid index?",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4818",

@@ -10,6 +10,7 @@ archive/issues_003909.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "Updating jmol package to latest [Needs Review]",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3909",

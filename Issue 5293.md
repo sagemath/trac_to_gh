@@ -10,6 +10,7 @@ archive/issues_005293.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "tab-completion menu creates two copies of the choice made",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5293",

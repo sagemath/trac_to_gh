@@ -10,6 +10,7 @@ archive/issues_000943.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.8",
     "title": "echelon_form over ZZ (hermite form) -- add ntl as additional optional algorithm",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/943",

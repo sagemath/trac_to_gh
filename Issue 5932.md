@@ -10,6 +10,7 @@ archive/issues_005932.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
     "title": "graphs.RandomRegular(3,10) often returns a graph on 0 vertices",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5932",

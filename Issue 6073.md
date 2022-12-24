@@ -10,6 +10,7 @@ archive/issues_006073.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1",
     "title": "Developer guide somewhat wrong about cython extensions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6073",

@@ -10,6 +10,7 @@ archive/issues_004463.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
     "title": "modular/abvar/homspace.py doctests are long",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4463",

@@ -10,6 +10,7 @@ archive/issues_001017.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.10",
     "title": "[with (partial) patch] add an option to solve to return a list of dictionaries instead of a list of lists of equations.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1017",

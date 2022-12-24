@@ -10,6 +10,7 @@ archive/issues_000857.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9.1",
     "title": "update info about cython in license() output",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/857",

@@ -10,6 +10,7 @@ archive/issues_009703.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.3",
     "title": "Doctest failures caused by non-working sympow on Solaris x86",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9703",

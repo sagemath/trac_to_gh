@@ -10,6 +10,7 @@ archive/issues_002219.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "docs for root_field should say the polynomial needs to be irreducible",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2219",

@@ -10,6 +10,7 @@ archive/issues_004751.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
     "title": "if spkg/standard contains an extracted directory then \"sage -upgrade\" fails in multiple ways",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4751",

@@ -10,6 +10,7 @@ archive/issues_001190.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.13",
     "title": "[with patch] fix spkg-check invocation when SAGE_CHECK is non-empty",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1190",

@@ -10,6 +10,7 @@ archive/issues_004962.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "sage/modules/vector_modn_sparse_c.pxi: init_c_vector_modint leaks leak memory in case of OverflowError",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4962",

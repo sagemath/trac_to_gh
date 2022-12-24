@@ -10,6 +10,7 @@ archive/issues_006194.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.1",
     "title": "[with patch, needs review] fixes for sage.symbolic.pynac.py_mod",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6194",

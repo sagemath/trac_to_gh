@@ -10,6 +10,7 @@ archive/issues_009667.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Use PARI's hash_GEN() for gen.__hash__",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9667",

@@ -10,6 +10,7 @@ archive/issues_006085.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1",
     "title": "[with patch, not ready] Finish full implementation of c_graphs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6085",

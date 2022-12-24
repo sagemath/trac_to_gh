@@ -10,6 +10,7 @@ archive/issues_004000.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
     "title": "Implement QQ['x'] via Flint ZZ['x'] + denominator",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4000",

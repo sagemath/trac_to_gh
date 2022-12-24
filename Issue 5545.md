@@ -10,6 +10,7 @@ archive/issues_005545.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "bug in sage's Cython dependency tracker",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5545",

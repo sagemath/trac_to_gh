@@ -10,6 +10,7 @@ archive/issues_003999.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "[with patch, needs review] Wrapper class to treat additive groups as multiplicative goups",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3999",

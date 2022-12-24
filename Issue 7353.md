@@ -10,6 +10,7 @@ archive/issues_007353.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "French documentation should use Sphinx's French localization",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7353",

@@ -10,6 +10,7 @@ archive/issues_003214.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "gcd needs improved coersion",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3214",

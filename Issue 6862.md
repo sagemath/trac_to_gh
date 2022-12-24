@@ -10,6 +10,7 @@ archive/issues_006862.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-9.8",
     "title": "Mixing of different domains for symbolic variables",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6862",

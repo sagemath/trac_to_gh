@@ -10,6 +10,7 @@ archive/issues_008441.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-7.2",
     "title": "Coleman-Gross local height pairing on hyperelliptic curves",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8441",

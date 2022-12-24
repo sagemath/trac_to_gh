@@ -10,6 +10,7 @@ archive/issues_009636.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
     "title": "Catch output from PARI in Sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9636",

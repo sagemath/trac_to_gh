@@ -10,6 +10,7 @@ archive/issues_003849.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "notebook -- Internal Server Error given when input to File upload or Data attachment is invalid",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3849",

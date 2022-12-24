@@ -10,6 +10,7 @@ archive/issues_000735.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.6",
     "title": "issues with server timing out worksheets",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/735",

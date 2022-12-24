@@ -10,6 +10,7 @@ archive/issues_008158.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-wishlist",
     "title": "efficiency problem with polynomials (SymbolicRing vs PolynomialRing)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8158",

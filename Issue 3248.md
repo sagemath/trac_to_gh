@@ -10,6 +10,7 @@ archive/issues_003248.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "[with patch; needs review] cygwin -- fix some sagelib setup.py issues and Sconstruct issues involving library includes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3248",

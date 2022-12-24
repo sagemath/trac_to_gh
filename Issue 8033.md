@@ -10,6 +10,7 @@ archive/issues_008033.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.3",
     "title": "add a README.txt for the graph_editor, to encourage development",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8033",

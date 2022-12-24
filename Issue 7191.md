@@ -10,6 +10,7 @@ archive/issues_007191.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.3",
     "title": "is_primitive() for a Dirichlet character doesn't work when base ring is CC",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7191",

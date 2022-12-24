@@ -10,6 +10,7 @@ archive/issues_009840.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
     "title": "Make Qhull an optional package",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9840",

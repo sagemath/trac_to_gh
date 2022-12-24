@@ -10,6 +10,7 @@ archive/issues_002483.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.4",
     "title": "[with updated spkg] Currently R help does not work",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2483",

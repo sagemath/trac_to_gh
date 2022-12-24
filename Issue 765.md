@@ -10,6 +10,7 @@ archive/issues_000765.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.12",
     "title": "Ctrl-C unresponsive in rational_points",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/765",

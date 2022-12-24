@@ -10,6 +10,7 @@ archive/issues_005228.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "[with patch, needs review] make composite_fields and galois_closure return maps and preserve embeddings",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5228",

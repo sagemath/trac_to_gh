@@ -10,6 +10,7 @@ archive/issues_005162.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "[with spkg, needs review] atlas.spkg: Fix mistake introduced in atlas-3.8.2.p1 and actually correct the bug",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5162",

@@ -10,6 +10,7 @@ archive/issues_007999.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "SyntaxError when loading Sage 4.3.1.rc1 due to non-ASCII character",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7999",

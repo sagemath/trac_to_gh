@@ -10,6 +10,7 @@ archive/issues_008307.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.4",
     "title": "gfan-0.4plu keeps getting upgraded",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8307",

@@ -10,6 +10,7 @@ archive/issues_003441.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "[with patch, needs review] Make binary code words longer.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3441",

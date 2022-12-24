@@ -10,6 +10,7 @@ archive/issues_006173.json:
         "blocker",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.1",
     "title": "atlas -- change from SAGE_SIMD_MODE to SAGE_FAT_BINARY",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6173",

@@ -10,6 +10,7 @@ archive/issues_008369.json:
         "trivial",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.2",
     "title": "sagenb: notebook mistake in",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8369",

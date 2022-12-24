@@ -10,6 +10,7 @@ archive/issues_006144.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.1",
     "title": "Pynac doesn't simplify exp(x)*exp(2*x) to exp(3*x)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6144",

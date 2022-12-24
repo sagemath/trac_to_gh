@@ -10,6 +10,7 @@ archive/issues_005447.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
     "title": "upgrade to jquery 1.3 and jqueryui 1.7",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5447",

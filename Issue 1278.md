@@ -10,6 +10,7 @@ archive/issues_001278.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9",
     "title": "make R an optional Sage package that builds on everything (in prep for making it non-optional)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1278",

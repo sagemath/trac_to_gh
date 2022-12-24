@@ -10,6 +10,7 @@ archive/issues_003033.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "equations.py segfaults without --incref-local-binop cython flag",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3033",

@@ -10,6 +10,7 @@ archive/issues_009693.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.3",
     "title": "Maxima is printing asinh(1.0) without a leading zero (.8813735870195429) on Solaris 10 x86",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9693",

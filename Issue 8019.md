@@ -10,6 +10,7 @@ archive/issues_008019.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "graphics_array messes up dimensions of plots",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8019",

@@ -10,6 +10,7 @@ archive/issues_009935.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
     "title": "add sage.symbolic.function_factory to the reference manual",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9935",

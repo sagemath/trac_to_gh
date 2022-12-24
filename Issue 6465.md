@@ -10,6 +10,7 @@ archive/issues_006465.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.3",
     "title": "Derivative D acts wrongly on symbolic integration",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6465",

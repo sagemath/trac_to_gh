@@ -10,6 +10,7 @@ archive/issues_007330.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "notebook download to a file broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7330",

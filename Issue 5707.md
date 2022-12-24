@@ -10,6 +10,7 @@ archive/issues_005707.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "plus signs missing in typesetting of modular symbols",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5707",

@@ -10,6 +10,7 @@ archive/issues_005599.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.1",
     "title": "density_plot not centered correctly",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5599",

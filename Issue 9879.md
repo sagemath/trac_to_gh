@@ -10,6 +10,7 @@ archive/issues_009879.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.11",
     "title": "Segfault in PyNaC 0.2.0.p4",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9879",

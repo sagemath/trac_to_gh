@@ -10,6 +10,7 @@ archive/issues_006251.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
     "title": "LogoutResource in sage/server/simple/twist.py doesn't really log you out",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6251",

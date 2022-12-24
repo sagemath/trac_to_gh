@@ -10,6 +10,7 @@ archive/issues_006110.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.2",
     "title": "[with patch, needs review] implement a \"decorator\" to allow pickling nested classes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6110",

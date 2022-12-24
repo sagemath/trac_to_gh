@@ -10,6 +10,7 @@ archive/issues_002043.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "[with spkg] add proper LDFLAGS to libpng.spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2043",

@@ -10,6 +10,7 @@ archive/issues_002473.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.4",
     "title": "[with patch, needs review] BipartiteGraph.__init__ does not properly initialize for some inputs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2473",

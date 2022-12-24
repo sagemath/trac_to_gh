@@ -10,6 +10,7 @@ archive/issues_003929.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Merge the max-flow min-cut code from Scott Clifford and Jerin Schneider",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3929",

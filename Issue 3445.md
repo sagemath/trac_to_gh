@@ -10,6 +10,7 @@ archive/issues_003445.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
     "title": "notebook -- finish implementing e-mail confirmation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3445",

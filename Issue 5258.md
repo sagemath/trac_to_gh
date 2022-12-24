@@ -10,6 +10,7 @@ archive/issues_005258.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "escape html strings with cgi.escape instead of custom (and lacking) regexp",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5258",

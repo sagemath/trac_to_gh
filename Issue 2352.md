@@ -10,6 +10,7 @@ archive/issues_002352.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.3",
     "title": "univariate homogenize is not the same as multivariate homogenize",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2352",

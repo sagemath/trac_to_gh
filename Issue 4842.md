@@ -10,6 +10,7 @@ archive/issues_004842.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.3",
     "title": "Fix performance regression in eisenstein_submodule.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4842",

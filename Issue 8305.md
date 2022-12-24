@@ -10,6 +10,7 @@ archive/issues_008305.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.1",
     "title": "Improve documentation of Monsky-Washnitzer code",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8305",

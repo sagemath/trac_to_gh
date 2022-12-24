@@ -10,6 +10,7 @@ archive/issues_000860.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.7",
     "title": "dsage -- update to fix a bunch of \"rough edges\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/860",

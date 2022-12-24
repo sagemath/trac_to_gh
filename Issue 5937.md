@@ -10,6 +10,7 @@ archive/issues_005937.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "graph theory -- showing the result of a database query with_picture=True is totally broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5937",

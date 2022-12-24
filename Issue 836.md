@@ -10,6 +10,7 @@ archive/issues_000836.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.12",
     "title": "L-series dokchitser -- infinite recursion",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/836",

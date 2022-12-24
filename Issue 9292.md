@@ -10,6 +10,7 @@ archive/issues_009292.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-wishlist",
     "title": "Parabolic and reflection subgroups of Coxeter groups",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9292",

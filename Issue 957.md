@@ -10,6 +10,7 @@ archive/issues_000957.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.15",
     "title": "scipy is misbuilt on os x",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/957",

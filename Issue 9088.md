@@ -10,6 +10,7 @@ archive/issues_009088.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.2",
     "title": "line3d does not take a tuple of points",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9088",

@@ -10,6 +10,7 @@ archive/issues_007412.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "from_lehmer_code modifies its argument",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7412",

@@ -10,6 +10,7 @@ archive/issues_002575.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.3",
     "title": "GAP doesn't compile with CC='ccache gcc'",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2575",

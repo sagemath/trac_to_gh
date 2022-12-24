@@ -10,6 +10,7 @@ archive/issues_004148.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
     "title": "Upgrade to givaro-3.2.13rc1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4148",

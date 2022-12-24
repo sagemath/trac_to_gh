@@ -10,6 +10,7 @@ archive/issues_003341.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
     "title": "fix minor issue with creating skew partitions by dividng partitions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3341",

@@ -10,6 +10,7 @@ archive/issues_006583.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "Implement two descent over QQ natively in Sage using ratpoints",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6583",

@@ -10,6 +10,7 @@ archive/issues_006028.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "get_memory_usage() sucks performance wise on Solaris",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6028",

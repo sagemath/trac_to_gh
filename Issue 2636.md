@@ -10,6 +10,7 @@ archive/issues_002636.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
     "title": "notebook -- changing a cell without evaluate should put the red line back to the left",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2636",

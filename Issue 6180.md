@@ -10,6 +10,7 @@ archive/issues_006180.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.1",
     "title": "[with patch; needs review] fix typo in spkg-install for pynac",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6180",

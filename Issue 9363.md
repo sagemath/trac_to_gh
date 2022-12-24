@@ -10,6 +10,7 @@ archive/issues_009363.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6.2",
     "title": "load bug when last line of file begins with #",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9363",

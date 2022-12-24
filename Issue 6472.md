@@ -10,6 +10,7 @@ archive/issues_006472.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "ideal.groebner_basis gives incorrect answers",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6472",

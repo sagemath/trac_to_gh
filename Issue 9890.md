@@ -10,6 +10,7 @@ archive/issues_009890.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.7.1",
     "title": "substitute goes too far: (5-e^x).substitute(x=log(x)) -> 5-log(x)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9890",

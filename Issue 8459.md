@@ -10,6 +10,7 @@ archive/issues_008459.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.2",
     "title": "broken translatin of polylog from Maxima",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8459",

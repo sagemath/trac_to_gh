@@ -10,6 +10,7 @@ archive/issues_003136.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
     "title": "the readme for osx should be changed to delete the line about inotebook()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3136",

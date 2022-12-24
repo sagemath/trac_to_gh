@@ -10,6 +10,7 @@ archive/issues_008457.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.4",
     "title": "Yet more annoying warnings when building the reference manual",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8457",

@@ -10,6 +10,7 @@ archive/issues_005134.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4",
     "title": "Polyhedron: conversion from V-form to H-form fails if no extreme point is given",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5134",

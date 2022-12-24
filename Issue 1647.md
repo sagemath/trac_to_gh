@@ -10,6 +10,7 @@ archive/issues_001647.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "rewrite spkg chapter in the developer handbook",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1647",

@@ -10,6 +10,7 @@ archive/issues_002117.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "problems with \"...?starup_token=...\" URL in notebook",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2117",

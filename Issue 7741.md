@@ -10,6 +10,7 @@ archive/issues_007741.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
     "title": "Can't construct a rational fraction from a symbolic one.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7741",

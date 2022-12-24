@@ -10,6 +10,7 @@ archive/issues_006091.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.1",
     "title": "[with patch, needs review] syntax extended for subfields of number fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6091",

@@ -10,6 +10,7 @@ archive/issues_004771.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
     "title": "notebook -- get rid of these debug log messages I put in: \"Dumping ...\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4771",

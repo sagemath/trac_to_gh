@@ -10,6 +10,7 @@ archive/issues_000315.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-wishlist",
     "title": "wizard database and interface for notebook and commandline",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/315",

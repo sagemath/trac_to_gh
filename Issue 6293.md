@@ -10,6 +10,7 @@ archive/issues_006293.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "conjugacy_classes_representatives is missing in AbelianGroup",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6293",

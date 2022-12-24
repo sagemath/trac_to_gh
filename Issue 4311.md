@@ -10,6 +10,7 @@ archive/issues_004311.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
     "title": "added documentation for tensor products of crystals",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4311",

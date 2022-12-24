@@ -10,6 +10,7 @@ archive/issues_001698.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
     "title": "PolyBoRi doesn't work at all on Itanium Linux",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1698",

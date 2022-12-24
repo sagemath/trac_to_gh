@@ -10,6 +10,7 @@ archive/issues_006572.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
     "title": "tutorial: put double colon on its own line",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6572",

@@ -10,6 +10,7 @@ archive/issues_001075.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "[with patch] sync'ing hashes for fraction fields and rings",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1075",

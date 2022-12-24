@@ -10,6 +10,7 @@ archive/issues_007718.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "Segfault in coercion code",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7718",

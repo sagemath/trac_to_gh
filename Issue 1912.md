@@ -10,6 +10,7 @@ archive/issues_001912.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Displaying a list of graphic objects prints what appears to be an empty list",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1912",

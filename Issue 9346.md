@@ -10,6 +10,7 @@ archive/issues_009346.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5",
     "title": "sage_fortran no longer works for 32-bit builds on Solaris.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9346",

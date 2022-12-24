@@ -10,6 +10,7 @@ archive/issues_003039.json:
         "blocker",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.1",
     "title": "[with patch; needs review] Improve auto-generated version numbers for Debian packages",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3039",

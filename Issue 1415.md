@@ -10,6 +10,7 @@ archive/issues_001415.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "FLINT 1.0 (from 2.9.alpha1) fails to compile with gcc 4.3 prerelease",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1415",

@@ -10,6 +10,7 @@ archive/issues_003527.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
     "title": "Build python with \"-O2\" instead of \"-O3\" on Itanium",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3527",

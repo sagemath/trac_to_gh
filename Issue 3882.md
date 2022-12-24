@@ -10,6 +10,7 @@ archive/issues_003882.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.3",
     "title": "explain in the programming guide why spkg source patches should be applied by copying entire files",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3882",

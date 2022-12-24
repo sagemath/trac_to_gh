@@ -10,6 +10,7 @@ archive/issues_008461.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Numerical noise in /sage/sage/plot/colors.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8461",

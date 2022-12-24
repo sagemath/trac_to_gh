@@ -10,6 +10,7 @@ archive/issues_007166.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "HP-UX issue. numpy does not understand PA-RISC CPU",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7166",

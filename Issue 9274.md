@@ -10,6 +10,7 @@ archive/issues_009274.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5",
     "title": "do some cleanup of the deps file, as suggested by Carl Hansen",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9274",

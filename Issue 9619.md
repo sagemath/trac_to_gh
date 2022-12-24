@@ -10,6 +10,7 @@ archive/issues_009619.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
     "title": "b-coloring of a graph",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9619",

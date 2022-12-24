@@ -10,6 +10,7 @@ archive/issues_000941.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.8",
     "title": "creating Z_p can take massive amounts of RAM.  Why?",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/941",

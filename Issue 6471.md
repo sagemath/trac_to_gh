@@ -10,6 +10,7 @@ archive/issues_006471.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
     "title": "clarify differences between c.abs() and c.norm() for complex c",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6471",

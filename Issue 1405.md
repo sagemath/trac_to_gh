@@ -10,6 +10,7 @@ archive/issues_001405.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9",
     "title": "gcc 4.3-snapshot: cremona compile fixes.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1405",

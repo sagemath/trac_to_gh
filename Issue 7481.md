@@ -10,6 +10,7 @@ archive/issues_007481.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "upgrade phcpack optional package to version 2.3.51",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7481",

@@ -10,6 +10,7 @@ archive/issues_002093.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
     "title": "floats - sage is inconsistant at times",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2093",

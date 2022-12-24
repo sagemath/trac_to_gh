@@ -10,6 +10,7 @@ archive/issues_007020.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
     "title": "Fix 32-bit versus 64-bit boolean_function issue in crypto",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7020",

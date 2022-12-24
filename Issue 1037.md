@@ -10,6 +10,7 @@ archive/issues_001037.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.11",
     "title": "arithmetic with Schubert polynomials includes extra fixed points in the permutations",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1037",

@@ -10,6 +10,7 @@ archive/issues_001073.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10",
     "title": "right after \"sage -pkg\" creates a package, print out some useful information",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1073",

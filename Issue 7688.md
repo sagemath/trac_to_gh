@@ -10,6 +10,7 @@ archive/issues_007688.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.4",
     "title": "remove byte-compiled files from the sage source distribution",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7688",

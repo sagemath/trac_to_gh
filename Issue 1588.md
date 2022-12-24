@@ -10,6 +10,7 @@ archive/issues_001588.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
     "title": "after #1566, new errors in converting symbolic compositions to polynomials are exposed.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1588",

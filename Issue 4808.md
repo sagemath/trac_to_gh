@@ -10,6 +10,7 @@ archive/issues_004808.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "[with patch, needs work] Move HTML for Worksheets to template",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4808",

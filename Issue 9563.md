@@ -10,6 +10,7 @@ archive/issues_009563.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.0",
     "title": "Remove the English-language tutorial's Makefile",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9563",

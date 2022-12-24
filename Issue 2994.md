@@ -10,6 +10,7 @@ archive/issues_002994.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "polybori.spkg: fix permission issue of the headers",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2994",

@@ -10,6 +10,7 @@ archive/issues_001140.json:
         "trivial",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.13",
     "title": "typo in documentation [with patch]",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1140",

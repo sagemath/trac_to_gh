@@ -10,6 +10,7 @@ archive/issues_001866.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "bug in doctesting -- long time not respected in some contexts",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1866",

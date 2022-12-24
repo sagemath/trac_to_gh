@@ -10,6 +10,7 @@ archive/issues_003928.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "multiedge graphs create an edge for each character of a label",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3928",

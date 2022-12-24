@@ -10,6 +10,7 @@ archive/issues_004053.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "[with patch, needs review] more checking for graph6. sparse6 and dig6 formats",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4053",

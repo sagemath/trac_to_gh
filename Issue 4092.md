@@ -10,6 +10,7 @@ archive/issues_004092.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "libm4ri-20080904 fails to build on OSX 10.4",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4092",

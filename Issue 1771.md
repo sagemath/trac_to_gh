@@ -10,6 +10,7 @@ archive/issues_001771.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10",
     "title": "latex bug with symbolics [with fix]",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1771",

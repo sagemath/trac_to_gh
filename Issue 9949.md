@@ -10,6 +10,7 @@ archive/issues_009949.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.1",
     "title": "Change Brian package from experimental to optional",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9949",

@@ -10,6 +10,7 @@ archive/issues_008889.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "multidim'l enumeration over variable length tuples",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8889",

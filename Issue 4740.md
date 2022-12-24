@@ -10,6 +10,7 @@ archive/issues_004740.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.12",
     "title": "Fix memory leak in finite field coercion",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4740",

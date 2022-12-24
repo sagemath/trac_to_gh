@@ -10,6 +10,7 @@ archive/issues_006437.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "polybori assumes the linker is the GNU one, so breaks if Sun linker is used.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6437",

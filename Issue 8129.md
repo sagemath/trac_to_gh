@@ -10,6 +10,7 @@ archive/issues_008129.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Install jsMath image fonts in a fixed location",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8129",

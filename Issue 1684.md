@@ -10,6 +10,7 @@ archive/issues_001684.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Intelligent indentation when user presses \"enter\".",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1684",

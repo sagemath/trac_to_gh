@@ -10,6 +10,7 @@ archive/issues_004480.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
     "title": "[with patch, needs review] cython dependancy checking is too slow",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4480",

@@ -10,6 +10,7 @@ archive/issues_002799.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "matrix's __getitem__ doesn't respect slice object's step attribute",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2799",

@@ -10,6 +10,7 @@ archive/issues_007839.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Failure to coerce q^(-1) into its own LaurentPolynomialRing",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7839",

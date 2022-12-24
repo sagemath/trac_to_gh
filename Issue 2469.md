@@ -10,6 +10,7 @@ archive/issues_002469.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
     "title": "fix readline extra space issue in sage (ipython)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2469",

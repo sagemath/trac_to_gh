@@ -10,6 +10,7 @@ archive/issues_006175.json:
         "trivial",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.1",
     "title": "[with patch, needs review] change Sage Group to Sage Development Team",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6175",

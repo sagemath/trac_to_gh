@@ -10,6 +10,7 @@ archive/issues_000659.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.5",
     "title": "ZeroInversions for 0^(-1) [with patch]",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/659",

@@ -10,6 +10,7 @@ archive/issues_006349.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1",
     "title": "graphs -- bug in DiGraph constructor",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6349",

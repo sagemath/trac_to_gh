@@ -10,6 +10,7 @@ archive/issues_002209.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "gap on itanium - incorporate steve linton's new fixes so gap builds fine with optimizations",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2209",

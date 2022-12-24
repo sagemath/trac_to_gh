@@ -10,6 +10,7 @@ archive/issues_008581.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "Implement an uniform set for index infinite variable algebraic structure, implement polynomial ring in infinite set of indeterminate with categories, implement the Schubert base ring in y1, y2, y3, ...",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8581",

@@ -10,6 +10,7 @@ archive/issues_009978.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Cliquer fails to install on AIX 5.3 as getopt.h does not exist",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9978",

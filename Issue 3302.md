@@ -10,6 +10,7 @@ archive/issues_003302.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "python_gnutls fails to upgrade on OSX in case Sage was moved",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3302",

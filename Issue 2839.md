@@ -10,6 +10,7 @@ archive/issues_002839.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "bug in conversion from symmetrica's longint",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2839",

@@ -10,6 +10,7 @@ archive/issues_008705.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4",
     "title": "Add sage_unittest to the reference manual",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8705",

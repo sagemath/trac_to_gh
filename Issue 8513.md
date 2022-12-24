@@ -10,6 +10,7 @@ archive/issues_008513.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4",
     "title": "Including documentation in the reference manual for some files related to graph theory",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8513",

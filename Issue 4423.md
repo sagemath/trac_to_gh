@@ -10,6 +10,7 @@ archive/issues_004423.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
     "title": "[with patch, needs review] document branch cut for Ei",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4423",

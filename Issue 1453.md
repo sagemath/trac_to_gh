@@ -10,6 +10,7 @@ archive/issues_001453.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
     "title": "[with patch, positive review] fix cython dependency computation for new files",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1453",

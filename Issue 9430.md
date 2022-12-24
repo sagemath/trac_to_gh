@@ -10,6 +10,7 @@ archive/issues_009430.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5",
     "title": "Update SageNB to version 0.8.1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9430",

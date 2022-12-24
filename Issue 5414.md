@@ -10,6 +10,7 @@ archive/issues_005414.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4",
     "title": "notebook help: the live documentation list are broken after the doc removal",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5414",

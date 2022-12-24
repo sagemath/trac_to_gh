@@ -10,6 +10,7 @@ archive/issues_008737.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4",
     "title": "compile plot3d/base.pyx and index_face_set with \"-std=c99\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8737",

@@ -10,6 +10,7 @@ archive/issues_001523.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-wishlist",
     "title": "rewrite the mathematica/maple <---> sage interfaces for osx to be much easier to use for the \"lay person\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1523",

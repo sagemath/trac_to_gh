@@ -10,6 +10,7 @@ archive/issues_001844.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
     "title": "[with bundle] Get doctest coverage in sage/modular/modform up to 100%",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1844",

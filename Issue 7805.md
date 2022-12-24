@@ -10,6 +10,7 @@ archive/issues_007805.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4",
     "title": "MixedIntegerLinearProgram.show should use the variables' and constraints' names",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7805",

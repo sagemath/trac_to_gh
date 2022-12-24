@@ -10,6 +10,7 @@ archive/issues_008193.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.3",
     "title": "Enumeration of points on plane curves over finite fields is very inefficient",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8193",

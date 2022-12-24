@@ -10,6 +10,7 @@ archive/issues_008166.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.4",
     "title": "Expose max_weight_matching from NetworkX",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8166",

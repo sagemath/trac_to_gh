@@ -10,6 +10,7 @@ archive/issues_002251.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
     "title": "sage 2.10.2.rc0: rings/number_field/number_field.py doctest failure",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2251",

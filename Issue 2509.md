@@ -10,6 +10,7 @@ archive/issues_002509.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.4",
     "title": "[with patch, needs review] showstopper in xgcd(f, 0)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2509",

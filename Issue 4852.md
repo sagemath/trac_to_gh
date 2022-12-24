@@ -10,6 +10,7 @@ archive/issues_004852.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "graph plotting using @option and @suboption",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4852",

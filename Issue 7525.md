@@ -10,6 +10,7 @@ archive/issues_007525.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "developer's guide: add information about editing python files in the sage library",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7525",

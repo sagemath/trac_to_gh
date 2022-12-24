@@ -10,6 +10,7 @@ archive/issues_001484.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "path -- load path for attach and load",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1484",

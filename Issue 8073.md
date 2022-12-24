@@ -10,6 +10,7 @@ archive/issues_008073.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "deprecation version number should say \"After version ...\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8073",

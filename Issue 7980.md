@@ -10,6 +10,7 @@ archive/issues_007980.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.0",
     "title": "Move 'Category with concrete representation' code into Sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7980",

@@ -10,6 +10,7 @@ archive/issues_006157.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.1",
     "title": "[with patch, needs review] enhance implicit_plot3d documentation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6157",

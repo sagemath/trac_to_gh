@@ -10,6 +10,7 @@ archive/issues_002729.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "[with patch] tiny jmol spheres have holes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2729",

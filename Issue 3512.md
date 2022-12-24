@@ -10,6 +10,7 @@ archive/issues_003512.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
     "title": "[with spkg, needs review] upgrade to sqlalchemy 0.4.6",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3512",

@@ -10,6 +10,7 @@ archive/issues_000843.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.7",
     "title": "[with patch] fast quadratic field elements",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/843",

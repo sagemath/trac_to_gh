@@ -10,6 +10,7 @@ archive/issues_007830.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.2",
     "title": "function for floating point representation of a number",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7830",

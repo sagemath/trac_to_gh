@@ -10,6 +10,7 @@ archive/issues_006669.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "Homomorphisms from matrix groups don't have to have matrix groups as codomain",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6669",

@@ -10,6 +10,7 @@ archive/issues_004702.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
     "title": "improve magma interface coverage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4702",

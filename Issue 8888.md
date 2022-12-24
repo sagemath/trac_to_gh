@@ -10,6 +10,7 @@ archive/issues_008888.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.4",
     "title": "Returns the frontier of a partition",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8888",

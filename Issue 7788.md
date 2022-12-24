@@ -10,6 +10,7 @@ archive/issues_007788.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "followup patch to #5396",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7788",

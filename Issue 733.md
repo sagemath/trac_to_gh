@@ -10,6 +10,7 @@ archive/issues_000733.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
     "title": "generating docs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/733",

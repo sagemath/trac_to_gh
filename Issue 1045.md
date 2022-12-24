@@ -10,6 +10,7 @@ archive/issues_001045.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.11",
     "title": "[with patch] graphs: add eulerian testing and circuit-finding",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1045",

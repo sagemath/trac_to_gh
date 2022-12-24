@@ -10,6 +10,7 @@ archive/issues_001877.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "same range variables -- bug in 3d plotting (probably very very very easy to fix)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1877",

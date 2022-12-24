@@ -10,6 +10,7 @@ archive/issues_001785.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "bug in creating points on elliptic curves over extension fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1785",

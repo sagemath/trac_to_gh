@@ -10,6 +10,7 @@ archive/issues_008347.json:
         "critical",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.4",
     "title": "Test the positivity of the real part of a number field element",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8347",

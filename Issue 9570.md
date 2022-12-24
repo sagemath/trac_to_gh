@@ -10,6 +10,7 @@ archive/issues_009570.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.2",
     "title": "Wrong LP solver ordering",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9570",

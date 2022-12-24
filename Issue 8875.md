@@ -10,6 +10,7 @@ archive/issues_008875.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.2",
     "title": "Problem with Set created from iterator.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8875",

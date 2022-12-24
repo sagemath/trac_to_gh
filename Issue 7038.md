@@ -10,6 +10,7 @@ archive/issues_007038.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "ratpoints 2.1.2.p2 ignores CC and uses gcc whatever",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7038",

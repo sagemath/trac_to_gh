@@ -10,6 +10,7 @@ archive/issues_006271.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.2",
     "title": "upgrade to mpir-1.3.0",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6271",

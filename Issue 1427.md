@@ -10,6 +10,7 @@ archive/issues_001427.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9",
     "title": "[with spkg  ] rpy doesn't build on osx 10.4",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1427",

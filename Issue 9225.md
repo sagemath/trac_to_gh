@@ -10,6 +10,7 @@ archive/issues_009225.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Indicate progress and elapsed time when running multiple doctests",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9225",

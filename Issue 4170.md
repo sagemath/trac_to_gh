@@ -10,6 +10,7 @@ archive/issues_004170.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
     "title": "symbolic ring does not accept python longs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4170",

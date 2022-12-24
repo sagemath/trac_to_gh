@@ -10,6 +10,7 @@ archive/issues_005882.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1",
     "title": "implement general package for finitely generated not-necessarily free R-modules",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5882",

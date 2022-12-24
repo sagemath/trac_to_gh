@@ -10,6 +10,7 @@ archive/issues_004777.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
     "title": "Sage is_prime_power is seriously buggy, because pari's ispower is BROKEN",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4777",

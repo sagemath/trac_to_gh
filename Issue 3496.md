@@ -10,6 +10,7 @@ archive/issues_003496.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
     "title": "charpoly for 0 dimensional matrices is broken/wrong most places",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3496",

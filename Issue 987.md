@@ -10,6 +10,7 @@ archive/issues_000987.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.9",
     "title": "integrate(1/sqrt(9+x^2)) fails",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/987",

@@ -10,6 +10,7 @@ archive/issues_005790.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
     "title": "Updating some quirks in partition.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5790",

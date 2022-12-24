@@ -10,6 +10,7 @@ archive/issues_008192.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.1",
     "title": "Update PolyBoRi to newest upstream release",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8192",

@@ -10,6 +10,7 @@ archive/issues_004182.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
     "title": "plot3d fails with 'IndexError: list index out of range'",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4182",

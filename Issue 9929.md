@@ -10,6 +10,7 @@ archive/issues_009929.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
     "title": "Additional test in is_even_hole_free",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9929",

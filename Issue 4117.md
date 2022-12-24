@@ -10,6 +10,7 @@ archive/issues_004117.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "number_field_* leaks caused by gen.pyx's type(gen self)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4117",

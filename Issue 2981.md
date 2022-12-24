@@ -10,6 +10,7 @@ archive/issues_002981.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "Itanium (RHEL 5) -- error parsing gap output because of unaligned access kernel warning",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2981",

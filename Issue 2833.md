@@ -10,6 +10,7 @@ archive/issues_002833.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "Linbox build failure on OSX 10.4 intel",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2833",

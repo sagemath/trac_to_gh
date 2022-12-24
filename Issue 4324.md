@@ -10,6 +10,7 @@ archive/issues_004324.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
     "title": "[with patch, needs review] fix storage of GBs for PolyBoRi",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4324",

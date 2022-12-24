@@ -10,6 +10,7 @@ archive/issues_008744.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-9.8",
     "title": "Improve add_edge in BipartiteGraph to make it independent from the current coloring",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8744",

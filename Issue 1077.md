@@ -10,6 +10,7 @@ archive/issues_001077.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9",
     "title": "DSage restarts two workers after timeout",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1077",

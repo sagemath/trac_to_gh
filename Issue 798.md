@@ -10,6 +10,7 @@ archive/issues_000798.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.6",
     "title": "[with patch] MPolynomial_libsingular.subs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/798",

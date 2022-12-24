@@ -10,6 +10,7 @@ archive/issues_008677.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
     "title": "race condition creating dirs during Sage build on RH 5.4",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8677",

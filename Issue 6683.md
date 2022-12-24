@@ -10,6 +10,7 @@ archive/issues_006683.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "notebook worksheet rating_info link leads to error page",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6683",

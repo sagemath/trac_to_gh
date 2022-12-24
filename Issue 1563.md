@@ -10,6 +10,7 @@ archive/issues_001563.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9.1",
     "title": "dash r",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1563",

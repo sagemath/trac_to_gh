@@ -10,6 +10,7 @@ archive/issues_002821.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.1",
     "title": "get rid of anything \"about this document\" sections of any sage docs that say \"send email to stein\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2821",

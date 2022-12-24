@@ -10,6 +10,7 @@ archive/issues_001703.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10",
     "title": "memleak in Singular: one mpz is leaked in longrat.cc triggered by linear_code.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1703",

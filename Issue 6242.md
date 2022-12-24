@@ -10,6 +10,7 @@ archive/issues_006242.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1",
     "title": "*long* birds_other.rst doctest fails with mysterious error repeatedly on OS X",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6242",

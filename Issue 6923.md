@@ -10,6 +10,7 @@ archive/issues_006923.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-7.3",
     "title": "Matrix numerical approximation converts complex to real",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6923",

@@ -10,6 +10,7 @@ archive/issues_006632.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
     "title": "Bug in blocks_and_cut_vertices() of a graph that occurs when vertex 0 is a cut vertex",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6632",

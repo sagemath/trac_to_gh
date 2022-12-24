@@ -10,6 +10,7 @@ archive/issues_004727.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "list method on relative number field elements is broken -- it doesn't satisfy the most basic consistency check",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4727",

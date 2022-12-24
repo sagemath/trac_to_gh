@@ -10,6 +10,7 @@ archive/issues_009609.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.2",
     "title": "Remove unnecessary files from spkg/standard",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9609",

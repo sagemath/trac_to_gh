@@ -10,6 +10,7 @@ archive/issues_008367.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "element_class of Subsets is broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8367",

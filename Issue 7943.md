@@ -10,6 +10,7 @@ archive/issues_007943.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.4",
     "title": "move docbuild commands to their own targets in SAGE_ROOT/makefile",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7943",

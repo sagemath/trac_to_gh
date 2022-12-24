@@ -10,6 +10,7 @@ archive/issues_008045.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.2",
     "title": "add elliptic integrals to the reference manual",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8045",

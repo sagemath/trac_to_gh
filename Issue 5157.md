@@ -10,6 +10,7 @@ archive/issues_005157.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "if the mwrank interface is interrupted from the notebook (!) it stays broken for the rest of the sage session",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5157",

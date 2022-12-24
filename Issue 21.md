@@ -10,6 +10,7 @@ archive/issues_000021.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "command line option parsing",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/21",

@@ -10,6 +10,7 @@ archive/issues_000845.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.11",
     "title": "Can't pass boolean as parameter to Magma",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/845",

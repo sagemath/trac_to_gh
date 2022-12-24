@@ -10,6 +10,7 @@ archive/issues_001974.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.4",
     "title": "notebook -- when changing the title of a worksheet, the javascript should change the document title (via DOM or at worst forced reload)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1974",

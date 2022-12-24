@@ -10,6 +10,7 @@ archive/issues_006063.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "x^2 for x over QQ is really frickin' slow compared to over ZZ (nearly factor of 100!!)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6063",

@@ -10,6 +10,7 @@ archive/issues_007542.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Security issues in gnutls-2.2.1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7542",

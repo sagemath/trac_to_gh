@@ -10,6 +10,7 @@ archive/issues_008315.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Reference manual layout: toggles, sidebar links",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8315",

@@ -10,6 +10,7 @@ archive/issues_005124.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "xmin ignored when plotting elliptic curves",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5124",

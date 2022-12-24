@@ -10,6 +10,7 @@ archive/issues_009857.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.8",
     "title": "FLINT 1.5.0.p5's test suite fails to build with new GMP/MPIR",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9857",

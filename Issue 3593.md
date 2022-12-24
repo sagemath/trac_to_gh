@@ -10,6 +10,7 @@ archive/issues_003593.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
     "title": "dsage-interfaces -- error decompressing data",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3593",

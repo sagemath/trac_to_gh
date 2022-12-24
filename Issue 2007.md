@@ -10,6 +10,7 @@ archive/issues_002007.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.5",
     "title": "crap -- the R spkg contains precompiled java files",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2007",

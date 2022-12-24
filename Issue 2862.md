@@ -10,6 +10,7 @@ archive/issues_002862.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "[with patch, needs review] Sage 3.0.alpha2: fix tex problems",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2862",

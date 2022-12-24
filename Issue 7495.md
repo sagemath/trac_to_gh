@@ -10,6 +10,7 @@ archive/issues_007495.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "notebook: get rid of all possible \"internal server errors\" when doing \"Data --> Upload or attach file\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7495",

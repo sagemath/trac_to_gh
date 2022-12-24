@@ -10,6 +10,7 @@ archive/issues_009902.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.7",
     "title": "is_prime should document proof flag",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9902",

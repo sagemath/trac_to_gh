@@ -10,6 +10,7 @@ archive/issues_004717.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
     "title": "[with patch, needs review] matrix_plot should also accept numpy arrays",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4717",

@@ -10,6 +10,7 @@ archive/issues_000751.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.5.1",
     "title": "algebraic number theory -- a bunch of minor updates needed for Stein's book",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/751",

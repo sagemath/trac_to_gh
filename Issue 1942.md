@@ -10,6 +10,7 @@ archive/issues_001942.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Sage 2.10.1.rc0: sage0.cputime()  broken on 32 bit FC7/8",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1942",

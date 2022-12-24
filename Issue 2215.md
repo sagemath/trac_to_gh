@@ -10,6 +10,7 @@ archive/issues_002215.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "if p is a permutation, matrix(p) should call p.to_matrix()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2215",

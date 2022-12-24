@@ -10,6 +10,7 @@ archive/issues_002539.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.1",
     "title": "Sage 2.10.4.rc0: dsage/dist_functions/dist_factor.py timeout issue with -long",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2539",

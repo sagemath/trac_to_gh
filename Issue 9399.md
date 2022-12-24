@@ -10,6 +10,7 @@ archive/issues_009399.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5",
     "title": "Remove Sun-specific junk in rings/finite_rings/stdint.h",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9399",

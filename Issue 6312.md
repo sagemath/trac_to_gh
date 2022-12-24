@@ -10,6 +10,7 @@ archive/issues_006312.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "optional doctest failure -- galois_group",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6312",

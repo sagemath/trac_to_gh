@@ -10,6 +10,7 @@ archive/issues_009586.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Lecture Scheduler",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9586",

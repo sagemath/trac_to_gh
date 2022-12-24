@@ -10,6 +10,7 @@ archive/issues_004835.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "pari starts up without inititializing enough primes?",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4835",

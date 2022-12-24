@@ -10,6 +10,7 @@ archive/issues_000722.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.5.1",
     "title": "GF(100) gives weird error message",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/722",

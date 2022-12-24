@@ -10,6 +10,7 @@ archive/issues_003568.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "optimize sage startup -- don't import twisted.web2 until needed",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3568",

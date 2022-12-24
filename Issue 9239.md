@@ -10,6 +10,7 @@ archive/issues_009239.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.2",
     "title": "delete the (ridiculous) method __copy__ from matrix0.pyx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9239",

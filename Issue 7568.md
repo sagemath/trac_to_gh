@@ -10,6 +10,7 @@ archive/issues_007568.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "multiply Dirichlet characters of different conductors",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7568",

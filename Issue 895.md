@@ -10,6 +10,7 @@ archive/issues_000895.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.9",
     "title": "[with patch] .inverse() method for matrices",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/895",

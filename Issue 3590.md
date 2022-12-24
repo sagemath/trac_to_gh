@@ -10,6 +10,7 @@ archive/issues_003590.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
     "title": "dage_interfaces -- port detection code hangs solid",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3590",

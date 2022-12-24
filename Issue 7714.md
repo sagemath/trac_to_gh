@@ -10,6 +10,7 @@ archive/issues_007714.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.7.2",
     "title": "bug in matrix rank over multivariate polynomial ring",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7714",

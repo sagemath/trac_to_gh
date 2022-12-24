@@ -10,6 +10,7 @@ archive/issues_004091.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "Sage 3.1.2.rc1: matrix_real_double_dense.py doctest failure",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4091",

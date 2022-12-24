@@ -10,6 +10,7 @@ archive/issues_003430.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.3",
     "title": "3.0.3.rc0: doctest failure in server/notebook/interact.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3430",

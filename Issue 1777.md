@@ -10,6 +10,7 @@ archive/issues_001777.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "jmol up/down metaphor confusing in the \"View\" right-click menu",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1777",

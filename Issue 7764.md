@@ -10,6 +10,7 @@ archive/issues_007764.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "mhansen's 4.3.rc1 merge tree may have got ahead of wstein's",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7764",

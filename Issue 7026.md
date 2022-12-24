@@ -10,6 +10,7 @@ archive/issues_007026.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "linbox 1.1.6.p0 says GMP is not installed, even though MPIR is",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7026",

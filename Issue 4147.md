@@ -10,6 +10,7 @@ archive/issues_004147.json:
         "trivial",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
     "title": "Upgrade to linbox-1.1.6",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4147",

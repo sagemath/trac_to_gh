@@ -10,6 +10,7 @@ archive/issues_009792.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "Make plot1d function",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9792",

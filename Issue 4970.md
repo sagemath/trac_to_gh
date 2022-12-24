@@ -10,6 +10,7 @@ archive/issues_004970.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "modify tkinter detection in our python spkg so that it works on macs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4970",

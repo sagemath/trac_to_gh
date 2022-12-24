@@ -10,6 +10,7 @@ archive/issues_001414.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "wrap MPolynomialRing so inject_on() works.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1414",

@@ -10,6 +10,7 @@ archive/issues_005526.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
     "title": "get rid of including sse4_1 in local/lib/sage-flags.txt",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5526",

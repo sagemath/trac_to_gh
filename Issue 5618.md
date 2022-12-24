@@ -10,6 +10,7 @@ archive/issues_005618.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6.2",
     "title": "Cyclotomic field elements are not convert to Gap correctly.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5618",

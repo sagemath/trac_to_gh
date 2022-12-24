@@ -10,6 +10,7 @@ archive/issues_007907.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "Bug in characteristic 2 isogenies of degree >3",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7907",

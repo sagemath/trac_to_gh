@@ -10,6 +10,7 @@ archive/issues_000196.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-1.8",
     "title": "sage signal handler -- ctrl-c interrupt, etc.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/196",

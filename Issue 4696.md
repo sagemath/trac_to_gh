@@ -10,6 +10,7 @@ archive/issues_004696.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "coercion system doesn't expect pickled parents",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4696",

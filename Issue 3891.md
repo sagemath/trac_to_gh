@@ -10,6 +10,7 @@ archive/issues_003891.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
     "title": "polynomial sqrt method",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3891",

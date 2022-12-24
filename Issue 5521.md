@@ -10,6 +10,7 @@ archive/issues_005521.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
     "title": "fix serious bug in pickling the rational numbers and the magma interface",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5521",

@@ -10,6 +10,7 @@ archive/issues_007368.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-wishlist",
     "title": "Further work on isogenies and endomorphisms of elliptic curves",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7368",

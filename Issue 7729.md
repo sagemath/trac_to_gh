@@ -10,6 +10,7 @@ archive/issues_007729.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "Iwahori Hecke algebras",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7729",

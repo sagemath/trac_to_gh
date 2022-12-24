@@ -10,6 +10,7 @@ archive/issues_005353.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
     "title": "add xgcd for polynomial over GF(2)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5353",

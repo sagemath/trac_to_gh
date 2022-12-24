@@ -10,6 +10,7 @@ archive/issues_000700.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.8",
     "title": "fix significant bug in how cvxopt package is built on Linux",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/700",

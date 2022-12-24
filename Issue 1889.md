@@ -10,6 +10,7 @@ archive/issues_001889.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
     "title": "2.10.1.alpha2 doctest failure in crypto/mq/sr.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1889",

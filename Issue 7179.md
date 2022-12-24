@@ -10,6 +10,7 @@ archive/issues_007179.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "HP-UX sympow-1.018.1.p6 fail to find atoll(). Will atol() do?",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7179",

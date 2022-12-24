@@ -10,6 +10,7 @@ archive/issues_003290.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
     "title": "Integrate ATLAS 3.8.1 Errate",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3290",

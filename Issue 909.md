@@ -10,6 +10,7 @@ archive/issues_000909.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Cython without recompile",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/909",

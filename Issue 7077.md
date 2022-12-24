@@ -10,6 +10,7 @@ archive/issues_007077.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
     "title": "variables() inconsistently returns a list or tuple",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7077",

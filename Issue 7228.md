@@ -10,6 +10,7 @@ archive/issues_007228.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
     "title": "[with patch, need review] Generalized Petersen graph generator",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7228",

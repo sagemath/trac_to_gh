@@ -10,6 +10,7 @@ archive/issues_002671.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "implement matrix/vector function similar to numpy's where or matlab's find",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2671",

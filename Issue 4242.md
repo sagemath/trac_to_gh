@@ -10,6 +10,7 @@ archive/issues_004242.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
     "title": "Bugfix for dominates() method of partition.py (with patch; needs review)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4242",

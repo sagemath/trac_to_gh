@@ -10,6 +10,7 @@ archive/issues_002727.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
     "title": "[with patch; needs review] uninitialized cdef in multi_polynomial_libsingular.pyx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2727",

@@ -10,6 +10,7 @@ archive/issues_009607.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.2",
     "title": "Doctest failure in latex.rst",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9607",

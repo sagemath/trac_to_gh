@@ -10,6 +10,7 @@ archive/issues_008614.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.7",
     "title": "Optimize creation of modular symbols spaces by speeding up quotienting out by 2-term relations",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8614",

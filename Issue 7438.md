@@ -10,6 +10,7 @@ archive/issues_007438.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "the graphviz-2.16.1.p0 optional spkg fails to build on ubuntu-9.10 with a sage-4.2.1 install",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7438",

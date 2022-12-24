@@ -10,6 +10,7 @@ archive/issues_004503.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
     "title": "numerical noise in matrix_double_dense on intel mac os X 10.5: SVD",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4503",

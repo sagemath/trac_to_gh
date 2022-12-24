@@ -10,6 +10,7 @@ archive/issues_000640.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.4.2",
     "title": "get rid of the circular link that is created when installing the python spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/640",

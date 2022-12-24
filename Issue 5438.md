@@ -10,6 +10,7 @@ archive/issues_005438.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
     "title": "Incorrect documentation and/or functionality in plot filling",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5438",

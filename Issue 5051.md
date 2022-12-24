@@ -10,6 +10,7 @@ archive/issues_005051.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "tracebacks involving cython (etc.) seriously broken in sage-3.3.alpha0 (probably caused by ipython)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5051",

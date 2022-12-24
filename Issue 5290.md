@@ -10,6 +10,7 @@ archive/issues_005290.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "Sage 3.3.rc1: Sage fails to start due to dangling missed import in plot.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5290",

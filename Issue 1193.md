@@ -10,6 +10,7 @@ archive/issues_001193.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.4",
     "title": "Can't apply patches under VMware",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1193",

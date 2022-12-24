@@ -10,6 +10,7 @@ archive/issues_004150.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
     "title": "[with patch, needs review and testing] migrate graphs to new refinement code",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4150",

@@ -10,6 +10,7 @@ archive/issues_001271.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.15",
     "title": "update Singular to 3-0-4 release",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1271",

@@ -10,6 +10,7 @@ archive/issues_008471.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Upgrade or patch pexpect",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8471",

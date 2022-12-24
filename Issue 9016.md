@@ -10,6 +10,7 @@ archive/issues_009016.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.6",
     "title": "make morphisms hashable",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9016",

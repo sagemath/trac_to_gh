@@ -10,6 +10,7 @@ archive/issues_007386.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "Docstrings for graphs_generators.CubeGraph",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7386",

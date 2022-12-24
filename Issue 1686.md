@@ -10,6 +10,7 @@ archive/issues_001686.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
     "title": "arpack -- illegal instruction when built on Pentium 4 using gfortran",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1686",

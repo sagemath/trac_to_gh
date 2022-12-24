@@ -10,6 +10,7 @@ archive/issues_004682.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
     "title": "Add about 36 people missing from the DevMap for Sage 3.0.6-3.2.1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4682",

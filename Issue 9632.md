@@ -10,6 +10,7 @@ archive/issues_009632.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.11",
     "title": "System-dependent term order for printed expressions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9632",

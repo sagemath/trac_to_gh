@@ -10,6 +10,7 @@ archive/issues_005910.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "move logic module boolopt.py to another enhancement ticket",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5910",

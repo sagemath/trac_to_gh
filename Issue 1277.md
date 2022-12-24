@@ -10,6 +10,7 @@ archive/issues_001277.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10",
     "title": "two further flint spkg problems",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1277",

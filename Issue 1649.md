@@ -10,6 +10,7 @@ archive/issues_001649.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
     "title": "Updated eclib.spkg to  eclib-20071231.p0.spkg  or later",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1649",

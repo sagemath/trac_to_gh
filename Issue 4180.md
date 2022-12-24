@@ -10,6 +10,7 @@ archive/issues_004180.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
     "title": "magic pexpect logging switch",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4180",

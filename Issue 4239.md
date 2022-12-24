@@ -10,6 +10,7 @@ archive/issues_004239.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
     "title": "[with patch, needs review] fix for problems with zero kernel and images",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4239",

@@ -10,6 +10,7 @@ archive/issues_005289.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "gdmodule fails to build on Linux/Solaris systems without a system wide libpng",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5289",

@@ -10,6 +10,7 @@ archive/issues_001023.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.10",
     "title": "add basic omega support to sage-sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1023",

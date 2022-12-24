@@ -10,6 +10,7 @@ archive/issues_004077.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "notebook - ReactorNotRunning error consistently seen in sage-3.1.2.rc0",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4077",

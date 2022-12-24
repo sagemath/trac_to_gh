@@ -10,6 +10,7 @@ archive/issues_004026.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "[with spkg, needs review] Move Macaulay2  to latest upstream",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4026",

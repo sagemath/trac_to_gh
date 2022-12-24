@@ -10,6 +10,7 @@ archive/issues_009687.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
     "title": "Update citation info for Tower of Hanoi graph generator",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9687",

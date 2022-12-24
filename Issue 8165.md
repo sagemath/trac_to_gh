@@ -10,6 +10,7 @@ archive/issues_008165.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.3",
     "title": "title cuts off on worksheet upload",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8165",

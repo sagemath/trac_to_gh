@@ -10,6 +10,7 @@ archive/issues_000546.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.12",
     "title": "hg_extcode should merge repository on upgrade/install instead of overwriting",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/546",

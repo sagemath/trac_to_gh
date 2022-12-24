@@ -10,6 +10,7 @@ archive/issues_002701.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
     "title": "simple bug fixed for linear_codes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2701",

@@ -10,6 +10,7 @@ archive/issues_008473.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Make .sws files clickable",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8473",

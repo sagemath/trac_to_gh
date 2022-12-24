@@ -10,6 +10,7 @@ archive/issues_008394.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.1",
     "title": "plot/plot3d/tri_plot.py is at 0% coverage: get it to 100%",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8394",

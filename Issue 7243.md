@@ -10,6 +10,7 @@ archive/issues_007243.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "bashisms in extcode-4.1.2/pari/dokchitser/testall",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7243",

@@ -10,6 +10,7 @@ archive/issues_009739.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.7.2",
     "title": "Handle duplicate file basenames when testing multiple files in parallel",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9739",

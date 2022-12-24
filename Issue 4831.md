@@ -10,6 +10,7 @@ archive/issues_004831.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "More number field ideal utilities",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4831",

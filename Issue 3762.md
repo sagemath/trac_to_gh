@@ -10,6 +10,7 @@ archive/issues_003762.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "remove quaddouble from sage -- not used, source of pain, mpfr is better",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3762",

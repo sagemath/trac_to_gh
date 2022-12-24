@@ -10,6 +10,7 @@ archive/issues_000760.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.6",
     "title": "[patch] graphs: a small change to subgraphs allow it to default to the original graph.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/760",

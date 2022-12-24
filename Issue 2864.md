@@ -10,6 +10,7 @@ archive/issues_002864.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "Weyl groups are implemented in rootsystem.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2864",

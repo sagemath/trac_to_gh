@@ -10,6 +10,7 @@ archive/issues_001692.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.1",
     "title": "Make doc target force to use local sage instead of sage in $PATH",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1692",

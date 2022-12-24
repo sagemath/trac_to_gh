@@ -10,6 +10,7 @@ archive/issues_001653.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
     "title": "Bug raising an integer to a float  (probably really easy to fix in integer.pyx!)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1653",

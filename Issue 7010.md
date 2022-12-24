@@ -10,6 +10,7 @@ archive/issues_007010.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
     "title": "sanity check key value of the shift cryptosystem",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7010",

@@ -10,6 +10,7 @@ archive/issues_008601.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.2",
     "title": "Bug in vector reduction",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8601",

@@ -10,6 +10,7 @@ archive/issues_009476.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.3",
     "title": "Upgrade eclib to version 20100711",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9476",

@@ -10,6 +10,7 @@ archive/issues_002054.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.3",
     "title": "prun is not preparsed -- potentially very confusing",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2054",

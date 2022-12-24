@@ -10,6 +10,7 @@ archive/issues_001299.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Make sure GSL uses atlas.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1299",

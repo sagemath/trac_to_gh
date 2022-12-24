@@ -10,6 +10,7 @@ archive/issues_005282.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "In %python mode in the notebook, tracebacks are not properly reported",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5282",

@@ -10,6 +10,7 @@ archive/issues_001164.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9",
     "title": "Error in tutorial documentation about %hist",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1164",

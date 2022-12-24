@@ -10,6 +10,7 @@ archive/issues_007043.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "ntl 5.4.2.p9 passes -fPIC to Sun linker with SunStudio",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7043",

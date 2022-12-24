@@ -10,6 +10,7 @@ archive/issues_005449.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
     "title": "Implement @cache_method with cache stored in the parent",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5449",

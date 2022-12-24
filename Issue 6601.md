@@ -10,6 +10,7 @@ archive/issues_006601.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Crash loading rings.polynomial.pbori",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6601",

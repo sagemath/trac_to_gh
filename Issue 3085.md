@@ -10,6 +10,7 @@ archive/issues_003085.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.1",
     "title": "[with patch, needs *really* easy review] identity matrix docs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3085",

@@ -10,6 +10,7 @@ archive/issues_004825.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "extract worksheets embedded in pdf files",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4825",

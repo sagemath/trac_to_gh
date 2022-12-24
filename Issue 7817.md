@@ -10,6 +10,7 @@ archive/issues_007817.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "opencdk ignoring SAGE64 except on OS X",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7817",

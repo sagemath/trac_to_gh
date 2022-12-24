@@ -10,6 +10,7 @@ archive/issues_007923.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "signed int overflow in givaro elements' __pow__ method",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7923",

@@ -10,6 +10,7 @@ archive/issues_007643.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.1",
     "title": "composite_fields does not play nice with QuadraticFields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7643",

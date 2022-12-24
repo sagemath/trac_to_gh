@@ -10,6 +10,7 @@ archive/issues_000841.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.7",
     "title": "hash() on algebraic reals is not stable",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/841",

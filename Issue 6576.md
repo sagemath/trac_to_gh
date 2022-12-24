@@ -10,6 +10,7 @@ archive/issues_006576.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Use JSON package for simple server",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6576",

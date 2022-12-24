@@ -10,6 +10,7 @@ archive/issues_006113.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "segfault in division_points and factoring torsion_polynomial",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6113",

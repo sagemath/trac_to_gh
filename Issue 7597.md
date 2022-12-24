@@ -10,6 +10,7 @@ archive/issues_007597.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.1",
     "title": "segfault in libsingular",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7597",

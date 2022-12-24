@@ -10,6 +10,7 @@ archive/issues_000892.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.7",
     "title": "sage -t doesn't test .pxi files",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/892",

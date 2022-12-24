@@ -10,6 +10,7 @@ archive/issues_004040.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "Update biopython optional package to 1.47",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4040",

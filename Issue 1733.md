@@ -10,6 +10,7 @@ archive/issues_001733.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
     "title": "notebook bug -- %foo (or anything else) in a cell by itself (with nothing else in the cell) does not give an error but it *should*",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1733",

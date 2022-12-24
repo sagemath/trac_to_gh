@@ -10,6 +10,7 @@ archive/issues_004037.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "[with trivial patch, needs review] list_of_first_n() broken in interact.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4037",

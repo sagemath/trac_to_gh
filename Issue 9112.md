@@ -10,6 +10,7 @@ archive/issues_009112.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.2",
     "title": "adding maximum entry option to SemistandardTableaux()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9112",

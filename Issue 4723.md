@@ -10,6 +10,7 @@ archive/issues_004723.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "Infinite precision increase finding roots over QQbar",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4723",

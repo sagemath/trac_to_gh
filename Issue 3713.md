@@ -10,6 +10,7 @@ archive/issues_003713.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "notebook bug -- displaying 3d plots in the interactive reference manual does not work",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3713",

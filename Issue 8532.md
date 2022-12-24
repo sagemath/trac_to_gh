@@ -10,6 +10,7 @@ archive/issues_008532.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Optional package mpi4py-1.1.0 fails to install on Solaris 10 SPARC",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8532",

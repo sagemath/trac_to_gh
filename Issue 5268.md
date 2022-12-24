@@ -10,6 +10,7 @@ archive/issues_005268.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "General design and documentation for Combinatorial Classes.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5268",

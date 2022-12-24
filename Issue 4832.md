@@ -10,6 +10,7 @@ archive/issues_004832.json:
         "trivial",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "[with patch, needs review] prevent search_src and search_doc from printing the sage banner",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4832",

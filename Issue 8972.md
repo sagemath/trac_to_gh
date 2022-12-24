@@ -10,6 +10,7 @@ archive/issues_008972.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-9.3",
     "title": "Inversion and fraction fields for power series rings",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8972",

@@ -10,6 +10,7 @@ archive/issues_008424.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4",
     "title": "bounding box calculation doesn't handle NaN or infinity",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8424",

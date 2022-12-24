@@ -10,6 +10,7 @@ archive/issues_009610.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.3",
     "title": "int(finite field element) should only work when it is in the prime subfield",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9610",

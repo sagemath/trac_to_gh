@@ -10,6 +10,7 @@ archive/issues_000587.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.4",
     "title": "bug in floating point complex number creation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/587",

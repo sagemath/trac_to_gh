@@ -10,6 +10,7 @@ archive/issues_009217.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.4",
     "title": "Taylor expansion of gamma functions is broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9217",

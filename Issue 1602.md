@@ -10,6 +10,7 @@ archive/issues_001602.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.1",
     "title": "latex2html or other problem with html version of Section 2.10.3 \"Euler's Method\" of tutorial",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1602",

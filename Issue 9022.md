@@ -10,6 +10,7 @@ archive/issues_009022.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "python fails to build _socket on OpenSolaris x64, so ipython fails to build.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9022",

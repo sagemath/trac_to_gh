@@ -10,6 +10,7 @@ archive/issues_000741.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.6",
     "title": "sage -bdist: after doing this in sage-2.8.5, the dsage unit tests don't run for the resulting binary",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/741",

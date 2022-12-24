@@ -10,6 +10,7 @@ archive/issues_007930.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.2",
     "title": "strange bug for elliptic curves over number fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7930",

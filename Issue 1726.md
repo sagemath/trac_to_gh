@@ -10,6 +10,7 @@ archive/issues_001726.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10",
     "title": "Experimental package for Enthought Mayavi2 (linux only)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1726",

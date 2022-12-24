@@ -10,6 +10,7 @@ archive/issues_009377.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.2",
     "title": "unable to coerce matrix over finite field into magma",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9377",

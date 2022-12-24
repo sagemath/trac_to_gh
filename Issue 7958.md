@@ -10,6 +10,7 @@ archive/issues_007958.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.2",
     "title": "Conversion of rationals into the fraction field of integer polynomials",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7958",

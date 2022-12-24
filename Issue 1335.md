@@ -10,6 +10,7 @@ archive/issues_001335.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.15",
     "title": "[with patch] 2.8.14/Linux PPC: lcalc doctest failure",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1335",

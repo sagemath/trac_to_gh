@@ -10,6 +10,7 @@ archive/issues_006338.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.1",
     "title": "make sage -sdist and -bdist take an existing tag name and verify that the tag name is valid",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6338",

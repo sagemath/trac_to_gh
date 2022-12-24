@@ -10,6 +10,7 @@ archive/issues_007465.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "%fortran in the notebook (and fortran.eval on command line) is completely broken on OS X",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7465",

@@ -10,6 +10,7 @@ archive/issues_001571.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10",
     "title": "corrections for tut.tex",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1571",

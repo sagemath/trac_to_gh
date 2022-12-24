@@ -10,6 +10,7 @@ archive/issues_000913.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.8",
     "title": "real_roots code fails if polynomial obviously has no roots",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/913",

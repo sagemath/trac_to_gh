@@ -10,6 +10,7 @@ archive/issues_003836.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "notebook interact -- make it so one control can depend on others",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3836",

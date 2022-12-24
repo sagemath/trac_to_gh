@@ -10,6 +10,7 @@ archive/issues_007611.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "Minor ReST improvements for the notebook object documentation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7611",

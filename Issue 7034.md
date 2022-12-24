@@ -17,6 +17,7 @@ archive/issues_007034.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Using\n\n    * Solaris 10 update 7 on SPARC\n    * sage-4.1.2.alpha2\n    * Sun Studio 12.1\n    * An updated configure script to allow the Sun compiler to be used http://sagetrac.org/sage_trac/ticket/7021 \n\nCC was set to the Sun C compiler, and CXX to the Sun C++ compiler,  uses GNU flags with the Sun compiler",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7034",

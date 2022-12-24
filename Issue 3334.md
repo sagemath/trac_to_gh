@@ -10,6 +10,7 @@ archive/issues_003334.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.3",
     "title": "[with patch, needs review] Matrix_mod2_dense may crash due to missing _sig_on/_sig_off",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3334",

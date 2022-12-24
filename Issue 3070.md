@@ -10,6 +10,7 @@ archive/issues_003070.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.1",
     "title": "bug in SymmetricGroup(1).cayley_graph()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3070",

@@ -10,6 +10,7 @@ archive/issues_001478.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-feature",
     "title": "M2 interface -- make it so large input gets read in from a file",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1478",

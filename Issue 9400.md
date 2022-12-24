@@ -10,6 +10,7 @@ archive/issues_009400.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
     "title": "modify the NumberField constructor to pass in optional integer B such that all the internal pari routines will replace the discriminant by its gcd with B, making some things massively faster.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9400",

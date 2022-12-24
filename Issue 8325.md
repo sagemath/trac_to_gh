@@ -10,6 +10,7 @@ archive/issues_008325.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.4",
     "title": "Sphinx warning: 'Could not parse cython argspec'",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8325",

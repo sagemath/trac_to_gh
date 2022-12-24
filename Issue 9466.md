@@ -10,6 +10,7 @@ archive/issues_009466.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.12",
     "title": "square root with all=True should not return ValueError but empty list",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9466",

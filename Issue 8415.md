@@ -10,6 +10,7 @@ archive/issues_008415.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.1",
     "title": "bug in complex period lattice",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8415",

@@ -10,6 +10,7 @@ archive/issues_004068.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "determinants for matrices over multivariate polynomial rings slow",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4068",

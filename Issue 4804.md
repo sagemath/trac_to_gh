@@ -10,6 +10,7 @@ archive/issues_004804.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "add latex output for ceiling, floor, and derivative functions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4804",

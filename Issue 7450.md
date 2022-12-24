@@ -10,6 +10,7 @@ archive/issues_007450.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "implement is_prime() for ideals",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7450",

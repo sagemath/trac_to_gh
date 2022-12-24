@@ -10,6 +10,7 @@ archive/issues_004137.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "[with patch, positive review] add doctests for user_type() in avatar.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4137",

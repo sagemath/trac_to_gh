@@ -10,6 +10,7 @@ archive/issues_001774.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10",
     "title": "potential very serious problems with SEA and PARI-2.3.3",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1774",

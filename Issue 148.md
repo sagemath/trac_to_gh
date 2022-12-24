@@ -10,6 +10,7 @@ archive/issues_000148.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-1.8",
     "title": "links in HTML version don't work",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/148",

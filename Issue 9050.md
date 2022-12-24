@@ -10,6 +10,7 @@ archive/issues_009050.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.3",
     "title": "libntl.dll should be libntl.dll.a on Cygwin",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9050",

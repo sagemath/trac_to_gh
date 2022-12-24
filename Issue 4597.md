@@ -10,6 +10,7 @@ archive/issues_004597.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
     "title": "setup.py dependency checker does not invalidate cache correctly",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4597",

@@ -10,6 +10,7 @@ archive/issues_009402.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-8.4",
     "title": "Extend dokchitser L-function package in Elliptic Curves to Number Fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9402",

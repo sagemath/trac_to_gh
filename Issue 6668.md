@@ -10,6 +10,7 @@ archive/issues_006668.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
     "title": "Allow doctesting of .tex, .rst. .sage files outside the devel tree",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6668",

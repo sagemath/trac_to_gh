@@ -10,6 +10,7 @@ archive/issues_002863.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "Integer() does not specify that numbers beginning with 0 and 0x are treated specially",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2863",

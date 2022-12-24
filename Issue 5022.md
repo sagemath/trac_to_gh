@@ -10,6 +10,7 @@ archive/issues_005022.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "Solaris 10: update libgcrypt to 1.4.3",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5022",

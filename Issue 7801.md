@@ -10,6 +10,7 @@ archive/issues_007801.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "save_notebook is called twice on notebook shutdown",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7801",

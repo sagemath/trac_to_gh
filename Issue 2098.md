@@ -10,6 +10,7 @@ archive/issues_002098.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
     "title": "[with patch; needs review] rudimentary debian package build support",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2098",

@@ -10,6 +10,7 @@ archive/issues_000629.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.5",
     "title": "Fix DSage on PPC Linux",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/629",

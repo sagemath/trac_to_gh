@@ -10,6 +10,7 @@ archive/issues_006190.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.1",
     "title": "Fix documentation in sage/combinat/backtrack.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6190",

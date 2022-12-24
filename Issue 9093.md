@@ -10,6 +10,7 @@ archive/issues_009093.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.3",
     "title": "is_square broken for constant polynomials",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9093",

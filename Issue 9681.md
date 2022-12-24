@@ -10,6 +10,7 @@ archive/issues_009681.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Missing dependancy in spkg/standard/deps for zn_poly.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9681",

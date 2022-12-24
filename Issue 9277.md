@@ -10,6 +10,7 @@ archive/issues_009277.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5",
     "title": "Flint's spkg-check file does not work on 64-bit (SAGE64 only works on OS X)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9277",

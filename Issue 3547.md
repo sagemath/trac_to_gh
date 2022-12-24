@@ -10,6 +10,7 @@ archive/issues_003547.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "create a polygon3d function",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3547",

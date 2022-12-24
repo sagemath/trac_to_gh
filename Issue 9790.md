@@ -10,6 +10,7 @@ archive/issues_009790.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6.2",
     "title": "Fix documentation for weave in the \"numerical_sage\" document",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9790",

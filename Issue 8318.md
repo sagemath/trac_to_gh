@@ -10,6 +10,7 @@ archive/issues_008318.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.4",
     "title": "overlap_partion of a word should return an instance disjoint set data structure",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8318",

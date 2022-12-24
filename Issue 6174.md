@@ -10,6 +10,7 @@ archive/issues_006174.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.1",
     "title": "Modify README.txt in the top level of the Sage install to describe the SAGE_FAT_BINARY build flag",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6174",

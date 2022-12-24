@@ -10,6 +10,7 @@ archive/issues_001898.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
     "title": "Sage 2.10: numerical doctest failure for polynomial_element.pyx on Linux/Itanium",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1898",

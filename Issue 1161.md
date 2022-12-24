@@ -10,6 +10,7 @@ archive/issues_001161.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.13",
     "title": "New versions of cvxopt, numpy, scipy[with spkg]",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1161",

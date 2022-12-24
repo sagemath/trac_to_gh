@@ -10,6 +10,7 @@ archive/issues_004634.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
     "title": "Sage 3.2.1.a1: numerical noise in sage/schemes/ elliptic_curves/ell_rational_field.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4634",

@@ -10,6 +10,7 @@ archive/issues_009212.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.2",
     "title": "top-level identity_matrix and zero_matrix functions should return mutable matrices",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9212",

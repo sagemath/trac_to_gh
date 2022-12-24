@@ -10,6 +10,7 @@ archive/issues_002389.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "linbox charpoly crashes on OS X 10.5-intel",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2389",

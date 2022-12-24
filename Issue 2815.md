@@ -10,6 +10,7 @@ archive/issues_002815.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "docstring errors in coding/pbori",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2815",

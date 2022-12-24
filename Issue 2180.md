@@ -10,6 +10,7 @@ archive/issues_002180.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
     "title": "cython skipping build optimization",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2180",

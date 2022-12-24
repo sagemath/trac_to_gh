@@ -10,6 +10,7 @@ archive/issues_004437.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
     "title": "Sage 3.2.a2: numerical noise in sage/graphs/graph.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4437",

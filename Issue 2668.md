@@ -10,6 +10,7 @@ archive/issues_002668.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
     "title": "loads/dumps do not work with QQbar and AA",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2668",

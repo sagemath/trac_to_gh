@@ -10,6 +10,7 @@ archive/issues_007309.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2.1",
     "title": "SageNB -- Restructure /javascript/ to have /javascript/sage/",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7309",

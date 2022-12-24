@@ -10,6 +10,7 @@ archive/issues_005815.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.2",
     "title": "[with patch, needs review] Disable TinyMCE in the live documentation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5815",

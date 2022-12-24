@@ -10,6 +10,7 @@ archive/issues_009860.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
     "title": "Improving the Graph Theory table of contents",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9860",

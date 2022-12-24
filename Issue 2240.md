@@ -10,6 +10,7 @@ archive/issues_002240.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
     "title": "Docstrings and Doctests: calculus.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2240",

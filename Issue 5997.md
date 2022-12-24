@@ -10,6 +10,7 @@ archive/issues_005997.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
     "title": "deprecate the \"order\" method on elements of rings.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5997",

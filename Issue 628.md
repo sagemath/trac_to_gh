@@ -10,6 +10,7 @@ archive/issues_000628.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.4.2",
     "title": "Make binomial(x,m) work for symbolic expressions when x-m is an integer",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/628",

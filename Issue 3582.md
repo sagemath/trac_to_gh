@@ -10,6 +10,7 @@ archive/issues_003582.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
     "title": "clisp 2.46 cannot deal with parllel make",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3582",

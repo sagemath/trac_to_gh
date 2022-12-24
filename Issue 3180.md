@@ -10,6 +10,7 @@ archive/issues_003180.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "add 64 bit OSX build support to gdmodule-0.56.p4",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3180",

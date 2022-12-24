@@ -10,6 +10,7 @@ archive/issues_007331.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2.1",
     "title": "Conditions for non-split multiplicative reduction in p_primary_bound of Tate-Shafarevich groups",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7331",

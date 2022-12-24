@@ -10,6 +10,7 @@ archive/issues_006577.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
     "title": "Reference manual build errors in 4.1.1.alpha0",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6577",

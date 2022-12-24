@@ -10,6 +10,7 @@ archive/issues_006931.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "implement faster computation of data about intersection of abelian varieties attached to modular symbols spaces",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6931",

@@ -10,6 +10,7 @@ archive/issues_000438.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
     "title": "cython -v prints standard help text",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/438",

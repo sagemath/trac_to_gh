@@ -10,6 +10,7 @@ archive/issues_005936.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.1",
     "title": "result of graph query should be iterable -- make more pythonic",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5936",

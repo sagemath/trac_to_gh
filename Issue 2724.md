@@ -10,6 +10,7 @@ archive/issues_002724.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Graph.show3D should have default aspect ratio of [1,1,1]",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2724",

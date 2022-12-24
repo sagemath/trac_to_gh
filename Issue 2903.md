@@ -10,6 +10,7 @@ archive/issues_002903.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "[with spkg + patch, needs review] make NTL error messages propagate to RuntimeError messages",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2903",

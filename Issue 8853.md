@@ -10,6 +10,7 @@ archive/issues_008853.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.3",
     "title": "fix M_PI_4 in complex_double on Cygwin",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8853",

@@ -10,6 +10,7 @@ archive/issues_004782.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "construction of some relative quadratic extensions is SERIOUSLY FRICKIN's FOO-bar'd",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4782",

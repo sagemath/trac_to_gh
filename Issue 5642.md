@@ -10,6 +10,7 @@ archive/issues_005642.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
     "title": "Overconvergent modular forms for genus 0 primes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5642",

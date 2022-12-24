@@ -10,6 +10,7 @@ archive/issues_001348.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9",
     "title": "Incorporate Jan Groenewald's documentation fixes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1348",

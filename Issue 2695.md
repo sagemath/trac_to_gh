@@ -10,6 +10,7 @@ archive/issues_002695.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "ensure that we have sufficient amounts of RAM to build Sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2695",

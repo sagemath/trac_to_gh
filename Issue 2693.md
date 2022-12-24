@@ -10,6 +10,7 @@ archive/issues_002693.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-8.8",
     "title": "Sage should have generic resultant implementation for multivariate polynomials",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2693",

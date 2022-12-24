@@ -10,6 +10,7 @@ archive/issues_009907.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "maxima sum returns hypergeometric function",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9907",

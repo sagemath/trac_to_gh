@@ -10,6 +10,7 @@ archive/issues_009894.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Doctest error raised by os.fork in sage/parallel/decorate.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9894",

@@ -10,6 +10,7 @@ archive/issues_002302.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.1",
     "title": "Add a 64 bit glibc 2.3 based binary of Sage to the default build platforms",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2302",

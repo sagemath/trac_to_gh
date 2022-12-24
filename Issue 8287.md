@@ -10,6 +10,7 @@ archive/issues_008287.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "The _check used for creation of words makes it slower",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8287",

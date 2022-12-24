@@ -10,6 +10,7 @@ archive/issues_004582.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
     "title": "use Singular's capabilities for computing over fraction fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4582",

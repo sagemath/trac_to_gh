@@ -10,6 +10,7 @@ archive/issues_004459.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "preparser incorrectly identifies integer methods that start with e",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4459",

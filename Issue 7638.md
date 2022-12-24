@@ -10,6 +10,7 @@ archive/issues_007638.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "[with patch, needs review] Cannot create big matrix on 64-bit system",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7638",

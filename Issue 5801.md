@@ -10,6 +10,7 @@ archive/issues_005801.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Delete sage/server/notebook/{test.txt|todo.txt} and move their content to documentation trac",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5801",

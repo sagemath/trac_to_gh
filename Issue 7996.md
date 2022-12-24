@@ -10,6 +10,7 @@ archive/issues_007996.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.2",
     "title": "Invisible Text With Dark Theme (White on White Text)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7996",

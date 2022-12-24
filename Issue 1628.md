@@ -10,6 +10,7 @@ archive/issues_001628.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "update Moinmoin to 1.5.8",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1628",

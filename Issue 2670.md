@@ -10,6 +10,7 @@ archive/issues_002670.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "matrix cmp expr should return a matrix with True/False entries from mapping the test to the entries",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2670",

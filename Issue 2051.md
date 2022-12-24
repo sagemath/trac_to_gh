@@ -10,6 +10,7 @@ archive/issues_002051.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
     "title": "[with doc patch, needs review] added documentation for parameters of groebner_basis method of boolean ideals",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2051",

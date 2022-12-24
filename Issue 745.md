@@ -10,6 +10,7 @@ archive/issues_000745.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.6",
     "title": "update the version of FLINT that is in Sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/745",

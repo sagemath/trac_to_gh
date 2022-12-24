@@ -10,6 +10,7 @@ archive/issues_005232.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "[with patch; needs review] interact -- major bug in interact ranges due to str versus repr",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5232",

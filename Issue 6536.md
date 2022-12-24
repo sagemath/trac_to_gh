@@ -10,6 +10,7 @@ archive/issues_006536.json:
         "trivial",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
     "title": "Constructor in sage.rings.number_field.order.Order calls a method of the wrong class",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6536",

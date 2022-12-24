@@ -10,6 +10,7 @@ archive/issues_007159.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2.1",
     "title": "[with patch, needs review] Graph.merge_vertices, and a bug in edge_boundary",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7159",

@@ -10,6 +10,7 @@ archive/issues_002569.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "Add XOR to preparser",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2569",

@@ -10,6 +10,7 @@ archive/issues_005851.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.2",
     "title": "[with patch, needs review] Convert 3 more elliptic curves files to ReST and add to reference manual",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5851",

@@ -10,6 +10,7 @@ archive/issues_001885.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "add atlas pretuning for AMD Athlon MP processors",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1885",

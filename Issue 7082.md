@@ -10,6 +10,7 @@ archive/issues_007082.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "SageNB -- WorksheetProcess is an old-style class",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7082",

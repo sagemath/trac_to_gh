@@ -10,6 +10,7 @@ archive/issues_007491.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "solve(x==x,x) fails",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7491",

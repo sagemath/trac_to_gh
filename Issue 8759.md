@@ -10,6 +10,7 @@ archive/issues_008759.json:
         "trivial",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Make the Sass css_dir be /data instead of /data/sage/css so that other components can use Sass",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8759",

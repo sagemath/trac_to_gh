@@ -10,6 +10,7 @@ archive/issues_008275.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.4",
     "title": "upgrade to ecl 10.2.1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8275",

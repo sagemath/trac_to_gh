@@ -10,6 +10,7 @@ archive/issues_004870.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.3",
     "title": "Sage 3.2.3: turn off FLINT test suite in the final build",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4870",

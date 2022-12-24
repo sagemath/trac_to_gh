@@ -10,6 +10,7 @@ archive/issues_007929.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Pickling fails for some residue fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7929",

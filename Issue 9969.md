@@ -10,6 +10,7 @@ archive/issues_009969.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-9.8",
     "title": "Flaky doctest in sage/interfaces/r.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9969",

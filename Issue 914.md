@@ -10,6 +10,7 @@ archive/issues_000914.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.8",
     "title": "NTL wrapper build fails on Ubuntu 7.10",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/914",

@@ -10,6 +10,7 @@ archive/issues_007824.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.2",
     "title": "cliquer-1.2.p2 - add FreeBSD support",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7824",

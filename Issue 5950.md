@@ -10,6 +10,7 @@ archive/issues_005950.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "OSX: Add check code so that x86 and ppc builds print sane error message",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5950",

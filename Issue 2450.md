@@ -10,6 +10,7 @@ archive/issues_002450.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.4",
     "title": "[with patch] a few doctests for matrix_integer_dense",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2450",

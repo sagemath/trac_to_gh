@@ -10,6 +10,7 @@ archive/issues_003521.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
     "title": "Atkin-Lehner operator doesn't square to 1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3521",

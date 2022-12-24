@@ -10,6 +10,7 @@ archive/issues_004094.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "evaluate all causes massive browser hang",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4094",

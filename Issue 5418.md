@@ -10,6 +10,7 @@ archive/issues_005418.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Get the coverage of the Jon Hanke's qf code to 100%",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5418",

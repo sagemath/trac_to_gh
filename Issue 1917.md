@@ -10,6 +10,7 @@ archive/issues_001917.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
     "title": "[with patch; needs EASY review] linbox -- get rid of crazy OS X charpoly workaround, since linbox isn't broken anymore (also that workaround was buggy when minpoly != charpoly)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1917",

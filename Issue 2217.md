@@ -10,6 +10,7 @@ archive/issues_002217.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.1",
     "title": "splitting field function for number fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2217",

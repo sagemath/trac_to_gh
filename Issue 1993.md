@@ -10,6 +10,7 @@ archive/issues_001993.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "dsage -- bugs bugs bugs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1993",

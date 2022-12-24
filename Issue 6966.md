@@ -10,6 +10,7 @@ archive/issues_006966.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
     "title": "Shimura subgroup",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6966",

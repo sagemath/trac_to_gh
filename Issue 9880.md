@@ -10,6 +10,7 @@ archive/issues_009880.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
     "title": "fix the symbolic csgn function on complex input",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9880",

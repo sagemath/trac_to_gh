@@ -10,6 +10,7 @@ archive/issues_007695.json:
         "trivial",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.1",
     "title": "naming of the variable in subfields of cyclotomic fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7695",

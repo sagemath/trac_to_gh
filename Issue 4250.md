@@ -10,6 +10,7 @@ archive/issues_004250.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
     "title": "In QQ[t], 2**t should raise an error, but it crashes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4250",

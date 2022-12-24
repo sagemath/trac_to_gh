@@ -10,6 +10,7 @@ archive/issues_000767.json:
         "trivial",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
     "title": "animate has cryptic error message when imagemagick is not installed",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/767",

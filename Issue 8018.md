@@ -10,6 +10,7 @@ archive/issues_008018.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4",
     "title": "Eigenvalues sorted, but not eigenvectors, in modular/modform/numerical.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8018",

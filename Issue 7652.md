@@ -10,6 +10,7 @@ archive/issues_007652.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "Adds Linear Programming to the Constructions document",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7652",

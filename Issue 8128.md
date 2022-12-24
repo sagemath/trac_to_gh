@@ -10,6 +10,7 @@ archive/issues_008128.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.3",
     "title": "UnicodeDecodeError with %latex",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8128",

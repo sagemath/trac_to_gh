@@ -10,6 +10,7 @@ archive/issues_008453.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.1",
     "title": "Update PARI to 2.3.5",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8453",

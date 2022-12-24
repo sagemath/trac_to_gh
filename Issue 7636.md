@@ -10,6 +10,7 @@ archive/issues_007636.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "add decorator to make functions symbolic",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7636",

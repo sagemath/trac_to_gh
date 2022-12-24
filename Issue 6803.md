@@ -10,6 +10,7 @@ archive/issues_006803.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "Implement symbolic Kronecker delta and also make current signum (sgn) symbolic",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6803",

@@ -10,6 +10,7 @@ archive/issues_007113.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2.1",
     "title": "Maxima does not build on SUSE Itanium  (Iras)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7113",

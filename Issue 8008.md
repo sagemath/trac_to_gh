@@ -10,6 +10,7 @@ archive/issues_008008.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.4",
     "title": "Implement an rref() function which works over the fraction field of the base ring of a matrix",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8008",

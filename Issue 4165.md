@@ -10,6 +10,7 @@ archive/issues_004165.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
     "title": "Doctest for lisp.py blows chunks on (some) Mac OS X systems",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4165",

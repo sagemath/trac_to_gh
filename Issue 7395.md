@@ -10,6 +10,7 @@ archive/issues_007395.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "The enumerated set of non negative integers !",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7395",

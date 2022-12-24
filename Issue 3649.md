@@ -10,6 +10,7 @@ archive/issues_003649.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
     "title": "Add option to disable the Notebook registration email",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3649",

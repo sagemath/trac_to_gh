@@ -10,6 +10,7 @@ archive/issues_008589.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6.1",
     "title": "New feature : Hopf algebra structure on group algebras",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8589",

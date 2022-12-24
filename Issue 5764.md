@@ -10,6 +10,7 @@ archive/issues_005764.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
     "title": "[with patch, needs review] improve doctest coverage for sageinspect.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5764",

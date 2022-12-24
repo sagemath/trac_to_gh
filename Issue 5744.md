@@ -10,6 +10,7 @@ archive/issues_005744.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
     "title": "Solaris 10: use C99 mode to compile extensions instead of using clumsy extern declarations, properly work around _Complex_I problem in complex.h",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5744",

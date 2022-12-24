@@ -10,6 +10,7 @@ archive/issues_007684.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "Create a doctest that runs only on sage.math and ensures that startuptime is < 1.5 second.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7684",

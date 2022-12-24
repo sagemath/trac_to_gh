@@ -10,6 +10,7 @@ archive/issues_005467.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.2",
     "title": "The sage/macaulay2 interface doesn't work at all on large input",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5467",

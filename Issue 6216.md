@@ -10,6 +10,7 @@ archive/issues_006216.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "make a sage.misc.profile module that makes hotshot and grof2dot and line_profiler easily used",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6216",

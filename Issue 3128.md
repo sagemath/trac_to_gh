@@ -10,6 +10,7 @@ archive/issues_003128.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2.1",
     "title": "PolynomialRing's behaviour does not match docstring",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3128",

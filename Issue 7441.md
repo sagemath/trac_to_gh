@@ -10,6 +10,7 @@ archive/issues_007441.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "notebook: make it possible to upload from the url of a published worksheet",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7441",

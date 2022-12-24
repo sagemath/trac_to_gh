@@ -10,6 +10,7 @@ archive/issues_000912.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
     "title": "create a new spkg for numpy version 1.0.3.1 and TEST",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/912",

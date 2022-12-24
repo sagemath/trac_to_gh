@@ -10,6 +10,7 @@ archive/issues_007993.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.4",
     "title": "whitespace error in doctest causes A Mysterious Error.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7993",

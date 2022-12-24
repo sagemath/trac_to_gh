@@ -10,6 +10,7 @@ archive/issues_003413.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.3",
     "title": "[with patch; needs review] sage-3.0.3.alpha2 -- endianess issue with time_series doctest",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3413",

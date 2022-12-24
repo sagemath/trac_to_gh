@@ -10,6 +10,7 @@ archive/issues_003577.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
     "title": "[with patch; needs review] numpy -- don't import into sage on startup (take 2)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3577",

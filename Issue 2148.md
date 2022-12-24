@@ -10,6 +10,7 @@ archive/issues_002148.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
     "title": "PolyBoRi inconsistency",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2148",

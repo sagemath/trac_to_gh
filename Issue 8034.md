@@ -10,6 +10,7 @@ archive/issues_008034.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "A Tour of Sage: error building PDF version, French",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8034",

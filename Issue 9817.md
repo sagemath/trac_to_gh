@@ -10,6 +10,7 @@ archive/issues_009817.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "boehm_gc installs OK on HP-UX, but fails one of 6 tests if SAGE_CHECK=yes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9817",

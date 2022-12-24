@@ -10,6 +10,7 @@ archive/issues_006861.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
     "title": "allow users to test Sage script using system-wide Sage installation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6861",

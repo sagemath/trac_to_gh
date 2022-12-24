@@ -10,6 +10,7 @@ archive/issues_003770.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "multiple copies of dsage_setup.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3770",

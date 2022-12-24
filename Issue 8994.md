@@ -10,6 +10,7 @@ archive/issues_008994.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-wishlist",
     "title": "Improve convolution support",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8994",

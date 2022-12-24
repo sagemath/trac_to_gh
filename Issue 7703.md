@@ -10,6 +10,7 @@ archive/issues_007703.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "S-units, S-class groups, and selmer groups of etale algebras",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7703",

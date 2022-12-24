@@ -10,6 +10,7 @@ archive/issues_002780.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "factorisation over number field has wrong unit part",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2780",

@@ -10,6 +10,7 @@ archive/issues_009808.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Graph.num_edges() gives wrong answer",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9808",

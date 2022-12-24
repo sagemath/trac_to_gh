@@ -10,6 +10,7 @@ archive/issues_001824.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
     "title": "*huge* memory leak in PolyBoRi wrapper",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1824",

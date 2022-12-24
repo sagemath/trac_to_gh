@@ -10,6 +10,7 @@ archive/issues_005316.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "some elements of NumberField_quadratic are NumberFieldElement_absolute --> segfault",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5316",

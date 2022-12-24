@@ -10,6 +10,7 @@ archive/issues_002422.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "Update Programming Guide",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2422",

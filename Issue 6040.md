@@ -10,6 +10,7 @@ archive/issues_006040.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
     "title": "Added Doctests for QuadraticForms methods",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6040",

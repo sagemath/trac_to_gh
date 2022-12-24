@@ -10,6 +10,7 @@ archive/issues_007201.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "overflow: auto CSS on code cells",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7201",

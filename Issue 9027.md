@@ -10,6 +10,7 @@ archive/issues_009027.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.2",
     "title": "Explain Sage and tex interactions in the tutorial",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9027",

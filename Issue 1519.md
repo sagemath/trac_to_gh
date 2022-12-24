@@ -10,6 +10,7 @@ archive/issues_001519.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9",
     "title": "hg problem -- This should work but doesn't: sage: hg_sage.apply('http://trac.sagemath.org/sage_trac/attachment/ticket/1514/trac-1514.patch?format=raw')",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1519",

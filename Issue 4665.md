@@ -10,6 +10,7 @@ archive/issues_004665.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "sage/misc/cython.py creates file sage/misc/hello.spyx in tree while doctesting",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4665",

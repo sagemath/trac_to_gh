@@ -10,6 +10,7 @@ archive/issues_003655.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "left multiplication in piecewise does not work",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3655",

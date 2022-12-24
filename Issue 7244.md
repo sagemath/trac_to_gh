@@ -10,6 +10,7 @@ archive/issues_007244.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2.1",
     "title": "Implement dicyclic groups as permutation groups",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7244",

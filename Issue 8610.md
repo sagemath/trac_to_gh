@@ -10,6 +10,7 @@ archive/issues_008610.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4",
     "title": "fix caching bug in modular/modsym/element.pyx (very easy to review!)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8610",

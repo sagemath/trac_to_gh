@@ -10,6 +10,7 @@ archive/issues_002945.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "[with spkg, needs review] gcc 4.3: libfplll needs small fix to compile",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2945",

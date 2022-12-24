@@ -10,6 +10,7 @@ archive/issues_003103.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.7",
     "title": "coercion errors of vectors from ZZ^2 and QQ^2 into CDF^2",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3103",

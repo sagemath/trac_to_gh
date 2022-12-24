@@ -10,6 +10,7 @@ archive/issues_004466.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
     "title": "fix det in linbox case to fail if proof=False isn't also set",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4466",

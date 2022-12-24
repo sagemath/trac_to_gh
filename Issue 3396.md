@@ -10,6 +10,7 @@ archive/issues_003396.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.3",
     "title": "[with patch, needs review] new function in misc/latex.py: print_or_typeset",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3396",

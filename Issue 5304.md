@@ -10,6 +10,7 @@ archive/issues_005304.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "Sage 3.3.rc2: Fix documentation build",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5304",

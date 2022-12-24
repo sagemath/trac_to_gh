@@ -10,6 +10,7 @@ archive/issues_007474.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "[with patch, needs review]Expose some more functionality of fmz_poly",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7474",

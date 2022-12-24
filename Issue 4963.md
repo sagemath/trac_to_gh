@@ -10,6 +10,7 @@ archive/issues_004963.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "Make a screen-full of whitespace at the bottom of the notebook cells",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4963",

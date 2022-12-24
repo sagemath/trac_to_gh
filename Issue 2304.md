@@ -10,6 +10,7 @@ archive/issues_002304.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
     "title": "sparse_poly should probably be removed",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2304",

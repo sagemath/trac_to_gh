@@ -10,6 +10,7 @@ archive/issues_007989.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-9.7",
     "title": "Minpoly doesn't work for all matrices",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7989",

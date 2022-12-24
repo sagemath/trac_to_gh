@@ -10,6 +10,7 @@ archive/issues_002586.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
     "title": "latex products need to be space separated",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2586",

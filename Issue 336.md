@@ -10,6 +10,7 @@ archive/issues_000336.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
     "title": "Create an option to clear all cell output",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/336",

@@ -10,6 +10,7 @@ archive/issues_007480.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "SageNB -- Move inline and <head> javascript from the templates to separate files (worksheet.js), etc.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7480",

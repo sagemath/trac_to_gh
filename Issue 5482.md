@@ -10,6 +10,7 @@ archive/issues_005482.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "Quotient ring can be created without generator names",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5482",

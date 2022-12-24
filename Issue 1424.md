@@ -10,6 +10,7 @@ archive/issues_001424.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9.1",
     "title": "[with patch] threaded map function",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1424",

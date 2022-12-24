@@ -10,6 +10,7 @@ archive/issues_009280.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-7.4",
     "title": "implement an example of a graded algebra with basis",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9280",

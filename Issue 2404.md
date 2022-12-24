@@ -10,6 +10,7 @@ archive/issues_002404.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "subs_expr claims to take a dictionary, but doesn't",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2404",

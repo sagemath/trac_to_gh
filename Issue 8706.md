@@ -10,6 +10,7 @@ archive/issues_008706.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4",
     "title": "sage-4.4.alpha0: numerical noise in chmm.pyx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8706",

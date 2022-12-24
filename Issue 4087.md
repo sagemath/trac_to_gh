@@ -10,6 +10,7 @@ archive/issues_004087.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
     "title": "[with patch, needs review] Improved printing of polynomials with 'negative' coefficients",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4087",

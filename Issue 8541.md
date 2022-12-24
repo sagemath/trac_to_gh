@@ -10,6 +10,7 @@ archive/issues_008541.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4",
     "title": "modular forms / linear algebra issue -- subspace not invariant",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8541",

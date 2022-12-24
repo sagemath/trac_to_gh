@@ -10,6 +10,7 @@ archive/issues_006245.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4",
     "title": "make a custom infix operator decorator",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6245",

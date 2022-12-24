@@ -10,6 +10,7 @@ archive/issues_002330.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-8.2",
     "title": "modforms -- implement computation of weight 1 forms in Sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2330",

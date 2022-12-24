@@ -10,6 +10,7 @@ archive/issues_006214.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4",
     "title": "Polyhedra compute incorrect dimension when defined through inequalities",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6214",

@@ -10,6 +10,7 @@ archive/issues_004291.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.4",
     "title": "[with patch, needs review] Fix problem with IPython and init.sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4291",

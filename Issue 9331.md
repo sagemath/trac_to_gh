@@ -10,6 +10,7 @@ archive/issues_009331.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5",
     "title": "can't build PDF version of reference manual in Sage 4.4.4",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9331",

@@ -10,6 +10,7 @@ archive/issues_001026.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.11",
     "title": "memleak in linbox's gmp++_int_io.C",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1026",

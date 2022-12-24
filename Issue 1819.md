@@ -10,6 +10,7 @@ archive/issues_001819.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.7",
     "title": "move crypto.mq.MPolynomialSystem somewhere else",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1819",

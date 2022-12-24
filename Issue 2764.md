@@ -10,6 +10,7 @@ archive/issues_002764.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "apply Minh Nguyen's patches to hg_doc",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2764",

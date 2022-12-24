@@ -10,6 +10,7 @@ archive/issues_005325.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-wishlist",
     "title": "Make an optional spkg for basemap",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5325",

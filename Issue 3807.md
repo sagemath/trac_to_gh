@@ -10,6 +10,7 @@ archive/issues_003807.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
     "title": "[with patch, needs review] Fix gcc 4.3 issues in David Harvey Bernoulli modp code",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3807",

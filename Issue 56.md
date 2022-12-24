@@ -10,6 +10,7 @@ archive/issues_000056.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.3",
     "title": "fundamental speed issues",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/56",

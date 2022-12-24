@@ -10,6 +10,7 @@ archive/issues_002549.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Implement VectorSpace over symbolic function ring",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2549",

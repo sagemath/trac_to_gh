@@ -10,6 +10,7 @@ archive/issues_004104.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
     "title": "Create plot_slope_field function",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4104",

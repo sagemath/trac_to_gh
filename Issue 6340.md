@@ -10,6 +10,7 @@ archive/issues_006340.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
     "title": "var('x',ns=False)  -- should go boom but silently gives a new symbolic variable",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6340",

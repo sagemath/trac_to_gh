@@ -10,6 +10,7 @@ archive/issues_008573.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.2",
     "title": "prod(primes(190)).divisors() crashes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8573",

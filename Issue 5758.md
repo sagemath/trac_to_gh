@@ -10,6 +10,7 @@ archive/issues_005758.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
     "title": "weird \"hello\" bug in homset coerce!",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5758",

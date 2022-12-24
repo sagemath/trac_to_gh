@@ -10,6 +10,7 @@ archive/issues_000251.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Notebook worksheet multithreading",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/251",

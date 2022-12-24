@@ -10,6 +10,7 @@ archive/issues_002493.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
     "title": "Updated experimental vtk spkg (vtk-5.0.4.spkg)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2493",

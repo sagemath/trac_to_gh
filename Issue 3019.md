@@ -10,6 +10,7 @@ archive/issues_003019.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Integrate Frobby into Sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3019",

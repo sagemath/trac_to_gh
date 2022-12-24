@@ -10,6 +10,7 @@ archive/issues_001773.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-8.6",
     "title": "piecewise functions and integration / arithmetic do not play well together",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1773",

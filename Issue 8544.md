@@ -10,6 +10,7 @@ archive/issues_008544.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.4",
     "title": "Factor  polynomials over QQbar and AA",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8544",

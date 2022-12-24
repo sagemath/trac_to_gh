@@ -10,6 +10,7 @@ archive/issues_002566.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
     "title": "[with patch, needs review] fix type of \"size\" in graph_isom and binary_code",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2566",

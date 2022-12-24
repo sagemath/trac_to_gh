@@ -10,6 +10,7 @@ archive/issues_001457.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9",
     "title": "Somewhere in a short computation: \"BUG:  Rational.__pow__ called on a non-Rational\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1457",

@@ -10,6 +10,7 @@ archive/issues_000856.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.7",
     "title": "strange behaviour when converting a numpy matrix to a sage one",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/856",

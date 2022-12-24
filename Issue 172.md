@@ -10,6 +10,7 @@ archive/issues_000172.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "memory leak in pyrex",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/172",

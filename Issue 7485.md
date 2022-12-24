@@ -10,6 +10,7 @@ archive/issues_007485.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "make fortran a prerequisite on all platforms except OS X.  Remove g95 binaries from Sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7485",

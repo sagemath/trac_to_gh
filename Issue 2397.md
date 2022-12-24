@@ -10,6 +10,7 @@ archive/issues_002397.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.4",
     "title": "speed up matrix_from_rows",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2397",

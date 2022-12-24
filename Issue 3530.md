@@ -10,6 +10,7 @@ archive/issues_003530.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
     "title": "[with patch, needs review] documentation for clib, cinclude pragmas",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3530",

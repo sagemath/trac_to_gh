@@ -10,6 +10,7 @@ archive/issues_007596.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-9.8",
     "title": "QQ.number_field() does not behave like any other NumberField",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7596",

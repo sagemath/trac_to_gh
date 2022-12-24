@@ -10,6 +10,7 @@ archive/issues_008212.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.3",
     "title": "arithmetic on GF(2^n) might be improved",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8212",

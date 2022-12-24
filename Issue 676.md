@@ -10,6 +10,7 @@ archive/issues_000676.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.1",
     "title": "Solaris 10: fix python build",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/676",

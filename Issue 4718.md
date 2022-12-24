@@ -10,6 +10,7 @@ archive/issues_004718.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "notebook -- move source code and help window html to template",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4718",

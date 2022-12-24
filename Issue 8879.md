@@ -10,6 +10,7 @@ archive/issues_008879.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.0",
     "title": "Bad indentation in hyperelliptic curve file",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8879",

@@ -10,6 +10,7 @@ archive/issues_008164.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "automatic rainbow coloring of multiple plot lines",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8164",

@@ -10,6 +10,7 @@ archive/issues_002563.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.4",
     "title": "Fix outstanding doc issues for 2.10.4.final",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2563",

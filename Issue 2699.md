@@ -10,6 +10,7 @@ archive/issues_002699.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
     "title": "scipy fails to build",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2699",

@@ -10,6 +10,7 @@ archive/issues_001681.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9.2",
     "title": "serious bug when raising complex(0,1) to the power of the Sage integer 2.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1681",

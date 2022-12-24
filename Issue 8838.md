@@ -10,6 +10,7 @@ archive/issues_008838.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
     "title": "make \"arrow()\" take 3d vectors",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8838",

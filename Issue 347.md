@@ -10,6 +10,7 @@ archive/issues_000347.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-feature",
     "title": "Get Fernando and Gonzalo's quaternion algebra and related code into SAGE",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/347",

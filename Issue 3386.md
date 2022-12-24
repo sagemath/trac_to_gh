@@ -10,6 +10,7 @@ archive/issues_003386.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.3",
     "title": "zn_poly test code is still being run",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3386",

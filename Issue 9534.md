@@ -10,6 +10,7 @@ archive/issues_009534.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.7.2",
     "title": "add base method for permutation groups",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9534",

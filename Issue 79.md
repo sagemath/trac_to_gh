@@ -10,6 +10,7 @@ archive/issues_000079.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.5",
     "title": "Create a framework for numerical computation in SAGE",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/79",

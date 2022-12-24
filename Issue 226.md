@@ -10,6 +10,7 @@ archive/issues_000226.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.2",
     "title": "sagex enum issue and solution",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/226",

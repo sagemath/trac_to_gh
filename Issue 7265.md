@@ -10,6 +10,7 @@ archive/issues_007265.json:
         "trivial",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
     "title": "typo in symbolic/expression.pyx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7265",

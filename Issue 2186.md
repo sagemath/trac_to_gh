@@ -10,6 +10,7 @@ archive/issues_002186.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
     "title": "[with patch, needs easy review] verbosity for graph_isom - visualize the tree that is traversed during search",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2186",

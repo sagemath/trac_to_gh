@@ -10,6 +10,7 @@ archive/issues_009796.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "sagenb: Add a beep() command to the sage notebook",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9796",

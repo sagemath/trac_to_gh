@@ -10,6 +10,7 @@ archive/issues_002200.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "copyright documentation for various spkgs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2200",

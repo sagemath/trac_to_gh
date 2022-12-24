@@ -10,6 +10,7 @@ archive/issues_008276.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.4",
     "title": "The one of MatrixSpace can be changed !",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8276",

@@ -10,6 +10,7 @@ archive/issues_001118.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "cputime should include the cpu times of all subprocesses",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1118",

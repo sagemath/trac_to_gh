@@ -10,6 +10,7 @@ archive/issues_008278.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "cygwin: cvxopt doesn't work at all",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8278",

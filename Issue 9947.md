@@ -10,6 +10,7 @@ archive/issues_009947.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Conversion of p-adic to gp is buggy because of \"+Infinity\" exponent",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9947",

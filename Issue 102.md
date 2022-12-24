@@ -10,6 +10,7 @@ archive/issues_000102.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
     "title": "RSS on wiki \"recent changes\" page",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/102",

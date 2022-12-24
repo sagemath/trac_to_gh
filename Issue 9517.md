@@ -10,6 +10,7 @@ archive/issues_009517.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "PolynomialRing() returns Multivariate polynomial rings when you would expect univariate ones",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9517",

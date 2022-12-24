@@ -10,6 +10,7 @@ archive/issues_003254.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.3",
     "title": "[with patch, needs review] improvements and doctests for CachedFunction",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3254",

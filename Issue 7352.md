@@ -10,6 +10,7 @@ archive/issues_007352.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "Update prereq to version 0.5",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7352",

@@ -10,6 +10,7 @@ archive/issues_007634.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "switch default Sage graphs over to c_graph",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7634",

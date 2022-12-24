@@ -10,6 +10,7 @@ archive/issues_001738.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10",
     "title": "[with patch] fraction field __pow__ doesn't handle negative exp. elegantly",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1738",

@@ -10,6 +10,7 @@ archive/issues_005339.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "update README.txt to reflect what platforms we currently supporting building sage with",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5339",

@@ -10,6 +10,7 @@ archive/issues_004329.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
     "title": "class numbers of non-maximal orders -- should return NotImplementedError for now",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4329",

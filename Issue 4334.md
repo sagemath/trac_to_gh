@@ -10,6 +10,7 @@ archive/issues_004334.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
     "title": "[with spkg, needs review] Updated experimental Mayavi2 spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4334",

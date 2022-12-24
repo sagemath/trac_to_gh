@@ -10,6 +10,7 @@ archive/issues_002779.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "Error message for notebook server already running is misleading",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2779",

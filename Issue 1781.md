@@ -10,6 +10,7 @@ archive/issues_001781.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "preparser bug involving backslash-to-continue line",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1781",

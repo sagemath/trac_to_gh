@@ -10,6 +10,7 @@ archive/issues_004614.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
     "title": "automatically add md5sums for source tarballs to the web site",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4614",

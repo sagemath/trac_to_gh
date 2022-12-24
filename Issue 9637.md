@@ -10,6 +10,7 @@ archive/issues_009637.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "SAGETEX does not show a dependancy of BASE in spkg/standard/deps",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9637",

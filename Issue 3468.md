@@ -10,6 +10,7 @@ archive/issues_003468.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Add Sage to the Groebner Bases Implementations database",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3468",

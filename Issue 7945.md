@@ -10,6 +10,7 @@ archive/issues_007945.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Class groups of number fields: an_element() not in self",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7945",

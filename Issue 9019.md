@@ -10,6 +10,7 @@ archive/issues_009019.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.4",
     "title": "Full doctest coverage for sage.categories.map",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9019",

@@ -10,6 +10,7 @@ archive/issues_003137.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
     "title": "view command in misc/latex.py -- fix to not hardcode xdvi command",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3137",

@@ -10,6 +10,7 @@ archive/issues_005824.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.2",
     "title": "Move DSage to its own spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5824",

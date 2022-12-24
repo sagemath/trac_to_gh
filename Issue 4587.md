@@ -10,6 +10,7 @@ archive/issues_004587.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
     "title": "[with patch, needs review] Installation of the latest version of a package",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4587",

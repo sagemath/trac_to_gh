@@ -10,6 +10,7 @@ archive/issues_000806.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.6",
     "title": "matrix_integer_dense.elementary_divisors return a mutable object",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/806",

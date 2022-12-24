@@ -10,6 +10,7 @@ archive/issues_008222.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "sagenb -- misc improvements to the notebook graph editor",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8222",

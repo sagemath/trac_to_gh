@@ -10,6 +10,7 @@ archive/issues_006446.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1",
     "title": "memory issue from #6394",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6446",

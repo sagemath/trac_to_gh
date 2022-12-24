@@ -10,6 +10,7 @@ archive/issues_002150.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
     "title": "vmware sage image -- switch to using optimal 7zip compression",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2150",

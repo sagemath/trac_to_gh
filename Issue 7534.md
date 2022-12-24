@@ -10,6 +10,7 @@ archive/issues_007534.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "Add a deprecation message at the top of most sage.server.* files",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7534",

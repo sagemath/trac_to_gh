@@ -10,6 +10,7 @@ archive/issues_007746.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.3",
     "title": "Blum-Goldwasser probabilistic encryption",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7746",

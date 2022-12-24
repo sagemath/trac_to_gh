@@ -10,6 +10,7 @@ archive/issues_007722.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "is_strongly_connected function for digraphs !",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7722",

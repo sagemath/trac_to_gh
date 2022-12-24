@@ -10,6 +10,7 @@ archive/issues_001557.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
     "title": "notebook -- usability improvement after uploading file",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1557",

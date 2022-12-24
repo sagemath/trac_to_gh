@@ -10,6 +10,7 @@ archive/issues_003877.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "fix arrow so that they scale properly",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3877",

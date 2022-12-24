@@ -10,6 +10,7 @@ archive/issues_003303.json:
         "blocker",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.3",
     "title": "[with patch; needs review] Add shared library to tachyon Debian package",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3303",

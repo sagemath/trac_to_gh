@@ -10,6 +10,7 @@ archive/issues_004021.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
     "title": "[with patch, needs review] MPolynomial_libsingular over ZZ",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4021",

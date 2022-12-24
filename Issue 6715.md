@@ -10,6 +10,7 @@ archive/issues_006715.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
     "title": "spell-check all modules under sage/logic",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6715",

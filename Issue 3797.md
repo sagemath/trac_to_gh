@@ -10,6 +10,7 @@ archive/issues_003797.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
     "title": "[with patch, needs review] several improvements to graph generation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3797",

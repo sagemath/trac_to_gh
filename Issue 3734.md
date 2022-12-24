@@ -10,6 +10,7 @@ archive/issues_003734.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
     "title": "inverse() fails for 0 by 0 matrices",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3734",

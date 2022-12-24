@@ -10,6 +10,7 @@ archive/issues_000673.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
     "title": "Solaris 10: rings/complex_double.pyx doctests failure: inf vs. Infinity",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/673",

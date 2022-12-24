@@ -10,6 +10,7 @@ archive/issues_008270.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "'make check' on exits with 0 on a failure.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8270",

@@ -10,6 +10,7 @@ archive/issues_000142.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "sage build shouldn't modify $HOME",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/142",

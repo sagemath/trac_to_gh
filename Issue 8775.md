@@ -10,6 +10,7 @@ archive/issues_008775.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6.1",
     "title": "Bug in conjugate of symbolic ring",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8775",

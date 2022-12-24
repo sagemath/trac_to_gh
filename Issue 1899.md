@@ -10,6 +10,7 @@ archive/issues_001899.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
     "title": "Calling graphs with a matrix and loops=True blows up",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1899",

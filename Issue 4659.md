@@ -10,6 +10,7 @@ archive/issues_004659.json:
         "trivial",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
     "title": "remove an extra 'cdef class Integer' line from integer.pyx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4659",

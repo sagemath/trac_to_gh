@@ -10,6 +10,7 @@ archive/issues_004566.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
     "title": "speed up assume command (easy change)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4566",

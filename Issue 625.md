@@ -10,6 +10,7 @@ archive/issues_000625.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.4.2",
     "title": "check for system gfortran, g95 or g77 when no binary is available",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/625",

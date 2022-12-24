@@ -10,6 +10,7 @@ archive/issues_007483.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "notebook: weird pointless line",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7483",

@@ -10,6 +10,7 @@ archive/issues_006415.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "\"sage -t foo.pyx\" should not by default dynamically build foo.so",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6415",

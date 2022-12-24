@@ -10,6 +10,7 @@ archive/issues_004936.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "massive bloat: make something delete everything in ~/.sage/gap > 1 week old and untouched",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4936",

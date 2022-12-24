@@ -10,6 +10,7 @@ archive/issues_001573.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9.1",
     "title": "Mismatched free() / delete / delete [] in wrap.cc",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1573",

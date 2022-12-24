@@ -10,6 +10,7 @@ archive/issues_009390.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6.2",
     "title": "is_galois_relative() not always right",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9390",

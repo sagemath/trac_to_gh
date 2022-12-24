@@ -10,6 +10,7 @@ archive/issues_006099.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "morphisms of simplicial complexes and the associated chain complex morphisms",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6099",

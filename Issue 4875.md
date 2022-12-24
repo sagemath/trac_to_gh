@@ -10,6 +10,7 @@ archive/issues_004875.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
     "title": "Polyhedron.show(fill=True) fails",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4875",

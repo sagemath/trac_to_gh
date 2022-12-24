@@ -10,6 +10,7 @@ archive/issues_008651.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.4",
     "title": "binomial(n,k) evaluates to zero when 0 is subsituted for k",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8651",

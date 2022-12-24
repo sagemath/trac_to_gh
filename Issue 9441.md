@@ -10,6 +10,7 @@ archive/issues_009441.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.2",
     "title": "Atkin-Lehner operators for Cremona modular symbols",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9441",

@@ -10,6 +10,7 @@ archive/issues_001662.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "gnuplot issues (with something that can probably easily be made into a patch)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1662",

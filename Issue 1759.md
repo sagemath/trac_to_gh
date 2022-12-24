@@ -10,6 +10,7 @@ archive/issues_001759.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10",
     "title": "Various files still mention GPL V2 [only]",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1759",

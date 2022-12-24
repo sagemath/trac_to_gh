@@ -10,6 +10,7 @@ archive/issues_002099.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
     "title": "Make sage-test execute multiple doctests in parallel",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2099",

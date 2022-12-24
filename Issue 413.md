@@ -10,6 +10,7 @@ archive/issues_000413.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "saving non-evaluated cells",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/413",

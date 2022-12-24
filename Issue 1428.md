@@ -10,6 +10,7 @@ archive/issues_001428.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10",
     "title": "add SVD method to matrix_complex_double_dense",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1428",

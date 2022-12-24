@@ -10,6 +10,7 @@ archive/issues_009378.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.7.1",
     "title": "Russian translation of the Sage tutorial",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9378",

@@ -10,6 +10,7 @@ archive/issues_004038.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.3",
     "title": "Problem in factor() and roots() for p-adic polynomials",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4038",

@@ -10,6 +10,7 @@ archive/issues_001979.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
     "title": "doctest fall out from #740 in tut.tex",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1979",

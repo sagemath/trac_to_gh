@@ -10,6 +10,7 @@ archive/issues_005640.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1",
     "title": "no way to figure out list of colormaps from matrix plot's docstring",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5640",

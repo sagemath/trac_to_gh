@@ -10,6 +10,7 @@ archive/issues_004662.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
     "title": "Sage 3.2.1.rc1: Fix documentation build issues",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4662",

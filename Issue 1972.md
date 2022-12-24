@@ -10,6 +10,7 @@ archive/issues_001972.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
     "title": "programming guide -- fix a confusing typo",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1972",

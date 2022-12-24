@@ -10,6 +10,7 @@ archive/issues_007743.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "Piecewise integration fixes [with patch; needs review]",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7743",

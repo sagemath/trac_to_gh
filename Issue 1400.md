@@ -10,6 +10,7 @@ archive/issues_001400.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "QuadraticFields and ClassGroups",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1400",

@@ -10,6 +10,7 @@ archive/issues_008605.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4",
     "title": "upgrade SageTeX spkg to 2.2.5",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8605",

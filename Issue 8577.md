@@ -10,6 +10,7 @@ archive/issues_008577.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.0",
     "title": "Fix ETuple.eadd_p",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8577",

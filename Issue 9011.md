@@ -10,6 +10,7 @@ archive/issues_009011.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "the numpy SVD decomposition docstring is wrong",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9011",

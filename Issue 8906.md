@@ -10,6 +10,7 @@ archive/issues_008906.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.9",
     "title": "Optional package for gap3",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8906",

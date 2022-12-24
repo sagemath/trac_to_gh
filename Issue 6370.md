@@ -10,6 +10,7 @@ archive/issues_006370.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "notebook -- REST search of docs in live mode is completely broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6370",

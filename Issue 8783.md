@@ -10,6 +10,7 @@ archive/issues_008783.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "frobby optional spkg doesn't build with newer GCC's",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8783",

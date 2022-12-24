@@ -10,6 +10,7 @@ archive/issues_001125.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.13",
     "title": "cvxopt fix completely breaks building Sage with gfortran",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1125",

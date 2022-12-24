@@ -10,6 +10,7 @@ archive/issues_002623.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
     "title": "2.11.alpha0: repo consistency issue with sage/schemes/hyperelliptic_curves/hypellfrob/README",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2623",

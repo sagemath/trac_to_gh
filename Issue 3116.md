@@ -10,6 +10,7 @@ archive/issues_003116.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
     "title": "1x1 symbolic matrices don't work right",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3116",

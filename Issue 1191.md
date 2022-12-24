@@ -10,6 +10,7 @@ archive/issues_001191.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.9",
     "title": "wrap pari's matsolvemodn for A.solve_right over Z/nZ",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1191",

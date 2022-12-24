@@ -10,6 +10,7 @@ archive/issues_006371.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-7.1",
     "title": "implement Riemann theta functions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6371",

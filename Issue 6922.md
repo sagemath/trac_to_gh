@@ -10,6 +10,7 @@ archive/issues_006922.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.2",
     "title": "Matrix term ordering",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6922",

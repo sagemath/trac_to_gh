@@ -10,6 +10,7 @@ archive/issues_004981.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "[with patch, needs review] clean up polynomial_ring.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4981",

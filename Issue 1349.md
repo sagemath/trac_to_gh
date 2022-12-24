@@ -10,6 +10,7 @@ archive/issues_001349.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.15",
     "title": "notebook -- to avoid massive confusion, make the default notebook location $HOME/.sage/notebook",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1349",

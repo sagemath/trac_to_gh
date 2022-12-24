@@ -10,6 +10,7 @@ archive/issues_002581.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
     "title": "extend solve_right to all cases; implement solve_left",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2581",

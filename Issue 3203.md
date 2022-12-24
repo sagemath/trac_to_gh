@@ -10,6 +10,7 @@ archive/issues_003203.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "show() smashes multiplied numbers together so the product looks like a number",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3203",

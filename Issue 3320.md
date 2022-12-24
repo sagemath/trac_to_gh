@@ -10,6 +10,7 @@ archive/issues_003320.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Gap <-> Sage interface for Dense Matrices over GF(2)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3320",

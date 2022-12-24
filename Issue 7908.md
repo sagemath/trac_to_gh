@@ -10,6 +10,7 @@ archive/issues_007908.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Published interacts",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7908",

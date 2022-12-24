@@ -10,6 +10,7 @@ archive/issues_001341.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.15",
     "title": "[with spkg] add script so that which_fortran returns g95 or gfortran",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1341",

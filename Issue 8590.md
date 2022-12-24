@@ -10,6 +10,7 @@ archive/issues_008590.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "`A` still using old coercion framework",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8590",

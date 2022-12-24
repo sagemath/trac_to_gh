@@ -10,6 +10,7 @@ archive/issues_004775.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Dsage logs are too verbose",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4775",

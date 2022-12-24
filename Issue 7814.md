@@ -10,6 +10,7 @@ archive/issues_007814.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "[with spkg; needs review] eclib ignores SAGE64 if OS is not Darwin",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7814",

@@ -10,6 +10,7 @@ archive/issues_003240.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
     "title": "notebook -- implement page dedicated to worksheet publishing",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3240",

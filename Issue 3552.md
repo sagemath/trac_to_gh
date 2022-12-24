@@ -10,6 +10,7 @@ archive/issues_003552.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
     "title": "sage notebook -- worksheet.py -- bring coverage up to 100%",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3552",

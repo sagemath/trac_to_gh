@@ -10,6 +10,7 @@ archive/issues_005058.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "sage -f and sage -i is broken for local files",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5058",

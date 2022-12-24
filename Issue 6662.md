@@ -10,6 +10,7 @@ archive/issues_006662.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "[with patch, needs review] sampling from a general discrete probability distribution",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6662",

@@ -10,6 +10,7 @@ archive/issues_006420.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
     "title": "Maxima integration error with 1/x^3",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6420",

@@ -10,6 +10,7 @@ archive/issues_003946.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "Tidier BinaryQF reductions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3946",

@@ -10,6 +10,7 @@ archive/issues_001441.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "latex(x1) -> x_1 might cause problems",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1441",

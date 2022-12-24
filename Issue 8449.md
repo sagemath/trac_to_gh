@@ -10,6 +10,7 @@ archive/issues_008449.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.2",
     "title": "real_part? has an unescaped \\r",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8449",

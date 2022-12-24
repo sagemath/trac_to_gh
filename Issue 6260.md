@@ -10,6 +10,7 @@ archive/issues_006260.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.2",
     "title": "sage -startuptime is totally broken in sage-4.0.1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6260",

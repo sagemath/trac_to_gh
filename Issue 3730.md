@@ -10,6 +10,7 @@ archive/issues_003730.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Sage scripts ending with .py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3730",

@@ -10,6 +10,7 @@ archive/issues_009464.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "R depends on Fortran, but has no such dependancy in spkg/standard/deps",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9464",

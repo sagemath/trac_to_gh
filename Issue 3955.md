@@ -10,6 +10,7 @@ archive/issues_003955.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.6",
     "title": "make find_minimum_on_interval use _fast_float_",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3955",

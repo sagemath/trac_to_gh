@@ -10,6 +10,7 @@ archive/issues_001213.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "strange unused file sage/plot/mpl_wrapper.py should be fixed or deleted",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1213",

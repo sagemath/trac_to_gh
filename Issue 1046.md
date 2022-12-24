@@ -10,6 +10,7 @@ archive/issues_001046.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
     "title": "speed regression in mq.SR.polynomial_system()  due to new coercion code?",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1046",

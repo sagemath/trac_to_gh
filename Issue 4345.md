@@ -10,6 +10,7 @@ archive/issues_004345.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-feature",
     "title": "Make a system for default variable names",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4345",

@@ -10,6 +10,7 @@ archive/issues_009079.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.3",
     "title": "fix bug in singular polynomial interface",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9079",

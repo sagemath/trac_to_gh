@@ -10,6 +10,7 @@ archive/issues_008177.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "element_wrapper.py: Sage 4.3.2.alpha1 segfault on Mac OS X 10.6.2",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8177",

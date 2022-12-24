@@ -10,6 +10,7 @@ archive/issues_000204.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-1.9",
     "title": "bug in real number comparison or coercion",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/204",

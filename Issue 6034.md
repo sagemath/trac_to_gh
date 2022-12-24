@@ -10,6 +10,7 @@ archive/issues_006034.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.2",
     "title": "[with spkg, needs review] update Singular to newest upstream release",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6034",

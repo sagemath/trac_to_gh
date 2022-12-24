@@ -10,6 +10,7 @@ archive/issues_008777.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "unify the definitions and semantics for elliptic curve and abelian variety torsion subgroups",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8777",

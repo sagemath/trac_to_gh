@@ -10,6 +10,7 @@ archive/issues_002088.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Optional spkgs should be integrated into the automated cython building",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2088",

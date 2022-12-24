@@ -10,6 +10,7 @@ archive/issues_005404.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.1",
     "title": "deprecate numerical_sqrt",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5404",

@@ -10,6 +10,7 @@ archive/issues_007423.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-9.3",
     "title": "plot3d can't handle log(0)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7423",

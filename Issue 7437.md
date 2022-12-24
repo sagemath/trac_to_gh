@@ -10,6 +10,7 @@ archive/issues_007437.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "the optional gnuplotpy-1.7.p3 spkg doesn't build at all since with switched to python-2.6",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7437",

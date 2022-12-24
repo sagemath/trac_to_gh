@@ -10,6 +10,7 @@ archive/issues_009933.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
     "title": "Toric divisor class -> divisor lift should be integral",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9933",

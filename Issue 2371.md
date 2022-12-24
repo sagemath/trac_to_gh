@@ -10,6 +10,7 @@ archive/issues_002371.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
     "title": "tut.tex failures for 2.10.3.rc0",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2371",

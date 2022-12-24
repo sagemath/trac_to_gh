@@ -10,6 +10,7 @@ archive/issues_005809.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.2",
     "title": "schemes/generic/hypersurface.py is completely broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5809",

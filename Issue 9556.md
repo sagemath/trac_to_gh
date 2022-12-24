@@ -10,6 +10,7 @@ archive/issues_009556.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.11",
     "title": "Dynamic attributes for symbolic expressions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9556",

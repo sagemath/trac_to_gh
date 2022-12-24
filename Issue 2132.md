@@ -10,6 +10,7 @@ archive/issues_002132.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "If plot.show() is called with a very large figsize, a segfault occurs. (And what are the units on figsize, anyway?)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2132",

@@ -10,6 +10,7 @@ archive/issues_006637.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.3",
     "title": "Follow up on #6000: standardize the interface to TransitiveIdeal and friends",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6637",

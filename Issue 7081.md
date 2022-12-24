@@ -10,6 +10,7 @@ archive/issues_007081.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
     "title": "sage -c \"...\" runs from the local/bin/ directory.  ugh",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7081",

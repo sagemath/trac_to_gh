@@ -10,6 +10,7 @@ archive/issues_003837.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
     "title": "Performance regression in sha.py due to #3674",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3837",

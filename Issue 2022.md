@@ -10,6 +10,7 @@ archive/issues_002022.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
     "title": "[with patch] bug with load and loads when data is not compressed during save",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2022",

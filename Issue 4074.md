@@ -10,6 +10,7 @@ archive/issues_004074.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "[with spkg, needs review] the notebook is totally broken in secure mode with the new twisted spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4074",

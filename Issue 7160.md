@@ -10,6 +10,7 @@ archive/issues_007160.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.11",
     "title": "comparison with quadratic number field elements needs work",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7160",

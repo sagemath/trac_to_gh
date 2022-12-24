@@ -10,6 +10,7 @@ archive/issues_003450.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
     "title": "notebook -- move HTML code for registration page to template",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3450",

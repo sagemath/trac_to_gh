@@ -10,6 +10,7 @@ archive/issues_008620.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4",
     "title": "Rogue minus sign in sage.modular.modsym.ambient.diamond_bracket_operator",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8620",

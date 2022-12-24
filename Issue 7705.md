@@ -10,6 +10,7 @@ archive/issues_007705.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "graphs: replace the worldmap sobj by some code (or something else that is transparent)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7705",

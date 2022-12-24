@@ -10,6 +10,7 @@ archive/issues_007180.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "HP-UX cddlib-094f checks for gmp.h, then igores the fact it can't find it.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7180",

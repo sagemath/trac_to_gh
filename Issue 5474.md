@@ -10,6 +10,7 @@ archive/issues_005474.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4",
     "title": "[with patch, needs review] delimiters for LaTeX representation of matrices",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5474",

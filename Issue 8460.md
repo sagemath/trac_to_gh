@@ -10,6 +10,7 @@ archive/issues_008460.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "doctest failure sagenb-0.7.5.1-py2.6.egg/sagenb/misc/sageinspect.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8460",

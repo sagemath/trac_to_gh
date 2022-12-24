@@ -10,6 +10,7 @@ archive/issues_002585.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
     "title": "[with-patch] padic bugfix - check=False in constructor",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2585",

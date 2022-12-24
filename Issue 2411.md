@@ -10,6 +10,7 @@ archive/issues_002411.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "Missing references in Sage tutorial",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2411",

@@ -10,6 +10,7 @@ archive/issues_004513.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "Action of MatrixGroup on a MPolynomialRing",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4513",

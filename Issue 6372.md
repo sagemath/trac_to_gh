@@ -10,6 +10,7 @@ archive/issues_006372.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1",
     "title": "Move a few 3d plot files into plot3d",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6372",

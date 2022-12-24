@@ -10,6 +10,7 @@ archive/issues_001954.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
     "title": "sage/modules/free_module_element.pyx computing abs(vector(...))",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1954",

@@ -10,6 +10,7 @@ archive/issues_005131.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.3",
     "title": "regression in free modules -- who broke my __mul__",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5131",

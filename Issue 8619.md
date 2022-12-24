@@ -10,6 +10,7 @@ archive/issues_008619.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "add check for SELinux to sage prereq script",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8619",

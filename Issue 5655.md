@@ -10,6 +10,7 @@ archive/issues_005655.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
     "title": "[with patch, needs review] Improved enumeration of vertices and 0-dimensional faces",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5655",

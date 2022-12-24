@@ -10,6 +10,7 @@ archive/issues_006942.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.3",
     "title": "jordan_form with transformation=true returns non-invertible transformation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6942",

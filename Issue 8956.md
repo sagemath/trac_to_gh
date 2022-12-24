@@ -10,6 +10,7 @@ archive/issues_008956.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Fix notebook help on auto-evaluation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8956",

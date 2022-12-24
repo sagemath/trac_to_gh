@@ -10,6 +10,7 @@ archive/issues_006360.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.2",
     "title": "[with spkg, needs review] Change -O2 to -O0 in singular spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6360",

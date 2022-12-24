@@ -10,6 +10,7 @@ archive/issues_005949.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "memory leak expose by elliptic curve code",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5949",

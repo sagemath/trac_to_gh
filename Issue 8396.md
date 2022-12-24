@@ -10,6 +10,7 @@ archive/issues_008396.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.4",
     "title": "element_class of Subsets is broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8396",

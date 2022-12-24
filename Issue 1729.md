@@ -10,6 +10,7 @@ archive/issues_001729.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10",
     "title": "disable password prompt on initial startup",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1729",

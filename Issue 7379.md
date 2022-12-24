@@ -10,6 +10,7 @@ archive/issues_007379.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5",
     "title": "layout interact controls",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7379",

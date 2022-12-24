@@ -10,6 +10,7 @@ archive/issues_002378.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "graph animations",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2378",

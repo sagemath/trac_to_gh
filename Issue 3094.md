@@ -10,6 +10,7 @@ archive/issues_003094.json:
         "blocker",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.1",
     "title": "[with patch; needs review] Update to SAGE Debian packaging",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3094",

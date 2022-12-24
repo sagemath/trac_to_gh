@@ -10,6 +10,7 @@ archive/issues_006856.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
     "title": "cancel button in notebook user settings not working",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6856",

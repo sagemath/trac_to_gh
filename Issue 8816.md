@@ -10,6 +10,7 @@ archive/issues_008816.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.2",
     "title": "Bug in CPS_height_bound",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8816",

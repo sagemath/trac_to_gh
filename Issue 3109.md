@@ -10,6 +10,7 @@ archive/issues_003109.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
     "title": "elliptic curves -- implement P.divide(n) for P a point on an elliptic curve and n an integer",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3109",

@@ -10,6 +10,7 @@ archive/issues_001683.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.11",
     "title": "sage -t cubegroup.py & stops instead of running in background",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1683",

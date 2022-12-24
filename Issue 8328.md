@@ -10,6 +10,7 @@ archive/issues_008328.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.4",
     "title": "clisp rather than ecl mentioned on web page.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8328",

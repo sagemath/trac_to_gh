@@ -10,6 +10,7 @@ archive/issues_004871.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "latex typesetting using dvipng is broken on OS X unless unless one uses the dvipng spkg; also the optional filename argument is broken if the file isn't in the current directory; finally, there area  lot of dangerous tmp files created in the current directory",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4871",

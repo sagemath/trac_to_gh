@@ -10,6 +10,7 @@ archive/issues_005921.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.2",
     "title": "factoring integer polynomials does not factor the content",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5921",

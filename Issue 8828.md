@@ -10,6 +10,7 @@ archive/issues_008828.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.3",
     "title": "Lower height bound for elliptic curves",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8828",

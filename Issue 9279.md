@@ -10,6 +10,7 @@ archive/issues_009279.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.2",
     "title": "remove databases/tables.py since superseded by newer code",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9279",

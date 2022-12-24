@@ -10,6 +10,7 @@ archive/issues_005922.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "doctesting sage tree does not work when SAGE_ROOT is a symbolic link",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5922",

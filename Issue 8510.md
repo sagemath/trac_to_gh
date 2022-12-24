@@ -10,6 +10,7 @@ archive/issues_008510.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "conjugacy_class(es)_representatives",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8510",

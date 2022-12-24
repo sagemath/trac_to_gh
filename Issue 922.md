@@ -10,6 +10,7 @@ archive/issues_000922.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.8",
     "title": "bug in prime_powers",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/922",

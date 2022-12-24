@@ -10,6 +10,7 @@ archive/issues_002329.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.7",
     "title": "[with patch, needs review] add interface to Pari's rnfisnorm",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2329",

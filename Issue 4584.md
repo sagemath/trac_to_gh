@@ -10,6 +10,7 @@ archive/issues_004584.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
     "title": "[with patch; needs review] remove doctest cruft -- delete sage-doctest_old_ver",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4584",

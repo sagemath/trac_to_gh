@@ -10,6 +10,7 @@ archive/issues_007676.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-9.5",
     "title": "shortest_path_all pairs in Cython through Floyd Warshall",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7676",

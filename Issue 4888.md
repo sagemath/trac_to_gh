@@ -10,6 +10,7 @@ archive/issues_004888.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "laplacian_matrix() broken for DiGraphs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4888",

@@ -10,6 +10,7 @@ archive/issues_000248.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.2",
     "title": "elliptic curve constructor in funny case -- coercion issues",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/248",

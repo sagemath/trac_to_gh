@@ -10,6 +10,7 @@ archive/issues_005955.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.2",
     "title": "Sage 3.4.2.rc0: Set stacksize for clisp.spkg to 32kb",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5955",

@@ -10,6 +10,7 @@ archive/issues_008179.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.2",
     "title": "configure Mercurial to ignore two binaries by cddlib",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8179",

@@ -10,6 +10,7 @@ archive/issues_004939.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.3",
     "title": "massive performance regression to primes_first_n",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4939",

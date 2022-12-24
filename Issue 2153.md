@@ -10,6 +10,7 @@ archive/issues_002153.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-8.2",
     "title": "Defined Hom parent of group homomorphisms.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2153",

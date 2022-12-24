@@ -10,6 +10,7 @@ archive/issues_003662.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
     "title": "separate the module functionality of out CombinatorialAlgebra and move it into CombinatorialAlgebra",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3662",

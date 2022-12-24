@@ -10,6 +10,7 @@ archive/issues_004049.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "Don't use the -i option to tar as it does not exist on most BSDs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4049",

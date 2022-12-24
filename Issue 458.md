@@ -10,6 +10,7 @@ archive/issues_000458.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.2",
     "title": "plot.py: NameError: name 'p1' is not defined",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/458",

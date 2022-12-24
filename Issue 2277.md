@@ -10,6 +10,7 @@ archive/issues_002277.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Write a guide on DSP using SAGE",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2277",

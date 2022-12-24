@@ -10,6 +10,7 @@ archive/issues_004363.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "Do not automatically evaluate interact cells in notebook",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4363",

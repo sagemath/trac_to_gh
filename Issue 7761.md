@@ -10,6 +10,7 @@ archive/issues_007761.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.4",
     "title": "Python 2.6.2.p4 faills to build on Open Solaris",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7761",

@@ -10,6 +10,7 @@ archive/issues_007553.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "document exactly where SAGE_FORTRAN is used",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7553",

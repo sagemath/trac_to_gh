@@ -10,6 +10,7 @@ archive/issues_000350.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.2",
     "title": "bug in rational_points on hyperelliptic curve",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/350",

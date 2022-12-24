@@ -10,6 +10,7 @@ archive/issues_000313.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "Slideshow doesn't update when cell deleted.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/313",

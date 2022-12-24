@@ -10,6 +10,7 @@ archive/issues_004649.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "sparse linear algebra: implement matrix multiplication",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4649",

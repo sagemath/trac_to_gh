@@ -10,6 +10,7 @@ archive/issues_004817.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "make an os x clickable .app launcher thing for sage automatically when one does -bdist on osx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4817",

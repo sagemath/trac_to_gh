@@ -10,6 +10,7 @@ archive/issues_009318.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.2",
     "title": "Fix S-Box CNF generation for non permutations",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9318",

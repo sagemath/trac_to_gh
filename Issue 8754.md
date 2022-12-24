@@ -10,6 +10,7 @@ archive/issues_008754.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "sagenb -- add \"how to test\" directions to the sagenb README.txt",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8754",

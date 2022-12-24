@@ -10,6 +10,7 @@ archive/issues_003029.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.1",
     "title": "[with patch; needs review] Move DEB_AUTO_UPDATE_DEBIAN_CONTROL out of Debian packages",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3029",

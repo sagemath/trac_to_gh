@@ -10,6 +10,7 @@ archive/issues_008509.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4",
     "title": "Ilegal 'grep -o' causes problems installing optional packages on Solaris",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8509",

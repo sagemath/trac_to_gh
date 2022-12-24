@@ -10,6 +10,7 @@ archive/issues_005513.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
     "title": "Enhanced support for number field unit groups",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5513",

@@ -10,6 +10,7 @@ archive/issues_008892.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.2",
     "title": "Many doctests fails since the update of NetworkX !",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8892",

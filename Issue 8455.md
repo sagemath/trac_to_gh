@@ -10,6 +10,7 @@ archive/issues_008455.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Update MPIR to 1.3.1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8455",

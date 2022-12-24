@@ -10,6 +10,7 @@ archive/issues_007241.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2.1",
     "title": "sage -upgrade will try to redownload spkg's that are already present",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7241",

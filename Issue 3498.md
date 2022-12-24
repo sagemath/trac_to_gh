@@ -10,6 +10,7 @@ archive/issues_003498.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
     "title": "make numpy the backend for matrices over CDF and RDF",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3498",

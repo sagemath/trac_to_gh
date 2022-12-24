@@ -10,6 +10,7 @@ archive/issues_007861.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.3",
     "title": "pynac-0.1.10 not building with Open Solaris.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7861",

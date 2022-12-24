@@ -10,6 +10,7 @@ archive/issues_008217.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.7.2",
     "title": "make 4ti2 an optional package",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8217",

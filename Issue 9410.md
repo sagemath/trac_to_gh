@@ -10,6 +10,7 @@ archive/issues_009410.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "EC.local_data() can't handle extensions of number fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9410",

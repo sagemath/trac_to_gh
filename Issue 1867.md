@@ -10,6 +10,7 @@ archive/issues_001867.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "suggested way to fix #1705 -- factoring multivariate polynomials over finite fields is broken in Singular",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1867",

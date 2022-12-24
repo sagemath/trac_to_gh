@@ -10,6 +10,7 @@ archive/issues_007578.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "Slowness of InfinitePolynomialRing basic arithmetic",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7578",

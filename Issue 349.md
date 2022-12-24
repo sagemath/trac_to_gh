@@ -10,6 +10,7 @@ archive/issues_000349.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.2",
     "title": "Tab completion on Sage() object does not work",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/349",

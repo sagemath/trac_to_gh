@@ -10,6 +10,7 @@ archive/issues_008776.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "notebook: sage notebook undo doesn't really work, due to not enough (=no) automatic snapshots, or other bugs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8776",

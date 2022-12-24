@@ -10,6 +10,7 @@ archive/issues_006116.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "error in real literal -> RIF conversion",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6116",

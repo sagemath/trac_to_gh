@@ -10,6 +10,7 @@ archive/issues_008803.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.7.1",
     "title": "Bring doctest for plot/axes.py to 100% or remove it",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8803",

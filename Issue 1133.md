@@ -10,6 +10,7 @@ archive/issues_001133.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "issue with gap and large permutations",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1133",

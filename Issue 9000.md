@@ -10,6 +10,7 @@ archive/issues_009000.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
     "title": "sage notebook: change default interact color selector",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9000",

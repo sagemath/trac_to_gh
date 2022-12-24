@@ -10,6 +10,7 @@ archive/issues_006020.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4",
     "title": "bug in delta_qexp over finite fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6020",

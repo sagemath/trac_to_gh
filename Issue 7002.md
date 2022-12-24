@@ -10,6 +10,7 @@ archive/issues_007002.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.7.1",
     "title": "Notebook documentation says to use \"#auto\", but should be \"%auto\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7002",

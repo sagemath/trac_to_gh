@@ -10,6 +10,7 @@ archive/issues_000322.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-feature",
     "title": "Have global code page for Notebook",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/322",

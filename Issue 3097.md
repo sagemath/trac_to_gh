@@ -10,6 +10,7 @@ archive/issues_003097.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
     "title": "pbuild: make sure the files from setup.py's scripts section are copied",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3097",

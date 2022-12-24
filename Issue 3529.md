@@ -10,6 +10,7 @@ archive/issues_003529.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
     "title": "ATLAS.spkg: reapply the PowerPC detection fix",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3529",

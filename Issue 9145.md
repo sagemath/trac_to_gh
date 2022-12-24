@@ -10,6 +10,7 @@ archive/issues_009145.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.4",
     "title": "Expand math symbols available in documentation, remove doc/common/macros.tex",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9145",

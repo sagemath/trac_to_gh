@@ -10,6 +10,7 @@ archive/issues_009082.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Some unnecessary files being modified",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9082",

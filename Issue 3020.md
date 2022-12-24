@@ -10,6 +10,7 @@ archive/issues_003020.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
     "title": "Finite Fields of characteristic 2 slow to construct",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3020",

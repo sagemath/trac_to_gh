@@ -10,6 +10,7 @@ archive/issues_009643.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.3",
     "title": "Force ECL to disable assembly code on Solaris 10 as it does on OpenSolaris",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9643",

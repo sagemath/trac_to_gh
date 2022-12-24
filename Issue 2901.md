@@ -10,6 +10,7 @@ archive/issues_002901.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "rewrite load_session and save_session to use much better modern techniques (in particular merge the notebook and non-notebook implementations)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2901",

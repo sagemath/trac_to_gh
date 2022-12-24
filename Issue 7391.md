@@ -10,6 +10,7 @@ archive/issues_007391.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "Warn the user of incorrect results when an approximate ill-conditioned matrix is used",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7391",

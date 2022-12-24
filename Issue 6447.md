@@ -10,6 +10,7 @@ archive/issues_006447.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
     "title": "Add a <canvas> renderer for 3D plotting",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6447",

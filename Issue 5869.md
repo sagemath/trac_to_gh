@@ -10,6 +10,7 @@ archive/issues_005869.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1",
     "title": "Fix libgpg-error shared library name on FreeBSD",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5869",

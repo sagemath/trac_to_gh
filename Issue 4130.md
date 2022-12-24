@@ -10,6 +10,7 @@ archive/issues_004130.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "#4125 does not work on OS X 10.4",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4130",

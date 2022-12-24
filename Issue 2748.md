@@ -10,6 +10,7 @@ archive/issues_002748.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "Permutation constructor does not accept lists of tuples",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2748",

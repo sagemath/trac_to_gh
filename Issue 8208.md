@@ -10,6 +10,7 @@ archive/issues_008208.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.3",
     "title": "Click \"No\" actually publishes a worksheet in SageNB 0.7.4",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8208",

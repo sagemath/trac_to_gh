@@ -10,6 +10,7 @@ archive/issues_004135.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
     "title": "[with patch, needs review] notebook -- user management features",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4135",

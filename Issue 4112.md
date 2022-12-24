@@ -10,6 +10,7 @@ archive/issues_004112.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "3.1.2.rc2 doctest failure: sage/interfaces/sage0.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4112",

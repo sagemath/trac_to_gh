@@ -10,6 +10,7 @@ archive/issues_006366.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "lift method on elements of residue class field is broken / not implemented as it should be",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6366",

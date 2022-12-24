@@ -10,6 +10,7 @@ archive/issues_004491.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
     "title": "finance.TimeSeries from numpy array doesn't work correctly",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4491",

@@ -10,6 +10,7 @@ archive/issues_006716.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "elliptic_e(0.5, 0.1) test failure on Solaris SPARC (error about 0.04%)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6716",

@@ -10,6 +10,7 @@ archive/issues_002555.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "dsage unit tests fail on linux",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2555",

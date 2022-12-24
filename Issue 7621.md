@@ -10,6 +10,7 @@ archive/issues_007621.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "usability issues with MIP",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7621",

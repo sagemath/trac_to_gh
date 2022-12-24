@@ -10,6 +10,7 @@ archive/issues_005115.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "documentation for IterableFunctionCall is poor",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5115",

@@ -10,6 +10,7 @@ archive/issues_002712.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
     "title": "Add 'scalar_part()' and other methods for quaternion elements",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2712",

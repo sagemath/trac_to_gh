@@ -10,6 +10,7 @@ archive/issues_007192.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-8.1",
     "title": "Translation of \"A Tour Of Sage\" to Spanish",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7192",

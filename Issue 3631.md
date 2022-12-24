@@ -10,6 +10,7 @@ archive/issues_003631.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "pbuild broken by binary *.pyc files in extcode",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3631",

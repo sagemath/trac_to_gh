@@ -10,6 +10,7 @@ archive/issues_002915.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "bug in symbolic integration or \"stupid bug in the sage/maxima interface\"?",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2915",

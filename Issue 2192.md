@@ -10,6 +10,7 @@ archive/issues_002192.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.4",
     "title": "[with patch, needs review] various Dirichlet character fixes/improvements",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2192",

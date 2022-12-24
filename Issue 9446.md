@@ -10,6 +10,7 @@ archive/issues_009446.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.7.1",
     "title": "misc/trace.py doctest failure on t2 (solaris)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9446",

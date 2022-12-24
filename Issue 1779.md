@@ -10,6 +10,7 @@ archive/issues_001779.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10",
     "title": "setup.py computes the cache of some irrelevent files",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1779",

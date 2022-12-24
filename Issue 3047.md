@@ -10,6 +10,7 @@ archive/issues_003047.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "version option returning clone branch name",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3047",

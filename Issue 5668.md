@@ -10,6 +10,7 @@ archive/issues_005668.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "notebook optimization -- when saving state sometimes the sage public notebook server (after running for a long time) takes a *huge* amount of RAM",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5668",

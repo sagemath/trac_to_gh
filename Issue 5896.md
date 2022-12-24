@@ -10,6 +10,7 @@ archive/issues_005896.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.2",
     "title": "[with patch, needs trivial review] Documentation fix for lcalc interface.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5896",

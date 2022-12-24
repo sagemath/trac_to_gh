@@ -10,6 +10,7 @@ archive/issues_009927.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
     "title": "vectors from numpy arrays don't always work",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9927",

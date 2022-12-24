@@ -10,6 +10,7 @@ archive/issues_002190.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
     "title": "implement a ZZ-module saturation algorithm: this is the key thing needed to compute kernels over ZZ, etc.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2190",

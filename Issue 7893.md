@@ -10,6 +10,7 @@ archive/issues_007893.json:
         "trivial",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Sage server launching script",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7893",

@@ -10,6 +10,7 @@ archive/issues_006595.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "'modified sage library code' fails at c_lib if /opt/SUNWspro/bin/CC can be found. (SCons issue)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6595",

@@ -10,6 +10,7 @@ archive/issues_009448.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6.1",
     "title": "make it clearer not to edit sources in site-packages",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9448",

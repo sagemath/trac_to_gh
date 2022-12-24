@@ -10,6 +10,7 @@ archive/issues_004357.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
     "title": "modualr forms -- new subspace used to work and now broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4357",

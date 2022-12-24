@@ -10,6 +10,7 @@ archive/issues_008205.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "sagenb -- the url for published worksheets that's displayed right after publishing is still wrong",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8205",

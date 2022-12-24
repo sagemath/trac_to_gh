@@ -10,6 +10,7 @@ archive/issues_002071.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
     "title": "SymbolicExpression conjugate() method assumes variables are real",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2071",

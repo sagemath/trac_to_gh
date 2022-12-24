@@ -10,6 +10,7 @@ archive/issues_003741.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
     "title": "notebook -- the files for the revision history of a worksheet *do* get published",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3741",

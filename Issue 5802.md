@@ -10,6 +10,7 @@ archive/issues_005802.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-wishlist",
     "title": "use tuples rather than copying lists for immutable data",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5802",

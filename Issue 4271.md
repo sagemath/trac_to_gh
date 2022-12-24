@@ -10,6 +10,7 @@ archive/issues_004271.json:
         "trivial",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
     "title": "[with patch, needs review] improve coverage test of ell_generic.py to 100%, and fix typos",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4271",

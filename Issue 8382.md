@@ -10,6 +10,7 @@ archive/issues_008382.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "missing previous_probable_prime (companion to next_probable_prime)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8382",

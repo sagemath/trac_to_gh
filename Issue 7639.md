@@ -10,6 +10,7 @@ archive/issues_007639.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "notebook -- change \"address\" option to \"interface\" in notebook(...) command",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7639",

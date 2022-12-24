@@ -10,6 +10,7 @@ archive/issues_009762.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-feature",
     "title": "Metrology module (a different implementation of the units module)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9762",

@@ -10,6 +10,7 @@ archive/issues_004773.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
     "title": "determinants of non-square matrices over GF(p) (p odd) should raise an error -- instead they silently give nonsense",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4773",

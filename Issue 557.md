@@ -10,6 +10,7 @@ archive/issues_000557.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "missing dictionary deallocation in Cython's init code",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/557",

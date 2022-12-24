@@ -10,6 +10,7 @@ archive/issues_006170.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.2",
     "title": "automate applying patches from a ticket and testing them",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6170",

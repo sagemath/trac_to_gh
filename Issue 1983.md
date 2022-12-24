@@ -10,6 +10,7 @@ archive/issues_001983.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
     "title": "[with patch; needs review] change 0^0, for 0 a Sage integer, to evaluate to 1 for consistency with Python, PARI, Magma, Maple, MPFR, GMP, etc.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1983",

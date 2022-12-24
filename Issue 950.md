@@ -10,6 +10,7 @@ archive/issues_000950.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9.1",
     "title": "include guava in sage (in the gap package?)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/950",

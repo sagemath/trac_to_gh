@@ -10,6 +10,7 @@ archive/issues_002634.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
     "title": "(easy fix?) Unable to create certain multivariate polynomial rings since libsingular is invoked instead of generic code",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2634",

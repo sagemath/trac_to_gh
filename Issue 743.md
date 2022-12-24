@@ -10,6 +10,7 @@ archive/issues_000743.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
     "title": "graphs: simplify interface for accessing vertex objects",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/743",

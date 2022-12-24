@@ -10,6 +10,7 @@ archive/issues_009656.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Code blocks in the notebook's interactive help get code overlaping it'self",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9656",

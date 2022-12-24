@@ -10,6 +10,7 @@ archive/issues_009285.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-wishlist",
     "title": "Challenge: iterating through E8 in 5 minutes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9285",

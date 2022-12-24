@@ -10,6 +10,7 @@ archive/issues_009437.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6.2",
     "title": "special linear group over finite rings",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9437",

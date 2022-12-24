@@ -10,6 +10,7 @@ archive/issues_002663.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.3",
     "title": "dpkg-shlibdeps errors for various Debian packages",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2663",

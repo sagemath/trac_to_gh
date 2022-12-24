@@ -10,6 +10,7 @@ archive/issues_004498.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.0",
     "title": "The argument function does not work with variables.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4498",

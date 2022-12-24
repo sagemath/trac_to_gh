@@ -10,6 +10,7 @@ archive/issues_001747.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10",
     "title": "[with patch, needs review] speed improvement for mq.SR.polynomial_system",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1747",

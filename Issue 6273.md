@@ -10,6 +10,7 @@ archive/issues_006273.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1",
     "title": "Improve random_element for number field orders and ideals (easy)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6273",

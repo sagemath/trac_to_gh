@@ -10,6 +10,7 @@ archive/issues_003300.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.3",
     "title": "[with patch; needs review] ntl soname for Debian package",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3300",

@@ -11,6 +11,7 @@ archive/issues_003035.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.1",
     "title": "calculus/equations.py\nsegfault with new cython & -ba",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3035",

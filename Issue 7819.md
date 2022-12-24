@@ -10,6 +10,7 @@ archive/issues_007819.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "RealInterval(+infinity,+infinity).is_int() blows up",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7819",

@@ -10,6 +10,7 @@ archive/issues_007213.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
     "title": "\"sage -upgrade\" to 4.1.2 results in issue with symbolic link and ecl",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7213",

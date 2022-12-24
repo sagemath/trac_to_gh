@@ -10,6 +10,7 @@ archive/issues_000682.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
     "title": "make it easier to load/save worksheets in notebook",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/682",

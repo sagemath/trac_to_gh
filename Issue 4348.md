@@ -10,6 +10,7 @@ archive/issues_004348.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
     "title": "magma interface -- get doctest coverage to 100% (only _ private methods left to test at this point)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4348",

@@ -10,6 +10,7 @@ archive/issues_004779.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "[with patch; not ready for review] make function for creating random rings and running automated testing on them",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4779",

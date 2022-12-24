@@ -10,6 +10,7 @@ archive/issues_009645.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "Bugs in the computation of Groebner bases over the integers",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9645",

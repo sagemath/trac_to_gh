@@ -10,6 +10,7 @@ archive/issues_003535.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "notebook -- A \"getting started\" worksheet for new users",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3535",

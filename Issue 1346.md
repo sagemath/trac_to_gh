@@ -10,6 +10,7 @@ archive/issues_001346.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
     "title": "fpLLL doctests don't test fpLLL",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1346",

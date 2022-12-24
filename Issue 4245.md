@@ -10,6 +10,7 @@ archive/issues_004245.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "notebook -- error clicking editing when there is a < in the html.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4245",

@@ -10,6 +10,7 @@ archive/issues_004059.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "libm4ri configure is seriously broken on anything not x86",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4059",

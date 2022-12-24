@@ -10,6 +10,7 @@ archive/issues_008580.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4",
     "title": "Bug in coercing into a 0-dimensional qotient vector space",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8580",

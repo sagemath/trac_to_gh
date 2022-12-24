@@ -10,6 +10,7 @@ archive/issues_005070.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "randomized shift testing",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5070",

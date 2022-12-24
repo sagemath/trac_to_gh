@@ -10,6 +10,7 @@ archive/issues_001788.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10",
     "title": "cython annotation in notebook",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1788",

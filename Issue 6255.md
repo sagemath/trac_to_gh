@@ -10,6 +10,7 @@ archive/issues_006255.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "update doc system to latex sphinx and improve build system",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6255",

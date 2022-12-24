@@ -10,6 +10,7 @@ archive/issues_004558.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
     "title": "please update to sympy-0.6.3.spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4558",

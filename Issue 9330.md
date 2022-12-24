@@ -10,6 +10,7 @@ archive/issues_009330.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
     "title": "Documentation for sha_tate.py not quite looking right",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9330",

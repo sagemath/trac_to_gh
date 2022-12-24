@@ -10,6 +10,7 @@ archive/issues_009734.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "METATICKET Doc test failures on 32-bit Solaris 10 and 32-bit OpenSolaris on x86 CPUs.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9734",

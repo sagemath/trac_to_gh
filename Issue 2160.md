@@ -10,6 +10,7 @@ archive/issues_002160.json:
         "trivial",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
     "title": "leftovers from python to cython translation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2160",

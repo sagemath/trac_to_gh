@@ -10,6 +10,7 @@ archive/issues_001543.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9.1",
     "title": "rpy build fails if \"tail -1\" doesn't work",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1543",

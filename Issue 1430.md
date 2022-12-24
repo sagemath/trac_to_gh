@@ -10,6 +10,7 @@ archive/issues_001430.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9",
     "title": "[with spkg] sparse eigenvalues and splines",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1430",

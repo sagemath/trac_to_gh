@@ -10,6 +10,7 @@ archive/issues_007863.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "Remove lint from auxiliary JS files",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7863",

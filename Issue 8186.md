@@ -10,6 +10,7 @@ archive/issues_008186.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.3",
     "title": "iterated_right_palindromic_closure of a finite word should return a finite word",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8186",

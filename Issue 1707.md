@@ -10,6 +10,7 @@ archive/issues_001707.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
     "title": "add Carlo Hamalainen latin square stuff to Sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1707",

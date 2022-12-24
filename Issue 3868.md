@@ -10,6 +10,7 @@ archive/issues_003868.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
     "title": "matrix_modn_dense -- numerical noise",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3868",

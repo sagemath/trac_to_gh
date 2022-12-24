@@ -10,6 +10,7 @@ archive/issues_007669.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Translate Mathematica, Maple, Matlab code into Sage code automatically",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7669",

@@ -10,6 +10,7 @@ archive/issues_004909.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4",
     "title": "convert sage.dsage.* docstrings to Sphinx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4909",

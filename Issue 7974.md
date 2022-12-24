@@ -10,6 +10,7 @@ archive/issues_007974.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "hg_sage.diff() silently appends",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7974",

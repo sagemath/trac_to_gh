@@ -10,6 +10,7 @@ archive/issues_003220.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
     "title": "[with patch; needs review] readline -- fix a couple of issues",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3220",

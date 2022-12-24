@@ -10,6 +10,7 @@ archive/issues_003608.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "optimize.py: \"Invalid read of size 8\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3608",

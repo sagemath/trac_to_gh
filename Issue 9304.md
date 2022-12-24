@@ -10,6 +10,7 @@ archive/issues_009304.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6.1",
     "title": "trac #8218 (finite_rings) broke all my pickles!",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9304",

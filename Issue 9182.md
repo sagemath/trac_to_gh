@@ -10,6 +10,7 @@ archive/issues_009182.json:
         "trivial",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.4",
     "title": "Jacobian of a Hyperelliptic curve doesn't coerces correctly",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9182",

@@ -10,6 +10,7 @@ archive/issues_003556.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
     "title": "[with patch, needs review] Bug in IntegerModRing(n) for very large n",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3556",

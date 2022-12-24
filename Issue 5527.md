@@ -10,6 +10,7 @@ archive/issues_005527.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
     "title": "more improvements to Sphinx documentation of sr.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5527",

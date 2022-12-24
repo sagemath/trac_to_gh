@@ -10,6 +10,7 @@ archive/issues_003083.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.2",
     "title": "Print does not include documentation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3083",

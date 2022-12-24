@@ -10,6 +10,7 @@ archive/issues_004186.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
     "title": "[with patch, needs review] speed up default __call__",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4186",

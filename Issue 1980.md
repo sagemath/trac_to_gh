@@ -10,6 +10,7 @@ archive/issues_001980.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "flint fails to build with -fstack-protector",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1980",

@@ -10,6 +10,7 @@ archive/issues_003269.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
     "title": "Improved documentation to combinat/dyck_word.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3269",

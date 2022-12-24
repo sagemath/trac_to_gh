@@ -10,6 +10,7 @@ archive/issues_007960.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "QQbar should accept number field elements with embeddings",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7960",

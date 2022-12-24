@@ -10,6 +10,7 @@ archive/issues_006056.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1",
     "title": "HISTORY.txt for sage-4.0.alpha0 needs updating",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6056",

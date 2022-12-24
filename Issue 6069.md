@@ -10,6 +10,7 @@ archive/issues_006069.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.2",
     "title": "Blank notebook page when loading URL for published sheet that is AWOL",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6069",

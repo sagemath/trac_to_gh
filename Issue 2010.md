@@ -10,6 +10,7 @@ archive/issues_002010.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
     "title": "crap -- libpng contains lots and lots of weird (OS X?) temp or meta files",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2010",

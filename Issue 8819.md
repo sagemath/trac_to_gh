@@ -10,6 +10,7 @@ archive/issues_008819.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.2",
     "title": "warnings in building documentation of Sage 4.4.1.alpha2",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8819",

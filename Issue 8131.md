@@ -10,6 +10,7 @@ archive/issues_008131.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.4",
     "title": "Catalan numbers are integers",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8131",

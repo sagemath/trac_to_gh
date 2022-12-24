@@ -10,6 +10,7 @@ archive/issues_007367.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2.1",
     "title": "Add SageNB modules to the reference manual",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7367",

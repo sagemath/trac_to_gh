@@ -10,6 +10,7 @@ archive/issues_008766.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "document the _iadd_ and _imul_ special integer.pyx methods, which mutate self",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8766",

@@ -10,6 +10,7 @@ archive/issues_008350.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "BipartiteGraph override add_vertex() and add_vertices()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8350",

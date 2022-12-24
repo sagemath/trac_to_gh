@@ -10,6 +10,7 @@ archive/issues_006337.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.9",
     "title": "bug in jorder form over symbolic ring",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6337",

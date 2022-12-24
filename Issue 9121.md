@@ -10,6 +10,7 @@ archive/issues_009121.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.3",
     "title": "sage-4.4.3.alpha1: set.py doctest failure",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9121",

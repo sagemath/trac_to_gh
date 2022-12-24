@@ -10,6 +10,7 @@ archive/issues_007797.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.5",
     "title": "basic interface to letterplace from singular",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7797",

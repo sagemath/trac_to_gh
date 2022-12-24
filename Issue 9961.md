@@ -10,6 +10,7 @@ archive/issues_009961.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.7.1",
     "title": "vector plot should have optional \"start\" argument",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9961",

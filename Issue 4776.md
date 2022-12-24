@@ -10,6 +10,7 @@ archive/issues_004776.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.3",
     "title": "random element of multivariate polynomial ring in one variable is totally broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4776",

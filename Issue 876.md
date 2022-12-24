@@ -10,6 +10,7 @@ archive/issues_000876.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Implement or wrap Braid Groups",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/876",

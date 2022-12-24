@@ -10,6 +10,7 @@ archive/issues_006009.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
     "title": "Bring plot/text.py to 100%",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6009",

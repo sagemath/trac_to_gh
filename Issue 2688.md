@@ -10,6 +10,7 @@ archive/issues_002688.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
     "title": "Kuratowski subgraph isolator for planarity checking",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2688",

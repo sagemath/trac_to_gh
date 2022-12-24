@@ -10,6 +10,7 @@ archive/issues_000635.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.7",
     "title": "p-adic height gives incorrect precision",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/635",

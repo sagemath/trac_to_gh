@@ -10,6 +10,7 @@ archive/issues_005571.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "fast_callable improvements (followup for #5093)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5571",

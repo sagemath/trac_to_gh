@@ -10,6 +10,7 @@ archive/issues_006297.json:
         "trivial",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.2",
     "title": "fix LaTeX formatting in sage/schemes/elliptic_curves/period_lattice.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6297",

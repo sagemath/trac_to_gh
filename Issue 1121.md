@@ -10,6 +10,7 @@ archive/issues_001121.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "improve point counting for curvers over extension fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1121",

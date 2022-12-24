@@ -10,6 +10,7 @@ archive/issues_001062.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "gp interface help should use extended help text (from \"??\")",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1062",

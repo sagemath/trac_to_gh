@@ -10,6 +10,7 @@ archive/issues_005038.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
     "title": "Add word path support",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5038",

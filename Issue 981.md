@@ -10,6 +10,7 @@ archive/issues_000981.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.9",
     "title": "bug in the method conjugacy_classes_subgroups",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/981",

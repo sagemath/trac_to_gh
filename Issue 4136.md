@@ -10,6 +10,7 @@ archive/issues_004136.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
     "title": "[with patch, needs review] enable tail reduction when reducing multivariate polynomials",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4136",

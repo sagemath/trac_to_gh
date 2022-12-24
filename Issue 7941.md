@@ -10,6 +10,7 @@ archive/issues_007941.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "sage -tp N should store times when some files fail",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7941",

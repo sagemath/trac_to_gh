@@ -10,6 +10,7 @@ archive/issues_002123.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
     "title": "bug in modular symbols setting sign on subspace",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2123",

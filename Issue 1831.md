@@ -10,6 +10,7 @@ archive/issues_001831.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
     "title": "[with patch] 3d docs: add more examples of parametric plots",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1831",

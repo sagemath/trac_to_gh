@@ -10,6 +10,7 @@ archive/issues_004873.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "sage -optional should not require write access to sage repo; e.g., people may want to check on what packages are installed system-wide",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4873",

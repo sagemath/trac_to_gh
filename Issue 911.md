@@ -10,6 +10,7 @@ archive/issues_000911.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.8",
     "title": "hash() on Graph objects changes as the object is mutated",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/911",

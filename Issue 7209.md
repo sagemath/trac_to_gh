@@ -10,6 +10,7 @@ archive/issues_007209.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
     "title": "Make `sage -coverage` aware of TestSuite",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7209",

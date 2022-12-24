@@ -10,6 +10,7 @@ archive/issues_000207.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-1.9",
     "title": "log in waaay slower than python's math.log",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/207",

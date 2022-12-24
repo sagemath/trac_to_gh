@@ -10,6 +10,7 @@ archive/issues_004330.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
     "title": "interfaces function_call(...) function is a total MESS",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4330",

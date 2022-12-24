@@ -10,6 +10,7 @@ archive/issues_005499.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
     "title": "Wrong precision when creating p-adic field element",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5499",

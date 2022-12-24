@@ -10,6 +10,7 @@ archive/issues_000605.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.4",
     "title": "GMP build -- get the gmp spkg in shape again (in particular, make sure patches are properly applied)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/605",

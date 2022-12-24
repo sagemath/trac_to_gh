@@ -10,6 +10,7 @@ archive/issues_007001.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Sage's GAP interface not properly leaving GAP's break loop",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7001",

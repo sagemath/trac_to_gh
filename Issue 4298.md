@@ -10,6 +10,7 @@ archive/issues_004298.json:
         "trivial",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
     "title": "[with patch, needs trivial review] fix typos",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4298",

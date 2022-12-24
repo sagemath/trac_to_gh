@@ -10,6 +10,7 @@ archive/issues_001490.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9",
     "title": "fix numerical noise doctest failure in numerical/test.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1490",

@@ -10,6 +10,7 @@ archive/issues_003333.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.3",
     "title": "[with patch, needs review] Matrix_mod2_dense randomize endianess issue",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3333",

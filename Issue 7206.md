@@ -10,6 +10,7 @@ archive/issues_007206.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "doctest failure in groups/perm_gps/permgroup.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7206",

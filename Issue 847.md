@@ -10,6 +10,7 @@ archive/issues_000847.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.15",
     "title": "rewrite the symbolic calculus package to do evaluation / simplification without recursion",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/847",

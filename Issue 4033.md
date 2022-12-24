@@ -10,6 +10,7 @@ archive/issues_004033.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "[with spkg, needs review] disabled libiconv on Solaris for the r.spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4033",

@@ -10,6 +10,7 @@ archive/issues_003473.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "sage has bad error messages when sage link doesn't exist.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3473",

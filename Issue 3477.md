@@ -10,6 +10,7 @@ archive/issues_003477.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
     "title": "clisp spkg-install has bad hard-coded error message",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3477",

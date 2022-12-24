@@ -10,6 +10,7 @@ archive/issues_002086.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "iPython bug? Python decorators don't play nicely with docstrings",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2086",

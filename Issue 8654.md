@@ -10,6 +10,7 @@ archive/issues_008654.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.8",
     "title": "add \"sage -sqlite3\" command line option",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8654",

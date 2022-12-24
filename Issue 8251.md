@@ -10,6 +10,7 @@ archive/issues_008251.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "traceback when computing E.torsion_subgroup() for an elliptic curve E",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8251",

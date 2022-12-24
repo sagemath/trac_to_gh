@@ -10,6 +10,7 @@ archive/issues_008976.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.2",
     "title": "squarefree_part() fails on Python types",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8976",

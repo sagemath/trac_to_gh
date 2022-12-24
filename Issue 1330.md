@@ -10,6 +10,7 @@ archive/issues_001330.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.15",
     "title": "[with patch] 2.8.14/Solaris: fix sympy doctest - numerical noise",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1330",

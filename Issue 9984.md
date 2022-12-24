@@ -10,6 +10,7 @@ archive/issues_009984.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Freetype fails to build on AIX - looks as though it does not find Sage's zlib header files.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9984",

@@ -10,6 +10,7 @@ archive/issues_007849.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "MPRI issue with Sun Studio and --enable-cxx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7849",

@@ -10,6 +10,7 @@ archive/issues_007399.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2.1",
     "title": "fix ugliness for default graph plot3d",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7399",

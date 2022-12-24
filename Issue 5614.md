@@ -10,6 +10,7 @@ archive/issues_005614.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-wishlist",
     "title": "[with patch, not ready for review] add top-of-stack caching for fast_callable",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5614",

@@ -10,6 +10,7 @@ archive/issues_005928.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.2",
     "title": "multiplication of factorisations should coerce factors into a common universe",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5928",

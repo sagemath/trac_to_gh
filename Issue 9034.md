@@ -10,6 +10,7 @@ archive/issues_009034.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5",
     "title": "flintqs builds as 32-bit despite SAGE64=yes on OpenSolaris x64",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9034",

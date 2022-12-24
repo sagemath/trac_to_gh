@@ -10,6 +10,7 @@ archive/issues_006027.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1",
     "title": "get_memory_usage() sucks performance wise on OSX",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6027",

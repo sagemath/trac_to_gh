@@ -10,6 +10,7 @@ archive/issues_007397.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "Updated Primes to the category system.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7397",

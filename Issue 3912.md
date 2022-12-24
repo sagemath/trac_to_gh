@@ -10,6 +10,7 @@ archive/issues_003912.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.3",
     "title": "sage -t foo.tex should also test listings blocks not only verbatim",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3912",

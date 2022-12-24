@@ -10,6 +10,7 @@ archive/issues_001132.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "error inverting matrix over RQDF",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1132",

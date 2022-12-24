@@ -10,6 +10,7 @@ archive/issues_007174.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "ghmm redirects compiler warnings to /dev/null",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7174",

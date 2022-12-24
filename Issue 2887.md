@@ -10,6 +10,7 @@ archive/issues_002887.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "notebook -- greatly optimize by implementing a cached version of get_element",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2887",

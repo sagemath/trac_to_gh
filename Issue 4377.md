@@ -10,6 +10,7 @@ archive/issues_004377.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
     "title": "Building the Sage library with parallel make is broken on OSX 10.4",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4377",

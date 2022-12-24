@@ -10,6 +10,7 @@ archive/issues_003654.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "[with patch, needs review] Deprecation warning function",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3654",

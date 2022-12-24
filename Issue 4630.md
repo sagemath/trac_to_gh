@@ -10,6 +10,7 @@ archive/issues_004630.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
     "title": "bug in functions real() and imag().",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4630",

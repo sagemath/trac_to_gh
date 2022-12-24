@@ -10,6 +10,7 @@ archive/issues_004122.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "python debug mode, add sleep(2)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4122",

@@ -10,6 +10,7 @@ archive/issues_009537.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.2",
     "title": "trial_division in Sage is really slow",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9537",

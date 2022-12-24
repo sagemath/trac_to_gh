@@ -10,6 +10,7 @@ archive/issues_006685.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
     "title": "include pictures in the reference manual and notebook introspection",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6685",

@@ -10,6 +10,7 @@ archive/issues_001469.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9",
     "title": "sage-doctest should import the namespace of the file",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1469",

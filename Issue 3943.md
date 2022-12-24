@@ -10,6 +10,7 @@ archive/issues_003943.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
     "title": "pydesign patch [not ready for review]",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3943",

@@ -10,6 +10,7 @@ archive/issues_004284.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
     "title": "modular symbols -- applying Hecke operator on cuspidal subspace broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4284",

@@ -10,6 +10,7 @@ archive/issues_007986.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "notebook: _sage_ worksheets used by docbrowser never get deleted",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7986",

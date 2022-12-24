@@ -10,6 +10,7 @@ archive/issues_003298.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "Cython warnings for PolyBoRi",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3298",

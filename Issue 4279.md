@@ -10,6 +10,7 @@ archive/issues_004279.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
     "title": "Sage 3.1.3.rc0: numerical noise in rings/real_lazy.pyx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4279",

@@ -10,6 +10,7 @@ archive/issues_008692.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "inconsistencies in axes_pad and arrow plotting",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8692",

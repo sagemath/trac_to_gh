@@ -10,6 +10,7 @@ archive/issues_001817.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
     "title": "[with patch] crypto.mq.sr doctest coverage at 100%",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1817",

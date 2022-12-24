@@ -10,6 +10,7 @@ archive/issues_004227.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
     "title": "Sage 3.1.3.alpha2: many Magma doctests are not option",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4227",

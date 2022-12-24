@@ -10,6 +10,7 @@ archive/issues_007758.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "doctest failure on OS X 10.5 intel due to randomization",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7758",

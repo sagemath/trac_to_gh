@@ -10,6 +10,7 @@ archive/issues_008722.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4",
     "title": "S-units sometimes broken and sometimes just plain wrong for relative fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8722",

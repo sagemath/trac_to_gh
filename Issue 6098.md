@@ -10,6 +10,7 @@ archive/issues_006098.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
     "title": "3d bezier path plotting",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6098",

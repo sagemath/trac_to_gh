@@ -10,6 +10,7 @@ archive/issues_003219.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
     "title": "spkg -- upgrad to gmp-4.2.2 while we wait for MPIR",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3219",

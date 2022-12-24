@@ -10,6 +10,7 @@ archive/issues_003509.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
     "title": "[with spkg, needs review] Update eclib to eclib-20080310.p3.spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3509",

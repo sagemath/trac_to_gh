@@ -10,6 +10,7 @@ archive/issues_009689.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.3",
     "title": "Numerical noise on devel/sage-main/sage/symbolic/expression.pyx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9689",

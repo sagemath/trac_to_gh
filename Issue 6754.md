@@ -10,6 +10,7 @@ archive/issues_006754.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
     "title": "sage-4.1.1 -- numerical noise on OS X 10.5 PPC",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6754",

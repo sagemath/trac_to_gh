@@ -10,6 +10,7 @@ archive/issues_000559.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.7",
     "title": "memleak in multi_modular_MultiModularBasis_base exposed by ModularSymbols(n,sign=1).decomposition()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/559",

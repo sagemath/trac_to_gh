@@ -10,6 +10,7 @@ archive/issues_003017.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.1",
     "title": "invalid link after make install",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3017",

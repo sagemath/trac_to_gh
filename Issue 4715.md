@@ -10,6 +10,7 @@ archive/issues_004715.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
     "title": "Small bug in KodairaSymbol",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4715",

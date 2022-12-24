@@ -10,6 +10,7 @@ archive/issues_003127.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.3",
     "title": "abelian groups (are lame?) -- bug in comparison of subgroups with group",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3127",

@@ -10,6 +10,7 @@ archive/issues_001929.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
     "title": "add more examples to qqbar.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1929",

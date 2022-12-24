@@ -10,6 +10,7 @@ archive/issues_007698.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Delete crap in the HMM spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7698",

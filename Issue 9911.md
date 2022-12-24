@@ -10,6 +10,7 @@ archive/issues_009911.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "extraneous argument in deprecation in #7154",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9911",

@@ -10,6 +10,7 @@ archive/issues_000506.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
     "title": "add %timeit support to the notebook",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/506",

@@ -10,6 +10,7 @@ archive/issues_003987.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "[with patch; needs review] interfaces -- add algorithm='magma' for polynomial factor and galois_group commands",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3987",

@@ -10,6 +10,7 @@ archive/issues_008565.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.1",
     "title": "atan2(-pi,0) throws \"divide by zero\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8565",

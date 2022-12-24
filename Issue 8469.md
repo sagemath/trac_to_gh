@@ -10,6 +10,7 @@ archive/issues_008469.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.7.2",
     "title": "add \"Number Theory and the RSA Public Key Cryptosystem\" to \"Sage HOWTOs\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8469",

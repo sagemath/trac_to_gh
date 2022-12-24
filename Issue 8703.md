@@ -10,6 +10,7 @@ archive/issues_008703.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.10",
     "title": "Combinatorial Rooted Ordered and Binary Trees",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8703",

@@ -10,6 +10,7 @@ archive/issues_003585.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
     "title": "time_series -- lots of numerical noise in the doctests",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3585",

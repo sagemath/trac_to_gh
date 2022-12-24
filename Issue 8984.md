@@ -10,6 +10,7 @@ archive/issues_008984.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.2",
     "title": "Implementation of the Lenart--Postnikov alcove path crystal",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8984",

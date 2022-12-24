@@ -10,6 +10,7 @@ archive/issues_001793.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
     "title": "[with patch, needs careful review] Hilbert series, Hilbert polynomial, Laurent series expansion",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1793",

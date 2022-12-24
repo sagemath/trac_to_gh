@@ -10,6 +10,7 @@ archive/issues_009095.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "Elliptic curve over function field heights",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9095",

@@ -10,6 +10,7 @@ archive/issues_001946.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
     "title": "Tate's algorithm has NO DOCTESTS!  See sage/schemes/elliptic_curves/ell_number_field.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1946",

@@ -10,6 +10,7 @@ archive/issues_001290.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.15",
     "title": "[with patch] add computationg of Rencontres numbers to Sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1290",

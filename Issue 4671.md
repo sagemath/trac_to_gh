@@ -10,6 +10,7 @@ archive/issues_004671.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.3",
     "title": "[with patch; needs review] sage-3.2.1 startup time: it sucks again",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4671",

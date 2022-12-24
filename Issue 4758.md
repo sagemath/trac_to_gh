@@ -10,6 +10,7 @@ archive/issues_004758.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
     "title": "eigenvalues of matrices over CDF is embarassingly frickin' slow!!!!!!!!!!!! (at least 100 times too slow!)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4758",

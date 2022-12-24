@@ -10,6 +10,7 @@ archive/issues_007932.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.4",
     "title": "_Complex_I undeclared - a new bug totally stops a Solaris 10 build.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7932",

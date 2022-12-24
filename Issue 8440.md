@@ -10,6 +10,7 @@ archive/issues_008440.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.4",
     "title": "Removal of pyprocessing causing problems as _multiprocessing not building on Solaris",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8440",

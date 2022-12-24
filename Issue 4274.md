@@ -10,6 +10,7 @@ archive/issues_004274.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "assertion failure in rank for elliptic curves",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4274",

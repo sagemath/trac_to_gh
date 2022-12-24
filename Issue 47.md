@@ -10,6 +10,7 @@ archive/issues_000047.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.4",
     "title": "make it easy to turn off preparser",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/47",

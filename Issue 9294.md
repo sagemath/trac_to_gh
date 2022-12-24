@@ -10,6 +10,7 @@ archive/issues_009294.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5",
     "title": "wrong usage of except",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9294",

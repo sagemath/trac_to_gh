@@ -10,6 +10,7 @@ archive/issues_001968.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
     "title": "notebook -- remove capability of using live tutorial for users not signed in to the notebook server",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1968",

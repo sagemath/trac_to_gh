@@ -10,6 +10,7 @@ archive/issues_003920.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
     "title": "[with patch, needs review] FiniteFieldElement.vector/matrix -> _vector_/_matrix_",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3920",

@@ -10,6 +10,7 @@ archive/issues_009348.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Building pari with -O1 rather than -O3",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9348",

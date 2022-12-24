@@ -10,6 +10,7 @@ archive/issues_001532.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9",
     "title": "Error out with intelligent message if ATLAS tune failed",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1532",

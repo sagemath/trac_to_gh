@@ -10,6 +10,7 @@ archive/issues_005789.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "create sagelite",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5789",

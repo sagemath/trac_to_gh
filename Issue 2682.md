@@ -10,6 +10,7 @@ archive/issues_002682.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "[with patch] balanced product for generators/iterators",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2682",

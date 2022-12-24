@@ -10,6 +10,7 @@ archive/issues_009683.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.2",
     "title": "pretty_print clobbers _ (history)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9683",

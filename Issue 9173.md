@@ -10,6 +10,7 @@ archive/issues_009173.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "cygwin: BSD.py tests behave differently on cygwin, so need to be written to reflect that",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9173",

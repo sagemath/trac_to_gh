@@ -10,6 +10,7 @@ archive/issues_006307.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
     "title": "Move javascript out of python-land",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6307",

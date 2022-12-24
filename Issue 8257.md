@@ -10,6 +10,7 @@ archive/issues_008257.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.3",
     "title": "cygwin: gd-2.0.35.p4 fails to build",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8257",

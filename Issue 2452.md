@@ -10,6 +10,7 @@ archive/issues_002452.json:
         "critical",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1",
     "title": "heaviside step function needed",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2452",

@@ -10,6 +10,7 @@ archive/issues_008331.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.4",
     "title": "BipartiteGraph constructor does not create partitions for dict inputs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8331",

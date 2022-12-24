@@ -10,6 +10,7 @@ archive/issues_002268.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
     "title": "has_coerce_map_from_c performance improvements (patch included)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2268",

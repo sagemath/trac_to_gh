@@ -10,6 +10,7 @@ archive/issues_009486.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "ECL 10.2.1 fails to install on OS X (bsd.math) in sage-4.5.rc0",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9486",

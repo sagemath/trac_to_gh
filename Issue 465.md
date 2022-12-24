@@ -10,6 +10,7 @@ archive/issues_000465.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "LinBox: reenable Strassen-Winograd optimization test on Solaris",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/465",

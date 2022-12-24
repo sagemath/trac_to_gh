@@ -10,6 +10,7 @@ archive/issues_004303.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Plotting: points(list_of_points, rgbcolor=c) gives strangely colored results with exactly 3 points.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4303",

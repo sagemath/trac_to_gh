@@ -10,6 +10,7 @@ archive/issues_003844.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.2",
     "title": "notebook -- worksheet should call sys.path.append(DATA) when being initalized",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3844",

@@ -10,6 +10,7 @@ archive/issues_003318.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.3",
     "title": "improve 64 bit osx python 2.5.2 build",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3318",

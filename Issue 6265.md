@@ -10,6 +10,7 @@ archive/issues_006265.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-8.0",
     "title": "fix toy_d_basis.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6265",

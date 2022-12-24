@@ -10,6 +10,7 @@ archive/issues_007710.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "documentation of rational_reconstruction incoherent with code",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7710",

@@ -10,6 +10,7 @@ archive/issues_001760.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "on osx make a symlink sage.command --> sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1760",

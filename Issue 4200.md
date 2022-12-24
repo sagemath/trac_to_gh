@@ -10,6 +10,7 @@ archive/issues_004200.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
     "title": "Update numpy to 1.2.0",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4200",

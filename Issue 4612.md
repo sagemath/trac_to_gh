@@ -10,6 +10,7 @@ archive/issues_004612.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "[with patch, needs review] is_perfect_power for rationals",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4612",

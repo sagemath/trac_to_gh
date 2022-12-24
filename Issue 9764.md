@@ -10,6 +10,7 @@ archive/issues_009764.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.3",
     "title": "matrix2.pyx: replace \"x < 1e-15\" by \"abs(x) < 1e-15\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9764",

@@ -10,6 +10,7 @@ archive/issues_005169.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "make it possible to set the default search path for the attach and load commands",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5169",

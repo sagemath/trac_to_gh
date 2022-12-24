@@ -10,6 +10,7 @@ archive/issues_005901.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5",
     "title": "[with patch, needs review] Avoid permission denied error message when testing with non-writeable sage install",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5901",

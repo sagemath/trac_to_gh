@@ -10,6 +10,7 @@ archive/issues_003344.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.3",
     "title": "small changes to documentation for erf, n",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3344",

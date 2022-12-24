@@ -10,6 +10,7 @@ archive/issues_001868.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
     "title": "New mayavi2 package",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1868",

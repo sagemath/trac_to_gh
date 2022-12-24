@@ -10,6 +10,7 @@ archive/issues_005822.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.2",
     "title": "cusps -- implement action of the Galois group on cusps for congruence subgroups as on page 12 of Steven's \"Arithmetic on Modular Curves\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5822",

@@ -10,6 +10,7 @@ archive/issues_000401.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.3",
     "title": "list * integer works but integer * list doesn't work",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/401",

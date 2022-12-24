@@ -10,6 +10,7 @@ archive/issues_007487.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "Random Interval Graphs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7487",

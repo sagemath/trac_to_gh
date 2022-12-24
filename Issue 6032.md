@@ -10,6 +10,7 @@ archive/issues_006032.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
     "title": "split boost-1.34.1.cropped off the polybori.spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6032",

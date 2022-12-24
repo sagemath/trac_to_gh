@@ -10,6 +10,7 @@ archive/issues_003156.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "notebook -- implement way to delete a published worksheet",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3156",

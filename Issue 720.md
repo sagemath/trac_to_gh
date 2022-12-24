@@ -10,6 +10,7 @@ archive/issues_000720.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.4",
     "title": "Auto-authenticate on first login",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/720",

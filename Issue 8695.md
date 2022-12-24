@@ -10,6 +10,7 @@ archive/issues_008695.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4",
     "title": "UniqueRepresentations implements __eq__ but not __ne__",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8695",

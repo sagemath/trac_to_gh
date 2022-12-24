@@ -10,6 +10,7 @@ archive/issues_006579.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
     "title": "Error building 'modified sage library code' when including paripriv.h",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6579",

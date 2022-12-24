@@ -10,6 +10,7 @@ archive/issues_008412.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.4",
     "title": "Trivial Center of Matrix Group",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8412",

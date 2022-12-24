@@ -10,6 +10,7 @@ archive/issues_005067.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "linear_code -- four doctest failures in specture method='leon' exposed by #4588",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5067",

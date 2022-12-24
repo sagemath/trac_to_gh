@@ -10,6 +10,7 @@ archive/issues_002707.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
     "title": "[with patch, needs review] clean and better document is_totally_real(), add is_totally_imaginary() to NumberField_generic",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2707",

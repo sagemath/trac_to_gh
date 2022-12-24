@@ -10,6 +10,7 @@ archive/issues_002064.json:
         "trivial",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.3",
     "title": "foo?? doesn't know about cpdef from the command line",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2064",

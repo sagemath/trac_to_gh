@@ -10,6 +10,7 @@ archive/issues_008986.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.2",
     "title": "Add support for convex rational polyhedral cones",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8986",

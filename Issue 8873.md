@@ -10,6 +10,7 @@ archive/issues_008873.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "Inconsistency with CombinatorialFreeModule: Vector Space vs. Module",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8873",

@@ -10,6 +10,7 @@ archive/issues_002930.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "CDF is slow, fix it.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2930",

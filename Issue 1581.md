@@ -10,6 +10,7 @@ archive/issues_001581.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10",
     "title": "3d graphics do not show all objects by default",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1581",

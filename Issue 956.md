@@ -10,6 +10,7 @@ archive/issues_000956.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.9",
     "title": "small memleak in the graph_isom code",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/956",

@@ -10,6 +10,7 @@ archive/issues_005647.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-feature",
     "title": "Random testing improvement (follow up to #5318)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5647",

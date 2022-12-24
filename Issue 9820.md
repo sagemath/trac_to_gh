@@ -10,6 +10,7 @@ archive/issues_009820.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "problems with infinite polynomial rings",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9820",

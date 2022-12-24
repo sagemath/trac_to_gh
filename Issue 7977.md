@@ -10,6 +10,7 @@ archive/issues_007977.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "explain how to use the MATH block and automatic numbering with hash-dot",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7977",

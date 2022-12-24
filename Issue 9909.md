@@ -10,6 +10,7 @@ archive/issues_009909.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6.2",
     "title": "Longest path",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9909",

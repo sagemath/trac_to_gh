@@ -10,6 +10,7 @@ archive/issues_004504.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.1",
     "title": "Sage's .spkg extension",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4504",

@@ -10,6 +10,7 @@ archive/issues_001871.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1",
     "title": "wiki -- pressing control-c just starts another copy running",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1871",

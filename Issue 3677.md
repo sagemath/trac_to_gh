@@ -10,6 +10,7 @@ archive/issues_003677.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
     "title": "sage -t / sage -tp does not take into account the current directory",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3677",

@@ -10,6 +10,7 @@ archive/issues_008295.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.4",
     "title": "Documentation for Kazhdan-Lusztig polynomials and Iwahori Hecke algebras",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8295",

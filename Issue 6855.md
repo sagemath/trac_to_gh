@@ -10,6 +10,7 @@ archive/issues_006855.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "[with patch, needs work] Enable interacts in published worksheets",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6855",

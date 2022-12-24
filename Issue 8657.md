@@ -10,6 +10,7 @@ archive/issues_008657.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "libgcrypt spkg has incorrect DSO linking",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8657",

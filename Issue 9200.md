@@ -10,6 +10,7 @@ archive/issues_009200.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
     "title": "Add left and right directions to limits",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9200",

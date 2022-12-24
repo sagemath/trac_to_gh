@@ -10,6 +10,7 @@ archive/issues_006952.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
     "title": "follow-up to #6774: fix warnings and stylistic niceties",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6952",

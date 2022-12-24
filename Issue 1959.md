@@ -10,6 +10,7 @@ archive/issues_001959.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
     "title": "[with spkg] Solaris 9 fixes for rubiks",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1959",

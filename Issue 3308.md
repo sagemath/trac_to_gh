@@ -10,6 +10,7 @@ archive/issues_003308.json:
         "blocker",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.3",
     "title": "[with patch; needs review] Update sage-sbuildhack to work with new sbuild in Debian",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3308",

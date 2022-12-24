@@ -10,6 +10,7 @@ archive/issues_008679.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4",
     "title": "conventions for spkg names, rewriting sage-spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8679",

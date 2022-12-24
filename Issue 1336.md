@@ -10,6 +10,7 @@ archive/issues_001336.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.15",
     "title": "[with patch] 2.8.14/Linux PPC: rings/polynomial/polynomial_element.pyx doctest failure",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1336",

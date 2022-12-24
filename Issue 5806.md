@@ -10,6 +10,7 @@ archive/issues_005806.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1",
     "title": "failing test \"devel/sage/sage/misc/sagedoc.py\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5806",

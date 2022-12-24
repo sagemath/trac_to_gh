@@ -10,6 +10,7 @@ archive/issues_002333.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
     "title": "[easy to implement] hg_sage.apply('http://trac.sagemath.org/sage_trac/attachment/ticket/2245/sage-2245.patch') should be made to work",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2333",

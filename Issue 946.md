@@ -10,6 +10,7 @@ archive/issues_000946.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.13",
     "title": "hang when doctesting calculus.py on some systems",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/946",

@@ -10,6 +10,7 @@ archive/issues_001109.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.12",
     "title": "[with patch] gp interface raises stack overflow exception if gp stack exceeds available memory",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1109",

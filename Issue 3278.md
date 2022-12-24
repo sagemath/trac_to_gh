@@ -10,6 +10,7 @@ archive/issues_003278.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.3",
     "title": "[with patch, needs review] update the crystal iterator to use the new backtracking code",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3278",

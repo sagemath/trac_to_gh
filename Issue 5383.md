@@ -10,6 +10,7 @@ archive/issues_005383.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.2",
     "title": "isinstance(PrincipalIdealDomain) should be replaced with a method .is_principal_ideal_domain()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5383",

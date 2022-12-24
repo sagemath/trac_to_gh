@@ -10,6 +10,7 @@ archive/issues_003750.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
     "title": "Request for a \"log\" function for Sage integers",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3750",

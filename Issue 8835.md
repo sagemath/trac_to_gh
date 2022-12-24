@@ -10,6 +10,7 @@ archive/issues_008835.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.1",
     "title": "mark some latex doctests optional",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8835",

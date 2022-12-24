@@ -10,6 +10,7 @@ archive/issues_001795.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "[with-patch] Adds support for cdef'd and cpdef'd functions to sage-coverage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1795",

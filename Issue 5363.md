@@ -10,6 +10,7 @@ archive/issues_005363.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4",
     "title": "Sage 3.4.alpha0: -sdist issue: MANIFEST.in needs to add the missing 186 files",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5363",

@@ -10,6 +10,7 @@ archive/issues_009167.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.7",
     "title": "cygwin: importing sage.libs.ecl yields a \"no such process\" error",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9167",

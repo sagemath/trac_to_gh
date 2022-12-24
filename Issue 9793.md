@@ -10,6 +10,7 @@ archive/issues_009793.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "Make easy wrapper for symbolic lagrange interpolation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9793",

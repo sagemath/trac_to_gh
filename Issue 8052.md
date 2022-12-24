@@ -10,6 +10,7 @@ archive/issues_008052.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.2",
     "title": "Update prereq to version 0.7 (mostly Fortran issues fixed)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8052",

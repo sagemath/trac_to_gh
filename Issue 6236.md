@@ -10,6 +10,7 @@ archive/issues_006236.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-8.1",
     "title": "find the dual graph of a planar graph",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6236",

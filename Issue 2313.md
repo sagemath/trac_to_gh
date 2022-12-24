@@ -10,6 +10,7 @@ archive/issues_002313.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
     "title": "old spkg's -- delete to save space",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2313",

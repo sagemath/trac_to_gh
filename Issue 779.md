@@ -10,6 +10,7 @@ archive/issues_000779.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Matrix from Matrix_integer_dense() blows up",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/779",

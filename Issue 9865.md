@@ -10,6 +10,7 @@ archive/issues_009865.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Unable to start pari because the command 'gp --emacs --fast --quiet --stacksize 10000000' failed",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9865",

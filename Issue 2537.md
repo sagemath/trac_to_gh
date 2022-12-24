@@ -10,6 +10,7 @@ archive/issues_002537.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "a.frac() should return x-x.floor()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2537",

@@ -10,6 +10,7 @@ archive/issues_003478.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "clisp picks up wrong dvipdf",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3478",

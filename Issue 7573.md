@@ -10,6 +10,7 @@ archive/issues_007573.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "Sage crashes if insufficient data is provided for MIP",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7573",

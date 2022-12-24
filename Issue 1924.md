@@ -10,6 +10,7 @@ archive/issues_001924.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
     "title": "Optimize matrix multiply cache friendliness",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1924",

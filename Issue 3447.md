@@ -10,6 +10,7 @@ archive/issues_003447.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "sage -t foo gives wrong path to the file foo in the output",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3447",

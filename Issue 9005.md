@@ -10,6 +10,7 @@ archive/issues_009005.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.10",
     "title": "Derangements",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9005",

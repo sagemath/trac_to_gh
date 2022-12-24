@@ -10,6 +10,7 @@ archive/issues_002974.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "interfaces/r.py doctest failures on many linux machines",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2974",

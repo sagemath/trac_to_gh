@@ -10,6 +10,7 @@ archive/issues_005333.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "pynac.spkg: Delete old pynac libray during spkg-install",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5333",

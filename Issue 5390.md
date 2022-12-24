@@ -10,6 +10,7 @@ archive/issues_005390.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "install_package, optional_package etc might pick the wrong sage installation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5390",

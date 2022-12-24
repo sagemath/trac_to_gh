@@ -10,6 +10,7 @@ archive/issues_007589.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-8.3",
     "title": "bug in coercion and cyclotomic fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7589",

@@ -10,6 +10,7 @@ archive/issues_004977.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "vector(RR vector) doesn't create a new vector",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4977",

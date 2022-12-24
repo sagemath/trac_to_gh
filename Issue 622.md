@@ -10,6 +10,7 @@ archive/issues_000622.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.4.2",
     "title": "SAGE's factor function is not provably correct",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/622",

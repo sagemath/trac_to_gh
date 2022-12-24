@@ -10,6 +10,7 @@ archive/issues_003572.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "optimize sage startup time by not importing any modules that import linbox by default.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3572",

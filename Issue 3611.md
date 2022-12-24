@@ -10,6 +10,7 @@ archive/issues_003611.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.6",
     "title": "sympow: make it use $CC instead of cc",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3611",

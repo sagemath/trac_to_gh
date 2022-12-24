@@ -10,6 +10,7 @@ archive/issues_005972.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.2",
     "title": "[with patch; needs review] segfault in degenerate matrix multiply",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5972",

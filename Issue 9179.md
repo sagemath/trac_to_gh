@@ -10,6 +10,7 @@ archive/issues_009179.json:
         "trivial",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.3",
     "title": "Typo makes docs not perfect in plot/disk.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9179",

@@ -10,6 +10,7 @@ archive/issues_005859.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.0",
     "title": "sage -coverageall fails on directories with zero tests",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5859",

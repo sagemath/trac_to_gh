@@ -10,6 +10,7 @@ archive/issues_008293.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Include g77",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8293",

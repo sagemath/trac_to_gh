@@ -10,6 +10,7 @@ archive/issues_000308.json:
         "trivial",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.3",
     "title": "log_html() crashes because of an undefined variable",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/308",

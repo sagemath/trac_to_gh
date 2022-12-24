@@ -10,6 +10,7 @@ archive/issues_007346.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2.1",
     "title": "notebook -- needless vertical scroll bars on output",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7346",

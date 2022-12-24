@@ -10,6 +10,7 @@ archive/issues_006580.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "ratpoints -- this must be fixed to build with gcc-3.4.x",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6580",

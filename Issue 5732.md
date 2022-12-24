@@ -10,6 +10,7 @@ archive/issues_005732.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.1",
     "title": "digits,exact_log,ndigits speed overhaul",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5732",

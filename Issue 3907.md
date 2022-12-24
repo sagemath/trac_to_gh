@@ -10,6 +10,7 @@ archive/issues_003907.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "plot correctly up to asymptotes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3907",

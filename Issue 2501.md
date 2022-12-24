@@ -10,6 +10,7 @@ archive/issues_002501.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.4",
     "title": "[with patch, needs review] SBox class for Sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2501",

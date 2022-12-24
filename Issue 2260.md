@@ -10,6 +10,7 @@ archive/issues_002260.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
     "title": "Upgrade ATLAS to 3.8.1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2260",

@@ -10,6 +10,7 @@ archive/issues_007176.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "sage-4.1.2.rc0 scripts should exit as soon as it can't find gmp.h",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7176",

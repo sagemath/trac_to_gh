@@ -10,6 +10,7 @@ archive/issues_004885.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.3",
     "title": "fix fallout from sloppy review of 4535",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4885",

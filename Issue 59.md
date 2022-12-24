@@ -10,6 +10,7 @@ archive/issues_000059.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.3",
     "title": "optimize elliptic curve arithmetic",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/59",

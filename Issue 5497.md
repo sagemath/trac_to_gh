@@ -10,6 +10,7 @@ archive/issues_005497.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "notebook: make sure each worksheet can only run once",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5497",

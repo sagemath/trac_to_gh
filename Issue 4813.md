@@ -10,6 +10,7 @@ archive/issues_004813.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "[with patch, needs review] contribution to the tests/ directory",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4813",

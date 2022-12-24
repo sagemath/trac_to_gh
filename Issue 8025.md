@@ -10,6 +10,7 @@ archive/issues_008025.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.3",
     "title": "artificially bump the version number of the scipy and scipy_sandbox spkg's",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8025",

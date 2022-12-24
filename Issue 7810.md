@@ -10,6 +10,7 @@ archive/issues_007810.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "bug in fast_callable (reducing empty sequence)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7810",

@@ -10,6 +10,7 @@ archive/issues_007142.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "We must check if the version of 'tar' found is gnu tar",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7142",

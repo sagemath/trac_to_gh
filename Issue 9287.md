@@ -10,6 +10,7 @@ archive/issues_009287.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.2",
     "title": "improving doctest coverage for elliptic curves",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9287",

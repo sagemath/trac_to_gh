@@ -10,6 +10,7 @@ archive/issues_005054.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "add support for doctesting worksheets",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5054",

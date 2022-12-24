@@ -10,6 +10,7 @@ archive/issues_005452.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
     "title": "Graph broken on a input of type dict of dicts",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5452",

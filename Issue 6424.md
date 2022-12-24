@@ -10,6 +10,7 @@ archive/issues_006424.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.8",
     "title": "One can no longer convert I=sqrt(-1) to sympy",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6424",

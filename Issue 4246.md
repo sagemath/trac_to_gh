@@ -10,6 +10,7 @@ archive/issues_004246.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
     "title": "bug in coercing symbolic expressions to polynomial rings",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4246",

@@ -10,6 +10,7 @@ archive/issues_004153.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
     "title": "re-enable -fwrapv option for Python on Itanium",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4153",

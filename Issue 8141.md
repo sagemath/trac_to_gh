@@ -10,6 +10,7 @@ archive/issues_008141.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.4",
     "title": "Update font stacks, sans-serif and monospace, for SageNB pages",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8141",

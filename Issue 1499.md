@@ -10,6 +10,7 @@ archive/issues_001499.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9",
     "title": "fix import issues related to ATLAS BLAS",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1499",

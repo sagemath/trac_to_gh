@@ -10,6 +10,7 @@ archive/issues_004115.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
     "title": "[with patch, not ready for review] Double coset problems",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4115",

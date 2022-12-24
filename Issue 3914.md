@@ -10,6 +10,7 @@ archive/issues_003914.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "error in parsing maxima output",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3914",

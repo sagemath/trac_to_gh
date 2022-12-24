@@ -10,6 +10,7 @@ archive/issues_000685.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Make Eisenstein series code handle eisenstein series with character",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/685",

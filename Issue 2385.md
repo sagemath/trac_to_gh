@@ -10,6 +10,7 @@ archive/issues_002385.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.4",
     "title": "[with patch, needs review] Multivariate Polynomial coefficients",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2385",

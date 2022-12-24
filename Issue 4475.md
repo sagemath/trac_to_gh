@@ -10,6 +10,7 @@ archive/issues_004475.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "create a native Sage implementation of Dokchitser's L-functions algorithm",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4475",

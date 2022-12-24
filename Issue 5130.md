@@ -10,6 +10,7 @@ archive/issues_005130.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.2",
     "title": "[with patch; not ready for review] create a prime_pi function that doesn't just compute len(prime_range(n))",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5130",

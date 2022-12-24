@@ -10,6 +10,7 @@ archive/issues_001497.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9",
     "title": "atlas-3.8.p4.spkg fails to build on Intel Core 2 Duo with 32-bit operating system",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1497",

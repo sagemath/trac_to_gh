@@ -10,6 +10,7 @@ archive/issues_009941.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6.2",
     "title": "Fix CHomP-related doctest errors",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9941",

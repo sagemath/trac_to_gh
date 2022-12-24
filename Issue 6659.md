@@ -10,6 +10,7 @@ archive/issues_006659.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
     "title": "cores() is broken for some digraphs, and is *way* too slow",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6659",

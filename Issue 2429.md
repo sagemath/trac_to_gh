@@ -10,6 +10,7 @@ archive/issues_002429.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "block_matrix command should be consistent with the syntax of the matrix command",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2429",

@@ -10,6 +10,7 @@ archive/issues_008343.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "email address marked as confirmed even after changing it",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8343",

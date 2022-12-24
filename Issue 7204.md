@@ -10,6 +10,7 @@ archive/issues_007204.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2.1",
     "title": "issue building sage docs since notebook moved",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7204",

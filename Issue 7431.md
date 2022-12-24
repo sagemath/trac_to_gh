@@ -10,6 +10,7 @@ archive/issues_007431.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "@interact and %hide don't play nice together",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7431",

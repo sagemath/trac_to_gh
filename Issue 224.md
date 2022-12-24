@@ -10,6 +10,7 @@ archive/issues_000224.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "doc browser -- doesn't parse \"notebook input notation\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/224",

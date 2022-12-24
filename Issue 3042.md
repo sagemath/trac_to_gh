@@ -10,6 +10,7 @@ archive/issues_003042.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.3",
     "title": "[with patch; do not review yet] cyclolinalg -- make a new type for cyclotomic linear algebra",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3042",

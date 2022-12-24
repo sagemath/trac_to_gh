@@ -10,6 +10,7 @@ archive/issues_005456.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "remove 32/64 bit dependency in modular symbols base enumerations",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5456",

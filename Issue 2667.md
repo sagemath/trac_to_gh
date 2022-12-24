@@ -10,6 +10,7 @@ archive/issues_002667.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "transform.pyx calls matrix() with an RDF vector inside of a list instead of a flat list.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2667",

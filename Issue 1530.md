@@ -10,6 +10,7 @@ archive/issues_001530.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9",
     "title": "[with patch] building tut.tex is currently broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1530",

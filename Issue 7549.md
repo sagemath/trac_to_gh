@@ -10,6 +10,7 @@ archive/issues_007549.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4",
     "title": "Reference manual: class hierarchy, inherited members, underscore variables",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7549",

@@ -10,6 +10,7 @@ archive/issues_002645.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
     "title": "arrow3d is sometimes too long",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2645",

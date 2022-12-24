@@ -10,6 +10,7 @@ archive/issues_002448.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.4",
     "title": "[with patch, needs review] add docstrings, clean code in quadratic_forms",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2448",

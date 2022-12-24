@@ -10,6 +10,7 @@ archive/issues_008881.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.4",
     "title": "Functorial constructions in categories",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8881",

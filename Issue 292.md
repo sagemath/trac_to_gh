@@ -10,6 +10,7 @@ archive/issues_000292.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.2",
     "title": "Problems with stacked polynomial rings and vector",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/292",

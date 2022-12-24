@@ -10,6 +10,7 @@ archive/issues_005478.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
     "title": "RestrictedPartitions is very slow and a huge memory hog",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5478",

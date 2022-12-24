@@ -10,6 +10,7 @@ archive/issues_002105.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
     "title": "Constructor for ntl.GF2X polynomials does not take Polynomials over  GF(2) as advertised by docstring",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2105",

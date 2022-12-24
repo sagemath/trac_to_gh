@@ -10,6 +10,7 @@ archive/issues_009918.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6.1",
     "title": "Wrap wraps-decorator working around bug when used with non-function callables",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9918",

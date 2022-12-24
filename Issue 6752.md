@@ -10,6 +10,7 @@ archive/issues_006752.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "tutorial: explain where generated Python files are located",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6752",

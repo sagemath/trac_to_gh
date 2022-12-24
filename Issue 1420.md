@@ -10,6 +10,7 @@ archive/issues_001420.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9",
     "title": "[trivial to fix!] documentation typo",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1420",

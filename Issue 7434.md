@@ -10,6 +10,7 @@ archive/issues_007434.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.2",
     "title": "notebook: new modal jquery dialog boxes are covered by jmol 3d graphics",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7434",

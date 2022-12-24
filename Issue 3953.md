@@ -10,6 +10,7 @@ archive/issues_003953.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "notebook -- make it so foo?? in the notebook shows the source code syntax highlighted",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3953",

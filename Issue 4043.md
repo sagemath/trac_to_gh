@@ -10,6 +10,7 @@ archive/issues_004043.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "[with patch, needs review] Sage 3.1.2.alpha4: numerical noise in plot.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4043",

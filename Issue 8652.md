@@ -10,6 +10,7 @@ archive/issues_008652.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "load uses \"strip\" on non-strings",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8652",

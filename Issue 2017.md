@@ -10,6 +10,7 @@ archive/issues_002017.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.5",
     "title": "crap -- singular includes surfex as a precompiled binary.  Remove it.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2017",

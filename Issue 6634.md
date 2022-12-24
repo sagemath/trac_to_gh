@@ -10,6 +10,7 @@ archive/issues_006634.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
     "title": "biopython 1.49b broken with python-2.6",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6634",

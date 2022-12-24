@@ -10,6 +10,7 @@ archive/issues_006880.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "docstrings and @cached_method -- if you used cached_method then docstring displays wrong file, etc.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6880",

@@ -10,6 +10,7 @@ archive/issues_006031.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
     "title": "[with spkg, needs review] ntl-5.4.2.p7.spkg: Fix gcc 4.4.0 compilation problem, add spkg-check target",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6031",

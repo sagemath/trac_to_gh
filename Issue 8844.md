@@ -10,6 +10,7 @@ archive/issues_008844.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.3",
     "title": "add missing libraries to module_list for Cygwin",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8844",

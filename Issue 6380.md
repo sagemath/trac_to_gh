@@ -10,6 +10,7 @@ archive/issues_006380.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
     "title": "[with patch, needs review] Allow NTL to build on Solaris with Sun or GNU linker",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6380",

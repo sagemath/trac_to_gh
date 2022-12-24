@@ -10,6 +10,7 @@ archive/issues_007510.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "Primes is missing is_finite.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7510",

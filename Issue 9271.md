@@ -10,6 +10,7 @@ archive/issues_009271.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.2",
     "title": "fix the \"optional: needs CHomP\" tags in sage/homology, etc.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9271",

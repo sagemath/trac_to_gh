@@ -10,6 +10,7 @@ archive/issues_005012.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "Solaris 10/x86: Numerical noise in sage/rings/qqbar.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5012",

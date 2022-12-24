@@ -10,6 +10,7 @@ archive/issues_009590.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.2",
     "title": "Doctest failures in cone.py and toric_lattice_element.pyx on 32-bit Linux",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9590",

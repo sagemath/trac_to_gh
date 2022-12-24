@@ -10,6 +10,7 @@ archive/issues_006707.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
     "title": "Sage will try to build on compilers known to be too old.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6707",

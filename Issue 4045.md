@@ -10,6 +10,7 @@ archive/issues_004045.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "[with patch, needs review] fix PolyBoRi GB calculations in some situations",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4045",

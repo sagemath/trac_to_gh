@@ -10,6 +10,7 @@ archive/issues_007674.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "fix bug in c_graph backends in_degree and out_degree",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7674",

@@ -10,6 +10,7 @@ archive/issues_001154.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.15",
     "title": "lost precision in RQDF -> RealField conversion",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1154",

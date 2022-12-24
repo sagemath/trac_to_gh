@@ -10,6 +10,7 @@ archive/issues_005974.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
     "title": "[with patch; needs review] the generic linear_combination_of_rows and linear_combination_of_columns functions for matrices are very stupidly slotch",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5974",

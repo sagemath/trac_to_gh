@@ -10,6 +10,7 @@ archive/issues_007090.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.2",
     "title": "R test suite fails when building with SAGE_CHECK",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7090",

@@ -10,6 +10,7 @@ archive/issues_000261.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4",
     "title": "a new matrix constructor",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/261",

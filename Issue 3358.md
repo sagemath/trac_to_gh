@@ -10,6 +10,7 @@ archive/issues_003358.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Improve the building of eclib (shared/static objects) [with patch needs review]",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3358",

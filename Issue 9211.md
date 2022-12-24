@@ -10,6 +10,7 @@ archive/issues_009211.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.8",
     "title": "graph vertices cut off",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9211",

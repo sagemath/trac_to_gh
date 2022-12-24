@@ -10,6 +10,7 @@ archive/issues_005490.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
     "title": "Easter!",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5490",

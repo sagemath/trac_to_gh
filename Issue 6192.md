@@ -10,6 +10,7 @@ archive/issues_006192.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.1",
     "title": "numerical noise on x86 fedora core 8 (cicero on skynet)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6192",

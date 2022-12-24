@@ -10,6 +10,7 @@ archive/issues_004620.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
     "title": "setup.py: if the cythonization fails then next \"sage -b\" starts to build extensions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4620",

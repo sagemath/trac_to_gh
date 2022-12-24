@@ -10,6 +10,7 @@ archive/issues_002351.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.3",
     "title": "sagenb.org SSL certificate is expired",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2351",

@@ -10,6 +10,7 @@ archive/issues_001486.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9",
     "title": "singular-3-0-4-1-20071202 fails compilation on Slackware 12.0",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1486",

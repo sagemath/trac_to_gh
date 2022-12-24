@@ -10,6 +10,7 @@ archive/issues_009631.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.7.2",
     "title": "Remerge #9501 after resolving NFS and/or doctest problems with @fork",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9631",

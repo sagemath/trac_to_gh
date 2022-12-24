@@ -10,6 +10,7 @@ archive/issues_005804.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.2",
     "title": "Solaris 10/Sparc: number_of_partitions(100000) is broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5804",

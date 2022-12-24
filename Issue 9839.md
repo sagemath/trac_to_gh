@@ -10,6 +10,7 @@ archive/issues_009839.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "link-editor thinks ECL library contains non-pic code on *all* 64-bit Solaris/OpenSolaris releases",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9839",

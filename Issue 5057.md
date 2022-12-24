@@ -10,6 +10,7 @@ archive/issues_005057.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "Add fortran-OSX64-20090120.spkg: to the experimental spkg repo",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5057",

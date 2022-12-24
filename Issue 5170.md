@@ -10,6 +10,7 @@ archive/issues_005170.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "Get rid of the tooltip for Tinymce saying to doubleclick---it's annoying after a while.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5170",

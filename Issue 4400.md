@@ -10,6 +10,7 @@ archive/issues_004400.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Sage 3.1.4: magma related doctest failures in sage/interfaces/magma.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4400",

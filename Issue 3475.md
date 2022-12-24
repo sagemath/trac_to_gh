@@ -10,6 +10,7 @@ archive/issues_003475.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
     "title": "[with patch, needs review] setup.py was missing jquery.form.js, upgrade to latest version of jquery (1.2.6) and jquery.form",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3475",

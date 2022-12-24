@@ -10,6 +10,7 @@ archive/issues_003896.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "[with spkg, patch - needs review] Upgrade Cython to 0.9.8.1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3896",

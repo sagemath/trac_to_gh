@@ -10,6 +10,7 @@ archive/issues_004014.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "remove sage/plot/graph.py from Sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4014",

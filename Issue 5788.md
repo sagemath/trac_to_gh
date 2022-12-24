@@ -10,6 +10,7 @@ archive/issues_005788.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
     "title": "Fix MPIR build problem on OSX 10.4 exposed by linbox",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5788",

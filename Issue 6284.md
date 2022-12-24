@@ -10,6 +10,7 @@ archive/issues_006284.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "fix the numerous broken optional magma doctests",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6284",

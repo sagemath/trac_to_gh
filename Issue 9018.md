@@ -10,6 +10,7 @@ archive/issues_009018.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.4",
     "title": "Better latex for quadratic fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9018",

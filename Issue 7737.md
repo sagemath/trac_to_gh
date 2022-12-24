@@ -10,6 +10,7 @@ archive/issues_007737.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "spkg list has the entire description as a link",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7737",

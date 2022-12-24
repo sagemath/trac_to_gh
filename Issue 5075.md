@@ -10,6 +10,7 @@ archive/issues_005075.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "Polynomials over inexact rings should not truncate inexact leading zeroes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5075",

@@ -10,6 +10,7 @@ archive/issues_005853.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.2",
     "title": "Restify and include more documentation on elliptic curves",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5853",

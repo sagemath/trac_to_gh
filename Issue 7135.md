@@ -10,6 +10,7 @@ archive/issues_007135.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "python always building 32-bit on Solaris",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7135",

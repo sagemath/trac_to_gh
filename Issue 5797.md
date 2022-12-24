@@ -10,6 +10,7 @@ archive/issues_005797.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.2",
     "title": "raise coverage in matrix1.pyx to 100%",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5797",

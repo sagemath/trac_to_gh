@@ -10,6 +10,7 @@ archive/issues_007320.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2.1",
     "title": "search_src and friends are case-sensitive",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7320",

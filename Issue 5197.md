@@ -10,6 +10,7 @@ archive/issues_005197.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "notebook -- render worksheet list now totally broken on sagenb.org by somebody naming a worksheet with a character u'\\xa7'",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5197",

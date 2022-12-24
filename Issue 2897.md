@@ -10,6 +10,7 @@ archive/issues_002897.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "[with new spkg] GAP: replace guava 3.4 by new and improved guava 3.4",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2897",

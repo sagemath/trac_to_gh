@@ -10,6 +10,7 @@ archive/issues_000302.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Improved error reporting for notebook",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/302",

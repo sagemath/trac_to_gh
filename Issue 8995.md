@@ -10,6 +10,7 @@ archive/issues_008995.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "@ sign in notebook username prevents TinyMCE from working",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8995",

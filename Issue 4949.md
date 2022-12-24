@@ -10,6 +10,7 @@ archive/issues_004949.json:
         "critical",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.0",
     "title": "Optionally build spkgs in $SAGE_BUILD_TMPDIR",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4949",

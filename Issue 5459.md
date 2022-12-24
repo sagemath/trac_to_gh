@@ -10,6 +10,7 @@ archive/issues_005459.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Notebook and worksheet autosave intervals, excessive snapshots",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5459",

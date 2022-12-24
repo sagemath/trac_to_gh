@@ -10,6 +10,7 @@ archive/issues_003325.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.3",
     "title": "[with patch, needs review] small error in argument to dvipng in latex.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3325",

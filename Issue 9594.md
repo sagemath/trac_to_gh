@@ -10,6 +10,7 @@ archive/issues_009594.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.2",
     "title": "Spring layout for graphs is currently random across platforms: mark the doctest accordingly",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9594",

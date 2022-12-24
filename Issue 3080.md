@@ -10,6 +10,7 @@ archive/issues_003080.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "testdoc.py hangs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3080",

@@ -10,6 +10,7 @@ archive/issues_006561.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
     "title": "Trivial bug with cartesian product of an empty list of iterators",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6561",

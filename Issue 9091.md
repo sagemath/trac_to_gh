@@ -10,6 +10,7 @@ archive/issues_009091.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.4",
     "title": "check_file() in latex.py spits out warnings every time",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9091",

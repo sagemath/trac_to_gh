@@ -10,6 +10,7 @@ archive/issues_007059.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
     "title": "[with patch, needs review] Stop Sage tests from saving things to hard drive -- really!",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7059",

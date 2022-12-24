@@ -10,6 +10,7 @@ archive/issues_002070.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Warning on cloning from other branches",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2070",

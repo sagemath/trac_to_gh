@@ -10,6 +10,7 @@ archive/issues_005567.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.2",
     "title": "[with patch, needs review] bug in region_plot",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5567",

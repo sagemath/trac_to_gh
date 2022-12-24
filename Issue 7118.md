@@ -10,6 +10,7 @@ archive/issues_007118.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
     "title": "remove quaddouble from sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7118",

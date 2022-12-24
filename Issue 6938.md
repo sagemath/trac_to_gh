@@ -10,6 +10,7 @@ archive/issues_006938.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
     "title": "sage-README-osx.txt is non-sensical for a source distribution.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6938",

@@ -10,6 +10,7 @@ archive/issues_004633.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "fix additional \"Fortran-style\" names and a coercion",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4633",

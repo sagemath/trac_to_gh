@@ -10,6 +10,7 @@ archive/issues_000715.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.5",
     "title": "Parents probably not reclaimed due to too much caching",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/715",

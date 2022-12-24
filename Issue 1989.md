@@ -10,6 +10,7 @@ archive/issues_001989.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
     "title": "doctest fallout -- osx ppc 10.4 matrix index out of range",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1989",

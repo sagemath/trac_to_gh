@@ -10,6 +10,7 @@ archive/issues_005501.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.2",
     "title": "pickling high-precision intervals is broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5501",

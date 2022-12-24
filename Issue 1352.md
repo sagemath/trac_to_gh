@@ -10,6 +10,7 @@ archive/issues_001352.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.15",
     "title": "[with patch] doctest error in 2.8.15.alpha0 polynomial_element.pyx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1352",

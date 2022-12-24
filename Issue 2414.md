@@ -10,6 +10,7 @@ archive/issues_002414.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
     "title": "there should be a conversion from X.fraction_field() to X (esp. for multivariate polynomials)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2414",

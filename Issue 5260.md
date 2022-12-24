@@ -10,6 +10,7 @@ archive/issues_005260.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "document the requirement for a compiler better for f2py/weave/ctypes and error out with a sensible error message when no compiler is present",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5260",

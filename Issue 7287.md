@@ -10,6 +10,7 @@ archive/issues_007287.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "[needs review] Update Maxima spkg to build ECL library",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7287",

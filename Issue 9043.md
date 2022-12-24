@@ -10,6 +10,7 @@ archive/issues_009043.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5",
     "title": "lcalc failing to build on OpenSolaris x64.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9043",

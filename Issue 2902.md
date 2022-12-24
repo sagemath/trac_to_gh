@@ -10,6 +10,7 @@ archive/issues_002902.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "notebook -- resize of cell should also fire on paste into the cell",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2902",

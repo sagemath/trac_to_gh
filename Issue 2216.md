@@ -10,6 +10,7 @@ archive/issues_002216.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.1",
     "title": "Creating an order in a number field --> infinite loop?",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2216",

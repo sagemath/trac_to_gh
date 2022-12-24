@@ -10,6 +10,7 @@ archive/issues_000063.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-1.8",
     "title": "in safari notebook, tab key inserts tab AND moves to next cell",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/63",

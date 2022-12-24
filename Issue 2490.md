@@ -10,6 +10,7 @@ archive/issues_002490.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.4",
     "title": "Faster matrix_from_rows_and_columns",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2490",

@@ -10,6 +10,7 @@ archive/issues_008663.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "expect-2.0 no longer available for download",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8663",

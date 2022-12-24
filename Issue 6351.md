@@ -10,6 +10,7 @@ archive/issues_006351.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1",
     "title": "[with patch, needs review] typo in Graph.plot docstring",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6351",

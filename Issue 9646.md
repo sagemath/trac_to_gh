@@ -10,6 +10,7 @@ archive/issues_009646.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6.2",
     "title": "Incorrect calculation of elliptic curve formal group law",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9646",

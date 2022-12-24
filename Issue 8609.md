@@ -10,6 +10,7 @@ archive/issues_008609.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4",
     "title": "Switch AmbientSpace and Scheme to Parent",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8609",

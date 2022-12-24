@@ -10,6 +10,7 @@ archive/issues_007205.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "fix the list of old sage releases website",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7205",

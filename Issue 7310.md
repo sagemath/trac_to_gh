@@ -10,6 +10,7 @@ archive/issues_007310.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2.1",
     "title": "Use modal dialogs instead of javascript prompts for the rename prompt.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7310",

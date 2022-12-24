@@ -10,6 +10,7 @@ archive/issues_006395.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
     "title": "magma interface: make magma_colon_equals mode work in both command line and notebook",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6395",

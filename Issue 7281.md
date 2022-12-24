@@ -10,6 +10,7 @@ archive/issues_007281.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "numerical noise issue on fedora32 for 4.2.alpha1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7281",

@@ -10,6 +10,7 @@ archive/issues_008055.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Add the jCarousel plug-in and set up a Sage showcase for the login page",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8055",

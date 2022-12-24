@@ -10,6 +10,7 @@ archive/issues_007121.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "Make it possible to build Sage but not documentation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7121",

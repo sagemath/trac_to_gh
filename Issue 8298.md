@@ -10,6 +10,7 @@ archive/issues_008298.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4",
     "title": "GLPK 4.42 + error message",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8298",

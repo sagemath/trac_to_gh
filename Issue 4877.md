@@ -10,6 +10,7 @@ archive/issues_004877.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "[with spkg; needs review] update optional spkg to newest version of pyopenssl and get spkg into proper format",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4877",

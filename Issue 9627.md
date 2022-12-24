@@ -10,6 +10,7 @@ archive/issues_009627.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "converting from symbolic ring to int is broken,",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9627",

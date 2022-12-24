@@ -10,6 +10,7 @@ archive/issues_002845.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "[with patch, needs review] PolyBoRi assertion errror",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2845",

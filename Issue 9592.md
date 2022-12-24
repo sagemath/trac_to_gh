@@ -10,6 +10,7 @@ archive/issues_009592.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
     "title": "Upgrade lcalc to pari 2.4.3",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9592",

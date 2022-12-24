@@ -10,6 +10,7 @@ archive/issues_008038.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.2",
     "title": "email address validator does not accept + in addresses",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8038",

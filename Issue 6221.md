@@ -10,6 +10,7 @@ archive/issues_006221.json:
         "trivial",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.2",
     "title": "typos in Lagrange interpolation polynomial",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6221",

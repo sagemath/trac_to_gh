@@ -10,6 +10,7 @@ archive/issues_006250.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.2",
     "title": "[with patch, needs review] Standardize MatrixGroup_gap: by adding .cardinality, and deprecating __len__",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6250",

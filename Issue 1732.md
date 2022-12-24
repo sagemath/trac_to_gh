@@ -10,6 +10,7 @@ archive/issues_001732.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10",
     "title": "block matrix construction",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1732",

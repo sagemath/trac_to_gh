@@ -10,6 +10,7 @@ archive/issues_004221.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
     "title": "[with package, needs review] pynac package",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4221",

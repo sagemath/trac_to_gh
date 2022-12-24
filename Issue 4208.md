@@ -10,6 +10,7 @@ archive/issues_004208.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
     "title": "[with spkg, needs review] Update mpfr to 2.3.2 release",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4208",

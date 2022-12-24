@@ -10,6 +10,7 @@ archive/issues_002589.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Notebook improvements",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2589",

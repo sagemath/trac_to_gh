@@ -10,6 +10,7 @@ archive/issues_002115.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
     "title": "add native python implementation of multiset combinations",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2115",

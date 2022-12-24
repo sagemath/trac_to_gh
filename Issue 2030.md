@@ -10,6 +10,7 @@ archive/issues_002030.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
     "title": "hg_[doc|extcode|scripts] docstring is wrong about the repo",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2030",

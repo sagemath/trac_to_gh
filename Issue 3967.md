@@ -10,6 +10,7 @@ archive/issues_003967.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
     "title": "Totallyreal \"just print\" feature added",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3967",

@@ -10,6 +10,7 @@ archive/issues_007954.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Defining affine curves in 3D space",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7954",

@@ -10,6 +10,7 @@ archive/issues_005216.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "Update bzip2 to 1.0.5 release",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5216",

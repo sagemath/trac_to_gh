@@ -10,6 +10,7 @@ archive/issues_007733.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.4",
     "title": "Graph(g) and DiGraph(g) do not keep the embedding !",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7733",

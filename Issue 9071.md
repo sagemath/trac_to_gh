@@ -10,6 +10,7 @@ archive/issues_009071.json:
         "critical",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "implement chdir for matlab interface",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9071",

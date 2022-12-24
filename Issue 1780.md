@@ -10,6 +10,7 @@ archive/issues_001780.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10",
     "title": "[with spkg] add 64 bit MacIntel build support to mpfr, fix stack smashing issue",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1780",

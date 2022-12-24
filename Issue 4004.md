@@ -10,6 +10,7 @@ archive/issues_004004.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "[with patch, needs review] increase coverage of sage/interfaces/gap.py and sage/interfaces/gp.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4004",

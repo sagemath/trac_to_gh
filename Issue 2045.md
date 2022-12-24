@@ -10,6 +10,7 @@ archive/issues_002045.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
     "title": "unfriendly error message when plotting square roots of a function that is negative.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2045",

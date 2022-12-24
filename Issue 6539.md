@@ -10,6 +10,7 @@ archive/issues_006539.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "MPIR determines linker is GNU when it's Sun on OpenSolaris - x86 NOT Sparc.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6539",

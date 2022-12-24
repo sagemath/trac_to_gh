@@ -10,6 +10,7 @@ archive/issues_008527.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "libcocoa-0.9930 indicates its sucessfully installed when it has not.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8527",

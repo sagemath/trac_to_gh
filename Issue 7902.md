@@ -10,6 +10,7 @@ archive/issues_007902.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.4",
     "title": "scipy-0.7.p3: misbuilt silently, due to missing perl modules",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7902",

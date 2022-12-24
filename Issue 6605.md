@@ -10,6 +10,7 @@ archive/issues_006605.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
     "title": "sage -docbuild DOC FORMAT should do better error checking on DOC",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6605",

@@ -10,6 +10,7 @@ archive/issues_006678.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-wishlist",
     "title": "new experimental package for pynifti and dependencies",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6678",

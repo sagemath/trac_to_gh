@@ -10,6 +10,7 @@ archive/issues_000385.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2.1",
     "title": "implement at for symbolics",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/385",

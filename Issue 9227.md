@@ -10,6 +10,7 @@ archive/issues_009227.json:
         "trivial",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6.2",
     "title": "units.length.millimeter missing",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9227",

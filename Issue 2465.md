@@ -10,6 +10,7 @@ archive/issues_002465.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
     "title": "2.10.3 doctest failure in groebner_fan.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2465",

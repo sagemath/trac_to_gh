@@ -10,6 +10,7 @@ archive/issues_007260.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "[with patch; needs review] Inverse mod number field ideals: deal with several remaining problems",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7260",

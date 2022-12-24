@@ -10,6 +10,7 @@ archive/issues_006599.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "hidden markov models are completely broken on OS X 64-bit",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6599",

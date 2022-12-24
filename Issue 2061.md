@@ -10,6 +10,7 @@ archive/issues_002061.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "[with patch] add support for binary vectors (sd7 test ticket)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2061",

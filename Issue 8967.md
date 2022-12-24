@@ -10,6 +10,7 @@ archive/issues_008967.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.2",
     "title": "Make extensions of general rings work in the same way as they do for number fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8967",

@@ -10,6 +10,7 @@ archive/issues_001545.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "gmp 4.2.2: add #include <cstdio> in gmp.h",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1545",

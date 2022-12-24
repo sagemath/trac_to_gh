@@ -10,6 +10,7 @@ archive/issues_007482.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "provide a mode so that undeclared variables magically spring into existence and object oriented notation is not necessary",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7482",

@@ -10,6 +10,7 @@ archive/issues_005728.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "limit option is misdocumented in n=100; n.factor?",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5728",

@@ -10,6 +10,7 @@ archive/issues_008820.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
     "title": "elliptic_exponential broken for curves over number fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8820",

@@ -10,6 +10,7 @@ archive/issues_000985.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.9",
     "title": "sage-2.8.9.rc1: maxima printing changed in equations.py and ell_generic.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/985",

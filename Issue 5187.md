@@ -10,6 +10,7 @@ archive/issues_005187.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "fix optional magma doctests that changed in magma-2.15",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5187",

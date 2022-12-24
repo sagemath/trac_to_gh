@@ -10,6 +10,7 @@ archive/issues_002516.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.3",
     "title": "generalized hypergeometric functions should be implemented",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2516",

@@ -10,6 +10,7 @@ archive/issues_002298.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
     "title": "[with patch, needs review] implement a way to compute a number field containing given algebraic numbers",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2298",

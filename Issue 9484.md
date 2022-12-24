@@ -10,6 +10,7 @@ archive/issues_009484.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "add demos for implicit_plot3d that show how to do CSG (constructive solid geometry)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9484",

@@ -10,6 +10,7 @@ archive/issues_005755.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
     "title": "error converting symbolic expression to polynomial",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5755",

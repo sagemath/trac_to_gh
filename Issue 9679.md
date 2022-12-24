@@ -10,6 +10,7 @@ archive/issues_009679.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "update README-vmware.txt",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9679",

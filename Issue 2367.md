@@ -10,6 +10,7 @@ archive/issues_002367.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
     "title": "[with patch, needs review] Extend invariant_generators to the case of Matrix Groups over number fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2367",

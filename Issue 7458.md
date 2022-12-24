@@ -10,6 +10,7 @@ archive/issues_007458.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6.2",
     "title": "[with patch, needs review] Sylvester matrix for polynomials",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7458",

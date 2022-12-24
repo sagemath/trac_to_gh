@@ -10,6 +10,7 @@ archive/issues_002802.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "Sage 3.0.alpha1: sage/misc/inline_fortran.py doctest failure",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2802",

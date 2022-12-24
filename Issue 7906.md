@@ -10,6 +10,7 @@ archive/issues_007906.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "is_square() should be False for negative algebraic reals",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7906",

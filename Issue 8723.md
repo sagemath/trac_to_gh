@@ -10,6 +10,7 @@ archive/issues_008723.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.1",
     "title": "Change to return type of E.multiplcation_by_m(m,True)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8723",

@@ -10,6 +10,7 @@ archive/issues_003238.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
     "title": "[with patch; needs review] libfpll spkg -- update to work with cygwin",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3238",

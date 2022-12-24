@@ -10,6 +10,7 @@ archive/issues_006845.json:
         "trivial",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
     "title": "bad ReST formatted docstring in #6819",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6845",

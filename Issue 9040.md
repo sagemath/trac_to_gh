@@ -10,6 +10,7 @@ archive/issues_009040.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "fatal relocation error installing R on OpenSolaris",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9040",

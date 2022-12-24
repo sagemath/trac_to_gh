@@ -10,6 +10,7 @@ archive/issues_007566.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "cryptography: verbose keyword for brute_force() method in shift/affine cryptosystems",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7566",

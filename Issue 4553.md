@@ -10,6 +10,7 @@ archive/issues_004553.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
     "title": "[with patch, needs review] a few new methods for FiniteFieldElement",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4553",

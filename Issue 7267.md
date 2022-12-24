@@ -10,6 +10,7 @@ archive/issues_007267.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "Add a compact color picker to SageNB",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7267",

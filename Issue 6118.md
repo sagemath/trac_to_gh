@@ -10,6 +10,7 @@ archive/issues_006118.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
     "title": "integer shifting slow",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6118",

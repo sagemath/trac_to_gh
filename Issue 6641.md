@@ -10,6 +10,7 @@ archive/issues_006641.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "switch the poset antichains method to use GenericBacktracker and add antichains_iterator.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6641",

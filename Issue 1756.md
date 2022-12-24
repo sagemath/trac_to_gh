@@ -10,6 +10,7 @@ archive/issues_001756.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "implement MPolynomialIdeal.hilbert_[series|polynomial]",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1756",

@@ -10,6 +10,7 @@ archive/issues_008252.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "names parameter in optimized_representation is tweaked,",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8252",

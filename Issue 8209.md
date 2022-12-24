@@ -10,6 +10,7 @@ archive/issues_008209.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.3",
     "title": "make docstring processing available for introspection, and fix mathtt",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8209",

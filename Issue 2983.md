@@ -10,6 +10,7 @@ archive/issues_002983.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
     "title": "Itanium (RHEL 5) -- singular interface problems in matrix_group.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2983",

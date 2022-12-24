@@ -10,6 +10,7 @@ archive/issues_001375.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.15",
     "title": "tutorial texing typo issue",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1375",

@@ -10,6 +10,7 @@ archive/issues_004325.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "CC() fails on Mathematica output",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4325",

@@ -10,6 +10,7 @@ archive/issues_002641.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "replace guava 3.1 by guava 3.3",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2641",

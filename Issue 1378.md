@@ -10,6 +10,7 @@ archive/issues_001378.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9",
     "title": "add ssh-client (i.e., ssh-keygen) as a required package in various places in the docs.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1378",

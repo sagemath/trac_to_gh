@@ -10,6 +10,7 @@ archive/issues_007052.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2.1",
     "title": "Chromatic polynomial calculated incorrectly",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7052",

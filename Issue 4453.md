@@ -10,6 +10,7 @@ archive/issues_004453.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.5",
     "title": "elliptic curves -- heegner_index command gives nonsense when rank > 1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4453",

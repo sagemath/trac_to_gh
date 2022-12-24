@@ -10,6 +10,7 @@ archive/issues_004393.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
     "title": "Sage 3.1.4: magma related optional doctest failure in sage/structure/element.pyx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4393",

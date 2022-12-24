@@ -10,6 +10,7 @@ archive/issues_007882.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Macaulay2 interface breaks on examples",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7882",

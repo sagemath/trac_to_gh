@@ -10,6 +10,7 @@ archive/issues_001789.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
     "title": "standalone Sage scripts don't work on Linux -- they work fine on OS X",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1789",

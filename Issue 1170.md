@@ -10,6 +10,7 @@ archive/issues_001170.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "Behaviour of the order function for infinite groups",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1170",

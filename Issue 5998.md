@@ -10,6 +10,7 @@ archive/issues_005998.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "add fxsr to cpuflags.txt",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5998",

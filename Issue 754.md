@@ -10,6 +10,7 @@ archive/issues_000754.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "get SAGE to build on DSL",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/754",

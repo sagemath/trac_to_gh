@@ -10,6 +10,7 @@ archive/issues_001367.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "weird bug creating fractional ideal in relative number field",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1367",

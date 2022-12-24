@@ -10,6 +10,7 @@ archive/issues_003391.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.2",
     "title": "update scipy to match the numpy 1.1.0 release",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3391",

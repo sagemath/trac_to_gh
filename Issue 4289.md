@@ -10,6 +10,7 @@ archive/issues_004289.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.4",
     "title": "EllipticCurve behaviour",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4289",

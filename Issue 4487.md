@@ -10,6 +10,7 @@ archive/issues_004487.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
     "title": "add method to evaluate characters of permutation and matrix groups",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4487",

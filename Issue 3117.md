@@ -10,6 +10,7 @@ archive/issues_003117.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.3",
     "title": "bug in quotient polynomial rings when using funny term order",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3117",

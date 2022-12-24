@@ -10,6 +10,7 @@ archive/issues_000797.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "timeit doesn't recognize [1..10] syntax",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/797",

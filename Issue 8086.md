@@ -10,6 +10,7 @@ archive/issues_008086.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.3",
     "title": "numpy fails to build on Open Solaris x64 - 32 / 64-bit mixup",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8086",

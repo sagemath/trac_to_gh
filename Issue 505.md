@@ -10,6 +10,7 @@ archive/issues_000505.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.3",
     "title": "memleak in matrix_mod2_dense.so",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/505",

@@ -10,6 +10,7 @@ archive/issues_001273.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.15",
     "title": "[with patch] implement complex root isolation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1273",

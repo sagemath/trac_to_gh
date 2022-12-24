@@ -10,6 +10,7 @@ archive/issues_007961.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "Make recognition of runpath/develpath in editmodule more robust",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7961",

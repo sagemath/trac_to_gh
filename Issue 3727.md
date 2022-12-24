@@ -10,6 +10,7 @@ archive/issues_003727.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
     "title": "bug report link in notebook for quick submitting",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3727",

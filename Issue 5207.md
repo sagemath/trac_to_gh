@@ -10,6 +10,7 @@ archive/issues_005207.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "remove unnecessary use of symbolics in doctests in weierstrass_morphism.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5207",

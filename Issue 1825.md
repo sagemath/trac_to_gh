@@ -10,6 +10,7 @@ archive/issues_001825.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10",
     "title": "rewrite the script in devel/doc/ref so that anybody can add new auto-generated files to the reference manual via hg.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1825",

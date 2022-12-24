@@ -10,6 +10,7 @@ archive/issues_001416.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9",
     "title": "get the R statistics software into Sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1416",

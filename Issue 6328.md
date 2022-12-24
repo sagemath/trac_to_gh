@@ -10,6 +10,7 @@ archive/issues_006328.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
     "title": "optional doctest failure -- bugs in the graph theory section of constructions guide",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6328",

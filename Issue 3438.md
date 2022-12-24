@@ -10,6 +10,7 @@ archive/issues_003438.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "[upstream] GAP is broken with non-trivial CC in env",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3438",

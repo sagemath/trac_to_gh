@@ -10,6 +10,7 @@ archive/issues_004850.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "bug in power_mod",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4850",

@@ -10,6 +10,7 @@ archive/issues_004262.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
     "title": "Elliptic curve a_invariants command returns a list reference (BAD!!)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4262",

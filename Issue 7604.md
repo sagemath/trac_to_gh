@@ -10,6 +10,7 @@ archive/issues_007604.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "Bug in continued fractions module (contfrac).  Patch attached",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7604",

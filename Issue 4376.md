@@ -10,6 +10,7 @@ archive/issues_004376.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.7",
     "title": "Implement conversion of power series over more rings (e.g. GF(p)) to pari",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4376",

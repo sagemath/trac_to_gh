@@ -10,6 +10,7 @@ archive/issues_002521.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "Bug in gauss_sum_numerical in degenerate case (probably easy to fix)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2521",

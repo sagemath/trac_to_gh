@@ -10,6 +10,7 @@ archive/issues_004935.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "is_perfect_power leaks",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4935",

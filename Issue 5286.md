@@ -10,6 +10,7 @@ archive/issues_005286.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
     "title": "python 2.5.4 breaks -sdist due to missing .hg repo in the sage-3.3.rc1.spkg (followup to #5218)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5286",

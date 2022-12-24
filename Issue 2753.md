@@ -10,6 +10,7 @@ archive/issues_002753.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "[with patch, needs review] new \"randstate\" framework for a global Sage random number seed",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2753",

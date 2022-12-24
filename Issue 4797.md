@@ -10,6 +10,7 @@ archive/issues_004797.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "upgrade -- if upgrading Cython run -ba instead of -b",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4797",

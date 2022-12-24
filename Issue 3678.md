@@ -10,6 +10,7 @@ archive/issues_003678.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.3",
     "title": "Fractional powers for polynomial variables bug",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3678",

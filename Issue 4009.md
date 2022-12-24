@@ -10,6 +10,7 @@ archive/issues_004009.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "[with spkg, needs review] OSX 10.4/5: build R without the aqua support",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4009",

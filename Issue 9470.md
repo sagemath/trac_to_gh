@@ -10,6 +10,7 @@ archive/issues_009470.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.3",
     "title": "Switch toric varieties to enhanced fans",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9470",

@@ -10,6 +10,7 @@ archive/issues_008104.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.3",
     "title": "developer's guide for making spkgs should specify that patches need to be version controlled",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8104",

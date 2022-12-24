@@ -10,6 +10,7 @@ archive/issues_001799.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10",
     "title": "[with patch, needs review] fix spelling errors in qqbar.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1799",

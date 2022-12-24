@@ -10,6 +10,7 @@ archive/issues_005733.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
     "title": "bug in 3d plotting of graphs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5733",

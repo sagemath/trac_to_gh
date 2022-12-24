@@ -10,6 +10,7 @@ archive/issues_005340.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4",
     "title": "NTL \"context\"s can be restored at the wrong time, leading to randomly-wrong answers",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5340",

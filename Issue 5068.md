@@ -10,6 +10,7 @@ archive/issues_005068.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "change_ring fails for polynomials over finite fields in many cases",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5068",

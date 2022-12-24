@@ -10,6 +10,7 @@ archive/issues_002602.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
     "title": "plot_vector_field docs are unnecessarily complicated (and use the slow lambda functions!)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2602",

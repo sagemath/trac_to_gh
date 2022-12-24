@@ -10,6 +10,7 @@ archive/issues_000564.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.4",
     "title": "memleak in matrix_integer_sparse_allocate_mpz_vector exposed by ModularSymbols(n,sign=1).decomposition()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/564",

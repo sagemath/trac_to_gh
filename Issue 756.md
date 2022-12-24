@@ -10,6 +10,7 @@ archive/issues_000756.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
     "title": "modify how foo.derivative(...) works",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/756",

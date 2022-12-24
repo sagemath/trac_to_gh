@@ -10,6 +10,7 @@ archive/issues_001460.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9",
     "title": "bug in float( ... ) conversion in calculus",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1460",

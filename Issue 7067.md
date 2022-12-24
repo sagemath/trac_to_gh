@@ -10,6 +10,7 @@ archive/issues_007067.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "cddlib 094f fails to build with Sun Studio - fabs() unresolved. Probably needs -lm",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7067",

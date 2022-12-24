@@ -10,6 +10,7 @@ archive/issues_007129.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "libgpg_error-1.6.p2 always builds 32-bit binaries on Solaris.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7129",

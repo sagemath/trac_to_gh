@@ -10,6 +10,7 @@ archive/issues_002000.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "bug either in polynomial factorization or polynomial ring constructor",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2000",

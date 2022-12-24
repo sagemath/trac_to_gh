@@ -10,6 +10,7 @@ archive/issues_005915.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Sage LiveCD 3.4 does not boot",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5915",

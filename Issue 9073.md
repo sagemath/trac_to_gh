@@ -10,6 +10,7 @@ archive/issues_009073.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5",
     "title": "Handle multigraphs better in planarity",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9073",

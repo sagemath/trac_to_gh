@@ -10,6 +10,7 @@ archive/issues_009458.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Bug with variable names in solve()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9458",

@@ -10,6 +10,7 @@ archive/issues_005470.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
     "title": "Update Cython entry in Developer's Guide",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5470",

@@ -10,6 +10,7 @@ archive/issues_005407.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4",
     "title": "fractional gens?  not good -- (QQ^3).gen(4/3) gives (0,1,0)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5407",

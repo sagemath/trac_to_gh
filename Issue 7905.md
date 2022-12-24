@@ -10,6 +10,7 @@ archive/issues_007905.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Sun Studio 12 64-bit mode on Solaris.  libgpg-error creates 32-bit binaries.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7905",

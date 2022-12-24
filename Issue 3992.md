@@ -10,6 +10,7 @@ archive/issues_003992.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "Sage 3.1.2.alpha2: three tests in sage/interfaces/octave.py need to be optional",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3992",

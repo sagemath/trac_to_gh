@@ -10,6 +10,7 @@ archive/issues_004320.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
     "title": "linear codes improvements",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4320",

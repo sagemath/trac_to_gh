@@ -10,6 +10,7 @@ archive/issues_009491.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-8.2",
     "title": "contour plot does not handle transparency",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9491",

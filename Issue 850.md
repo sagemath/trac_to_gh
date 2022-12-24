@@ -10,6 +10,7 @@ archive/issues_000850.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.7",
     "title": "graphs: create graph by specifying vertices and a function giving adjacencies",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/850",

@@ -10,6 +10,7 @@ archive/issues_004159.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
     "title": "sage -bdist fails on osx 10.5 ppc with libpng errors",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4159",

@@ -10,6 +10,7 @@ archive/issues_004280.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "Syntax error for a comment line, then help query in a notebook cell",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4280",

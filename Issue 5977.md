@@ -10,6 +10,7 @@ archive/issues_005977.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
     "title": "Implement sage -clean-residues",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5977",

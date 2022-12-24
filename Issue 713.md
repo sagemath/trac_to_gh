@@ -10,6 +10,7 @@ archive/issues_000713.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.5",
     "title": "[with patch] Interrupting Singular doesn't work",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/713",

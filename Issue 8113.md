@@ -10,6 +10,7 @@ archive/issues_008113.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.3",
     "title": "gd-2.0.35.p3 fails to build on Open Solaris x64 as 64 bit without setting CFLAGS=-64 globally",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8113",

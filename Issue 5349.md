@@ -10,6 +10,7 @@ archive/issues_005349.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4",
     "title": "[with patch, needs review] Make extensions linking against libSingular depend on $SAGE_LOCAL/include/libsingular.h",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5349",

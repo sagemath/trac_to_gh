@@ -10,6 +10,7 @@ archive/issues_005746.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "rational points over subfields of the (finite) field of definition",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5746",

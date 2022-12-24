@@ -10,6 +10,7 @@ archive/issues_004384.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
     "title": "Axes computation for constant function causes division by zero",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4384",

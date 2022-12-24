@@ -10,6 +10,7 @@ archive/issues_001179.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.15",
     "title": "change all #!/bin/sh to #!/bin/bash in $SAGE_LOCAL/bin (Solaris related)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1179",

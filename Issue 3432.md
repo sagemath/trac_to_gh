@@ -10,6 +10,7 @@ archive/issues_003432.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "MPolynomial_libsingular does not have a degrees method.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3432",

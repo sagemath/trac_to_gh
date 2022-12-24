@@ -10,6 +10,7 @@ archive/issues_005313.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "patch singular so that when it runs out of memory the error message says \"singular\" in it",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5313",

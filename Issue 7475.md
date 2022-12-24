@@ -10,6 +10,7 @@ archive/issues_007475.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.2",
     "title": "bug pickling ZZ.residue_field's",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7475",

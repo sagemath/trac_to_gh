@@ -10,6 +10,7 @@ archive/issues_001908.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
     "title": "Make it so that show plots a list as a grid",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1908",

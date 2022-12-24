@@ -10,6 +10,7 @@ archive/issues_004212.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
     "title": "[with patch, needs review] Invalid read of size 8 in totallyreal.pyx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4212",

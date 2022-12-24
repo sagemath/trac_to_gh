@@ -10,6 +10,7 @@ archive/issues_001610.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.3",
     "title": "hg record / cherry picking -- add something to the programming guide",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1610",

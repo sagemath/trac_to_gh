@@ -10,6 +10,7 @@ archive/issues_008694.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.4",
     "title": "Improve schemes printing and LaTeXing",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8694",

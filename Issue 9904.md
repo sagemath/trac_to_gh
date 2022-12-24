@@ -10,6 +10,7 @@ archive/issues_009904.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "Spkg logs should get timestamps",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9904",

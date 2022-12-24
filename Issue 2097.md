@@ -10,6 +10,7 @@ archive/issues_002097.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
     "title": "aspect_ratio option to show() for function plots does not work correctly",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2097",

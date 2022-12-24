@@ -10,6 +10,7 @@ archive/issues_009898.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "PARI/GP (2.4.3-svn) self-test fails after self-tuning on Pentium 4 Prescott",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9898",

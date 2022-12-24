@@ -10,6 +10,7 @@ archive/issues_006353.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.2",
     "title": "change cookies structure to support multiple notebook logins at different ports",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6353",

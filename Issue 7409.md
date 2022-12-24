@@ -10,6 +10,7 @@ archive/issues_007409.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "Partitions(n).random_element() is extremely slow",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7409",

@@ -10,6 +10,7 @@ archive/issues_006743.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.10",
     "title": "port Sage to Microsoft Windows (via Cygwin)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6743",

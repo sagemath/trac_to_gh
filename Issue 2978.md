@@ -10,6 +10,7 @@ archive/issues_002978.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Rstats -- make it build with png support",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2978",

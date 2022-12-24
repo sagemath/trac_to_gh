@@ -10,6 +10,7 @@ archive/issues_006779.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2.1",
     "title": "[with patch, needs review] positive_integer_relations bug in lattice_polytope",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6779",

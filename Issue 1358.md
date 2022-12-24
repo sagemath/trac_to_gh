@@ -10,6 +10,7 @@ archive/issues_001358.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.3",
     "title": "update libtool's la files upon detection of a moved Sage install",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1358",

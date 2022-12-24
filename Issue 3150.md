@@ -10,6 +10,7 @@ archive/issues_003150.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
     "title": "Memory leak in combinat/matrices/dancing_links.pyx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3150",

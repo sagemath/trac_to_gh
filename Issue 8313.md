@@ -10,6 +10,7 @@ archive/issues_008313.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4",
     "title": "Misplaced \"`\" in linear code construction documentation.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8313",

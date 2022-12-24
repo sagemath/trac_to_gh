@@ -10,6 +10,7 @@ archive/issues_005214.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
     "title": "coercion to orders in relative number fields is not implemented",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5214",

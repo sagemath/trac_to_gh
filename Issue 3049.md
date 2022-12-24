@@ -10,6 +10,7 @@ archive/issues_003049.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "combinatorics -- lame overflow with Compositions(n).count() (very easy to fix)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3049",

@@ -10,6 +10,7 @@ archive/issues_000421.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8",
     "title": "notebook printing",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/421",

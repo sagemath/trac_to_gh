@@ -10,6 +10,7 @@ archive/issues_001570.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10",
     "title": "typo in sage/rings/number_field/number_field.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1570",

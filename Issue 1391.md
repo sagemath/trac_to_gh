@@ -10,6 +10,7 @@ archive/issues_001391.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
     "title": "bug in unit part of factorizations of multivariate polynomials",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1391",

@@ -10,6 +10,7 @@ archive/issues_006824.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
     "title": "cdef in timeseries.pyx follows use of variable",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6824",

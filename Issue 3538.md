@@ -10,6 +10,7 @@ archive/issues_003538.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.7",
     "title": "[with patch; not ready for review] create a sage <--> Ruby interface",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3538",

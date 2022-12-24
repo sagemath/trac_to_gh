@@ -10,6 +10,7 @@ archive/issues_000697.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.5",
     "title": "NTL rewrite (splitting ntl.pyx down into each class)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/697",

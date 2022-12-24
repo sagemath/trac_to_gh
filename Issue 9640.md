@@ -10,6 +10,7 @@ archive/issues_009640.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.13",
     "title": "Change PARI error catching mechanism",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9640",

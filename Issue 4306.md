@@ -10,6 +10,7 @@ archive/issues_004306.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.12",
     "title": "bug in supersingular module",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4306",

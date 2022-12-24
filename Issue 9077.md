@@ -10,6 +10,7 @@ archive/issues_009077.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "change sqrt to that it obeys the Lithinuania standard: sqrt(x) is x^3",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9077",

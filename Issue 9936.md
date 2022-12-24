@@ -10,6 +10,7 @@ archive/issues_009936.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "PARI real precision is broken in many ways",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9936",

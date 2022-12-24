@@ -10,6 +10,7 @@ archive/issues_002336.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
     "title": "hermite -- this function in sage is broken in more ways than it has lines of code",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2336",

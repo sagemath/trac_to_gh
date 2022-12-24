@@ -10,6 +10,7 @@ archive/issues_009882.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "slow coercion of list to polynomial over integer mod ring",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9882",

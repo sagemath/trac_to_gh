@@ -10,6 +10,7 @@ archive/issues_001327.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.15",
     "title": "2.8.14/Solaris: scipy import error - fortran compiler related",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1327",

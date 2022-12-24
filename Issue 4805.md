@@ -10,6 +10,7 @@ archive/issues_004805.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "S_integral points failure (possible p-adic precision problem)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4805",

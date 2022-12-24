@@ -10,6 +10,7 @@ archive/issues_009474.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5",
     "title": "Revert ECL back to ecl-10.2.1 and apply patches for Solaris 10 and OpenSolaris x64",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9474",

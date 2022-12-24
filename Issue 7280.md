@@ -10,6 +10,7 @@ archive/issues_007280.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
     "title": "[with spkg; needs review] new version of sagenb for sage-4.2",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7280",

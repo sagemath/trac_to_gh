@@ -10,6 +10,7 @@ archive/issues_003327.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.3",
     "title": "missing .divides() implementation for FieldElement",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3327",

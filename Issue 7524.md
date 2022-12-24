@@ -10,6 +10,7 @@ archive/issues_007524.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6.2",
     "title": "frame axes are lost when saving a graphic to a file",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7524",

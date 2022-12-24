@@ -10,6 +10,7 @@ archive/issues_007254.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
     "title": "sagenb notebook: automatic worksheet refreshing and synchronization",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7254",

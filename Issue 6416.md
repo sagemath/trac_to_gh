@@ -10,6 +10,7 @@ archive/issues_006416.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-8.4",
     "title": "[with spkg and patch, needs review] Frobby for monomial ideals",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6416",

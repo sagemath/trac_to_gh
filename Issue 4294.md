@@ -10,6 +10,7 @@ archive/issues_004294.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "sage -t under %pdb",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4294",

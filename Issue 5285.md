@@ -10,6 +10,7 @@ archive/issues_005285.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "Dyck Paths documentation problem",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5285",

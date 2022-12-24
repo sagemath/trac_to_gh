@@ -10,6 +10,7 @@ archive/issues_009488.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "[easy] parse make -j N as well as make -jN for parallel builds",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9488",

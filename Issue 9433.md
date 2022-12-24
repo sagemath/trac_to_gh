@@ -10,6 +10,7 @@ archive/issues_009433.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.7",
     "title": "Put more files under revision control.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9433",

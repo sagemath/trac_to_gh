@@ -10,6 +10,7 @@ archive/issues_004687.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
     "title": "Points on  Elliptic Curve over GF(2)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4687",

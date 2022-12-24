@@ -10,6 +10,7 @@ archive/issues_000101.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.5",
     "title": "graph theory -- create a graph theory package for SAGE",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/101",

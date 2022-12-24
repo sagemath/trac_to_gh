@@ -10,6 +10,7 @@ archive/issues_007867.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.4",
     "title": "GCC reports incorrect flags compiling descent_two_isogeny.c on Solaris 10",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7867",

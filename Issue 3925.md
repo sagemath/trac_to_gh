@@ -10,6 +10,7 @@ archive/issues_003925.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "Wrap Bernstein 's primegen",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3925",

@@ -10,6 +10,7 @@ archive/issues_009453.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.7.2",
     "title": "Implement Aurifeuillian factorization",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9453",

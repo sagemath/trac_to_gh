@@ -10,6 +10,7 @@ archive/issues_002793.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "Bug in the sage preparser!  \"\\\"Yes,\\\" he said.\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2793",

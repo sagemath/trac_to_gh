@@ -10,6 +10,7 @@ archive/issues_008670.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.7",
     "title": "Provide projections methods for word paths",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8670",

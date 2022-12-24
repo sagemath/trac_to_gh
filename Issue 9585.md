@@ -10,6 +10,7 @@ archive/issues_009585.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Interactive equation editor for the notebook",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9585",

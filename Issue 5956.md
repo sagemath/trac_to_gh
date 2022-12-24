@@ -10,6 +10,7 @@ archive/issues_005956.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "image dimensions for show() are in inches",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5956",

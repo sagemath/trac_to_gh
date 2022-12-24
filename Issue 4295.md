@@ -10,6 +10,7 @@ archive/issues_004295.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.4",
     "title": "delete mercurial-howto.txt",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4295",

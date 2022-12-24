@@ -10,6 +10,7 @@ archive/issues_009070.json:
         "critical",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.3",
     "title": "implement chdir for matlab interface",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9070",

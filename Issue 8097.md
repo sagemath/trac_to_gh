@@ -10,6 +10,7 @@ archive/issues_008097.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.3",
     "title": "termcap fails to build in Open Solaris x64 as 64 bit",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8097",

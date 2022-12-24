@@ -10,6 +10,7 @@ archive/issues_004228.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
     "title": "eclib-20080310.p6.spkg is broken with 'export MAKE=\"make -j4\"'",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4228",

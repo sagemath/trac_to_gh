@@ -10,6 +10,7 @@ archive/issues_001048.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-wishlist",
     "title": "graphs: Create filtered views of graphs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1048",

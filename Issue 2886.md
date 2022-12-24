@@ -10,6 +10,7 @@ archive/issues_002886.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "change an error message",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2886",

@@ -10,6 +10,7 @@ archive/issues_005855.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.2",
     "title": "[with patch, needs review] implement squarefree_divisors function",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5855",

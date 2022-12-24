@@ -10,6 +10,7 @@ archive/issues_005210.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "gmp-mpir-0.9.rc3: make check failure on various OSX boxen",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5210",

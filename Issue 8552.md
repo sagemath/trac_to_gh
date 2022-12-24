@@ -10,6 +10,7 @@ archive/issues_008552.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.7",
     "title": "replace os.system calls in latex.py with appropriate replacements",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8552",

@@ -10,6 +10,7 @@ archive/issues_006243.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
     "title": "add support for arbitrary parents in pynac's evalf",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6243",

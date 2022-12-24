@@ -10,6 +10,7 @@ archive/issues_000477.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.3",
     "title": "break up gnucryptolib.spkg into separate spkgs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/477",

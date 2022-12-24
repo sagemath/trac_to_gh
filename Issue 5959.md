@@ -10,6 +10,7 @@ archive/issues_005959.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Better doctest for __cmp__ in primes.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5959",

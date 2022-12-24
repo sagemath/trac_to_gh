@@ -10,6 +10,7 @@ archive/issues_004346.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
     "title": "segmentation fault with set_block",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4346",

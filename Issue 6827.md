@@ -10,6 +10,7 @@ archive/issues_006827.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
     "title": "[with patch, needs review] probability distributions doctests + general discrete distribution",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6827",

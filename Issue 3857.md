@@ -10,6 +10,7 @@ archive/issues_003857.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "BinaryQF_reduced_representatives in binry_qf.py produces extra unreduced forms",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3857",

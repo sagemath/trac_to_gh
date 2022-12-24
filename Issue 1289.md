@@ -10,6 +10,7 @@ archive/issues_001289.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10",
     "title": "serious problems with how ceil and floor are computed symbolically",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1289",

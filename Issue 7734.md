@@ -10,6 +10,7 @@ archive/issues_007734.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "edge_coloring ( and possibly vertex_coloring ) loop forever when GLPK is not installed",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7734",

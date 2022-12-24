@@ -10,6 +10,7 @@ archive/issues_004488.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
     "title": "notebook -- login page not given when logged out and trying to view your worksheets",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4488",

@@ -10,6 +10,7 @@ archive/issues_002511.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
     "title": "fix mistake in the animate docs (trivial to fix)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2511",

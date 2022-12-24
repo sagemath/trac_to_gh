@@ -10,6 +10,7 @@ archive/issues_001425.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9",
     "title": "wrong automatic simplification of pow",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1425",

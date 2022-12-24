@@ -10,6 +10,7 @@ archive/issues_008495.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.7",
     "title": "Regression: Many mathematica doctests fail",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8495",

@@ -10,6 +10,7 @@ archive/issues_009533.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.3",
     "title": "Update GSL to the latest upstream release",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9533",

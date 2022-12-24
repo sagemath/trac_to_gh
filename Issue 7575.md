@@ -10,6 +10,7 @@ archive/issues_007575.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.3",
     "title": "EllipticCurve.gens: height bounds not handled well in two_descent",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7575",

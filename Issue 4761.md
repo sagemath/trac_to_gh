@@ -10,6 +10,7 @@ archive/issues_004761.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1",
     "title": "[iwth patch, needs review] global cputime (inclusive some subprocesses like Singular)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4761",

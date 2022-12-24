@@ -10,6 +10,7 @@ archive/issues_005420.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
     "title": "imag(complex(0,1)) gives TypeError (easy)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5420",

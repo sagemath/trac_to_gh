@@ -10,6 +10,7 @@ archive/issues_007670.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "notebook -- evidently only the first 6 characters are significant???",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7670",

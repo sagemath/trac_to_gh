@@ -10,6 +10,7 @@ archive/issues_003383.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
     "title": "division_points() fails for elliptic curve over number field",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3383",

@@ -10,6 +10,7 @@ archive/issues_007392.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "RDF/CDF matrices should call scipy for rank",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7392",

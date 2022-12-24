@@ -10,6 +10,7 @@ archive/issues_008664.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.8",
     "title": "upgrade sage's mpir spkg to version 2.0.0",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8664",

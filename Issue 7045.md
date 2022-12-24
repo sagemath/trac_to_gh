@@ -10,6 +10,7 @@ archive/issues_007045.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
     "title": "[with spkg; needs review] update libgcrypt to the latest version 1.4.4",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7045",

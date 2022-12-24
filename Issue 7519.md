@@ -10,6 +10,7 @@ archive/issues_007519.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "Allowing the choice of word datatype for images under WordMorphism",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7519",

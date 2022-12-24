@@ -10,6 +10,7 @@ archive/issues_009550.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Upgrading 4.4.4 binary --> 4.5.1 fails on opencdk",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9550",

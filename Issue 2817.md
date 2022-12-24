@@ -10,6 +10,7 @@ archive/issues_002817.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "specify options for parts of graphs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2817",

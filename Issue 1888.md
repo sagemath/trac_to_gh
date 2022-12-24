@@ -10,6 +10,7 @@ archive/issues_001888.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "3d graphics -- cool plots of space curves (examples for docstrings)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1888",

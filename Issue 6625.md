@@ -10,6 +10,7 @@ archive/issues_006625.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.2",
     "title": "manually removing executable bits doesn't work",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6625",

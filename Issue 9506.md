@@ -10,6 +10,7 @@ archive/issues_009506.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.3",
     "title": "include libSingular error messages in exceptions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9506",

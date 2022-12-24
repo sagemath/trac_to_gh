@@ -10,6 +10,7 @@ archive/issues_005665.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1",
     "title": "Bug in ShrinkingGeneratorCipher",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5665",

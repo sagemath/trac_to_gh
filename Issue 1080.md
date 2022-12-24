@@ -10,6 +10,7 @@ archive/issues_001080.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.12",
     "title": "inconsistent doctest failure in sage/misc/sage_eval.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1080",

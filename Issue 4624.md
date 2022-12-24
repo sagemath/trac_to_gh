@@ -10,6 +10,7 @@ archive/issues_004624.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
     "title": "Sage 3.2.1.a1: add ipy_profile_sage.py to list of files copied when sdisting",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4624",

@@ -10,6 +10,7 @@ archive/issues_003591.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
     "title": "notebook -- remove notebook.save()  from Logout",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3591",

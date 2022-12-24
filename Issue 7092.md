@@ -10,6 +10,7 @@ archive/issues_007092.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
     "title": "build failure of pari-2.3.3.p1.spkg  with gcc-4.4.1 as distributed by Fedora 11",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7092",

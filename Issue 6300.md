@@ -10,6 +10,7 @@ archive/issues_006300.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.2",
     "title": "doctest fix related to singular upgrad; needed on 32-bit OS X intel, at least (maybe all 32-bit)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6300",

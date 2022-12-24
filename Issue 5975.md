@@ -10,6 +10,7 @@ archive/issues_005975.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.2",
     "title": "Implement latex output for (combinatorial) graphs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5975",

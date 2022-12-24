@@ -10,6 +10,7 @@ archive/issues_005823.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
     "title": "Update clisp to 2.47 and introduce noreadline mode dynammically for clisp and maxima",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5823",

@@ -10,6 +10,7 @@ archive/issues_003340.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
     "title": "update givaro to 3.2.10 release",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3340",

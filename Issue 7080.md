@@ -10,6 +10,7 @@ archive/issues_007080.json:
         "blocker",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
     "title": "include new separated sage notebook in Sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7080",

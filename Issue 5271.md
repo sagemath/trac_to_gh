@@ -10,6 +10,7 @@ archive/issues_005271.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "clean up jmol-11.6.16.spkg from #2873",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5271",

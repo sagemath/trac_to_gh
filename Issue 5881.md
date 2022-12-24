@@ -10,6 +10,7 @@ archive/issues_005881.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.2",
     "title": "__cmp__ is random-ish in root_system/type_dual.py also (analog to #5811)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5881",

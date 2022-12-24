@@ -10,6 +10,7 @@ archive/issues_004617.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Create a `test-dummy.spkg`",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4617",

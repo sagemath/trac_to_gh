@@ -10,6 +10,7 @@ archive/issues_006320.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "optional doctest failure -- combinat crystal code",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6320",

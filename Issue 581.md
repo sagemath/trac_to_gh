@@ -10,6 +10,7 @@ archive/issues_000581.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.4",
     "title": "apply LinBox's Changeset 2803 - this removes the workaround for #498 and fixes the problem itself",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/581",

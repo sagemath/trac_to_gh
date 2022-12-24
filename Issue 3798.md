@@ -10,6 +10,7 @@ archive/issues_003798.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
     "title": "[with patch, needs review] some docstrings for sage.graphs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3798",

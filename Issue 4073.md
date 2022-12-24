@@ -10,6 +10,7 @@ archive/issues_004073.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "disable colors in sage0",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4073",

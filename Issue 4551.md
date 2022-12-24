@@ -10,6 +10,7 @@ archive/issues_004551.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
     "title": "notebook -- implement Notebook Settings page with email system on/off setting",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4551",

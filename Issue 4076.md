@@ -10,6 +10,7 @@ archive/issues_004076.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
     "title": "notebook -- <$> ... </$> and <$$> ... </$$> don't work in the notebook as the help page claims",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4076",

@@ -10,6 +10,7 @@ archive/issues_004396.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "create a \"sage -develupgrade\" command, that upgrades to the latest devel version",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4396",

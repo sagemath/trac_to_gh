@@ -10,6 +10,7 @@ archive/issues_009283.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "sage notebook error when opening default page",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9283",

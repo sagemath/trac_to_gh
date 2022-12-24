@@ -10,6 +10,7 @@ archive/issues_003270.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
     "title": "[with patch, easy review] trivial 100x speedup in coding theory",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3270",

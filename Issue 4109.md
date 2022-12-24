@@ -10,6 +10,7 @@ archive/issues_004109.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "The complement of a graph shows as the original graph",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4109",

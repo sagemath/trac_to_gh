@@ -10,6 +10,7 @@ archive/issues_008036.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.2",
     "title": "Sage 4.3.1 reference manual: PDF version failed to build due to non-ASCII characters in docstring",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8036",

@@ -10,6 +10,7 @@ archive/issues_002208.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
     "title": "implement is_field for rings of integers",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2208",

@@ -10,6 +10,7 @@ archive/issues_001247.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.14",
     "title": "cremona-20071116.p0.spkg fails to build on Arch linux, 32bit linux, gcc-4.2.2",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1247",

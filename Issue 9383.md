@@ -10,6 +10,7 @@ archive/issues_009383.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
     "title": "Adding quadratic_forms Code to the Reference Manual",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9383",

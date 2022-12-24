@@ -10,6 +10,7 @@ archive/issues_007333.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "CBC spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7333",

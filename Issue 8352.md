@@ -10,6 +10,7 @@ archive/issues_008352.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.4",
     "title": "twisted-8.2.0.p1 fails to build in Open Solaris x64 as 64 bit even if SAGE64=yes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8352",

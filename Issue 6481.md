@@ -10,6 +10,7 @@ archive/issues_006481.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "g.subs({x:1,y:2}) should walk through x,y sorted",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6481",

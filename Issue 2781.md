@@ -10,6 +10,7 @@ archive/issues_002781.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "bool() for SymbolicEquation should raise an error when it doesn't know the answer",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2781",

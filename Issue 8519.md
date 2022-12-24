@@ -10,6 +10,7 @@ archive/issues_008519.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4",
     "title": "Add a set of Positive Integer with categories (and factor the code with NonNegativeInteger)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8519",

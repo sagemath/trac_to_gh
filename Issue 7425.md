@@ -10,6 +10,7 @@ archive/issues_007425.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2.1",
     "title": "I.variety() doesn't check that I is zero-dimensional",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7425",

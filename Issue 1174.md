@@ -10,6 +10,7 @@ archive/issues_001174.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.15",
     "title": "very minor bug in calculs _complex_ coercion.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1174",

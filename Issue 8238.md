@@ -10,6 +10,7 @@ archive/issues_008238.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.4",
     "title": "heegner_index_bound may be incorrect for curves with rational torsion",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8238",

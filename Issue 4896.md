@@ -10,6 +10,7 @@ archive/issues_004896.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-8.4",
     "title": "fill in missing magma --> sage conversions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4896",

@@ -10,6 +10,7 @@ archive/issues_006533.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "sage >= 4.1.rc1 doesn't build on cleo (ia64-Linux-rhel5)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6533",

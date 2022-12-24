@@ -10,6 +10,7 @@ archive/issues_002387.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Create a _sage_init_ function for all objects",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2387",

@@ -10,6 +10,7 @@ archive/issues_007826.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.4",
     "title": "[with spkg] mpfi ignores SAGE64",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7826",

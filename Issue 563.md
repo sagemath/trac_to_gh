@@ -10,6 +10,7 @@ archive/issues_000563.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.13",
     "title": "memleak in LinBox::MatrixHom::BlasBlackboxMAP exposed by ModularSymbols(n,sign=1).decomposition()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/563",

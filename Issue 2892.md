@@ -10,6 +10,7 @@ archive/issues_002892.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "notebook -- traceback shrinking/expanding in the notebook is broken in an obscure case",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2892",

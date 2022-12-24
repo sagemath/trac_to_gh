@@ -10,6 +10,7 @@ archive/issues_001380.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9.1",
     "title": "subs in the MPolynomial_libsingular insists on taking things to QQ",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1380",

@@ -10,6 +10,7 @@ archive/issues_006136.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "(Combinatorial) Free modules: cleanup, abstraction into categories, and functorial constructions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6136",

@@ -10,6 +10,7 @@ archive/issues_001674.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9.2",
     "title": "memleak in pAdicCappedRelativeElement.__pow__",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1674",

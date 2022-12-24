@@ -10,6 +10,7 @@ archive/issues_002235.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.9",
     "title": "doctest issue -- combining # long and # 32-bit / # 64-bit",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2235",

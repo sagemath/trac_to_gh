@@ -10,6 +10,7 @@ archive/issues_005486.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
     "title": "[with patch, needs review] fix bug in variety() for MPolynomialIdeals",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5486",

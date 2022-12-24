@@ -10,6 +10,7 @@ archive/issues_001892.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
     "title": "notebook -- uploading a data file should give some help about the DATA variable",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1892",

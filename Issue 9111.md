@@ -10,6 +10,7 @@ archive/issues_009111.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.2",
     "title": "modular decomposition",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9111",

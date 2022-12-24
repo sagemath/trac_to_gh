@@ -10,6 +10,7 @@ archive/issues_008130.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "UnicodeDecodeError (etc.) with view from the command line",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8130",

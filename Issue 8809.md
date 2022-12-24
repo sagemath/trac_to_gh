@@ -10,6 +10,7 @@ archive/issues_008809.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "change local/bin/sage_fortran script to respect the SAGE_FORTRAN variable, if it is set",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8809",

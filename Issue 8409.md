@@ -10,6 +10,7 @@ archive/issues_008409.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5",
     "title": "Fix build and doctest issues for Solaris 10 (SPARC)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8409",

@@ -10,6 +10,7 @@ archive/issues_001847.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "add nice print method for Sha(Elliptic curve) [trivial to implement -- requires taste]",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1847",

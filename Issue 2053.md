@@ -10,6 +10,7 @@ archive/issues_002053.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
     "title": "creating symbolic matrices is insanely slow",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2053",

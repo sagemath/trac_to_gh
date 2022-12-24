@@ -10,6 +10,7 @@ archive/issues_001449.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9.2",
     "title": "very serious (but trivial to fix) notebook bug: shift-enter doesn't work on macs; it's shift-return!",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1449",

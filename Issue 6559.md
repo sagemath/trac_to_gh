@@ -10,6 +10,7 @@ archive/issues_006559.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.3",
     "title": "Real domain for symbolic variables",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6559",

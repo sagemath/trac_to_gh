@@ -10,6 +10,7 @@ archive/issues_009658.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
     "title": "mpz_clear->mpq_clear (typo)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9658",

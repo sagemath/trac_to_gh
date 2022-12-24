@@ -10,6 +10,7 @@ archive/issues_008376.json:
         "trivial",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.4",
     "title": "improve documentation for RealField",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8376",

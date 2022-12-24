@@ -10,6 +10,7 @@ archive/issues_005233.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "[with patch, needs review] improve timings for adjacency_matrix, weighted_adjacency_matrix, and kirchoff_matrix",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5233",

@@ -10,6 +10,7 @@ archive/issues_003139.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
     "title": "typos in notebook tutorial in typesetting of sage_notebook",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3139",

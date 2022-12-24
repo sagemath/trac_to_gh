@@ -10,6 +10,7 @@ archive/issues_005879.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
     "title": "[with patch, needs review] Added crystal of letters for type E",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5879",

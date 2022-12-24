@@ -10,6 +10,7 @@ archive/issues_008103.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.2",
     "title": "Published worksheets aren't inert",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8103",

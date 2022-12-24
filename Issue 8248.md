@@ -10,6 +10,7 @@ archive/issues_008248.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.3",
     "title": "Small improvement in checking for elliptic curve isogenies",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8248",

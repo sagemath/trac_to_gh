@@ -10,6 +10,7 @@ archive/issues_003452.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
     "title": "implement inline error reporting for registration",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3452",

@@ -10,6 +10,7 @@ archive/issues_007347.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "numerical_integral(SR(0), 0, 1) gives an error",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7347",

@@ -10,6 +10,7 @@ archive/issues_004510.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
     "title": "Add references for Boyer's planarity code implementation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4510",

@@ -10,6 +10,7 @@ archive/issues_005101.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "[with patch, needs review] more types for sage_input: vectors, matrices, etc.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5101",

@@ -10,6 +10,7 @@ archive/issues_005010.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "[with patch, needs review] Solaris 10: rings/real_double.pyx doctests failure: nan vs. NaN",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5010",

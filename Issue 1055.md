@@ -10,6 +10,7 @@ archive/issues_001055.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.12",
     "title": "Don't factor discriminant for quadratic number fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1055",

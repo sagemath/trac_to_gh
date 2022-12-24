@@ -10,6 +10,7 @@ archive/issues_007296.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "set_aspect_ratio fails with a type error for asymptote",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7296",

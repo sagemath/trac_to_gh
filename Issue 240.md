@@ -10,6 +10,7 @@ archive/issues_000240.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.2",
     "title": "in notebook when refresh browser or first get page cell update list isn't sent out with running cells",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/240",

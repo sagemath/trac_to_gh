@@ -10,6 +10,7 @@ archive/issues_005247.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "cuspform_lseries() computing sign of functional equation incorrectly",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5247",

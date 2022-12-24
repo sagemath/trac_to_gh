@@ -10,6 +10,7 @@ archive/issues_007408.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2.1",
     "title": "Improve the speed of RSK",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7408",

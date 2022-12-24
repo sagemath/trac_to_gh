@@ -10,6 +10,7 @@ archive/issues_001713.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
     "title": "[with patch] fix SageElement._sage_",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1713",

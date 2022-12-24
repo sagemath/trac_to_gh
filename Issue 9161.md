@@ -10,6 +10,7 @@ archive/issues_009161.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.4",
     "title": "update nzmath optional package to 1.0 and post about this to NMBRTHY",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9161",

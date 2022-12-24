@@ -10,6 +10,7 @@ archive/issues_003930.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Check to see if we should merge the bipartite matching code from Susan Massey",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3930",

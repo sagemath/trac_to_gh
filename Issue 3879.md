@@ -10,6 +10,7 @@ archive/issues_003879.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Constructing a c_graph from a DiGraph doubles the edges.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3879",

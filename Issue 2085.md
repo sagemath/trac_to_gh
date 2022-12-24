@@ -10,6 +10,7 @@ archive/issues_002085.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
     "title": "[with patch, needs review] bug in graph_isom and binary_code",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2085",

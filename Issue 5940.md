@@ -10,6 +10,7 @@ archive/issues_005940.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
     "title": "graph theory -- bug in is_circular_planar",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5940",

@@ -10,6 +10,7 @@ archive/issues_002433.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
     "title": "[patches coming soon] Refactor graph code; prepare for backend migration; miscellaneous small things from Waterloo",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2433",

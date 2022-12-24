@@ -10,6 +10,7 @@ archive/issues_004124.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "disable pbuild",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4124",

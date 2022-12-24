@@ -10,6 +10,7 @@ archive/issues_008254.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-8.5",
     "title": "sage takes way too long to startup",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8254",

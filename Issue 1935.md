@@ -10,6 +10,7 @@ archive/issues_001935.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
     "title": "[with patch, needs review] legendre_symbol currently quite slow",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1935",

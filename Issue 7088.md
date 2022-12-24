@@ -10,6 +10,7 @@ archive/issues_007088.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
     "title": "factoring certain polynomials over ZZ gets all mixed up (wrong constant) via our PARI wrapper",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7088",

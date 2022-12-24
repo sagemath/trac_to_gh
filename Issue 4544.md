@@ -10,6 +10,7 @@ archive/issues_004544.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "comparison of CDF (or any inexact) elements needs work",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4544",

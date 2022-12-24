@@ -10,6 +10,7 @@ archive/issues_009324.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.2",
     "title": "bug in Tate's algorithm over number fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9324",

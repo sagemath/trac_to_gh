@@ -10,6 +10,7 @@ archive/issues_001187.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.1",
     "title": "bug in G.conjugacy_classes_subgroups()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1187",

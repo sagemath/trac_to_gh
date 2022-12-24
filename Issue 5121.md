@@ -10,6 +10,7 @@ archive/issues_005121.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "major bug in plot command",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5121",

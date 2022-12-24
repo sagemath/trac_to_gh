@@ -10,6 +10,7 @@ archive/issues_007959.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "the docstring for the associated_primes method on multivariate polynomial ideals is wrong",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7959",

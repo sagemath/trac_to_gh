@@ -10,6 +10,7 @@ archive/issues_001450.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9",
     "title": "update the error message for using maple / mathmatica from sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1450",

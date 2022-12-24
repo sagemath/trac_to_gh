@@ -10,6 +10,7 @@ archive/issues_009317.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.2",
     "title": "prime_to_S_part, is_S_unit, is_S_integral",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9317",

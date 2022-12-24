@@ -10,6 +10,7 @@ archive/issues_001807.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10",
     "title": "fix combinatorics section of the reference manual",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1807",

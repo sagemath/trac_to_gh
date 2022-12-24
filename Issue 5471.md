@@ -10,6 +10,7 @@ archive/issues_005471.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "loads(dumps()) does not seem to work as wanted for Symbolic Variables",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5471",

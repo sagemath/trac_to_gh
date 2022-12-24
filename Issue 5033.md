@@ -10,6 +10,7 @@ archive/issues_005033.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "matrix lift function bad in two ways",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5033",

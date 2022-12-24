@@ -10,6 +10,7 @@ archive/issues_009338.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.3",
     "title": "upgrade PyCrypto to upstream 2.1.0",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9338",

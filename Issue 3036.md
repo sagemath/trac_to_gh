@@ -10,6 +10,7 @@ archive/issues_003036.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.1",
     "title": "[with patch; needs review] SAGE_TESTDIR broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3036",

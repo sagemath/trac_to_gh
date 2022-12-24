@@ -10,6 +10,7 @@ archive/issues_002962.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
     "title": "modify .name() method for ExpectElements to allow renaming",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2962",

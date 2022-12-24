@@ -10,6 +10,7 @@ archive/issues_001226.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.13",
     "title": "cremona/homspace doctest prints \"transposing ...\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1226",

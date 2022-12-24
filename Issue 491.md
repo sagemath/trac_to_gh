@@ -10,6 +10,7 @@ archive/issues_000491.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9",
     "title": "gcc 4.3: fix givaro build due to ::memcpy failure",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/491",

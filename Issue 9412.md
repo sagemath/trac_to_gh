@@ -10,6 +10,7 @@ archive/issues_009412.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5",
     "title": "some random crap coming from zodb *sometimes*",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9412",

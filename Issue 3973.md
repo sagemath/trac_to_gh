@@ -10,6 +10,7 @@ archive/issues_003973.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "[with patch, needs review] short_weierstrass_model in characteristic 2 and 3",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3973",

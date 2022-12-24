@@ -10,6 +10,7 @@ archive/issues_005735.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
     "title": "delete extended rationals and integers completely",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5735",

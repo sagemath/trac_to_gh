@@ -10,6 +10,7 @@ archive/issues_007219.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Spanish doc #7 \"Generators for Rings of Modular Forms\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7219",

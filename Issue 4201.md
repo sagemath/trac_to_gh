@@ -10,6 +10,7 @@ archive/issues_004201.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
     "title": "add .options and .reset to plot functions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4201",

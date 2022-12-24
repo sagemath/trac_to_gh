@@ -10,6 +10,7 @@ archive/issues_003672.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.2",
     "title": "wrong hg repository url in documentation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3672",

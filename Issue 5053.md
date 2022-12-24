@@ -10,6 +10,7 @@ archive/issues_005053.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "If the hostname of the computer has a \"-\" in it, then no tempfiles will ever be deleted from $DOT_SAGE/temp!",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5053",

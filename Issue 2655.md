@@ -10,6 +10,7 @@ archive/issues_002655.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "[with patch, needs review] Cython circular cdef imports",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2655",

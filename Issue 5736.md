@@ -10,6 +10,7 @@ archive/issues_005736.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
     "title": "Improve doctest coverage for sage/modular/hecke",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5736",

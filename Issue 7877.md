@@ -10,6 +10,7 @@ archive/issues_007877.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.4",
     "title": "matrix indexing should be explained in the manual",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7877",

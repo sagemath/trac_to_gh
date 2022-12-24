@@ -10,6 +10,7 @@ archive/issues_002938.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.1",
     "title": "ModularSymbols(GammaH(81, [10])).decomposition(); ModularSymbols(GammaH(8, [3])).decomposition()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2938",

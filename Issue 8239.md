@@ -10,6 +10,7 @@ archive/issues_008239.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.8",
     "title": "misleading teichmuller behaviour",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8239",

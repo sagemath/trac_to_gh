@@ -10,6 +10,7 @@ archive/issues_009366.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.2",
     "title": "fix SBox __init__",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9366",

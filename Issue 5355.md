@@ -10,6 +10,7 @@ archive/issues_005355.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-wishlist",
     "title": "QQbar should have a coercion from number fields with embedding",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5355",

@@ -10,6 +10,7 @@ archive/issues_001197.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.13",
     "title": "[with patch] add cremona's modular symbols program g0n to sage and add wrapper supprot",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1197",

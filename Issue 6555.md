@@ -10,6 +10,7 @@ archive/issues_006555.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Twisted produces deprecation warning about using md5 module in Python 2.6",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6555",

@@ -10,6 +10,7 @@ archive/issues_000871.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.7",
     "title": "[with patch] graphs: circulant graph creating function",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/871",

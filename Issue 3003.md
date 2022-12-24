@@ -10,6 +10,7 @@ archive/issues_003003.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.1",
     "title": "Bugfix for to_tableau() method of CrystalOfTableaux elements (with patch; needs review)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3003",

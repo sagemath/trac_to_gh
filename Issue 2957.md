@@ -10,6 +10,7 @@ archive/issues_002957.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "Singular multivariate polynomials are buggy on exponent overflow",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2957",

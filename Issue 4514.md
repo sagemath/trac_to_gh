@@ -10,6 +10,7 @@ archive/issues_004514.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Equality test fails for element coerced back into GL(2,7)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4514",

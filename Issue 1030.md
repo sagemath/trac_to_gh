@@ -10,6 +10,7 @@ archive/issues_001030.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.11",
     "title": "[with patch] MPolynomial_libsingular mutates with call to factor",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1030",

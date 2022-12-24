@@ -10,6 +10,7 @@ archive/issues_002335.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "add documentation to the programming guide about _sage_src_",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2335",

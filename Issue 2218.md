@@ -10,6 +10,7 @@ archive/issues_002218.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
     "title": "assuming an expression is not equal to zero doesn't work",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2218",

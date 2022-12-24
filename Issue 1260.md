@@ -10,6 +10,7 @@ archive/issues_001260.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9",
     "title": "clean up spkg-install for FLINT [flint-0.9-r1075.px]",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1260",

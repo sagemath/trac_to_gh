@@ -10,6 +10,7 @@ archive/issues_004844.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.3",
     "title": "Disable DSage doctests",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4844",

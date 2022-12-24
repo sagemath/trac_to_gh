@@ -10,6 +10,7 @@ archive/issues_008959.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5",
     "title": "interact layouts with arbitrary html",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8959",

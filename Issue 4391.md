@@ -10,6 +10,7 @@ archive/issues_004391.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
     "title": "[with patch, needs review] Sage 3.1.4: optional doctest failure in sage/schemes/elliptic_curves/ell_finite_field.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4391",

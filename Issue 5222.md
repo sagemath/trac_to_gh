@@ -10,6 +10,7 @@ archive/issues_005222.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "wrap FLINTs pseudo-division algorithm for univariate polynoials over ZZ",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5222",

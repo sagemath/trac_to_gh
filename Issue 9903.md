@@ -10,6 +10,7 @@ archive/issues_009903.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "ATLAS fails to build on OpenSolaris if SAGE_FAT_BINARY=yes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9903",

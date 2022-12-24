@@ -10,6 +10,7 @@ archive/issues_006397.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-feature",
     "title": "implement general Newton's method root finding for power series rings",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6397",

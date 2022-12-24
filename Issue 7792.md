@@ -10,6 +10,7 @@ archive/issues_007792.json:
         "trivial",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "Improved docs and added Width and Height at /interfaces/povray.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7792",

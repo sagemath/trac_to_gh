@@ -10,6 +10,7 @@ archive/issues_009948.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.7",
     "title": "Add major index (generating polynomial) for the category of finite permutation groups",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9948",

@@ -10,6 +10,7 @@ archive/issues_008746.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.1",
     "title": "Equality of posets element is very slow",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8746",

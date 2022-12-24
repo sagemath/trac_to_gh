@@ -10,6 +10,7 @@ archive/issues_005412.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4",
     "title": "bug in edit and set_edit_template",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5412",

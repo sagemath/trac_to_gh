@@ -10,6 +10,7 @@ archive/issues_006488.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
     "title": "\"sage -docbuild -help\" doesn't mention the --jsmath option",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6488",

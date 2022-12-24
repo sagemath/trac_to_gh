@@ -10,6 +10,7 @@ archive/issues_003861.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-wishlist",
     "title": "automatic line smoothing shouldn't be automatic, or should at least be documented",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3861",

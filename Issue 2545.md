@@ -10,6 +10,7 @@ archive/issues_002545.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
     "title": "[with patch, needs review] FractionFieldElement lacks derivative method",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2545",

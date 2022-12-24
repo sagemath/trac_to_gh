@@ -10,6 +10,7 @@ archive/issues_002456.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
     "title": "matrix_symbolic_dense doctest failures",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2456",

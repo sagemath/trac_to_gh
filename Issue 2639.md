@@ -10,6 +10,7 @@ archive/issues_002639.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
     "title": "ZZ(QQbar(0)) fails",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2639",

@@ -10,6 +10,7 @@ archive/issues_004569.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
     "title": "problems with the Permutation constructor function",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4569",

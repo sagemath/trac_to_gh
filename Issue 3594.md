@@ -10,6 +10,7 @@ archive/issues_003594.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
     "title": "lisp -- impossible to run command line!",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3594",

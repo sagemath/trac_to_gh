@@ -10,6 +10,7 @@ archive/issues_000455.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "scipy picks /usr/local/lib/libfftw3.a instead of $SAGE_LIB/libfftw3.a",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/455",

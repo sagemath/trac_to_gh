@@ -10,6 +10,7 @@ archive/issues_003975.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "Small mistake in the new plot() code.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3975",

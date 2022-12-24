@@ -10,6 +10,7 @@ archive/issues_005604.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.2",
     "title": "average Color objects when adding them together",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5604",

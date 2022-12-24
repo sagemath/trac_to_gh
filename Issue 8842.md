@@ -10,6 +10,7 @@ archive/issues_008842.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "sage notebook interacts: format exceptions nicely",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8842",

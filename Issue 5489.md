@@ -10,6 +10,7 @@ archive/issues_005489.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.4",
     "title": "add a non library level interface to 4ti2 to Sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5489",

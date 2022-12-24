@@ -10,6 +10,7 @@ archive/issues_008674.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6.1",
     "title": "Comparison of combinatorial class of words with word paths is broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8674",

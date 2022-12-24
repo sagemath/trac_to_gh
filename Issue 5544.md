@@ -10,6 +10,7 @@ archive/issues_005544.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "multipolynomial __call__ not consistant",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5544",

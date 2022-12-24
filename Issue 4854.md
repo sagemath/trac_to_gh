@@ -10,6 +10,7 @@ archive/issues_004854.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "represent paths as lists of edges",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4854",

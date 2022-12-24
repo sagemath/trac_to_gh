@@ -10,6 +10,7 @@ archive/issues_008691.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.4",
     "title": "Implement Plain Change algorithm in cython",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8691",

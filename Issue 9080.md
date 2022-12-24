@@ -10,6 +10,7 @@ archive/issues_009080.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.7.2",
     "title": "add F-distribution support for RealDistribution",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9080",

@@ -10,6 +10,7 @@ archive/issues_008598.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-9.8",
     "title": "Add graphical output to operation tables",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8598",

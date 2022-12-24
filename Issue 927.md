@@ -10,6 +10,7 @@ archive/issues_000927.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.8",
     "title": "[with patch] MPolynomialSystem.coefficient_matrix should create sparse matrices",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/927",

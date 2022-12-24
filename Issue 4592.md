@@ -10,6 +10,7 @@ archive/issues_004592.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
     "title": "new setup.py dependency checking does not handle Cython built-in pxd files",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4592",

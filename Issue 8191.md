@@ -10,6 +10,7 @@ archive/issues_008191.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.4",
     "title": "Add iconv need for Solaris, and possibly Cygwin too.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8191",

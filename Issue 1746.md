@@ -10,6 +10,7 @@ archive/issues_001746.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
     "title": "add p-norm as a method to vectors (probably very easy)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1746",

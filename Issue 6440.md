@@ -10,6 +10,7 @@ archive/issues_006440.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
     "title": "hg_sage.serve() is broken in 4.1.alpha1 (mainly on Mac?)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6440",

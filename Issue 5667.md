@@ -10,6 +10,7 @@ archive/issues_005667.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "matrix modified when operation should be rolled back",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5667",

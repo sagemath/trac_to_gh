@@ -10,6 +10,7 @@ archive/issues_002564.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.4",
     "title": "Sage 2.10.4.rc0: fix numerical noise doctest failure in numerical/optimize.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2564",

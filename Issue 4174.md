@@ -10,6 +10,7 @@ archive/issues_004174.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
     "title": "Do not run \"make install\" in python.spkg in parallel",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4174",

@@ -10,6 +10,7 @@ archive/issues_004957.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "inconsistent integer hashing",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4957",

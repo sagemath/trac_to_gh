@@ -10,6 +10,7 @@ archive/issues_000568.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.4",
     "title": "sage -t --long coding/code_constructions.py times out after several *hours*",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/568",

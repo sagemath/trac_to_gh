@@ -10,6 +10,7 @@ archive/issues_002095.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Simplification sometimes is wrong in Sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2095",

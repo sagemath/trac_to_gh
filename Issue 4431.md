@@ -10,6 +10,7 @@ archive/issues_004431.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
     "title": "[with patch, needs review] conversion of maxima matrices to sage matrices",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4431",

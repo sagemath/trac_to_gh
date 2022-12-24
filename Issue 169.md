@@ -10,6 +10,7 @@ archive/issues_000169.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
     "title": "slice assignment not implemented for PARI C library interface",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/169",

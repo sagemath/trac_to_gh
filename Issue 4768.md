@@ -10,6 +10,7 @@ archive/issues_004768.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
     "title": "magma -- speed up conversion of integer, rational and modn matrices from sage to magma",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4768",

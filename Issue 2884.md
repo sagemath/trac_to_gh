@@ -10,6 +10,7 @@ archive/issues_002884.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
     "title": "notebook -- bug; @interact cell eval doesn't clear out the old html output (easy to fix?)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2884",

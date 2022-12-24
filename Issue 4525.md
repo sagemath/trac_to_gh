@@ -10,6 +10,7 @@ archive/issues_004525.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
     "title": "[with patch, needs review] LLL-reduction of elliptic curve bases (with resulting speed enhancement to integral_points())",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4525",

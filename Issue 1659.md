@@ -10,6 +10,7 @@ archive/issues_001659.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Add a complex128 method for conversion of symbolic (and other?) expressions to numpy's 128-bit complex type",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1659",

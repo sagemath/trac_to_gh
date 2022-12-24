@@ -10,6 +10,7 @@ archive/issues_003619.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "notebook -- record date & time each user logs in",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3619",

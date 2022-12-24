@@ -10,6 +10,7 @@ archive/issues_004713.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
     "title": "make an apply_map function for vectors",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4713",

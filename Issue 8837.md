@@ -10,6 +10,7 @@ archive/issues_008837.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.1",
     "title": "the symmetrica Sage library cython code doesn't build on OS X 10.4 PowerPC",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8837",

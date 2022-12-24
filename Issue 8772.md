@@ -10,6 +10,7 @@ archive/issues_008772.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-9.8",
     "title": "Maxima interface chokes randomly",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8772",

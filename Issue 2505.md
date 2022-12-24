@@ -10,6 +10,7 @@ archive/issues_002505.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.4",
     "title": "[with patch, needs review] Sage has no Wronskian function",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2505",

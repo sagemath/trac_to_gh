@@ -10,6 +10,7 @@ archive/issues_000278.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.2",
     "title": "Make sage -clone more like hg clone",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/278",

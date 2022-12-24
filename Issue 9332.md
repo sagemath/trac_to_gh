@@ -10,6 +10,7 @@ archive/issues_009332.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6.2",
     "title": "S_class_group() should return a group",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9332",

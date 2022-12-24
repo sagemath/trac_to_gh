@@ -10,6 +10,7 @@ archive/issues_004163.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
     "title": "tut -- improve factorial / valuation example",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4163",

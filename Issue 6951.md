@@ -10,6 +10,7 @@ archive/issues_006951.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
     "title": "Singular fails to build on t2.math with GCC",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6951",

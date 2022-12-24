@@ -10,6 +10,7 @@ archive/issues_009392.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5",
     "title": "Broken docstring in binpacking method",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9392",

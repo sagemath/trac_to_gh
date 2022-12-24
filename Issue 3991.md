@@ -10,6 +10,7 @@ archive/issues_003991.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "[with patch, needs review] Matrix_mod2_dense.__hash__ 32-bit doctest failure",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3991",

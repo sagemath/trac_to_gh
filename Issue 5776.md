@@ -10,6 +10,7 @@ archive/issues_005776.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "sage-location ought to rewrite loads of files in $SAGE_LOCAL/bin",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5776",

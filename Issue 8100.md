@@ -10,6 +10,7 @@ archive/issues_008100.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.3",
     "title": "running the notebook should not change the working directory",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8100",

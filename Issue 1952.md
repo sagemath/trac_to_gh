@@ -10,6 +10,7 @@ archive/issues_001952.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "Follow up to #1940: Ideal comparison improvements",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1952",

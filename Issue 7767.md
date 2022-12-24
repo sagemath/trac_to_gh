@@ -10,6 +10,7 @@ archive/issues_007767.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "PARI thinks C compiler is broken on Open Solaris.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7767",

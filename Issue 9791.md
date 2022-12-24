@@ -10,6 +10,7 @@ archive/issues_009791.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-9.2",
     "title": "kernel and inverse_image of (polynomial) ring maps",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9791",

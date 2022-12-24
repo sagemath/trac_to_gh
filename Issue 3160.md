@@ -10,6 +10,7 @@ archive/issues_003160.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
     "title": "change is_planar for graphs to return bool",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3160",

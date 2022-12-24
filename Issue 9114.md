@@ -10,6 +10,7 @@ archive/issues_009114.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.2",
     "title": "Improve documentation of infinite polynomial rings",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9114",

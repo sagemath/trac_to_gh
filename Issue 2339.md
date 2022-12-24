@@ -10,6 +10,7 @@ archive/issues_002339.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
     "title": "xmin/xmax now broken in plot()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2339",

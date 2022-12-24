@@ -10,6 +10,7 @@ archive/issues_002690.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
     "title": "add circular argument to genus command",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2690",

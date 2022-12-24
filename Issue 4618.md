@@ -10,6 +10,7 @@ archive/issues_004618.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-9.1",
     "title": "Request for Puiseux series in SAGE",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4618",

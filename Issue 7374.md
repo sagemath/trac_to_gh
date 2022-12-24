@@ -10,6 +10,7 @@ archive/issues_007374.json:
         "trivial",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2.1",
     "title": "wrong docstring for is_isomorphic() in permgroup.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7374",

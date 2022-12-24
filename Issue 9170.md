@@ -10,6 +10,7 @@ archive/issues_009170.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.7",
     "title": "cygwin: get_memory_usage isn't implemented, e.g., because there's no top",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9170",

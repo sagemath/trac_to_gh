@@ -10,6 +10,7 @@ archive/issues_000585.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.4",
     "title": "Problem with PARI number field interface",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/585",

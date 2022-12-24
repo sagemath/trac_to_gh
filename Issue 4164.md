@@ -10,6 +10,7 @@ archive/issues_004164.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
     "title": "[with patch, needs review] Make triangulated_facial_incidences() work in all cases (and decomment render_solid())",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4164",

@@ -10,6 +10,7 @@ archive/issues_004046.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
     "title": "add support for Google's new browser to the notebook",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4046",

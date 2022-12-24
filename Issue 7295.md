@@ -10,6 +10,7 @@ archive/issues_007295.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2.1",
     "title": "typo in ecm spkg-install",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7295",

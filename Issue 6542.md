@@ -10,6 +10,7 @@ archive/issues_006542.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
     "title": "tachyon ouput seems broken in sage-4.1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6542",

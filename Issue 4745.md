@@ -10,6 +10,7 @@ archive/issues_004745.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
     "title": "[with patch, needs review] Dsage performance is poor",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4745",

@@ -10,6 +10,7 @@ archive/issues_007757.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "Upgrade to notebook spkg to sagenb-0.4.8",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7757",

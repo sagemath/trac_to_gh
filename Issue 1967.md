@@ -10,6 +10,7 @@ archive/issues_001967.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
     "title": "fix matplotlib local-related bugs once and for all (?)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1967",

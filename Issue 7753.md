@@ -10,6 +10,7 @@ archive/issues_007753.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "Coxeter groups: more Bruhat and weak order features",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7753",

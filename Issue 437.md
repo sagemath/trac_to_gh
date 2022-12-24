@@ -10,6 +10,7 @@ archive/issues_000437.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.2",
     "title": "sage-2.8.1 -- notebook(secure=True) seems broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/437",

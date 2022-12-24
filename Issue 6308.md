@@ -10,6 +10,7 @@ archive/issues_006308.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.2",
     "title": "[with spkg, needs review] Fix scipy spkg to play nicely with gfortran and g95",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6308",

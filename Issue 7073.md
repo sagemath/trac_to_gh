@@ -10,6 +10,7 @@ archive/issues_007073.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "scipy_sandbox 20071020.p4 has a GNUism, sending GNU flags to the Sun compiler.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7073",

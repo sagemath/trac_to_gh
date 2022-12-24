@@ -10,6 +10,7 @@ archive/issues_007398.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2.1",
     "title": "Improved mantra to find whether an object is iterable (and get an iterator out it)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7398",

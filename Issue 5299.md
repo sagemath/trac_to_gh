@@ -10,6 +10,7 @@ archive/issues_005299.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "add functions for Mercurial queues to the hg_sage interface",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5299",

@@ -10,6 +10,7 @@ archive/issues_005596.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
     "title": "[with patch, needs review] refactor coercion to catch fewer exceptions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5596",

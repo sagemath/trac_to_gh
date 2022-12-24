@@ -10,6 +10,7 @@ archive/issues_006706.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "MPIR can try to unsuccessfully link in gmp on Solaris",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6706",

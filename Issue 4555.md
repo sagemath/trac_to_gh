@@ -10,6 +10,7 @@ archive/issues_004555.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-wishlist",
     "title": "notebook -- implement link to send a published worksheet to a friend by email",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4555",

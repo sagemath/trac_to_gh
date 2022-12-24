@@ -10,6 +10,7 @@ archive/issues_007851.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "libz igoresSAGE64 other than on OS X",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7851",

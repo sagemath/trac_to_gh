@@ -10,6 +10,7 @@ archive/issues_003418.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.3",
     "title": "added new combinatorial functions for tableaux and crystals",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3418",

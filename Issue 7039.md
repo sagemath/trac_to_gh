@@ -10,6 +10,7 @@ archive/issues_007039.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "zn_poly-0.9 uses gcc, irrespective of setting of CC",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7039",

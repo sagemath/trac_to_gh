@@ -10,6 +10,7 @@ archive/issues_000252.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "Make number fields work when polynomial not integral or not monic.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/252",

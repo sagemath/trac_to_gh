@@ -10,6 +10,7 @@ archive/issues_005660.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
     "title": "count_points(1) for elliptic curves over finite fields is stupid",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5660",

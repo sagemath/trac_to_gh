@@ -10,6 +10,7 @@ archive/issues_003680.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "NumberFieldFractionalIdeal should not be a subclass of Ideal_generic",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3680",

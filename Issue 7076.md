@@ -10,6 +10,7 @@ archive/issues_007076.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
     "title": "SageNB -- Do ReST introspection on a `worksheet_process`",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7076",

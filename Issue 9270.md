@@ -10,6 +10,7 @@ archive/issues_009270.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.2",
     "title": "document the \"-only-optional\" flag for doctesting",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9270",

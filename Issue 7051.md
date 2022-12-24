@@ -10,6 +10,7 @@ archive/issues_007051.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
     "title": "latex issues",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7051",

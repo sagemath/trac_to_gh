@@ -10,6 +10,7 @@ archive/issues_002395.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
     "title": "[with patch, needs review] New features for number fields (gap interface, matrix groups)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2395",

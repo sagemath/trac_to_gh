@@ -10,6 +10,7 @@ archive/issues_002672.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
     "title": "Fix OSX 10.5 detection code - it fails for the currect OSX 10.5.2",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2672",

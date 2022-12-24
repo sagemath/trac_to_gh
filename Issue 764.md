@@ -10,6 +10,7 @@ archive/issues_000764.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.6",
     "title": "PolynomialRing returns an MPolynomialRing when the number of variables is explicitly set to be 1.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/764",

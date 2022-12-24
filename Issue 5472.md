@@ -10,6 +10,7 @@ archive/issues_005472.json:
         "trivial",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4",
     "title": "[with patch, needs review] typo in developer's guide",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5472",

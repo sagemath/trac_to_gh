@@ -10,6 +10,7 @@ archive/issues_009445.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6.1",
     "title": "GalRep.non_surjective_primes() returns unexpected errors",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9445",

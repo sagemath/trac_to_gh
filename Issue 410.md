@@ -10,6 +10,7 @@ archive/issues_000410.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.8",
     "title": "New documentation for Cython and C++",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/410",

@@ -10,6 +10,7 @@ archive/issues_005825.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.10",
     "title": "sage -i $FOO.spkg should abort cleanly when write permissions are lacking",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5825",

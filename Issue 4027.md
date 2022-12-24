@@ -10,6 +10,7 @@ archive/issues_004027.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "Sage 3.1.2.alpha3: matrix_mod2_dense.pyx doctest failure on 32 bits",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4027",

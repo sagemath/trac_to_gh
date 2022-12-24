@@ -10,6 +10,7 @@ archive/issues_003488.json:
         "trivial",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
     "title": "typos in sage-clone script",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3488",

@@ -10,6 +10,7 @@ archive/issues_008304.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.4",
     "title": "Remove stray factors of 2 in Coleman integration",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8304",

@@ -10,6 +10,7 @@ archive/issues_005779.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
     "title": "_fast_floats_'s pow returns garbage for non-integral powers left of zero",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5779",

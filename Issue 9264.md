@@ -10,6 +10,7 @@ archive/issues_009264.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Apply ALL relevent fixes to ECL 10.4.1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9264",

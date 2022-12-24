@@ -10,6 +10,7 @@ archive/issues_005199.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "[with patch, needs review] new symbolics can treat floats as integers inappropriately",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5199",

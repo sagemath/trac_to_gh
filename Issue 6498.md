@@ -10,6 +10,7 @@ archive/issues_006498.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Compilation of ratpoints in sage-4.1.rc1 fails on 64-bit Gentoo Linux",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6498",

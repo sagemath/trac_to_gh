@@ -10,6 +10,7 @@ archive/issues_008272.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5",
     "title": "R's spkg-install tries to disable iconv, but it is *essential* for R.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8272",

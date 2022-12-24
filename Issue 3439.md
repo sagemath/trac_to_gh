@@ -10,6 +10,7 @@ archive/issues_003439.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
     "title": "[with patch, easy review] 20% --> 100% coverage for graph_isom",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3439",

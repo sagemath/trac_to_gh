@@ -10,6 +10,7 @@ archive/issues_009722.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.3",
     "title": "PARI/GP build error on Fedora 13",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9722",

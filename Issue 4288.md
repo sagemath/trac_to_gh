@@ -10,6 +10,7 @@ archive/issues_004288.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
     "title": "_magma_init_ bug elliptic curve points",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4288",

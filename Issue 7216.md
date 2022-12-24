@@ -10,6 +10,7 @@ archive/issues_007216.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Spanish doc #4 \"Number Fields\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7216",

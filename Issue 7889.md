@@ -10,6 +10,7 @@ archive/issues_007889.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.2",
     "title": "revolution plot",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7889",

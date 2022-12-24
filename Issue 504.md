@@ -10,6 +10,7 @@ archive/issues_000504.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.3",
     "title": "make lie interface more robust",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/504",

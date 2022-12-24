@@ -10,6 +10,7 @@ archive/issues_000330.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
     "title": "Simple Statistics/Benchmark Support",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/330",

@@ -10,6 +10,7 @@ archive/issues_002889.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "notebook -- huge output cells crash firefox",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2889",

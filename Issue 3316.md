@@ -10,6 +10,7 @@ archive/issues_003316.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
     "title": "Fix a bug and improve documentation in jordan_form",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3316",

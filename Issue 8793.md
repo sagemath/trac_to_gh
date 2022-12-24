@@ -10,6 +10,7 @@ archive/issues_008793.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.13",
     "title": "clean up documentation of logic/boolformula.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8793",

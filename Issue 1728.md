@@ -10,6 +10,7 @@ archive/issues_001728.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10",
     "title": "numpy 1.0.4 causes various numerical noise doctest failures",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1728",

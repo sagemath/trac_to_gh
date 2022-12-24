@@ -10,6 +10,7 @@ archive/issues_003307.json:
         "blocker",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.3",
     "title": "[with patch; needs review] Move genus2reduction to /usr/lib for Debian package",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3307",

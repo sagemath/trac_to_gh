@@ -10,6 +10,7 @@ archive/issues_004144.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
     "title": "[with patch, needs review] allow finite field elements in SBox constructor",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4144",

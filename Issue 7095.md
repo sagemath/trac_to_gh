@@ -10,6 +10,7 @@ archive/issues_007095.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "os x 10.6 port -- numerous mysterious errors caused by weird \"abort trap\" issue",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7095",

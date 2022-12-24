@@ -10,6 +10,7 @@ archive/issues_008083.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.2",
     "title": "fix accents in LaTeX output",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8083",

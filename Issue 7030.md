@@ -10,6 +10,7 @@ archive/issues_007030.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "quaddouble-2.2.p9 believe Sun's C++ compiler is broken.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7030",

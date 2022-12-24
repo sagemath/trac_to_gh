@@ -10,6 +10,7 @@ archive/issues_006234.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.2",
     "title": "make parallel GCC'ing of Sage library not experimental",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6234",

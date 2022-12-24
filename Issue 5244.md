@@ -10,6 +10,7 @@ archive/issues_005244.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "is_unit is mostly not implemented for symbolic ring.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5244",

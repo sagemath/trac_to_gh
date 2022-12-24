@@ -10,6 +10,7 @@ archive/issues_002744.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-wishlist",
     "title": "make symbolicequations deal with logical combinations",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2744",

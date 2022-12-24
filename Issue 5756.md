@@ -10,6 +10,7 @@ archive/issues_005756.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
     "title": "improve coverage of rings/morphism.pyx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5756",

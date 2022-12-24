@@ -10,6 +10,7 @@ archive/issues_004062.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
     "title": "Problems with Eisenstein series code?",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4062",

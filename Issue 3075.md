@@ -10,6 +10,7 @@ archive/issues_003075.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "notebook -- add a \"test\" option",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3075",

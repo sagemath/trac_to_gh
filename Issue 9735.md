@@ -10,6 +10,7 @@ archive/issues_009735.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.3",
     "title": "Numerical noise on sage/stats/hmm/chmm.pyx on both Solaris x86 and OpenSolaris x86",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9735",

@@ -10,6 +10,7 @@ archive/issues_001419.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "notebook java3d plotting requires Internet access",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1419",

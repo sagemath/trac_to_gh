@@ -10,6 +10,7 @@ archive/issues_007074.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "cvxopt-0.9.p8 sends GNU options to Sun Fortran compiler and has bad C code.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7074",

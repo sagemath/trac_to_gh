@@ -10,6 +10,7 @@ archive/issues_000279.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.2",
     "title": "Add test a range of revisions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/279",

@@ -10,6 +10,7 @@ archive/issues_007609.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "numerical noise in doctests after pynac update",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7609",

@@ -10,6 +10,7 @@ archive/issues_006776.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
     "title": "[with patch, needs review] plot3d improvement for lattice polytopes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6776",

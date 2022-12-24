@@ -10,6 +10,7 @@ archive/issues_006037.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
     "title": "Major Upgrade to QuadraticForm Local Density Routines",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6037",

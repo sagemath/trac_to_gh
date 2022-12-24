@@ -10,6 +10,7 @@ archive/issues_002739.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
     "title": "Sage web site lacking a clear 'About Sage' page",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2739",

@@ -10,6 +10,7 @@ archive/issues_006022.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
     "title": "[with patch, needs review] latex.py: if dvipng fails, use dvips and convert instead",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6022",

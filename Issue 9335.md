@@ -10,6 +10,7 @@ archive/issues_009335.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "linear independence of points on an elliptic curve",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9335",

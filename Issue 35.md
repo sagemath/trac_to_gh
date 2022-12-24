@@ -10,6 +10,7 @@ archive/issues_000035.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-1.8",
     "title": "sage notebook load and DOS files",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/35",

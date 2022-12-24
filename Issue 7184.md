@@ -10,6 +10,7 @@ archive/issues_007184.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "[with patch, needs review] Implement counting of spanning trees for graphs and digraphs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7184",

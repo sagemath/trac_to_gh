@@ -10,6 +10,7 @@ archive/issues_005388.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Remove hg_doc* in Sage 3.4 since it no longer works once the doc repo is gone",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5388",

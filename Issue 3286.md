@@ -10,6 +10,7 @@ archive/issues_003286.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.3",
     "title": "[with patch; needs review] Minor fixes (mostly doc) to partition.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3286",

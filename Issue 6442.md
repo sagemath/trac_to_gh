@@ -10,6 +10,7 @@ archive/issues_006442.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.0",
     "title": "Random(?) index error with determinant method",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6442",

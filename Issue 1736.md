@@ -10,6 +10,7 @@ archive/issues_001736.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10",
     "title": "sturm_bound() not working on spaces of cusp forms",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1736",

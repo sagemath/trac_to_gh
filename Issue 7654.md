@@ -10,6 +10,7 @@ archive/issues_007654.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.7.2",
     "title": "Conversion bug in MPolynomialRing_libsingular",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7654",

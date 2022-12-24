@@ -10,6 +10,7 @@ archive/issues_007255.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
     "title": "sagenb notebook: reset() causes the worksheet to stop working.  fix this.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7255",

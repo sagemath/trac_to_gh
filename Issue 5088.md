@@ -10,6 +10,7 @@ archive/issues_005088.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "[with patch, needs review] use Pohlig-Hellman for generic discrete logarithm",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5088",

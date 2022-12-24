@@ -10,6 +10,7 @@ archive/issues_006560.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "docstring formatting issue from ticket #6332",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6560",

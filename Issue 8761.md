@@ -10,6 +10,7 @@ archive/issues_008761.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "sage notebook: make a new interact control (like selector) that really works like a button",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8761",

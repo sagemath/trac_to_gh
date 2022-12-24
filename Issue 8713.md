@@ -10,6 +10,7 @@ archive/issues_008713.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4",
     "title": "Prepare the ground for moving Parent._an_element_ to Sets().ParentMethods",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8713",

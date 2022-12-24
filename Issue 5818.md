@@ -10,6 +10,7 @@ archive/issues_005818.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Make it possible to pass a CPU parameter to MPIR (useful for builds in KVM)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5818",

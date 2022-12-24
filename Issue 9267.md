@@ -10,6 +10,7 @@ archive/issues_009267.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.2",
     "title": "Update the charge statistic on words",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9267",

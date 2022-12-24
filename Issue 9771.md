@@ -10,6 +10,7 @@ archive/issues_009771.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "unify doctest commands, especially for 'long' and 'parallel' options",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9771",

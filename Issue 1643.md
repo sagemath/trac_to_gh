@@ -10,6 +10,7 @@ archive/issues_001643.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9.2",
     "title": "Fortran.spkg: If SAGE_FORTRAN is set do not copy the binary to sage_fortran.bin",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1643",

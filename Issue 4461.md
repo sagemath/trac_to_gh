@@ -10,6 +10,7 @@ archive/issues_004461.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "fricas-1.0.4 update",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4461",

@@ -10,6 +10,7 @@ archive/issues_008669.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4",
     "title": "interrupting download in sage-spkg should delete the spkg file",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8669",

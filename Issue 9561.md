@@ -10,6 +10,7 @@ archive/issues_009561.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.2",
     "title": "Docbuild warnings caused by #9219",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9561",

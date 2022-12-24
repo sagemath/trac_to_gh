@@ -10,6 +10,7 @@ archive/issues_008286.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "sparse_rows and sparse_columns are broken for 0xn, nx0 matrices",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8286",

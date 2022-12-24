@@ -10,6 +10,7 @@ archive/issues_006863.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.2",
     "title": "Implement cusps over number fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6863",

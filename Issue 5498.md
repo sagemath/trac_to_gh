@@ -10,6 +10,7 @@ archive/issues_005498.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4",
     "title": "[with patch; needs review] fix weird weird bug in maxima.py and garbage collection (technical 3.4.rc2 issues)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5498",

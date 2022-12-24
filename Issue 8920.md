@@ -10,6 +10,7 @@ archive/issues_008920.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.8",
     "title": "Factor code between words's alphabets and sets/enumerated sets/ordered sets",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8920",

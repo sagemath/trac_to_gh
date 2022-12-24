@@ -10,6 +10,7 @@ archive/issues_005277.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "tachyon.spkg: link against libpng12 instead of libpng",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5277",

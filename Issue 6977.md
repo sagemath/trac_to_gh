@@ -10,6 +10,7 @@ archive/issues_006977.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
     "title": "Implement __len__ to add support for MuPAD objects as Python containers",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6977",

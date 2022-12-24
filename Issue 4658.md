@@ -10,6 +10,7 @@ archive/issues_004658.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
     "title": "magma -- get rid of redundant caching: just have _magma_init_",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4658",

@@ -10,6 +10,7 @@ archive/issues_009752.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "sorting of number field elements is broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9752",

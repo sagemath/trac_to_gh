@@ -10,6 +10,7 @@ archive/issues_006954.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
     "title": "[with patch, needs review] latex output for dictionaries",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6954",

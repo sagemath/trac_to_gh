@@ -10,6 +10,7 @@ archive/issues_002420.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-pending",
     "title": "[with patch, needs review] Extending the gap interface to uni- and multivariate polynomial rings over number fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2420",

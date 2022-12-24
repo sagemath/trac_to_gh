@@ -10,6 +10,7 @@ archive/issues_007759.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Add a 'README.Solaris' file to the root of Sage directory.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7759",

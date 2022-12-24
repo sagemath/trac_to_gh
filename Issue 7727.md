@@ -10,6 +10,7 @@ archive/issues_007727.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "optimized_representation fails,",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7727",

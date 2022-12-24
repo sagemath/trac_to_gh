@@ -10,6 +10,7 @@ archive/issues_002942.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "notebook -- new command line options: sage -n and sage -nb",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2942",

@@ -10,6 +10,7 @@ archive/issues_002307.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
     "title": "[with patch, needs easy review] has_edge ignores labels",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2307",

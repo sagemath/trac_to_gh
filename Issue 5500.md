@@ -10,6 +10,7 @@ archive/issues_005500.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
     "title": "add remark to tutorial to make defining functions at the command line much clearer",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5500",

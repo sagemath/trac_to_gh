@@ -10,6 +10,7 @@ archive/issues_004410.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
     "title": "[with patch, needs review] Map.__pow__ should return identity for power 0",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4410",

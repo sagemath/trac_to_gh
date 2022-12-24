@@ -10,6 +10,7 @@ archive/issues_007324.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2.1",
     "title": "improve order_from_multiple",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7324",

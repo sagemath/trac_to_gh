@@ -10,6 +10,7 @@ archive/issues_009521.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Cliquer: Move test commands from spkg-install to spkg-check",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9521",

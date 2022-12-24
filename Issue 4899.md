@@ -10,6 +10,7 @@ archive/issues_004899.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.3",
     "title": "bug in sqrt(1) over GF(2^e) for e>15",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4899",

@@ -10,6 +10,7 @@ archive/issues_008361.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "Add an __iter__ method for IntegerVectors",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8361",

@@ -10,6 +10,7 @@ archive/issues_002871.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "matrix: M[range(2,-1,-1),:] returns junk",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2871",

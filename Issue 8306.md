@@ -10,6 +10,7 @@ archive/issues_008306.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5",
     "title": "Parallel inter/intra-spkg builds",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8306",

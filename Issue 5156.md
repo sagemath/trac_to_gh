@@ -10,6 +10,7 @@ archive/issues_005156.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
     "title": "implement computation of the conjectural (analytic) order of Sha for elliptic curves over Heegner quadratic imaginary fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5156",

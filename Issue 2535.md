@@ -10,6 +10,7 @@ archive/issues_002535.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "Problem with cuspidal_subspace and new_subspace for modular symbols",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2535",

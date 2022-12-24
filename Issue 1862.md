@@ -10,6 +10,7 @@ archive/issues_001862.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.4",
     "title": "implement at least some sort of useful rudimentary implicit 2d plotting function",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1862",

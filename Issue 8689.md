@@ -10,6 +10,7 @@ archive/issues_008689.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "sage notebook: add mention of cell:// for referencing data to notebook help page",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8689",

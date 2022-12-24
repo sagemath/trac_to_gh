@@ -10,6 +10,7 @@ archive/issues_005063.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "major reworking of plotting",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5063",

@@ -10,6 +10,7 @@ archive/issues_006541.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2.1",
     "title": "[with patch, needs review] functions numerator and denominator for univariate polynomials",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6541",

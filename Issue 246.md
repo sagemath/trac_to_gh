@@ -10,6 +10,7 @@ archive/issues_000246.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "height of a notebook cell",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/246",

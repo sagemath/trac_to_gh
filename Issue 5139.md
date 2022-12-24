@@ -10,6 +10,7 @@ archive/issues_005139.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "add computation of Bach bound of number fields to Sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5139",

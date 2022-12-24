@@ -10,6 +10,7 @@ archive/issues_000540.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.4",
     "title": "3d: move all .jar files to an optional package;",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/540",

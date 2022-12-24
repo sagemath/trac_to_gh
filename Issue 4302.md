@@ -10,6 +10,7 @@ archive/issues_004302.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
     "title": "[challenge] improve modular composition in GF(2)[x]",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4302",

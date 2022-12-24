@@ -10,6 +10,7 @@ archive/issues_007345.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "New libtiff package",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7345",

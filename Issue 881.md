@@ -10,6 +10,7 @@ archive/issues_000881.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.8",
     "title": "new notebook bug -- saving a worksheet gets rid of all the html between cells?!",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/881",

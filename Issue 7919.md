@@ -10,6 +10,7 @@ archive/issues_007919.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "Doctest in sage/misc/test_class_pickling.py doesn't test anything",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7919",

@@ -10,6 +10,7 @@ archive/issues_001730.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Sage does not have 100,000 users yet.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1730",

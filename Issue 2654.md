@@ -10,6 +10,7 @@ archive/issues_002654.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "Cyclotomic polynomials -- suggested improvement",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2654",

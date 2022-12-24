@@ -10,6 +10,7 @@ archive/issues_008149.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "files with space in their names do not load properly",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8149",

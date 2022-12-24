@@ -10,6 +10,7 @@ archive/issues_003984.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Sage 3.1.2.alpha1 - Linux Itanium - segfaults in chmm.pyx and hmm.pyx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3984",

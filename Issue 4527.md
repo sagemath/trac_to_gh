@@ -10,6 +10,7 @@ archive/issues_004527.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
     "title": "Exception in 'sage.matrix.matrix_integer_dense.Matrix_integer_dense._hnf_modn_impl'",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4527",

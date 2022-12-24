@@ -10,6 +10,7 @@ archive/issues_005469.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4",
     "title": "sage -clone ...  should copy the sage/doc/output directory",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5469",

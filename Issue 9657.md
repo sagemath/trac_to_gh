@@ -10,6 +10,7 @@ archive/issues_009657.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.2",
     "title": "cvxopt 0.9 does not compile on Solaris with gcc 4.5 or later.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9657",

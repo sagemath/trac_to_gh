@@ -10,6 +10,7 @@ archive/issues_004890.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "get rid of nauty's stupid interactive license agreement in the optional spkg install",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4890",

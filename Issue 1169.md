@@ -10,6 +10,7 @@ archive/issues_001169.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "NTL cache-friendly FFT routines",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1169",

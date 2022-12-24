@@ -10,6 +10,7 @@ archive/issues_000868.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.7",
     "title": "[with patch] graphs: upgrade networkx to 0.35.1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/868",

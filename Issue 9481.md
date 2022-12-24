@@ -10,6 +10,7 @@ archive/issues_009481.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6.2",
     "title": "random_element fails for power series over real field, has inaccurate docstring",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9481",

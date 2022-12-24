@@ -10,6 +10,7 @@ archive/issues_003659.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
     "title": "[with spkg and patches, needs review] Upgrade IPython to 0.8.4",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3659",

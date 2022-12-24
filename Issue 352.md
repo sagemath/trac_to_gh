@@ -10,6 +10,7 @@ archive/issues_000352.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.2",
     "title": "error in matrix creation options",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/352",

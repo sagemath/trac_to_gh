@@ -10,6 +10,7 @@ archive/issues_001388.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.15",
     "title": "failure in calculus/wester.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1388",

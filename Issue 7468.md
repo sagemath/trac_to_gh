@@ -10,6 +10,7 @@ archive/issues_007468.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "SageNB - Include `zope.testbrowser` and its dependencies in the SageNB package",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7468",

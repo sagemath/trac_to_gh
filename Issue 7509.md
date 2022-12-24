@@ -10,6 +10,7 @@ archive/issues_007509.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.0",
     "title": "notebook -- make it possible to debug Python code in the notebook, e.g., something like pdb that works in the notebook",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7509",

@@ -10,6 +10,7 @@ archive/issues_001353.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.15",
     "title": "[with patch] fix easy bug in graph_database.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1353",

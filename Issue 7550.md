@@ -10,6 +10,7 @@ archive/issues_007550.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "lapack ignores setting of SAGE_FORTRAN and uses 'gfortran'",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7550",

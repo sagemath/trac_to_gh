@@ -10,6 +10,7 @@ archive/issues_002697.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "stupid bug in integrate (easy to fix)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2697",

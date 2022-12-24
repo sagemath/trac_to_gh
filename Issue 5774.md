@@ -10,6 +10,7 @@ archive/issues_005774.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "running \"make\" on a -bdisted binary is broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5774",

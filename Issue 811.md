@@ -10,6 +10,7 @@ archive/issues_000811.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "get Andrew Sutherland's insanely fast hyperelliptic curve pointing into SAGE",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/811",

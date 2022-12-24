@@ -10,6 +10,7 @@ archive/issues_004834.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "Return eigenvectors as members of a \"normal\" space instead of as members of an eigenspace",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4834",

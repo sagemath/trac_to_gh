@@ -10,6 +10,7 @@ archive/issues_000879.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "\"sage -testall\" should summarize all failures at the end of the run",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/879",

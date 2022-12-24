@@ -10,6 +10,7 @@ archive/issues_009815.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
     "title": "Elliptic Curves over RR or CC have wrong type",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9815",

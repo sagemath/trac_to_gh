@@ -10,6 +10,7 @@ archive/issues_004269.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
     "title": "add code to help detect which systems are used in performing a computation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4269",

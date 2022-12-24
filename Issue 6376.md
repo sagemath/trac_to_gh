@@ -10,6 +10,7 @@ archive/issues_006376.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "serious bug in _maxima_init_ method for formal derivatives with new symbolics",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6376",

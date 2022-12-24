@@ -10,6 +10,7 @@ archive/issues_007927.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.4",
     "title": "Extend coleman integration to handle Weierstrass points",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7927",

@@ -10,6 +10,7 @@ archive/issues_009688.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "sage notebook: Output of sh.eval? is corrupted",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9688",

@@ -10,6 +10,7 @@ archive/issues_002220.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.8",
     "title": "irreducibility testing in relative extensions seems to be messed up",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2220",

@@ -10,6 +10,7 @@ archive/issues_003604.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "zlib: Conditional jump or move depends on uninitialised value(s)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3604",

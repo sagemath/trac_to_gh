@@ -10,6 +10,7 @@ archive/issues_002800.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "(trivial to fix): %lisp mode in the notebook doesn't work -- remove it from the menu at the top",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2800",

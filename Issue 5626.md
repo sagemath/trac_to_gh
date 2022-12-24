@@ -10,6 +10,7 @@ archive/issues_005626.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "when %latex goes bad in the notebook, it doesn't display the debug/error log anymore",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5626",

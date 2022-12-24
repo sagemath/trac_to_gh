@@ -10,6 +10,7 @@ archive/issues_001381.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "optimized algorithm for some FractionField substitutions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1381",

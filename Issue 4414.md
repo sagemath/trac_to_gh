@@ -10,6 +10,7 @@ archive/issues_004414.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Improve notebook responsiveness",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4414",

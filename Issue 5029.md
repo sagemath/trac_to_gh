@@ -10,6 +10,7 @@ archive/issues_005029.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "Better diffs for trac",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5029",

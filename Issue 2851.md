@@ -10,6 +10,7 @@ archive/issues_002851.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "clean binary install of sage followed by \"sage -br\" is broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2851",

@@ -10,6 +10,7 @@ archive/issues_009409.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Bug in elliptic curves method .count_points() over finite fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9409",

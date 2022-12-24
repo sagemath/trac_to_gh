@@ -10,6 +10,7 @@ archive/issues_007571.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "use more dicts in graph.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7571",

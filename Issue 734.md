@@ -10,6 +10,7 @@ archive/issues_000734.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.5.1",
     "title": "combinatorics problems on fedora core 7 with sage-2.8.5",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/734",

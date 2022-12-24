@@ -10,6 +10,7 @@ archive/issues_001614.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
     "title": "cleanup setup.py in sage.spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1614",

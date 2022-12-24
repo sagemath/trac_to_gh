@@ -10,6 +10,7 @@ archive/issues_002881.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "numerical_integral doesn't use fast_float",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2881",

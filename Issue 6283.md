@@ -10,6 +10,7 @@ archive/issues_006283.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
     "title": "Make it so NUM_THREADS is set intelligently instead of idiotically in makefile so doing \"make ptest\" or \"make ptestlong\" doesn't kill some computers",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6283",

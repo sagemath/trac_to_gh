@@ -10,6 +10,7 @@ archive/issues_005335.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "[with patch, needs review] Create Sage 3.3 release notes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5335",

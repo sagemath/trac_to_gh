@@ -10,6 +10,7 @@ archive/issues_009630.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Python ints should have a conversion to Maxima",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9630",

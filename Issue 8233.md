@@ -10,6 +10,7 @@ archive/issues_008233.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.4",
     "title": "concatenation of words should preserve the data type represention when possible",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8233",

@@ -10,6 +10,7 @@ archive/issues_008353.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.4",
     "title": "Adding height() and width() functions to square grid paths",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8353",

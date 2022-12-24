@@ -10,6 +10,7 @@ archive/issues_004381.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
     "title": "sage -wthread not passed correctly to ipython",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4381",

@@ -10,6 +10,7 @@ archive/issues_000127.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-1.9",
     "title": "opera -- percent characters get mangled",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/127",

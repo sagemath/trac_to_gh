@@ -10,6 +10,7 @@ archive/issues_002047.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
     "title": "[with patch] new fast float evaluation framework does not work with multivariate polynomials",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2047",

@@ -10,6 +10,7 @@ archive/issues_006821.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "add empty_species.py to the reference manual",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6821",

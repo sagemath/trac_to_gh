@@ -10,6 +10,7 @@ archive/issues_001175.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9.1",
     "title": "circular link in sage/local/lib/python2.5",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1175",

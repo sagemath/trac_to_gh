@@ -10,6 +10,7 @@ archive/issues_008105.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-feature",
     "title": "LaTex to Sage worksheet conversion system",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8105",

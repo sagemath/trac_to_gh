@@ -10,6 +10,7 @@ archive/issues_001205.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.13",
     "title": "2.8.13.alpha1: modular/modform/numerical.py with new numpy/scipy from #1198",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1205",

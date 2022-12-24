@@ -10,6 +10,7 @@ archive/issues_009319.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "extend and improve \"sage -merge\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9319",

@@ -10,6 +10,7 @@ archive/issues_008685.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "evaluation of Monsky-Washnitzer objects",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8685",

@@ -10,6 +10,7 @@ archive/issues_007171.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "HP-UX failure of libm4ri 20090617 as it attempts to find L1 cache size",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7171",

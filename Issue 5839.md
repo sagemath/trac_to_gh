@@ -10,6 +10,7 @@ archive/issues_005839.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
     "title": "[with patch, needs review] MPolynomialRing_libsingular __dealloc__ is buggy, can lead to crash",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5839",

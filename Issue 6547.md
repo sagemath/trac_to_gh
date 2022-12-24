@@ -10,6 +10,7 @@ archive/issues_006547.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "deprecate the use of all.py instead of __init__.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6547",

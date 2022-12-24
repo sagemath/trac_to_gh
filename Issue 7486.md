@@ -10,6 +10,7 @@ archive/issues_007486.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "implement automatic definition of undefined variables in the Sage command line (ipython)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7486",

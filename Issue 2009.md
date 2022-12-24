@@ -10,6 +10,7 @@ archive/issues_002009.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
     "title": "crap -- networkx spkg in sage-2.10.1.rc3 contains a bunch of .svn directories",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2009",

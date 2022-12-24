@@ -10,6 +10,7 @@ archive/issues_008090.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "genus2reduction no building on Open Solaris x64. (32/64 bit issue)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8090",

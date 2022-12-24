@@ -10,6 +10,7 @@ archive/issues_004591.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
     "title": "magma -- EllipticCurve('37a').three_selmer_rank() fails in Magma 2.14",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4591",

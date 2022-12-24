@@ -10,6 +10,7 @@ archive/issues_003471.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
     "title": "[with patch, needs review] Backends for compiled graph structures",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3471",

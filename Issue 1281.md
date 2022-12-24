@@ -10,6 +10,7 @@ archive/issues_001281.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "update compilation failure message with uptodate instructions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1281",

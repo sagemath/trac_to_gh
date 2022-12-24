@@ -10,6 +10,7 @@ archive/issues_007469.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "SageNB - Add new tests regarding publishing and editing published worksheets.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7469",

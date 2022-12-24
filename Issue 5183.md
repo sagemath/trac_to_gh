@@ -10,6 +10,7 @@ archive/issues_005183.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "issues with elementary_divisors for sparse integer matrices",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5183",

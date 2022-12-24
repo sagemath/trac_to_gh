@@ -10,6 +10,7 @@ archive/issues_002709.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
     "title": "add a prime_above() function to NumberField_generic for finding prime ideals above other ideals",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2709",

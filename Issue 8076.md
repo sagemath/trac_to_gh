@@ -10,6 +10,7 @@ archive/issues_008076.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.3",
     "title": "gap-4.4.12.p2 - please test",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8076",

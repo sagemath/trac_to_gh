@@ -10,6 +10,7 @@ archive/issues_002340.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
     "title": "Docstrings and doctests for rings/ring.pyx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2340",

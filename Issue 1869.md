@@ -10,6 +10,7 @@ archive/issues_001869.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
     "title": "Implement show(list(graphs(n))) et al",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1869",

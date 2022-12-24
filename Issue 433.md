@@ -10,6 +10,7 @@ archive/issues_000433.json:
         "trivial",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.2",
     "title": "Add -version, -root, and -branch for printing version, SAGE_ROOT, and branch information.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/433",

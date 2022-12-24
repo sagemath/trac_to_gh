@@ -10,6 +10,7 @@ archive/issues_007057.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "cliquer-1.2 ignores CC and uses gcc instead of Sun compiler.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7057",

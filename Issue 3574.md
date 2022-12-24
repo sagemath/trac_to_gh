@@ -10,6 +10,7 @@ archive/issues_003574.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
     "title": "[with patch; needs review] optimize startup time by not importing mwrank library until needed",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3574",

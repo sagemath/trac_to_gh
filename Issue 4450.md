@@ -10,6 +10,7 @@ archive/issues_004450.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.2",
     "title": "notebook -- cursor down in last cell wraps around cell, instead of just staying at bottom",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4450",

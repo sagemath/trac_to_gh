@@ -10,6 +10,7 @@ archive/issues_000417.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "Faster GF(p^n) arithmetic for p^n >= 2^16",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/417",

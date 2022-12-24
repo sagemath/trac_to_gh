@@ -10,6 +10,7 @@ archive/issues_005291.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "notebook - Do not save snapshots if nothing has changed",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5291",

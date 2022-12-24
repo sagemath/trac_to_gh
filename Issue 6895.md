@@ -10,6 +10,7 @@ archive/issues_006895.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-wishlist",
     "title": "Detect discontinuities when plotting the ceil function",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6895",

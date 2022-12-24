@@ -10,6 +10,7 @@ archive/issues_001927.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
     "title": "dots in symbolic variable names should not be allowed, etc. (probably easy to fix)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1927",

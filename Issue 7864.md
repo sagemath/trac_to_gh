@@ -10,6 +10,7 @@ archive/issues_007864.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.3",
     "title": "libfplll tries to link 64-bit objects to 32-bit libstdc++.so",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7864",

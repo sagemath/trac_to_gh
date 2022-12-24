@@ -10,6 +10,7 @@ archive/issues_001020.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.10",
     "title": "squash warning from decl.pxi emitted by cython",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1020",

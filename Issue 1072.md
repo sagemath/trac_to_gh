@@ -10,6 +10,7 @@ archive/issues_001072.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "update matplotlib -- we ship 0.90.0 but should ship 0.90.1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1072",

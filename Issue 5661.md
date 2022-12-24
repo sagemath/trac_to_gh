@@ -10,6 +10,7 @@ archive/issues_005661.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "implement numerical_diff and generalize numerical_integral",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5661",

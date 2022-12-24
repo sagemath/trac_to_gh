@@ -10,6 +10,7 @@ archive/issues_008498.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.4",
     "title": "bug in has_good_reduction for a point on an elliptic curve over a number field",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8498",

@@ -10,6 +10,7 @@ archive/issues_004435.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.2",
     "title": "%latex -- don't use \\usepackage{fullpage}",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4435",

@@ -10,6 +10,7 @@ archive/issues_003872.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
     "title": "calculus -- incorporate ginac into without cln",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3872",

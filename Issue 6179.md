@@ -10,6 +10,7 @@ archive/issues_006179.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.1",
     "title": "html -- doctest failure in sage-4.0.1.alpha0",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6179",

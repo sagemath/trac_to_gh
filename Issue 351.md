@@ -10,6 +10,7 @@ archive/issues_000351.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "issue running cremona's abelian_group command and memory usage in gp",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/351",

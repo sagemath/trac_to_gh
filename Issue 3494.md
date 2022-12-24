@@ -10,6 +10,7 @@ archive/issues_003494.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "var --> name",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3494",

@@ -10,6 +10,7 @@ archive/issues_007812.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Compute Bell numbers using mpmath by default (instead of GAP)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7812",

@@ -10,6 +10,7 @@ archive/issues_004645.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
     "title": "in setup.py module_list.py is hidden with no comment.  VERY CONFUSING",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4645",

@@ -10,6 +10,7 @@ archive/issues_008486.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4",
     "title": "Xelatex and Sage notebook",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8486",

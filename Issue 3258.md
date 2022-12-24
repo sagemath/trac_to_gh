@@ -10,6 +10,7 @@ archive/issues_003258.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "notebook -- implement portal for admins",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3258",

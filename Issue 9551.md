@@ -10,6 +10,7 @@ archive/issues_009551.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Sage can try to write outside $SAGE_ROOT - potentially screwing a system up",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9551",

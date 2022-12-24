@@ -10,6 +10,7 @@ archive/issues_004774.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "Upgrade matplotlib to 0.98.4",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4774",

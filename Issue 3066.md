@@ -10,6 +10,7 @@ archive/issues_003066.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.1",
     "title": "empty matrices: gram_schmidt() throws a NameError",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3066",

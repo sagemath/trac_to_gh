@@ -10,6 +10,7 @@ archive/issues_003669.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.6",
     "title": "[with patch; needs review] improve multiple_of_order command for torsion subgroups of modular abelian varieties",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3669",

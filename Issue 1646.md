@@ -10,6 +10,7 @@ archive/issues_001646.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "'matrix in group' test doesn't work",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1646",

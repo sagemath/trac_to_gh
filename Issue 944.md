@@ -10,6 +10,7 @@ archive/issues_000944.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
     "title": "\"sage -t .\" does not run doctests in the current directory",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/944",

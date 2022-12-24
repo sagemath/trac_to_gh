@@ -10,6 +10,7 @@ archive/issues_009012.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.2",
     "title": "singular_decomposition fails on non-interreduced Gr\u00f6bner basis",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9012",

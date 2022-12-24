@@ -10,6 +10,7 @@ archive/issues_001212.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.13",
     "title": "make gfortran mandatory on OSX 10.5",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1212",

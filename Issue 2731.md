@@ -10,6 +10,7 @@ archive/issues_002731.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "GeneratorMatCode doesn't seem to be available in Debian's GAP",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2731",

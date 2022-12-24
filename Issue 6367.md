@@ -10,6 +10,7 @@ archive/issues_006367.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.4.1",
     "title": "polygon2d -- several issues: typo in docs, shouldn't have been renamed",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6367",

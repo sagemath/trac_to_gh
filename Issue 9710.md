@@ -10,6 +10,7 @@ archive/issues_009710.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Assumptions not passed to differential equation solver",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9710",

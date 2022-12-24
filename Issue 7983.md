@@ -10,6 +10,7 @@ archive/issues_007983.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.12",
     "title": "Notion of descent/major index in tableau.py is not mathematically standard",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7983",

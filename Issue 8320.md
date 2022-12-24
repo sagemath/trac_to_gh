@@ -10,6 +10,7 @@ archive/issues_008320.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.4",
     "title": "Make HTML doc headers and footers more compact",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8320",

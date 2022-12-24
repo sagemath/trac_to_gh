@@ -10,6 +10,7 @@ archive/issues_001432.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9.1",
     "title": "add some plotting examples from the pyx gallery",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1432",

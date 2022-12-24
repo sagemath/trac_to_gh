@@ -10,6 +10,7 @@ archive/issues_009810.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.7.2",
     "title": "sage exits with 0, even if it is unable to install a package.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9810",

@@ -10,6 +10,7 @@ archive/issues_002181.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
     "title": "pari 2.3.3 on osx -- gets build without readline",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2181",

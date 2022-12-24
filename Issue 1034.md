@@ -10,6 +10,7 @@ archive/issues_001034.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.11",
     "title": "clean up 'revlex' term ordering mess",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1034",

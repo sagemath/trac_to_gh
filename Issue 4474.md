@@ -10,6 +10,7 @@ archive/issues_004474.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "A hack in preparsing files is dangerous/confusing",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4474",

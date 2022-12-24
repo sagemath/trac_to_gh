@@ -10,6 +10,7 @@ archive/issues_007144.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "desolve does not use contrib_ode",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7144",

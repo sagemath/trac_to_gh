@@ -10,6 +10,7 @@ archive/issues_004283.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "[with proto-patch]A Speed-up Patch for NTL's ZZXFactoring.c",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4283",

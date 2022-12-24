@@ -10,6 +10,7 @@ archive/issues_004858.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "parenthesis badly handled in notebook sheet titles",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4858",

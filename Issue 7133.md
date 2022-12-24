@@ -10,6 +10,7 @@ archive/issues_007133.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.4",
     "title": "pari-2.3.3 always builds 32-bit libraries on Solaris.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7133",

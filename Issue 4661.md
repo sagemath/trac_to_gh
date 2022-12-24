@@ -10,6 +10,7 @@ archive/issues_004661.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
     "title": "clean up module_list.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4661",

@@ -10,6 +10,7 @@ archive/issues_008569.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "Standardize the title in the categories",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8569",

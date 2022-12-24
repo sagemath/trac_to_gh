@@ -10,6 +10,7 @@ archive/issues_005262.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
     "title": "L-series attached to modular forms has a major bug in how it computes the sign of the functional equation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5262",

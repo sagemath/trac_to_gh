@@ -10,6 +10,7 @@ archive/issues_004979.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "do not use xdg-open on Solaris to open the browser when starting the notebook",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4979",

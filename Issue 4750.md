@@ -10,6 +10,7 @@ archive/issues_004750.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "make it so sage -t foo.sage pulls in the preparsed version of all the code in foo.sage before doctesting foo.py; make it so \"sage -t foo.py\" has an option to pull in all code from foo.py before doctesting it.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4750",

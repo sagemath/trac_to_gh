@@ -10,6 +10,7 @@ archive/issues_001582.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9.1",
     "title": "2.9.1.alph2: doctest failure in sage/graphs/graph.py with x86 Linux",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1582",

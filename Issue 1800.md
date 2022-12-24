@@ -10,6 +10,7 @@ archive/issues_001800.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
     "title": "bug with RealIntervalField / MPFI",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1800",

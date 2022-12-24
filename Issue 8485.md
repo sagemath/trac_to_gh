@@ -10,6 +10,7 @@ archive/issues_008485.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "port Jeechul Woo's gp script for 3-isogeny descent to Sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8485",

@@ -10,6 +10,7 @@ archive/issues_005021.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "[with patch, needs review] add some jsMath extensions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5021",

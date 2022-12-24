@@ -10,6 +10,7 @@ archive/issues_009229.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Bring doctests for databases/cremona.py up to 100% (from  42% (17 of 40) )",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9229",

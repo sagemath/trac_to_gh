@@ -10,6 +10,7 @@ archive/issues_001737.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
     "title": "ctl-c doesn't exit job in parametric_plot3d",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1737",

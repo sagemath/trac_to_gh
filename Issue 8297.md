@@ -10,6 +10,7 @@ archive/issues_008297.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4",
     "title": "extra parenthesis when typesetting QQ arguments to symbolic functions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8297",

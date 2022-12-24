@@ -10,6 +10,7 @@ archive/issues_000778.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "Finite Field __call__ doesn't accept polynomials over F_p",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/778",

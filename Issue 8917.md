@@ -10,6 +10,7 @@ archive/issues_008917.json:
         "trivial",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.2",
     "title": "Documentation in Magmas product_from_element_class_mul",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8917",

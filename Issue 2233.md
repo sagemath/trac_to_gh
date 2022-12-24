@@ -10,6 +10,7 @@ archive/issues_002233.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
     "title": "[with patch] \"valuation too large\" in padics on 64bit",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2233",

@@ -10,6 +10,7 @@ archive/issues_007040.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Code actually in Sage (not other project) ignores CC and uses gcc.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7040",

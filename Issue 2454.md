@@ -10,6 +10,7 @@ archive/issues_002454.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.4",
     "title": "[with patch, needs review] Start improving doctest coverage in modular/modsym/",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2454",

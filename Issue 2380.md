@@ -10,6 +10,7 @@ archive/issues_002380.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "make plot give an array of plots when passed an \"array\" option",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2380",

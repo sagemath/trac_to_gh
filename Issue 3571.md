@@ -10,6 +10,7 @@ archive/issues_003571.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "ivalue field in integer_mod.pyx shouldn't be public",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3571",

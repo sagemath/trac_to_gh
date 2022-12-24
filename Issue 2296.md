@@ -10,6 +10,7 @@ archive/issues_002296.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
     "title": "setup.py -- another issue with cython dependency checking",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2296",

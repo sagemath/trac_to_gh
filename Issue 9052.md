@@ -10,6 +10,7 @@ archive/issues_009052.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.3",
     "title": "Hasse invariant for elliptic curves",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9052",

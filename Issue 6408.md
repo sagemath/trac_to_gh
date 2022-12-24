@@ -10,6 +10,7 @@ archive/issues_006408.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1",
     "title": "notebook -- secure notebook doesn't work in sage-4.1.alpha1 because of twisted.web2 not being ported to python 2.6",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6408",

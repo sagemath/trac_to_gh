@@ -10,6 +10,7 @@ archive/issues_004999.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "Solaris 10/Sparc: numerical noise doctest failure in sage/gsl/integration.pyx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4999",

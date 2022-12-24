@@ -10,6 +10,7 @@ archive/issues_004030.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "Vectors of callable things should be callable",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4030",

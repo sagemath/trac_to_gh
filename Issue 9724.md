@@ -10,6 +10,7 @@ archive/issues_009724.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Sage allows creation of variables with empty name",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9724",

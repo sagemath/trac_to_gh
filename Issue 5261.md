@@ -10,6 +10,7 @@ archive/issues_005261.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "Straigten out some annoyances with the OSX Sage.app bundle",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5261",

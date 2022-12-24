@@ -10,6 +10,7 @@ archive/issues_008339.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Message of the day for notebook server",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8339",

@@ -10,6 +10,7 @@ archive/issues_007963.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.2",
     "title": "Downloading multiple worksheets does not work",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7963",

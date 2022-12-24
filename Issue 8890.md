@@ -10,6 +10,7 @@ archive/issues_008890.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.4",
     "title": "map_support modifies the zero element of a free module!",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8890",

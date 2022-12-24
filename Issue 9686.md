@@ -10,6 +10,7 @@ archive/issues_009686.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.3",
     "title": "Polish documentation for canonical label",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9686",

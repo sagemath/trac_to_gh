@@ -10,6 +10,7 @@ archive/issues_005954.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
     "title": "Added documentation/doctests for all quadratic form genus symbol routines",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5954",

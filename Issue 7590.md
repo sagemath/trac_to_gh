@@ -10,6 +10,7 @@ archive/issues_007590.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "Create Bipartite Graph according to 2 degree sequences",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7590",

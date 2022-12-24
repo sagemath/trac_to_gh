@@ -10,6 +10,7 @@ archive/issues_003288.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
     "title": "linear_code -- memory errors in doctests -- need to be marked #long or otherwise fixed",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3288",

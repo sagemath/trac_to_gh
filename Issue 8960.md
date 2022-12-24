@@ -10,6 +10,7 @@ archive/issues_008960.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.4",
     "title": "doctest coverage for real_mpfr.pyx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8960",

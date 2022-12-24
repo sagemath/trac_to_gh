@@ -10,6 +10,7 @@ archive/issues_004292.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.4",
     "title": "[with patch; needs trivial review] graphics_array -- stupid bug introduced by somebody cleaning up the code",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4292",

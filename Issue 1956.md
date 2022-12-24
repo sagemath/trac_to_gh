@@ -10,6 +10,7 @@ archive/issues_001956.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.7.1",
     "title": "implement multivariate power series arithmetic",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1956",

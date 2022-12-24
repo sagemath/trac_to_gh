@@ -10,6 +10,7 @@ archive/issues_004628.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
     "title": "[with patch; needs review] sage-3.2.1.alpha1 -- setup.py build system is foobar'd",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4628",

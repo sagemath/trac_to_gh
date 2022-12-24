@@ -10,6 +10,7 @@ archive/issues_002852.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "ctrl-enter broken in firefox/linux",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2852",

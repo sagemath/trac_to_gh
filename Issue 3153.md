@@ -10,6 +10,7 @@ archive/issues_003153.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
     "title": "make finite_field_ntl_gf2e use randstate framework",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3153",

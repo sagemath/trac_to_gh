@@ -10,6 +10,7 @@ archive/issues_003443.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
     "title": "notebook -- confirmation e-mail sent even when username already taken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3443",

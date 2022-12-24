@@ -10,6 +10,7 @@ archive/issues_000209.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-1.9",
     "title": "sageinspect bug on 64-bit linux?",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/209",

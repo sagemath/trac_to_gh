@@ -10,6 +10,7 @@ archive/issues_001666.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9.2",
     "title": "jmol cylinders should use the draw command (rather than be triangulated as a pmesh)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1666",

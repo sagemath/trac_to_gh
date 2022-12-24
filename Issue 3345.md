@@ -10,6 +10,7 @@ archive/issues_003345.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.6",
     "title": "trace no longer works in 3.0.2",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3345",

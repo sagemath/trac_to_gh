@@ -10,6 +10,7 @@ archive/issues_004485.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
     "title": "notebook -- implicit multiplication is broken in the notebook but works on the command line (sage-3.1.4)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4485",

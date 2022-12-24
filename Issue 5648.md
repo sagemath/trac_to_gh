@@ -10,6 +10,7 @@ archive/issues_005648.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
     "title": "Multiplication for modular forms",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5648",

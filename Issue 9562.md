@@ -10,6 +10,7 @@ archive/issues_009562.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.8",
     "title": "Add M4RIE to Sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9562",

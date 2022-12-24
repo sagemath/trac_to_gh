@@ -10,6 +10,7 @@ archive/issues_009396.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.3",
     "title": "statistical package r fails to run, missing libicuuc",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9396",

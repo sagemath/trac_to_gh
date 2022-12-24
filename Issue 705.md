@@ -10,6 +10,7 @@ archive/issues_000705.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10",
     "title": "Make vtk an easy-to-install optional sage package",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/705",

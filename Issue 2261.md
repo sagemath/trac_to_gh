@@ -10,6 +10,7 @@ archive/issues_002261.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
     "title": "setup.py: Don't add emtpy Debian directory to scripts section",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2261",

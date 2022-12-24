@@ -10,6 +10,7 @@ archive/issues_000443.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.3",
     "title": "libSingular: Source and destination overlap in strcpy",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/443",

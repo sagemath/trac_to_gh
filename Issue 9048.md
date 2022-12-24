@@ -10,6 +10,7 @@ archive/issues_009048.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-wishlist",
     "title": "different behaviour of var in notebook and text version",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9048",

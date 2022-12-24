@@ -10,6 +10,7 @@ archive/issues_008479.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.2",
     "title": "[with patch, needs review] numpy support for more basic functions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8479",

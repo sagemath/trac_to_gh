@@ -10,6 +10,7 @@ archive/issues_003201.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "notebook -- bug in parsing \\ at end of line in %latex mode",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3201",

@@ -10,6 +10,7 @@ archive/issues_000689.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-wishlist",
     "title": "modifying preparse.py to benefit from the Python standard tokenize module",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/689",

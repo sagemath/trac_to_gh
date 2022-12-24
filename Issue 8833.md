@@ -10,6 +10,7 @@ archive/issues_008833.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.1",
     "title": "fix riemann.pyx numerical noise issues on t2 (etc.)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8833",

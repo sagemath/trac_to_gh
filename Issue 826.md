@@ -10,6 +10,7 @@ archive/issues_000826.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.7",
     "title": "Coercing rational function elements (i.e. fraction field) to symbolic ring",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/826",

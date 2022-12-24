@@ -10,6 +10,7 @@ archive/issues_009644.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
     "title": "Make Sage run even when $SAGE_ROOT contains spaces",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9644",

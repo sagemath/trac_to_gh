@@ -10,6 +10,7 @@ archive/issues_002158.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
     "title": "Fix some typos in matrix/matrix2.pyx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2158",

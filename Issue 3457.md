@@ -10,6 +10,7 @@ archive/issues_003457.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Install sqlalchemy_migrate",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3457",

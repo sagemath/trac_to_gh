@@ -10,6 +10,7 @@ archive/issues_003589.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
     "title": "numerical noise -- number_field.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3589",

@@ -10,6 +10,7 @@ archive/issues_006001.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "[with patch, needs work] tear out docstrings in the notebook into a new window",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6001",

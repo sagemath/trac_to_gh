@@ -10,6 +10,7 @@ archive/issues_003355.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "invoke the libdir rewrite script on \"sage -upgrade\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3355",

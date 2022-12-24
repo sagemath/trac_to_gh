@@ -10,6 +10,7 @@ archive/issues_002278.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
     "title": "notebook -- when uploading a new worksheet be sure to set the permissions on any directories that are created to be readable by all",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2278",

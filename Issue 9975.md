@@ -10,6 +10,7 @@ archive/issues_009975.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.7.1",
     "title": "Decorated functions/methods have generic signature in documentation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9975",

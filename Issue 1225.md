@@ -10,6 +10,7 @@ archive/issues_001225.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.13",
     "title": "OSX 10.4 PPC: slight numerical noise in rings/polynomial/polynomial_element.pyx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1225",

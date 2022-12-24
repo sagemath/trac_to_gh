@@ -10,6 +10,7 @@ archive/issues_004600.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
     "title": "followup issue on sage -only_optional",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4600",

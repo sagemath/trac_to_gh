@@ -10,6 +10,7 @@ archive/issues_001717.json:
         "trivial",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10",
     "title": "[with bundle] trivial fixes in the programming guide (mostly typos)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1717",

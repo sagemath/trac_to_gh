@@ -10,6 +10,7 @@ archive/issues_009156.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.4",
     "title": "Add real() and imag() methods to Integer and Rational",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9156",

@@ -10,6 +10,7 @@ archive/issues_004240.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
     "title": "magma -- increase doctest coverage of magma.py from current 17% to 100%.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4240",

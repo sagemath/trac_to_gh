@@ -10,6 +10,7 @@ archive/issues_009916.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
     "title": "ECL has too few arguments and two many on file dpp.c",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9916",

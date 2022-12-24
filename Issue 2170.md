@@ -10,6 +10,7 @@ archive/issues_002170.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "sage's integer.pyx digits function sucks in the base 10 case",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2170",

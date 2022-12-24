@@ -10,6 +10,7 @@ archive/issues_006240.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "singular interface failure on itanium",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6240",

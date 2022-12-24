@@ -10,6 +10,7 @@ archive/issues_008395.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6.2",
     "title": "degree() reports the degree of a self-loop vertex as contributing 1 to total degree",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8395",

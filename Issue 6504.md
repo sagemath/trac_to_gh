@@ -10,6 +10,7 @@ archive/issues_006504.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
     "title": "Add doctests to toy_buchberger to get it to 100%",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6504",

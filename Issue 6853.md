@@ -10,6 +10,7 @@ archive/issues_006853.json:
         "trivial",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
     "title": "[with patch, needs review] Templating tag typo",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6853",

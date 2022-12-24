@@ -10,6 +10,7 @@ archive/issues_009281.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-wishlist",
     "title": "METATICKET - missing spkg-check files / OpenSolaris test results.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9281",

@@ -10,6 +10,7 @@ archive/issues_001324.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9",
     "title": "2.8.14: doctest failure in sage/rings/real_rqdf.pyx  on FC6, x86-64",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1324",

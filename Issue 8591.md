@@ -10,6 +10,7 @@ archive/issues_008591.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Support for Gurobi",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8591",

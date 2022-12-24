@@ -10,6 +10,7 @@ archive/issues_008564.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.2",
     "title": "fix atan2() conversions between Sage and SymPy",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8564",

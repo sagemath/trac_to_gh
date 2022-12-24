@@ -10,6 +10,7 @@ archive/issues_008080.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.3",
     "title": "installation guide: require Fortran as a pre-requisite for compiling Sage on Linux",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8080",

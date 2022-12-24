@@ -10,6 +10,7 @@ archive/issues_005643.json:
         "trivial",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
     "title": "[with patch, needs review] trivial doctest patch for steenrod_algebra.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5643",

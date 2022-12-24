@@ -10,6 +10,7 @@ archive/issues_005743.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
     "title": "Solaris 10/Sparc: Fix numerical noise issues in doctests",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5743",

@@ -10,6 +10,7 @@ archive/issues_001057.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.12",
     "title": "Order elements do not have Z as a (proper) basering",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1057",

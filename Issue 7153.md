@@ -10,6 +10,7 @@ archive/issues_007153.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.4",
     "title": "Doctest failures don't kill processes and bring system to a halt.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7153",

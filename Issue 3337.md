@@ -10,6 +10,7 @@ archive/issues_003337.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "Upgrade gap-guava to new 3.5 release",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3337",

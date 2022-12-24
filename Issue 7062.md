@@ -10,6 +10,7 @@ archive/issues_007062.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "ECL snapshot of 13th Sept 2009 fails with Sun Studio 12.1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7062",

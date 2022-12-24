@@ -10,6 +10,7 @@ archive/issues_005150.json:
         "trivial",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "update Nils-Peter Skoruppa's contributions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5150",

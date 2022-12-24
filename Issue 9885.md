@@ -10,6 +10,7 @@ archive/issues_009885.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "slow coercion from integer mod ring to integer ring, part 2",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9885",

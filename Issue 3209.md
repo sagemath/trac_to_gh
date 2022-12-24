@@ -10,6 +10,7 @@ archive/issues_003209.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "summing graphics elements takes way to long",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3209",

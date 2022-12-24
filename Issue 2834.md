@@ -10,6 +10,7 @@ archive/issues_002834.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "[with patch, needs review] PyLint import cleanup for sage.rings.polynomial",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2834",

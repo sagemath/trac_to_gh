@@ -10,6 +10,7 @@ archive/issues_005907.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
     "title": "[with patch; needs review] incorrect fast_float evaluation of constant polynomials",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5907",

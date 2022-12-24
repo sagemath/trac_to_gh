@@ -10,6 +10,7 @@ archive/issues_006362.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1",
     "title": "[with spkg, needs review] Singular and GCC 4.4",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6362",

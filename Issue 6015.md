@@ -10,6 +10,7 @@ archive/issues_006015.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
     "title": "bring doctest coverage of set.py to 96%",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6015",

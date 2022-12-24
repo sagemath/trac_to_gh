@@ -10,6 +10,7 @@ archive/issues_009228.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6.2",
     "title": "Bring doctests for interfaces/mwrank.py up to 100% (from 20% (2 of 10)  )",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9228",

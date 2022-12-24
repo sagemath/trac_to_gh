@@ -10,6 +10,7 @@ archive/issues_008448.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "doc/common/builder.py doctests write files in Sage tree",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8448",

@@ -10,6 +10,7 @@ archive/issues_000343.json:
         "trivial",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "inserting tab messes scrolls to top of cell input",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/343",

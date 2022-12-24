@@ -10,6 +10,7 @@ archive/issues_006930.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
     "title": "[with patch, needs review] make 3d axes labels a little more precise",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6930",

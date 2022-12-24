@@ -10,6 +10,7 @@ archive/issues_007646.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "preparsing file should start *after* the module docstring (factoring constants out messed things up)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7646",

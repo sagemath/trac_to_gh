@@ -10,6 +10,7 @@ archive/issues_002072.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.7",
     "title": "Remove _neg_c_impl and _invert_c_impl from some classes.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2072",

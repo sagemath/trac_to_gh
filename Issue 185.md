@@ -10,6 +10,7 @@ archive/issues_000185.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.4",
     "title": "Firefox + Xorg (Linux) take way too much cputime while waiting for results from the notebook server",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/185",

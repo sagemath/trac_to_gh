@@ -10,6 +10,7 @@ archive/issues_008161.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.3",
     "title": "use Sphinx to produce docstrings from the command line",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8161",

@@ -10,6 +10,7 @@ archive/issues_001586.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9.1",
     "title": "preparser.py doctest failures",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1586",

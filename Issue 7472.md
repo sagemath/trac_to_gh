@@ -10,6 +10,7 @@ archive/issues_007472.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "Taylor polynomial in two variables does not work",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7472",

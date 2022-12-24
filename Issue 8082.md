@@ -10,6 +10,7 @@ archive/issues_008082.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.3",
     "title": "correct point and line behavior with complex numbers",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8082",

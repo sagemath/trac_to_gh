@@ -10,6 +10,7 @@ archive/issues_007108.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Sage 4.1.2.rc0 doctest failures on 32-bit Fedora 9",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7108",

@@ -10,6 +10,7 @@ archive/issues_000855.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "lists of optional and experimental packages should have descriptions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/855",

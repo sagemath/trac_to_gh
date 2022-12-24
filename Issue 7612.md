@@ -10,6 +10,7 @@ archive/issues_007612.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "SageNB -- Add 'record_logins' to server configuration",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7612",

@@ -10,6 +10,7 @@ archive/issues_009626.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Update and extend \"SPKG Tracking\" Wiki page",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9626",

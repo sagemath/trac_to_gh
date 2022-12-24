@@ -10,6 +10,7 @@ archive/issues_009307.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5",
     "title": "delete GHMM standard spkg from Sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9307",

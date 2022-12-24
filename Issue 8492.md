@@ -10,6 +10,7 @@ archive/issues_008492.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.4",
     "title": "Sage 4.3.4.alpha1: docbuild warnings in HTML version of reference manual",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8492",

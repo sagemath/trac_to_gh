@@ -10,6 +10,7 @@ archive/issues_008056.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.3",
     "title": "symbolic expressions involving rational functions with numerator 1 cannot be converted to fast callable",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8056",

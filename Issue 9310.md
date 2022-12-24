@@ -10,6 +10,7 @@ archive/issues_009310.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.7.1",
     "title": "sage-4.4.4.alpha1 blocker -- random doctest failure on menas (skynet)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9310",

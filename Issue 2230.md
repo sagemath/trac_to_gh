@@ -10,6 +10,7 @@ archive/issues_002230.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
     "title": "sage-2.10.2.alpha1 -- linear algebra hash not implemented",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2230",

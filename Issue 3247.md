@@ -10,6 +10,7 @@ archive/issues_003247.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.3",
     "title": "[with patch, needs review] add skew and generalized Hall-Littlewood creation operators to symmetric functions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3247",

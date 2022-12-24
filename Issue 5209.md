@@ -10,6 +10,7 @@ archive/issues_005209.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "Sage 3.3.a6: numerical noise in sage/plot/plot.py on OpenSUSE 11.1 64 bit",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5209",

@@ -10,6 +10,7 @@ archive/issues_009804.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "save_session is completely broken in the notebook",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9804",

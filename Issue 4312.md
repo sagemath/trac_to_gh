@@ -10,6 +10,7 @@ archive/issues_004312.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
     "title": "major @interact (hence pyprocessing) new bug in 3.1.3, still in 3.1.4",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4312",

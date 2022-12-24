@@ -10,6 +10,7 @@ archive/issues_001947.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-9.8",
     "title": "Implement homomorphisms between vector spaces",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1947",

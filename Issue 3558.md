@@ -10,6 +10,7 @@ archive/issues_003558.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
     "title": "[with patch, needs review] make  \"% cells\" work in the notebook when the mode is not set to \"sage\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3558",

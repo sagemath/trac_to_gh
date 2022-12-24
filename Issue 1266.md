@@ -10,6 +10,7 @@ archive/issues_001266.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10",
     "title": "sage.functions.piecewise is missing from reference manual",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1266",

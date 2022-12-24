@@ -10,6 +10,7 @@ archive/issues_001156.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.13",
     "title": "Functions lost in massive combinatorics reorganization?",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1156",

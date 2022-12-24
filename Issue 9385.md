@@ -10,6 +10,7 @@ archive/issues_009385.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Building ATLAS goes into an infinite loop",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9385",

@@ -10,6 +10,7 @@ archive/issues_003717.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "implement _latex_ method for formal derivative function (in symbolic calculus)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3717",

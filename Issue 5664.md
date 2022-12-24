@@ -10,6 +10,7 @@ archive/issues_005664.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
     "title": "Bugs in PermutationGroup_subgroup.__cmp__",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5664",

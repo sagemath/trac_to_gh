@@ -10,6 +10,7 @@ archive/issues_009047.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Make sure there aren't unneeded/untracked files on spkg creation.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9047",

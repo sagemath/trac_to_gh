@@ -10,6 +10,7 @@ archive/issues_008849.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.3",
     "title": "the palp interface throws a (harmless?) OSError on Cygwin",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8849",

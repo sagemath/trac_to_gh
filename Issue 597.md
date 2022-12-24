@@ -10,6 +10,7 @@ archive/issues_000597.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Why are single-argument arithmetic functions in the coercion model?",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/597",

@@ -10,6 +10,7 @@ archive/issues_009951.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
     "title": "make SAGE_CHECK work with SAGE_ATLAS_LIB",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9951",

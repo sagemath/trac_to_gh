@@ -10,6 +10,7 @@ archive/issues_004985.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
     "title": "Expand documentation for list_plot to point out the utility of zip",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4985",

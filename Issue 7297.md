@@ -10,6 +10,7 @@ archive/issues_007297.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.4",
     "title": "spkg's for libogg and libtheora",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7297",

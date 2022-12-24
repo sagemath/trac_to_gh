@@ -10,6 +10,7 @@ archive/issues_001083.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
     "title": "Bug in degree 0 number fields; manifests itself in element.matrix(), .trace(), .norm(), etc",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1083",

@@ -10,6 +10,7 @@ archive/issues_001237.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9",
     "title": "E.torsion_order() fails on curves with big coefficients !!",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1237",

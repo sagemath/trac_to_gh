@@ -10,6 +10,7 @@ archive/issues_001720.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10",
     "title": "[with spkg] update numpy to 1.0.4, also fix silent build problems with gfortran",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1720",

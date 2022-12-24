@@ -10,6 +10,7 @@ archive/issues_000575.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.12",
     "title": "make building SAGE on cygwin stop fast and clean",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/575",

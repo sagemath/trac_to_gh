@@ -10,6 +10,7 @@ archive/issues_009434.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6.1",
     "title": "Stop greping for a non-existent sage-banner",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9434",

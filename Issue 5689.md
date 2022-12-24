@@ -10,6 +10,7 @@ archive/issues_005689.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
     "title": "hitting control c while computing pi results in wrong answers later",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5689",

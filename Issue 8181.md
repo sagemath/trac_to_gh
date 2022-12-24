@@ -10,6 +10,7 @@ archive/issues_008181.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-7.2",
     "title": "cannot coerce residue field back to p-adic ring",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8181",

@@ -10,6 +10,7 @@ archive/issues_004353.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
     "title": "[with patch, needs review] make sure garbage collection is reenabled after an exception in timeit.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4353",

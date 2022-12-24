@@ -10,6 +10,7 @@ archive/issues_000615.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.4",
     "title": "doctest errors in piecewise.py due to calling a constant function.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/615",

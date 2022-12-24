@@ -10,6 +10,7 @@ archive/issues_009624.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Numerical noise in lcalc_Lfunction.pyx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9624",

@@ -10,6 +10,7 @@ archive/issues_009827.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
     "title": "Upgrade to Cython 0.13",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9827",

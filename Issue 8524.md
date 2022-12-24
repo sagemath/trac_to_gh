@@ -10,6 +10,7 @@ archive/issues_008524.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4",
     "title": "DisjointUnionEnumeratedSets should have a private __classcall__ method",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8524",

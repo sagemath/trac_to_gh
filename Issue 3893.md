@@ -10,6 +10,7 @@ archive/issues_003893.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
     "title": "random_element methods should all accept *args and **kwds",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3893",

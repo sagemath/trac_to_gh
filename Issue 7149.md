@@ -10,6 +10,7 @@ archive/issues_007149.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
     "title": "[with patch, needs review] tutorial: delete the graph theory section",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7149",

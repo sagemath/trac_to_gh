@@ -10,6 +10,7 @@ archive/issues_009721.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Problem upgrading from 4.5.2 to 4.5.3.alpha0 on OS X 10.6",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9721",

@@ -10,6 +10,7 @@ archive/issues_008401.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.4",
     "title": "doctest devel/sage/sage/graphs/graph_database.py fails on Solaris 10 (SPARC)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8401",

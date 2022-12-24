@@ -10,6 +10,7 @@ archive/issues_000623.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.8",
     "title": "New Cython",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/623",

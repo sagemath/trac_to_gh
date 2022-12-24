@@ -10,6 +10,7 @@ archive/issues_008895.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "symbolic unit conversion function should ignore non-unit symbolic variables",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8895",

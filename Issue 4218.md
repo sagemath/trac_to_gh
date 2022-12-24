@@ -10,6 +10,7 @@ archive/issues_004218.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.3",
     "title": "Extensions of Finite Fields don't work well",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4218",

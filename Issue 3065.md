@@ -10,6 +10,7 @@ archive/issues_003065.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
     "title": "empty matrices: frobenius() throws  RuntimeError",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3065",

@@ -10,6 +10,7 @@ archive/issues_003841.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "[with patch, not ready for review] Use singular for calculus by default.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3841",

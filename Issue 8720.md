@@ -10,6 +10,7 @@ archive/issues_008720.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.0",
     "title": "CC and CDF do not display numeric 0",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8720",

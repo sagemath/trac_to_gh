@@ -10,6 +10,7 @@ archive/issues_002698.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "[with patch, needs review] Small improvements to integer lcm, gcd on lists and a new xlcm function",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2698",

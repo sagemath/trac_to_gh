@@ -10,6 +10,7 @@ archive/issues_008147.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.2",
     "title": "Add mercurial queues information to Developer Walkthrough",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8147",

@@ -10,6 +10,7 @@ archive/issues_008934.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.4",
     "title": "Trivial bug in computing faces of non-full-dimensional lattice polytopes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8934",

@@ -10,6 +10,7 @@ archive/issues_009581.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6.1",
     "title": "edge_incident bug in generic_graph.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9581",

@@ -10,6 +10,7 @@ archive/issues_001231.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.15",
     "title": "seg fault when computing with modular symbols over a finite field",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1231",

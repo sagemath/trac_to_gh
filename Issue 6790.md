@@ -10,6 +10,7 @@ archive/issues_006790.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "12 doctest failures in devel/sage/sage/server/simple/twist.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6790",

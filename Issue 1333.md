@@ -10,6 +10,7 @@ archive/issues_001333.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.15",
     "title": "[with trivial patch] fix a major inefficiency in floating point square root computation in Sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1333",

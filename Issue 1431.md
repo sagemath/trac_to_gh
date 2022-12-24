@@ -10,6 +10,7 @@ archive/issues_001431.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
     "title": "basic plotting: add support for setting the location and labels of all tick marks on the x and y axes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1431",

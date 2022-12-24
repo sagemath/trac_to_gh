@@ -10,6 +10,7 @@ archive/issues_000482.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "ideals for improving the SAGE tutorial",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/482",

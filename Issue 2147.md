@@ -10,6 +10,7 @@ archive/issues_002147.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
     "title": "Make default cyclotomic polynomial be defined over ZZ.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2147",

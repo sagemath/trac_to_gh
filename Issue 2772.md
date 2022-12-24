@@ -10,6 +10,7 @@ archive/issues_002772.json:
         "blocker",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "Update Singular to 3-0-4-2",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2772",

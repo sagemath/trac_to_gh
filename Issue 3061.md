@@ -10,6 +10,7 @@ archive/issues_003061.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.1",
     "title": "use readlink and realpatch so that symlinking sage works",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3061",

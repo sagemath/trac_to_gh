@@ -10,6 +10,7 @@ archive/issues_005125.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "Ideal.basis_is_groebner() may return wrong results",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5125",

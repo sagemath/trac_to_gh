@@ -10,6 +10,7 @@ archive/issues_003371.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
     "title": "bug in uniformiSer for p-adic rings",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3371",

@@ -10,6 +10,7 @@ archive/issues_008726.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "opening two copies of a worksheet causes jumping",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8726",

@@ -10,6 +10,7 @@ archive/issues_007789.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.4",
     "title": "Improve the arguments for the default type of a variable in MixedIntegerLinearProgram",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7789",

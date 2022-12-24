@@ -10,6 +10,7 @@ archive/issues_004531.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
     "title": "Sage 3.2.rc1: automorphism_group() doctest failure on 32 bit in sage/combinat/species/library.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4531",

@@ -10,6 +10,7 @@ archive/issues_003546.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-wishlist",
     "title": "line3d with jmol draws curves instead of straight lines",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3546",

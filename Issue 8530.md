@@ -10,6 +10,7 @@ archive/issues_008530.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "affine patches of projective curves should be affine curves",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8530",

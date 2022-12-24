@@ -10,6 +10,7 @@ archive/issues_001111.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.15",
     "title": "Symbolic equation expand left and right",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1111",

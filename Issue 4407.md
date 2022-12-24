@@ -10,6 +10,7 @@ archive/issues_004407.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "magma -- painful scalability issue with parser and interface",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4407",

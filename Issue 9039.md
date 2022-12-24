@@ -10,6 +10,7 @@ archive/issues_009039.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.3",
     "title": "major error in E.sha().bound_kato() for E an elliptic curve",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9039",

@@ -10,6 +10,7 @@ archive/issues_004299.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
     "title": "sha bound totally busted for rank 0 curves",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4299",

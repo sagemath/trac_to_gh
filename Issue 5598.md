@@ -10,6 +10,7 @@ archive/issues_005598.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
     "title": "allow post-creation (pre-use) declaration of coercions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5598",

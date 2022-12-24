@@ -10,6 +10,7 @@ archive/issues_008860.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "incoherent types for real numbers",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8860",

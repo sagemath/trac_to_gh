@@ -10,6 +10,7 @@ archive/issues_003823.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "Interact - get rid of default height",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3823",

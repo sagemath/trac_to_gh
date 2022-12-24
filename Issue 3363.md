@@ -10,6 +10,7 @@ archive/issues_003363.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Use Applescript to start Sage on OSX (step 4-6 from README)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3363",

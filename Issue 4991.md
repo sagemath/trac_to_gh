@@ -10,6 +10,7 @@ archive/issues_004991.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "GDB is broken on OSX due to ipython's readline detection",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4991",

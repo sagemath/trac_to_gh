@@ -10,6 +10,7 @@ archive/issues_008322.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "on sage.combinat.tableau.insert_word() , parameter left= is broken   (fix provided)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8322",

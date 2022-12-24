@@ -10,6 +10,7 @@ archive/issues_005376.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4",
     "title": "[with patch, needs review] minor problems with ReST in plot.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5376",

@@ -10,6 +10,7 @@ archive/issues_003469.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "Something funny with free modules",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3469",

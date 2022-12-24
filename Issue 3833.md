@@ -10,6 +10,7 @@ archive/issues_003833.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
     "title": "[with patch; needs review] calculus -- fix bug in hashing of symbolic expressions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3833",

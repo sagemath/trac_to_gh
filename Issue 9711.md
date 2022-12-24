@@ -10,6 +10,7 @@ archive/issues_009711.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "sagenb notebook -- error when downloading worksheets in some cases involving non-ASCII characters",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9711",

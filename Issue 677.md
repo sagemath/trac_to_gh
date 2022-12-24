@@ -10,6 +10,7 @@ archive/issues_000677.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.15",
     "title": "add doctest option to check if result and expected result are numerically close",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/677",

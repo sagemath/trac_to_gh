@@ -10,6 +10,7 @@ archive/issues_006231.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-wishlist",
     "title": "Solving a system of equations ignores multiplicities",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6231",

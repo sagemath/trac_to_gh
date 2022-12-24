@@ -10,6 +10,7 @@ archive/issues_001672.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9.2",
     "title": "2.9.2.alpha0: #1666 related plot3d doctest failures",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1672",

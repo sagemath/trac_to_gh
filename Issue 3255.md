@@ -10,6 +10,7 @@ archive/issues_003255.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.3",
     "title": "Add support for generic backtracking algorithms",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3255",

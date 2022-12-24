@@ -10,6 +10,7 @@ archive/issues_003725.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
     "title": "[with patch, needs trivial review] tiny doc improvement for mq.SR",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3725",

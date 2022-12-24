@@ -10,6 +10,7 @@ archive/issues_008731.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "update maxima to 5.21.0",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8731",

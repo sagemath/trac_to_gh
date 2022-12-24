@@ -10,6 +10,7 @@ archive/issues_008456.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6.2",
     "title": "lazy import improvements",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8456",

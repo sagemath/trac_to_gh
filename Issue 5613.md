@@ -10,6 +10,7 @@ archive/issues_005613.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
     "title": "[with patch; needs review] fix url to sage hg server; hg_sage.bundle(...)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5613",

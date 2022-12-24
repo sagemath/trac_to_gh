@@ -10,6 +10,7 @@ archive/issues_000457.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.2",
     "title": "gp interface: TypeError: an integer is required",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/457",

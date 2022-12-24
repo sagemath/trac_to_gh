@@ -10,6 +10,7 @@ archive/issues_002128.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
     "title": "bug in random_prime (trivial to fix!)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2128",

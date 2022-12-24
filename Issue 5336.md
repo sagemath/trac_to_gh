@@ -10,6 +10,7 @@ archive/issues_005336.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4",
     "title": "make the live documentation in the notebook work with Sphinx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5336",

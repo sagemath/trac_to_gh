@@ -10,6 +10,7 @@ archive/issues_004769.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
     "title": "add 5 people to devmap; update info for 2 people",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4769",

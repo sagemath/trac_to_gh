@@ -10,6 +10,7 @@ archive/issues_009567.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.3",
     "title": "Networkx-1.1 spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9567",

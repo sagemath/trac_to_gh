@@ -10,6 +10,7 @@ archive/issues_004161.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
     "title": "[with spkg, needs review] GAP doesn't compile with CXX='ccache g++'",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4161",

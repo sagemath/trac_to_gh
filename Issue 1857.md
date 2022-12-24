@@ -10,6 +10,7 @@ archive/issues_001857.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
     "title": "examples of parametric surfaces in 3d",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1857",

@@ -10,6 +10,7 @@ archive/issues_000545.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.2",
     "title": "polish the new symbolic logic code.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/545",

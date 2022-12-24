@@ -10,6 +10,7 @@ archive/issues_004219.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
     "title": "MacOSX: work around java detection hang in r due to \"Mac OS X 10.5 Update 2\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4219",

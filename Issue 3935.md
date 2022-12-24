@@ -10,6 +10,7 @@ archive/issues_003935.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "ode_solver __init__ method ignores many parameters",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3935",

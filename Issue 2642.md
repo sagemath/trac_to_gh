@@ -10,6 +10,7 @@ archive/issues_002642.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
     "title": "doctest failure in polynomial_modn_dense_ntl.pyx: .small_roots()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2642",

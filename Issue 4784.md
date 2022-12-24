@@ -10,6 +10,7 @@ archive/issues_004784.json:
         "trivial",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
     "title": "[with patch, needs review] trivial ref manual fix for 3.2.2.alpha2",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4784",

@@ -10,6 +10,7 @@ archive/issues_005024.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "[with spkg, needs review] Solaris 10: Do not create dynamic liblpack on non-Linux",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5024",

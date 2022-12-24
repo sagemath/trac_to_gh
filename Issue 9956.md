@@ -10,6 +10,7 @@ archive/issues_009956.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "Parametric Surfaces don't load well",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9956",

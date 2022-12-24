@@ -10,6 +10,7 @@ archive/issues_007873.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "Fix 'gap' to remove usage of '$RM' and replace wth 'rm'",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7873",

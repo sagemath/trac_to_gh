@@ -10,6 +10,7 @@ archive/issues_007479.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "sage fails to integrate identity",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7479",

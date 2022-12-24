@@ -10,6 +10,7 @@ archive/issues_004481.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
     "title": "Fix cached_function to accept functions without func_doc or func_name (with patch)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4481",

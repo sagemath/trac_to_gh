@@ -10,6 +10,7 @@ archive/issues_007828.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.4",
     "title": "There should be a top-level sign() function.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7828",

@@ -10,6 +10,7 @@ archive/issues_009122.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.7.1",
     "title": "conversions between simplicial and cubical complexes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9122",

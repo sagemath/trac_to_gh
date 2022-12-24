@@ -10,6 +10,7 @@ archive/issues_003939.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "[with patch, needs review] copyright notice in integer.pyx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3939",

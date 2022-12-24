@@ -10,6 +10,7 @@ archive/issues_000953.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.8",
     "title": "the axiom / sage interface is currently totally broken, at least on 64-bit linux",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/953",

@@ -10,6 +10,7 @@ archive/issues_004426.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Do not hard code RTLD_GLOBAL as 256 for libSingular",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4426",

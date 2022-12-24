@@ -10,6 +10,7 @@ archive/issues_002786.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "[with spkg] update zn_poly to 0.8",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2786",

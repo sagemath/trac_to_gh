@@ -10,6 +10,7 @@ archive/issues_002924.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "programming guide section on style is terrible!",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2924",

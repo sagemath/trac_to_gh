@@ -10,6 +10,7 @@ archive/issues_004879.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.3",
     "title": "[with spkg, needs review] Update FLINT to 1.0.21 (latest 1.0.x upstream)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4879",

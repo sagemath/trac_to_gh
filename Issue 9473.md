@@ -10,6 +10,7 @@ archive/issues_009473.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "notebook: execute bit set on pickle's, but shouldn't be (really easy to fix)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9473",

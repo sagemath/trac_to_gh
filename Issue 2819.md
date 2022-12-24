@@ -10,6 +10,7 @@ archive/issues_002819.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "edge_style option for directed graphs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2819",

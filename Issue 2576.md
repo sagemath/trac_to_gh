@@ -10,6 +10,7 @@ archive/issues_002576.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
     "title": "preserve docstrings of decorated methods",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2576",

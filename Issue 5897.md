@@ -10,6 +10,7 @@ archive/issues_005897.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "add some javascript to make jsmath happier (very easy ticket to close, probably)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5897",

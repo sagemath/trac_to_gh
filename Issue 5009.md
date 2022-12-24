@@ -10,6 +10,7 @@ archive/issues_005009.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "elementary_divisors for integer matrices: fix doc string",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5009",

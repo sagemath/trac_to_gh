@@ -10,6 +10,7 @@ archive/issues_006959.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "modular forms -- add aplist and anlist for newforms",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6959",

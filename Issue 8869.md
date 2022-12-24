@@ -10,6 +10,7 @@ archive/issues_008869.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.4",
     "title": "float(CDF(1)) should return 1.0, not throw an error",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8869",

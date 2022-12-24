@@ -10,6 +10,7 @@ archive/issues_003537.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.7.1",
     "title": "[with patch, needs review] sage-env breaks makefile RM",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3537",

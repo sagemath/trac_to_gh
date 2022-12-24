@@ -10,6 +10,7 @@ archive/issues_008504.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4",
     "title": "AbelianGroup.exponent() uses GAP (slow)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8504",

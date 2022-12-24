@@ -10,6 +10,7 @@ archive/issues_004941.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
     "title": "pari list slicing is extremely slow -- make it much faster",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4941",

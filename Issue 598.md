@@ -10,6 +10,7 @@ archive/issues_000598.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4",
     "title": "implement substitute for monoids",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/598",

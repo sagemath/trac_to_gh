@@ -10,6 +10,7 @@ archive/issues_009263.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "airy_ai yields wrong results in arbitrary precision",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9263",

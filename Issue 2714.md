@@ -10,6 +10,7 @@ archive/issues_002714.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
     "title": "[with patch, needs review] many interfaces have gp-specific code",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2714",

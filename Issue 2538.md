@@ -10,6 +10,7 @@ archive/issues_002538.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.4",
     "title": "Sage 2.10.4.rc0: server/notebook/interact.py is broken due to #2530",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2538",

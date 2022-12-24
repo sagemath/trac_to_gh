@@ -10,6 +10,7 @@ archive/issues_005202.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "[with spkg, needs review] update MPFR to 2.4.0 (latest upstream)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5202",

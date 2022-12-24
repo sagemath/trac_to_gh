@@ -10,6 +10,7 @@ archive/issues_002034.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-7.1",
     "title": "{{{__floordiv__}}} should be part of coercion modell",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2034",

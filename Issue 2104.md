@@ -10,6 +10,7 @@ archive/issues_002104.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
     "title": "missing dependency: lcalc on mpfr",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2104",

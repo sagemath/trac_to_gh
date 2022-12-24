@@ -10,6 +10,7 @@ archive/issues_005536.json:
         "trivial",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
     "title": "[with patch, review pending] trivial docstring patches for permgp.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5536",

@@ -10,6 +10,7 @@ archive/issues_005672.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
     "title": "[with spkg, needs review] Update MPIR to 1.0.rc5 (latest upstream)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5672",

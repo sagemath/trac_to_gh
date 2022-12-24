@@ -10,6 +10,7 @@ archive/issues_000578.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.4",
     "title": "Fix typo in GF constructor and elem_cache",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/578",

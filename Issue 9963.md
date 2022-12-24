@@ -10,6 +10,7 @@ archive/issues_009963.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "Document _pari_ and _pari_init_",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9963",

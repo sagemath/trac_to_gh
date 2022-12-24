@@ -10,6 +10,7 @@ archive/issues_000269.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-7.3",
     "title": "add floordiv, mod, invert, pow to arithmetic architecture (at least in RingElement)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/269",

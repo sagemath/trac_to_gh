@@ -10,6 +10,7 @@ archive/issues_001229.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.13",
     "title": "2.8.13.rc1: sage/calculus/calculus.py doctest failure",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1229",

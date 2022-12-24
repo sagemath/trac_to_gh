@@ -10,6 +10,7 @@ archive/issues_009008.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5",
     "title": "Update zlib to latest upstream, and clean up spkg-install",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9008",

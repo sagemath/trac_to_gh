@@ -10,6 +10,7 @@ archive/issues_003253.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "f.jacob() used to work to compute jacobian ideal. Now it doesn't",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3253",

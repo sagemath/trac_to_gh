@@ -10,6 +10,7 @@ archive/issues_009593.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "spring layout does not converge on some graphs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9593",

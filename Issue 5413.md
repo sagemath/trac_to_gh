@@ -10,6 +10,7 @@ archive/issues_005413.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
     "title": "[with patch, needs review] deprecate substitution via __call__ w/ unnamed arguments",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5413",

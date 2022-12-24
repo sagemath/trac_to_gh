@@ -10,6 +10,7 @@ archive/issues_006304.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
     "title": "intermittent crash in bernmm (4.0.2.rc0)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6304",

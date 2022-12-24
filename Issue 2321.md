@@ -10,6 +10,7 @@ archive/issues_002321.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "remove dsage_server.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2321",

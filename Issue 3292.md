@@ -10,6 +10,7 @@ archive/issues_003292.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.3",
     "title": "[with patch, needs review] conversion of FractionFieldElements to magma",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3292",

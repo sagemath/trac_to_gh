@@ -10,6 +10,7 @@ archive/issues_001253.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.14",
     "title": "make sage compile on OSX 10.5.1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1253",

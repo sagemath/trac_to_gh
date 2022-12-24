@@ -10,6 +10,7 @@ archive/issues_002527.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
     "title": "get doctests for congroup.py and congroup_element.py up to 100%",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2527",

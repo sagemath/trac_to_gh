@@ -10,6 +10,7 @@ archive/issues_001627.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
     "title": "update libgcrypt to 1.4",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1627",

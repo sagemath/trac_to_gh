@@ -10,6 +10,7 @@ archive/issues_001896.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Gracefully handle 3d plotting when no java",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1896",

@@ -10,6 +10,7 @@ archive/issues_002258.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
     "title": "put dsage documentation into the main sage documentation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2258",

@@ -10,6 +10,7 @@ archive/issues_009025.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5",
     "title": "PALP is building 32-bit on OpenSolaris - probably other platforms too.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9025",

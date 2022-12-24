@@ -10,6 +10,7 @@ archive/issues_006810.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "improve doctest coverage in schemes/homset.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6810",

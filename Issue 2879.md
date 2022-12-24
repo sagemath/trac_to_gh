@@ -10,6 +10,7 @@ archive/issues_002879.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "[with patch, needs review] Bug fix in totallyreal_rel",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2879",

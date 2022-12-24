@@ -10,6 +10,7 @@ archive/issues_009539.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "segfault after memory exhausted using GF(9001)((x))",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9539",

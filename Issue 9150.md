@@ -10,6 +10,7 @@ archive/issues_009150.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "add colorbars to density plots",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9150",

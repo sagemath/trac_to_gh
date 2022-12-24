@@ -10,6 +10,7 @@ archive/issues_002675.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
     "title": "remove aux and toc files from doc.spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2675",

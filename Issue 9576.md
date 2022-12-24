@@ -10,6 +10,7 @@ archive/issues_009576.json:
         "trivial",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-8.1",
     "title": "Allow the operator & for submodule intersections.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9576",

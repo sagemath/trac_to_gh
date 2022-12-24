@@ -10,6 +10,7 @@ archive/issues_001139.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9.1",
     "title": "nintegral fails for large precision (version 2.8.12)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1139",

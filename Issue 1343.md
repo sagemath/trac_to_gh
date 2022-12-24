@@ -10,6 +10,7 @@ archive/issues_001343.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
     "title": "singular factorize is randomly slow",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1343",

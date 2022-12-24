@@ -10,6 +10,7 @@ archive/issues_008022.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.2",
     "title": "ref manual for 4.3.1: fix warning about misc/attach.rst",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8022",

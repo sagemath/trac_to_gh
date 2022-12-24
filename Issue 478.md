@@ -10,6 +10,7 @@ archive/issues_000478.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
     "title": "completely eliminate the dependence of sage on openssl",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/478",

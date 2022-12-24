@@ -10,6 +10,7 @@ archive/issues_002279.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
     "title": "numerical noise? doctest failure in sage.rings.number_field.totallyreal.__selberg_zograf_bound with 2.10.2",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2279",

@@ -10,6 +10,7 @@ archive/issues_009515.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.3",
     "title": "make an optional spkg for PyCryptoPlus",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9515",

@@ -10,6 +10,7 @@ archive/issues_009419.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.8",
     "title": "Update Developers Guide to state how patches should be made.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9419",

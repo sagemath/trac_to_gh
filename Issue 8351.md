@@ -10,6 +10,7 @@ archive/issues_008351.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.4",
     "title": "ratpoints-2.1.3.p0 fails to build in Open Solaris x64 as 64 bit even if SAGE64=yes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8351",

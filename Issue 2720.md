@@ -10,6 +10,7 @@ archive/issues_002720.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
     "title": "Sage 2.11.alpha2: fix documentation build issues",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2720",

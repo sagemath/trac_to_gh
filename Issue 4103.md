@@ -10,6 +10,7 @@ archive/issues_004103.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
     "title": "Delete the cmap option for vector field plots",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4103",

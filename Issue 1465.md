@@ -10,6 +10,7 @@ archive/issues_001465.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "the maple interface is broken in some configurations",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1465",

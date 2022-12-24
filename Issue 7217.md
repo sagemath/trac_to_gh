@@ -10,6 +10,7 @@ archive/issues_007217.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Spanish doc #5 \"Integer Factorization\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7217",

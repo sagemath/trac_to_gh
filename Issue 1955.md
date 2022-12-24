@@ -10,6 +10,7 @@ archive/issues_001955.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "bug in vector",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1955",

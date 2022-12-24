@@ -10,6 +10,7 @@ archive/issues_005745.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
     "title": "improve doctest coverage for schemes/generic/projective_space.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5745",

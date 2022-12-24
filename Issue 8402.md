@@ -10,6 +10,7 @@ archive/issues_008402.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.1",
     "title": "Sanity check for Parent and Elemet",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8402",

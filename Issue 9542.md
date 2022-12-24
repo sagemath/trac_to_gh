@@ -10,6 +10,7 @@ archive/issues_009542.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.2",
     "title": "optimize znpoly arithmetic -- it's way, way too slow because of the polynomial template thingy",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9542",

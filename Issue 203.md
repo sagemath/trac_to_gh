@@ -10,6 +10,7 @@ archive/issues_000203.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-1.9",
     "title": "more elliptic curve n*P problems",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/203",

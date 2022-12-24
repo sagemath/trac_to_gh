@@ -10,6 +10,7 @@ archive/issues_001839.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
     "title": "[with script; needs review and integration] sage-crap: incorporate this script into sage and start using it before each release.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1839",

@@ -10,6 +10,7 @@ archive/issues_001856.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
     "title": "3d graphics -- bug in setting options via the show command",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1856",

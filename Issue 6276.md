@@ -10,6 +10,7 @@ archive/issues_006276.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1",
     "title": "atlas-3.8.3.p2 dumps core on Solaris 10 with gcc 4.4.0",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6276",

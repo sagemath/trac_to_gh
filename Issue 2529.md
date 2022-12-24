@@ -10,6 +10,7 @@ archive/issues_002529.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.4",
     "title": "[with patch, needs review] slightly more preparation for backend switch in graphs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2529",

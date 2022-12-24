@@ -10,6 +10,7 @@ archive/issues_003111.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.3",
     "title": "sage's new baby-step giant step evidently needs additional polish",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3111",

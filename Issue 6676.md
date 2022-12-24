@@ -10,6 +10,7 @@ archive/issues_006676.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2.1",
     "title": "DeprecationWarning on twisted after starting notebook().",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6676",

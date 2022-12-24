@@ -10,6 +10,7 @@ archive/issues_001598.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10",
     "title": "[with patch] fix SIGSEGV in libSINGULAR interface on Solaris",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1598",

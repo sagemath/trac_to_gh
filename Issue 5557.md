@@ -10,6 +10,7 @@ archive/issues_005557.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
     "title": "implement ridiculously fast 4x4 determinant",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5557",

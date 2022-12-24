@@ -10,6 +10,7 @@ archive/issues_009159.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "(modular decomposition) Improvement to graph coloring",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9159",

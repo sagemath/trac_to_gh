@@ -10,6 +10,7 @@ archive/issues_004686.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
     "title": "Documentation for eta products",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4686",

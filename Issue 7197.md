@@ -10,6 +10,7 @@ archive/issues_007197.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "basic statistics functions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7197",

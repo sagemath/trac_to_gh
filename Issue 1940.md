@@ -10,6 +10,7 @@ archive/issues_001940.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
     "title": "Segmentation fault when comparing two empty ideals",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1940",

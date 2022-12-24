@@ -10,6 +10,7 @@ archive/issues_006041.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "update NetworkX to version 0.99",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6041",

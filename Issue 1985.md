@@ -10,6 +10,7 @@ archive/issues_001985.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
     "title": "is_pseudoprime docstring doesn't wrap",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1985",

@@ -10,6 +10,7 @@ archive/issues_006667.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.12",
     "title": "bug in newton_polygon() for p-adic polynomials",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6667",

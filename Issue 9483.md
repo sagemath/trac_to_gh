@@ -10,6 +10,7 @@ archive/issues_009483.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.7.1",
     "title": "implicit_plot3d fails on symbolic inputs that can't be automatically differentiated",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9483",

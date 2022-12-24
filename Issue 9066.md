@@ -10,6 +10,7 @@ archive/issues_009066.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.2",
     "title": "Improve documentation in shapes2.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9066",

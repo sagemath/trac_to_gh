@@ -10,6 +10,7 @@ archive/issues_002476.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "3d plotting -- easy to fix bug?",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2476",

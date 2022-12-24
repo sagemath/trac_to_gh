@@ -10,6 +10,7 @@ archive/issues_002532.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.4",
     "title": "[with-patch] padic bugfix",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2532",

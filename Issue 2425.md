@@ -10,6 +10,7 @@ archive/issues_002425.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
     "title": "[with patch; needs review] In multipolynomials, the function jacob() should be called gradient()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2425",

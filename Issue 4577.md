@@ -10,6 +10,7 @@ archive/issues_004577.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
     "title": "[with patch, needs review] simple interface to scipy.optimize.leastsq",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4577",

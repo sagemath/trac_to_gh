@@ -10,6 +10,7 @@ archive/issues_009670.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "Bring probability/random_variable.py to 100% coverage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9670",

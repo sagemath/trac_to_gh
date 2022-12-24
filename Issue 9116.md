@@ -10,6 +10,7 @@ archive/issues_009116.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.3",
     "title": "sage-4.4.3.alpha1 fails to build on OS X due to png library issue",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9116",

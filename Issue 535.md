@@ -10,6 +10,7 @@ archive/issues_000535.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.4.2",
     "title": "Mismatched free() / delete / delete [] (from modular/dirichlet.py)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/535",

@@ -10,6 +10,7 @@ archive/issues_007147.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Change settings for INCLUDE_MPFR_PATCH from \"1\"  or \"0\" to \"yes\" or \"no\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7147",

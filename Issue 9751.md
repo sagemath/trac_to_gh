@@ -10,6 +10,7 @@ archive/issues_009751.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.8",
     "title": "Documentation for AdditiveMagmas' addition_table",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9751",

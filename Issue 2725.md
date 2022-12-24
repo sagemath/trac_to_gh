@@ -10,6 +10,7 @@ archive/issues_002725.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
     "title": "[with patch, needs review] MPolynomial_polydict doc-tests and some refactoring",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2725",

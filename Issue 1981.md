@@ -10,6 +10,7 @@ archive/issues_001981.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "NTL fails to build with DEB_BUILD_HARDENING=1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1981",

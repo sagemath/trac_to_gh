@@ -10,6 +10,7 @@ archive/issues_004826.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.3",
     "title": "change return type of G.cusps() for G a congruence subgroup",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4826",

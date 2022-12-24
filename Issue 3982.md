@@ -10,6 +10,7 @@ archive/issues_003982.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "[with patch, needs review] Pipe stdout to /dev/null to help sage_timeit with \"print\" statements",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3982",

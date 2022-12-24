@@ -10,6 +10,7 @@ archive/issues_008323.json:
         "trivial",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.4",
     "title": "The variable \"name\" is predefined in Sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8323",

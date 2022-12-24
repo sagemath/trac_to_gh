@@ -10,6 +10,7 @@ archive/issues_002133.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
     "title": "running dimension_modular_forms on weight 0 should return 1 (trivial to fix)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2133",

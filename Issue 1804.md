@@ -10,6 +10,7 @@ archive/issues_001804.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
     "title": "Factorization.__mul__ assumes that the primes in the factorization commute, which may not be a valid assumption",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1804",

@@ -10,6 +10,7 @@ archive/issues_007689.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "cd spkg/; ./install scripts --- this results in an annoying (but harmless error message); get rid of it",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7689",

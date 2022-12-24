@@ -10,6 +10,7 @@ archive/issues_006268.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.2",
     "title": "Typesetting of sec(x), csc(x), cot(x) are broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6268",

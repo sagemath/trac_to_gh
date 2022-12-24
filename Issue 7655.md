@@ -10,6 +10,7 @@ archive/issues_007655.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "notebook: make it so worksheets can be organized into a tree structure",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7655",

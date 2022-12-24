@@ -10,6 +10,7 @@ archive/issues_009855.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
     "title": "improve `augment` method for sparse matrices",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9855",

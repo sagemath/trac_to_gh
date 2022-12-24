@@ -10,6 +10,7 @@ archive/issues_005841.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "reenable interface/lisp.py doctests",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5841",

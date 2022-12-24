@@ -10,6 +10,7 @@ archive/issues_007137.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.4",
     "title": "always building 32-bit on Solaris even when SAGE64=\"yes\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7137",

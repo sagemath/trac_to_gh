@@ -10,6 +10,7 @@ archive/issues_001791.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10",
     "title": "Sage 2.10.alpha3: numerical noise doctest failure with gcc 4.2.2/x86",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1791",

@@ -10,6 +10,7 @@ archive/issues_008364.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.3",
     "title": "Make Cbc support multithread. Other LP solvers too if available",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8364",

@@ -10,6 +10,7 @@ archive/issues_000436.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "http to https redirect for secure notebook",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/436",

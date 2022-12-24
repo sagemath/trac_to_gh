@@ -10,6 +10,7 @@ archive/issues_007024.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Flint ignores CC and CXX.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7024",

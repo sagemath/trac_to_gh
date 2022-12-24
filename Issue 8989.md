@@ -10,6 +10,7 @@ archive/issues_008989.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.2",
     "title": "Add support for Fano toric varieties",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8989",

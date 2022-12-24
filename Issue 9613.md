@@ -10,6 +10,7 @@ archive/issues_009613.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Add a spkg-ceck script to linbox",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9613",

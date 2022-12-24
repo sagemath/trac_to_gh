@@ -10,6 +10,7 @@ archive/issues_007650.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "Fix sagenb doctesting",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7650",

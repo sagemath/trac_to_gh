@@ -10,6 +10,7 @@ archive/issues_009700.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.3",
     "title": "Export check_edge_label from sparse_graph.pyx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9700",

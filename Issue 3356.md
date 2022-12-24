@@ -10,6 +10,7 @@ archive/issues_003356.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
     "title": "[with patch; not ready for review] finance -- add randomization code; optimize some models; improve plotting code",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3356",

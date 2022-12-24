@@ -10,6 +10,7 @@ archive/issues_007667.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-wishlist",
     "title": "clickable interact creation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7667",

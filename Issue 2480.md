@@ -10,6 +10,7 @@ archive/issues_002480.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.2",
     "title": "problem parsing arguments to NumberField.order()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2480",

@@ -10,6 +10,7 @@ archive/issues_009055.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6.2",
     "title": "Moving/cleaning enumeration functions for points on schemes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9055",

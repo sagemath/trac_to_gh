@@ -10,6 +10,7 @@ archive/issues_006232.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-wishlist",
     "title": "Consider CADO-NFS for inclusion",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6232",

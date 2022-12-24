@@ -10,6 +10,7 @@ archive/issues_001368.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.15",
     "title": "fix a bug introduced in #787 -- algorithm for computing quotient was sometimes wrong.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1368",

@@ -10,6 +10,7 @@ archive/issues_007111.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2.1",
     "title": "timeout when doctesting partition refinement code",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7111",

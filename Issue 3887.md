@@ -10,6 +10,7 @@ archive/issues_003887.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "[with patch, needs review] Bug in determinant",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3887",

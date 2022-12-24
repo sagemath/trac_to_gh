@@ -10,6 +10,7 @@ archive/issues_006586.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
     "title": "[with spkg; needs review] update Sphinx to version 0.6.2",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6586",

@@ -10,6 +10,7 @@ archive/issues_001063.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.11",
     "title": "[with patch] \"sage -sh\" should run $SHELL with Sage environment variables set",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1063",

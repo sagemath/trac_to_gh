@@ -10,6 +10,7 @@ archive/issues_000773.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "SAGE drops . from path",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/773",

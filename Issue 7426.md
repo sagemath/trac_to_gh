@@ -10,6 +10,7 @@ archive/issues_007426.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2.1",
     "title": "fix mpir spkg to correctly detect OS X 10.6",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7426",

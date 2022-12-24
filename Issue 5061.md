@@ -10,6 +10,7 @@ archive/issues_005061.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4",
     "title": "Steenrod algebras report additive order of 0 is p",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5061",

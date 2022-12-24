@@ -10,6 +10,7 @@ archive/issues_003986.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "notebook -- a doc browser bug",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3986",

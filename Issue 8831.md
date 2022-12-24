@@ -10,6 +10,7 @@ archive/issues_008831.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.1",
     "title": "fail to build PDF version of reference manual in Sage 4.4.1.alpha2",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8831",

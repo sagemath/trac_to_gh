@@ -10,6 +10,7 @@ archive/issues_005608.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.12",
     "title": "Mertens' constant is named wrongly",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5608",

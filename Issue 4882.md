@@ -10,6 +10,7 @@ archive/issues_004882.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.3",
     "title": "./sage -t sage/sage/rings/polynomial/multi_polynomial_ideal.py M2 failure",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4882",

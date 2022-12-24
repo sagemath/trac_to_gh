@@ -10,6 +10,7 @@ archive/issues_004974.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "make sage.libs.pari.gen._normalize_slice a miscellaneous function for dealing with slices",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4974",

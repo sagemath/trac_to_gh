@@ -10,6 +10,7 @@ archive/issues_006904.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.2",
     "title": "change ring broken over QQ and GF(2)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6904",

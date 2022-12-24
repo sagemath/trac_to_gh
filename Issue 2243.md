@@ -10,6 +10,7 @@ archive/issues_002243.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "contour_plot bug",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2243",

@@ -10,6 +10,7 @@ archive/issues_003069.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
     "title": "notebook -- typeset checkbox doesn't work after save/reload",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3069",

@@ -10,6 +10,7 @@ archive/issues_002453.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "linbox related segfaults in modular/modsym/space.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2453",

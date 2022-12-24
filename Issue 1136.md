@@ -10,6 +10,7 @@ archive/issues_001136.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.13",
     "title": "libsingular tends to segfault with polynomials over Q",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1136",

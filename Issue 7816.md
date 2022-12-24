@@ -10,6 +10,7 @@ archive/issues_007816.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "gd fails to build on Open Solaris - missing header file",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7816",

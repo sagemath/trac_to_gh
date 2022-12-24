@@ -10,6 +10,7 @@ archive/issues_000299.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "make check and its analogues",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/299",

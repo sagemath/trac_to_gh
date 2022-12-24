@@ -10,6 +10,7 @@ archive/issues_009782.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.3",
     "title": "Add additive groups to the documentation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9782",

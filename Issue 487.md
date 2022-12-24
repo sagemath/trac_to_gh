@@ -10,6 +10,7 @@ archive/issues_000487.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.4",
     "title": "problem with the is_principal method for fractional ideals in a number field.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/487",

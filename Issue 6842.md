@@ -10,6 +10,7 @@ archive/issues_006842.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
     "title": "[with patch, needs review] ordinal_str giving wrong answers for 111, 112, 113",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6842",

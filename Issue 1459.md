@@ -10,6 +10,7 @@ archive/issues_001459.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9.1",
     "title": "[with patch] make notebook ?? behavior like command line behavior",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1459",

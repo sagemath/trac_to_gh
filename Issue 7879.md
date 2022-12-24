@@ -10,6 +10,7 @@ archive/issues_007879.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.7.2",
     "title": "Remove unnecessary signal handling for low prec mpfr operations.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7879",

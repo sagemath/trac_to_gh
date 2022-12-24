@@ -10,6 +10,7 @@ archive/issues_009852.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Enumerate Integer solution of a LP through new CPLEX interface",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9852",

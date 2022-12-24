@@ -10,6 +10,7 @@ archive/issues_007028.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-8.1",
     "title": "matplotlib 0.99.0 tries to use C compiler for C++ code.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7028",

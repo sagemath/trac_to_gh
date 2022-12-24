@@ -10,6 +10,7 @@ archive/issues_007501.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.2",
     "title": "notebook -- include codemirror in sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7501",

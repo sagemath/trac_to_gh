@@ -10,6 +10,7 @@ archive/issues_003601.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.6",
     "title": "Reimplementation of tensor products",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3601",

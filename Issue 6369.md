@@ -10,6 +10,7 @@ archive/issues_006369.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "the sage cleaner should kill all notebook servers if sage that spawned them is killed",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6369",

@@ -10,6 +10,7 @@ archive/issues_004929.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.3",
     "title": "[with patch, needs review] 3.2.3.rc0: remove sage/functions/elementary.py from files to build in the documentation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4929",

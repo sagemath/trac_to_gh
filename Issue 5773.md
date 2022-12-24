@@ -10,6 +10,7 @@ archive/issues_005773.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "notebook -- uploading a corrupted worksheet (sws file) results in blank screen (no useful error message)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5773",

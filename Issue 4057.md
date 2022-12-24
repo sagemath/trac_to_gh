@@ -10,6 +10,7 @@ archive/issues_004057.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
     "title": "Possible improvements to ? and ?? for R functions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4057",

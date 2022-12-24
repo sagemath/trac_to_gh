@@ -10,6 +10,7 @@ archive/issues_003458.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
     "title": "parallel -- a very simple reference api for @parallel and parallel_eval",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3458",

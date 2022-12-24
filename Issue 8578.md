@@ -10,6 +10,7 @@ archive/issues_008578.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "method int_repr only works for small finite fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8578",

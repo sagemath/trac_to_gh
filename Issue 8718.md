@@ -10,6 +10,7 @@ archive/issues_008718.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.0",
     "title": "Polynomial.apply_map()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8718",

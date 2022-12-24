@@ -10,6 +10,7 @@ archive/issues_003825.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
     "title": "2d-plots has no functionality for grid lines",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3825",

@@ -10,6 +10,7 @@ archive/issues_005391.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4",
     "title": "[with patch, needs review]  Update sage-combinat script to use combinat.sagemath.org/patches/",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5391",

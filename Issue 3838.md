@@ -10,6 +10,7 @@ archive/issues_003838.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
     "title": "Element access for RElement",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3838",

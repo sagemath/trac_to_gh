@@ -10,6 +10,7 @@ archive/issues_005637.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1",
     "title": "[with patch, needs review] allow \\[ and \\] to delimit math in %html blocks",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5637",

@@ -10,6 +10,7 @@ archive/issues_004408.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "magma interface -- change _magma_init_ to take non-optional magma argument",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4408",

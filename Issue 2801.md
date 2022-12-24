@@ -10,6 +10,7 @@ archive/issues_002801.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "add a get_page function which supports https via GNUTLS",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2801",

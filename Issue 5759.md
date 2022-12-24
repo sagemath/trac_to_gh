@@ -10,6 +10,7 @@ archive/issues_005759.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
     "title": "bug in divides",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5759",

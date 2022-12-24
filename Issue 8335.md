@@ -10,6 +10,7 @@ archive/issues_008335.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.13",
     "title": "Finite Field lattices",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8335",

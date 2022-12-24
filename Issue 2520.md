@@ -10,6 +10,7 @@ archive/issues_002520.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.4",
     "title": "2.10.4.a0: doctest failures in combinatorics after merging #2489",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2520",

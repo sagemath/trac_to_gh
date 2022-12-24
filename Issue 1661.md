@@ -10,6 +10,7 @@ archive/issues_001661.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9.2",
     "title": "click-to-evaluate button",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1661",

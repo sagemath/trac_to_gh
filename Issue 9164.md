@@ -10,6 +10,7 @@ archive/issues_009164.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "cygwin: gap.cputime() does not work",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9164",

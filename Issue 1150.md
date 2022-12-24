@@ -10,6 +10,7 @@ archive/issues_001150.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.13",
     "title": "update documentation from GMP-ECM 6.0.1 to 6.1.3",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1150",

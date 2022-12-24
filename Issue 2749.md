@@ -10,6 +10,7 @@ archive/issues_002749.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
     "title": "[with spkg, not ready for review] Upgrade to FLINT-1.1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2749",

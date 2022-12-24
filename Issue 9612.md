@@ -10,6 +10,7 @@ archive/issues_009612.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "revise functional_programming.rst",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9612",

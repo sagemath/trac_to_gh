@@ -10,6 +10,7 @@ archive/issues_005186.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "mpir build-time CPU detection fails in kvm/qemu amd64 virtual machine",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5186",

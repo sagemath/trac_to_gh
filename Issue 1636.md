@@ -10,6 +10,7 @@ archive/issues_001636.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "jmol 3d graphics -- make 3d output dynamically resizable",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1636",

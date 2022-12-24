@@ -10,6 +10,7 @@ archive/issues_001250.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.14",
     "title": "[with patch] multivariate polynomial factorization -- control-c to cancel out doesn't work",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1250",

@@ -10,6 +10,7 @@ archive/issues_001218.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.13",
     "title": "update cython to 0.9.6.9 release",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1218",

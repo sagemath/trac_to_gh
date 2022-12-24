@@ -10,6 +10,7 @@ archive/issues_005568.json:
         "trivial",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
     "title": "[with patch, needs review] a few latex methods",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5568",

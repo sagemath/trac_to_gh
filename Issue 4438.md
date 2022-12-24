@@ -10,6 +10,7 @@ archive/issues_004438.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
     "title": "Sage 3.2.a2: numerical noise in sage/calculus/functional.py and wester.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4438",

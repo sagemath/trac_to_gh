@@ -10,6 +10,7 @@ archive/issues_003265.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "some doctests leave files in $SAGE_ROOT/devel/sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3265",

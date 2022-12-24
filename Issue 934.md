@@ -10,6 +10,7 @@ archive/issues_000934.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.8",
     "title": "[with patch] doctest for sparse matrix .transpose() does not actually test the function.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/934",

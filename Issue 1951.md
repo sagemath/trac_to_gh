@@ -10,6 +10,7 @@ archive/issues_001951.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
     "title": "reducation map modulo a number field prime ideal still not 100% done",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1951",

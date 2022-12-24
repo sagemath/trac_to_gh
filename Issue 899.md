@@ -10,6 +10,7 @@ archive/issues_000899.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.10",
     "title": "minor error in inst.tex",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/899",

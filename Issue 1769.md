@@ -10,6 +10,7 @@ archive/issues_001769.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10",
     "title": "[with patch] Fast Pari <--> Sage p-adic capped relative element conversions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1769",

@@ -10,6 +10,7 @@ archive/issues_005141.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "tinymce should be disabled on published worksheets",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5141",

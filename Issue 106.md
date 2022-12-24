@@ -10,6 +10,7 @@ archive/issues_000106.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.4",
     "title": "maple (etc?) tab completion -- asking for a list of all completions gives a bad error message if maple isn't installed",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/106",

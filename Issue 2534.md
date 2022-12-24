@@ -10,6 +10,7 @@ archive/issues_002534.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.4",
     "title": "Sage does not handle Symmetrica's large integers",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2534",

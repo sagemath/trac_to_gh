@@ -10,6 +10,7 @@ archive/issues_002100.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.7.2",
     "title": "sensible defaults for aspect ratio",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2100",

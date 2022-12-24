@@ -10,6 +10,7 @@ archive/issues_005968.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
     "title": "increase doctest coverage of sage/modular/modsym/modular_symbols.py from 0% to 100%",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5968",

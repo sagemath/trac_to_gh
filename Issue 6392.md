@@ -10,6 +10,7 @@ archive/issues_006392.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-8.4",
     "title": "modular abelian quotient -- something goes wrong",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6392",

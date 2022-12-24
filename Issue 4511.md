@@ -10,6 +10,7 @@ archive/issues_004511.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
     "title": "sage-combinat script won't work with two digit version numbers (for example: 3.2)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4511",

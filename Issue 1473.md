@@ -10,6 +10,7 @@ archive/issues_001473.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9",
     "title": "Java3D usable from command line as well as notebook",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1473",

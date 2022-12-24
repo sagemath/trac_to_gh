@@ -10,6 +10,7 @@ archive/issues_007245.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
     "title": "sage -merge misses positively reviewed tickets",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7245",

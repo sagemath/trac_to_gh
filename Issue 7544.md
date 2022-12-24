@@ -10,6 +10,7 @@ archive/issues_007544.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "downloading packages with sage-spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7544",

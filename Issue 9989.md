@@ -10,6 +10,7 @@ archive/issues_009989.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Pari fails to build on AIX - using wrong extension for libraries.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9989",

@@ -10,6 +10,7 @@ archive/issues_002210.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "make checkversion.pl complain about old XCode releases",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2210",

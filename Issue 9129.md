@@ -10,6 +10,7 @@ archive/issues_009129.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.2",
     "title": "sqrt memory leaks",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9129",

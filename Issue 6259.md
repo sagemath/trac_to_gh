@@ -10,6 +10,7 @@ archive/issues_006259.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.2",
     "title": "[with patch, needs review] Fix spurious file creation in sage/server/support.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6259",

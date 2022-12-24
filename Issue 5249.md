@@ -10,6 +10,7 @@ archive/issues_005249.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
     "title": "implicit_plot3d functionality (isosurfaces, 3d contour plots, etc.)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5249",

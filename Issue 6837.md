@@ -10,6 +10,7 @@ archive/issues_006837.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.6",
     "title": "Implementation of twisting modular forms by Dirichlet characters",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6837",

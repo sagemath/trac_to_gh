@@ -10,6 +10,7 @@ archive/issues_009725.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.7.1",
     "title": "German Translation of the Tutorial",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9725",

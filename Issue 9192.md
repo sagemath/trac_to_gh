@@ -10,6 +10,7 @@ archive/issues_009192.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "Tab-completion misses some elements",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9192",

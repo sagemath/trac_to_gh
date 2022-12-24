@@ -10,6 +10,7 @@ archive/issues_006076.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "Allow to redefine the python symbol in the Notebook",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6076",

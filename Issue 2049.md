@@ -10,6 +10,7 @@ archive/issues_002049.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
     "title": "symbolic matrix exp (easy to implement)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2049",

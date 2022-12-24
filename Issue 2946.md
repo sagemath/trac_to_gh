@@ -10,6 +10,7 @@ archive/issues_002946.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "bug in jordan_form",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2946",

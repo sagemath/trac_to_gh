@@ -10,6 +10,7 @@ archive/issues_003715.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.6",
     "title": "trivial to do bug fix",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3715",

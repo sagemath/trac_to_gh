@@ -10,6 +10,7 @@ archive/issues_000658.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "print the random seed use to initialize the rng, add ability to set seed via command line parameter",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/658",

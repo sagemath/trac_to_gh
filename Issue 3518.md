@@ -10,6 +10,7 @@ archive/issues_003518.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
     "title": "modular symbols -- fix a bug in factorization of modular symbols spaces",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3518",

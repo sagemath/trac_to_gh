@@ -10,6 +10,7 @@ archive/issues_009290.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.13",
     "title": "Implement Coxeter groups in their geometric representation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9290",

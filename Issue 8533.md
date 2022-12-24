@@ -10,6 +10,7 @@ archive/issues_008533.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "browse thematic tutorials from command line and within notebook",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8533",

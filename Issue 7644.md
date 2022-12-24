@@ -10,6 +10,7 @@ archive/issues_007644.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6.2",
     "title": "generic power series reversion",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7644",

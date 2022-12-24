@@ -10,6 +10,7 @@ archive/issues_007292.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "Max Vertex/Edge disjoint st-paths",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7292",

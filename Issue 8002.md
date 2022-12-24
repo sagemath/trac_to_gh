@@ -10,6 +10,7 @@ archive/issues_008002.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.2",
     "title": "remove dead code from sage-ptest",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8002",

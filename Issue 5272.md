@@ -10,6 +10,7 @@ archive/issues_005272.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "[with patch, needs review] extend sage_input to work with RIF, CIF, AA, and QQbar",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5272",

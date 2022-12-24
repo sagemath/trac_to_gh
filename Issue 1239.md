@@ -10,6 +10,7 @@ archive/issues_001239.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9",
     "title": "Wrap Simon's new gp two descent code",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1239",

@@ -10,6 +10,7 @@ archive/issues_003723.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "alarm doesn't work with the factor command on os x (but control c does)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3723",

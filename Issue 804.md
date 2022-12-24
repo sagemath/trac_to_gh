@@ -10,6 +10,7 @@ archive/issues_000804.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.3",
     "title": "Matrix should not inherit from AlgebraElement",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/804",

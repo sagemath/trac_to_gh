@@ -10,6 +10,7 @@ archive/issues_005097.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "doctest failures in 3.3.alpha2 due to lack of #optional tag",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5097",

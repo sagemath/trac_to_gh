@@ -10,6 +10,7 @@ archive/issues_005944.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
     "title": "fix a nasty pynac bug in exp",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5944",

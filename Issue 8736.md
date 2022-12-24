@@ -10,6 +10,7 @@ archive/issues_008736.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.1",
     "title": "Bug in computing radical of univariate polynomial",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8736",

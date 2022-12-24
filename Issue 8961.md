@@ -10,6 +10,7 @@ archive/issues_008961.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5",
     "title": "zope.testbrowser is included in sagenb but is no longer required",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8961",

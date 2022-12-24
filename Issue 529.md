@@ -10,6 +10,7 @@ archive/issues_000529.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Add hex printing for FiniteFieldElements",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/529",

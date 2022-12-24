@@ -10,6 +10,7 @@ archive/issues_004664.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Move Cython dependency checking code into upstream Cython",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4664",

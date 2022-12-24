@@ -10,6 +10,7 @@ archive/issues_009498.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6.2",
     "title": "The function _factor_over_nonprime_finite_field is wrong in Sage, so remove it",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9498",

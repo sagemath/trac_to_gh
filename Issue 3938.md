@@ -10,6 +10,7 @@ archive/issues_003938.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "coercion framework converts built-in types to Sage types when it should not",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3938",

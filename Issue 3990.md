@@ -10,6 +10,7 @@ archive/issues_003990.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Developer's guide should have a definite list of pragmas for doctests",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3990",

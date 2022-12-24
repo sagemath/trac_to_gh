@@ -10,6 +10,7 @@ archive/issues_007540.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Speed up shortest_path_all_pairs() and update distance_graph",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7540",

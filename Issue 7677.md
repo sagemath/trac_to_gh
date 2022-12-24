@@ -10,6 +10,7 @@ archive/issues_007677.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "sage-4.3.rc0: powerpc g5 doctest blockers",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7677",

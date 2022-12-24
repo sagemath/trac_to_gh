@@ -10,6 +10,7 @@ archive/issues_003744.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
     "title": "Coercion between isomorphic parents should result in an element of the left operand's parent",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3744",

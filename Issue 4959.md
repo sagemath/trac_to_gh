@@ -10,6 +10,7 @@ archive/issues_004959.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.2",
     "title": "r's install_packages is broken in many variants of sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4959",

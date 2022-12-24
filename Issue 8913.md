@@ -10,6 +10,7 @@ archive/issues_008913.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.4",
     "title": "S.cayley_graph(side = \"twosided\") returns broken labels",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8913",

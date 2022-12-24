@@ -10,6 +10,7 @@ archive/issues_008173.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.2",
     "title": "segfault in singular resultant",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8173",

@@ -10,6 +10,7 @@ archive/issues_002611.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
     "title": "[with patch, needs review] add monomial_coefficent to boolean polynomials",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2611",

@@ -10,6 +10,7 @@ archive/issues_005401.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4",
     "title": "Fix the permission issues with the CC field after the trac 0.10.3 -> 0.11.3 update",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5401",

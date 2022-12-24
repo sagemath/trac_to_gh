@@ -10,6 +10,7 @@ archive/issues_007784.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.2",
     "title": "sagenb -- either include setup.cfg if it is human-written or put it in the .hgignore file",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7784",

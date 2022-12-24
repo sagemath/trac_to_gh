@@ -10,6 +10,7 @@ archive/issues_000999.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "add optional sloccount script to sage-dist",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/999",

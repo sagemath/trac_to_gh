@@ -10,6 +10,7 @@ archive/issues_008201.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Fortran not found on Linux if gfortran not present",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8201",

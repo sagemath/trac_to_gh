@@ -10,6 +10,7 @@ archive/issues_004232.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
     "title": "#249 causes bug in importing large lists",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4232",

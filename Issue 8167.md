@@ -10,6 +10,7 @@ archive/issues_008167.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.2",
     "title": "Use LaTeX-friendly Unicode characters in SageNB docstrings",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8167",

@@ -10,6 +10,7 @@ archive/issues_000399.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.8",
     "title": "PHCpack interface improvement",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/399",

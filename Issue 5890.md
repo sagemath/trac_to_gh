@@ -10,6 +10,7 @@ archive/issues_005890.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.2",
     "title": "clean up schemes/elliptic_curves/ell_generic.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5890",

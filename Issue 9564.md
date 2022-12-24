@@ -10,6 +10,7 @@ archive/issues_009564.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "libsingular exponentiation can not be interrupted",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9564",

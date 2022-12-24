@@ -10,6 +10,7 @@ archive/issues_003911.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.2",
     "title": "come up with a good framework for citing stuff in docstrings",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3911",

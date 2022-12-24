@@ -10,6 +10,7 @@ archive/issues_008666.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4",
     "title": "Bug in cyclotomic linear algebra",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8666",

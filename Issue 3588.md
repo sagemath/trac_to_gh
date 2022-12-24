@@ -10,6 +10,7 @@ archive/issues_003588.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.6",
     "title": "Divison may involve lengthy calculations",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3588",

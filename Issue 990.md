@@ -10,6 +10,7 @@ archive/issues_000990.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.15",
     "title": "no support for asinh/acosh etc. in symbolic expressions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/990",

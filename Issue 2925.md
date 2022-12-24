@@ -10,6 +10,7 @@ archive/issues_002925.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "[with spkg, needs review] gcc 4.3: givaro-3.2.10.rc3 is broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2925",

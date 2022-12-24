@@ -10,6 +10,7 @@ archive/issues_005810.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
     "title": "Sage 3.4.1.rc3: Fedora 10/64 - unable to start Maxima issue in shapes.pyx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5810",

@@ -10,6 +10,7 @@ archive/issues_005138.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "implement computing manin constants of elliptic curves",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5138",

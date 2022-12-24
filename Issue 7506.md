@@ -10,6 +10,7 @@ archive/issues_007506.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.3",
     "title": "NotebookObject documentation is out of date",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7506",

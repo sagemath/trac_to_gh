@@ -10,6 +10,7 @@ archive/issues_004444.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
     "title": "Remove duplicate source names in setup.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4444",

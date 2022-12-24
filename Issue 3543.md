@@ -10,6 +10,7 @@ archive/issues_003543.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Unify jquery libraries in devel/sage and data/extcode",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3543",

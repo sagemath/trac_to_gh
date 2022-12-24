@@ -10,6 +10,7 @@ archive/issues_008151.json:
         "trivial",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "wrong file permissions in lie-2.2.2.p3.spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8151",

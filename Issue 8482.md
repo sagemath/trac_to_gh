@@ -10,6 +10,7 @@ archive/issues_008482.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-wishlist",
     "title": "Add a link from the static help embedded in the notebook to the corresponding live documentation page",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8482",

@@ -10,6 +10,7 @@ archive/issues_008898.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6.1",
     "title": "some files in sage-4.4.{0,1} have dos line ending instead of a unix line ending",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8898",

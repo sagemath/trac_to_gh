@@ -10,6 +10,7 @@ archive/issues_002136.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "matrix visualize_structure is completely broken on osx (at least 10.5) -- why no doctest to catch this!?",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2136",

@@ -10,6 +10,7 @@ archive/issues_008127.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.3",
     "title": "Wraps string features into WordDatatypes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8127",

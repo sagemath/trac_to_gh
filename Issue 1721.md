@@ -10,6 +10,7 @@ archive/issues_001721.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
     "title": "Introduse SYSTEM_ATLAS to skip tuning of ATLAS",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1721",

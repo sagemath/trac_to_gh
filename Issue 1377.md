@@ -10,6 +10,7 @@ archive/issues_001377.json:
         "trivial",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9",
     "title": "[with patch] technically incorrect code in integer_mod.pyx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1377",

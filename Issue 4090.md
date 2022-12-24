@@ -10,6 +10,7 @@ archive/issues_004090.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "polybori-0.5rc1.p4 fails to build on OSX 10.4",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4090",

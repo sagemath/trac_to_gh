@@ -10,6 +10,7 @@ archive/issues_006222.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.2",
     "title": "typos in super-increasing code",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6222",

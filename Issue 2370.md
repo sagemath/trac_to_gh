@@ -10,6 +10,7 @@ archive/issues_002370.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
     "title": "unable to coerce bool types to Sage integers",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2370",

@@ -10,6 +10,7 @@ archive/issues_009712.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.3",
     "title": "Make building PolyBoRi depend on GD",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9712",

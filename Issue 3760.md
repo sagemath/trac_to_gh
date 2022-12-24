@@ -10,6 +10,7 @@ archive/issues_003760.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4",
     "title": "sage -t -long ell_finite_field.py fails with an out of memory error on 32-bit intel os x.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3760",

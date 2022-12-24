@@ -10,6 +10,7 @@ archive/issues_002807.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "line 26 of c_lib/src/interrupt.c is probably wrong",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2807",

@@ -10,6 +10,7 @@ archive/issues_007003.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "[with spkg, needs review] update jmol",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7003",

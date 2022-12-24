@@ -10,6 +10,7 @@ archive/issues_009293.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-wishlist",
     "title": "Better expose GAP's character tables from Sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9293",

@@ -10,6 +10,7 @@ archive/issues_005553.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "allow vertical vectors in vector field plots",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5553",

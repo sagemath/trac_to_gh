@@ -10,6 +10,7 @@ archive/issues_001618.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
     "title": "Make SCons use the GNU compiler even when Intel's compilers are present",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1618",

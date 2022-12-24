@@ -10,6 +10,7 @@ archive/issues_002803.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "notebook -- the confirmation email after creating a new account is marked as spam",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2803",

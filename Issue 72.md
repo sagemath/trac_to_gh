@@ -10,6 +10,7 @@ archive/issues_000072.json:
         "trivial",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.5",
     "title": "trac doesn't handle control keys well",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/72",

@@ -10,6 +10,7 @@ archive/issues_002264.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
     "title": "Sage 2.10.2.rc0: numerical noise doctest failure in rings/real_rqdf.pyx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2264",

@@ -10,6 +10,7 @@ archive/issues_001699.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9.3",
     "title": "[with spkg] Fix matplotlib compilation on Linux/Itanium",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1699",

@@ -10,6 +10,7 @@ archive/issues_005095.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "[with patch, needs review] AJAX requests don't work from the worksheet listing page",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5095",

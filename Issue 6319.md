@@ -10,6 +10,7 @@ archive/issues_006319.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "optional doctest failure -- mistake in constructions guide wrt maxima interface",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6319",

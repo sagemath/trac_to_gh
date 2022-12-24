@@ -10,6 +10,7 @@ archive/issues_009194.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Expose and extend the thematic tutorial on symmetric functions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9194",

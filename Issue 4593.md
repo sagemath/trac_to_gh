@@ -10,6 +10,7 @@ archive/issues_004593.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "do not uncinditionally use M2 for Gbasis computations over ZZ if it is installed",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4593",

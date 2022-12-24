@@ -10,6 +10,7 @@ archive/issues_001521.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "rebuilding ntl_GF2.pyx fails spectecularly on OSX 10.4 with moved install/binary install",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1521",

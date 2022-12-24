@@ -10,6 +10,7 @@ archive/issues_001461.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9",
     "title": "[with patch] implement general subs_expr for calculus expressions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1461",

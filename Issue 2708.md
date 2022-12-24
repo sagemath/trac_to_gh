@@ -10,6 +10,7 @@ archive/issues_002708.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
     "title": "add support for nonsymmetric Macdonald polynomials in type A via HHL formula",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2708",

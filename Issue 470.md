@@ -10,6 +10,7 @@ archive/issues_000470.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.7",
     "title": "libpari doesn't deallocate its 100,000,000 byte stack",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/470",

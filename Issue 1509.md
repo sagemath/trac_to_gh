@@ -10,6 +10,7 @@ archive/issues_001509.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
     "title": "plotting -- improve text support",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1509",

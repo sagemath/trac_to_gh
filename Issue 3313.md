@@ -10,6 +10,7 @@ archive/issues_003313.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-8.2",
     "title": "Add code to lift SL2(Z/NZ) to SL2(Z) (and for m not equal 2)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3313",

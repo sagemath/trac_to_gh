@@ -10,6 +10,7 @@ archive/issues_005351.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4",
     "title": "Sage 3.3 broke the update of  easy-install.pth",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5351",

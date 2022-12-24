@@ -10,6 +10,7 @@ archive/issues_002591.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "too much printing on sage -br",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2591",

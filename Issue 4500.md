@@ -10,6 +10,7 @@ archive/issues_004500.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
     "title": "cython files missing from build directory after install",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4500",

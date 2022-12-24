@@ -10,6 +10,7 @@ archive/issues_004588.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "doctest -- get rid of the \"feature\" where docstrings with require, optional, and package all in them are automatically marked optional",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4588",

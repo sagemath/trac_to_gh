@@ -10,6 +10,7 @@ archive/issues_000878.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.7",
     "title": "[with patch] graphs: Correct a doctest failing on some systems due to different output ordering.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/878",

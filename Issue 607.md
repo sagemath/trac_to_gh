@@ -10,6 +10,7 @@ archive/issues_000607.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.4",
     "title": "Coleman integration bug",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/607",

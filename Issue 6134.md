@@ -10,6 +10,7 @@ archive/issues_006134.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
     "title": "[with patch, needs review] Fix SR coercion issue with numpy.float128",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6134",

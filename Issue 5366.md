@@ -10,6 +10,7 @@ archive/issues_005366.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4",
     "title": "graphplot arrowheads are hidden in multi-edge digraphs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5366",

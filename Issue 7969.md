@@ -10,6 +10,7 @@ archive/issues_007969.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.2",
     "title": "escaped backslash at end of line in notebook",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7969",

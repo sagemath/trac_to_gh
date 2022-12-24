@@ -10,6 +10,7 @@ archive/issues_003002.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.1",
     "title": "A lot of  spkgs check for fortran even if they don't need it",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3002",

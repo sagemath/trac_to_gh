@@ -10,6 +10,7 @@ archive/issues_001745.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10",
     "title": "bug in point enumeration mod p.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1745",

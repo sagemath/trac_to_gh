@@ -10,6 +10,7 @@ archive/issues_007162.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "maybe remove linking xpm into gd",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7162",

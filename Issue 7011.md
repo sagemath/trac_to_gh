@@ -10,6 +10,7 @@ archive/issues_007011.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
     "title": "fiddle with the number of threads automatically used for parallel testing",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7011",

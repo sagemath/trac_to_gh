@@ -10,6 +10,7 @@ archive/issues_005939.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
     "title": "typo in g.automorphism_group documentation, for g a graph; also partition parameter isn't tested anywhere in the docstring",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5939",

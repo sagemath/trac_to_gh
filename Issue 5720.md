@@ -10,6 +10,7 @@ archive/issues_005720.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
     "title": "[with patch, needs review] notebook -- new worksheets open in new page/tab",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5720",

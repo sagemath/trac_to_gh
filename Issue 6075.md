@@ -10,6 +10,7 @@ archive/issues_006075.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
     "title": "dsage is not yet entirely optional",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6075",

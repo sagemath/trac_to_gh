@@ -10,6 +10,7 @@ archive/issues_009256.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.2",
     "title": "Put Set in the category Sets()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9256",

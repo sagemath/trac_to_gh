@@ -10,6 +10,7 @@ archive/issues_001626.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "update lcalc to 20070902",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1626",

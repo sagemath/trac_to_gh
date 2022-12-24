@@ -10,6 +10,7 @@ archive/issues_001652.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
     "title": "length of DAGs with loops calculation runs infinite",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1652",

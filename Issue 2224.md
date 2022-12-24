@@ -10,6 +10,7 @@ archive/issues_002224.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
     "title": "sage-2.10.2.alpha1 -- strange show doctest bug in group.pyx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2224",

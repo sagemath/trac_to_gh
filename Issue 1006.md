@@ -10,6 +10,7 @@ archive/issues_001006.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "Port Sage to 64 bit OSX 10.5",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1006",

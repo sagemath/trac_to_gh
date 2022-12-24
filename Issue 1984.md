@@ -10,6 +10,7 @@ archive/issues_001984.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4",
     "title": "make html documentation error",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1984",

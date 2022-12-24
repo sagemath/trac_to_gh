@@ -10,6 +10,7 @@ archive/issues_002746.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "[with patch; needs review] Support for writing test-related files in SAGE_TESTDIR",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2746",

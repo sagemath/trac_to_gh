@@ -10,6 +10,7 @@ archive/issues_009296.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
     "title": "Add lattice computations for convex polyhedral cones",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9296",

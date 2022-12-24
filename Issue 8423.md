@@ -10,6 +10,7 @@ archive/issues_008423.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-8.1",
     "title": "fractals: add code to plot julia sets",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8423",

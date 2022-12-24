@@ -10,6 +10,7 @@ archive/issues_000955.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.10",
     "title": "Singular interface (and possibly others) can lose synchronization due to GC",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/955",

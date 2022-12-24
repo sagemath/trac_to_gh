@@ -10,6 +10,7 @@ archive/issues_004105.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "multiplication of permutations in distinct subgroups sometimes doesn't work",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4105",

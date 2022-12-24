@@ -10,6 +10,7 @@ archive/issues_003134.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
     "title": "binomial doesn't take big integers",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3134",

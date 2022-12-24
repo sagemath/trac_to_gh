@@ -10,6 +10,7 @@ archive/issues_005652.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "powermod is slower than Integer.power_mod",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5652",

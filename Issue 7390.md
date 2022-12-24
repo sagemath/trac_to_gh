@@ -10,6 +10,7 @@ archive/issues_007390.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "Generate a HTML report for SageNB tests",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7390",

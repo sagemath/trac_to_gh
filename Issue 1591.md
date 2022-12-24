@@ -10,6 +10,7 @@ archive/issues_001591.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9.2",
     "title": "cygwin -- immediately terminate the build",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1591",

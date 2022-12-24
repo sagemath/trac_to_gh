@@ -10,6 +10,7 @@ archive/issues_003632.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.6",
     "title": "[with patch, needs review] small bug in p-adic heights",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3632",

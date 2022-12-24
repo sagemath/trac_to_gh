@@ -10,6 +10,7 @@ archive/issues_004800.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
     "title": "[with patch, positive review] Add a strongly connected components method to graphs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4800",

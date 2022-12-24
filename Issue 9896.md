@@ -10,6 +10,7 @@ archive/issues_009896.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "pari-2.4.3.svn-12577 fails to build on itanium with gcc 4.5.1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9896",

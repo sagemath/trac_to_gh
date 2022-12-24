@@ -10,6 +10,7 @@ archive/issues_004840.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "FLINT: call the stack cleanup function at exit",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4840",

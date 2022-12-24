@@ -10,6 +10,7 @@ archive/issues_005831.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "[with patch, not ready for review] reducible root system fixes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5831",

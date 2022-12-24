@@ -10,6 +10,7 @@ archive/issues_009557.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.8",
     "title": "fundamental domains for subgroups of PSL(2,ZZ)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9557",

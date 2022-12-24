@@ -10,6 +10,7 @@ archive/issues_008571.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "Fix the documentation of abstract methods.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8571",

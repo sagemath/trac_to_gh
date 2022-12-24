@@ -10,6 +10,7 @@ archive/issues_002853.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "A correction to the weight of crystal elements for type A and a speedup for all types",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2853",

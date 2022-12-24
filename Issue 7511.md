@@ -10,6 +10,7 @@ archive/issues_007511.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "gnutls-2.2.1  fails to build on HP-UX",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7511",

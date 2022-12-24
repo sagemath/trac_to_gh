@@ -10,6 +10,7 @@ archive/issues_006431.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.2",
     "title": "no call method from Laurent series into Power series ring",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6431",

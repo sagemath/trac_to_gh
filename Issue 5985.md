@@ -10,6 +10,7 @@ archive/issues_005985.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
     "title": "cPickle: adds support for class pickling customizing  and for nested classes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5985",

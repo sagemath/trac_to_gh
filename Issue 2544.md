@@ -10,6 +10,7 @@ archive/issues_002544.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "modabvar -- rewrite of modular abelian varieties rewrite",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2544",

@@ -10,6 +10,7 @@ archive/issues_007804.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "Move mipCoin and mipGlpk to Sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7804",

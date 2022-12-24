@@ -10,6 +10,7 @@ archive/issues_001552.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
     "title": "Fix gnuplot building on OS 10.5.1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1552",

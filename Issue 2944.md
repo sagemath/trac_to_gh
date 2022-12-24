@@ -10,6 +10,7 @@ archive/issues_002944.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "[with patch, needs review] add E2 parameter to padic_height_via_multiply",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2944",

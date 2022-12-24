@@ -10,6 +10,7 @@ archive/issues_004654.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
     "title": "[with patch, needs review] for 'sage -testall': put sage version in test log",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4654",

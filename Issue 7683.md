@@ -10,6 +10,7 @@ archive/issues_007683.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "sphinx reference manual documentation has a *major* issues: in some cases the input parameters to functions are completely omitted causing great confusion!",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7683",

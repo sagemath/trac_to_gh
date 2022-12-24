@@ -10,6 +10,7 @@ archive/issues_003803.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "prime_range takes WAY WAY too long to convert its data back to PARI",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3803",

@@ -10,6 +10,7 @@ archive/issues_005953.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.2",
     "title": "sage/modular/modform/vm_basis.py is missing verbatim areas for doctests",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5953",

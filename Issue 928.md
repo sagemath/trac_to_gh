@@ -10,6 +10,7 @@ archive/issues_000928.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "add delayed profiling mode for callgrind",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/928",

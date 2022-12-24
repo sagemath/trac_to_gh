@@ -10,6 +10,7 @@ archive/issues_000359.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Consider adding dhtml javascript drawing functionality to the SAGE notebook",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/359",

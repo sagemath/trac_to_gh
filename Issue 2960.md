@@ -10,6 +10,7 @@ archive/issues_002960.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "remove devel/sage/sage/server1 from sage -- it's old and crufty demo code from two years ago.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2960",

@@ -10,6 +10,7 @@ archive/issues_005048.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.0",
     "title": "congruence subgroups are not integrated into the coercion model",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5048",

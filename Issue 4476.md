@@ -10,6 +10,7 @@ archive/issues_004476.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
     "title": "[with patch, spkg; needs review] Update to Cython 0.10",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4476",

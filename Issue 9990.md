@@ -10,6 +10,7 @@ archive/issues_009990.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "rubiks is failing to install proplerly on AIX as it's assuming the GNU install program.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9990",

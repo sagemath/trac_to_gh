@@ -10,6 +10,7 @@ archive/issues_004590.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "sage/interfaces/phc.py writes tmp files into cwd",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4590",

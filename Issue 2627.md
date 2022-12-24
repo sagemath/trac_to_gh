@@ -10,6 +10,7 @@ archive/issues_002627.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
     "title": "Integer(abs(gamma(n+1))) is not always equal to factorial(n) for n a positive integer",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2627",

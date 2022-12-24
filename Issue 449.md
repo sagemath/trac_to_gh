@@ -10,6 +10,7 @@ archive/issues_000449.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "lrank Solaris build fixes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/449",

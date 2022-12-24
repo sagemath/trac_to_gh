@@ -10,6 +10,7 @@ archive/issues_009565.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.2",
     "title": "One-line improvement for #9537",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9565",

@@ -10,6 +10,7 @@ archive/issues_003210.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
     "title": "[with patch, needs review] plotting Z_p as a fractal image",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3210",

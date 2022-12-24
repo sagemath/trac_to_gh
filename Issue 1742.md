@@ -10,6 +10,7 @@ archive/issues_001742.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10",
     "title": "[with spkg] Build ntl with debug info",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1742",

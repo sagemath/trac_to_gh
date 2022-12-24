@@ -10,6 +10,7 @@ archive/issues_002998.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "sage ignores some environment variables",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2998",

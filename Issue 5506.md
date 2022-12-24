@@ -10,6 +10,7 @@ archive/issues_005506.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "symbolic vectors class",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5506",

@@ -10,6 +10,7 @@ archive/issues_006072.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-8.3",
     "title": "Boundary space for GammaH fails to identify vanishing classes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6072",

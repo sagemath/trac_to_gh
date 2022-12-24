@@ -10,6 +10,7 @@ archive/issues_008243.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Annoying warnings when building the HTML reference manual",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8243",

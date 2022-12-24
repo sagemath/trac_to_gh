@@ -10,6 +10,7 @@ archive/issues_009207.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.2",
     "title": "random_element does not work for BooleanPolynomialRing of degree 1 or 2",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9207",

@@ -10,6 +10,7 @@ archive/issues_008586.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Integer overflow in vector_space_dimension()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8586",

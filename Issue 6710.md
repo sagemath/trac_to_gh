@@ -10,6 +10,7 @@ archive/issues_006710.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Numerous build issues on Solaris.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6710",

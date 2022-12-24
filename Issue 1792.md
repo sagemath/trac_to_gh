@@ -10,6 +10,7 @@ archive/issues_001792.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-7.3",
     "title": "Make Install problem with DESTDIR/sage script",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1792",

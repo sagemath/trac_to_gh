@@ -10,6 +10,7 @@ archive/issues_000556.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.4.2",
     "title": "ntl re-wrapping in sage-2.8.3 broke sage on itanium linux",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/556",

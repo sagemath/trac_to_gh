@@ -10,6 +10,7 @@ archive/issues_006003.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Additions to Cholesky decomposition",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6003",

@@ -10,6 +10,7 @@ archive/issues_000270.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.2",
     "title": "bug in permutation group arithmetic code",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/270",

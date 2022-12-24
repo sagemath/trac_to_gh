@@ -10,6 +10,7 @@ archive/issues_007692.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "update the sloane OEIS database to the latest version; it is a little out of date.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7692",

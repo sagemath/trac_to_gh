@@ -10,6 +10,7 @@ archive/issues_008822.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-9.8",
     "title": "Bug in Family constructor",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8822",

@@ -10,6 +10,7 @@ archive/issues_009864.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Unable to start singular because the command 'Singular -t --ticks-per-sec 1000' failed",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9864",

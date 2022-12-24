@@ -10,6 +10,7 @@ archive/issues_002464.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
     "title": "slight change to coverage script to avoid functions named \"_\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2464",

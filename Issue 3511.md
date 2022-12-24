@@ -10,6 +10,7 @@ archive/issues_003511.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
     "title": "make laplacian_matrix a synonym for kirchoff_matrix",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3511",

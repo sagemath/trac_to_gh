@@ -10,6 +10,7 @@ archive/issues_001527.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9",
     "title": "we really really need a doctest with \"import rpy\" in it, to make sure r is working at all in sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1527",

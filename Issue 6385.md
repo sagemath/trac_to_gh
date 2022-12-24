@@ -10,6 +10,7 @@ archive/issues_006385.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Python relative import messes up Sage command line arguments",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6385",

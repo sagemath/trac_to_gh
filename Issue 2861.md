@@ -10,6 +10,7 @@ archive/issues_002861.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "scripts do not exit with correct exit code when sys.exit() is used",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2861",

@@ -10,6 +10,7 @@ archive/issues_008526.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Missing usernames in trac emails",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8526",

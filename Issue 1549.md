@@ -10,6 +10,7 @@ archive/issues_001549.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.1",
     "title": "Sage 2.9: fix optional doctests in tut.tex",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1549",

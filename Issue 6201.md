@@ -10,6 +10,7 @@ archive/issues_006201.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.2",
     "title": "CC() raises exception instead of returning 0",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6201",

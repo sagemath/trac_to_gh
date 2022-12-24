@@ -10,6 +10,7 @@ archive/issues_004765.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
     "title": "Sage 3.2.2.alpha1: numerical noise in sage/rings/number_field/number_field_morphisms.pyx on OSX 10.4/G5",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4765",

@@ -10,6 +10,7 @@ archive/issues_003729.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
     "title": "[with patch; needs review] Only overwrite RHOME environment variable when it is unset",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3729",

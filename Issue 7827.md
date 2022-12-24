@@ -10,6 +10,7 @@ archive/issues_007827.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.2",
     "title": "Fix atlas-3.8.3.p9 compilation on FreeBSD",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7827",

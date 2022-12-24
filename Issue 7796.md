@@ -10,6 +10,7 @@ archive/issues_007796.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "prevent Sphinx from rebuilding full document",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7796",

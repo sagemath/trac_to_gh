@@ -10,6 +10,7 @@ archive/issues_005539.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.2",
     "title": "\"sage -docbuild\" could use a better error message",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5539",

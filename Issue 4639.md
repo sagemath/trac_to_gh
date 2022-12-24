@@ -10,6 +10,7 @@ archive/issues_004639.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
     "title": "bad memory leak with exponentiation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4639",

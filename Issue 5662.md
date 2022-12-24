@@ -10,6 +10,7 @@ archive/issues_005662.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
     "title": "Nasty hang (deadlock?) in maxima pexpect interface on core 2 quad",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5662",

@@ -10,6 +10,7 @@ archive/issues_004828.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
     "title": "[with patch, needs review] Sage 3.2.2.rc2: Fix documentation build issues",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4828",

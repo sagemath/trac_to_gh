@@ -10,6 +10,7 @@ archive/issues_003595.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
     "title": "the matplotlibrc file is missing",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3595",

@@ -10,6 +10,7 @@ archive/issues_006205.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.2",
     "title": "add __invert__ to number field morphism",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6205",

@@ -10,6 +10,7 @@ archive/issues_003716.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.6",
     "title": "[with spkg, needs review] add GINV as experimental/optional package",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3716",

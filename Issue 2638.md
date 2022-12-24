@@ -10,6 +10,7 @@ archive/issues_002638.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "complex QQbar expressions exceed maximum recursion depth when exact computation is triggered",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2638",

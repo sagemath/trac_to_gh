@@ -10,6 +10,7 @@ archive/issues_007061.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
     "title": "[with patch, needs review] add search_src to the developer's guide",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7061",

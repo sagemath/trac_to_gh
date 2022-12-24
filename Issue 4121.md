@@ -10,6 +10,7 @@ archive/issues_004121.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "[with patch, needs review] correct the translation for automorphism groups of graphs with edge labels",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4121",

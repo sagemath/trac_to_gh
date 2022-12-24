@@ -10,6 +10,7 @@ archive/issues_008341.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "detect_poles doesn't find a vertical asymptote where both sides go to infinity",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8341",

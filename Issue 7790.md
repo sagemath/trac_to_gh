@@ -10,6 +10,7 @@ archive/issues_007790.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-9.8",
     "title": "Setting a default max/min bound when calling MixedIntegerLinearProgram.new_variable",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7790",

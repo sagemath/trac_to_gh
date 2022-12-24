@@ -10,6 +10,7 @@ archive/issues_006211.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.2",
     "title": "typesetting symbolic integrals broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6211",

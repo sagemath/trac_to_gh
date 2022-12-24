@@ -10,6 +10,7 @@ archive/issues_004744.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
     "title": "[with patch, needs review] congruence number for elliptic curves",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4744",

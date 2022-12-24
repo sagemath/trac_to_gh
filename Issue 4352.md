@@ -10,6 +10,7 @@ archive/issues_004352.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
     "title": "add support for weight vectors to gran/groebner_fan",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4352",

@@ -10,6 +10,7 @@ archive/issues_003722.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "notebook -- public notebook server worksheets say \"(running)\" forever, but presumably they are timed out",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3722",

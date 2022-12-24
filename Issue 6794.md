@@ -10,6 +10,7 @@ archive/issues_006794.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "doctest failure in sage/sage/interfaces/rubik.py due to upgrade to Maxima 5.19.1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6794",

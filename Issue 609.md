@@ -10,6 +10,7 @@ archive/issues_000609.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "make lie part a standard SAGE package",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/609",

@@ -10,6 +10,7 @@ archive/issues_004190.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
     "title": "division of number field order elements doesn't check for membership",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4190",

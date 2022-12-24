@@ -10,6 +10,7 @@ archive/issues_002644.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
     "title": "doctest failures in matrix_real_double_dense",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2644",

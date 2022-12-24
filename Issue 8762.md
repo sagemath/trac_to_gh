@@ -10,6 +10,7 @@ archive/issues_008762.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
     "title": "the sparse=True flag is horribly broken for GF(p)[x]",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8762",

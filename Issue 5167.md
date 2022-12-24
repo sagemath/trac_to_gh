@@ -10,6 +10,7 @@ archive/issues_005167.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "Sage 3.3.a4 on OSX: doctest failure in sage/calculus/calculus.py due to changed order of roots",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5167",

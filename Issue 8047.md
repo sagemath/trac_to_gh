@@ -10,6 +10,7 @@ archive/issues_008047.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.2",
     "title": "Sage 4.3.1 has both lapack-20071123.p0.spkg and lapack-20071123.p1.spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8047",

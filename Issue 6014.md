@@ -10,6 +10,7 @@ archive/issues_006014.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.2",
     "title": "hexads in S(5,6,12) and mathematical blackjack",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6014",

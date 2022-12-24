@@ -10,6 +10,7 @@ archive/issues_009110.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.2",
     "title": "wrong documentation in EllipticCurve.change_weierstrass_model()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9110",

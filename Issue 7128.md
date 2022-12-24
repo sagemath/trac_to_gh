@@ -10,6 +10,7 @@ archive/issues_007128.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "zlib-1.2.3.p4 always builds 32-bit binaries on Solaris.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7128",

@@ -10,6 +10,7 @@ archive/issues_006489.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "[with patch, work in progress ...] Allow Sage to call R (statistics)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6489",

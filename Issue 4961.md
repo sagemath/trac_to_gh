@@ -10,6 +10,7 @@ archive/issues_004961.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "sage/modules/vector_modn_sparse_c.pxi: allocate_c_vector_modint can leak memory in case of failure",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4961",

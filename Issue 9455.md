@@ -10,6 +10,7 @@ archive/issues_009455.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.9",
     "title": "Dimensions of eigenspaces for the Atkin-Lehner operator acting on modular forms",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9455",

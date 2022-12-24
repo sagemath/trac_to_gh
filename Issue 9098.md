@@ -10,6 +10,7 @@ archive/issues_009098.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5",
     "title": "gap buillds 32-bit on OpenSolaris when SAGE64=yes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9098",

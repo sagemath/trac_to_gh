@@ -10,6 +10,7 @@ archive/issues_004247.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
     "title": "plotting -- bug in text and pdf export",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4247",

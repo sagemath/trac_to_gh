@@ -10,6 +10,7 @@ archive/issues_009165.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "cygwin: lcalc does not work for elliptic curves on cygwin",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9165",

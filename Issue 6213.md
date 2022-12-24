@@ -10,6 +10,7 @@ archive/issues_006213.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.2",
     "title": "easy addition of an alias to eta product (trivial ticket to deal with)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6213",

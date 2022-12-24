@@ -10,6 +10,7 @@ archive/issues_003401.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.3",
     "title": "extend li to work with complex input",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3401",

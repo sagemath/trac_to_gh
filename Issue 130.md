@@ -10,6 +10,7 @@ archive/issues_000130.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-1.8",
     "title": "problem with multiline history recall in IPython",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/130",

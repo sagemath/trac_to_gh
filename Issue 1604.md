@@ -10,6 +10,7 @@ archive/issues_001604.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
     "title": "more locale problems with python exposed by matplotlib",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1604",

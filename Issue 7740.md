@@ -10,6 +10,7 @@ archive/issues_007740.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "Spped up MixedIntegerLinearProgram",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7740",

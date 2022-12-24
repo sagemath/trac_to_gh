@@ -10,6 +10,7 @@ archive/issues_003993.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "implicit multiplication doesn't work in notebook",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3993",

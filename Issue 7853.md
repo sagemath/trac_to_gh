@@ -10,6 +10,7 @@ archive/issues_007853.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "block_and_cut_vertices is inconsistent when graph has one vertex",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7853",

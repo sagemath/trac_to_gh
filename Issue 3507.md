@@ -10,6 +10,7 @@ archive/issues_003507.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
     "title": "fix major efficiency/performance bug in sparse linear algebra matrix multiply",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3507",

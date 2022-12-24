@@ -10,6 +10,7 @@ archive/issues_008946.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.2",
     "title": "Sage 4.4.2.alpha0: doctest failures in calculus/riemann.pyx due to #8479",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8946",

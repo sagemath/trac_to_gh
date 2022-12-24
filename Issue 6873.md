@@ -10,6 +10,7 @@ archive/issues_006873.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "*huge* bug in multivariate polynomial substitution",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6873",

@@ -10,6 +10,7 @@ archive/issues_007401.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.5",
     "title": "Derivative at a point is not translated into Maxima",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7401",

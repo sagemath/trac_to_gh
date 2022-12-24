@@ -10,6 +10,7 @@ archive/issues_005691.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
     "title": "Fix the OSX specific dylib build problem for FLINT 1.2.4",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5691",

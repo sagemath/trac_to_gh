@@ -10,6 +10,7 @@ archive/issues_005463.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4",
     "title": "[with patch, needs review] new section for tutorial about functions vs. expressions, etc.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5463",

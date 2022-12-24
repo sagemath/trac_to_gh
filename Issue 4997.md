@@ -10,6 +10,7 @@ archive/issues_004997.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "OSX64/Cygwin: fix memory.so import issue during doctesting",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4997",

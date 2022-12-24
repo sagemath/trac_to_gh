@@ -10,6 +10,7 @@ archive/issues_007732.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "remove binary files from ECL distribution",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7732",

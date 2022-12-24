@@ -10,6 +10,7 @@ archive/issues_002165.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "MPolynomialRing(BooleanPolynomial) not as general as it should be",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2165",

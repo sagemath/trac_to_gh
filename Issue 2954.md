@@ -10,6 +10,7 @@ archive/issues_002954.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "[with spkg. needs review] ATLAS 3.8.1: Fix Itanium 2 detection on Itanium/gcc compiler flags on RHEL5/Itanium",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2954",

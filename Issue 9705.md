@@ -10,6 +10,7 @@ archive/issues_009705.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.7",
     "title": "trouble with long lines in notebook magma mode",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9705",

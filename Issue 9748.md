@@ -10,6 +10,7 @@ archive/issues_009748.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "Change our filling to use matplotlib's filling capabilities",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9748",

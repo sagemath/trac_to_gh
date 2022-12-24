@@ -10,6 +10,7 @@ archive/issues_004020.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "fraction field doctests",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4020",

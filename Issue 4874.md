@@ -10,6 +10,7 @@ archive/issues_004874.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "performance issue for generic polynomial rings",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4874",

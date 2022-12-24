@@ -10,6 +10,7 @@ archive/issues_008505.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4",
     "title": "random points on elliptic curve misses half the group",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8505",

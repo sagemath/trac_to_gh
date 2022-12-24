@@ -10,6 +10,7 @@ archive/issues_005055.json:
         "trivial",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "Trivial but fatal typo in interact documentation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5055",

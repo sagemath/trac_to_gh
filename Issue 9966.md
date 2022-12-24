@@ -10,6 +10,7 @@ archive/issues_009966.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Allow concurrent running/testing of multiple sage branches",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9966",

@@ -10,6 +10,7 @@ archive/issues_001064.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9.1",
     "title": "applying permutation is coded in a way that behaves badly when input isn't an \"expected type\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1064",

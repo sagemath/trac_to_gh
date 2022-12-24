@@ -10,6 +10,7 @@ archive/issues_004819.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
     "title": "[with spkg, needs review] update Cython to 0.10.3",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4819",

@@ -10,6 +10,7 @@ archive/issues_001675.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9.2",
     "title": "memleak in pAdicCappedRelativeElement._set_from_Rational",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1675",

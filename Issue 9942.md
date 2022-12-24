@@ -10,6 +10,7 @@ archive/issues_009942.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "ECL is linkin to two libraries it does not need to (at least on OpenSolaris anyway)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9942",

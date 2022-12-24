@@ -10,6 +10,7 @@ archive/issues_007440.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "optional valgrind spkg doesn't build with newer GCC's",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7440",

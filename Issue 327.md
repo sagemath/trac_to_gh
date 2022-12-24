@@ -10,6 +10,7 @@ archive/issues_000327.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.4",
     "title": "add perl 5.8 dependency for sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/327",

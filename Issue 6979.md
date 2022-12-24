@@ -10,6 +10,7 @@ archive/issues_006979.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
     "title": "improve sparse matrix/vector product",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6979",

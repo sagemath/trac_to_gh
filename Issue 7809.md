@@ -10,6 +10,7 @@ archive/issues_007809.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "region_plot does not respect the passed variable order",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7809",

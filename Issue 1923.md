@@ -10,6 +10,7 @@ archive/issues_001923.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
     "title": "Make an obvious checkbox or menu to switch on pretty printing in the notebook",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1923",

@@ -10,6 +10,7 @@ archive/issues_008023.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "doctest in combinat/words/morphism.py creates a file \"test.sobj\" not in a temporary directory",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8023",

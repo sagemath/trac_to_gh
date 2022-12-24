@@ -10,6 +10,7 @@ archive/issues_006077.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
     "title": "simplicial complex method for polytopes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6077",

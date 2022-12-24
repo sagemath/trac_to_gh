@@ -10,6 +10,7 @@ archive/issues_006460.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "contentEditable cells",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6460",

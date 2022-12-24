@@ -10,6 +10,7 @@ archive/issues_001382.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
     "title": "conversion of sage matrices to mathematica is just completely totally broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1382",

@@ -10,6 +10,7 @@ archive/issues_005633.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
     "title": "[with patch, needs review] add pix to the documentation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5633",

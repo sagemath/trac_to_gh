@@ -10,6 +10,7 @@ archive/issues_006729.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "notebook -- bug when input contains uniform leading space",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6729",

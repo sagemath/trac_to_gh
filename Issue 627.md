@@ -10,6 +10,7 @@ archive/issues_000627.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.4.1",
     "title": "fix pari build on PPC 32bit Linux",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/627",

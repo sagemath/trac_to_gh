@@ -10,6 +10,7 @@ archive/issues_009427.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.5",
     "title": "implement fricas integrator",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9427",

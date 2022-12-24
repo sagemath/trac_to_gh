@@ -10,6 +10,7 @@ archive/issues_000572.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.4",
     "title": "in sage-env make sure we do not append \":\"  LD_WHATEVER",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/572",

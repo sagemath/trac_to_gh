@@ -10,6 +10,7 @@ archive/issues_000412.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.3",
     "title": "Renaming NTL C aliases to make them more futureproof",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/412",

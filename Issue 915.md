@@ -10,6 +10,7 @@ archive/issues_000915.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
     "title": "Make LinBox used PID_Integer instead of using old header as workaround",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/915",

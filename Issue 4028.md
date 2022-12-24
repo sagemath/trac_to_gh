@@ -10,6 +10,7 @@ archive/issues_004028.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "doctest and improve sage/interfaces/axiom.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4028",

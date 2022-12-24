@@ -10,6 +10,7 @@ archive/issues_004785.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
     "title": "Failure of tests in sage/schemes/elliptic_curves/ell_generic.py due to non installed magma",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4785",

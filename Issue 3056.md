@@ -10,6 +10,7 @@ archive/issues_003056.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "bug with polynomials over power series",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3056",

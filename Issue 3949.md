@@ -10,6 +10,7 @@ archive/issues_003949.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
     "title": "notebook -- move all HTML in twist.py to templates",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3949",

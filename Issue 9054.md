@@ -10,6 +10,7 @@ archive/issues_009054.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.0",
     "title": "create a class for basic function_field arithmetic for Sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9054",

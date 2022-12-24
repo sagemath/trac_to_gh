@@ -10,6 +10,7 @@ archive/issues_003184.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
     "title": "broken p-adic getslice",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3184",

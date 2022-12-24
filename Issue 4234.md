@@ -10,6 +10,7 @@ archive/issues_004234.json:
         "trivial",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
     "title": "typos in programming guide",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4234",

@@ -10,6 +10,7 @@ archive/issues_002609.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
     "title": "[with patch, needs review] generators for congruence subgroups",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2609",

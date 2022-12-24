@@ -10,6 +10,7 @@ archive/issues_007659.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "fix tests in documentation after pynac printing changes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7659",

@@ -10,6 +10,7 @@ archive/issues_002368.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
     "title": "Compiling Atlas on Powerbook G4, Tuning Information",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2368",

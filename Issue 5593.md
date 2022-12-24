@@ -10,6 +10,7 @@ archive/issues_005593.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
     "title": "[with patch; needs review or throwing away] CremonaDB.conductor_range does not give a Python style range",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5593",

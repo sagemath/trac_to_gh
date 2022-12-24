@@ -10,6 +10,7 @@ archive/issues_009761.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Update zn_poly's SPKG.txt to indicate it depends on Python.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9761",

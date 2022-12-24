@@ -10,6 +10,7 @@ archive/issues_007492.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.4",
     "title": "Decomposition of a doubly stochastic matrix as a convex sum of permutations",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7492",

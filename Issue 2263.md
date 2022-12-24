@@ -10,6 +10,7 @@ archive/issues_002263.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
     "title": "Sage 2.10.2.rc0: numerical noise doctest failure in calculus/calculus.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2263",

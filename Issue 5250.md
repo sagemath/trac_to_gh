@@ -10,6 +10,7 @@ archive/issues_005250.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
     "title": "But in multiplicative_generator function for Z/NZ",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5250",

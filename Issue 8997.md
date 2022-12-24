@@ -10,6 +10,7 @@ archive/issues_008997.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6.2",
     "title": "riemann_roch_basis is implemented incorrectly in sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8997",

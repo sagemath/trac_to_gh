@@ -10,6 +10,7 @@ archive/issues_002419.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "Gap interface and resultant destroy the Singular interface on some machines",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2419",

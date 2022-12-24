@@ -10,6 +10,7 @@ archive/issues_002262.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
     "title": "Move the debian directory from the sage to the ext repo",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2262",

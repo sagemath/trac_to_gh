@@ -10,6 +10,7 @@ archive/issues_006589.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "bring doctest coverage for ring/laurent_series_ring.py to 100%",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6589",

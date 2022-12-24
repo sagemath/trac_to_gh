@@ -10,6 +10,7 @@ archive/issues_005229.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "[with patch, needs review] Jmol axes in the wrong place",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5229",

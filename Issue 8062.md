@@ -10,6 +10,7 @@ archive/issues_008062.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.3",
     "title": "New givaro-3.2.13rc2.p0.spkg works with Open Solaris 64 bit, SAGE64=\"yes\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8062",

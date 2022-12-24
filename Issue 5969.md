@@ -10,6 +10,7 @@ archive/issues_005969.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.1",
     "title": "implement computation of rational cuspidal subgroups of modular abelian varieties",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5969",

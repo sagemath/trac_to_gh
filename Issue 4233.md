@@ -10,6 +10,7 @@ archive/issues_004233.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
     "title": "[with patch, needs review] fix doctest failure due to deprecation warning in calculus/all.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4233",

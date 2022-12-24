@@ -10,6 +10,7 @@ archive/issues_001438.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "GNUTLS fails to build on RHEL 4 (texinfo related)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1438",

@@ -10,6 +10,7 @@ archive/issues_007110.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
     "title": "[with patch, needs review] SageNB -- Port #4046, #6459, #6694, #6865, #6939",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7110",

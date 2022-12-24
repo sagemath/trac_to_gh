@@ -10,6 +10,7 @@ archive/issues_001875.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
     "title": "increase idle timeout and save interval on the notebook to 6 minutes (shorter times cause serious performance problems, esp on large notebook servers)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1875",

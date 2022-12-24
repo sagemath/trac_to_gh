@@ -10,6 +10,7 @@ archive/issues_001110.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.12",
     "title": "[with trivial patch] improve notebook help message",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1110",

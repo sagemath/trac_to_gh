@@ -10,6 +10,7 @@ archive/issues_007494.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.7.2",
     "title": "remove (or clean up) SAGE_ROOT/examples",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7494",

@@ -10,6 +10,7 @@ archive/issues_006438.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
     "title": "Upgrade to Cython 0.11.2",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6438",

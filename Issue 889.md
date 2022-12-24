@@ -10,6 +10,7 @@ archive/issues_000889.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.7",
     "title": "2.8.7-alpha0: doctest failure in schemes/elliptic_curves/lseries_ell.py (tiny differences in answer)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/889",

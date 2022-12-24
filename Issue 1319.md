@@ -10,6 +10,7 @@ archive/issues_001319.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9.1",
     "title": "[graphs] calculate the characteristic polynomial",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1319",

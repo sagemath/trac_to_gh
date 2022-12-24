@@ -10,6 +10,7 @@ archive/issues_002711.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-wishlist",
     "title": "Implement inner product spaces and symplectic spaces",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2711",

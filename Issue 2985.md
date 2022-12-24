@@ -10,6 +10,7 @@ archive/issues_002985.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.1",
     "title": "ITANIUM (RHEL 5) -- bug in rubik.py's OptimalSolver()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2985",

@@ -10,6 +10,7 @@ archive/issues_004449.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
     "title": "sage-combinat install script doesn't work with 3.2.alpha2",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4449",

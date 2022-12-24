@@ -10,6 +10,7 @@ archive/issues_002814.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "sage-3.0-alpha1 on ppc -- new randstate code doesn't work right at all",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2814",

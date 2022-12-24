@@ -10,6 +10,7 @@ archive/issues_004678.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "hg_sage.commit() Error on OS X 10.5.5. Conflict in libPng.dylib?",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4678",

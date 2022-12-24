@@ -10,6 +10,7 @@ archive/issues_008225.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.4",
     "title": "%time now hugely broken in sagenb-0.7.4 (sage-4.3.2)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8225",

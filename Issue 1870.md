@@ -10,6 +10,7 @@ archive/issues_001870.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.3",
     "title": "somehow we completely broke the moinmoin wiki stuff included in Sage on OS X.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1870",

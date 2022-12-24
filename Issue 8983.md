@@ -10,6 +10,7 @@ archive/issues_008983.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.0",
     "title": "solve(erf(x)==0,x) should return x==0 as a solution",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8983",

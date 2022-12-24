@@ -10,6 +10,7 @@ archive/issues_009314.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5",
     "title": "LaTeX representation of negative symbolic fractions still broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9314",

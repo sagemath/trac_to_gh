@@ -10,6 +10,7 @@ archive/issues_003972.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "3.1.2.alpha1: numerical noise in plot.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3972",

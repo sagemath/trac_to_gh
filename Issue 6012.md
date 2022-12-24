@@ -10,6 +10,7 @@ archive/issues_006012.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
     "title": "[with patch, needs review] allow use of pdflatex instead of latex",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6012",

@@ -10,6 +10,7 @@ archive/issues_006122.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.1",
     "title": "[with patch, needs review] strip 'nodetex' from docstrings",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6122",

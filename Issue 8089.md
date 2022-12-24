@@ -10,6 +10,7 @@ archive/issues_008089.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "ecl 9.10.2-20091105cvs.p1 faiils to build on Open Solaris x64",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8089",

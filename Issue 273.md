@@ -10,6 +10,7 @@ archive/issues_000273.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.2",
     "title": "sage-location path extraction thrown off by extra \"local\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/273",

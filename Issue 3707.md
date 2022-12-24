@@ -10,6 +10,7 @@ archive/issues_003707.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "Make all common Sage classes convertible to SymPy",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3707",

@@ -10,6 +10,7 @@ archive/issues_004455.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
     "title": "[with patch, positive review] bug in Coxeter matrix for type G2",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4455",

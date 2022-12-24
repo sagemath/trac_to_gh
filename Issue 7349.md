@@ -10,6 +10,7 @@ archive/issues_007349.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2.1",
     "title": "SageNB -- Include fixes from #6848 (introspection)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7349",

@@ -10,6 +10,7 @@ archive/issues_005110.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "rewrite diagonal_matrix to be more general",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5110",

@@ -10,6 +10,7 @@ archive/issues_009462.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.2",
     "title": "warning in matrix_modn_dense.pyx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9462",

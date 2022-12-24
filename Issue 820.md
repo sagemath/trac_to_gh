@@ -10,6 +10,7 @@ archive/issues_000820.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "more sage -coverage improvements",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/820",

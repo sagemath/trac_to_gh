@@ -10,6 +10,7 @@ archive/issues_002319.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "change dsage docstrings to match rest of sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2319",

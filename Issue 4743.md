@@ -10,6 +10,7 @@ archive/issues_004743.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
     "title": "[with spkg; needs review] change genus2reduction to include GPL copyright file and email from liu making the program GPL'd",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4743",

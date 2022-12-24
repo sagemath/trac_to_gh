@@ -10,6 +10,7 @@ archive/issues_003365.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "[with patch; needs review] add a %c mode to the notebook (like %fortran)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3365",

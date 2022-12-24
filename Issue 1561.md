@@ -10,6 +10,7 @@ archive/issues_001561.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9.1",
     "title": "[with patch] add ._matrix_() and .transpose() to vector/FreeModuleElement.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1561",

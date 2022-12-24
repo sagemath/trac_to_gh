@@ -10,6 +10,7 @@ archive/issues_004418.json:
         "trivial",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
     "title": "typos in files under crypto/mq",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4418",

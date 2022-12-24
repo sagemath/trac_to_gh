@@ -10,6 +10,7 @@ archive/issues_004931.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.3",
     "title": "[with patch, needs review] Sage 3.2.3.final: Fix various Solaris 10 build issues in the Sage library",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4931",

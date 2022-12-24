@@ -10,6 +10,7 @@ archive/issues_001631.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "update quaddouble to 2.3.1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1631",

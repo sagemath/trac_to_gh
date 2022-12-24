@@ -10,6 +10,7 @@ archive/issues_001339.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "Solaris: number of partitions broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1339",

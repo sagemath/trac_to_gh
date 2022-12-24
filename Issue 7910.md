@@ -10,6 +10,7 @@ archive/issues_007910.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "mpir.1.2.2 fails to build on Open Solaris 06/2009 in VirtualBox no ABI=64",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7910",

@@ -10,6 +10,7 @@ archive/issues_006783.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
     "title": "Doctest failure in sage-4.1.1/devel/sage/doc/en/constructions/linear_algebra.rst",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6783",

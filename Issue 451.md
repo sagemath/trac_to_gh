@@ -10,6 +10,7 @@ archive/issues_000451.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.4",
     "title": "flintqs Solaris build fixes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/451",

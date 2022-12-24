@@ -10,6 +10,7 @@ archive/issues_009872.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
     "title": "Create Mac Application that people love to use",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9872",

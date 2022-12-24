@@ -10,6 +10,7 @@ archive/issues_000642.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.5",
     "title": "update to GMP-ECM-6.1.3",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/642",

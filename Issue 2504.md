@@ -10,6 +10,7 @@ archive/issues_002504.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.1",
     "title": "number field .units() method caches proof=False result and returns it for proof=True",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2504",

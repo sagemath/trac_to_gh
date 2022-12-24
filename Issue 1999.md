@@ -10,6 +10,7 @@ archive/issues_001999.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
     "title": "delete mpl3d code from sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1999",

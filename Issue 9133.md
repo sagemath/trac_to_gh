@@ -10,6 +10,7 @@ archive/issues_009133.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.3",
     "title": "sage-4.4.3.alpha2: pynac build failure on an itanium box (easy autoconf issue)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9133",

@@ -10,6 +10,7 @@ archive/issues_007025.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "givaro 3.2.13rc2 says GMP is not installed, even though MPIR is.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7025",

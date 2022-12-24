@@ -10,6 +10,7 @@ archive/issues_003086.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Update R to the 2.7 release and split off rpy.spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3086",

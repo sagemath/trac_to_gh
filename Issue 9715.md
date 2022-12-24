@@ -10,6 +10,7 @@ archive/issues_009715.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Failing doctest in even_hole_free",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9715",

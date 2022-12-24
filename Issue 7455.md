@@ -10,6 +10,7 @@ archive/issues_007455.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "SageNB - Searching on Log page does not work.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7455",

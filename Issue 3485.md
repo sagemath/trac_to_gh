@@ -10,6 +10,7 @@ archive/issues_003485.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
     "title": "[with patch, request comments, not ready for review] new sage_input function gives a sequence of commands to reproduce sage values",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3485",

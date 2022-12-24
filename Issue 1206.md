@@ -10,6 +10,7 @@ archive/issues_001206.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "doc testing support for numerical computations with randomish output is insufficient",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1206",

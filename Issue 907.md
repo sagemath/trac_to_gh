@@ -10,6 +10,7 @@ archive/issues_000907.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.8",
     "title": "[with patch] fix small memory leak in modn_sparse_lift",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/907",

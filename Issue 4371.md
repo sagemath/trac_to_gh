@@ -10,6 +10,7 @@ archive/issues_004371.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "Add support for lazy attributes via a decorator",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4371",

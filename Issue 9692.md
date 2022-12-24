@@ -10,6 +10,7 @@ archive/issues_009692.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Doctest failure of sage/symbolic/expression.pyx on Solaris 10 x86",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9692",

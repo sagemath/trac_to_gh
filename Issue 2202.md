@@ -10,6 +10,7 @@ archive/issues_002202.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
     "title": "[with spkg; needs review] Debianize rubiks spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2202",

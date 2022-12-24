@@ -10,6 +10,7 @@ archive/issues_007595.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "Chinese Remainder Theorem for polynomials over a field",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7595",

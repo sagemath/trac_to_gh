@@ -10,6 +10,7 @@ archive/issues_000198.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Improve modular symbols and modular forms.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/198",

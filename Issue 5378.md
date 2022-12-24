@@ -10,6 +10,7 @@ archive/issues_005378.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
     "title": "Sage 3.3: numerical noise in rings/polynomial/complex_roots.py on cicero & fulvia",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5378",

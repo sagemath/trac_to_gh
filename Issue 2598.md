@@ -10,6 +10,7 @@ archive/issues_002598.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
     "title": "[with patch, needs review] allow ZZ element to be constructed from GF(2) list",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2598",

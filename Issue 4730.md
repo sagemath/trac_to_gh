@@ -10,6 +10,7 @@ archive/issues_004730.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
     "title": "magma/sage -- conversion of finite field elements back and forth",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4730",

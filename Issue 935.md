@@ -10,6 +10,7 @@ archive/issues_000935.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.10",
     "title": "remove no longer present files from the sage repo",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/935",

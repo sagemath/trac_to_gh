@@ -10,6 +10,7 @@ archive/issues_008487.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4",
     "title": "Use use_grobner in to_poly_solve",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8487",

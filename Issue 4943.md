@@ -10,6 +10,7 @@ archive/issues_004943.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "make sage -tp run sage -t when only one file is specified",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4943",

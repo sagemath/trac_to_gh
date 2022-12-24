@@ -10,6 +10,7 @@ archive/issues_007886.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.8",
     "title": "[with patch, needs work] Implement conjugacy classes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7886",

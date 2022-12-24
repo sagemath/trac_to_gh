@@ -10,6 +10,7 @@ archive/issues_008855.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.3",
     "title": "sage-env needs to be updated for Cygwin",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8855",

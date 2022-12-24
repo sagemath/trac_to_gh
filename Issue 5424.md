@@ -10,6 +10,7 @@ archive/issues_005424.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
     "title": "Move infinity to new coercion model",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5424",

@@ -10,6 +10,7 @@ archive/issues_004772.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
     "title": "make determinants of matrices over GF(2) way faster",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4772",

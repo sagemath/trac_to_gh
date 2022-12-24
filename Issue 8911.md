@@ -10,6 +10,7 @@ archive/issues_008911.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.4",
     "title": "Categorification of Crystals",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8911",

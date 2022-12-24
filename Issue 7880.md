@@ -10,6 +10,7 @@ archive/issues_007880.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4",
     "title": "Category of sets with partial maps.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7880",

@@ -10,6 +10,7 @@ archive/issues_001838.json:
         "trivial",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "[with patch] comma in latex lists need a trailing space",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1838",

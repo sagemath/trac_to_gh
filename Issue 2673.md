@@ -10,6 +10,7 @@ archive/issues_002673.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Upgrade mercurial to the 1.0 release.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2673",

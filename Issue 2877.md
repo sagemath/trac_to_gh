@@ -10,6 +10,7 @@ archive/issues_002877.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-9.5",
     "title": "security risk -- several constructors use eval to parse input",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2877",

@@ -10,6 +10,7 @@ archive/issues_008823.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.1",
     "title": "Fix Cayley table doctest failure in group theory tutorial",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8823",

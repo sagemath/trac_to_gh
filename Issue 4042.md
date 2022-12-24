@@ -10,6 +10,7 @@ archive/issues_004042.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "libm4ri-20080901 fails to build on Itanium Linux",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4042",

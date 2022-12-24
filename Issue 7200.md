@@ -10,6 +10,7 @@ archive/issues_007200.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2.1",
     "title": "Fixing longest increasing subsequence (permutation method)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7200",

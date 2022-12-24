@@ -10,6 +10,7 @@ archive/issues_002710.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
     "title": "bug -- !singular doesn't work anymore on OS X",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2710",

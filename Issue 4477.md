@@ -10,6 +10,7 @@ archive/issues_004477.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
     "title": "[with patch; needs review] Allow exp() function for PowerSeriesRing element to compute with valid non-zero constant term",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4477",

@@ -10,6 +10,7 @@ archive/issues_004781.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "creation of relative number fields when defining polynomial not integral is broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4781",

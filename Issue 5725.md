@@ -10,6 +10,7 @@ archive/issues_005725.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
     "title": "[with patch; needs review] sequences -- bring coverage to 100%; don't allow hashing of mutable sequences",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5725",

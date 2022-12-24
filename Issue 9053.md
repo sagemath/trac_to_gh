@@ -10,6 +10,7 @@ archive/issues_009053.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.7",
     "title": "Sage's new generic HNF doesn't quite work right wrt the free modules code",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9053",

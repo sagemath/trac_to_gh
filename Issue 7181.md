@@ -10,6 +10,7 @@ archive/issues_007181.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "We must ensure we have GNU make, not HP-UX or Solaris 'make'",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7181",

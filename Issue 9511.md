@@ -10,6 +10,7 @@ archive/issues_009511.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Suggestion to upgrade givaro 3.3.1 and 3.3.2 [with patch]",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9511",

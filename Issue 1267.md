@@ -10,6 +10,7 @@ archive/issues_001267.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9",
     "title": "documentation for piecewise does not show up in notebook",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1267",

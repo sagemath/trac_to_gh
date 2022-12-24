@@ -10,6 +10,7 @@ archive/issues_001435.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9",
     "title": "Update FLINT.spkg to 1.01",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1435",

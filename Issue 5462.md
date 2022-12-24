@@ -10,6 +10,7 @@ archive/issues_005462.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-feature",
     "title": "[in progress] Add support for Clawpack to Sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5462",

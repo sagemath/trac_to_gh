@@ -10,6 +10,7 @@ archive/issues_009036.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5",
     "title": "Graph.canonical_label(certify=True, edge_labels=True) returns a name error",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9036",

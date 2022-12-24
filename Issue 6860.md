@@ -10,6 +10,7 @@ archive/issues_006860.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "dimensions of modular forms spaces for Gamma(N) is busted / not implemented",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6860",

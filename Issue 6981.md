@@ -10,6 +10,7 @@ archive/issues_006981.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
     "title": "include 64-bit OS X gfortran in standard SAge",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6981",

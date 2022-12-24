@@ -10,6 +10,7 @@ archive/issues_001734.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10",
     "title": "[with patch] variable jmol translucency",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1734",

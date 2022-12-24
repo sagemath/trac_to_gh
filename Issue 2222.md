@@ -10,6 +10,7 @@ archive/issues_002222.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
     "title": "sage-2.10.2.alpha1 -- bessel_K is now broken -- higher precision doesn't work",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2222",

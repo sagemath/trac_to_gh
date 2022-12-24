@@ -10,6 +10,7 @@ archive/issues_003483.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
     "title": "notebook -- major improvements to registration page",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3483",

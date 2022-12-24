@@ -10,6 +10,7 @@ archive/issues_002312.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "add support for braclets, necklaces, and Lyndon words, of a fixed length",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2312",

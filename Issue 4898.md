@@ -10,6 +10,7 @@ archive/issues_004898.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2.1",
     "title": "[with patch; needs review] Add style and labels to contour_plot()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4898",

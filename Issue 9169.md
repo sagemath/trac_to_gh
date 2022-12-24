@@ -10,6 +10,7 @@ archive/issues_009169.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "cygwin: a cachefunc.py doctest hangs seemingly forever",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9169",

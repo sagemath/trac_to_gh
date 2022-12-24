@@ -10,6 +10,7 @@ archive/issues_006172.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.1",
     "title": "add support for building FAT binaries to mpir",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6172",

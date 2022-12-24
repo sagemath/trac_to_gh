@@ -10,6 +10,7 @@ archive/issues_008791.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.0",
     "title": "improve doctest coverage of libs/mpmath/ext_main.pyx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8791",

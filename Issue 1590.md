@@ -10,6 +10,7 @@ archive/issues_001590.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.4",
     "title": "notebook -- change it so changes are saved even in cells that aren't evaluated",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1590",

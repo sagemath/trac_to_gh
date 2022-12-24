@@ -10,6 +10,7 @@ archive/issues_007449.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "Some doc request hangs sage eating all memory.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7449",

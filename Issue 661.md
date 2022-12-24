@@ -10,6 +10,7 @@ archive/issues_000661.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Integrate Trac with SAGE Wiki",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/661",

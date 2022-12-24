@@ -10,6 +10,7 @@ archive/issues_007691.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "Expect interfaces should not timeout",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7691",

@@ -10,6 +10,7 @@ archive/issues_002951.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "checkbox is not defined in interact",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2951",

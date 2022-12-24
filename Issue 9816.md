@@ -10,6 +10,7 @@ archive/issues_009816.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "blas uses non-POSIX option -p to uname. This causes problems on HP-UX.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9816",

@@ -10,6 +10,7 @@ archive/issues_003026.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
     "title": "multivariate polynomial ring with no variables do not print properly",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3026",

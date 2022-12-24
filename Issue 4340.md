@@ -10,6 +10,7 @@ archive/issues_004340.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
     "title": "Speed up Victor Miller basis code",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4340",

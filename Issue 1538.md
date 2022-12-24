@@ -10,6 +10,7 @@ archive/issues_001538.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "upgrades of sage_scripts can confuse bash",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1538",

@@ -10,6 +10,7 @@ archive/issues_000932.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "upgrade lcalc in sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/932",

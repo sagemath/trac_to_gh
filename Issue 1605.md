@@ -10,6 +10,7 @@ archive/issues_001605.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.3",
     "title": "conversion of sage vectors to magma vectors not implemented.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1605",

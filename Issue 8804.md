@@ -10,6 +10,7 @@ archive/issues_008804.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.2",
     "title": "Bring plot/plot3d/parametric_surface.pyx to 100% doctest coverage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8804",

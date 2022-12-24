@@ -10,6 +10,7 @@ archive/issues_007115.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
     "title": "building cliquer Cython extension fails on OS X 10.4 PPC (with cliquer-1.2.p0.spkg)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7115",

@@ -10,6 +10,7 @@ archive/issues_008795.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "clean up documentation of logic/logictable.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8795",

@@ -10,6 +10,7 @@ archive/issues_001928.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-wishlist",
     "title": "Bundles of graphs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1928",

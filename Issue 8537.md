@@ -10,6 +10,7 @@ archive/issues_008537.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6.2",
     "title": "Update Open MPI package to latest - Sage version is 3 years old!",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8537",

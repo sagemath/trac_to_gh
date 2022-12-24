@@ -10,6 +10,7 @@ archive/issues_009259.json:
         "trivial",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.2",
     "title": "Wrong markup on the documentation of CombinatorialClass.map",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9259",

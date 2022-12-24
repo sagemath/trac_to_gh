@@ -10,6 +10,7 @@ archive/issues_000071.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.5",
     "title": "Secret transation of .sage to .py causes confusion",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/71",

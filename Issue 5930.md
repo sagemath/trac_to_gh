@@ -10,6 +10,7 @@ archive/issues_005930.json:
         "blocker",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
     "title": "switch from maxima to pynac for core symbolic manipulation system",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5930",

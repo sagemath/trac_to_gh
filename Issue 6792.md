@@ -10,6 +10,7 @@ archive/issues_006792.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
     "title": "11 doctest failures in devel/sage/doc/fr/tutorial/interfaces.rst",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6792",

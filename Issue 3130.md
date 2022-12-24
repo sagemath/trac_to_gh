@@ -10,6 +10,7 @@ archive/issues_003130.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.3",
     "title": "permgps: added normal_subgroups and fixed image and kernel",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3130",

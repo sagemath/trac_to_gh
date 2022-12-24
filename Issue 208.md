@@ -10,6 +10,7 @@ archive/issues_000208.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-1.9",
     "title": "Implied Magma conversion causes seg fault",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/208",

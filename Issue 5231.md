@@ -10,6 +10,7 @@ archive/issues_005231.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "[with patch, needs review] make relative number fields lazy",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5231",

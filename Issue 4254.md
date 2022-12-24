@@ -10,6 +10,7 @@ archive/issues_004254.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
     "title": "[with patch, needs review] better parameter parsing for mq.SR",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4254",

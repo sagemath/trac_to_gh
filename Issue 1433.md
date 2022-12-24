@@ -10,6 +10,7 @@ archive/issues_001433.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9",
     "title": "Fix some documentation typos pointed out by Rich Morin",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1433",

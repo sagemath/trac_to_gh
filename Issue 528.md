@@ -10,6 +10,7 @@ archive/issues_000528.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.6",
     "title": "write new Integer_mod_dense class that wraps NTL directly",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/528",

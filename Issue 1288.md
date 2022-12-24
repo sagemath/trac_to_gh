@@ -10,6 +10,7 @@ archive/issues_001288.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9",
     "title": "misformating of some of the reference manual in live version; also out of date",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1288",

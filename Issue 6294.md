@@ -10,6 +10,7 @@ archive/issues_006294.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
     "title": "lisp command in sage is now totally broken (because of ecl switch)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6294",

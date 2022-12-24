@@ -10,6 +10,7 @@ archive/issues_008778.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "remove jinja(1) from Sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8778",

@@ -10,6 +10,7 @@ archive/issues_003392.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "upgrade matplotlib to 0.98.0 release",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3392",

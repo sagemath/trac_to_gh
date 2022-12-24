@@ -10,6 +10,7 @@ archive/issues_005076.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
     "title": "bug with (coercion in?) p-adic extension fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5076",

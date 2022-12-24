@@ -10,6 +10,7 @@ archive/issues_009846.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.9",
     "title": "Handle a preset R_PROFILE variable",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9846",

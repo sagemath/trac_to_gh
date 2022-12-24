@@ -10,6 +10,7 @@ archive/issues_003005.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.1",
     "title": "mobabar -- failure to compute endomorphism ring",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3005",

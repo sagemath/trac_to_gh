@@ -10,6 +10,7 @@ archive/issues_006649.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
     "title": "doctest failure in decorate.py (on OS X only)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6649",

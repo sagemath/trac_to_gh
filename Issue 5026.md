@@ -10,6 +10,7 @@ archive/issues_005026.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "numerical noise doctest failure in rings/polynomial/complex_roots.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5026",

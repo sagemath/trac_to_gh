@@ -10,6 +10,7 @@ archive/issues_004550.json:
         "trivial",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "notebook -- removed unused NotebookSettings and UserSetting related code",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4550",

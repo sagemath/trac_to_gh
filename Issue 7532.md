@@ -10,6 +10,7 @@ archive/issues_007532.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.2",
     "title": "\"return NotImplementedError\" in ring.pyx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7532",

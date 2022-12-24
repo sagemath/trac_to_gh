@@ -10,6 +10,7 @@ archive/issues_009291.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-wishlist",
     "title": "Constructing a root system / coxeter group from a pair of matrices",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9291",

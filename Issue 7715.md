@@ -10,6 +10,7 @@ archive/issues_007715.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "implement vectors mod 2 as M4RI matrices with one row",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7715",

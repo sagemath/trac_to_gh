@@ -10,6 +10,7 @@ archive/issues_001445.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9",
     "title": "[with patch] symmetrica's longints need to be converted",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1445",

@@ -10,6 +10,7 @@ archive/issues_006129.json:
         "trivial",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
     "title": "Ammend docstring in ode.pyx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6129",

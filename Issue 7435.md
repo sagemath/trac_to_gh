@@ -10,6 +10,7 @@ archive/issues_007435.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.2",
     "title": "notebook: help screen talks about DIR variable, which was removed from the notebook a while ago",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7435",

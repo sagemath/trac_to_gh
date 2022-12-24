@@ -10,6 +10,7 @@ archive/issues_008566.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Upate prereq to 0.8, removing 'm' option from 'tar'",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8566",

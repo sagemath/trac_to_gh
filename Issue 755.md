@@ -10,6 +10,7 @@ archive/issues_000755.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.6",
     "title": "graphs: adjacency_matrix() does not call multiple_edges correctly.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/755",

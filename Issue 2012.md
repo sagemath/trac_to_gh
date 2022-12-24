@@ -10,6 +10,7 @@ archive/issues_002012.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
     "title": "crap -- jmol contains some os x files that shouldn't be there",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2012",

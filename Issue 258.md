@@ -10,6 +10,7 @@ archive/issues_000258.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.10",
     "title": "gp2c -- integrate into SAGE",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/258",

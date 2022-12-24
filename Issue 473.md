@@ -10,6 +10,7 @@ archive/issues_000473.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.4",
     "title": "make the -valgrind target more flexible, add massif support",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/473",

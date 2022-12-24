@@ -10,6 +10,7 @@ archive/issues_001619.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "update cddlib to 0.94d",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1619",

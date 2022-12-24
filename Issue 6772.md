@@ -10,6 +10,7 @@ archive/issues_006772.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "increase default ecl memory limits for maxima+ecl in sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6772",

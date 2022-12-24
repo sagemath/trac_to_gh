@@ -10,6 +10,7 @@ archive/issues_007396.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "Disjoint unions of enumerated sets.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7396",

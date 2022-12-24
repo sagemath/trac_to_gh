@@ -10,6 +10,7 @@ archive/issues_008829.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-8.1",
     "title": "Saturation for curves over number fields.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8829",

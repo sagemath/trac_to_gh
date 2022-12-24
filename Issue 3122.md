@@ -10,6 +10,7 @@ archive/issues_003122.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
     "title": "after make install, sage tries to write in /usr/local",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3122",

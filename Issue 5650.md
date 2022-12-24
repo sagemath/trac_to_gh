@@ -10,6 +10,7 @@ archive/issues_005650.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "speed up gamma_inc",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5650",

@@ -10,6 +10,7 @@ archive/issues_004742.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-feature",
     "title": "Wrap Pari's generalised Smith form (when it is fixed)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4742",

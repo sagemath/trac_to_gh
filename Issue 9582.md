@@ -10,6 +10,7 @@ archive/issues_009582.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.2",
     "title": "Term order discrepancy in random test on OS X",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9582",

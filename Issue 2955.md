@@ -10,6 +10,7 @@ archive/issues_002955.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "GFortran autodection on Linux/Itanium",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2955",

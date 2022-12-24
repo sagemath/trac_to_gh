@@ -10,6 +10,7 @@ archive/issues_001440.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.3",
     "title": "Inconsistency in subs and substitute for univariate polynomials",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1440",

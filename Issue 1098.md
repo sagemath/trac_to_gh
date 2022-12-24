@@ -10,6 +10,7 @@ archive/issues_001098.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.12",
     "title": "make rpy work with SAGE data types",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1098",

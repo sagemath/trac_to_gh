@@ -10,6 +10,7 @@ archive/issues_003534.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "plot -- fix circle example in the documentation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3534",

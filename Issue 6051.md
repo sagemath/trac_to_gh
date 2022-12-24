@@ -10,6 +10,7 @@ archive/issues_006051.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.2",
     "title": "[with patch, needs some work] Enable Singular's coefficient rings which are not fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6051",

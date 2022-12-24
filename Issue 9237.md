@@ -10,6 +10,7 @@ archive/issues_009237.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "create a test in the old sage/server directory that shows that one can unpickle an old Sage notebook server directory",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9237",

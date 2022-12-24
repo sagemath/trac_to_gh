@@ -10,6 +10,7 @@ archive/issues_006461.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
     "title": "Schaefer's Simplified Data Encryption Standard for educational purposes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6461",

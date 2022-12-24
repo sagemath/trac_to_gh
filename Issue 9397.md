@@ -10,6 +10,7 @@ archive/issues_009397.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.3",
     "title": "Resolve corrupted patches to permit Singular to build on Solaris x86/x64",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9397",

@@ -10,6 +10,7 @@ archive/issues_004436.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
     "title": "Sage 3.2.a2: numerical noise in sage/calculus/calculus.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4436",

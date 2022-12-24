@@ -10,6 +10,7 @@ archive/issues_008450.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-9.6",
     "title": "contour_plot chokes on function which involves imaginary numbers",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8450",

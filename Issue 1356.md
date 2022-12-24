@@ -10,6 +10,7 @@ archive/issues_001356.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.15",
     "title": "[with patch] fix bug when taking abs() of exactly known QQbar",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1356",

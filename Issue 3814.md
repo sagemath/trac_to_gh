@@ -10,6 +10,7 @@ archive/issues_003814.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
     "title": "[with patch, needs quick review] Bug introduced in trac #3800 fix",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3814",

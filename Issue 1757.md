@@ -10,6 +10,7 @@ archive/issues_001757.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
     "title": "implement Coppersmith's method for finding small roots of univariate polynomials modulo an integer",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1757",

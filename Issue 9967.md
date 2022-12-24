@@ -10,6 +10,7 @@ archive/issues_009967.json:
         "trivial",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
     "title": "Stop Dancing Links polluting the global namespace",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9967",

@@ -10,6 +10,7 @@ archive/issues_004005.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "[with patch, needs review] sage-coverage screws up with lambda functions as default arguments",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4005",

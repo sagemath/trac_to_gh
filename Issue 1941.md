@@ -10,6 +10,7 @@ archive/issues_001941.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-9.8",
     "title": "Finish bipartite graph implementation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1941",

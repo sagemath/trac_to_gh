@@ -10,6 +10,7 @@ archive/issues_000044.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
     "title": "customize preparsing",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/44",

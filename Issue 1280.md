@@ -10,6 +10,7 @@ archive/issues_001280.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.15",
     "title": "make Permutation(range(10)).random() fast instead of dog slow.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1280",

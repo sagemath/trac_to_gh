@@ -10,6 +10,7 @@ archive/issues_005000.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "Solaris 10/x86: fix numerical noise in schemes/elliptic_curves/ell_rational_field.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5000",

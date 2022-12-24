@@ -10,6 +10,7 @@ archive/issues_008098.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "solve_mod is horribly broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8098",

@@ -10,6 +10,7 @@ archive/issues_003043.json:
         "trivial",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.2",
     "title": "The SPKG.txt  of the gfan spkg does not specify license exactly",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3043",

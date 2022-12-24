@@ -10,6 +10,7 @@ archive/issues_002941.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "sympy spkg updated + a test patch for Sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2941",

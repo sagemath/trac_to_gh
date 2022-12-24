@@ -10,6 +10,7 @@ archive/issues_001127.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "modularSymbol complement fails for E=128a",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1127",

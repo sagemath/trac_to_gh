@@ -10,6 +10,7 @@ archive/issues_004259.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "use Modular<float> instead of Modular<double> for small primes in LinBox",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4259",

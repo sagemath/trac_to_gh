@@ -10,6 +10,7 @@ archive/issues_002524.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.4",
     "title": "update givaro.spkg to the 3.2.10.rc3 release",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2524",

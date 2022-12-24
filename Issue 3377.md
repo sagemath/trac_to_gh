@@ -10,6 +10,7 @@ archive/issues_003377.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "[with patch, needs review] torsion for elliptic curves over number fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3377",

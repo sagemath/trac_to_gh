@@ -10,6 +10,7 @@ archive/issues_001005.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.13",
     "title": "Make Sage compile in 32 bit mode on OSX 10.5",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1005",

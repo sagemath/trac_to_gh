@@ -10,6 +10,7 @@ archive/issues_007168.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Port status of Sage to less-popular Unix platforms.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7168",

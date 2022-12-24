@@ -10,6 +10,7 @@ archive/issues_008182.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Camino browser crashed when notebook started using Mac OSX",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8182",

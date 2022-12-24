@@ -10,6 +10,7 @@ archive/issues_008380.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.4",
     "title": "Implement an interface to GAP3",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8380",

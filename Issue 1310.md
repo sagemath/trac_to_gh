@@ -10,6 +10,7 @@ archive/issues_001310.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "[graphs] calculate max independent set",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1310",

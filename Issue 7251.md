@@ -10,6 +10,7 @@ archive/issues_007251.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
     "title": "Allow for Integer(3, parent = MyParent)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7251",

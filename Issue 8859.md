@@ -10,6 +10,7 @@ archive/issues_008859.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.2",
     "title": "bidirectional_dijkstra does not handle vertex labels properly",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8859",

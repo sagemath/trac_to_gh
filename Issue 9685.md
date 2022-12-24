@@ -10,6 +10,7 @@ archive/issues_009685.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6.1",
     "title": "constructor for the all ones matrix",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9685",

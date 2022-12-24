@@ -10,6 +10,7 @@ archive/issues_000691.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.5",
     "title": ".coefficients() for EisensteinSeries does not return requested coefficients",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/691",

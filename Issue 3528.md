@@ -10,6 +10,7 @@ archive/issues_003528.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
     "title": "test_gcc_version.pl claims that gcc 4.3 is not a valid compiler to build FLINT",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3528",

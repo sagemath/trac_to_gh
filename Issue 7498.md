@@ -10,6 +10,7 @@ archive/issues_007498.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "Do *not* import matplotlib at sage startup.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7498",

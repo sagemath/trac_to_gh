@@ -10,6 +10,7 @@ archive/issues_003157.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
     "title": "[with patch, needs trivial review] Executable target for pbuild",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3157",

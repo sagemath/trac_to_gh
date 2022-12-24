@@ -10,6 +10,7 @@ archive/issues_008818.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.2",
     "title": "Infinite loop in ZZ.range()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8818",

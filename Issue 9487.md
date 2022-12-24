@@ -10,6 +10,7 @@ archive/issues_009487.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Have an acurate description of what \"supported platforms\" are, and have one list - not numerous different ones.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9487",

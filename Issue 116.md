@@ -10,6 +10,7 @@ archive/issues_000116.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "notebook doctest -- should be able to doctest a worksheet, so we can distribute worksheets with SAGE",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/116",

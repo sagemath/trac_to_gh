@@ -10,6 +10,7 @@ archive/issues_002016.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
     "title": "crap -- there is a precompiled object file in the SAGE_ROOT/examples directory",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2016",

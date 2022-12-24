@@ -10,6 +10,7 @@ archive/issues_005895.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.1",
     "title": "Limit number of worksheet snapshots",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5895",

@@ -10,6 +10,7 @@ archive/issues_005155.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.7",
     "title": "Sage 3.3.a3: fix doctests that want write access to $SAGE_LOCAL",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5155",

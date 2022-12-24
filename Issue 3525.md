@@ -10,6 +10,7 @@ archive/issues_003525.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "notebook -- new welcome page",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3525",

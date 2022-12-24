@@ -10,6 +10,7 @@ archive/issues_007787.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Use a javascript minifier instead of a packer for sagenb",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7787",

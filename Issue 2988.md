@@ -10,6 +10,7 @@ archive/issues_002988.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "notebook -- issues with the CSS for the print display",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2988",

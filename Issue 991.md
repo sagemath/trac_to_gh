@@ -10,6 +10,7 @@ archive/issues_000991.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.13",
     "title": "problem in interaction with Singular subprocesses",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/991",

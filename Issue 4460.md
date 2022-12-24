@@ -10,6 +10,7 @@ archive/issues_004460.json:
         "critical",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
     "title": "add link to PDF manuals in doc/html/index.html",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4460",

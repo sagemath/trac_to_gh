@@ -10,6 +10,7 @@ archive/issues_006042.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
     "title": "Bring doctests of modular/modsym/ambient.py up to 100%",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6042",

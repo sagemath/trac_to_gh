@@ -10,6 +10,7 @@ archive/issues_004675.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4",
     "title": "Get Josh Kantor's \"Numerical Computing with SAGE\" into the Sage documentation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4675",

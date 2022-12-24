@@ -10,6 +10,7 @@ archive/issues_006158.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.1",
     "title": "upgrading sphix problem: any upgrade to sage-4.0 ends this way",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6158",

@@ -10,6 +10,7 @@ archive/issues_003426.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "bessel_K function is broken (with patch, needs review)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3426",

@@ -10,6 +10,7 @@ archive/issues_004573.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
     "title": "Permutation not callable, but PermutationGroupElement is.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4573",

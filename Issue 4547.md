@@ -10,6 +10,7 @@ archive/issues_004547.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
     "title": "The Sage Notebook doesn't specify the Content-Type header in its responses",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4547",

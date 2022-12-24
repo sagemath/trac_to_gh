@@ -10,6 +10,7 @@ archive/issues_005916.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.1",
     "title": "[with patch, needs review] show mathematica expression using jsmath",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5916",

@@ -10,6 +10,7 @@ archive/issues_005718.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.1",
     "title": "notebook -- %hide works fine in the worksheet but shows up when printing",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5718",

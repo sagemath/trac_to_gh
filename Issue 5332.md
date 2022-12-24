@@ -10,6 +10,7 @@ archive/issues_005332.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.7",
     "title": "Convert MV polynomial constructors in multi_polynomial_ideal.py, category_object.py, etc",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5332",

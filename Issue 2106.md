@@ -10,6 +10,7 @@ archive/issues_002106.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Implement univariate polynomials over GF(2) via ntl.GF2X",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2106",

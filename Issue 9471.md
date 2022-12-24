@@ -10,6 +10,7 @@ archive/issues_009471.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "include matplotlib html5 canvas rendering to sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9471",

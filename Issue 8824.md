@@ -10,6 +10,7 @@ archive/issues_008824.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "Make it so that numpy datatypes are integrated into the coercion model",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8824",

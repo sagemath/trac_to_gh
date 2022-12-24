@@ -10,6 +10,7 @@ archive/issues_002775.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "multivariate factoring over some rings gives incorrect results",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2775",

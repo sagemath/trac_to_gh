@@ -10,6 +10,7 @@ archive/issues_007987.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Most extensions don't need to be listed in module_list",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7987",

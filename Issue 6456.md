@@ -10,6 +10,7 @@ archive/issues_006456.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6.1",
     "title": "Upgrade cvxopt in sage from 0.9 to 1.1.1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6456",

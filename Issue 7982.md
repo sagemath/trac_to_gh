@@ -10,6 +10,7 @@ archive/issues_007982.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5",
     "title": "sage_fortran on Open Solaris 64 bit is the wrong thing",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7982",

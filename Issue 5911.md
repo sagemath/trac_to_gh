@@ -10,6 +10,7 @@ archive/issues_005911.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2.1",
     "title": "greatly improve the documentation one gets from Graph?",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5911",

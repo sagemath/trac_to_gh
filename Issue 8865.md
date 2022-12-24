@@ -10,6 +10,7 @@ archive/issues_008865.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.2",
     "title": "FractionFieldElement.__call__ doesn't handle keyword arguments",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8865",

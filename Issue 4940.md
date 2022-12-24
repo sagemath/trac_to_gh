@@ -10,6 +10,7 @@ archive/issues_004940.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "dokchitser L-series at least for number fields claims a pole at zero, though the zeta function has a zero there",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4940",

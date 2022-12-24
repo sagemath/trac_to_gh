@@ -10,6 +10,7 @@ archive/issues_002286.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
     "title": "[with patch, needs review] create and document a new \"fp_rank\" concept",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2286",

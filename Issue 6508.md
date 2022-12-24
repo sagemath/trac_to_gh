@@ -10,6 +10,7 @@ archive/issues_006508.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
     "title": "make installing extcode depend on mercurial",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6508",

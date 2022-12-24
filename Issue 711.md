@@ -10,6 +10,7 @@ archive/issues_000711.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.5",
     "title": "control-c and singular interface -- it doesn't quit singular for real.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/711",

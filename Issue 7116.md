@@ -10,6 +10,7 @@ archive/issues_007116.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "Potential bug in elliptic curve pairing code.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7116",

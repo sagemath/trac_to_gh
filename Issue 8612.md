@@ -10,6 +10,7 @@ archive/issues_008612.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.5",
     "title": "potentially horrible multimodular matrix echelon bug",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8612",

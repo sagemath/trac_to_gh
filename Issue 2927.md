@@ -10,6 +10,7 @@ archive/issues_002927.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "[with spkg, needs review] gcc 4.3: make Singular.spkg compile",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2927",

@@ -10,6 +10,7 @@ archive/issues_004846.json:
         "critical",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.3",
     "title": "Doctesting should create an empty init.sage if it doesn't exist",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4846",

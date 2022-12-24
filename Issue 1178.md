@@ -10,6 +10,7 @@ archive/issues_001178.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
     "title": "flint in 2.8.12 fails on Solaris 10: u_int16_t undefined",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1178",

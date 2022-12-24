@@ -10,6 +10,7 @@ archive/issues_009500.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.2",
     "title": "implement inversion of elements in a (more) general quotient ring",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9500",

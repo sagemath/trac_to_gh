@@ -10,6 +10,7 @@ archive/issues_008439.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "maxima interface hangs gcl and/or clisp backends",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8439",

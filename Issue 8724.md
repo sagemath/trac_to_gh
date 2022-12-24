@@ -10,6 +10,7 @@ archive/issues_008724.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.1",
     "title": "Notebook redirects use wrong HTTP Status Code (301 Moved Permanently)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8724",

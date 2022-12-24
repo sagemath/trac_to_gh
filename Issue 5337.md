@@ -10,6 +10,7 @@ archive/issues_005337.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
     "title": "update French to tutorial to reflect the fact that \"I in CC\" works in tour_rings.rst",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5337",

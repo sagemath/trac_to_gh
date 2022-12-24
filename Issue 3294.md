@@ -10,6 +10,7 @@ archive/issues_003294.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "linear code bug: minimum_distance breaks over \"large\" fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3294",

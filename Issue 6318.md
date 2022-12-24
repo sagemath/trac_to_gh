@@ -10,6 +10,7 @@ archive/issues_006318.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "optional doctest failure -- axiom interface -- something doesn't work",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6318",

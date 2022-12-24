@@ -10,6 +10,7 @@ archive/issues_001782.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "doctests for multi_polynomial_ideal.py not reproducible",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1782",

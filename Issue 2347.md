@@ -10,6 +10,7 @@ archive/issues_002347.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "Symbolic parsing uses eval()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2347",

@@ -10,6 +10,7 @@ archive/issues_006766.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
     "title": "faster powers of factorizations",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6766",

@@ -10,6 +10,7 @@ archive/issues_008095.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.2",
     "title": "is_primitive of WordMorphism is broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8095",

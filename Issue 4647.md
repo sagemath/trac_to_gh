@@ -10,6 +10,7 @@ archive/issues_004647.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
     "title": "Disable dependency code cacheing in setup.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4647",

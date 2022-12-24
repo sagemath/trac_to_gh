@@ -10,6 +10,7 @@ archive/issues_007418.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5",
     "title": "%maxima cells are partially broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7418",

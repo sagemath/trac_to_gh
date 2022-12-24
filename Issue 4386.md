@@ -10,6 +10,7 @@ archive/issues_004386.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
     "title": "Sage 3.1.4: optional doctest failure in sage/rings/number_field/totallyreal_phc.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4386",

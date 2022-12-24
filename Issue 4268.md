@@ -10,6 +10,7 @@ archive/issues_004268.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "SQLDatabase, et al. should use SQLAlchemy",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4268",

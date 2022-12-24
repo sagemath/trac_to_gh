@@ -10,6 +10,7 @@ archive/issues_004952.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "modulus issue in sage/rings/finite_field_ntl_gf2e.pyx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4952",

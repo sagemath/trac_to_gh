@@ -10,6 +10,7 @@ archive/issues_000790.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.12",
     "title": "rational reconstruction failing for p-adics",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/790",

@@ -10,6 +10,7 @@ archive/issues_008088.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "sage library 4.3.1 failing to build on Open Solaris x64",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8088",

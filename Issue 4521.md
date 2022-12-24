@@ -10,6 +10,7 @@ archive/issues_004521.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-9.8",
     "title": "Trivial permutation group enumeration bug",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4521",

@@ -10,6 +10,7 @@ archive/issues_004565.json:
         "blocker",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
     "title": "sage-3.2.rc2 -- fix all tex failures",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4565",

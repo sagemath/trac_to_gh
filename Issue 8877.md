@@ -10,6 +10,7 @@ archive/issues_008877.json:
         "minor",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.2",
     "title": "New methods in partitions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8877",

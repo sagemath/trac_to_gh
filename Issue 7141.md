@@ -10,6 +10,7 @@ archive/issues_007141.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
     "title": "`math_parse` parses $'s in <script> tags",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7141",

@@ -10,6 +10,7 @@ archive/issues_003796.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Do something about empty directories for pexpect interfaces",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3796",

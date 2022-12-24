@@ -10,6 +10,7 @@ archive/issues_002590.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "plotting a line with no points throws a nonsensical error",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2590",

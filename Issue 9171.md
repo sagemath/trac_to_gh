@@ -10,6 +10,7 @@ archive/issues_009171.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "cygwin: some test failures in sagedoc.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9171",

@@ -10,6 +10,7 @@ archive/issues_006210.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.7.2",
     "title": "docs for the property option of graphs() should include a pointer to the docs for the augment parameter",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6210",

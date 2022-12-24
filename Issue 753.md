@@ -10,6 +10,7 @@ archive/issues_000753.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
     "title": "derivative alias for diff",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/753",

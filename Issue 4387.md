@@ -10,6 +10,7 @@ archive/issues_004387.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
     "title": "[with patch, needs review] Fix memory leak in si2sa_ZZ in sage/libs/singular/singular.pyx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4387",

@@ -10,6 +10,7 @@ archive/issues_002082.json:
         "trivial",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
     "title": "plot loops",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2082",

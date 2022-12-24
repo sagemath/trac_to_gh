@@ -10,6 +10,7 @@ archive/issues_000858.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.7",
     "title": "add support for numpy arrays with integer entries",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/858",

@@ -10,6 +10,7 @@ archive/issues_007557.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.7",
     "title": "conversion of complex numbers in symbolic expressions to maxima broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7557",

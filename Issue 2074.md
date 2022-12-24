@@ -10,6 +10,7 @@ archive/issues_002074.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
     "title": "PermutationGroupElement constructor bug.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2074",

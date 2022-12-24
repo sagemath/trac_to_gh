@@ -10,6 +10,7 @@ archive/issues_009087.json:
         "major",
         "enhancement"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.2",
     "title": "implement supersingular/ordinary testing for elliptic curves over finite fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9087",

@@ -10,6 +10,7 @@ archive/issues_004399.json:
         "major",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
     "title": "Sage 3.1.4: magma related optional doctest failure in sage/matrix/matrix1.pyx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4399",

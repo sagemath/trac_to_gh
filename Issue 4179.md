@@ -10,6 +10,7 @@ archive/issues_004179.json:
         "minor",
         "bug"
     ],
+    "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "[with patch, needs review] ell_finite_field.py \"long\" doctest fails",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4179",
